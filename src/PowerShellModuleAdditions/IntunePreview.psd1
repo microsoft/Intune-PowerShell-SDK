@@ -22,7 +22,7 @@
             RequireLicenseAcceptance = $true 
             
             # A URL to the license for this module. 
-            # LicenseUri = '' 
+            # LicenseUri = 'https://github.com/microsoftgraph/Intune-PowerShell-SDK-Code-Generator/blob/master/src/PowerShellGraphSDK/PowerShellModuleAdditions/LICENSE.txt' 
              
             # A URL to the main website for this project. 
             # ProjectUri = 'https://github.com/Microsoft/Intune-PowerShell-SDK' 
