@@ -44,10 +44,10 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
             foreach (Type cmdletType in referenceableCmdletTypes)
             {
                 // Construct an instance of the cmdlet
-                ODataCmdlet cmdlet = cmdletType
+                ODataCmdletBase cmdlet = cmdletType
                     .GetConstructor(Array.Empty<Type>())?
                     .Invoke(Array.Empty<object>())
-                    as ODataCmdlet;
+                    as ODataCmdletBase;
 
                 // Get this cmdlet name's noun
                 string cmdletNoun = cmdletType.GetCmdletNoun();

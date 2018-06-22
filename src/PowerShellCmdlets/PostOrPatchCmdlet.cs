@@ -11,7 +11,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     /// <summary>
     /// The common behavior between cmdlets that create or update OData resources.
     /// </summary>
-    public abstract class PostOrPatchCmdlet : ODataCmdlet
+    public abstract class PostOrPatchCmdlet : ODataCmdletBase
     {
         /// <summary>
         /// The name of the parameter set which allows manual selection of the OData type.

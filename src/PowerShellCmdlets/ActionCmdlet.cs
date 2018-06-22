@@ -9,7 +9,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     /// <summary>
     /// The common behavior between all OData PowerShell SDK cmdlets that call actions on OData resources.
     /// </summary>
-    public abstract class ActionCmdlet : ODataCmdlet
+    public abstract class ActionCmdlet : ODataCmdletBase
     {
         internal override string GetHttpMethod()
         {

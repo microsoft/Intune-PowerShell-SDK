@@ -19,14 +19,14 @@ namespace PowerShellGraphSDK
         /// <summary>
         /// An instance of the cmdlet type that we should use to get the resource URL.
         /// </summary>
-        private ODataCmdlet _cmdletInstance;
+        private ODataCmdletBase _cmdletInstance;
 
         /// <summary>
         /// The "id" property on the cmdlet instance that we need to set before getting the resource URL.
         /// </summary>
         private PropertyInfo _idProperty;
 
-        internal ReferencePathGenerator(ODataCmdlet cmdletInstance)
+        internal ReferencePathGenerator(ODataCmdletBase cmdletInstance)
         {
             this._cmdletInstance = cmdletInstance ?? throw new ArgumentNullException(nameof(cmdletInstance));
 

@@ -26,9 +26,9 @@ namespace PowerShellGraphSDK
             // Get the type
             Type type = obj.GetType();
 
-            if (type.IsPrimitive || type.Assembly == typeof(object).Assembly)
+            if (type.IsPrimitive || obj is string || obj is PSObject)
             {
-                // If the object is of a primitive type or is a built-in type, PowerShell understands it
+                // If the object is a primitive type, a string or a PSObject, PowerShell understands it
                 return obj;
             }
             else if (type.IsEnum)
@@ -88,10 +88,15 @@ namespace PowerShellGraphSDK
 
                 return result;
             }
-            else if (obj is IEnumerable objArray)
+            else if (obj is IEnumerable objArray) // This MUST be after the IDictionary check because IDictionary extends IEnumerable
             {
                 // Convert each object in the collection to a PowerShell object and then return them as an array
                 return objArray.Cast<object>().Select(o => ToPowerShellObject(o)).ToArray();
+            }
+            else if (type.Assembly == typeof(object).Assembly)
+            {
+                // If the object is a built-in type, PowerShell understands it
+                return obj;
             }
             else if (type.IsClass)
             {

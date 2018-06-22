@@ -163,7 +163,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         protected override void ProcessRecord()
         {
-            object result = ODataCmdlet.CurrentEnvironmentParameters.ToPowerShellObject();
+            object result = ODataCmdletBase.CurrentEnvironmentParameters.ToPowerShellObject();
             if (result is IEnumerable<object> objArray)
             {
                 foreach (object obj in objArray)
@@ -241,31 +241,31 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
             // Schema version
             if (!string.IsNullOrEmpty(this.SchemaVersion))
             {
-                ODataCmdlet.CurrentEnvironmentParameters.SchemaVersion = this.SchemaVersion;
+                ODataCmdletBase.CurrentEnvironmentParameters.SchemaVersion = this.SchemaVersion;
             }
 
             // AppId
             if (!string.IsNullOrEmpty(this.AppId))
             {
-                ODataCmdlet.CurrentEnvironmentParameters.ClientId = this.AppId;
+                ODataCmdletBase.CurrentEnvironmentParameters.ClientId = this.AppId;
             }
 
             // Auth URL
             if (!string.IsNullOrEmpty(this.AuthUrl))
             {
-                ODataCmdlet.CurrentEnvironmentParameters.AuthUrl = this.AuthUrl;
+                ODataCmdletBase.CurrentEnvironmentParameters.AuthUrl = this.AuthUrl;
             }
 
             // Graph resource ID
             if (!string.IsNullOrEmpty(this.GraphResourceId))
             {
-                ODataCmdlet.CurrentEnvironmentParameters.ResourceId = this.GraphResourceId;
+                ODataCmdletBase.CurrentEnvironmentParameters.ResourceId = this.GraphResourceId;
             }
 
             // Graph base URL
             if (!string.IsNullOrEmpty(this.GraphBaseUrl))
             {
-                ODataCmdlet.CurrentEnvironmentParameters.GraphBaseAddress = this.GraphBaseUrl;
+                ODataCmdletBase.CurrentEnvironmentParameters.GraphBaseAddress = this.GraphBaseUrl;
             }
         }
     }
@@ -364,7 +364,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet(
         CmdletVerb, CmdletNoun,
         ConfirmImpact = ConfirmImpact.Low)]
-    public class InvokeRequest : ODataCmdlet
+    public class InvokeRequest : ODataCmdletBase
     {
         /// <summary>
         /// Cmdlet name's verb.
