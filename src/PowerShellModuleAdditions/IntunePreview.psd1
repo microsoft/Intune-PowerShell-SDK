@@ -42,7 +42,7 @@
     RootModule = 'Microsoft.Intune.PowerShellGraphSDK.dll'
     
     # Version number of this module.
-    ModuleVersion = '6.1806.0.0'
+    ModuleVersion = '6.1807.0.0'
     
     # ID used to uniquely identify this module
     GUID = 'A720591A-2D56-4570-B362-E15B84C4CD63'
