@@ -9,7 +9,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceCompliancePolicy&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">This is the base class for Compliance policy. Compliance policies are platform specific and individual per-platform compliance policies inherit from here. </para>
     /// </summary>
-    [Cmdlet("New", "DeviceCompliancePolicyObject", DefaultParameterSetName = @"#microsoft.graph.androidCompliancePolicy")]
+    [Cmdlet("New", "DeviceCompliancePolicyObject", DefaultParameterSetName = @"#microsoft.graph.deviceCompliancePolicy")]
     [ODataType("microsoft.graph.deviceCompliancePolicy")]
     public class New_DeviceCompliancePolicyObject : ObjectFactoryCmdletBase
     {

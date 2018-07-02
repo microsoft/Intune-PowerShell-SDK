@@ -9,7 +9,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.roleAssignment&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">The Role Assignment resource. Role assignments tie together a role definition with members and scopes. There can be one or more role assignments per role. This applies to custom and built-in roles.</para>
     /// </summary>
-    [Cmdlet("New", "RoleAssignmentObject", DefaultParameterSetName = @"#microsoft.graph.deviceAndAppManagementRoleAssignment")]
+    [Cmdlet("New", "RoleAssignmentObject", DefaultParameterSetName = @"#microsoft.graph.roleAssignment")]
     [ODataType("microsoft.graph.roleAssignment")]
     public class New_RoleAssignmentObject : ObjectFactoryCmdletBase
     {

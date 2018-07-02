@@ -169,7 +169,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object to the &quot;mobileAppConfigurations&quot; collection.</para>
     ///     <para type="description">The Managed Device Mobile Application Configurations.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceAppManagement_MobileAppConfigurations", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"#microsoft.graph.iosMobileAppConfiguration")]
+    [Cmdlet("New", "DeviceAppManagement_MobileAppConfigurations", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfiguration")]
     [ResourceReference]
     public class New_DeviceAppManagement_MobileAppConfigurations : PostCmdlet
@@ -354,7 +354,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.</para>
     ///     <para type="description">The Managed Device Mobile Application Configurations.</para>
     /// </summary>
-    [Cmdlet("Update", "DeviceAppManagement_MobileAppConfigurations", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.iosMobileAppConfiguration")]
+    [Cmdlet("Update", "DeviceAppManagement_MobileAppConfigurations", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfiguration")]
     [ResourceIdPropertyName("mobileAppConfigurationId")]
     public class Update_DeviceAppManagement_MobileAppConfigurations : PatchCmdlet

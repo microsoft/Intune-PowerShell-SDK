@@ -10,7 +10,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The ManagedAppEntity is the base entity type for all other entity types under app management workflow.</para>
     ///     <para type="description">The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization.</para>
     /// </summary>
-    [Cmdlet("New", "ManagedAppRegistrationObject", DefaultParameterSetName = @"#microsoft.graph.iosManagedAppRegistration")]
+    [Cmdlet("New", "ManagedAppRegistrationObject", DefaultParameterSetName = @"#microsoft.graph.managedAppRegistration")]
     [ODataType("microsoft.graph.managedAppRegistration")]
     public class New_ManagedAppRegistrationObject : ObjectFactoryCmdletBase
     {

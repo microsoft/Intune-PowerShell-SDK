@@ -9,7 +9,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceConfiguration&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Device Configuration.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceConfigurationObject", DefaultParameterSetName = @"#microsoft.graph.androidCustomConfiguration")]
+    [Cmdlet("New", "DeviceConfigurationObject", DefaultParameterSetName = @"#microsoft.graph.deviceConfiguration")]
     [ODataType("microsoft.graph.deviceConfiguration")]
     public class New_DeviceConfigurationObject : ObjectFactoryCmdletBase
     {

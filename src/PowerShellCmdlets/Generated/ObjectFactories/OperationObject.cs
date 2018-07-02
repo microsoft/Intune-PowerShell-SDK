@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.operation&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.operation&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "OperationObject", DefaultParameterSetName = @"#microsoft.graph.onenoteOperation")]
+    [Cmdlet("New", "OperationObject", DefaultParameterSetName = @"#microsoft.graph.operation")]
     [ODataType("microsoft.graph.operation")]
     public class New_OperationObject : ObjectFactoryCmdletBase
     {

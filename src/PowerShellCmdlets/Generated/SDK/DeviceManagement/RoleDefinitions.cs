@@ -86,7 +86,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.roleDefinition&quot; object to the &quot;roleDefinitions&quot; collection.</para>
     ///     <para type="description">The Role Definitions.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceManagement_RoleDefinitions", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"#microsoft.graph.deviceAndAppManagementRoleDefinition")]
+    [Cmdlet("New", "DeviceManagement_RoleDefinitions", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.roleDefinition")]
     [ResourceReference]
     public class New_DeviceManagement_RoleDefinitions : PostCmdlet
@@ -181,7 +181,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.</para>
     ///     <para type="description">The Role Definitions.</para>
     /// </summary>
-    [Cmdlet("Update", "DeviceManagement_RoleDefinitions", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.deviceAndAppManagementRoleDefinition")]
+    [Cmdlet("Update", "DeviceManagement_RoleDefinitions", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.roleDefinition")]
     [ResourceIdPropertyName("roleDefinitionId")]
     public class Update_DeviceManagement_RoleDefinitions : PatchCmdlet

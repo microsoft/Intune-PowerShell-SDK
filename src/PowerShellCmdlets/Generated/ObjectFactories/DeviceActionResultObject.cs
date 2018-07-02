@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.deviceActionResult&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceActionResult&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "DeviceActionResultObject", DefaultParameterSetName = @"#microsoft.graph.windowsDefenderScanActionResult")]
+    [Cmdlet("New", "DeviceActionResultObject", DefaultParameterSetName = @"#microsoft.graph.deviceActionResult")]
     [ODataType("microsoft.graph.deviceActionResult")]
     public class New_DeviceActionResultObject : ObjectFactoryCmdletBase
     {

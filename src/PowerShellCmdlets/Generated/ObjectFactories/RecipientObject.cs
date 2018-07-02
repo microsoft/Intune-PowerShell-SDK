@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.recipient&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.recipient&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "RecipientObject", DefaultParameterSetName = @"#microsoft.graph.attendee")]
+    [Cmdlet("New", "RecipientObject", DefaultParameterSetName = @"#microsoft.graph.recipient")]
     [ODataType("microsoft.graph.recipient")]
     public class New_RecipientObject : ObjectFactoryCmdletBase
     {

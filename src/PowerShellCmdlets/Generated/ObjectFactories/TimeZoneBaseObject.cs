@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.timeZoneBase&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.timeZoneBase&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "TimeZoneBaseObject", DefaultParameterSetName = @"#microsoft.graph.customTimeZone")]
+    [Cmdlet("New", "TimeZoneBaseObject", DefaultParameterSetName = @"#microsoft.graph.timeZoneBase")]
     [ODataType("microsoft.graph.timeZoneBase")]
     public class New_TimeZoneBaseObject : ObjectFactoryCmdletBase
     {

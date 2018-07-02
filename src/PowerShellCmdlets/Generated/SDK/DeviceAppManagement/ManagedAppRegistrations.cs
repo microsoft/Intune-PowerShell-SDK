@@ -186,7 +186,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.managedAppRegistration&quot; object to the &quot;managedAppRegistrations&quot; collection.</para>
     ///     <para type="description">The managed app registrations.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceAppManagement_ManagedAppRegistrations", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"#microsoft.graph.iosManagedAppRegistration")]
+    [Cmdlet("New", "DeviceAppManagement_ManagedAppRegistrations", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedAppRegistration")]
     [ResourceReference]
     public class New_DeviceAppManagement_ManagedAppRegistrations : PostCmdlet
@@ -422,7 +422,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.</para>
     ///     <para type="description">The managed app registrations.</para>
     /// </summary>
-    [Cmdlet("Update", "DeviceAppManagement_ManagedAppRegistrations", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.iosManagedAppRegistration")]
+    [Cmdlet("Update", "DeviceAppManagement_ManagedAppRegistrations", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.managedAppRegistration")]
     [ResourceIdPropertyName("managedAppRegistrationId")]
     public class Update_DeviceAppManagement_ManagedAppRegistrations : PatchCmdlet

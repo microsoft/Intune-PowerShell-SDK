@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.edgeSearchEngineBase&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.edgeSearchEngineBase&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "EdgeSearchEngineBaseObject", DefaultParameterSetName = @"#microsoft.graph.edgeSearchEngineCustom")]
+    [Cmdlet("New", "EdgeSearchEngineBaseObject", DefaultParameterSetName = @"#microsoft.graph.edgeSearchEngineBase")]
     [ODataType("microsoft.graph.edgeSearchEngineBase")]
     public class New_EdgeSearchEngineBaseObject : ObjectFactoryCmdletBase
     {

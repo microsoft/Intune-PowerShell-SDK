@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.domainDnsRecord&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.domainDnsRecord&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "DomainDnsRecordObject", DefaultParameterSetName = @"#microsoft.graph.domainDnsCnameRecord")]
+    [Cmdlet("New", "DomainDnsRecordObject", DefaultParameterSetName = @"#microsoft.graph.domainDnsRecord")]
     [ODataType("microsoft.graph.domainDnsRecord")]
     public class New_DomainDnsRecordObject : ObjectFactoryCmdletBase
     {

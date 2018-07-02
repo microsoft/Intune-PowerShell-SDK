@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.outlookItem&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.outlookItem&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "OutlookItemObject", DefaultParameterSetName = @"#microsoft.graph.event")]
+    [Cmdlet("New", "OutlookItemObject", DefaultParameterSetName = @"#microsoft.graph.outlookItem")]
     [ODataType("microsoft.graph.outlookItem")]
     public class New_OutlookItemObject : ObjectFactoryCmdletBase
     {

@@ -9,7 +9,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Event representing an general failure.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceManagementTroubleshootingEventObject", DefaultParameterSetName = @"#microsoft.graph.enrollmentTroubleshootingEvent")]
+    [Cmdlet("New", "DeviceManagementTroubleshootingEventObject", DefaultParameterSetName = @"#microsoft.graph.deviceManagementTroubleshootingEvent")]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent")]
     public class New_DeviceManagementTroubleshootingEventObject : ObjectFactoryCmdletBase
     {

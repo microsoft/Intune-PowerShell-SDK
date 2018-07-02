@@ -95,7 +95,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.roleAssignment&quot; object to the &quot;roleAssignments&quot; collection.</para>
     ///     <para type="description">List of Role assignments for this role definition.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceManagement_RoleDefinitions_RoleAssignments", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"#microsoft.graph.deviceAndAppManagementRoleAssignment")]
+    [Cmdlet("New", "DeviceManagement_RoleDefinitions_RoleAssignments", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.roleAssignment")]
     [ResourceReference]
     public class New_DeviceManagement_RoleDefinitions_RoleAssignments : PostCmdlet
@@ -197,7 +197,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.roleAssignment&quot; object in the &quot;roleAssignments&quot; collection.</para>
     ///     <para type="description">List of Role assignments for this role definition.</para>
     /// </summary>
-    [Cmdlet("Update", "DeviceManagement_RoleDefinitions_RoleAssignments", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.deviceAndAppManagementRoleAssignment")]
+    [Cmdlet("Update", "DeviceManagement_RoleDefinitions_RoleAssignments", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.roleAssignment")]
     [ResourceIdPropertyName("roleAssignmentId")]
     public class Update_DeviceManagement_RoleDefinitions_RoleAssignments : PatchCmdlet

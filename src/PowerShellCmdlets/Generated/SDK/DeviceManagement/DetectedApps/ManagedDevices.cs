@@ -529,15 +529,15 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="synopsis">Retrieves &quot;microsoft.graph.managedDevice&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/detectedApps/{detectedAppId}/managedDevices</para>
-    ///     <para type="description">Retrieves &quot;microsoft.graph.managedDevice&quot; objects in the &quot;managedDevices&quot; collection.</para>
+    ///     <para type="synopsis">Retrieves &quot;microsoft.graph.managedDevice&quot; object references.</para>
+    ///     <para type="description">GET ~/deviceManagement/detectedApps/{detectedAppId}/managedDevices/$ref</para>
+    ///     <para type="description">Retrieves &quot;microsoft.graph.managedDevice&quot; object references in the &quot;managedDevices&quot; collection.</para>
     ///     <para type="description">The devices that have the discovered application installed</para>
     /// </summary>
-    [Cmdlet("Get", "DeviceManagement_DetectedApps_ManagedDeviceReferences", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_DetectedApps_ManagedDevicesReferences", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceIdPropertyName("managedDeviceId")]
-    public class Get_DeviceManagement_DetectedApps_ManagedDeviceReferences : GetOrSearchCmdlet
+    public class Get_DeviceManagement_DetectedApps_ManagedDevicesReferences : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.</para>
@@ -1058,10 +1058,10 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a reference from the specified &quot;detectedApp&quot; object to a &quot;managedDevice&quot;.</para>
     ///     <para type="description">The devices that have the discovered application installed</para>
     /// </summary>
-    [Cmdlet("New", "DeviceManagement_DetectedApps_ManagedDeviceReferences", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "DeviceManagement_DetectedApps_ManagedDevicesReferences", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceIdPropertyName("managedDeviceReferenceUrl")]
-    public class New_DeviceManagement_DetectedApps_ManagedDeviceReferences : PostReferenceToCollectionCmdlet
+    public class New_DeviceManagement_DetectedApps_ManagedDevicesReferences : PostReferenceToCollectionCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.</para>
@@ -1096,10 +1096,10 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a reference from the specified &quot;detectedApp&quot; object to a &quot;managedDevice&quot;.</para>
     ///     <para type="description">The devices that have the discovered application installed</para>
     /// </summary>
-    [Cmdlet("Remove", "DeviceManagement_DetectedApps_ManagedDeviceReferences", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_DetectedApps_ManagedDevicesReferences", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceIdPropertyName("managedDeviceId")]
-    public class Remove_DeviceManagement_DetectedApps_ManagedDeviceReferences : DeleteCmdlet
+    public class Remove_DeviceManagement_DetectedApps_ManagedDevicesReferences : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>

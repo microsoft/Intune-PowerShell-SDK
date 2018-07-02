@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.windowsUpdateInstallScheduleType&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.windowsUpdateInstallScheduleType&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WindowsUpdateInstallScheduleTypeObject", DefaultParameterSetName = @"#microsoft.graph.windowsUpdateScheduledInstall")]
+    [Cmdlet("New", "WindowsUpdateInstallScheduleTypeObject", DefaultParameterSetName = @"#microsoft.graph.windowsUpdateInstallScheduleType")]
     [ODataType("microsoft.graph.windowsUpdateInstallScheduleType")]
     public class New_WindowsUpdateInstallScheduleTypeObject : ObjectFactoryCmdletBase
     {

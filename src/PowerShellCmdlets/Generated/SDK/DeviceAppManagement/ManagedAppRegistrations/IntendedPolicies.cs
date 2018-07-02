@@ -909,7 +909,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.managedAppPolicy&quot; object to the &quot;intendedPolicies&quot; collection.</para>
     ///     <para type="description">Zero or more policies admin intended for the app as of now.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceAppManagement_ManagedAppRegistrations_IntendedPolicies", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"#microsoft.graph.iosManagedAppProtection")]
+    [Cmdlet("New", "DeviceAppManagement_ManagedAppRegistrations_IntendedPolicies", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedAppPolicy")]
     [ResourceReference]
     public class New_DeviceAppManagement_ManagedAppRegistrations_IntendedPolicies : PostCmdlet
@@ -2149,7 +2149,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;intendedPolicies&quot; collection.</para>
     ///     <para type="description">Zero or more policies admin intended for the app as of now.</para>
     /// </summary>
-    [Cmdlet("Update", "DeviceAppManagement_ManagedAppRegistrations_IntendedPolicies", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.iosManagedAppProtection")]
+    [Cmdlet("Update", "DeviceAppManagement_ManagedAppRegistrations_IntendedPolicies", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.managedAppPolicy")]
     [ResourceIdPropertyName("intendedPolicyId")]
     public class Update_DeviceAppManagement_ManagedAppRegistrations_IntendedPolicies : PatchCmdlet

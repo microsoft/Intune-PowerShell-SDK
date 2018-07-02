@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.mobileAppAssignmentSettings&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.mobileAppAssignmentSettings&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "MobileAppAssignmentSettingsObject", DefaultParameterSetName = @"#microsoft.graph.iosLobAppAssignmentSettings")]
+    [Cmdlet("New", "MobileAppAssignmentSettingsObject", DefaultParameterSetName = @"#microsoft.graph.mobileAppAssignmentSettings")]
     [ODataType("microsoft.graph.mobileAppAssignmentSettings")]
     public class New_MobileAppAssignmentSettingsObject : ObjectFactoryCmdletBase
     {

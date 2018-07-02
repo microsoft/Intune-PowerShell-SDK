@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.windowsDeviceAccount&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.windowsDeviceAccount&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WindowsDeviceAccountObject", DefaultParameterSetName = @"#microsoft.graph.windowsDeviceADAccount")]
+    [Cmdlet("New", "WindowsDeviceAccountObject", DefaultParameterSetName = @"#microsoft.graph.windowsDeviceAccount")]
     [ODataType("microsoft.graph.windowsDeviceAccount")]
     public class New_WindowsDeviceAccountObject : ObjectFactoryCmdletBase
     {

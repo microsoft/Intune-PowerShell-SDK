@@ -68,7 +68,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.managedAppStatus&quot; object to the &quot;managedAppStatuses&quot; collection.</para>
     ///     <para type="description">The managed app statuses.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceAppManagement_ManagedAppStatuses", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"#microsoft.graph.managedAppStatusRaw")]
+    [Cmdlet("New", "DeviceAppManagement_ManagedAppStatuses", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedAppStatus")]
     [ResourceReference]
     public class New_DeviceAppManagement_ManagedAppStatuses : PostCmdlet
@@ -128,7 +128,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.managedAppStatus&quot; object in the &quot;managedAppStatuses&quot; collection.</para>
     ///     <para type="description">The managed app statuses.</para>
     /// </summary>
-    [Cmdlet("Update", "DeviceAppManagement_ManagedAppStatuses", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.managedAppStatusRaw")]
+    [Cmdlet("Update", "DeviceAppManagement_ManagedAppStatuses", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.managedAppStatus")]
     [ResourceIdPropertyName("managedAppStatusId")]
     public class Update_DeviceAppManagement_ManagedAppStatuses : PatchCmdlet

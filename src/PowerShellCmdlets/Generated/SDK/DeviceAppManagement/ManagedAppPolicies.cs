@@ -901,7 +901,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.managedAppPolicy&quot; object to the &quot;managedAppPolicies&quot; collection.</para>
     ///     <para type="description">Managed app policies.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceAppManagement_ManagedAppPolicies", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"#microsoft.graph.iosManagedAppProtection")]
+    [Cmdlet("New", "DeviceAppManagement_ManagedAppPolicies", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedAppPolicy")]
     [ResourceReference]
     public class New_DeviceAppManagement_ManagedAppPolicies : PostCmdlet
@@ -2133,7 +2133,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;managedAppPolicies&quot; collection.</para>
     ///     <para type="description">Managed app policies.</para>
     /// </summary>
-    [Cmdlet("Update", "DeviceAppManagement_ManagedAppPolicies", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.iosManagedAppProtection")]
+    [Cmdlet("Update", "DeviceAppManagement_ManagedAppPolicies", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.managedAppPolicy")]
     [ResourceIdPropertyName("managedAppPolicyId")]
     public class Update_DeviceAppManagement_ManagedAppPolicies : PatchCmdlet

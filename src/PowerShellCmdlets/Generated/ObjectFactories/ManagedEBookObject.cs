@@ -9,7 +9,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.managedEBook&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">An abstract class containing the base properties for Managed eBook.</para>
     /// </summary>
-    [Cmdlet("New", "ManagedEBookObject", DefaultParameterSetName = @"#microsoft.graph.iosVppEBook")]
+    [Cmdlet("New", "ManagedEBookObject", DefaultParameterSetName = @"#microsoft.graph.managedEBook")]
     [ODataType("microsoft.graph.managedEBook")]
     public class New_ManagedEBookObject : ObjectFactoryCmdletBase
     {

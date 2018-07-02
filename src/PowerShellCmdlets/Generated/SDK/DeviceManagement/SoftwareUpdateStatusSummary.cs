@@ -171,9 +171,9 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="synopsis">Retrieves the &quot;softwareUpdateStatusSummary&quot; object.</para>
-    ///     <para type="description">GET ~/deviceManagement/softwareUpdateStatusSummary</para>
-    ///     <para type="description">Retrieves the &quot;softwareUpdateStatusSummary&quot; object (which is of type &quot;microsoft.graph.softwareUpdateStatusSummary&quot;).</para>
+    ///     <para type="synopsis">Retrieves the &quot;softwareUpdateStatusSummary&quot; object reference.</para>
+    ///     <para type="description">GET ~/deviceManagement/softwareUpdateStatusSummary/$ref</para>
+    ///     <para type="description">Retrieves the &quot;softwareUpdateStatusSummary&quot; object reference (which is of type &quot;microsoft.graph.softwareUpdateStatusSummary&quot;).</para>
     ///     <para type="description">The software update status summary.</para>
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_SoftwareUpdateStatusSummaryReference", DefaultParameterSetName = @"Get")]

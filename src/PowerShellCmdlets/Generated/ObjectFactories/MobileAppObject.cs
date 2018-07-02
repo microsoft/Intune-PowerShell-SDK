@@ -9,7 +9,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.mobileApp&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">An abstract class containing the base properties for Intune mobile apps.</para>
     /// </summary>
-    [Cmdlet("New", "MobileAppObject", DefaultParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp")]
+    [Cmdlet("New", "MobileAppObject", DefaultParameterSetName = @"#microsoft.graph.mobileApp")]
     [ODataType("microsoft.graph.mobileApp")]
     public class New_MobileAppObject : ObjectFactoryCmdletBase
     {

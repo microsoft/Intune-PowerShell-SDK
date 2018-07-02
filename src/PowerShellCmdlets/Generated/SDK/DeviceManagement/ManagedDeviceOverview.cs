@@ -71,9 +71,9 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="synopsis">Retrieves the &quot;managedDeviceOverview&quot; object.</para>
-    ///     <para type="description">GET ~/deviceManagement/managedDeviceOverview</para>
-    ///     <para type="description">Retrieves the &quot;managedDeviceOverview&quot; object (which is of type &quot;microsoft.graph.managedDeviceOverview&quot;).</para>
+    ///     <para type="synopsis">Retrieves the &quot;managedDeviceOverview&quot; object reference.</para>
+    ///     <para type="description">GET ~/deviceManagement/managedDeviceOverview/$ref</para>
+    ///     <para type="description">Retrieves the &quot;managedDeviceOverview&quot; object reference (which is of type &quot;microsoft.graph.managedDeviceOverview&quot;).</para>
     ///     <para type="description">Device overview</para>
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_ManagedDeviceOverviewReference", DefaultParameterSetName = @"Get")]

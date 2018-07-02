@@ -281,7 +281,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object to the &quot;deviceEnrollmentConfigurations&quot; collection.</para>
     ///     <para type="description">The list of device enrollment configurations</para>
     /// </summary>
-    [Cmdlet("New", "DeviceManagement_DeviceEnrollmentConfigurations", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration")]
+    [Cmdlet("New", "DeviceManagement_DeviceEnrollmentConfigurations", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.deviceEnrollmentConfiguration")]
     [ResourceReference]
     public class New_DeviceManagement_DeviceEnrollmentConfigurations : PostCmdlet
@@ -615,7 +615,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object in the &quot;deviceEnrollmentConfigurations&quot; collection.</para>
     ///     <para type="description">The list of device enrollment configurations</para>
     /// </summary>
-    [Cmdlet("Update", "DeviceManagement_DeviceEnrollmentConfigurations", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration")]
+    [Cmdlet("Update", "DeviceManagement_DeviceEnrollmentConfigurations", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.deviceEnrollmentConfiguration")]
     [ResourceIdPropertyName("deviceEnrollmentConfigurationId")]
     public class Update_DeviceManagement_DeviceEnrollmentConfigurations : PatchCmdlet

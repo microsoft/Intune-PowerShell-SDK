@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.onenoteEntityBaseModel&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.onenoteEntityBaseModel&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "OnenoteEntityBaseModelObject", DefaultParameterSetName = @"#microsoft.graph.notebook")]
+    [Cmdlet("New", "OnenoteEntityBaseModelObject", DefaultParameterSetName = @"#microsoft.graph.onenoteEntityBaseModel")]
     [ODataType("microsoft.graph.onenoteEntityBaseModel")]
     public class New_OnenoteEntityBaseModelObject : ObjectFactoryCmdletBase
     {

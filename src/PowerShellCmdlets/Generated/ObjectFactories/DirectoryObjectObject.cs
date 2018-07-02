@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.directoryObject&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.directoryObject&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "DirectoryObjectObject", DefaultParameterSetName = @"#microsoft.graph.device")]
+    [Cmdlet("New", "DirectoryObjectObject", DefaultParameterSetName = @"#microsoft.graph.directoryObject")]
     [ODataType("microsoft.graph.directoryObject")]
     public class New_DirectoryObjectObject : ObjectFactoryCmdletBase
     {

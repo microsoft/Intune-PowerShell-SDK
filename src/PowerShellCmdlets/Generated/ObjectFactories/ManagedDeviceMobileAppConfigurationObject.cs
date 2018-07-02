@@ -9,7 +9,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">An abstract class for Mobile app configuration for enrolled devices.</para>
     /// </summary>
-    [Cmdlet("New", "ManagedDeviceMobileAppConfigurationObject", DefaultParameterSetName = @"#microsoft.graph.iosMobileAppConfiguration")]
+    [Cmdlet("New", "ManagedDeviceMobileAppConfigurationObject", DefaultParameterSetName = @"#microsoft.graph.managedDeviceMobileAppConfiguration")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfiguration")]
     public class New_ManagedDeviceMobileAppConfigurationObject : ObjectFactoryCmdletBase
     {

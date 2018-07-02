@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.educationOrganization&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.educationOrganization&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "EducationOrganizationObject", DefaultParameterSetName = @"#microsoft.graph.educationSchool")]
+    [Cmdlet("New", "EducationOrganizationObject", DefaultParameterSetName = @"#microsoft.graph.educationOrganization")]
     [ODataType("microsoft.graph.educationOrganization")]
     public class New_EducationOrganizationObject : ObjectFactoryCmdletBase
     {

@@ -9,7 +9,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.managedAppPolicy&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">The ManagedAppPolicy resource represents a base type for platform specific policies.</para>
     /// </summary>
-    [Cmdlet("New", "ManagedAppPolicyObject", DefaultParameterSetName = @"#microsoft.graph.iosManagedAppProtection")]
+    [Cmdlet("New", "ManagedAppPolicyObject", DefaultParameterSetName = @"#microsoft.graph.managedAppPolicy")]
     [ODataType("microsoft.graph.managedAppPolicy")]
     public class New_ManagedAppPolicyObject : ObjectFactoryCmdletBase
     {

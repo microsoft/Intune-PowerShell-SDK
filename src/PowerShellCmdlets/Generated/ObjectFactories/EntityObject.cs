@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.entity&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.entity&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "EntityObject", DefaultParameterSetName = @"#microsoft.graph.directory")]
+    [Cmdlet("New", "EntityObject", DefaultParameterSetName = @"#microsoft.graph.entity")]
     [ODataType("microsoft.graph.entity")]
     public class New_EntityObject : ObjectFactoryCmdletBase
     {

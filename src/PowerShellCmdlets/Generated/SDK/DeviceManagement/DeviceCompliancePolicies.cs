@@ -621,7 +621,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceCompliancePolicy&quot; object to the &quot;deviceCompliancePolicies&quot; collection.</para>
     ///     <para type="description">The device compliance policies.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceManagement_DeviceCompliancePolicies", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"#microsoft.graph.androidCompliancePolicy")]
+    [Cmdlet("New", "DeviceManagement_DeviceCompliancePolicies", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.deviceCompliancePolicy")]
     [ResourceReference]
     public class New_DeviceManagement_DeviceCompliancePolicies : PostCmdlet
@@ -1453,7 +1453,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceCompliancePolicy&quot; object in the &quot;deviceCompliancePolicies&quot; collection.</para>
     ///     <para type="description">The device compliance policies.</para>
     /// </summary>
-    [Cmdlet("Update", "DeviceManagement_DeviceCompliancePolicies", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.androidCompliancePolicy")]
+    [Cmdlet("Update", "DeviceManagement_DeviceCompliancePolicies", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.deviceCompliancePolicy")]
     [ResourceIdPropertyName("deviceCompliancePolicyId")]
     public class Update_DeviceManagement_DeviceCompliancePolicies : PatchCmdlet

@@ -9,7 +9,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.managedEBookAssignment&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Contains properties used to assign a eBook to a group.</para>
     /// </summary>
-    [Cmdlet("New", "ManagedEBookAssignmentObject", DefaultParameterSetName = @"#microsoft.graph.iosVppEBookAssignment")]
+    [Cmdlet("New", "ManagedEBookAssignmentObject", DefaultParameterSetName = @"#microsoft.graph.managedEBookAssignment")]
     [ODataType("microsoft.graph.managedEBookAssignment")]
     public class New_ManagedEBookAssignmentObject : ObjectFactoryCmdletBase
     {

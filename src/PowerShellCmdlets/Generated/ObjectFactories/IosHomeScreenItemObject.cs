@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.iosHomeScreenItem&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.iosHomeScreenItem&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "IosHomeScreenItemObject", DefaultParameterSetName = @"#microsoft.graph.iosHomeScreenFolder")]
+    [Cmdlet("New", "IosHomeScreenItemObject", DefaultParameterSetName = @"#microsoft.graph.iosHomeScreenItem")]
     [ODataType("microsoft.graph.iosHomeScreenItem")]
     public class New_IosHomeScreenItemObject : ObjectFactoryCmdletBase
     {

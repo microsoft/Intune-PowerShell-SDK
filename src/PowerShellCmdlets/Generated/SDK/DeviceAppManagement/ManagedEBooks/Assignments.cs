@@ -65,7 +65,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.managedEBookAssignment&quot; object to the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of assignments for this eBook.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceAppManagement_ManagedEBooks_Assignments", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"#microsoft.graph.iosVppEBookAssignment")]
+    [Cmdlet("New", "DeviceAppManagement_ManagedEBooks_Assignments", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedEBookAssignment")]
     [ResourceReference]
     public class New_DeviceAppManagement_ManagedEBooks_Assignments : PostCmdlet
@@ -134,7 +134,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.managedEBookAssignment&quot; object in the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of assignments for this eBook.</para>
     /// </summary>
-    [Cmdlet("Update", "DeviceAppManagement_ManagedEBooks_Assignments", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.iosVppEBookAssignment")]
+    [Cmdlet("Update", "DeviceAppManagement_ManagedEBooks_Assignments", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.managedEBookAssignment")]
     [ResourceIdPropertyName("assignmentId")]
     public class Update_DeviceAppManagement_ManagedEBooks_Assignments : PatchCmdlet

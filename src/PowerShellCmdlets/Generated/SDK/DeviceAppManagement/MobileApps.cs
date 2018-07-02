@@ -616,7 +616,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.mobileApp&quot; object to the &quot;mobileApps&quot; collection.</para>
     ///     <para type="description">The mobile apps.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceAppManagement_MobileApps", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp")]
+    [Cmdlet("New", "DeviceAppManagement_MobileApps", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.mobileApp")]
     [ResourceReference]
     public class New_DeviceAppManagement_MobileApps : PostCmdlet
@@ -1689,7 +1689,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
     ///     <para type="description">The mobile apps.</para>
     /// </summary>
-    [Cmdlet("Update", "DeviceAppManagement_MobileApps", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp")]
+    [Cmdlet("Update", "DeviceAppManagement_MobileApps", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.mobileApp")]
     [ResourceIdPropertyName("mobileAppId")]
     public class Update_DeviceAppManagement_MobileApps : PatchCmdlet

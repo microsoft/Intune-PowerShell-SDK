@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.attachment&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.attachment&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "AttachmentObject", DefaultParameterSetName = @"#microsoft.graph.fileAttachment")]
+    [Cmdlet("New", "AttachmentObject", DefaultParameterSetName = @"#microsoft.graph.attachment")]
     [ODataType("microsoft.graph.attachment")]
     public class New_AttachmentObject : ObjectFactoryCmdletBase
     {

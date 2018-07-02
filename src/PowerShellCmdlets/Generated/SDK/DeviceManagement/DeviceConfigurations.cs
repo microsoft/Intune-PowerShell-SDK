@@ -5537,7 +5537,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceConfiguration&quot; object to the &quot;deviceConfigurations&quot; collection.</para>
     ///     <para type="description">The device configurations.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceManagement_DeviceConfigurations", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"#microsoft.graph.androidCustomConfiguration")]
+    [Cmdlet("New", "DeviceManagement_DeviceConfigurations", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.deviceConfiguration")]
     [ResourceReference]
     public class New_DeviceManagement_DeviceConfigurations : PostCmdlet
@@ -11829,7 +11829,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceConfiguration&quot; object in the &quot;deviceConfigurations&quot; collection.</para>
     ///     <para type="description">The device configurations.</para>
     /// </summary>
-    [Cmdlet("Update", "DeviceManagement_DeviceConfigurations", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.androidCustomConfiguration")]
+    [Cmdlet("Update", "DeviceManagement_DeviceConfigurations", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.deviceConfiguration")]
     [ResourceIdPropertyName("deviceConfigurationId")]
     public class Update_DeviceManagement_DeviceConfigurations : PatchCmdlet

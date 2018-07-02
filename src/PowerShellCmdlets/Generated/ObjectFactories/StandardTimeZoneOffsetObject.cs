@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.standardTimeZoneOffset&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.standardTimeZoneOffset&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "StandardTimeZoneOffsetObject", DefaultParameterSetName = @"#microsoft.graph.daylightTimeZoneOffset")]
+    [Cmdlet("New", "StandardTimeZoneOffsetObject", DefaultParameterSetName = @"#microsoft.graph.standardTimeZoneOffset")]
     [ODataType("microsoft.graph.standardTimeZoneOffset")]
     public class New_StandardTimeZoneOffsetObject : ObjectFactoryCmdletBase
     {

@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "DeviceEnrollmentConfigurationObject", DefaultParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration")]
+    [Cmdlet("New", "DeviceEnrollmentConfigurationObject", DefaultParameterSetName = @"#microsoft.graph.deviceEnrollmentConfiguration")]
     [ODataType("microsoft.graph.deviceEnrollmentConfiguration")]
     public class New_DeviceEnrollmentConfigurationObject : ObjectFactoryCmdletBase
     {

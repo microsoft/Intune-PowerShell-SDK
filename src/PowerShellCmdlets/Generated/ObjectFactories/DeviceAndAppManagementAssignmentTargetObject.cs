@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "DeviceAndAppManagementAssignmentTargetObject", DefaultParameterSetName = @"#microsoft.graph.allLicensedUsersAssignmentTarget")]
+    [Cmdlet("New", "DeviceAndAppManagementAssignmentTargetObject", DefaultParameterSetName = @"#microsoft.graph.deviceAndAppManagementAssignmentTarget")]
     [ODataType("microsoft.graph.deviceAndAppManagementAssignmentTarget")]
     public class New_DeviceAndAppManagementAssignmentTargetObject : ObjectFactoryCmdletBase
     {

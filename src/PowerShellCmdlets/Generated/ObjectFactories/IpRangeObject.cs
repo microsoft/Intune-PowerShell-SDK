@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.ipRange&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.ipRange&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "IpRangeObject", DefaultParameterSetName = @"#microsoft.graph.iPv6Range")]
+    [Cmdlet("New", "IpRangeObject", DefaultParameterSetName = @"#microsoft.graph.ipRange")]
     [ODataType("microsoft.graph.ipRange")]
     public class New_IpRangeObject : ObjectFactoryCmdletBase
     {

@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.baseItem&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.baseItem&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "BaseItemObject", DefaultParameterSetName = @"#microsoft.graph.drive")]
+    [Cmdlet("New", "BaseItemObject", DefaultParameterSetName = @"#microsoft.graph.baseItem")]
     [ODataType("microsoft.graph.baseItem")]
     public class New_BaseItemObject : ObjectFactoryCmdletBase
     {

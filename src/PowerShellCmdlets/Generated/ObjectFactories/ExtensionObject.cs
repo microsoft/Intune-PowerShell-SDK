@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.extension&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.extension&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ExtensionObject", DefaultParameterSetName = @"#microsoft.graph.openTypeExtension")]
+    [Cmdlet("New", "ExtensionObject", DefaultParameterSetName = @"#microsoft.graph.extension")]
     [ODataType("microsoft.graph.extension")]
     public class New_ExtensionObject : ObjectFactoryCmdletBase
     {

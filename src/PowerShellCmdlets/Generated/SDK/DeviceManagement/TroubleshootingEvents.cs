@@ -145,7 +145,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object to the &quot;troubleshootingEvents&quot; collection.</para>
     ///     <para type="description">The list of troubleshooting events for the tenant.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceManagement_TroubleshootingEvents", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"#microsoft.graph.enrollmentTroubleshootingEvent")]
+    [Cmdlet("New", "DeviceManagement_TroubleshootingEvents", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent")]
     [ResourceReference]
     public class New_DeviceManagement_TroubleshootingEvents : PostCmdlet
@@ -298,7 +298,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;troubleshootingEvents&quot; collection.</para>
     ///     <para type="description">The list of troubleshooting events for the tenant.</para>
     /// </summary>
-    [Cmdlet("Update", "DeviceManagement_TroubleshootingEvents", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.enrollmentTroubleshootingEvent")]
+    [Cmdlet("Update", "DeviceManagement_TroubleshootingEvents", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent")]
     [ResourceIdPropertyName("troubleshootingEventId")]
     public class Update_DeviceManagement_TroubleshootingEvents : PatchCmdlet

@@ -8,7 +8,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.mobileAppIdentifier&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.mobileAppIdentifier&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "MobileAppIdentifierObject", DefaultParameterSetName = @"#microsoft.graph.androidMobileAppIdentifier")]
+    [Cmdlet("New", "MobileAppIdentifierObject", DefaultParameterSetName = @"#microsoft.graph.mobileAppIdentifier")]
     [ODataType("microsoft.graph.mobileAppIdentifier")]
     public class New_MobileAppIdentifierObject : ObjectFactoryCmdletBase
     {

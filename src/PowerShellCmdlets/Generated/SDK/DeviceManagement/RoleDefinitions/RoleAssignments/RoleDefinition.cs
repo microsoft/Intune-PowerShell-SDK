@@ -86,9 +86,9 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="synopsis">Retrieves the &quot;roleDefinition&quot; object.</para>
-    ///     <para type="description">GET ~/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition</para>
-    ///     <para type="description">Retrieves the &quot;roleDefinition&quot; object (which is of type &quot;microsoft.graph.roleDefinition&quot;).</para>
+    ///     <para type="synopsis">Retrieves the &quot;roleDefinition&quot; object reference.</para>
+    ///     <para type="description">GET ~/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition/$ref</para>
+    ///     <para type="description">Retrieves the &quot;roleDefinition&quot; object reference (which is of type &quot;microsoft.graph.roleDefinition&quot;).</para>
     ///     <para type="description">Role definition this assignment is part of.</para>
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_RoleDefinitions_RoleAssignments_RoleDefinitionReference", DefaultParameterSetName = @"Get")]
