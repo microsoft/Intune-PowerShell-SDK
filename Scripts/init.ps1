@@ -7,7 +7,8 @@ $env:sdkDir = "$($env:generatedDir)\bin\Release"
 $env:testDir = "$($env:IntunePowerShellSDKRepoRoot)\Tests"
 $env:moduleName = 'IntunePreview'
 $env:moduleExtension = 'psd1'
-#$env:defaultGraphSchema = "$($env:IntunePowerShellSDKRepoRoot)\Test Graph Schemas\v1.0-20180406 - Intune.csdl"
+$env:sdkAssemblyName = 'Microsoft.Intune.PowerShellGraphSDK'
+
 # Remember the settings that will change when launching a child PowerShell context
 $env:standardWindowTitle = (Get-Host).UI.RawUI.WindowTitle
 $env:standardForegroundColor = (Get-Host).UI.RawUI.ForegroundColor
@@ -15,13 +16,18 @@ $env:standardBackgroundColor = (Get-Host).UI.RawUI.BackgroundColor
 
 # Scripts
 $env:buildScript = "$($env:IntunePowerShellSDKRepoRoot)\Scripts\build.ps1"
+$env:generateModuleManifestScript = "$($env:IntunePowerShellSDKRepoRoot)\Scripts\generateModuleManifest.ps1"
 $env:runScript = "$($env:IntunePowerShellSDKRepoRoot)\Scripts\run.ps1"
 $env:testScript = "$($env:IntunePowerShellSDKRepoRoot)\Scripts\test.ps1"
 
 function global:SDKBuild {
     Write-Host "Building the SDK (i.e. building the generated cmdlets)..." -f Cyan
-    Invoke-Expression "$env:buildScript -WorkingDirectory '$env:generatedDir' -OutputPath '$env:sdkDir' -Verbosity 'quiet'"
+    Invoke-Expression "$env:buildScript -WorkingDirectory '$env:generatedDir' -OutputPath '$env:sdkDir' -Verbosity 'quiet' -AssemblyName '$env:sdkAssemblyName'"
     Write-Host "Finished building the SDK" -f Cyan
+    Write-Host
+    Write-Host "Generating module manifest..." -f Cyan
+    Invoke-Expression "$env:generateModuleManifestScript"
+    Write-Host "Finished generating module manifest" -f Cyan
     Write-Host
 }
 
@@ -33,6 +39,7 @@ function global:SDKTest {
 }
 
 # Restore NuGet packages
+Set-Location $env:generatedDir
 nuget restore -Verbosity quiet
 
 Write-Host "Initialized repository." -f Green

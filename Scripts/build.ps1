@@ -5,6 +5,7 @@ param (
     [string]$MSBuildExe32 = '%ProgramFiles(x86)%\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\MSBuild.exe',
     [string]$MSBuildExe64 = '%ProgramFiles%\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\MSBuild.exe',
     [string]$Verbosity = 'minimal',
+    [string]$AssemblyName,
     [string]$GraphSchema
 )
 
@@ -54,6 +55,13 @@ $MSBuildArguments = @(
     "/v:$Verbosity",
     "/ignore:.sln"
 )
+
+# Set the assembly name if required
+if (-Not [string]::IsNullOrWhiteSpace($AssemblyName))
+{
+    $MSBuildArguments += "/p:AssemblyName=$AssemblyName"
+    $MSBuildArguments += "/p:RootNamespace=$AssemblyName"
+}
 
 # Select the default graph schema if one was not provided
 $schemaPath = $GraphSchema
