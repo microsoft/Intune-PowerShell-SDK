@@ -48,7 +48,7 @@ $allApps = Get-DeviceAppManagement_MobileApps
 # Create a reference between an app and the custom category
 Write-Host "Creating a reference between an app and the new category..."
 $app = $allApps[0]
-$appCategory | New-DeviceAppManagement_MobileApps_CategoryReferences -mobileAppId $app.id
+$appCategory | New-DeviceAppManagement_MobileApps_CategoriesReferences -mobileAppId $app.id
 
 # Get the referenced categories on this app
 Write-Host "Getting the app with categories and assignments expanded..."
@@ -56,7 +56,7 @@ $app = $app | Get-DeviceAppManagement_MobileApps -Expand assignments, categories
 
 # DELETE the reference
 Write-Host "Removing the reference between the app and the category"
-$appCategory | Remove-DeviceAppManagement_MobileApps_CategoryReferences -mobileAppId $app.id
+$appCategory | Remove-DeviceAppManagement_MobileApps_CategoriesReferences -mobileAppId $app.id
 
 # DELETE the category
 Write-Host "Deleting the category"
@@ -65,6 +65,6 @@ $appCategory | Remove-DeviceAppManagement_MobileAppCategories
 # Run some paging commands
 Write-Host "Testing paging..."
 $firstPage = Get-DeviceAppManagement_MobileApps -Top 10
-$firstPage | Get-NextPage | Out-Null
-$allApps = $firstPage | Get-AllPages
+$firstPage | Get-MSGraphNextPage | Out-Null
+$allApps = $firstPage | Get-MSGraphAllPages
 Write-Host "Found $($allApps.Count) apps"
