@@ -5,11 +5,11 @@ $env:PowerShellSDKRepoRoot = Split-Path (Split-Path $script:MyInvocation.MyComma
 $env:buildConfiguration = "Release"
 $global:allowedDotnetFrameworkVersions = @('net471', 'netstandard2.0')
 $env:dotnetFrameworkVersion = ($global:allowedDotnetFrameworkVersions)[0] # use "netstandard2.0" for cross-platform build, or "net471" for a Windows build
-$env:repoRootSlnFile = "$($env:PowerShellSDKRepoRoot)\PowerShellGraphSDKGenerator.sln"
+$env:repoRootSlnFile = "$($env:PowerShellSDKRepoRoot)\PowerShellGraphSDK.sln"
 $env:writerDir = "$($env:PowerShellSDKRepoRoot)\src\GraphODataPowerShellWriter"
 $env:writerBuildDir = "$($env:writerDir)\bin\$($env:buildConfiguration)"
 $env:generatedDir = "$($env:writerBuildDir)\output"
-$env:sdkDir = "$($env:generatedDir)\bin\$($env:buildConfiguration)\$($env:dotnetFrameworkVersion)"
+$env:sdkDir = "$($env:PowerShellSDKRepoRoot)\src"
 $env:testDir = "$($env:PowerShellSDKRepoRoot)\Tests"
 $env:moduleName = 'Intune'
 $env:moduleExtension = 'psd1'
@@ -214,18 +214,14 @@ if (-Not (Test-Path $env:dotnetInstallScript)) {
 }
 
 # Restore NuGet packages
+pushd $env:sdkDir
 dotnet restore --verbosity quiet
 nuget restore -Verbosity Quiet
 
 # Show the available functions
 Write-Host "Initialized repository." -f Green
 Write-Host "Available commands:" -f Yellow
-Write-Host "    GenerateAndRunSDK             " -NoNewline -f Cyan; Write-Host ' | ' -NoNewline -f Gray; Write-Host "Executes the commands 'GenerateSDK' and 'RunSDK' (in that order)" -f DarkCyan
-Write-Host "    GenerateSDK (or 'build')      " -NoNewline -f Cyan; Write-Host ' | ' -NoNewline -f Gray; Write-Host "Executes the commands 'BuildWriter', 'RunWriter' and 'BuildSDK' (in that order)" -f DarkCyan
-Write-Host "    BuildWriter                   " -NoNewline -f Cyan; Write-Host ' | ' -NoNewline -f Gray; Write-Host "Builds the GraphODataPowerShellSDKWriter project" -f DarkCyan
-Write-Host "    RunWriter                     " -NoNewline -f Cyan; Write-Host ' | ' -NoNewline -f Gray; Write-Host "Runs the GraphODataPowerShellSDKWriter project" -f DarkCyan
 Write-Host "    BuildSDK                      " -NoNewline -f Cyan; Write-Host ' | ' -NoNewline -f Gray; Write-Host "Builds the generated PowerShellSDK project" -f DarkCyan
 Write-Host "    RunSDK (or 'run')             " -NoNewline -f Cyan; Write-Host ' | ' -NoNewline -f Gray; Write-Host "Runs the generated PowerShellSDK project" -f DarkCyan
 Write-Host "    TestSDK (or 'test')           " -NoNewline -f Cyan; Write-Host ' | ' -NoNewline -f Gray; Write-Host "Runs tests against the generated PowerShellSDK project" -f DarkCyan
-Write-Host "    ReleaseSDK (or 'release')     " -NoNewline -f Cyan; Write-Host ' | ' -NoNewline -f Gray; Write-Host "Releases the generated SDK to https://github.com/Microsoft/Intune-PowerShell-SDK." -f DarkCyan
 Write-Host
