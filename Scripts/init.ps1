@@ -65,7 +65,7 @@ function global:BuildSDK {
     Write-Host
 
     # Generate the module manifest as part of the build for each output folder
-    Get-ChildItem (Split-Path $env:sdkDir -Parent) -Directory | ForEach-Object {
+    Get-ChildItem (Split-Path $env:sdkDir\bin\$($env:buildConfiguration)\$($env:dotnetFrameworkVersion) -Parent) -Directory | ForEach-Object {
         GenerateModuleManifest -OutputDirectory $_.FullName
     }
 }
@@ -100,7 +100,7 @@ function global:TestSDK {
         throw "The target framework must be set to one of the following: $([string]::Join(', ', $global:allowedDotnetFrameworkVersions))"
     }
 
-    $SdkDirectory = $env:sdkDir
+    $SdkDirectory = "$env:sdkDir\bin\$($env:buildConfiguration)\$($env:dotnetFrameworkVersion)"
     if ($TargetFramework -ne $env:dotnetFrameworkVersion)
     {
         $SdkDirectory = $SdkDirectory.Replace($env:dotnetFrameworkVersion, $TargetFramework)
@@ -222,6 +222,5 @@ nuget restore -Verbosity Quiet
 Write-Host "Initialized repository." -f Green
 Write-Host "Available commands:" -f Yellow
 Write-Host "    BuildSDK                      " -NoNewline -f Cyan; Write-Host ' | ' -NoNewline -f Gray; Write-Host "Builds the generated PowerShellSDK project" -f DarkCyan
-Write-Host "    RunSDK (or 'run')             " -NoNewline -f Cyan; Write-Host ' | ' -NoNewline -f Gray; Write-Host "Runs the generated PowerShellSDK project" -f DarkCyan
 Write-Host "    TestSDK (or 'test')           " -NoNewline -f Cyan; Write-Host ' | ' -NoNewline -f Gray; Write-Host "Runs tests against the generated PowerShellSDK project" -f DarkCyan
 Write-Host
