@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
 
-namespace PowerShellGraphSDK.PowerShellCmdlets
+namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 {
     using System.Management.Automation;
 
@@ -1076,7 +1076,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The URL which should be used to access a &quot;microsoft.graph.managedDevice&quot; object.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The URL which should be used to access a &quot;microsoft.graph.managedDevice&quot; object.")]
         public System.String managedDeviceReferenceUrl { get; set; }
 
         internal override System.String GetResourcePath()

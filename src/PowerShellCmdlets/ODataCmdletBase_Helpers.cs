@@ -1,6 +1,6 @@
 ﻿// Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
 
-namespace PowerShellGraphSDK.PowerShellCmdlets
+namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 {
     using System;
     using System.Collections.Generic;
@@ -13,7 +13,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
         internal string BuildUrl(string resourcePath)
         {
             // Check that we have a valid base address
-            string baseAddress = CurrentEnvironmentParameters.GraphBaseAddress;
+            string baseAddress = AuthUtils.CurrentEnvironmentParameters.GraphBaseAddress;
             if (!Uri.IsWellFormedUriString(baseAddress, UriKind.Absolute))
             {
                 throw new PSGraphSDKException(
@@ -24,7 +24,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
             }
 
             // Get the full base URL
-            string baseUrlWithSchema = $"{baseAddress.TrimEnd('/')}/{CurrentEnvironmentParameters.SchemaVersion}";
+            string baseUrlWithSchema = $"{baseAddress.TrimEnd('/')}/{AuthUtils.CurrentEnvironmentParameters.SchemaVersion}";
 
             // TODO: Sanitize the URL
             //resourcePath = WebUtility.UrlEncode(resourcePath);

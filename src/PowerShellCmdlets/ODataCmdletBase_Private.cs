@@ -1,6 +1,6 @@
 ﻿// Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
 
-namespace PowerShellGraphSDK.PowerShellCmdlets
+namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 {
     using System;
     using System.Collections;
@@ -13,63 +13,33 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
 
     public abstract partial class ODataCmdletBase
     {
-        /// <summary>
-        /// Writes an exception to the PowerShell console.  If the exception does not represent a PowerShell error,
-        /// it will be wrapped in a PowerShell error object before being written to the console.
-        /// </summary>
-        /// <param name="ex">The exception to write to the console</param>
-        private void WriteError(Exception ex)
+        private AuthResult Auth()
         {
-            ErrorRecord errorRecord;
-            if (ex is IContainsErrorRecord powerShellError)
-            {
-                errorRecord = powerShellError.ErrorRecord;
-            }
-            else
-            {
-                errorRecord = new ErrorRecord(
-                    ex,
-                    PSGraphSDKException.ErrorPrefix + "UnknownError",
-                    ErrorCategory.OperationStopped,
-                    null);
-            }
-
-            this.WriteError(errorRecord);
-        }
-
-        private AuthenticationResult Auth(EnvironmentParameters environmentParameters)
-        {
-            AuthenticationResult authResult = AuthUtils.LatestAuthResult;
-            string cmdletName = $"{PowerShellCmdlets.Connect.CmdletVerb}-{PowerShellCmdlets.Connect.CmdletNoun} -{nameof(PowerShellCmdlets.Connect.ForceInteractive)}";
-            if (authResult == null)
+            string cmdletName = $"{PowerShellCmdlets.Connect.CmdletVerb}-{PowerShellCmdlets.Connect.CmdletNoun}";
+            if (AuthUtils.UserHasNeverLoggedIn)
             {
                 // User has not authenticated
                 throw new PSAuthenticationError(
-                    new InvalidOperationException($"Not authenticated.  Please use the '{cmdletName}' cmdlet to authenticate."),
+                    new InvalidOperationException($"Not authenticated.  Please use the \"{cmdletName}\" command to authenticate."),
                     "NotAuthenticated",
                     ErrorCategory.AuthenticationError,
                     null);
             }
-
-            // Check for an expired token
-            if (authResult.ExpiresOn <= DateTimeOffset.Now)
+            
+            // Refresh the token if required
+            try
             {
-                // If it's expired, attempt to acquire a new one
-                try
-                {
-                    return AuthUtils.Auth(PromptBehavior.Never);
-                }
-                catch (AdalException)
-                {
-                    throw new PSAuthenticationError(
-                        new InvalidOperationException($"Authentication has expired.  Please use the '{cmdletName}' cmdlet to authenticate."),
-                        "AuthenticationExpired",
-                        ErrorCategory.AuthenticationError,
-                        authResult);
-                }
+                return AuthUtils.RefreshAuthIfRequired();
             }
-
-            return authResult;
+            catch (AdalException ex)
+            {
+                // Catch and bubble up any ADAL failures (this should never happen)
+                throw new PSAuthenticationError(
+                    ex,
+                    "AuthenticationExpired",
+                    ErrorCategory.AuthenticationError,
+                    "Failed to refresh the access token");
+            }
         }
 
         /// <summary>

@@ -1,6 +1,6 @@
 ﻿// Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
 
-namespace PowerShellGraphSDK
+namespace Microsoft.Intune.PowerShellGraphSDK
 {
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
@@ -31,7 +31,7 @@ namespace PowerShellGraphSDK
         /// <summary>
         /// The client ID to use when authenticating.
         /// </summary>
-        internal string ClientId { get; set; }
+        internal string AppId { get; set; }
 
         /// <summary>
         /// The redirect link to use when authenticating.
@@ -57,7 +57,7 @@ namespace PowerShellGraphSDK
             this.AuthUrl = toCopy.AuthUrl;
             this.ResourceId = toCopy.ResourceId;
             this.GraphBaseAddress = toCopy.GraphBaseAddress;
-            this.ClientId = toCopy.ClientId;
+            this.AppId = toCopy.AppId;
             this.RedirectLink = toCopy.RedirectLink;
             this.SchemaVersion = toCopy.SchemaVersion;
         }
@@ -76,7 +76,7 @@ namespace PowerShellGraphSDK
             AuthUrl = "https://login.microsoftonline.com/common",
             ResourceId = "https://graph.microsoft.com",
             GraphBaseAddress = "https://graph.microsoft.com",
-            ClientId = powerShellClientId,
+            AppId = powerShellClientId,
             RedirectLink = applicationRedirectLink,
             SchemaVersion = "v1.0",
         };
@@ -86,7 +86,7 @@ namespace PowerShellGraphSDK
             AuthUrl = "https://login.windows-ppe.net/common",
             ResourceId = "https://graph.microsoft-ppe.com",
             GraphBaseAddress = "https://graph.microsoft-ppe.com",
-            ClientId = powerShellClientId,
+            AppId = powerShellClientId,
             RedirectLink = applicationRedirectLink,
             SchemaVersion = "v1.0",
         };

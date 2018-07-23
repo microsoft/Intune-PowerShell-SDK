@@ -1,11 +1,12 @@
 ﻿// Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
 
-namespace PowerShellGraphSDK.PowerShellCmdlets
+namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 {
     using System;
     using System.Collections.Generic;
     using System.Management.Automation;
     using System.Net.Http;
+    using PowerShellGraphSDK.PowerShellCmdlets.Utils;
 
     /// <summary>
     /// The common behavior between all OData PowerShell SDK cmdlets.
@@ -71,11 +72,6 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
         /// The defined dynamic parameters.
         /// </summary>
         protected RuntimeDefinedParameterDictionary DynamicParameters = new RuntimeDefinedParameterDictionary();
-
-        /// <summary>
-        /// The currently selected environment parameters
-        /// </summary>
-        internal static EnvironmentParameters CurrentEnvironmentParameters => AuthUtils.DefaultEnvironmentParameters;
 
         /// <summary>
         /// The method that the PowerShell runtime will call.  This is the entry point for the cmdlet.

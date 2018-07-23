@@ -1,99 +1,80 @@
 ﻿// Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
 
-namespace PowerShellGraphSDK
+namespace Microsoft.Intune.PowerShellGraphSDK
 {
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
+    using System.Net.Http.Headers;
+    using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-    internal static class AuthUtils
+    internal static partial class AuthUtils
     {
-        internal static EnvironmentParameters DefaultEnvironmentParameters { get; private set; } = null;
-
-        internal static AuthenticationResult LatestAuthResult { get; private set; }
-
+        /// <summary>
+        /// The query parameter to use when triggering the admin consent flow.
+        /// </summary>
         private const string AdminConsentQueryParameter = "prompt=admin_consent";
 
         /// <summary>
-        /// Authenticates with the given environment parameters.
+        /// The last successful authentication attempt's result.
         /// </summary>
-        /// <param name="promptBehavior">The ADAL prompt behavior</param>
-        /// <returns>The authentication result.</returns>
-        /// <exception cref="AdalException">If authentication fails</exception>
-        internal static AuthenticationResult Auth(PromptBehavior promptBehavior = PromptBehavior.Auto)
-        {
-            if (AuthUtils.DefaultEnvironmentParameters == null)
-            {
-                AuthUtils.DefaultEnvironmentParameters = EnvironmentParameters.Prod.Copy();
-                promptBehavior = PromptBehavior.SelectAccount;
-            }
-
-            // Get the environment parameters
-            EnvironmentParameters environmentParameters = AuthUtils.DefaultEnvironmentParameters;
-
-            // Create auth context that we will use to connect to the AAD endpoint
-            AuthenticationContext authContext = new AuthenticationContext(environmentParameters.AuthUrl);
-
-            // Get the AuthenticationResult from AAD
-            LatestAuthResult = authContext.AcquireTokenAsync(
-               environmentParameters.ResourceId,
-               environmentParameters.ClientId,
-               new Uri(environmentParameters.RedirectLink),
-               new PlatformParameters(promptBehavior))
-               .GetAwaiter().GetResult();
-
-            // Update the cached EnvironmentParameters
-            DefaultEnvironmentParameters = environmentParameters;
-
-            return LatestAuthResult;
-        }
+        private static AuthenticationResult LatestAuthResult { get; set; }
 
         /// <summary>
-        /// Performs an admin consent interaction.
+        /// The current environment parameters.
         /// </summary>
-        internal static AuthenticationResult GrantAdminConsent()
+        internal static EnvironmentParameters CurrentEnvironmentParameters { get; } = EnvironmentParameters.Prod.Copy();
+
+        /// <summary>
+        /// True if the user has never logged in, otherwise false.
+        /// </summary>
+        internal static bool UserHasNeverLoggedIn => LatestAuthResult == null;
+
+        /// <summary>
+        /// Refreshes the access token if required, otherwise returns the most recent still-valid refresh token.
+        /// </summary>
+        /// <returns>A valid access token.</returns>
+        /// <exception cref="AdalException">If the silent login attempt fails</exception>
+        internal static AuthResult RefreshAuthIfRequired()
         {
-            if (AuthUtils.DefaultEnvironmentParameters == null)
+            // Make sure there was at least 1 successful login
+            if (AuthUtils.UserHasNeverLoggedIn)
             {
-                AuthUtils.DefaultEnvironmentParameters = EnvironmentParameters.Prod.Copy();
+                throw new ArgumentException($"No successful login attempts were found. Check for this using the '{nameof(AuthUtils)}.{nameof(UserHasNeverLoggedIn)}' property before calling the '{nameof(RefreshAuthIfRequired)}()' method");
             }
 
             // Get the environment parameters
-            EnvironmentParameters environmentParameters = AuthUtils.DefaultEnvironmentParameters;
+            EnvironmentParameters environmentParameters = AuthUtils.CurrentEnvironmentParameters;
 
             // Create auth context that we will use to connect to the AAD endpoint
             AuthenticationContext authContext = new AuthenticationContext(environmentParameters.AuthUrl);
 
-            // Remove this user's token from the token cache so they have to log in again
-            AuthenticationResult currentLogin = AuthUtils.LatestAuthResult;
-            if (currentLogin != null)
+            // Check if the existing token has expired
+            AuthenticationResult authResult = AuthUtils.LatestAuthResult;
+            if (authResult.ExpiresOn <= DateTimeOffset.Now)
             {
-                // Find all the items in the cache with the logged in user ID, client ID and resource ID
-                IEnumerable<TokenCacheItem> toRemove = authContext.TokenCache.ReadItems()
-                    .Where(
-                        tokenCacheItem => tokenCacheItem.UniqueId == currentLogin.UserInfo.UniqueId
-                        && tokenCacheItem.ClientId == environmentParameters.ClientId
-                        && tokenCacheItem.Resource == environmentParameters.ResourceId);
+                // Try to get a new token for the same user
+                authResult = authContext.AcquireTokenSilentAsync(
+                    environmentParameters.ResourceId,
+                    environmentParameters.AppId,
+                    new UserIdentifier(AuthUtils.LatestAuthResult.UserInfo.UniqueId, UserIdentifierType.UniqueId))
+                    .GetAwaiter().GetResult();
 
-                // Remove the items
-                foreach (TokenCacheItem tokenCacheItem in toRemove)
-                {
-                    authContext.TokenCache.DeleteItem(tokenCacheItem);
-                }
+                // Save the auth result
+                AuthUtils.LatestAuthResult = authResult;
             }
 
-            // Get the AuthenticationResult from AAD
-            AuthenticationResult result = authContext.AcquireTokenAsync(
-               environmentParameters.ResourceId,
-               environmentParameters.ClientId,
-               new Uri(environmentParameters.RedirectLink),
-               new PlatformParameters(PromptBehavior.Auto),
-               UserIdentifier.AnyUser,
-               AdminConsentQueryParameter)
-               .GetAwaiter().GetResult();
+            return authResult.ToAuthResult();
+        }
 
-            return result;
+        private static AuthResult ToAuthResult(this AuthenticationResult authResult)
+        {
+            return new AuthResult(
+                authResult.AccessTokenType,
+                authResult.AccessToken,
+                psUserDisplayableInformation: new
+                {
+                    UPN = authResult.UserInfo.DisplayableId,
+                    TenantId = authResult.TenantId,
+                });
         }
     }
 }

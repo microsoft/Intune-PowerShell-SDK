@@ -1,12 +1,25 @@
 ﻿// Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
 
-namespace PowerShellGraphSDK.PowerShellCmdlets
+namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Management.Automation;
     using System.Reflection;
+
+    /// <summary>
+    /// This is a required hack.
+    /// We have to set the output type of this project to "Exe", otherwise dependencies are not copied to the output folder.
+    /// There is a target in the *.csproj to rename the exe to a dll in order to get the regular behavior back.
+    /// </summary>
+    static class MainClass
+    {
+        static void Main(string[] args)
+        {
+            throw new Exception("Do not call this as an executable");
+        }
+    }
 
     /// <summary>
     /// Initializes this PowerShell module.
@@ -35,8 +48,6 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
             IEnumerable<Type> referenceableCmdletTypes = allTypes
                 // Select only the types that represent "$ref" cmdlets
                 .Where(type => type.IsClass && !type.IsAbstract
-                    // Namespace is "PowerShellGraphSDK.PowerShellCmdlets"
-                    && type.Namespace == $"{nameof(PowerShellGraphSDK)}.{nameof(PowerShellGraphSDK.PowerShellCmdlets)}"
                     // Is a "GET" cmdlet that returns resources that can be referenced
                     && typeof(GetCmdlet).IsAssignableFrom(type) && type.GetCustomAttribute<ResourceReferenceAttribute>() != null);
 

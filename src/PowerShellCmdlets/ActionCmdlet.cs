@@ -1,11 +1,11 @@
 ﻿// Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
 
-using System.Collections.Generic;
-using System.Net.Http;
-using System.Reflection;
-
-namespace PowerShellGraphSDK.PowerShellCmdlets
+namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 {
+    using System.Collections.Generic;
+    using System.Net.Http;
+    using System.Reflection;
+
     /// <summary>
     /// The common behavior between all OData PowerShell SDK cmdlets that call actions on OData resources.
     /// </summary>
@@ -30,9 +30,8 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
         internal override HttpContent WriteContent(object content)
         {
             // This should already be a serialized JSON string (provided by the GetContent() method)
-            string stringContent = content as string;
 
-            return stringContent == null ? null : new StringContent(stringContent);
+            return content is string stringContent ? new StringContent(stringContent) : null;
         }
     }
 }

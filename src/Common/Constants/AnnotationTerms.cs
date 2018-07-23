@@ -1,6 +1,6 @@
 ﻿// Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
 
-namespace PowerShellGraphSDK.ODataConstants
+namespace Microsoft.Intune.PowerShellGraphSDK.ODataConstants
 {
     /// <summary>
     /// OData annotation term names.

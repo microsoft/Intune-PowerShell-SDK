@@ -1,95 +1,63 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9D827326-2642-428E-8D87-1D0E7990CF7A}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Microsoft.Intune.PowerShellGraphSDK</RootNamespace>
-    <AssemblyName>Microsoft.Intune.PowerShellGraphSDK</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <DocumentationFile>$(OutputPath)\Microsoft.Intune.PowerShellGraphSDK.xml</DocumentationFile>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory, Version=3.19.4.11002, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>$(MSBuildProjectDirectory)\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.19.4\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform, Version=3.19.4.11002, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>$(MSBuildProjectDirectory)\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.19.4\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>$(MSBuildProjectDirectory)\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>$(MSBuildProjectDirectory)\packages\Microsoft.PowerShell.5.ReferenceAssemblies.1.1.0\lib\net4\System.Management.Automation.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="**\*.cs" Exclude="obj\**\*;bin\**\*" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="**\*.config" Exclude="obj\**\*;bin\**\*" />
-  </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
     <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+        <OutputType>Library</OutputType>
+        <Version>6.1808.20</Version>
+        <Authors>Rajesh Soy, Rohit Ramu</Authors>
+        <Company>Microsoft Corporation</Company>
+        <Product>Microsoft Intune Graph PowerShell Client SDK</Product>
+        <Copyright>Copyright © Microsoft Corporation 2018</Copyright>
+        <AssemblyName>Microsoft.Intune.PowerShellGraphSDK</AssemblyName>
+        <RootNamespace>Microsoft.Intune.PowerShellGraphSDK</RootNamespace>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>IDE0037</NoWarn>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        <WindowsTargetFramework>net471</WindowsTargetFramework>
     </PropertyGroup>
-  </Target>
-  <Target Name="BeforeBuild">
-    <RemoveDir Directories="$(OutputPath)" />
-  </Target>
-  <Target Name="AfterBuild">
-    <PropertyGroup>
-      <POWERSHELL_EXTRAS>$(MSBuildProjectDirectory)\PowerShellModuleAdditions</POWERSHELL_EXTRAS>
+
+    <PropertyGroup Condition=" '$(OS)' != 'Windows_NT' ">
+        <TargetFramework>netstandard2.0</TargetFramework>
     </PropertyGroup>
+    <PropertyGroup Condition=" '$(OS)' == 'Windows_NT' ">
+        <TargetFrameworks>$(WindowsTargetFramework);netstandard2.0</TargetFrameworks>
+    </PropertyGroup>
+
     <ItemGroup>
-      <_POWERSHELL_EXTRAS Include="$(POWERSHELL_EXTRAS)\**\*" />
+        <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="3.19.2" />
+        <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+        <PackageReference Include="XmlDoc2CmdletDoc" Version="0.2.10" />
     </ItemGroup>
-    <Copy SourceFiles="@(_POWERSHELL_EXTRAS)" DestinationFolder="$(OutputPath)\%(RecursiveDir)" />
-    <Message Importance="high" Text="PowerShell Module Additions Directory:  $(POWERSHELL_EXTRAS)" />
-    <Message Importance="high" Text="Output Directory:  $(OutputPath)" />
-  </Target>
-  <Target Name="XmlDoc2CmdletDoc" BeforeTargets="PostBuildEvent" Inputs="$(TargetPath)" Outputs="$(TargetPath)-Help.xml">
-    <PropertyGroup>
-      <XmlDocExeName Condition="'$(PlatformTarget)' == 'x86'">XmlDoc2CmdletDoc32.exe</XmlDocExeName>
-      <XmlDocExeName Condition="'$(XmlDocExeName)' == ''">XmlDoc2CmdletDoc.exe</XmlDocExeName>
+
+    <PropertyGroup Condition="'$(TargetFramework)'!='$(WindowsTargetFramework)'">
+        <DefineConstants>NETSTANDARD</DefineConstants>
     </PropertyGroup>
-    <Exec Command="$(MSBuildProjectDirectory)\packages\XmlDoc2CmdletDoc.0.2.10\tools\$(XmlDocExeName) $(XmlDoc2CmdletDocExcludeParameterSets) $(TargetPath)" />
-    <Message Importance="high" Text="Generated PowerShell binary module documentation" />
-  </Target>
+    <ItemGroup Condition="'$(TargetFramework)'!='$(WindowsTargetFramework)'">
+        <PackageReference Include="PowerShellStandard.Library" Version="5.1.0-preview-05" />
+    </ItemGroup>
+
+    <PropertyGroup Condition="'$(TargetFramework)'=='$(WindowsTargetFramework)'">
+        <DefineConstants>NETFRAMEWORK</DefineConstants>
+    </PropertyGroup>
+    <ItemGroup Condition="'$(TargetFramework)'=='$(WindowsTargetFramework)'">
+        <Reference Include="System.Net.Http" />
+        <PackageReference Include="Microsoft.PowerShell.5.ReferenceAssemblies" Version="1.1.0" />
+    </ItemGroup>
+
+    <Target Name="CopyPowerShellModuleAdditions" AfterTargets="PostBuildEvent">
+        <PropertyGroup>
+            <POWERSHELL_EXTRAS>$(MSBuildProjectDirectory)\PowerShellModuleAdditions</POWERSHELL_EXTRAS>
+        </PropertyGroup>
+        <ItemGroup>
+            <_POWERSHELL_EXTRAS Include="$(POWERSHELL_EXTRAS)\**\*" />
+        </ItemGroup>
+        <Copy SourceFiles="@(_POWERSHELL_EXTRAS)" DestinationFolder="$(OutputPath)\%(RecursiveDir)" />
+        <Message Importance="high" Text="PowerShell Module Additions Directory:  $(POWERSHELL_EXTRAS)" />
+        <Message Importance="high" Text="Output Folder:                          $(OutputPath)" />
+        <Message Importance="high" Text="Project Directory:                      $(MSBuildProjectDirectory)" />
+        <Message Importance="high" Text="Target Framework:                       $(TargetFramework)" />
+        <Message Importance="high" Text="OS:                                     $(OS)" />
+    </Target>
+
 </Project>

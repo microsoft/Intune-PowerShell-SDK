@@ -1,12 +1,10 @@
 ﻿// Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
 
-namespace PowerShellGraphSDK.PowerShellCmdlets
+namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 {
     using System.Collections.Generic;
-    using System.Management.Automation;
     using System.Net.Http;
     using System.Net.Http.Headers;
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using Newtonsoft.Json.Linq;
 
     public abstract partial class ODataCmdletBase
@@ -75,12 +73,10 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
         /// <returns></returns>
         internal virtual HttpRequestHeaders GetHeaders()
         {
-            // Auth
-            AuthenticationResult authResult = this.Auth(CurrentEnvironmentParameters);
-
             // Create the headers and add the auth token
             HttpRequestHeaders headers = new HttpClient().DefaultRequestHeaders;
-            headers.Authorization = new AuthenticationHeaderValue(authResult.AccessTokenType, authResult.AccessToken);
+            AuthResult authResult = this.Auth();
+            headers.Authorization = authResult.AuthenticationHeaderValue;
 
             return headers;
         }
@@ -124,8 +120,8 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
         /// Converts the body of an HTTP response to a C# object.
         /// </summary>
         /// <remarks>
-        /// This method defaults to assuming a JSON response body, and then converting it to a <see cref="PSObject"/> instance.
-        /// If the response body is a primitive value, it is returned without wrapping it in a <see cref="PSObject"/> instance.
+        /// This method defaults to assuming a JSON response body, and then converting it to a <see cref="System.Management.Automation.PSObject"/> instance.
+        /// If the response body is a primitive value, it is returned without wrapping it in a <see cref="System.Management.Automation.PSObject"/> instance.
         /// </remarks>
         /// <param name="content">The HTTP response body</param>
         /// <returns>The converted object.</returns>
@@ -138,7 +134,7 @@ namespace PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         /// The parameters that are added at runtime.
         /// </summary>
-        /// <returns>A <see cref="RuntimeDefinedParameterDictionary"/>.</returns>
+        /// <returns>A <see cref="System.Management.Automation.RuntimeDefinedParameterDictionary"/>.</returns>
         public object GetDynamicParameters()
         {
             return this.DynamicParameters;
