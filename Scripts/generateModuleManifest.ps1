@@ -23,6 +23,9 @@ $functions = @()
 $aliases = @()
 $variables = @()
 
+# Get the version of the main module and use it to set the version of the overall module
+$moduleVersion = "0.0.0.0"
+
 # Create a single list of all modules
 $modulePaths = @()
 $modulePaths += $MainModuleRelativePath
@@ -46,6 +49,12 @@ try {
         # Get the module's information
         $moduleInfo = Get-Module $modulePath -ListAvailable
 
+        # Get the module version from the main module
+        if ($modulePath -eq $MainModuleRelativePath)
+        {
+            $moduleVersion = $moduleInfo.Version
+        }
+
         # Get cmdlets
         $cmdlets += [string[]]$moduleInfo.ExportedCmdlets.Keys
 
@@ -66,7 +75,7 @@ try {
 $generateManifestArgs = @{
     Path = "$OutputDirectory/$ModuleName.psd1"
 
-    # START PrivateData.PSData        
+    # START PrivateData.PSData
         # Tags applied to this module. These help with module discovery in online galleries.
         Tags = @(
             'Microsoft',
@@ -99,7 +108,7 @@ $generateManifestArgs = @{
     RootModule = 'Microsoft.Intune.PowerShellGraphSDK.dll'
 
     # Version number of this module.
-    ModuleVersion = '6.1808.20'
+    ModuleVersion = $moduleVersion
 
     # ID used to uniquely identify this module
     GUID = 'A720591A-2D56-4570-B362-E15B84C4CD63'

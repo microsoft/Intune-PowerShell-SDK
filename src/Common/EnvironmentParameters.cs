@@ -2,8 +2,6 @@
 
 namespace Microsoft.Intune.PowerShellGraphSDK
 {
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
-
     /// <summary>
     /// Keeps track of the parameters used by an AAD environment.
     /// </summary>

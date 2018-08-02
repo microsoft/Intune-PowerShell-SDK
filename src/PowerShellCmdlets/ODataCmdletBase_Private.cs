@@ -13,23 +13,31 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     public abstract partial class ODataCmdletBase
     {
-        private AuthResult Auth()
+        private SdkAuthResult Auth()
         {
-            string cmdletName = $"{PowerShellCmdlets.Connect.CmdletVerb}-{PowerShellCmdlets.Connect.CmdletNoun}";
-            if (AuthUtils.UserHasNeverLoggedIn)
-            {
-                // User has not authenticated
-                throw new PSAuthenticationError(
-                    new InvalidOperationException($"Not authenticated.  Please use the \"{cmdletName}\" command to authenticate."),
-                    "NotAuthenticated",
-                    ErrorCategory.AuthenticationError,
-                    null);
-            }
-            
-            // Refresh the token if required
             try
             {
-                return AuthUtils.RefreshAuthIfRequired();
+                if (AuthUtils.UseMsiAuth)
+                {
+                    return AuthUtils.RefreshMsiAuth();
+                }
+                else
+                {
+                    if (AuthUtils.UserHasNeverLoggedIn)
+                    {
+                        // User has not authenticated
+                        string cmdletName = $"{PowerShellCmdlets.Connect.CmdletVerb}-{PowerShellCmdlets.Connect.CmdletNoun}";
+                        throw new PSAuthenticationError(
+                            new InvalidOperationException($"Not authenticated.  Please use the \"{cmdletName}\" command to authenticate."),
+                            "NotAuthenticated",
+                            ErrorCategory.AuthenticationError,
+                            null);
+                    }
+
+                    // Refresh the token if required
+                    return AuthUtils.RefreshAdalAuth();
+
+                }
             }
             catch (AdalException ex)
             {
@@ -38,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                     ex,
                     "AuthenticationExpired",
                     ErrorCategory.AuthenticationError,
-                    "Failed to refresh the access token");
+                    "Failed to obtain access token");
             }
         }
 

@@ -75,7 +75,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         {
             // Create the headers and add the auth token
             HttpRequestHeaders headers = new HttpClient().DefaultRequestHeaders;
-            AuthResult authResult = this.Auth();
+            SdkAuthResult authResult = this.Auth();
             headers.Authorization = authResult.AuthenticationHeaderValue;
 
             return headers;

@@ -100,7 +100,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         protected override void ProcessRecord()
         {
             // Auth
-            AuthResult authResult;
+            SdkAuthResult authResult;
 #if NETFRAMEWORK
             switch (this.ParameterSetName)
             {
