@@ -12,7 +12,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceAppManagement_VppTokens", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.vppToken")]
-    [ResourceIdPropertyName("vppTokenId")]
+    [ResourceIdPropertyName("VppTokenId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_VppTokens : GetOrSearchCmdlet
     {
@@ -20,10 +20,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.")]
-        public System.String vppTokenId { get; set; }
+        public System.String VppTokenId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;organizationName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String organizationName { get; set; }
+        public System.String OrganizationName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;vppTokenAccountType&quot; property, of type &quot;microsoft.graph.vppTokenAccountType&quot;.</para>
@@ -43,7 +43,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.vppTokenAccountType")]
         [Selectable]
         [Sortable]
-        public System.String vppTokenAccountType { get; set; }
+        public System.String VppTokenAccountType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appleId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -53,7 +53,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String appleId { get; set; }
+        public System.String AppleId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset expirationDateTime { get; set; }
+        public System.DateTimeOffset ExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset lastSyncDateTime { get; set; }
+        public System.DateTimeOffset LastSyncDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;token&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -83,7 +83,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String token { get; set; }
+        public System.String Token { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -93,7 +93,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;state&quot; property, of type &quot;microsoft.graph.vppTokenState&quot;.</para>
@@ -103,7 +103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.vppTokenState")]
         [Selectable]
         [Sortable]
-        public System.String state { get; set; }
+        public System.String State { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastSyncStatus&quot; property, of type &quot;microsoft.graph.vppTokenSyncStatus&quot;.</para>
@@ -113,7 +113,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.vppTokenSyncStatus")]
         [Selectable]
         [Sortable]
-        public System.String lastSyncStatus { get; set; }
+        public System.String LastSyncStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;automaticallyUpdateApps&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -123,7 +123,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean automaticallyUpdateApps { get; set; }
+        public System.Boolean AutomaticallyUpdateApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;countryOrRegion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -133,11 +133,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String countryOrRegion { get; set; }
+        public System.String CountryOrRegion { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.vppToken&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/vppTokens/{vppTokenId ?? string.Empty}";
+            return $"deviceAppManagement/vppTokens/{VppTokenId ?? string.Empty}";
         }
     }
 
@@ -161,7 +170,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;organizationName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;organizationName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String organizationName { get; set; }
+        public System.String OrganizationName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;vppTokenAccountType&quot; property, of type &quot;microsoft.graph.vppTokenAccountType&quot;.</para>
@@ -176,7 +185,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"business", @"education")]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;vppTokenAccountType&quot; property, of type &quot;microsoft.graph.vppTokenAccountType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;vppTokenAccountType&quot; property, of type &quot;microsoft.graph.vppTokenAccountType&quot;.")]
-        public System.String vppTokenAccountType { get; set; }
+        public System.String VppTokenAccountType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appleId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -187,7 +196,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;appleId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appleId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String appleId { get; set; }
+        public System.String AppleId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -198,7 +207,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset expirationDateTime { get; set; }
+        public System.DateTimeOffset ExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -209,7 +218,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastSyncDateTime { get; set; }
+        public System.DateTimeOffset LastSyncDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;token&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -220,7 +229,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;token&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;token&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String token { get; set; }
+        public System.String Token { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -231,7 +240,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;state&quot; property, of type &quot;microsoft.graph.vppTokenState&quot;.</para>
@@ -246,7 +255,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"unknown", @"valid", @"expired", @"invalid")]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.vppTokenState&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.vppTokenState&quot;.")]
-        public System.String state { get; set; }
+        public System.String State { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastSyncStatus&quot; property, of type &quot;microsoft.graph.vppTokenSyncStatus&quot;.</para>
@@ -261,7 +270,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"none", @"inProgress", @"completed", @"failed")]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;lastSyncStatus&quot; property, of type &quot;microsoft.graph.vppTokenSyncStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastSyncStatus&quot; property, of type &quot;microsoft.graph.vppTokenSyncStatus&quot;.")]
-        public System.String lastSyncStatus { get; set; }
+        public System.String LastSyncStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;automaticallyUpdateApps&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -272,7 +281,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;automaticallyUpdateApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;automaticallyUpdateApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean automaticallyUpdateApps { get; set; }
+        public System.Boolean AutomaticallyUpdateApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;countryOrRegion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -283,7 +292,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;countryOrRegion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;countryOrRegion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String countryOrRegion { get; set; }
+        public System.String CountryOrRegion { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -299,17 +308,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Update", "DeviceAppManagement_VppTokens", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.vppToken")]
     [ODataType("microsoft.graph.vppToken")]
-    [ResourceIdPropertyName("vppTokenId")]
+    [ResourceIdPropertyName("VppTokenId")]
     public class Update_DeviceAppManagement_VppTokens : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.")]
-        public System.String vppTokenId { get; set; }
+        public System.String VppTokenId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;organizationName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -320,7 +329,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;organizationName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;organizationName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String organizationName { get; set; }
+        public System.String OrganizationName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;vppTokenAccountType&quot; property, of type &quot;microsoft.graph.vppTokenAccountType&quot;.</para>
@@ -335,7 +344,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"business", @"education")]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;vppTokenAccountType&quot; property, of type &quot;microsoft.graph.vppTokenAccountType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;vppTokenAccountType&quot; property, of type &quot;microsoft.graph.vppTokenAccountType&quot;.")]
-        public System.String vppTokenAccountType { get; set; }
+        public System.String VppTokenAccountType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appleId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -346,7 +355,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;appleId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appleId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String appleId { get; set; }
+        public System.String AppleId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -357,7 +366,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset expirationDateTime { get; set; }
+        public System.DateTimeOffset ExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -368,7 +377,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastSyncDateTime { get; set; }
+        public System.DateTimeOffset LastSyncDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;token&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -379,7 +388,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;token&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;token&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String token { get; set; }
+        public System.String Token { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -390,7 +399,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;state&quot; property, of type &quot;microsoft.graph.vppTokenState&quot;.</para>
@@ -405,7 +414,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"unknown", @"valid", @"expired", @"invalid")]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.vppTokenState&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.vppTokenState&quot;.")]
-        public System.String state { get; set; }
+        public System.String State { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastSyncStatus&quot; property, of type &quot;microsoft.graph.vppTokenSyncStatus&quot;.</para>
@@ -420,7 +429,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"none", @"inProgress", @"completed", @"failed")]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;lastSyncStatus&quot; property, of type &quot;microsoft.graph.vppTokenSyncStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastSyncStatus&quot; property, of type &quot;microsoft.graph.vppTokenSyncStatus&quot;.")]
-        public System.String lastSyncStatus { get; set; }
+        public System.String LastSyncStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;automaticallyUpdateApps&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -431,7 +440,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;automaticallyUpdateApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;automaticallyUpdateApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean automaticallyUpdateApps { get; set; }
+        public System.Boolean AutomaticallyUpdateApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;countryOrRegion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -442,37 +451,37 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppToken", HelpMessage = @"The &quot;countryOrRegion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;countryOrRegion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String countryOrRegion { get; set; }
+        public System.String CountryOrRegion { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/vppTokens/{vppTokenId}";
+            return $"deviceAppManagement/vppTokens/{VppTokenId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.vppToken&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/vppTokens/vppTokenId</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/vppTokens/VppTokenId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.vppToken&quot; object from the &quot;vppTokens&quot; collection.</para>
     ///     <para type="description">List of Vpp tokens for this organization.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_VppTokens", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.vppToken")]
-    [ResourceIdPropertyName("vppTokenId")]
+    [ResourceIdPropertyName("VppTokenId")]
     public class Remove_DeviceAppManagement_VppTokens : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.")]
-        public System.String vppTokenId { get; set; }
+        public System.String VppTokenId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/vppTokens/{vppTokenId}";
+            return $"deviceAppManagement/vppTokens/{VppTokenId}";
         }
     }
 
@@ -483,21 +492,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "DeviceAppManagement_VppTokens_SyncLicenses", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.vppToken")]
-    [ResourceIdPropertyName("vppTokenId")]
+    [ResourceIdPropertyName("VppTokenId")]
     public class Invoke_DeviceAppManagement_VppTokens_SyncLicenses : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.")]
-        public System.String vppTokenId { get; set; }
+        public System.String VppTokenId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/vppTokens/{vppTokenId}/syncLicenses";
+            return $"deviceAppManagement/vppTokens/{VppTokenId}/syncLicenses";
         }
     }
 }

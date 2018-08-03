@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.licenseDetails", HelpMessage = @"The &quot;servicePlans&quot; property, of type &quot;microsoft.graph.servicePlanInfo&quot;.")]
-        public System.Object[] servicePlans { get; set; }
+        public System.Object[] ServicePlans { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;skuId&quot; property, of type &quot;Edm.Guid&quot;.</para>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Guid")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.licenseDetails", HelpMessage = @"The &quot;skuId&quot; property, of type &quot;Edm.Guid&quot;.")]
-        public System.Guid skuId { get; set; }
+        public System.Guid SkuId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;skuPartNumber&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -38,6 +38,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.licenseDetails", HelpMessage = @"The &quot;skuPartNumber&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String skuPartNumber { get; set; }
+        public System.String SkuPartNumber { get; set; }
     }
 }

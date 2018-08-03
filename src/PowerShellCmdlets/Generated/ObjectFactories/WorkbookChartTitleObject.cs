@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartTitle", HelpMessage = @"The &quot;overlay&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean overlay { get; set; }
+        public System.Boolean Overlay { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;text&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartTitle", HelpMessage = @"The &quot;text&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String text { get; set; }
+        public System.String Text { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;visible&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartTitle", HelpMessage = @"The &quot;visible&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean visible { get; set; }
+        public System.Boolean Visible { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartTitleFormat&quot;.</para>
@@ -46,6 +46,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartTitleFormat")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartTitle", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartTitleFormat&quot;.")]
-        public System.Object format { get; set; }
+        public System.Object Format { get; set; }
     }
 }

@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookIcon", HelpMessage = @"The &quot;index&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 index { get; set; }
+        public System.Int32 Index { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;set&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookIcon", HelpMessage = @"The &quot;set&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String set { get; set; }
+        public System.String Set { get; set; }
     }
 }

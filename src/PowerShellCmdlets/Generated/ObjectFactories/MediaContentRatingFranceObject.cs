@@ -24,7 +24,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"allAllowed", @"allBlocked", @"agesAbove10", @"agesAbove12", @"agesAbove16", @"agesAbove18")]
         [Parameter(ParameterSetName = @"#microsoft.graph.mediaContentRatingFrance", HelpMessage = @"The &quot;movieRating&quot; property, of type &quot;microsoft.graph.ratingFranceMoviesType&quot;.")]
-        public System.String movieRating { get; set; }
+        public System.String MovieRating { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;tvRating&quot; property, of type &quot;microsoft.graph.ratingFranceTelevisionType&quot;.</para>
@@ -38,6 +38,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"allAllowed", @"allBlocked", @"agesAbove10", @"agesAbove12", @"agesAbove16", @"agesAbove18")]
         [Parameter(ParameterSetName = @"#microsoft.graph.mediaContentRatingFrance", HelpMessage = @"The &quot;tvRating&quot; property, of type &quot;microsoft.graph.ratingFranceTelevisionType&quot;.")]
-        public System.String tvRating { get; set; }
+        public System.String TvRating { get; set; }
     }
 }

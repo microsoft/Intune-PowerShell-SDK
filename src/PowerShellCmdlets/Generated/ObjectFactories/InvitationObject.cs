@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.invitation", HelpMessage = @"The &quot;invitedUserDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String invitedUserDisplayName { get; set; }
+        public System.String InvitedUserDisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;invitedUserType&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.invitation", HelpMessage = @"The &quot;invitedUserType&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String invitedUserType { get; set; }
+        public System.String InvitedUserType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;invitedUserEmailAddress&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.invitation", HelpMessage = @"The &quot;invitedUserEmailAddress&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String invitedUserEmailAddress { get; set; }
+        public System.String InvitedUserEmailAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;invitedUserMessageInfo&quot; property, of type &quot;microsoft.graph.invitedUserMessageInfo&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.invitedUserMessageInfo")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.invitation", HelpMessage = @"The &quot;invitedUserMessageInfo&quot; property, of type &quot;microsoft.graph.invitedUserMessageInfo&quot;.")]
-        public System.Object invitedUserMessageInfo { get; set; }
+        public System.Object InvitedUserMessageInfo { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sendInvitationMessage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.invitation", HelpMessage = @"The &quot;sendInvitationMessage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean sendInvitationMessage { get; set; }
+        public System.Boolean SendInvitationMessage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;inviteRedirectUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.invitation", HelpMessage = @"The &quot;inviteRedirectUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String inviteRedirectUrl { get; set; }
+        public System.String InviteRedirectUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;inviteRedeemUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.invitation", HelpMessage = @"The &quot;inviteRedeemUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String inviteRedeemUrl { get; set; }
+        public System.String InviteRedeemUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;status&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -82,7 +82,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.invitation", HelpMessage = @"The &quot;status&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String status { get; set; }
+        public System.String Status { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;invitedUser&quot; property, of type &quot;microsoft.graph.user&quot;.</para>
@@ -91,6 +91,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.user")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.invitation", HelpMessage = @"The &quot;invitedUser&quot; property, of type &quot;microsoft.graph.user&quot;.")]
-        public System.Object invitedUser { get; set; }
+        public System.Object InvitedUser { get; set; }
     }
 }

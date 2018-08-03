@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.recentNotebook", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastAccessedTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.recentNotebook", HelpMessage = @"The &quot;lastAccessedTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastAccessedTime { get; set; }
+        public System.DateTimeOffset LastAccessedTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;links&quot; property, of type &quot;microsoft.graph.recentNotebookLinks&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.recentNotebookLinks")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.recentNotebook", HelpMessage = @"The &quot;links&quot; property, of type &quot;microsoft.graph.recentNotebookLinks&quot;.")]
-        public System.Object links { get; set; }
+        public System.Object Links { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sourceService&quot; property, of type &quot;microsoft.graph.onenoteSourceService&quot;.</para>
@@ -50,6 +50,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"Unknown", @"OneDrive", @"OneDriveForBusiness", @"OnPremOneDriveForBusiness")]
         [Parameter(ParameterSetName = @"#microsoft.graph.recentNotebook", HelpMessage = @"The &quot;sourceService&quot; property, of type &quot;microsoft.graph.onenoteSourceService&quot;.")]
-        public System.String sourceService { get; set; }
+        public System.String SourceService { get; set; }
     }
 }

@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>Library</OutputType>
-        <Version>6.1808.100</Version>
+        <Version>6.1808.110</Version>
         <Authors>Rajesh Soy, Rohit Ramu</Authors>
         <Company>Microsoft Corporation</Company>
         <Product>Microsoft Intune Graph PowerShell Client SDK</Product>
@@ -24,17 +24,28 @@
         <TargetFrameworks>$(WindowsTargetFramework);netstandard2.0</TargetFrameworks>
     </PropertyGroup>
 
+    <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+        <DebugType>full</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <DebugType>none</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+    </PropertyGroup>
+
     <ItemGroup>
         <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="3.19.2" />
         <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
         <PackageReference Include="XmlDoc2CmdletDoc" Version="0.2.10" />
+        <PackageReference Include="Humanizer.Core" Version="2.4.2" />
     </ItemGroup>
 
     <PropertyGroup Condition="'$(TargetFramework)'!='$(WindowsTargetFramework)'">
         <DefineConstants>NETSTANDARD</DefineConstants>
     </PropertyGroup>
     <ItemGroup Condition="'$(TargetFramework)'!='$(WindowsTargetFramework)'">
-        <PackageReference Include="PowerShellStandard.Library" Version="5.1.0-preview-05" />
+        <PackageReference Include="PowerShellStandard.Library" Version="5.1.0-preview-06" />
     </ItemGroup>
 
     <PropertyGroup Condition="'$(TargetFramework)'=='$(WindowsTargetFramework)'">

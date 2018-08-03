@@ -21,6 +21,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.rolePermission", HelpMessage = @"The &quot;resourceActions&quot; property, of type &quot;microsoft.graph.resourceAction&quot;.")]
-        public System.Object[] resourceActions { get; set; }
+        public System.Object[] ResourceActions { get; set; }
     }
 }

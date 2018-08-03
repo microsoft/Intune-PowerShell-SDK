@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedAppDiagnosticStatus", HelpMessage = @"The &quot;validationName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String validationName { get; set; }
+        public System.String ValidationName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;state&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedAppDiagnosticStatus", HelpMessage = @"The &quot;state&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String state { get; set; }
+        public System.String State { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mitigationInstruction&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -40,6 +40,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedAppDiagnosticStatus", HelpMessage = @"The &quot;mitigationInstruction&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String mitigationInstruction { get; set; }
+        public System.String MitigationInstruction { get; set; }
     }
 }

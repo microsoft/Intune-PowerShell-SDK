@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset microsoftStoreForBusinessLastSuccessfulSyncDateTime { get; set; }
+        public System.DateTimeOffset MicrosoftStoreForBusinessLastSuccessfulSyncDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isEnabledForMicrosoftStoreForBusiness&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean isEnabledForMicrosoftStoreForBusiness { get; set; }
+        public System.Boolean IsEnabledForMicrosoftStoreForBusiness { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;microsoftStoreForBusinessLanguage&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String microsoftStoreForBusinessLanguage { get; set; }
+        public System.String MicrosoftStoreForBusinessLanguage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;microsoftStoreForBusinessLastCompletedApplicationSyncTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -51,7 +51,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset microsoftStoreForBusinessLastCompletedApplicationSyncTime { get; set; }
+        public System.DateTimeOffset MicrosoftStoreForBusinessLastCompletedApplicationSyncTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mobileApps&quot; property, of type &quot;microsoft.graph.mobileApp&quot;.</para>
@@ -61,7 +61,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mobileApp")]
         [Selectable]
         [Expandable]
-        public System.Object[] mobileApps { get; set; }
+        public System.Object[] MobileApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mobileAppCategories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.</para>
@@ -71,7 +71,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mobileAppCategory")]
         [Selectable]
         [Expandable]
-        public System.Object[] mobileAppCategories { get; set; }
+        public System.Object[] MobileAppCategories { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mobileAppConfigurations&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot;.</para>
@@ -81,7 +81,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedDeviceMobileAppConfiguration")]
         [Selectable]
         [Expandable]
-        public System.Object[] mobileAppConfigurations { get; set; }
+        public System.Object[] MobileAppConfigurations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;vppTokens&quot; property, of type &quot;microsoft.graph.vppToken&quot;.</para>
@@ -91,7 +91,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.vppToken")]
         [Selectable]
         [Expandable]
-        public System.Object[] vppTokens { get; set; }
+        public System.Object[] VppTokens { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedAppPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.</para>
@@ -101,7 +101,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedAppPolicy")]
         [Selectable]
         [Expandable]
-        public System.Object[] managedAppPolicies { get; set; }
+        public System.Object[] ManagedAppPolicies { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iosManagedAppProtections&quot; property, of type &quot;microsoft.graph.iosManagedAppProtection&quot;.</para>
@@ -111,7 +111,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.iosManagedAppProtection")]
         [Selectable]
         [Expandable]
-        public System.Object[] iosManagedAppProtections { get; set; }
+        public System.Object[] IosManagedAppProtections { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;androidManagedAppProtections&quot; property, of type &quot;microsoft.graph.androidManagedAppProtection&quot;.</para>
@@ -121,7 +121,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.androidManagedAppProtection")]
         [Selectable]
         [Expandable]
-        public System.Object[] androidManagedAppProtections { get; set; }
+        public System.Object[] AndroidManagedAppProtections { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defaultManagedAppProtections&quot; property, of type &quot;microsoft.graph.defaultManagedAppProtection&quot;.</para>
@@ -131,7 +131,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.defaultManagedAppProtection")]
         [Selectable]
         [Expandable]
-        public System.Object[] defaultManagedAppProtections { get; set; }
+        public System.Object[] DefaultManagedAppProtections { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;targetedManagedAppConfigurations&quot; property, of type &quot;microsoft.graph.targetedManagedAppConfiguration&quot;.</para>
@@ -141,7 +141,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.targetedManagedAppConfiguration")]
         [Selectable]
         [Expandable]
-        public System.Object[] targetedManagedAppConfigurations { get; set; }
+        public System.Object[] TargetedManagedAppConfigurations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mdmWindowsInformationProtectionPolicies&quot; property, of type &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot;.</para>
@@ -151,7 +151,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mdmWindowsInformationProtectionPolicy")]
         [Selectable]
         [Expandable]
-        public System.Object[] mdmWindowsInformationProtectionPolicies { get; set; }
+        public System.Object[] MdmWindowsInformationProtectionPolicies { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsInformationProtectionPolicies&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPolicy&quot;.</para>
@@ -161,7 +161,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsInformationProtectionPolicy")]
         [Selectable]
         [Expandable]
-        public System.Object[] windowsInformationProtectionPolicies { get; set; }
+        public System.Object[] WindowsInformationProtectionPolicies { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedAppRegistrations&quot; property, of type &quot;microsoft.graph.managedAppRegistration&quot;.</para>
@@ -171,7 +171,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedAppRegistration")]
         [Selectable]
         [Expandable]
-        public System.Object[] managedAppRegistrations { get; set; }
+        public System.Object[] ManagedAppRegistrations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedAppStatuses&quot; property, of type &quot;microsoft.graph.managedAppStatus&quot;.</para>
@@ -181,7 +181,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedAppStatus")]
         [Selectable]
         [Expandable]
-        public System.Object[] managedAppStatuses { get; set; }
+        public System.Object[] ManagedAppStatuses { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedEBooks&quot; property, of type &quot;microsoft.graph.managedEBook&quot;.</para>
@@ -191,7 +191,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedEBook")]
         [Selectable]
         [Expandable]
-        public System.Object[] managedEBooks { get; set; }
+        public System.Object[] ManagedEBooks { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.deviceAppManagement&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -217,7 +226,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;microsoftStoreForBusinessLastSuccessfulSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;microsoftStoreForBusinessLastSuccessfulSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset microsoftStoreForBusinessLastSuccessfulSyncDateTime { get; set; }
+        public System.DateTimeOffset MicrosoftStoreForBusinessLastSuccessfulSyncDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isEnabledForMicrosoftStoreForBusiness&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -228,7 +237,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;isEnabledForMicrosoftStoreForBusiness&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;isEnabledForMicrosoftStoreForBusiness&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isEnabledForMicrosoftStoreForBusiness { get; set; }
+        public System.Boolean IsEnabledForMicrosoftStoreForBusiness { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;microsoftStoreForBusinessLanguage&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -239,7 +248,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;microsoftStoreForBusinessLanguage&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;microsoftStoreForBusinessLanguage&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String microsoftStoreForBusinessLanguage { get; set; }
+        public System.String MicrosoftStoreForBusinessLanguage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;microsoftStoreForBusinessLastCompletedApplicationSyncTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -250,7 +259,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;microsoftStoreForBusinessLastCompletedApplicationSyncTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;microsoftStoreForBusinessLastCompletedApplicationSyncTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset microsoftStoreForBusinessLastCompletedApplicationSyncTime { get; set; }
+        public System.DateTimeOffset MicrosoftStoreForBusinessLastCompletedApplicationSyncTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mobileApps&quot; property, of type &quot;microsoft.graph.mobileApp&quot;.</para>
@@ -262,7 +271,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;mobileApps&quot; property, of type &quot;microsoft.graph.mobileApp&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;mobileApps&quot; property, of type &quot;microsoft.graph.mobileApp&quot;.")]
-        public System.Object[] mobileApps { get; set; }
+        public System.Object[] MobileApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mobileAppCategories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.</para>
@@ -274,7 +283,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;mobileAppCategories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;mobileAppCategories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        public System.Object[] mobileAppCategories { get; set; }
+        public System.Object[] MobileAppCategories { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mobileAppConfigurations&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot;.</para>
@@ -286,7 +295,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;mobileAppConfigurations&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;mobileAppConfigurations&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot;.")]
-        public System.Object[] mobileAppConfigurations { get; set; }
+        public System.Object[] MobileAppConfigurations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;vppTokens&quot; property, of type &quot;microsoft.graph.vppToken&quot;.</para>
@@ -298,7 +307,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;vppTokens&quot; property, of type &quot;microsoft.graph.vppToken&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;vppTokens&quot; property, of type &quot;microsoft.graph.vppToken&quot;.")]
-        public System.Object[] vppTokens { get; set; }
+        public System.Object[] VppTokens { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedAppPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.</para>
@@ -310,7 +319,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;managedAppPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;managedAppPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
-        public System.Object[] managedAppPolicies { get; set; }
+        public System.Object[] ManagedAppPolicies { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iosManagedAppProtections&quot; property, of type &quot;microsoft.graph.iosManagedAppProtection&quot;.</para>
@@ -322,7 +331,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;iosManagedAppProtections&quot; property, of type &quot;microsoft.graph.iosManagedAppProtection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;iosManagedAppProtections&quot; property, of type &quot;microsoft.graph.iosManagedAppProtection&quot;.")]
-        public System.Object[] iosManagedAppProtections { get; set; }
+        public System.Object[] IosManagedAppProtections { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;androidManagedAppProtections&quot; property, of type &quot;microsoft.graph.androidManagedAppProtection&quot;.</para>
@@ -334,7 +343,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;androidManagedAppProtections&quot; property, of type &quot;microsoft.graph.androidManagedAppProtection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;androidManagedAppProtections&quot; property, of type &quot;microsoft.graph.androidManagedAppProtection&quot;.")]
-        public System.Object[] androidManagedAppProtections { get; set; }
+        public System.Object[] AndroidManagedAppProtections { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defaultManagedAppProtections&quot; property, of type &quot;microsoft.graph.defaultManagedAppProtection&quot;.</para>
@@ -346,7 +355,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;defaultManagedAppProtections&quot; property, of type &quot;microsoft.graph.defaultManagedAppProtection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;defaultManagedAppProtections&quot; property, of type &quot;microsoft.graph.defaultManagedAppProtection&quot;.")]
-        public System.Object[] defaultManagedAppProtections { get; set; }
+        public System.Object[] DefaultManagedAppProtections { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;targetedManagedAppConfigurations&quot; property, of type &quot;microsoft.graph.targetedManagedAppConfiguration&quot;.</para>
@@ -358,7 +367,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;targetedManagedAppConfigurations&quot; property, of type &quot;microsoft.graph.targetedManagedAppConfiguration&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;targetedManagedAppConfigurations&quot; property, of type &quot;microsoft.graph.targetedManagedAppConfiguration&quot;.")]
-        public System.Object[] targetedManagedAppConfigurations { get; set; }
+        public System.Object[] TargetedManagedAppConfigurations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mdmWindowsInformationProtectionPolicies&quot; property, of type &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot;.</para>
@@ -370,7 +379,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;mdmWindowsInformationProtectionPolicies&quot; property, of type &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;mdmWindowsInformationProtectionPolicies&quot; property, of type &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot;.")]
-        public System.Object[] mdmWindowsInformationProtectionPolicies { get; set; }
+        public System.Object[] MdmWindowsInformationProtectionPolicies { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsInformationProtectionPolicies&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPolicy&quot;.</para>
@@ -382,7 +391,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;windowsInformationProtectionPolicies&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPolicy&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;windowsInformationProtectionPolicies&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPolicy&quot;.")]
-        public System.Object[] windowsInformationProtectionPolicies { get; set; }
+        public System.Object[] WindowsInformationProtectionPolicies { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedAppRegistrations&quot; property, of type &quot;microsoft.graph.managedAppRegistration&quot;.</para>
@@ -394,7 +403,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;managedAppRegistrations&quot; property, of type &quot;microsoft.graph.managedAppRegistration&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;managedAppRegistrations&quot; property, of type &quot;microsoft.graph.managedAppRegistration&quot;.")]
-        public System.Object[] managedAppRegistrations { get; set; }
+        public System.Object[] ManagedAppRegistrations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedAppStatuses&quot; property, of type &quot;microsoft.graph.managedAppStatus&quot;.</para>
@@ -406,7 +415,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;managedAppStatuses&quot; property, of type &quot;microsoft.graph.managedAppStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;managedAppStatuses&quot; property, of type &quot;microsoft.graph.managedAppStatus&quot;.")]
-        public System.Object[] managedAppStatuses { get; set; }
+        public System.Object[] ManagedAppStatuses { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedEBooks&quot; property, of type &quot;microsoft.graph.managedEBook&quot;.</para>
@@ -418,7 +427,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;managedEBooks&quot; property, of type &quot;microsoft.graph.managedEBook&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;managedEBooks&quot; property, of type &quot;microsoft.graph.managedEBook&quot;.")]
-        public System.Object[] managedEBooks { get; set; }
+        public System.Object[] ManagedEBooks { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -444,7 +453,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;microsoftStoreForBusinessLastSuccessfulSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;microsoftStoreForBusinessLastSuccessfulSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset microsoftStoreForBusinessLastSuccessfulSyncDateTime { get; set; }
+        public System.DateTimeOffset MicrosoftStoreForBusinessLastSuccessfulSyncDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isEnabledForMicrosoftStoreForBusiness&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -455,7 +464,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;isEnabledForMicrosoftStoreForBusiness&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;isEnabledForMicrosoftStoreForBusiness&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isEnabledForMicrosoftStoreForBusiness { get; set; }
+        public System.Boolean IsEnabledForMicrosoftStoreForBusiness { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;microsoftStoreForBusinessLanguage&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -466,7 +475,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;microsoftStoreForBusinessLanguage&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;microsoftStoreForBusinessLanguage&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String microsoftStoreForBusinessLanguage { get; set; }
+        public System.String MicrosoftStoreForBusinessLanguage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;microsoftStoreForBusinessLastCompletedApplicationSyncTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -477,7 +486,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;microsoftStoreForBusinessLastCompletedApplicationSyncTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;microsoftStoreForBusinessLastCompletedApplicationSyncTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset microsoftStoreForBusinessLastCompletedApplicationSyncTime { get; set; }
+        public System.DateTimeOffset MicrosoftStoreForBusinessLastCompletedApplicationSyncTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mobileApps&quot; property, of type &quot;microsoft.graph.mobileApp&quot;.</para>
@@ -489,7 +498,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;mobileApps&quot; property, of type &quot;microsoft.graph.mobileApp&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;mobileApps&quot; property, of type &quot;microsoft.graph.mobileApp&quot;.")]
-        public System.Object[] mobileApps { get; set; }
+        public System.Object[] MobileApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mobileAppCategories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.</para>
@@ -501,7 +510,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;mobileAppCategories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;mobileAppCategories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        public System.Object[] mobileAppCategories { get; set; }
+        public System.Object[] MobileAppCategories { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mobileAppConfigurations&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot;.</para>
@@ -513,7 +522,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;mobileAppConfigurations&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;mobileAppConfigurations&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot;.")]
-        public System.Object[] mobileAppConfigurations { get; set; }
+        public System.Object[] MobileAppConfigurations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;vppTokens&quot; property, of type &quot;microsoft.graph.vppToken&quot;.</para>
@@ -525,7 +534,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;vppTokens&quot; property, of type &quot;microsoft.graph.vppToken&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;vppTokens&quot; property, of type &quot;microsoft.graph.vppToken&quot;.")]
-        public System.Object[] vppTokens { get; set; }
+        public System.Object[] VppTokens { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedAppPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.</para>
@@ -537,7 +546,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;managedAppPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;managedAppPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
-        public System.Object[] managedAppPolicies { get; set; }
+        public System.Object[] ManagedAppPolicies { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iosManagedAppProtections&quot; property, of type &quot;microsoft.graph.iosManagedAppProtection&quot;.</para>
@@ -549,7 +558,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;iosManagedAppProtections&quot; property, of type &quot;microsoft.graph.iosManagedAppProtection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;iosManagedAppProtections&quot; property, of type &quot;microsoft.graph.iosManagedAppProtection&quot;.")]
-        public System.Object[] iosManagedAppProtections { get; set; }
+        public System.Object[] IosManagedAppProtections { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;androidManagedAppProtections&quot; property, of type &quot;microsoft.graph.androidManagedAppProtection&quot;.</para>
@@ -561,7 +570,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;androidManagedAppProtections&quot; property, of type &quot;microsoft.graph.androidManagedAppProtection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;androidManagedAppProtections&quot; property, of type &quot;microsoft.graph.androidManagedAppProtection&quot;.")]
-        public System.Object[] androidManagedAppProtections { get; set; }
+        public System.Object[] AndroidManagedAppProtections { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defaultManagedAppProtections&quot; property, of type &quot;microsoft.graph.defaultManagedAppProtection&quot;.</para>
@@ -573,7 +582,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;defaultManagedAppProtections&quot; property, of type &quot;microsoft.graph.defaultManagedAppProtection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;defaultManagedAppProtections&quot; property, of type &quot;microsoft.graph.defaultManagedAppProtection&quot;.")]
-        public System.Object[] defaultManagedAppProtections { get; set; }
+        public System.Object[] DefaultManagedAppProtections { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;targetedManagedAppConfigurations&quot; property, of type &quot;microsoft.graph.targetedManagedAppConfiguration&quot;.</para>
@@ -585,7 +594,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;targetedManagedAppConfigurations&quot; property, of type &quot;microsoft.graph.targetedManagedAppConfiguration&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;targetedManagedAppConfigurations&quot; property, of type &quot;microsoft.graph.targetedManagedAppConfiguration&quot;.")]
-        public System.Object[] targetedManagedAppConfigurations { get; set; }
+        public System.Object[] TargetedManagedAppConfigurations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mdmWindowsInformationProtectionPolicies&quot; property, of type &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot;.</para>
@@ -597,7 +606,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;mdmWindowsInformationProtectionPolicies&quot; property, of type &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;mdmWindowsInformationProtectionPolicies&quot; property, of type &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot;.")]
-        public System.Object[] mdmWindowsInformationProtectionPolicies { get; set; }
+        public System.Object[] MdmWindowsInformationProtectionPolicies { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsInformationProtectionPolicies&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPolicy&quot;.</para>
@@ -609,7 +618,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;windowsInformationProtectionPolicies&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPolicy&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;windowsInformationProtectionPolicies&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPolicy&quot;.")]
-        public System.Object[] windowsInformationProtectionPolicies { get; set; }
+        public System.Object[] WindowsInformationProtectionPolicies { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedAppRegistrations&quot; property, of type &quot;microsoft.graph.managedAppRegistration&quot;.</para>
@@ -621,7 +630,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;managedAppRegistrations&quot; property, of type &quot;microsoft.graph.managedAppRegistration&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;managedAppRegistrations&quot; property, of type &quot;microsoft.graph.managedAppRegistration&quot;.")]
-        public System.Object[] managedAppRegistrations { get; set; }
+        public System.Object[] ManagedAppRegistrations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedAppStatuses&quot; property, of type &quot;microsoft.graph.managedAppStatus&quot;.</para>
@@ -633,7 +642,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;managedAppStatuses&quot; property, of type &quot;microsoft.graph.managedAppStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;managedAppStatuses&quot; property, of type &quot;microsoft.graph.managedAppStatus&quot;.")]
-        public System.Object[] managedAppStatuses { get; set; }
+        public System.Object[] ManagedAppStatuses { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedEBooks&quot; property, of type &quot;microsoft.graph.managedEBook&quot;.</para>
@@ -645,7 +654,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;managedEBooks&quot; property, of type &quot;microsoft.graph.managedEBook&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;managedEBooks&quot; property, of type &quot;microsoft.graph.managedEBook&quot;.")]
-        public System.Object[] managedEBooks { get; set; }
+        public System.Object[] ManagedEBooks { get; set; }
 
         internal override System.String GetResourcePath()
         {

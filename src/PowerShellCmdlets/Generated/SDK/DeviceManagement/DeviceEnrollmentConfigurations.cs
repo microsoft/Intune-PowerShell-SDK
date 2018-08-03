@@ -12,7 +12,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_DeviceEnrollmentConfigurations", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceEnrollmentConfiguration")]
-    [ResourceIdPropertyName("deviceEnrollmentConfigurationId")]
+    [ResourceIdPropertyName("DeviceEnrollmentConfigurationId")]
     [ResourceReference]
     public class Get_DeviceManagement_DeviceEnrollmentConfigurations : GetOrSearchCmdlet
     {
@@ -20,10 +20,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object in the &quot;deviceEnrollmentConfigurations&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object in the &quot;deviceEnrollmentConfigurations&quot; collection.")]
-        public System.String deviceEnrollmentConfigurationId { get; set; }
+        public System.String DeviceEnrollmentConfigurationId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;priority&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 priority { get; set; }
+        public System.Int32 Priority { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -59,7 +59,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset createdDateTime { get; set; }
+        public System.DateTimeOffset CreatedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -68,7 +68,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -77,7 +77,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 version { get; set; }
+        public System.Int32 Version { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.</para>
@@ -87,7 +87,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.enrollmentConfigurationAssignment")]
         [Selectable]
         [Expandable]
-        public System.Object[] assignments { get; set; }
+        public System.Object[] Assignments { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -97,7 +106,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration")]
-        public System.Int32 pinMinimumLength { get; set; }
+        public System.Int32 PinMinimumLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinMaximumLength&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -107,7 +116,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration")]
-        public System.Int32 pinMaximumLength { get; set; }
+        public System.Int32 PinMaximumLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinUppercaseCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.</para>
@@ -117,7 +126,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration")]
-        public System.String pinUppercaseCharactersUsage { get; set; }
+        public System.String PinUppercaseCharactersUsage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinLowercaseCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.</para>
@@ -127,7 +136,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration")]
-        public System.String pinLowercaseCharactersUsage { get; set; }
+        public System.String PinLowercaseCharactersUsage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinSpecialCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.</para>
@@ -137,7 +146,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration")]
-        public System.String pinSpecialCharactersUsage { get; set; }
+        public System.String PinSpecialCharactersUsage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;state&quot; property, of type &quot;microsoft.graph.enablement&quot;.</para>
@@ -147,7 +156,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration")]
-        public System.String state { get; set; }
+        public System.String State { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityDeviceRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -157,7 +166,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration")]
-        public System.Boolean securityDeviceRequired { get; set; }
+        public System.Boolean SecurityDeviceRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;unlockWithBiometricsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -167,7 +176,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration")]
-        public System.Boolean unlockWithBiometricsEnabled { get; set; }
+        public System.Boolean UnlockWithBiometricsEnabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;remotePassportEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -177,7 +186,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration")]
-        public System.Boolean remotePassportEnabled { get; set; }
+        public System.Boolean RemotePassportEnabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinPreviousBlockCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -187,7 +196,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration")]
-        public System.Int32 pinPreviousBlockCount { get; set; }
+        public System.Int32 PinPreviousBlockCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinExpirationInDays&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -197,7 +206,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration")]
-        public System.Int32 pinExpirationInDays { get; set; }
+        public System.Int32 PinExpirationInDays { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enhancedBiometricsState&quot; property, of type &quot;microsoft.graph.enablement&quot;.</para>
@@ -207,7 +216,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration")]
-        public System.String enhancedBiometricsState { get; set; }
+        public System.String EnhancedBiometricsState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iosRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.</para>
@@ -217,7 +226,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration")]
-        public System.Object iosRestriction { get; set; }
+        public System.Object IosRestriction { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.</para>
@@ -227,7 +236,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration")]
-        public System.Object windowsRestriction { get; set; }
+        public System.Object WindowsRestriction { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsMobileRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.</para>
@@ -237,7 +246,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration")]
-        public System.Object windowsMobileRestriction { get; set; }
+        public System.Object WindowsMobileRestriction { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;androidRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.</para>
@@ -247,7 +256,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration")]
-        public System.Object androidRestriction { get; set; }
+        public System.Object AndroidRestriction { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;macOSRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.</para>
@@ -257,7 +266,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration")]
-        public System.Object macOSRestriction { get; set; }
+        public System.Object MacOSRestriction { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;limit&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -267,11 +276,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         [DerivedType("microsoft.graph.deviceEnrollmentLimitConfiguration")]
-        public System.Int32 limit { get; set; }
+        public System.Int32 Limit { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId ?? string.Empty}";
+            return $"deviceManagement/deviceEnrollmentConfigurations/{DeviceEnrollmentConfigurationId ?? string.Empty}";
         }
     }
 
@@ -297,7 +306,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -310,7 +319,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;priority&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -323,7 +332,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;priority&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;priority&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;priority&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 priority { get; set; }
+        public System.Int32 Priority { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -336,7 +345,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset createdDateTime { get; set; }
+        public System.DateTimeOffset CreatedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -349,7 +358,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -362,7 +371,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 version { get; set; }
+        public System.Int32 Version { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.</para>
@@ -377,7 +386,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
-        public System.Object[] assignments { get; set; }
+        public System.Object[] Assignments { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration&quot; type.</para>
@@ -385,7 +394,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter deviceEnrollmentWindowsHelloForBusinessConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter DeviceEnrollmentWindowsHelloForBusinessConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -395,7 +404,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;pinMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 pinMinimumLength { get; set; }
+        public System.Int32 PinMinimumLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinMaximumLength&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -405,7 +414,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;pinMaximumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinMaximumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 pinMaximumLength { get; set; }
+        public System.Int32 PinMaximumLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinUppercaseCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.</para>
@@ -419,7 +428,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"allowed", @"required", @"disallowed")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;pinUppercaseCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinUppercaseCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.")]
-        public System.String pinUppercaseCharactersUsage { get; set; }
+        public System.String PinUppercaseCharactersUsage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinLowercaseCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.</para>
@@ -433,7 +442,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"allowed", @"required", @"disallowed")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;pinLowercaseCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinLowercaseCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.")]
-        public System.String pinLowercaseCharactersUsage { get; set; }
+        public System.String PinLowercaseCharactersUsage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinSpecialCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.</para>
@@ -447,7 +456,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"allowed", @"required", @"disallowed")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;pinSpecialCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinSpecialCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.")]
-        public System.String pinSpecialCharactersUsage { get; set; }
+        public System.String PinSpecialCharactersUsage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;state&quot; property, of type &quot;microsoft.graph.enablement&quot;.</para>
@@ -461,7 +470,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"notConfigured", @"enabled", @"disabled")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.enablement&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.enablement&quot;.")]
-        public System.String state { get; set; }
+        public System.String State { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityDeviceRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -471,7 +480,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;securityDeviceRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;securityDeviceRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean securityDeviceRequired { get; set; }
+        public System.Boolean SecurityDeviceRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;unlockWithBiometricsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -481,7 +490,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;unlockWithBiometricsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;unlockWithBiometricsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean unlockWithBiometricsEnabled { get; set; }
+        public System.Boolean UnlockWithBiometricsEnabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;remotePassportEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -491,7 +500,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;remotePassportEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;remotePassportEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean remotePassportEnabled { get; set; }
+        public System.Boolean RemotePassportEnabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinPreviousBlockCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -501,7 +510,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;pinPreviousBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinPreviousBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 pinPreviousBlockCount { get; set; }
+        public System.Int32 PinPreviousBlockCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinExpirationInDays&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -511,7 +520,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;pinExpirationInDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinExpirationInDays&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 pinExpirationInDays { get; set; }
+        public System.Int32 PinExpirationInDays { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enhancedBiometricsState&quot; property, of type &quot;microsoft.graph.enablement&quot;.</para>
@@ -525,7 +534,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"notConfigured", @"enabled", @"disabled")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;enhancedBiometricsState&quot; property, of type &quot;microsoft.graph.enablement&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enhancedBiometricsState&quot; property, of type &quot;microsoft.graph.enablement&quot;.")]
-        public System.String enhancedBiometricsState { get; set; }
+        public System.String EnhancedBiometricsState { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration&quot; type.</para>
@@ -533,7 +542,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter deviceEnrollmentPlatformRestrictionsConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter DeviceEnrollmentPlatformRestrictionsConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iosRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.</para>
@@ -543,7 +552,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;iosRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;iosRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
-        public System.Object iosRestriction { get; set; }
+        public System.Object IosRestriction { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.</para>
@@ -553,7 +562,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;windowsRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;windowsRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
-        public System.Object windowsRestriction { get; set; }
+        public System.Object WindowsRestriction { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsMobileRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.</para>
@@ -563,7 +572,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;windowsMobileRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;windowsMobileRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
-        public System.Object windowsMobileRestriction { get; set; }
+        public System.Object WindowsMobileRestriction { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;androidRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.</para>
@@ -573,7 +582,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;androidRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;androidRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
-        public System.Object androidRestriction { get; set; }
+        public System.Object AndroidRestriction { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;macOSRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.</para>
@@ -583,7 +592,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;macOSRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;macOSRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
-        public System.Object macOSRestriction { get; set; }
+        public System.Object MacOSRestriction { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentLimitConfiguration&quot; type.</para>
@@ -591,7 +600,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.deviceEnrollmentLimitConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentLimitConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter deviceEnrollmentLimitConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter DeviceEnrollmentLimitConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;limit&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -601,7 +610,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;limit&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;limit&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 limit { get; set; }
+        public System.Int32 Limit { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -617,17 +626,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Update", "DeviceManagement_DeviceEnrollmentConfigurations", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.deviceEnrollmentConfiguration")]
-    [ResourceIdPropertyName("deviceEnrollmentConfigurationId")]
+    [ResourceIdPropertyName("DeviceEnrollmentConfigurationId")]
     public class Update_DeviceManagement_DeviceEnrollmentConfigurations : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object in the &quot;deviceEnrollmentConfigurations&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object in the &quot;deviceEnrollmentConfigurations&quot; collection.")]
-        public System.String deviceEnrollmentConfigurationId { get; set; }
+        public System.String DeviceEnrollmentConfigurationId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -640,7 +649,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -653,7 +662,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;priority&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -666,7 +675,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;priority&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;priority&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;priority&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 priority { get; set; }
+        public System.Int32 Priority { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -679,7 +688,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset createdDateTime { get; set; }
+        public System.DateTimeOffset CreatedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -692,7 +701,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -705,7 +714,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 version { get; set; }
+        public System.Int32 Version { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.</para>
@@ -720,7 +729,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
-        public System.Object[] assignments { get; set; }
+        public System.Object[] Assignments { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration&quot; type.</para>
@@ -728,7 +737,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter deviceEnrollmentWindowsHelloForBusinessConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter DeviceEnrollmentWindowsHelloForBusinessConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -738,7 +747,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;pinMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 pinMinimumLength { get; set; }
+        public System.Int32 PinMinimumLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinMaximumLength&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -748,7 +757,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;pinMaximumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinMaximumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 pinMaximumLength { get; set; }
+        public System.Int32 PinMaximumLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinUppercaseCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.</para>
@@ -762,7 +771,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"allowed", @"required", @"disallowed")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;pinUppercaseCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinUppercaseCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.")]
-        public System.String pinUppercaseCharactersUsage { get; set; }
+        public System.String PinUppercaseCharactersUsage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinLowercaseCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.</para>
@@ -776,7 +785,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"allowed", @"required", @"disallowed")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;pinLowercaseCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinLowercaseCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.")]
-        public System.String pinLowercaseCharactersUsage { get; set; }
+        public System.String PinLowercaseCharactersUsage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinSpecialCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.</para>
@@ -790,7 +799,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"allowed", @"required", @"disallowed")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;pinSpecialCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinSpecialCharactersUsage&quot; property, of type &quot;microsoft.graph.windowsHelloForBusinessPinUsage&quot;.")]
-        public System.String pinSpecialCharactersUsage { get; set; }
+        public System.String PinSpecialCharactersUsage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;state&quot; property, of type &quot;microsoft.graph.enablement&quot;.</para>
@@ -804,7 +813,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"notConfigured", @"enabled", @"disabled")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.enablement&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.enablement&quot;.")]
-        public System.String state { get; set; }
+        public System.String State { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityDeviceRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -814,7 +823,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;securityDeviceRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;securityDeviceRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean securityDeviceRequired { get; set; }
+        public System.Boolean SecurityDeviceRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;unlockWithBiometricsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -824,7 +833,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;unlockWithBiometricsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;unlockWithBiometricsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean unlockWithBiometricsEnabled { get; set; }
+        public System.Boolean UnlockWithBiometricsEnabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;remotePassportEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -834,7 +843,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;remotePassportEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;remotePassportEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean remotePassportEnabled { get; set; }
+        public System.Boolean RemotePassportEnabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinPreviousBlockCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -844,7 +853,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;pinPreviousBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinPreviousBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 pinPreviousBlockCount { get; set; }
+        public System.Int32 PinPreviousBlockCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinExpirationInDays&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -854,7 +863,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;pinExpirationInDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinExpirationInDays&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 pinExpirationInDays { get; set; }
+        public System.Int32 PinExpirationInDays { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enhancedBiometricsState&quot; property, of type &quot;microsoft.graph.enablement&quot;.</para>
@@ -868,7 +877,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"notConfigured", @"enabled", @"disabled")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;enhancedBiometricsState&quot; property, of type &quot;microsoft.graph.enablement&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enhancedBiometricsState&quot; property, of type &quot;microsoft.graph.enablement&quot;.")]
-        public System.String enhancedBiometricsState { get; set; }
+        public System.String EnhancedBiometricsState { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration&quot; type.</para>
@@ -876,7 +885,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter deviceEnrollmentPlatformRestrictionsConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter DeviceEnrollmentPlatformRestrictionsConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iosRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.</para>
@@ -886,7 +895,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;iosRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;iosRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
-        public System.Object iosRestriction { get; set; }
+        public System.Object IosRestriction { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.</para>
@@ -896,7 +905,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;windowsRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;windowsRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
-        public System.Object windowsRestriction { get; set; }
+        public System.Object WindowsRestriction { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsMobileRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.</para>
@@ -906,7 +915,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;windowsMobileRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;windowsMobileRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
-        public System.Object windowsMobileRestriction { get; set; }
+        public System.Object WindowsMobileRestriction { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;androidRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.</para>
@@ -916,7 +925,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;androidRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;androidRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
-        public System.Object androidRestriction { get; set; }
+        public System.Object AndroidRestriction { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;macOSRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.</para>
@@ -926,7 +935,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;macOSRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;macOSRestriction&quot; property, of type &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot;.")]
-        public System.Object macOSRestriction { get; set; }
+        public System.Object MacOSRestriction { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentLimitConfiguration&quot; type.</para>
@@ -934,7 +943,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.deviceEnrollmentLimitConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentLimitConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter deviceEnrollmentLimitConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter DeviceEnrollmentLimitConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;limit&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -944,37 +953,37 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;limit&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;limit&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 limit { get; set; }
+        public System.Int32 Limit { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}";
+            return $"deviceManagement/deviceEnrollmentConfigurations/{DeviceEnrollmentConfigurationId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceEnrollmentConfigurations/deviceEnrollmentConfigurationId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/deviceEnrollmentConfigurations/DeviceEnrollmentConfigurationId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object from the &quot;deviceEnrollmentConfigurations&quot; collection.</para>
     ///     <para type="description">The list of device enrollment configurations</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_DeviceEnrollmentConfigurations", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceEnrollmentConfiguration")]
-    [ResourceIdPropertyName("deviceEnrollmentConfigurationId")]
+    [ResourceIdPropertyName("DeviceEnrollmentConfigurationId")]
     public class Remove_DeviceManagement_DeviceEnrollmentConfigurations : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object in the &quot;deviceEnrollmentConfigurations&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object in the &quot;deviceEnrollmentConfigurations&quot; collection.")]
-        public System.String deviceEnrollmentConfigurationId { get; set; }
+        public System.String DeviceEnrollmentConfigurationId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}";
+            return $"deviceManagement/deviceEnrollmentConfigurations/{DeviceEnrollmentConfigurationId}";
         }
     }
 
@@ -985,7 +994,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "DeviceManagement_DeviceEnrollmentConfigurations_SetPriority", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceEnrollmentConfiguration")]
-    [ResourceIdPropertyName("deviceEnrollmentConfigurationId")]
+    [ResourceIdPropertyName("DeviceEnrollmentConfigurationId")]
     public class Invoke_DeviceManagement_DeviceEnrollmentConfigurations_SetPriority : ActionCmdlet
     {
         /// <summary>
@@ -995,20 +1004,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;priority&quot; parameter, which is accepted by the &quot;microsoft.graph.setPriority&quot; action.")]
-        public System.Int32 priority { get; set; }
+        public System.Int32 Priority { get; set; }
 
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object in the &quot;deviceEnrollmentConfigurations&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object in the &quot;deviceEnrollmentConfigurations&quot; collection.")]
-        public System.String deviceEnrollmentConfigurationId { get; set; }
+        public System.String DeviceEnrollmentConfigurationId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/setPriority";
+            return $"deviceManagement/deviceEnrollmentConfigurations/{DeviceEnrollmentConfigurationId}/setPriority";
         }
     }
 
@@ -1019,7 +1028,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "DeviceManagement_DeviceEnrollmentConfigurations_Assign", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceEnrollmentConfiguration")]
-    [ResourceIdPropertyName("deviceEnrollmentConfigurationId")]
+    [ResourceIdPropertyName("DeviceEnrollmentConfigurationId")]
     public class Invoke_DeviceManagement_DeviceEnrollmentConfigurations_Assign : ActionCmdlet
     {
         /// <summary>
@@ -1029,20 +1038,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;enrollmentConfigurationAssignments&quot; parameter, which is accepted by the &quot;microsoft.graph.assign&quot; action.")]
-        public System.Object[] enrollmentConfigurationAssignments { get; set; }
+        public System.Object[] EnrollmentConfigurationAssignments { get; set; }
 
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object in the &quot;deviceEnrollmentConfigurations&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object in the &quot;deviceEnrollmentConfigurations&quot; collection.")]
-        public System.String deviceEnrollmentConfigurationId { get; set; }
+        public System.String DeviceEnrollmentConfigurationId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assign";
+            return $"deviceManagement/deviceEnrollmentConfigurations/{DeviceEnrollmentConfigurationId}/assign";
         }
     }
 }

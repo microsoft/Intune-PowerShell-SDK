@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.subscription", HelpMessage = @"The &quot;resource&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String resource { get; set; }
+        public System.String Resource { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;changeType&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.subscription", HelpMessage = @"The &quot;changeType&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String changeType { get; set; }
+        public System.String ChangeType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;clientState&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.subscription", HelpMessage = @"The &quot;clientState&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String clientState { get; set; }
+        public System.String ClientState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notificationUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.subscription", HelpMessage = @"The &quot;notificationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String notificationUrl { get; set; }
+        public System.String NotificationUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.subscription", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset expirationDateTime { get; set; }
+        public System.DateTimeOffset ExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;applicationId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.subscription", HelpMessage = @"The &quot;applicationId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String applicationId { get; set; }
+        public System.String ApplicationId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;creatorId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -73,6 +73,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.subscription", HelpMessage = @"The &quot;creatorId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String creatorId { get; set; }
+        public System.String CreatorId { get; set; }
     }
 }

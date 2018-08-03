@@ -19,6 +19,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookSessionInfo", HelpMessage = @"The &quot;persistChanges&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean persistChanges { get; set; }
+        public System.Boolean PersistChanges { get; set; }
     }
 }

@@ -22,7 +22,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.referenceAttachment", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.itemAttachment", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.fileAttachment", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;name&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -34,7 +34,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.referenceAttachment", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.itemAttachment", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.fileAttachment", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String name { get; set; }
+        public System.String Name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;contentType&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.referenceAttachment", HelpMessage = @"The &quot;contentType&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.itemAttachment", HelpMessage = @"The &quot;contentType&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.fileAttachment", HelpMessage = @"The &quot;contentType&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String contentType { get; set; }
+        public System.String ContentType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;size&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -58,7 +58,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.referenceAttachment", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.itemAttachment", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.fileAttachment", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 size { get; set; }
+        public System.Int32 Size { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isInline&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -70,7 +70,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.referenceAttachment", HelpMessage = @"The &quot;isInline&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.itemAttachment", HelpMessage = @"The &quot;isInline&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.fileAttachment", HelpMessage = @"The &quot;isInline&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isInline { get; set; }
+        public System.Boolean IsInline { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.referenceAttachment&quot; type.</para>
@@ -78,7 +78,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.referenceAttachment")]
         [Parameter(ParameterSetName = @"#microsoft.graph.referenceAttachment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.referenceAttachment&quot; type.")]
-        public System.Management.Automation.SwitchParameter referenceAttachment { get; set; }
+        public System.Management.Automation.SwitchParameter ReferenceAttachment { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.itemAttachment&quot; type.</para>
@@ -86,7 +86,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.itemAttachment")]
         [Parameter(ParameterSetName = @"#microsoft.graph.itemAttachment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.itemAttachment&quot; type.")]
-        public System.Management.Automation.SwitchParameter itemAttachment { get; set; }
+        public System.Management.Automation.SwitchParameter ItemAttachment { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;item&quot; property, of type &quot;microsoft.graph.outlookItem&quot;.</para>
@@ -95,7 +95,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.outlookItem")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.itemAttachment", HelpMessage = @"The &quot;item&quot; property, of type &quot;microsoft.graph.outlookItem&quot;.")]
-        public System.Object item { get; set; }
+        public System.Object Item { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.fileAttachment&quot; type.</para>
@@ -103,7 +103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.fileAttachment")]
         [Parameter(ParameterSetName = @"#microsoft.graph.fileAttachment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.fileAttachment&quot; type.")]
-        public System.Management.Automation.SwitchParameter fileAttachment { get; set; }
+        public System.Management.Automation.SwitchParameter FileAttachment { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;contentId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -112,7 +112,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.fileAttachment", HelpMessage = @"The &quot;contentId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String contentId { get; set; }
+        public System.String ContentId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;contentLocation&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -121,7 +121,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.fileAttachment", HelpMessage = @"The &quot;contentLocation&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String contentLocation { get; set; }
+        public System.String ContentLocation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;contentBytes&quot; property, of type &quot;Edm.Binary&quot;.</para>
@@ -131,6 +131,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.fileAttachment", HelpMessage = @"The &quot;contentBytes&quot; property, of type &quot;Edm.Binary&quot;.")]
-        public System.Byte[] contentBytes { get; set; }
+        public System.Byte[] ContentBytes { get; set; }
     }
 }

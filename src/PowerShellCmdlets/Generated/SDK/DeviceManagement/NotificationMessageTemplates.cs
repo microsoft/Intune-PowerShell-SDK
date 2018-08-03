@@ -12,7 +12,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_NotificationMessageTemplates", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.notificationMessageTemplate")]
-    [ResourceIdPropertyName("notificationMessageTemplateId")]
+    [ResourceIdPropertyName("NotificationMessageTemplateId")]
     [ResourceReference]
     public class Get_DeviceManagement_NotificationMessageTemplates : GetOrSearchCmdlet
     {
@@ -20,10 +20,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.")]
-        public System.String notificationMessageTemplateId { get; set; }
+        public System.String NotificationMessageTemplateId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -43,7 +43,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defaultLocale&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -53,7 +53,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String defaultLocale { get; set; }
+        public System.String DefaultLocale { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;brandingOptions&quot; property, of type &quot;microsoft.graph.notificationTemplateBrandingOptions&quot;.</para>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.notificationTemplateBrandingOptions")]
         [Selectable]
         [Sortable]
-        public System.String brandingOptions { get; set; }
+        public System.String BrandingOptions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;localizedNotificationMessages&quot; property, of type &quot;microsoft.graph.localizedNotificationMessage&quot;.</para>
@@ -73,11 +73,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.localizedNotificationMessage")]
         [Selectable]
         [Expandable]
-        public System.Object[] localizedNotificationMessages { get; set; }
+        public System.Object[] LocalizedNotificationMessages { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.notificationMessageTemplate&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId ?? string.Empty}";
+            return $"deviceManagement/notificationMessageTemplates/{NotificationMessageTemplateId ?? string.Empty}";
         }
     }
 
@@ -101,7 +110,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.notificationMessageTemplate", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -112,7 +121,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.notificationMessageTemplate", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defaultLocale&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -123,7 +132,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.notificationMessageTemplate", HelpMessage = @"The &quot;defaultLocale&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;defaultLocale&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String defaultLocale { get; set; }
+        public System.String DefaultLocale { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;brandingOptions&quot; property, of type &quot;microsoft.graph.notificationTemplateBrandingOptions&quot;.</para>
@@ -138,7 +147,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"none", @"includeCompanyLogo", @"includeCompanyName", @"includeContactInformation")]
         [Parameter(ParameterSetName = @"#microsoft.graph.notificationMessageTemplate", HelpMessage = @"The &quot;brandingOptions&quot; property, of type &quot;microsoft.graph.notificationTemplateBrandingOptions&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;brandingOptions&quot; property, of type &quot;microsoft.graph.notificationTemplateBrandingOptions&quot;.")]
-        public System.String brandingOptions { get; set; }
+        public System.String BrandingOptions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;localizedNotificationMessages&quot; property, of type &quot;microsoft.graph.localizedNotificationMessage&quot;.</para>
@@ -150,7 +159,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.notificationMessageTemplate", HelpMessage = @"The &quot;localizedNotificationMessages&quot; property, of type &quot;microsoft.graph.localizedNotificationMessage&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;localizedNotificationMessages&quot; property, of type &quot;microsoft.graph.localizedNotificationMessage&quot;.")]
-        public System.Object[] localizedNotificationMessages { get; set; }
+        public System.Object[] LocalizedNotificationMessages { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -166,17 +175,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Update", "DeviceManagement_NotificationMessageTemplates", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.notificationMessageTemplate")]
     [ODataType("microsoft.graph.notificationMessageTemplate")]
-    [ResourceIdPropertyName("notificationMessageTemplateId")]
+    [ResourceIdPropertyName("NotificationMessageTemplateId")]
     public class Update_DeviceManagement_NotificationMessageTemplates : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.")]
-        public System.String notificationMessageTemplateId { get; set; }
+        public System.String NotificationMessageTemplateId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -187,7 +196,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.notificationMessageTemplate", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -198,7 +207,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.notificationMessageTemplate", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defaultLocale&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -209,7 +218,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.notificationMessageTemplate", HelpMessage = @"The &quot;defaultLocale&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;defaultLocale&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String defaultLocale { get; set; }
+        public System.String DefaultLocale { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;brandingOptions&quot; property, of type &quot;microsoft.graph.notificationTemplateBrandingOptions&quot;.</para>
@@ -224,7 +233,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"none", @"includeCompanyLogo", @"includeCompanyName", @"includeContactInformation")]
         [Parameter(ParameterSetName = @"#microsoft.graph.notificationMessageTemplate", HelpMessage = @"The &quot;brandingOptions&quot; property, of type &quot;microsoft.graph.notificationTemplateBrandingOptions&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;brandingOptions&quot; property, of type &quot;microsoft.graph.notificationTemplateBrandingOptions&quot;.")]
-        public System.String brandingOptions { get; set; }
+        public System.String BrandingOptions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;localizedNotificationMessages&quot; property, of type &quot;microsoft.graph.localizedNotificationMessage&quot;.</para>
@@ -236,37 +245,37 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.notificationMessageTemplate", HelpMessage = @"The &quot;localizedNotificationMessages&quot; property, of type &quot;microsoft.graph.localizedNotificationMessage&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;localizedNotificationMessages&quot; property, of type &quot;microsoft.graph.localizedNotificationMessage&quot;.")]
-        public System.Object[] localizedNotificationMessages { get; set; }
+        public System.Object[] LocalizedNotificationMessages { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}";
+            return $"deviceManagement/notificationMessageTemplates/{NotificationMessageTemplateId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.notificationMessageTemplate&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/notificationMessageTemplates/notificationMessageTemplateId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/notificationMessageTemplates/NotificationMessageTemplateId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.notificationMessageTemplate&quot; object from the &quot;notificationMessageTemplates&quot; collection.</para>
     ///     <para type="description">The Notification Message Templates.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_NotificationMessageTemplates", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.notificationMessageTemplate")]
-    [ResourceIdPropertyName("notificationMessageTemplateId")]
+    [ResourceIdPropertyName("NotificationMessageTemplateId")]
     public class Remove_DeviceManagement_NotificationMessageTemplates : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.")]
-        public System.String notificationMessageTemplateId { get; set; }
+        public System.String NotificationMessageTemplateId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}";
+            return $"deviceManagement/notificationMessageTemplates/{NotificationMessageTemplateId}";
         }
     }
 
@@ -277,21 +286,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "DeviceManagement_NotificationMessageTemplates_SendTestMessage", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.notificationMessageTemplate")]
-    [ResourceIdPropertyName("notificationMessageTemplateId")]
+    [ResourceIdPropertyName("NotificationMessageTemplateId")]
     public class Invoke_DeviceManagement_NotificationMessageTemplates_SendTestMessage : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.")]
-        public System.String notificationMessageTemplateId { get; set; }
+        public System.String NotificationMessageTemplateId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/sendTestMessage";
+            return $"deviceManagement/notificationMessageTemplates/{NotificationMessageTemplateId}/sendTestMessage";
         }
     }
 }

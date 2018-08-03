@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookApplication")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbook", HelpMessage = @"The &quot;application&quot; property, of type &quot;microsoft.graph.workbookApplication&quot;.")]
-        public System.Object application { get; set; }
+        public System.Object Application { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;names&quot; property, of type &quot;microsoft.graph.workbookNamedItem&quot;.</para>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbook", HelpMessage = @"The &quot;names&quot; property, of type &quot;microsoft.graph.workbookNamedItem&quot;.")]
-        public System.Object[] names { get; set; }
+        public System.Object[] Names { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;tables&quot; property, of type &quot;microsoft.graph.workbookTable&quot;.</para>
@@ -39,7 +39,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbook", HelpMessage = @"The &quot;tables&quot; property, of type &quot;microsoft.graph.workbookTable&quot;.")]
-        public System.Object[] tables { get; set; }
+        public System.Object[] Tables { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;worksheets&quot; property, of type &quot;microsoft.graph.workbookWorksheet&quot;.</para>
@@ -49,7 +49,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbook", HelpMessage = @"The &quot;worksheets&quot; property, of type &quot;microsoft.graph.workbookWorksheet&quot;.")]
-        public System.Object[] worksheets { get; set; }
+        public System.Object[] Worksheets { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;functions&quot; property, of type &quot;microsoft.graph.workbookFunctions&quot;.</para>
@@ -58,6 +58,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookFunctions")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbook", HelpMessage = @"The &quot;functions&quot; property, of type &quot;microsoft.graph.workbookFunctions&quot;.")]
-        public System.Object functions { get; set; }
+        public System.Object Functions { get; set; }
     }
 }

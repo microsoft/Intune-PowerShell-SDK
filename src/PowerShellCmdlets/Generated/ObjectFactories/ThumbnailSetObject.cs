@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.thumbnail")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.thumbnailSet", HelpMessage = @"The &quot;large&quot; property, of type &quot;microsoft.graph.thumbnail&quot;.")]
-        public System.Object large { get; set; }
+        public System.Object Large { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;medium&quot; property, of type &quot;microsoft.graph.thumbnail&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.thumbnail")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.thumbnailSet", HelpMessage = @"The &quot;medium&quot; property, of type &quot;microsoft.graph.thumbnail&quot;.")]
-        public System.Object medium { get; set; }
+        public System.Object Medium { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;small&quot; property, of type &quot;microsoft.graph.thumbnail&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.thumbnail")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.thumbnailSet", HelpMessage = @"The &quot;small&quot; property, of type &quot;microsoft.graph.thumbnail&quot;.")]
-        public System.Object small { get; set; }
+        public System.Object Small { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;source&quot; property, of type &quot;microsoft.graph.thumbnail&quot;.</para>
@@ -46,6 +46,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.thumbnail")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.thumbnailSet", HelpMessage = @"The &quot;source&quot; property, of type &quot;microsoft.graph.thumbnail&quot;.")]
-        public System.Object source { get; set; }
+        public System.Object Source { get; set; }
     }
 }

@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.physicalAddress", HelpMessage = @"The &quot;street&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String street { get; set; }
+        public System.String Street { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;city&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.physicalAddress", HelpMessage = @"The &quot;city&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String city { get; set; }
+        public System.String City { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;state&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.physicalAddress", HelpMessage = @"The &quot;state&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String state { get; set; }
+        public System.String State { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;countryOrRegion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.physicalAddress", HelpMessage = @"The &quot;countryOrRegion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String countryOrRegion { get; set; }
+        public System.String CountryOrRegion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;postalCode&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -55,6 +55,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.physicalAddress", HelpMessage = @"The &quot;postalCode&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String postalCode { get; set; }
+        public System.String PostalCode { get; set; }
     }
 }

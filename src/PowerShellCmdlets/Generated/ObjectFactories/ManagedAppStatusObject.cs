@@ -22,7 +22,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedAppStatus", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedAppStatusRaw", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedAppStatus", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedAppStatusRaw", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String version { get; set; }
+        public System.String Version { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAppStatusRaw&quot; type.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.managedAppStatusRaw")]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedAppStatusRaw", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAppStatusRaw&quot; type.")]
-        public System.Management.Automation.SwitchParameter managedAppStatusRaw { get; set; }
+        public System.Management.Automation.SwitchParameter ManagedAppStatusRaw { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;content&quot; property, of type &quot;microsoft.graph.Json&quot;.</para>
@@ -51,6 +51,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedAppStatusRaw", HelpMessage = @"The &quot;content&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object content { get; set; }
+        public System.Object Content { get; set; }
     }
 }

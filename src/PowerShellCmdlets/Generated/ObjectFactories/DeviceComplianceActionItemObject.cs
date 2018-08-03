@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceActionItem", HelpMessage = @"The &quot;gracePeriodHours&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 gracePeriodHours { get; set; }
+        public System.Int32 GracePeriodHours { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;actionType&quot; property, of type &quot;microsoft.graph.deviceComplianceActionType&quot;.</para>
@@ -35,7 +35,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"noAction", @"notification", @"block", @"retire", @"wipe", @"removeResourceAccessProfiles")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceActionItem", HelpMessage = @"The &quot;actionType&quot; property, of type &quot;microsoft.graph.deviceComplianceActionType&quot;.")]
-        public System.String actionType { get; set; }
+        public System.String ActionType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notificationTemplateId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceActionItem", HelpMessage = @"The &quot;notificationTemplateId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String notificationTemplateId { get; set; }
+        public System.String NotificationTemplateId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notificationMessageCCList&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -56,6 +56,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceActionItem", HelpMessage = @"The &quot;notificationMessageCCList&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] notificationMessageCCList { get; set; }
+        public System.String[] NotificationMessageCCList { get; set; }
     }
 }

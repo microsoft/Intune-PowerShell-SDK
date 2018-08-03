@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.conversationThread", HelpMessage = @"The &quot;toRecipients&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
-        public System.Object[] toRecipients { get; set; }
+        public System.Object[] ToRecipients { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;topic&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.conversationThread", HelpMessage = @"The &quot;topic&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String topic { get; set; }
+        public System.String Topic { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;hasAttachments&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -38,7 +38,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.conversationThread", HelpMessage = @"The &quot;hasAttachments&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean hasAttachments { get; set; }
+        public System.Boolean HasAttachments { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastDeliveredDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -47,7 +47,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.conversationThread", HelpMessage = @"The &quot;lastDeliveredDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastDeliveredDateTime { get; set; }
+        public System.DateTimeOffset LastDeliveredDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;uniqueSenders&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -57,7 +57,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.conversationThread", HelpMessage = @"The &quot;uniqueSenders&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] uniqueSenders { get; set; }
+        public System.String[] UniqueSenders { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;ccRecipients&quot; property, of type &quot;microsoft.graph.recipient&quot;.</para>
@@ -67,7 +67,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.conversationThread", HelpMessage = @"The &quot;ccRecipients&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
-        public System.Object[] ccRecipients { get; set; }
+        public System.Object[] CcRecipients { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;preview&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -76,7 +76,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.conversationThread", HelpMessage = @"The &quot;preview&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String preview { get; set; }
+        public System.String Preview { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isLocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -85,7 +85,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.conversationThread", HelpMessage = @"The &quot;isLocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isLocked { get; set; }
+        public System.Boolean IsLocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;posts&quot; property, of type &quot;microsoft.graph.post&quot;.</para>
@@ -95,6 +95,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.conversationThread", HelpMessage = @"The &quot;posts&quot; property, of type &quot;microsoft.graph.post&quot;.")]
-        public System.Object[] posts { get; set; }
+        public System.Object[] Posts { get; set; }
     }
 }

@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionAppLearningSummary", HelpMessage = @"The &quot;applicationName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String applicationName { get; set; }
+        public System.String ApplicationName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;applicationType&quot; property, of type &quot;microsoft.graph.applicationType&quot;.</para>
@@ -35,7 +35,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"universal", @"desktop")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionAppLearningSummary", HelpMessage = @"The &quot;applicationType&quot; property, of type &quot;microsoft.graph.applicationType&quot;.")]
-        public System.String applicationType { get; set; }
+        public System.String ApplicationType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -45,6 +45,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionAppLearningSummary", HelpMessage = @"The &quot;deviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 deviceCount { get; set; }
+        public System.Int32 DeviceCount { get; set; }
     }
 }

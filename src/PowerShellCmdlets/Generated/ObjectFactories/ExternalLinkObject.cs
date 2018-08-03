@@ -19,6 +19,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.externalLink", HelpMessage = @"The &quot;href&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String href { get; set; }
+        public System.String Href { get; set; }
     }
 }

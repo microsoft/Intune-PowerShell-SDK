@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTableColumn", HelpMessage = @"The &quot;index&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 index { get; set; }
+        public System.Int32 Index { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;name&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTableColumn", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String name { get; set; }
+        public System.String Name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;values&quot; property, of type &quot;microsoft.graph.Json&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTableColumn", HelpMessage = @"The &quot;values&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object values { get; set; }
+        public System.Object Values { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;filter&quot; property, of type &quot;microsoft.graph.workbookFilter&quot;.</para>
@@ -46,6 +46,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookFilter")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTableColumn", HelpMessage = @"The &quot;filter&quot; property, of type &quot;microsoft.graph.workbookFilter&quot;.")]
-        public System.Object filter { get; set; }
+        public System.Object Filter { get; set; }
     }
 }

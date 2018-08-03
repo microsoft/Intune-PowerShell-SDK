@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceExchangeAccessStateSummary", HelpMessage = @"The &quot;allowedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 allowedDeviceCount { get; set; }
+        public System.Int32 AllowedDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;blockedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceExchangeAccessStateSummary", HelpMessage = @"The &quot;blockedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 blockedDeviceCount { get; set; }
+        public System.Int32 BlockedDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;quarantinedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceExchangeAccessStateSummary", HelpMessage = @"The &quot;quarantinedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 quarantinedDeviceCount { get; set; }
+        public System.Int32 QuarantinedDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;unknownDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceExchangeAccessStateSummary", HelpMessage = @"The &quot;unknownDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 unknownDeviceCount { get; set; }
+        public System.Int32 UnknownDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;unavailableDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -60,6 +60,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceExchangeAccessStateSummary", HelpMessage = @"The &quot;unavailableDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 unavailableDeviceCount { get; set; }
+        public System.Int32 UnavailableDeviceCount { get; set; }
     }
 }

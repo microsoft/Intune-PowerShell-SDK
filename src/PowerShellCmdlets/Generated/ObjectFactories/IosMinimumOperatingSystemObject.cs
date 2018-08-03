@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosMinimumOperatingSystem", HelpMessage = @"The &quot;v8_0&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean v8_0 { get; set; }
+        public System.Boolean V80 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;v9_0&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosMinimumOperatingSystem", HelpMessage = @"The &quot;v9_0&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean v9_0 { get; set; }
+        public System.Boolean V90 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;v10_0&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosMinimumOperatingSystem", HelpMessage = @"The &quot;v10_0&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean v10_0 { get; set; }
+        public System.Boolean V100 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;v11_0&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -50,6 +50,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosMinimumOperatingSystem", HelpMessage = @"The &quot;v11_0&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean v11_0 { get; set; }
+        public System.Boolean V110 { get; set; }
     }
 }

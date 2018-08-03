@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookFilterDatetime", HelpMessage = @"The &quot;date&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String date { get; set; }
+        public System.String Date { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;specificity&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookFilterDatetime", HelpMessage = @"The &quot;specificity&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String specificity { get; set; }
+        public System.String Specificity { get; set; }
     }
 }

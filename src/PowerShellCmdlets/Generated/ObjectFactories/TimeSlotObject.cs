@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.dateTimeTimeZone")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.timeSlot", HelpMessage = @"The &quot;start&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
-        public System.Object start { get; set; }
+        public System.Object Start { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;end&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.dateTimeTimeZone")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.timeSlot", HelpMessage = @"The &quot;end&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
-        public System.Object end { get; set; }
+        public System.Object End { get; set; }
     }
 }

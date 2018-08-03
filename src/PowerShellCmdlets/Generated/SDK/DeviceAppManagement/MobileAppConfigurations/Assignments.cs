@@ -6,13 +6,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}/assignments</para>
+    ///     <para type="description">GET ~/deviceAppManagement/mobileAppConfigurations/{MobileAppConfigurationId}/assignments</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; objects in the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of group assignemenets for app configration.</para>
     /// </summary>
     [Cmdlet("Get", "DeviceAppManagement_MobileAppConfigurations_Assignments", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationAssignment")]
-    [ResourceIdPropertyName("assignmentId")]
+    [ResourceIdPropertyName("AssignmentId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_MobileAppConfigurations_Assignments : GetOrSearchCmdlet
     {
@@ -22,16 +22,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.")]
-        public System.String mobileAppConfigurationId { get; set; }
+        public System.String MobileAppConfigurationId { get; set; }
 
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; object in the &quot;assignments&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; object in the &quot;assignments&quot; collection.")]
-        public System.String assignmentId { get; set; }
+        public System.String AssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.</para>
@@ -41,17 +41,26 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceAndAppManagementAssignmentTarget")]
         [Selectable]
         [Sortable]
-        public System.Object target { get; set; }
+        public System.Object Target { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}/assignments/{assignmentId ?? string.Empty}";
+            return $"deviceAppManagement/mobileAppConfigurations/{MobileAppConfigurationId}/assignments/{AssignmentId ?? string.Empty}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}/assignments</para>
+    ///     <para type="description">POST ~/deviceAppManagement/mobileAppConfigurations/{MobileAppConfigurationId}/assignments</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; object to the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of group assignemenets for app configration.</para>
     /// </summary>
@@ -66,7 +75,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.")]
-        public System.String mobileAppConfigurationId { get; set; }
+        public System.String MobileAppConfigurationId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.</para>
@@ -77,33 +86,33 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedDeviceMobileAppConfigurationAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
-        public System.Object target { get; set; }
+        public System.Object Target { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}/assignments";
+            return $"deviceAppManagement/mobileAppConfigurations/{MobileAppConfigurationId}/assignments";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}/assignments</para>
+    ///     <para type="description">PATCH ~/deviceAppManagement/mobileAppConfigurations/{MobileAppConfigurationId}/assignments</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; object in the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of group assignemenets for app configration.</para>
     /// </summary>
     [Cmdlet("Update", "DeviceAppManagement_MobileAppConfigurations_Assignments", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.managedDeviceMobileAppConfigurationAssignment")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationAssignment")]
-    [ResourceIdPropertyName("assignmentId")]
+    [ResourceIdPropertyName("AssignmentId")]
     public class Update_DeviceAppManagement_MobileAppConfigurations_Assignments : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; object in the &quot;assignments&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; object in the &quot;assignments&quot; collection.")]
-        public System.String assignmentId { get; set; }
+        public System.String AssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.</para>
@@ -111,7 +120,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.")]
-        public System.String mobileAppConfigurationId { get; set; }
+        public System.String MobileAppConfigurationId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.</para>
@@ -122,33 +131,33 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedDeviceMobileAppConfigurationAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
-        public System.Object target { get; set; }
+        public System.Object Target { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}/assignments/{assignmentId}";
+            return $"deviceAppManagement/mobileAppConfigurations/{MobileAppConfigurationId}/assignments/{AssignmentId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}/assignments/assignmentId</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/mobileAppConfigurations/{MobileAppConfigurationId}/assignments/AssignmentId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; object from the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of group assignemenets for app configration.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_MobileAppConfigurations_Assignments", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationAssignment")]
-    [ResourceIdPropertyName("assignmentId")]
+    [ResourceIdPropertyName("AssignmentId")]
     public class Remove_DeviceAppManagement_MobileAppConfigurations_Assignments : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; object in the &quot;assignments&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; object in the &quot;assignments&quot; collection.")]
-        public System.String assignmentId { get; set; }
+        public System.String AssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.</para>
@@ -156,11 +165,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.")]
-        public System.String mobileAppConfigurationId { get; set; }
+        public System.String MobileAppConfigurationId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}/assignments/{assignmentId}";
+            return $"deviceAppManagement/mobileAppConfigurations/{MobileAppConfigurationId}/assignments/{AssignmentId}";
         }
     }
 }

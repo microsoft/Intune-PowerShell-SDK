@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidMinimumOperatingSystem", HelpMessage = @"The &quot;v4_0&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean v4_0 { get; set; }
+        public System.Boolean V40 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;v4_0_3&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidMinimumOperatingSystem", HelpMessage = @"The &quot;v4_0_3&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean v4_0_3 { get; set; }
+        public System.Boolean V403 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;v4_1&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidMinimumOperatingSystem", HelpMessage = @"The &quot;v4_1&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean v4_1 { get; set; }
+        public System.Boolean V41 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;v4_2&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidMinimumOperatingSystem", HelpMessage = @"The &quot;v4_2&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean v4_2 { get; set; }
+        public System.Boolean V42 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;v4_3&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -60,7 +60,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidMinimumOperatingSystem", HelpMessage = @"The &quot;v4_3&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean v4_3 { get; set; }
+        public System.Boolean V43 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;v4_4&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -70,7 +70,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidMinimumOperatingSystem", HelpMessage = @"The &quot;v4_4&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean v4_4 { get; set; }
+        public System.Boolean V44 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;v5_0&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -80,7 +80,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidMinimumOperatingSystem", HelpMessage = @"The &quot;v5_0&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean v5_0 { get; set; }
+        public System.Boolean V50 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;v5_1&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -90,6 +90,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidMinimumOperatingSystem", HelpMessage = @"The &quot;v5_1&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean v5_1 { get; set; }
+        public System.Boolean V51 { get; set; }
     }
 }

@@ -19,6 +19,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerBucketTaskBoardTaskFormat", HelpMessage = @"The &quot;orderHint&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String orderHint { get; set; }
+        public System.String OrderHint { get; set; }
     }
 }

@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookWorksheetProtectionOptions")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheetProtection", HelpMessage = @"The &quot;options&quot; property, of type &quot;microsoft.graph.workbookWorksheetProtectionOptions&quot;.")]
-        public System.Object options { get; set; }
+        public System.Object Options { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;protected&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheetProtection", HelpMessage = @"The &quot;protected&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean @protected { get; set; }
+        public System.Boolean Protected { get; set; }
     }
 }

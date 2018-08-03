@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionAppLockerFile", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;fileHash&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionAppLockerFile", HelpMessage = @"The &quot;fileHash&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String fileHash { get; set; }
+        public System.String FileHash { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;file&quot; property, of type &quot;Edm.Binary&quot;.</para>
@@ -42,7 +42,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionAppLockerFile", HelpMessage = @"The &quot;file&quot; property, of type &quot;Edm.Binary&quot;.")]
-        public System.Byte[] file { get; set; }
+        public System.Byte[] File { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -52,6 +52,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionAppLockerFile", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String version { get; set; }
+        public System.String Version { get; set; }
     }
 }

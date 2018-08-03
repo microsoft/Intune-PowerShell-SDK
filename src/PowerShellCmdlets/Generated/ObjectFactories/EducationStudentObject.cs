@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationStudent", HelpMessage = @"The &quot;graduationYear&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String graduationYear { get; set; }
+        public System.String GraduationYear { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;grade&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationStudent", HelpMessage = @"The &quot;grade&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String grade { get; set; }
+        public System.String Grade { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;birthDate&quot; property, of type &quot;Edm.Date&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Date")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationStudent", HelpMessage = @"The &quot;birthDate&quot; property, of type &quot;Edm.Date&quot;.")]
-        public System.DateTimeOffset birthDate { get; set; }
+        public System.DateTimeOffset BirthDate { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;gender&quot; property, of type &quot;microsoft.graph.educationGender&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"female", @"male", @"other", @"unknownFutureValue")]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationStudent", HelpMessage = @"The &quot;gender&quot; property, of type &quot;microsoft.graph.educationGender&quot;.")]
-        public System.String gender { get; set; }
+        public System.String Gender { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;studentNumber&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -59,7 +59,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationStudent", HelpMessage = @"The &quot;studentNumber&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String studentNumber { get; set; }
+        public System.String StudentNumber { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;externalId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -68,6 +68,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationStudent", HelpMessage = @"The &quot;externalId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String externalId { get; set; }
+        public System.String ExternalId { get; set; }
     }
 }

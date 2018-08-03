@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTable", HelpMessage = @"The &quot;highlightFirstColumn&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean highlightFirstColumn { get; set; }
+        public System.Boolean HighlightFirstColumn { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;highlightLastColumn&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTable", HelpMessage = @"The &quot;highlightLastColumn&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean highlightLastColumn { get; set; }
+        public System.Boolean HighlightLastColumn { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;name&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTable", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String name { get; set; }
+        public System.String Name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showBandedColumns&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTable", HelpMessage = @"The &quot;showBandedColumns&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean showBandedColumns { get; set; }
+        public System.Boolean ShowBandedColumns { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showBandedRows&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTable", HelpMessage = @"The &quot;showBandedRows&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean showBandedRows { get; set; }
+        public System.Boolean ShowBandedRows { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showFilterButton&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTable", HelpMessage = @"The &quot;showFilterButton&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean showFilterButton { get; set; }
+        public System.Boolean ShowFilterButton { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showHeaders&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTable", HelpMessage = @"The &quot;showHeaders&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean showHeaders { get; set; }
+        public System.Boolean ShowHeaders { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showTotals&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -82,7 +82,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTable", HelpMessage = @"The &quot;showTotals&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean showTotals { get; set; }
+        public System.Boolean ShowTotals { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;style&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -91,7 +91,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTable", HelpMessage = @"The &quot;style&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String style { get; set; }
+        public System.String Style { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;columns&quot; property, of type &quot;microsoft.graph.workbookTableColumn&quot;.</para>
@@ -101,7 +101,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTable", HelpMessage = @"The &quot;columns&quot; property, of type &quot;microsoft.graph.workbookTableColumn&quot;.")]
-        public System.Object[] columns { get; set; }
+        public System.Object[] Columns { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;rows&quot; property, of type &quot;microsoft.graph.workbookTableRow&quot;.</para>
@@ -111,7 +111,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTable", HelpMessage = @"The &quot;rows&quot; property, of type &quot;microsoft.graph.workbookTableRow&quot;.")]
-        public System.Object[] rows { get; set; }
+        public System.Object[] Rows { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sort&quot; property, of type &quot;microsoft.graph.workbookTableSort&quot;.</para>
@@ -120,7 +120,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookTableSort")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTable", HelpMessage = @"The &quot;sort&quot; property, of type &quot;microsoft.graph.workbookTableSort&quot;.")]
-        public System.Object sort { get; set; }
+        public System.Object Sort { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;worksheet&quot; property, of type &quot;microsoft.graph.workbookWorksheet&quot;.</para>
@@ -129,6 +129,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookWorksheet")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTable", HelpMessage = @"The &quot;worksheet&quot; property, of type &quot;microsoft.graph.workbookWorksheet&quot;.")]
-        public System.Object worksheet { get; set; }
+        public System.Object Worksheet { get; set; }
     }
 }

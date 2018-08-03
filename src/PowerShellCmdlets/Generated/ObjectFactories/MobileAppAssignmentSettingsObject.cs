@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.microsoftStoreForBusinessAppAssignmentSettings")]
         [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessAppAssignmentSettings", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.microsoftStoreForBusinessAppAssignmentSettings&quot; type.")]
-        public System.Management.Automation.SwitchParameter microsoftStoreForBusinessAppAssignmentSettings { get; set; }
+        public System.Management.Automation.SwitchParameter MicrosoftStoreForBusinessAppAssignmentSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;useDeviceContext&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessAppAssignmentSettings", HelpMessage = @"The &quot;useDeviceContext&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean useDeviceContext { get; set; }
+        public System.Boolean UseDeviceContext { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppAppAssignmentSettings&quot; type.</para>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.iosVppAppAssignmentSettings")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppAppAssignmentSettings", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppAppAssignmentSettings&quot; type.")]
-        public System.Management.Automation.SwitchParameter iosVppAppAssignmentSettings { get; set; }
+        public System.Management.Automation.SwitchParameter IosVppAppAssignmentSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;useDeviceLicensing&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppAppAssignmentSettings", HelpMessage = @"The &quot;useDeviceLicensing&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean useDeviceLicensing { get; set; }
+        public System.Boolean UseDeviceLicensing { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;vpnConfigurationId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -58,7 +58,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppAppAssignmentSettings", HelpMessage = @"The &quot;vpnConfigurationId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreAppAssignmentSettings", HelpMessage = @"The &quot;vpnConfigurationId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosLobAppAssignmentSettings", HelpMessage = @"The &quot;vpnConfigurationId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String vpnConfigurationId { get; set; }
+        public System.String VpnConfigurationId { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosStoreAppAssignmentSettings&quot; type.</para>
@@ -66,7 +66,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.iosStoreAppAssignmentSettings")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreAppAssignmentSettings", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosStoreAppAssignmentSettings&quot; type.")]
-        public System.Management.Automation.SwitchParameter iosStoreAppAssignmentSettings { get; set; }
+        public System.Management.Automation.SwitchParameter IosStoreAppAssignmentSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosLobAppAssignmentSettings&quot; type.</para>
@@ -74,6 +74,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.iosLobAppAssignmentSettings")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosLobAppAssignmentSettings", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosLobAppAssignmentSettings&quot; type.")]
-        public System.Management.Automation.SwitchParameter iosLobAppAssignmentSettings { get; set; }
+        public System.Management.Automation.SwitchParameter IosLobAppAssignmentSettings { get; set; }
     }
 }

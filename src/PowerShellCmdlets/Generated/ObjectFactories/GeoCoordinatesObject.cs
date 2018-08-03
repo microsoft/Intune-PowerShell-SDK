@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.geoCoordinates", HelpMessage = @"The &quot;altitude&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double altitude { get; set; }
+        public System.Double Altitude { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;latitude&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.geoCoordinates", HelpMessage = @"The &quot;latitude&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double latitude { get; set; }
+        public System.Double Latitude { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;longitude&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -37,6 +37,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.geoCoordinates", HelpMessage = @"The &quot;longitude&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double longitude { get; set; }
+        public System.Double Longitude { get; set; }
     }
 }

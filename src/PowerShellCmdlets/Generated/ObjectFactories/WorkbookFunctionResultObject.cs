@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookFunctionResult", HelpMessage = @"The &quot;error&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String error { get; set; }
+        public System.String Error { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;value&quot; property, of type &quot;microsoft.graph.Json&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookFunctionResult", HelpMessage = @"The &quot;value&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object value { get; set; }
+        public System.Object Value { get; set; }
     }
 }

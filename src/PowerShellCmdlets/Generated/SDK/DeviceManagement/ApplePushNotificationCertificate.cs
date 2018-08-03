@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String appleIdentifier { get; set; }
+        public System.String AppleIdentifier { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;topicIdentifier&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String topicIdentifier { get; set; }
+        public System.String TopicIdentifier { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -43,7 +43,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -53,7 +53,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset expirationDateTime { get; set; }
+        public System.DateTimeOffset ExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;certificate&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -62,7 +62,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String certificate { get; set; }
+        public System.String Certificate { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.applePushNotificationCertificate&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -90,7 +99,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.applePushNotificationCertificate", HelpMessage = @"The &quot;appleIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appleIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String appleIdentifier { get; set; }
+        public System.String AppleIdentifier { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;topicIdentifier&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -101,7 +110,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.applePushNotificationCertificate", HelpMessage = @"The &quot;topicIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;topicIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String topicIdentifier { get; set; }
+        public System.String TopicIdentifier { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -112,7 +121,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.applePushNotificationCertificate", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -123,7 +132,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.applePushNotificationCertificate", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset expirationDateTime { get; set; }
+        public System.DateTimeOffset ExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;certificate&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -133,7 +142,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.applePushNotificationCertificate", HelpMessage = @"The &quot;certificate&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;certificate&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String certificate { get; set; }
+        public System.String Certificate { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -160,7 +169,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.applePushNotificationCertificate", HelpMessage = @"The &quot;appleIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appleIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String appleIdentifier { get; set; }
+        public System.String AppleIdentifier { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;topicIdentifier&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -171,7 +180,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.applePushNotificationCertificate", HelpMessage = @"The &quot;topicIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;topicIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String topicIdentifier { get; set; }
+        public System.String TopicIdentifier { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -182,7 +191,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.applePushNotificationCertificate", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -193,7 +202,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.applePushNotificationCertificate", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset expirationDateTime { get; set; }
+        public System.DateTimeOffset ExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;certificate&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -203,7 +212,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.applePushNotificationCertificate", HelpMessage = @"The &quot;certificate&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;certificate&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String certificate { get; set; }
+        public System.String Certificate { get; set; }
 
         internal override System.String GetResourcePath()
         {

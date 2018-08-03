@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartSeries", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String name { get; set; }
+        public System.String Name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartSeriesFormat&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartSeriesFormat")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartSeries", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartSeriesFormat&quot;.")]
-        public System.Object format { get; set; }
+        public System.Object Format { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;points&quot; property, of type &quot;microsoft.graph.workbookChartPoint&quot;.</para>
@@ -38,6 +38,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartSeries", HelpMessage = @"The &quot;points&quot; property, of type &quot;microsoft.graph.workbookChartPoint&quot;.")]
-        public System.Object[] points { get; set; }
+        public System.Object[] Points { get; set; }
     }
 }

@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartFill")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartSeriesFormat", HelpMessage = @"The &quot;fill&quot; property, of type &quot;microsoft.graph.workbookChartFill&quot;.")]
-        public System.Object fill { get; set; }
+        public System.Object Fill { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;line&quot; property, of type &quot;microsoft.graph.workbookChartLineFormat&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartLineFormat")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartSeriesFormat", HelpMessage = @"The &quot;line&quot; property, of type &quot;microsoft.graph.workbookChartLineFormat&quot;.")]
-        public System.Object line { get; set; }
+        public System.Object Line { get; set; }
     }
 }

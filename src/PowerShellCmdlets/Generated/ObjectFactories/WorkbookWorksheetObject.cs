@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheet", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String name { get; set; }
+        public System.String Name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;position&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheet", HelpMessage = @"The &quot;position&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 position { get; set; }
+        public System.Int32 Position { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;visibility&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheet", HelpMessage = @"The &quot;visibility&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String visibility { get; set; }
+        public System.String Visibility { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;charts&quot; property, of type &quot;microsoft.graph.workbookChart&quot;.</para>
@@ -47,7 +47,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheet", HelpMessage = @"The &quot;charts&quot; property, of type &quot;microsoft.graph.workbookChart&quot;.")]
-        public System.Object[] charts { get; set; }
+        public System.Object[] Charts { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;names&quot; property, of type &quot;microsoft.graph.workbookNamedItem&quot;.</para>
@@ -57,7 +57,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheet", HelpMessage = @"The &quot;names&quot; property, of type &quot;microsoft.graph.workbookNamedItem&quot;.")]
-        public System.Object[] names { get; set; }
+        public System.Object[] Names { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pivotTables&quot; property, of type &quot;microsoft.graph.workbookPivotTable&quot;.</para>
@@ -67,7 +67,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheet", HelpMessage = @"The &quot;pivotTables&quot; property, of type &quot;microsoft.graph.workbookPivotTable&quot;.")]
-        public System.Object[] pivotTables { get; set; }
+        public System.Object[] PivotTables { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;protection&quot; property, of type &quot;microsoft.graph.workbookWorksheetProtection&quot;.</para>
@@ -76,7 +76,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookWorksheetProtection")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheet", HelpMessage = @"The &quot;protection&quot; property, of type &quot;microsoft.graph.workbookWorksheetProtection&quot;.")]
-        public System.Object protection { get; set; }
+        public System.Object Protection { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;tables&quot; property, of type &quot;microsoft.graph.workbookTable&quot;.</para>
@@ -86,6 +86,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheet", HelpMessage = @"The &quot;tables&quot; property, of type &quot;microsoft.graph.workbookTable&quot;.")]
-        public System.Object[] tables { get; set; }
+        public System.Object[] Tables { get; set; }
     }
 }

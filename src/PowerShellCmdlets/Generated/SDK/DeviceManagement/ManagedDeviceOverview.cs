@@ -22,7 +22,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 enrolledDeviceCount { get; set; }
+        public System.Int32 EnrolledDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mdmEnrolledCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 mdmEnrolledCount { get; set; }
+        public System.Int32 MdmEnrolledCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;dualEnrolledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -42,7 +42,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 dualEnrolledDeviceCount { get; set; }
+        public System.Int32 DualEnrolledDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceOperatingSystemSummary&quot; property, of type &quot;microsoft.graph.deviceOperatingSystemSummary&quot;.</para>
@@ -52,7 +52,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceOperatingSystemSummary")]
         [Selectable]
         [Sortable]
-        public System.Object deviceOperatingSystemSummary { get; set; }
+        public System.Object DeviceOperatingSystemSummary { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceExchangeAccessStateSummary&quot; property, of type &quot;microsoft.graph.deviceExchangeAccessStateSummary&quot;.</para>
@@ -62,7 +62,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceExchangeAccessStateSummary")]
         [Selectable]
         [Sortable]
-        public System.Object deviceExchangeAccessStateSummary { get; set; }
+        public System.Object DeviceExchangeAccessStateSummary { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.managedDeviceOverview&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -88,7 +97,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 enrolledDeviceCount { get; set; }
+        public System.Int32 EnrolledDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mdmEnrolledCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -98,7 +107,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 mdmEnrolledCount { get; set; }
+        public System.Int32 MdmEnrolledCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;dualEnrolledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -108,7 +117,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 dualEnrolledDeviceCount { get; set; }
+        public System.Int32 DualEnrolledDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceOperatingSystemSummary&quot; property, of type &quot;microsoft.graph.deviceOperatingSystemSummary&quot;.</para>
@@ -118,7 +127,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceOperatingSystemSummary")]
         [Selectable]
         [Sortable]
-        public System.Object deviceOperatingSystemSummary { get; set; }
+        public System.Object DeviceOperatingSystemSummary { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceExchangeAccessStateSummary&quot; property, of type &quot;microsoft.graph.deviceExchangeAccessStateSummary&quot;.</para>
@@ -128,7 +137,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceExchangeAccessStateSummary")]
         [Selectable]
         [Sortable]
-        public System.Object deviceExchangeAccessStateSummary { get; set; }
+        public System.Object DeviceExchangeAccessStateSummary { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.managedDeviceOverview&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -144,7 +162,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("New", "DeviceManagement_ManagedDeviceOverviewReference", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedDeviceOverview")]
-    [ResourceIdPropertyName("managedDeviceOverviewReferenceUrl")]
+    [ResourceIdPropertyName("ManagedDeviceOverviewReferenceUrl")]
     public class New_DeviceManagement_ManagedDeviceOverviewReference : PutReferenceToEntityCmdlet
     {
         /// <summary>
@@ -153,7 +171,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The URL which should be used to access a &quot;microsoft.graph.managedDeviceOverview&quot; object.")]
-        public System.String managedDeviceOverviewReferenceUrl { get; set; }
+        public System.String ManagedDeviceOverviewReferenceUrl { get; set; }
 
         internal override System.String GetResourcePath()
         {

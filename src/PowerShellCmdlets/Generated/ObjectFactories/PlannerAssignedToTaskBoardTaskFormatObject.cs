@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerAssignedToTaskBoardTaskFormat", HelpMessage = @"The &quot;unassignedOrderHint&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String unassignedOrderHint { get; set; }
+        public System.String UnassignedOrderHint { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;orderHintsByAssignee&quot; property, of type &quot;microsoft.graph.plannerOrderHintsByAssignee&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.plannerOrderHintsByAssignee")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerAssignedToTaskBoardTaskFormat", HelpMessage = @"The &quot;orderHintsByAssignee&quot; property, of type &quot;microsoft.graph.plannerOrderHintsByAssignee&quot;.")]
-        public System.Object orderHintsByAssignee { get; set; }
+        public System.Object OrderHintsByAssignee { get; set; }
     }
 }

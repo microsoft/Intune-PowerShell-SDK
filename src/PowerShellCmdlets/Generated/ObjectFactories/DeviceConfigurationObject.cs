@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -79,7 +79,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset createdDateTime { get; set; }
+        public System.DateTimeOffset CreatedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -113,7 +113,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -147,7 +147,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -181,7 +181,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 version { get; set; }
+        public System.Int32 Version { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.</para>
@@ -216,7 +216,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
-        public System.Object[] assignments { get; set; }
+        public System.Object[] Assignments { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.</para>
@@ -251,7 +251,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
-        public System.Object[] deviceStatuses { get; set; }
+        public System.Object[] DeviceStatuses { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.</para>
@@ -286,7 +286,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
-        public System.Object[] userStatuses { get; set; }
+        public System.Object[] UserStatuses { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.</para>
@@ -320,7 +320,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
-        public System.Object deviceStatusOverview { get; set; }
+        public System.Object DeviceStatusOverview { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.</para>
@@ -354,7 +354,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
-        public System.Object userStatusOverview { get; set; }
+        public System.Object UserStatusOverview { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.</para>
@@ -389,7 +389,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
-        public System.Object[] deviceSettingStateSummaries { get; set; }
+        public System.Object[] DeviceSettingStateSummaries { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10TeamGeneralConfiguration&quot; type.</para>
@@ -397,7 +397,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.windows10TeamGeneralConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10TeamGeneralConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter windows10TeamGeneralConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter Windows10TeamGeneralConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;azureOperationalInsightsBlockTelemetry&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -407,7 +407,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;azureOperationalInsightsBlockTelemetry&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean azureOperationalInsightsBlockTelemetry { get; set; }
+        public System.Boolean AzureOperationalInsightsBlockTelemetry { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;azureOperationalInsightsWorkspaceId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -417,7 +417,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;azureOperationalInsightsWorkspaceId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String azureOperationalInsightsWorkspaceId { get; set; }
+        public System.String AzureOperationalInsightsWorkspaceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;azureOperationalInsightsWorkspaceKey&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -427,7 +427,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;azureOperationalInsightsWorkspaceKey&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String azureOperationalInsightsWorkspaceKey { get; set; }
+        public System.String AzureOperationalInsightsWorkspaceKey { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;connectAppBlockAutoLaunch&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -437,7 +437,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;connectAppBlockAutoLaunch&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean connectAppBlockAutoLaunch { get; set; }
+        public System.Boolean ConnectAppBlockAutoLaunch { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;maintenanceWindowBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -447,7 +447,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;maintenanceWindowBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean maintenanceWindowBlocked { get; set; }
+        public System.Boolean MaintenanceWindowBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;maintenanceWindowDurationInHours&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -457,7 +457,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;maintenanceWindowDurationInHours&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 maintenanceWindowDurationInHours { get; set; }
+        public System.Int32 MaintenanceWindowDurationInHours { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;maintenanceWindowStartTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.</para>
@@ -467,7 +467,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;maintenanceWindowStartTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
-        public System.TimeSpan maintenanceWindowStartTime { get; set; }
+        public System.TimeSpan MaintenanceWindowStartTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;miracastChannel&quot; property, of type &quot;microsoft.graph.miracastChannel&quot;.</para>
@@ -481,7 +481,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"one", @"two", @"three", @"four", @"five", @"six", @"seven", @"eight", @"nine", @"ten", @"eleven", @"thirtySix", @"forty", @"fortyFour", @"fortyEight", @"oneHundredFortyNine", @"oneHundredFiftyThree", @"oneHundredFiftySeven", @"oneHundredSixtyOne", @"oneHundredSixtyFive")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;miracastChannel&quot; property, of type &quot;microsoft.graph.miracastChannel&quot;.")]
-        public System.String miracastChannel { get; set; }
+        public System.String MiracastChannel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;miracastBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -491,7 +491,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;miracastBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean miracastBlocked { get; set; }
+        public System.Boolean MiracastBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;miracastRequirePin&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -501,7 +501,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;miracastRequirePin&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean miracastRequirePin { get; set; }
+        public System.Boolean MiracastRequirePin { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockMyMeetingsAndFiles&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -511,7 +511,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;settingsBlockMyMeetingsAndFiles&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockMyMeetingsAndFiles { get; set; }
+        public System.Boolean SettingsBlockMyMeetingsAndFiles { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockSessionResume&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -521,7 +521,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;settingsBlockSessionResume&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockSessionResume { get; set; }
+        public System.Boolean SettingsBlockSessionResume { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockSigninSuggestions&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -531,7 +531,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;settingsBlockSigninSuggestions&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockSigninSuggestions { get; set; }
+        public System.Boolean SettingsBlockSigninSuggestions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsDefaultVolume&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -541,7 +541,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;settingsDefaultVolume&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 settingsDefaultVolume { get; set; }
+        public System.Int32 SettingsDefaultVolume { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsScreenTimeoutInMinutes&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -551,7 +551,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;settingsScreenTimeoutInMinutes&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 settingsScreenTimeoutInMinutes { get; set; }
+        public System.Int32 SettingsScreenTimeoutInMinutes { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsSessionTimeoutInMinutes&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -561,7 +561,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;settingsSessionTimeoutInMinutes&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 settingsSessionTimeoutInMinutes { get; set; }
+        public System.Int32 SettingsSessionTimeoutInMinutes { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsSleepTimeoutInMinutes&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -571,7 +571,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;settingsSleepTimeoutInMinutes&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 settingsSleepTimeoutInMinutes { get; set; }
+        public System.Int32 SettingsSleepTimeoutInMinutes { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;welcomeScreenBlockAutomaticWakeUp&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -581,7 +581,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;welcomeScreenBlockAutomaticWakeUp&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean welcomeScreenBlockAutomaticWakeUp { get; set; }
+        public System.Boolean WelcomeScreenBlockAutomaticWakeUp { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;welcomeScreenBackgroundImageUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -591,7 +591,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;welcomeScreenBackgroundImageUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String welcomeScreenBackgroundImageUrl { get; set; }
+        public System.String WelcomeScreenBackgroundImageUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;welcomeScreenMeetingInformation&quot; property, of type &quot;microsoft.graph.welcomeScreenMeetingInformation&quot;.</para>
@@ -605,7 +605,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"showOrganizerAndTimeOnly", @"showOrganizerAndTimeAndSubject")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;welcomeScreenMeetingInformation&quot; property, of type &quot;microsoft.graph.welcomeScreenMeetingInformation&quot;.")]
-        public System.String welcomeScreenMeetingInformation { get; set; }
+        public System.String WelcomeScreenMeetingInformation { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsPhone81GeneralConfiguration&quot; type.</para>
@@ -613,7 +613,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.windowsPhone81GeneralConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsPhone81GeneralConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter windowsPhone81GeneralConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter WindowsPhone81GeneralConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;applyOnlyToWindowsPhone81&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -622,7 +622,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        public System.Boolean applyOnlyToWindowsPhone81 { get; set; }
+        public System.Boolean ApplyOnlyToWindowsPhone81 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appsBlockCopyPaste&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -633,7 +633,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;appsBlockCopyPaste&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;appsBlockCopyPaste&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean appsBlockCopyPaste { get; set; }
+        public System.Boolean AppsBlockCopyPaste { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bluetoothBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -645,7 +645,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;bluetoothBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;bluetoothBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;bluetoothBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean bluetoothBlocked { get; set; }
+        public System.Boolean BluetoothBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cameraBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -658,7 +658,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;cameraBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;cameraBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;cameraBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean cameraBlocked { get; set; }
+        public System.Boolean CameraBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cellularBlockWifiTethering&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -668,7 +668,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;cellularBlockWifiTethering&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean cellularBlockWifiTethering { get; set; }
+        public System.Boolean CellularBlockWifiTethering { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;compliantAppsList&quot; property, of type &quot;microsoft.graph.appListItem&quot;.</para>
@@ -682,7 +682,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;compliantAppsList&quot; property, of type &quot;microsoft.graph.appListItem&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;compliantAppsList&quot; property, of type &quot;microsoft.graph.appListItem&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;compliantAppsList&quot; property, of type &quot;microsoft.graph.appListItem&quot;.")]
-        public System.Object[] compliantAppsList { get; set; }
+        public System.Object[] CompliantAppsList { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;compliantAppListType&quot; property, of type &quot;microsoft.graph.appListType&quot;.</para>
@@ -699,7 +699,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;compliantAppListType&quot; property, of type &quot;microsoft.graph.appListType&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;compliantAppListType&quot; property, of type &quot;microsoft.graph.appListType&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;compliantAppListType&quot; property, of type &quot;microsoft.graph.appListType&quot;.")]
-        public System.String compliantAppListType { get; set; }
+        public System.String CompliantAppListType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;diagnosticDataBlockSubmission&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -711,7 +711,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;diagnosticDataBlockSubmission&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;diagnosticDataBlockSubmission&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;diagnosticDataBlockSubmission&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean diagnosticDataBlockSubmission { get; set; }
+        public System.Boolean DiagnosticDataBlockSubmission { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;emailBlockAddingAccounts&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -721,7 +721,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;emailBlockAddingAccounts&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean emailBlockAddingAccounts { get; set; }
+        public System.Boolean EmailBlockAddingAccounts { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;locationServicesBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -733,7 +733,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;locationServicesBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;locationServicesBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;locationServicesBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean locationServicesBlocked { get; set; }
+        public System.Boolean LocationServicesBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;microsoftAccountBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -744,7 +744,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;microsoftAccountBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;microsoftAccountBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean microsoftAccountBlocked { get; set; }
+        public System.Boolean MicrosoftAccountBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;nfcBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -756,7 +756,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;nfcBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;nfcBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;nfcBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean nfcBlocked { get; set; }
+        public System.Boolean NfcBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordBlockSimple&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -768,7 +768,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;passwordBlockSimple&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;passwordBlockSimple&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordBlockSimple&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean passwordBlockSimple { get; set; }
+        public System.Boolean PasswordBlockSimple { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -782,7 +782,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 passwordExpirationDays { get; set; }
+        public System.Int32 PasswordExpirationDays { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -796,7 +796,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 passwordMinimumLength { get; set; }
+        public System.Int32 PasswordMinimumLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordMinutesOfInactivityBeforeScreenTimeout&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -810,7 +810,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeScreenTimeout&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeScreenTimeout&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeScreenTimeout&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 passwordMinutesOfInactivityBeforeScreenTimeout { get; set; }
+        public System.Int32 PasswordMinutesOfInactivityBeforeScreenTimeout { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordMinimumCharacterSetCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -823,7 +823,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;passwordMinimumCharacterSetCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;passwordMinimumCharacterSetCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordMinimumCharacterSetCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 passwordMinimumCharacterSetCount { get; set; }
+        public System.Int32 PasswordMinimumCharacterSetCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -837,7 +837,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 passwordPreviousPasswordBlockCount { get; set; }
+        public System.Int32 PasswordPreviousPasswordBlockCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordSignInFailureCountBeforeFactoryReset&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -850,7 +850,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;passwordSignInFailureCountBeforeFactoryReset&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;passwordSignInFailureCountBeforeFactoryReset&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordSignInFailureCountBeforeFactoryReset&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 passwordSignInFailureCountBeforeFactoryReset { get; set; }
+        public System.Int32 PasswordSignInFailureCountBeforeFactoryReset { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.</para>
@@ -868,7 +868,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
-        public System.String passwordRequiredType { get; set; }
+        public System.String PasswordRequiredType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -881,7 +881,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;passwordRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean passwordRequired { get; set; }
+        public System.Boolean PasswordRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;screenCaptureBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -894,7 +894,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;screenCaptureBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;screenCaptureBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;screenCaptureBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean screenCaptureBlocked { get; set; }
+        public System.Boolean ScreenCaptureBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;storageBlockRemovableStorage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -906,7 +906,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;storageBlockRemovableStorage&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;storageBlockRemovableStorage&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;storageBlockRemovableStorage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean storageBlockRemovableStorage { get; set; }
+        public System.Boolean StorageBlockRemovableStorage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;storageRequireEncryption&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -916,7 +916,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;storageRequireEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean storageRequireEncryption { get; set; }
+        public System.Boolean StorageRequireEncryption { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;webBrowserBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -927,7 +927,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;webBrowserBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;webBrowserBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean webBrowserBlocked { get; set; }
+        public System.Boolean WebBrowserBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;wifiBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -937,7 +937,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;wifiBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean wifiBlocked { get; set; }
+        public System.Boolean WifiBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;wifiBlockAutomaticConnectHotspots&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -947,7 +947,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;wifiBlockAutomaticConnectHotspots&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean wifiBlockAutomaticConnectHotspots { get; set; }
+        public System.Boolean WifiBlockAutomaticConnectHotspots { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;wifiBlockHotspotReporting&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -957,7 +957,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;wifiBlockHotspotReporting&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean wifiBlockHotspotReporting { get; set; }
+        public System.Boolean WifiBlockHotspotReporting { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsStoreBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -968,7 +968,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;windowsStoreBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;windowsStoreBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean windowsStoreBlocked { get; set; }
+        public System.Boolean WindowsStoreBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows81GeneralConfiguration&quot; type.</para>
@@ -976,7 +976,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.windows81GeneralConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows81GeneralConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter windows81GeneralConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter Windows81GeneralConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;accountsBlockAddingNonMicrosoftAccountEmail&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -987,7 +987,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;accountsBlockAddingNonMicrosoftAccountEmail&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;accountsBlockAddingNonMicrosoftAccountEmail&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean accountsBlockAddingNonMicrosoftAccountEmail { get; set; }
+        public System.Boolean AccountsBlockAddingNonMicrosoftAccountEmail { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;applyOnlyToWindows81&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -996,7 +996,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        public System.Boolean applyOnlyToWindows81 { get; set; }
+        public System.Boolean ApplyOnlyToWindows81 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserBlockAutofill&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1006,7 +1006,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserBlockAutofill&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean browserBlockAutofill { get; set; }
+        public System.Boolean BrowserBlockAutofill { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserBlockAutomaticDetectionOfIntranetSites&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1016,7 +1016,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserBlockAutomaticDetectionOfIntranetSites&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean browserBlockAutomaticDetectionOfIntranetSites { get; set; }
+        public System.Boolean BrowserBlockAutomaticDetectionOfIntranetSites { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserBlockEnterpriseModeAccess&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1026,7 +1026,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserBlockEnterpriseModeAccess&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean browserBlockEnterpriseModeAccess { get; set; }
+        public System.Boolean BrowserBlockEnterpriseModeAccess { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserBlockJavaScript&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1036,7 +1036,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserBlockJavaScript&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean browserBlockJavaScript { get; set; }
+        public System.Boolean BrowserBlockJavaScript { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserBlockPlugins&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1046,7 +1046,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserBlockPlugins&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean browserBlockPlugins { get; set; }
+        public System.Boolean BrowserBlockPlugins { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserBlockPopups&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1056,7 +1056,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserBlockPopups&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean browserBlockPopups { get; set; }
+        public System.Boolean BrowserBlockPopups { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserBlockSendingDoNotTrackHeader&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1066,7 +1066,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserBlockSendingDoNotTrackHeader&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean browserBlockSendingDoNotTrackHeader { get; set; }
+        public System.Boolean BrowserBlockSendingDoNotTrackHeader { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserBlockSingleWordEntryOnIntranetSites&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1076,7 +1076,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserBlockSingleWordEntryOnIntranetSites&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean browserBlockSingleWordEntryOnIntranetSites { get; set; }
+        public System.Boolean BrowserBlockSingleWordEntryOnIntranetSites { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserRequireSmartScreen&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1086,7 +1086,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserRequireSmartScreen&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean browserRequireSmartScreen { get; set; }
+        public System.Boolean BrowserRequireSmartScreen { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserEnterpriseModeSiteListLocation&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1096,7 +1096,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserEnterpriseModeSiteListLocation&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String browserEnterpriseModeSiteListLocation { get; set; }
+        public System.String BrowserEnterpriseModeSiteListLocation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserInternetSecurityLevel&quot; property, of type &quot;microsoft.graph.internetSiteSecurityLevel&quot;.</para>
@@ -1110,7 +1110,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"medium", @"mediumHigh", @"high")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserInternetSecurityLevel&quot; property, of type &quot;microsoft.graph.internetSiteSecurityLevel&quot;.")]
-        public System.String browserInternetSecurityLevel { get; set; }
+        public System.String BrowserInternetSecurityLevel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserIntranetSecurityLevel&quot; property, of type &quot;microsoft.graph.siteSecurityLevel&quot;.</para>
@@ -1124,7 +1124,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"low", @"mediumLow", @"medium", @"mediumHigh", @"high")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserIntranetSecurityLevel&quot; property, of type &quot;microsoft.graph.siteSecurityLevel&quot;.")]
-        public System.String browserIntranetSecurityLevel { get; set; }
+        public System.String BrowserIntranetSecurityLevel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserLoggingReportLocation&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1134,7 +1134,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserLoggingReportLocation&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String browserLoggingReportLocation { get; set; }
+        public System.String BrowserLoggingReportLocation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserRequireHighSecurityForRestrictedSites&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1144,7 +1144,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserRequireHighSecurityForRestrictedSites&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean browserRequireHighSecurityForRestrictedSites { get; set; }
+        public System.Boolean BrowserRequireHighSecurityForRestrictedSites { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserRequireFirewall&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1154,7 +1154,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserRequireFirewall&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean browserRequireFirewall { get; set; }
+        public System.Boolean BrowserRequireFirewall { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserRequireFraudWarning&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1164,7 +1164,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserRequireFraudWarning&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean browserRequireFraudWarning { get; set; }
+        public System.Boolean BrowserRequireFraudWarning { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;browserTrustedSitesSecurityLevel&quot; property, of type &quot;microsoft.graph.siteSecurityLevel&quot;.</para>
@@ -1178,7 +1178,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"low", @"mediumLow", @"medium", @"mediumHigh", @"high")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;browserTrustedSitesSecurityLevel&quot; property, of type &quot;microsoft.graph.siteSecurityLevel&quot;.")]
-        public System.String browserTrustedSitesSecurityLevel { get; set; }
+        public System.String BrowserTrustedSitesSecurityLevel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cellularBlockDataRoaming&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1190,7 +1190,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;cellularBlockDataRoaming&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;cellularBlockDataRoaming&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;cellularBlockDataRoaming&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean cellularBlockDataRoaming { get; set; }
+        public System.Boolean CellularBlockDataRoaming { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;diagnosticsBlockDataSubmission&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1200,7 +1200,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;diagnosticsBlockDataSubmission&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean diagnosticsBlockDataSubmission { get; set; }
+        public System.Boolean DiagnosticsBlockDataSubmission { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordBlockPicturePasswordAndPin&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1210,7 +1210,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;passwordBlockPicturePasswordAndPin&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean passwordBlockPicturePasswordAndPin { get; set; }
+        public System.Boolean PasswordBlockPicturePasswordAndPin { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;storageRequireDeviceEncryption&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1221,7 +1221,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;storageRequireDeviceEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;storageRequireDeviceEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean storageRequireDeviceEncryption { get; set; }
+        public System.Boolean StorageRequireDeviceEncryption { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;updatesRequireAutomaticUpdates&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1231,7 +1231,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;updatesRequireAutomaticUpdates&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean updatesRequireAutomaticUpdates { get; set; }
+        public System.Boolean UpdatesRequireAutomaticUpdates { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userAccountControlSettings&quot; property, of type &quot;microsoft.graph.windowsUserAccountControlSettings&quot;.</para>
@@ -1245,7 +1245,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"alwaysNotify", @"notifyOnAppChanges", @"notifyOnAppChangesWithoutDimming", @"neverNotify")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;userAccountControlSettings&quot; property, of type &quot;microsoft.graph.windowsUserAccountControlSettings&quot;.")]
-        public System.String userAccountControlSettings { get; set; }
+        public System.String UserAccountControlSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;workFoldersUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1255,7 +1255,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;workFoldersUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String workFoldersUrl { get; set; }
+        public System.String WorkFoldersUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateForBusinessConfiguration&quot; type.</para>
@@ -1263,7 +1263,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.windowsUpdateForBusinessConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateForBusinessConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateForBusinessConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter windowsUpdateForBusinessConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter WindowsUpdateForBusinessConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deliveryOptimizationMode&quot; property, of type &quot;microsoft.graph.windowsDeliveryOptimizationMode&quot;.</para>
@@ -1277,7 +1277,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"httpOnly", @"httpWithPeeringNat", @"httpWithPeeringPrivateGroup", @"httpWithInternetPeering", @"simpleDownload", @"bypassMode")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;deliveryOptimizationMode&quot; property, of type &quot;microsoft.graph.windowsDeliveryOptimizationMode&quot;.")]
-        public System.String deliveryOptimizationMode { get; set; }
+        public System.String DeliveryOptimizationMode { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;prereleaseFeatures&quot; property, of type &quot;microsoft.graph.prereleaseFeatures&quot;.</para>
@@ -1291,7 +1291,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"settingsOnly", @"settingsAndExperimentations", @"notAllowed")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;prereleaseFeatures&quot; property, of type &quot;microsoft.graph.prereleaseFeatures&quot;.")]
-        public System.String prereleaseFeatures { get; set; }
+        public System.String PrereleaseFeatures { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;automaticUpdateMode&quot; property, of type &quot;microsoft.graph.automaticUpdateMode&quot;.</para>
@@ -1305,7 +1305,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"notifyDownload", @"autoInstallAtMaintenanceTime", @"autoInstallAndRebootAtMaintenanceTime", @"autoInstallAndRebootAtScheduledTime", @"autoInstallAndRebootWithoutEndUserControl")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;automaticUpdateMode&quot; property, of type &quot;microsoft.graph.automaticUpdateMode&quot;.")]
-        public System.String automaticUpdateMode { get; set; }
+        public System.String AutomaticUpdateMode { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;microsoftUpdateServiceAllowed&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1315,7 +1315,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;microsoftUpdateServiceAllowed&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean microsoftUpdateServiceAllowed { get; set; }
+        public System.Boolean MicrosoftUpdateServiceAllowed { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;driversExcluded&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1325,7 +1325,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;driversExcluded&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean driversExcluded { get; set; }
+        public System.Boolean DriversExcluded { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;installationSchedule&quot; property, of type &quot;microsoft.graph.windowsUpdateInstallScheduleType&quot;.</para>
@@ -1335,7 +1335,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsUpdateInstallScheduleType")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;installationSchedule&quot; property, of type &quot;microsoft.graph.windowsUpdateInstallScheduleType&quot;.")]
-        public System.Object installationSchedule { get; set; }
+        public System.Object InstallationSchedule { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;qualityUpdatesDeferralPeriodInDays&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -1345,7 +1345,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;qualityUpdatesDeferralPeriodInDays&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 qualityUpdatesDeferralPeriodInDays { get; set; }
+        public System.Int32 QualityUpdatesDeferralPeriodInDays { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;featureUpdatesDeferralPeriodInDays&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -1355,7 +1355,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;featureUpdatesDeferralPeriodInDays&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 featureUpdatesDeferralPeriodInDays { get; set; }
+        public System.Int32 FeatureUpdatesDeferralPeriodInDays { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;qualityUpdatesPaused&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1365,7 +1365,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;qualityUpdatesPaused&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean qualityUpdatesPaused { get; set; }
+        public System.Boolean QualityUpdatesPaused { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;featureUpdatesPaused&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1375,7 +1375,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;featureUpdatesPaused&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean featureUpdatesPaused { get; set; }
+        public System.Boolean FeatureUpdatesPaused { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;qualityUpdatesPauseExpiryDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -1385,7 +1385,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;qualityUpdatesPauseExpiryDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset qualityUpdatesPauseExpiryDateTime { get; set; }
+        public System.DateTimeOffset QualityUpdatesPauseExpiryDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;featureUpdatesPauseExpiryDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -1395,7 +1395,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;featureUpdatesPauseExpiryDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset featureUpdatesPauseExpiryDateTime { get; set; }
+        public System.DateTimeOffset FeatureUpdatesPauseExpiryDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;businessReadyUpdatesOnly&quot; property, of type &quot;microsoft.graph.windowsUpdateType&quot;.</para>
@@ -1409,7 +1409,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"all", @"businessReadyOnly", @"windowsInsiderBuildFast", @"windowsInsiderBuildSlow", @"windowsInsiderBuildRelease")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;businessReadyUpdatesOnly&quot; property, of type &quot;microsoft.graph.windowsUpdateType&quot;.")]
-        public System.String businessReadyUpdatesOnly { get; set; }
+        public System.String BusinessReadyUpdatesOnly { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsPhone81CustomConfiguration&quot; type.</para>
@@ -1417,7 +1417,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.windowsPhone81CustomConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81CustomConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsPhone81CustomConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter windowsPhone81CustomConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter WindowsPhone81CustomConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;omaSettings&quot; property, of type &quot;microsoft.graph.omaSetting&quot;.</para>
@@ -1430,7 +1430,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81CustomConfiguration", HelpMessage = @"The &quot;omaSettings&quot; property, of type &quot;microsoft.graph.omaSetting&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;omaSettings&quot; property, of type &quot;microsoft.graph.omaSetting&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;omaSettings&quot; property, of type &quot;microsoft.graph.omaSetting&quot;.")]
-        public System.Object[] omaSettings { get; set; }
+        public System.Object[] OmaSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10SecureAssessmentConfiguration&quot; type.</para>
@@ -1438,7 +1438,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.windows10SecureAssessmentConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10SecureAssessmentConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10SecureAssessmentConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter windows10SecureAssessmentConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter Windows10SecureAssessmentConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;launchUri&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1448,7 +1448,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10SecureAssessmentConfiguration", HelpMessage = @"The &quot;launchUri&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String launchUri { get; set; }
+        public System.String LaunchUri { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;configurationAccount&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1458,7 +1458,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10SecureAssessmentConfiguration", HelpMessage = @"The &quot;configurationAccount&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String configurationAccount { get; set; }
+        public System.String ConfigurationAccount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowPrinting&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1468,7 +1468,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10SecureAssessmentConfiguration", HelpMessage = @"The &quot;allowPrinting&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean allowPrinting { get; set; }
+        public System.Boolean AllowPrinting { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowScreenCapture&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1478,7 +1478,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10SecureAssessmentConfiguration", HelpMessage = @"The &quot;allowScreenCapture&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean allowScreenCapture { get; set; }
+        public System.Boolean AllowScreenCapture { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowTextSuggestion&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1488,7 +1488,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10SecureAssessmentConfiguration", HelpMessage = @"The &quot;allowTextSuggestion&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean allowTextSuggestion { get; set; }
+        public System.Boolean AllowTextSuggestion { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.sharedPCConfiguration&quot; type.</para>
@@ -1496,7 +1496,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.sharedPCConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.sharedPCConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter sharedPCConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter SharedPCConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;accountManagerPolicy&quot; property, of type &quot;microsoft.graph.sharedPCAccountManagerPolicy&quot;.</para>
@@ -1506,7 +1506,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.sharedPCAccountManagerPolicy")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;accountManagerPolicy&quot; property, of type &quot;microsoft.graph.sharedPCAccountManagerPolicy&quot;.")]
-        public System.Object accountManagerPolicy { get; set; }
+        public System.Object AccountManagerPolicy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowedAccounts&quot; property, of type &quot;microsoft.graph.sharedPCAllowedAccountType&quot;.</para>
@@ -1520,7 +1520,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"guest", @"domain")]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;allowedAccounts&quot; property, of type &quot;microsoft.graph.sharedPCAllowedAccountType&quot;.")]
-        public System.String allowedAccounts { get; set; }
+        public System.String AllowedAccounts { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowLocalStorage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1530,7 +1530,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;allowLocalStorage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean allowLocalStorage { get; set; }
+        public System.Boolean AllowLocalStorage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;disableAccountManager&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1540,7 +1540,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;disableAccountManager&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean disableAccountManager { get; set; }
+        public System.Boolean DisableAccountManager { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;disableEduPolicies&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1550,7 +1550,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;disableEduPolicies&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean disableEduPolicies { get; set; }
+        public System.Boolean DisableEduPolicies { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;disablePowerPolicies&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1560,7 +1560,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;disablePowerPolicies&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean disablePowerPolicies { get; set; }
+        public System.Boolean DisablePowerPolicies { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;disableSignInOnResume&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1570,7 +1570,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;disableSignInOnResume&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean disableSignInOnResume { get; set; }
+        public System.Boolean DisableSignInOnResume { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1580,7 +1580,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean enabled { get; set; }
+        public System.Boolean Enabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;idleTimeBeforeSleepInSeconds&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -1590,7 +1590,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;idleTimeBeforeSleepInSeconds&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 idleTimeBeforeSleepInSeconds { get; set; }
+        public System.Int32 IdleTimeBeforeSleepInSeconds { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskAppDisplayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1600,7 +1600,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;kioskAppDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String kioskAppDisplayName { get; set; }
+        public System.String KioskAppDisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskAppUserModelId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1610,7 +1610,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;kioskAppUserModelId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String kioskAppUserModelId { get; set; }
+        public System.String KioskAppUserModelId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;maintenanceStartTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.</para>
@@ -1620,7 +1620,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;maintenanceStartTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
-        public System.TimeSpan maintenanceStartTime { get; set; }
+        public System.TimeSpan MaintenanceStartTime { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10EnterpriseModernAppManagementConfiguration&quot; type.</para>
@@ -1628,7 +1628,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.windows10EnterpriseModernAppManagementConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10EnterpriseModernAppManagementConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter windows10EnterpriseModernAppManagementConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter Windows10EnterpriseModernAppManagementConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;uninstallBuiltInApps&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1638,7 +1638,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;uninstallBuiltInApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean uninstallBuiltInApps { get; set; }
+        public System.Boolean UninstallBuiltInApps { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10CustomConfiguration&quot; type.</para>
@@ -1646,7 +1646,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.windows10CustomConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10CustomConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10CustomConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter windows10CustomConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter Windows10CustomConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.</para>
@@ -1654,7 +1654,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.windows10GeneralConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter windows10GeneralConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter Windows10GeneralConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseCloudPrintDiscoveryEndPoint&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1664,7 +1664,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;enterpriseCloudPrintDiscoveryEndPoint&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String enterpriseCloudPrintDiscoveryEndPoint { get; set; }
+        public System.String EnterpriseCloudPrintDiscoveryEndPoint { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseCloudPrintOAuthAuthority&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1674,7 +1674,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;enterpriseCloudPrintOAuthAuthority&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String enterpriseCloudPrintOAuthAuthority { get; set; }
+        public System.String EnterpriseCloudPrintOAuthAuthority { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseCloudPrintOAuthClientIdentifier&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1684,7 +1684,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;enterpriseCloudPrintOAuthClientIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String enterpriseCloudPrintOAuthClientIdentifier { get; set; }
+        public System.String EnterpriseCloudPrintOAuthClientIdentifier { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseCloudPrintResourceIdentifier&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1694,7 +1694,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;enterpriseCloudPrintResourceIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String enterpriseCloudPrintResourceIdentifier { get; set; }
+        public System.String EnterpriseCloudPrintResourceIdentifier { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseCloudPrintDiscoveryMaxLimit&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -1704,7 +1704,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;enterpriseCloudPrintDiscoveryMaxLimit&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 enterpriseCloudPrintDiscoveryMaxLimit { get; set; }
+        public System.Int32 EnterpriseCloudPrintDiscoveryMaxLimit { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseCloudPrintMopriaDiscoveryResourceIdentifier&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1714,7 +1714,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;enterpriseCloudPrintMopriaDiscoveryResourceIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String enterpriseCloudPrintMopriaDiscoveryResourceIdentifier { get; set; }
+        public System.String EnterpriseCloudPrintMopriaDiscoveryResourceIdentifier { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;searchBlockDiacritics&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1724,7 +1724,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;searchBlockDiacritics&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean searchBlockDiacritics { get; set; }
+        public System.Boolean SearchBlockDiacritics { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;searchDisableAutoLanguageDetection&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1734,7 +1734,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;searchDisableAutoLanguageDetection&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean searchDisableAutoLanguageDetection { get; set; }
+        public System.Boolean SearchDisableAutoLanguageDetection { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;searchDisableIndexingEncryptedItems&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1744,7 +1744,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;searchDisableIndexingEncryptedItems&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean searchDisableIndexingEncryptedItems { get; set; }
+        public System.Boolean SearchDisableIndexingEncryptedItems { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;searchEnableRemoteQueries&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1754,7 +1754,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;searchEnableRemoteQueries&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean searchEnableRemoteQueries { get; set; }
+        public System.Boolean SearchEnableRemoteQueries { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;searchDisableIndexerBackoff&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1764,7 +1764,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;searchDisableIndexerBackoff&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean searchDisableIndexerBackoff { get; set; }
+        public System.Boolean SearchDisableIndexerBackoff { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;searchDisableIndexingRemovableDrive&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1774,7 +1774,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;searchDisableIndexingRemovableDrive&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean searchDisableIndexingRemovableDrive { get; set; }
+        public System.Boolean SearchDisableIndexingRemovableDrive { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;searchEnableAutomaticIndexSizeManangement&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1784,7 +1784,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;searchEnableAutomaticIndexSizeManangement&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean searchEnableAutomaticIndexSizeManangement { get; set; }
+        public System.Boolean SearchEnableAutomaticIndexSizeManangement { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;diagnosticsDataSubmissionMode&quot; property, of type &quot;microsoft.graph.diagnosticDataSubmissionMode&quot;.</para>
@@ -1798,7 +1798,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"none", @"basic", @"enhanced", @"full")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;diagnosticsDataSubmissionMode&quot; property, of type &quot;microsoft.graph.diagnosticDataSubmissionMode&quot;.")]
-        public System.String diagnosticsDataSubmissionMode { get; set; }
+        public System.String DiagnosticsDataSubmissionMode { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;oneDriveDisableFileSync&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1808,7 +1808,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;oneDriveDisableFileSync&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean oneDriveDisableFileSync { get; set; }
+        public System.Boolean OneDriveDisableFileSync { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;smartScreenEnableAppInstallControl&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1818,7 +1818,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;smartScreenEnableAppInstallControl&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean smartScreenEnableAppInstallControl { get; set; }
+        public System.Boolean SmartScreenEnableAppInstallControl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;personalizationDesktopImageUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1828,7 +1828,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;personalizationDesktopImageUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String personalizationDesktopImageUrl { get; set; }
+        public System.String PersonalizationDesktopImageUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;personalizationLockScreenImageUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1838,7 +1838,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;personalizationLockScreenImageUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String personalizationLockScreenImageUrl { get; set; }
+        public System.String PersonalizationLockScreenImageUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bluetoothAllowedServices&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1849,7 +1849,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;bluetoothAllowedServices&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] bluetoothAllowedServices { get; set; }
+        public System.String[] BluetoothAllowedServices { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bluetoothBlockAdvertising&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1859,7 +1859,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;bluetoothBlockAdvertising&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean bluetoothBlockAdvertising { get; set; }
+        public System.Boolean BluetoothBlockAdvertising { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bluetoothBlockDiscoverableMode&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1869,7 +1869,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;bluetoothBlockDiscoverableMode&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean bluetoothBlockDiscoverableMode { get; set; }
+        public System.Boolean BluetoothBlockDiscoverableMode { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bluetoothBlockPrePairing&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1879,7 +1879,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;bluetoothBlockPrePairing&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean bluetoothBlockPrePairing { get; set; }
+        public System.Boolean BluetoothBlockPrePairing { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockAutofill&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1889,7 +1889,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlockAutofill&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeBlockAutofill { get; set; }
+        public System.Boolean EdgeBlockAutofill { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1899,7 +1899,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeBlocked { get; set; }
+        public System.Boolean EdgeBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeCookiePolicy&quot; property, of type &quot;microsoft.graph.edgeCookiePolicy&quot;.</para>
@@ -1913,7 +1913,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"allow", @"blockThirdParty", @"blockAll")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeCookiePolicy&quot; property, of type &quot;microsoft.graph.edgeCookiePolicy&quot;.")]
-        public System.String edgeCookiePolicy { get; set; }
+        public System.String EdgeCookiePolicy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockDeveloperTools&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1923,7 +1923,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlockDeveloperTools&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeBlockDeveloperTools { get; set; }
+        public System.Boolean EdgeBlockDeveloperTools { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockSendingDoNotTrackHeader&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1933,7 +1933,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlockSendingDoNotTrackHeader&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeBlockSendingDoNotTrackHeader { get; set; }
+        public System.Boolean EdgeBlockSendingDoNotTrackHeader { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockExtensions&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1943,7 +1943,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlockExtensions&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeBlockExtensions { get; set; }
+        public System.Boolean EdgeBlockExtensions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockInPrivateBrowsing&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1953,7 +1953,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlockInPrivateBrowsing&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeBlockInPrivateBrowsing { get; set; }
+        public System.Boolean EdgeBlockInPrivateBrowsing { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockJavaScript&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1963,7 +1963,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlockJavaScript&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeBlockJavaScript { get; set; }
+        public System.Boolean EdgeBlockJavaScript { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockPasswordManager&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1973,7 +1973,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlockPasswordManager&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeBlockPasswordManager { get; set; }
+        public System.Boolean EdgeBlockPasswordManager { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockAddressBarDropdown&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1983,7 +1983,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlockAddressBarDropdown&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeBlockAddressBarDropdown { get; set; }
+        public System.Boolean EdgeBlockAddressBarDropdown { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockCompatibilityList&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1993,7 +1993,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlockCompatibilityList&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeBlockCompatibilityList { get; set; }
+        public System.Boolean EdgeBlockCompatibilityList { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeClearBrowsingDataOnExit&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2003,7 +2003,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeClearBrowsingDataOnExit&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeClearBrowsingDataOnExit { get; set; }
+        public System.Boolean EdgeClearBrowsingDataOnExit { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeAllowStartPagesModification&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2013,7 +2013,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeAllowStartPagesModification&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeAllowStartPagesModification { get; set; }
+        public System.Boolean EdgeAllowStartPagesModification { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeDisableFirstRunPage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2023,7 +2023,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeDisableFirstRunPage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeDisableFirstRunPage { get; set; }
+        public System.Boolean EdgeDisableFirstRunPage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockLiveTileDataCollection&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2033,7 +2033,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlockLiveTileDataCollection&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeBlockLiveTileDataCollection { get; set; }
+        public System.Boolean EdgeBlockLiveTileDataCollection { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeSyncFavoritesWithInternetExplorer&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2043,7 +2043,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeSyncFavoritesWithInternetExplorer&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeSyncFavoritesWithInternetExplorer { get; set; }
+        public System.Boolean EdgeSyncFavoritesWithInternetExplorer { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cellularBlockDataWhenRoaming&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2053,7 +2053,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;cellularBlockDataWhenRoaming&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean cellularBlockDataWhenRoaming { get; set; }
+        public System.Boolean CellularBlockDataWhenRoaming { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cellularBlockVpn&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2063,7 +2063,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;cellularBlockVpn&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean cellularBlockVpn { get; set; }
+        public System.Boolean CellularBlockVpn { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cellularBlockVpnWhenRoaming&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2073,7 +2073,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;cellularBlockVpnWhenRoaming&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean cellularBlockVpnWhenRoaming { get; set; }
+        public System.Boolean CellularBlockVpnWhenRoaming { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderBlockEndUserAccess&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2083,7 +2083,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderBlockEndUserAccess&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean defenderBlockEndUserAccess { get; set; }
+        public System.Boolean DefenderBlockEndUserAccess { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderDaysBeforeDeletingQuarantinedMalware&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -2093,7 +2093,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderDaysBeforeDeletingQuarantinedMalware&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 defenderDaysBeforeDeletingQuarantinedMalware { get; set; }
+        public System.Int32 DefenderDaysBeforeDeletingQuarantinedMalware { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderDetectedMalwareActions&quot; property, of type &quot;microsoft.graph.defenderDetectedMalwareActions&quot;.</para>
@@ -2103,7 +2103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.defenderDetectedMalwareActions")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderDetectedMalwareActions&quot; property, of type &quot;microsoft.graph.defenderDetectedMalwareActions&quot;.")]
-        public System.Object defenderDetectedMalwareActions { get; set; }
+        public System.Object DefenderDetectedMalwareActions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderSystemScanSchedule&quot; property, of type &quot;microsoft.graph.weeklySchedule&quot;.</para>
@@ -2117,7 +2117,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"everyday", @"sunday", @"monday", @"tuesday", @"wednesday", @"thursday", @"friday", @"saturday")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderSystemScanSchedule&quot; property, of type &quot;microsoft.graph.weeklySchedule&quot;.")]
-        public System.String defenderSystemScanSchedule { get; set; }
+        public System.String DefenderSystemScanSchedule { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderFilesAndFoldersToExclude&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -2128,7 +2128,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderFilesAndFoldersToExclude&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] defenderFilesAndFoldersToExclude { get; set; }
+        public System.String[] DefenderFilesAndFoldersToExclude { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderFileExtensionsToExclude&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -2139,7 +2139,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderFileExtensionsToExclude&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] defenderFileExtensionsToExclude { get; set; }
+        public System.String[] DefenderFileExtensionsToExclude { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderScanMaxCpu&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -2149,7 +2149,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderScanMaxCpu&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 defenderScanMaxCpu { get; set; }
+        public System.Int32 DefenderScanMaxCpu { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderMonitorFileActivity&quot; property, of type &quot;microsoft.graph.defenderMonitorFileActivity&quot;.</para>
@@ -2163,7 +2163,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"disable", @"monitorAllFiles", @"monitorIncomingFilesOnly", @"monitorOutgoingFilesOnly")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderMonitorFileActivity&quot; property, of type &quot;microsoft.graph.defenderMonitorFileActivity&quot;.")]
-        public System.String defenderMonitorFileActivity { get; set; }
+        public System.String DefenderMonitorFileActivity { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderProcessesToExclude&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -2174,7 +2174,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderProcessesToExclude&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] defenderProcessesToExclude { get; set; }
+        public System.String[] DefenderProcessesToExclude { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderPromptForSampleSubmission&quot; property, of type &quot;microsoft.graph.defenderPromptForSampleSubmission&quot;.</para>
@@ -2188,7 +2188,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"alwaysPrompt", @"promptBeforeSendingPersonalData", @"neverSendData", @"sendAllDataWithoutPrompting")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderPromptForSampleSubmission&quot; property, of type &quot;microsoft.graph.defenderPromptForSampleSubmission&quot;.")]
-        public System.String defenderPromptForSampleSubmission { get; set; }
+        public System.String DefenderPromptForSampleSubmission { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderRequireBehaviorMonitoring&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2198,7 +2198,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderRequireBehaviorMonitoring&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean defenderRequireBehaviorMonitoring { get; set; }
+        public System.Boolean DefenderRequireBehaviorMonitoring { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderRequireCloudProtection&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2208,7 +2208,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderRequireCloudProtection&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean defenderRequireCloudProtection { get; set; }
+        public System.Boolean DefenderRequireCloudProtection { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderRequireNetworkInspectionSystem&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2218,7 +2218,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderRequireNetworkInspectionSystem&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean defenderRequireNetworkInspectionSystem { get; set; }
+        public System.Boolean DefenderRequireNetworkInspectionSystem { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderRequireRealTimeMonitoring&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2228,7 +2228,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderRequireRealTimeMonitoring&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean defenderRequireRealTimeMonitoring { get; set; }
+        public System.Boolean DefenderRequireRealTimeMonitoring { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderScanArchiveFiles&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2238,7 +2238,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderScanArchiveFiles&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean defenderScanArchiveFiles { get; set; }
+        public System.Boolean DefenderScanArchiveFiles { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderScanDownloads&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2248,7 +2248,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderScanDownloads&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean defenderScanDownloads { get; set; }
+        public System.Boolean DefenderScanDownloads { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderScanNetworkFiles&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2258,7 +2258,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderScanNetworkFiles&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean defenderScanNetworkFiles { get; set; }
+        public System.Boolean DefenderScanNetworkFiles { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderScanIncomingMail&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2268,7 +2268,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderScanIncomingMail&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean defenderScanIncomingMail { get; set; }
+        public System.Boolean DefenderScanIncomingMail { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderScanMappedNetworkDrivesDuringFullScan&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2278,7 +2278,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderScanMappedNetworkDrivesDuringFullScan&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean defenderScanMappedNetworkDrivesDuringFullScan { get; set; }
+        public System.Boolean DefenderScanMappedNetworkDrivesDuringFullScan { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderScanRemovableDrivesDuringFullScan&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2288,7 +2288,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderScanRemovableDrivesDuringFullScan&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean defenderScanRemovableDrivesDuringFullScan { get; set; }
+        public System.Boolean DefenderScanRemovableDrivesDuringFullScan { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderScanScriptsLoadedInInternetExplorer&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2298,7 +2298,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderScanScriptsLoadedInInternetExplorer&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean defenderScanScriptsLoadedInInternetExplorer { get; set; }
+        public System.Boolean DefenderScanScriptsLoadedInInternetExplorer { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderSignatureUpdateIntervalInHours&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -2308,7 +2308,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderSignatureUpdateIntervalInHours&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 defenderSignatureUpdateIntervalInHours { get; set; }
+        public System.Int32 DefenderSignatureUpdateIntervalInHours { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderScanType&quot; property, of type &quot;microsoft.graph.defenderScanType&quot;.</para>
@@ -2322,7 +2322,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"disabled", @"quick", @"full")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderScanType&quot; property, of type &quot;microsoft.graph.defenderScanType&quot;.")]
-        public System.String defenderScanType { get; set; }
+        public System.String DefenderScanType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderScheduledScanTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.</para>
@@ -2332,7 +2332,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderScheduledScanTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
-        public System.TimeSpan defenderScheduledScanTime { get; set; }
+        public System.TimeSpan DefenderScheduledScanTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderScheduledQuickScanTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.</para>
@@ -2342,7 +2342,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderScheduledQuickScanTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
-        public System.TimeSpan defenderScheduledQuickScanTime { get; set; }
+        public System.TimeSpan DefenderScheduledQuickScanTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderCloudBlockLevel&quot; property, of type &quot;microsoft.graph.defenderCloudBlockLevelType&quot;.</para>
@@ -2356,7 +2356,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"high", @"highPlus", @"zeroTolerance")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;defenderCloudBlockLevel&quot; property, of type &quot;microsoft.graph.defenderCloudBlockLevelType&quot;.")]
-        public System.String defenderCloudBlockLevel { get; set; }
+        public System.String DefenderCloudBlockLevel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lockScreenAllowTimeoutConfiguration&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2366,7 +2366,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;lockScreenAllowTimeoutConfiguration&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean lockScreenAllowTimeoutConfiguration { get; set; }
+        public System.Boolean LockScreenAllowTimeoutConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lockScreenBlockActionCenterNotifications&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2376,7 +2376,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;lockScreenBlockActionCenterNotifications&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean lockScreenBlockActionCenterNotifications { get; set; }
+        public System.Boolean LockScreenBlockActionCenterNotifications { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lockScreenBlockCortana&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2386,7 +2386,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;lockScreenBlockCortana&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean lockScreenBlockCortana { get; set; }
+        public System.Boolean LockScreenBlockCortana { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lockScreenBlockToastNotifications&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2396,7 +2396,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;lockScreenBlockToastNotifications&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean lockScreenBlockToastNotifications { get; set; }
+        public System.Boolean LockScreenBlockToastNotifications { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lockScreenTimeoutInSeconds&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -2406,7 +2406,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;lockScreenTimeoutInSeconds&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 lockScreenTimeoutInSeconds { get; set; }
+        public System.Int32 LockScreenTimeoutInSeconds { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordRequireWhenResumeFromIdleState&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2416,7 +2416,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;passwordRequireWhenResumeFromIdleState&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean passwordRequireWhenResumeFromIdleState { get; set; }
+        public System.Boolean PasswordRequireWhenResumeFromIdleState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;privacyAdvertisingId&quot; property, of type &quot;microsoft.graph.stateManagementSetting&quot;.</para>
@@ -2430,7 +2430,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"blocked", @"allowed")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;privacyAdvertisingId&quot; property, of type &quot;microsoft.graph.stateManagementSetting&quot;.")]
-        public System.String privacyAdvertisingId { get; set; }
+        public System.String PrivacyAdvertisingId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;privacyAutoAcceptPairingAndConsentPrompts&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2440,7 +2440,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;privacyAutoAcceptPairingAndConsentPrompts&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean privacyAutoAcceptPairingAndConsentPrompts { get; set; }
+        public System.Boolean PrivacyAutoAcceptPairingAndConsentPrompts { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;privacyBlockInputPersonalization&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2450,7 +2450,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;privacyBlockInputPersonalization&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean privacyBlockInputPersonalization { get; set; }
+        public System.Boolean PrivacyBlockInputPersonalization { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startBlockUnpinningAppsFromTaskbar&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2460,7 +2460,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startBlockUnpinningAppsFromTaskbar&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean startBlockUnpinningAppsFromTaskbar { get; set; }
+        public System.Boolean StartBlockUnpinningAppsFromTaskbar { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuAppListVisibility&quot; property, of type &quot;microsoft.graph.windowsStartMenuAppListVisibilityType&quot;.</para>
@@ -2474,7 +2474,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"collapse", @"remove", @"disableSettingsApp")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuAppListVisibility&quot; property, of type &quot;microsoft.graph.windowsStartMenuAppListVisibilityType&quot;.")]
-        public System.String startMenuAppListVisibility { get; set; }
+        public System.String StartMenuAppListVisibility { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuHideChangeAccountSettings&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2484,7 +2484,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuHideChangeAccountSettings&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean startMenuHideChangeAccountSettings { get; set; }
+        public System.Boolean StartMenuHideChangeAccountSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuHideFrequentlyUsedApps&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2494,7 +2494,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuHideFrequentlyUsedApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean startMenuHideFrequentlyUsedApps { get; set; }
+        public System.Boolean StartMenuHideFrequentlyUsedApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuHideHibernate&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2504,7 +2504,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuHideHibernate&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean startMenuHideHibernate { get; set; }
+        public System.Boolean StartMenuHideHibernate { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuHideLock&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2514,7 +2514,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuHideLock&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean startMenuHideLock { get; set; }
+        public System.Boolean StartMenuHideLock { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuHidePowerButton&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2524,7 +2524,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuHidePowerButton&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean startMenuHidePowerButton { get; set; }
+        public System.Boolean StartMenuHidePowerButton { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuHideRecentJumpLists&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2534,7 +2534,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuHideRecentJumpLists&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean startMenuHideRecentJumpLists { get; set; }
+        public System.Boolean StartMenuHideRecentJumpLists { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuHideRecentlyAddedApps&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2544,7 +2544,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuHideRecentlyAddedApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean startMenuHideRecentlyAddedApps { get; set; }
+        public System.Boolean StartMenuHideRecentlyAddedApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuHideRestartOptions&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2554,7 +2554,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuHideRestartOptions&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean startMenuHideRestartOptions { get; set; }
+        public System.Boolean StartMenuHideRestartOptions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuHideShutDown&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2564,7 +2564,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuHideShutDown&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean startMenuHideShutDown { get; set; }
+        public System.Boolean StartMenuHideShutDown { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuHideSignOut&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2574,7 +2574,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuHideSignOut&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean startMenuHideSignOut { get; set; }
+        public System.Boolean StartMenuHideSignOut { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuHideSleep&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2584,7 +2584,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuHideSleep&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean startMenuHideSleep { get; set; }
+        public System.Boolean StartMenuHideSleep { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuHideSwitchAccount&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2594,7 +2594,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuHideSwitchAccount&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean startMenuHideSwitchAccount { get; set; }
+        public System.Boolean StartMenuHideSwitchAccount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuHideUserTile&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2604,7 +2604,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuHideUserTile&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean startMenuHideUserTile { get; set; }
+        public System.Boolean StartMenuHideUserTile { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuLayoutEdgeAssetsXml&quot; property, of type &quot;Edm.Binary&quot;.</para>
@@ -2615,7 +2615,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuLayoutEdgeAssetsXml&quot; property, of type &quot;Edm.Binary&quot;.")]
-        public System.Byte[] startMenuLayoutEdgeAssetsXml { get; set; }
+        public System.Byte[] StartMenuLayoutEdgeAssetsXml { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuLayoutXml&quot; property, of type &quot;Edm.Binary&quot;.</para>
@@ -2626,7 +2626,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuLayoutXml&quot; property, of type &quot;Edm.Binary&quot;.")]
-        public System.Byte[] startMenuLayoutXml { get; set; }
+        public System.Byte[] StartMenuLayoutXml { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuMode&quot; property, of type &quot;microsoft.graph.windowsStartMenuModeType&quot;.</para>
@@ -2640,7 +2640,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"fullScreen", @"nonFullScreen")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuMode&quot; property, of type &quot;microsoft.graph.windowsStartMenuModeType&quot;.")]
-        public System.String startMenuMode { get; set; }
+        public System.String StartMenuMode { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuPinnedFolderDocuments&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.</para>
@@ -2654,7 +2654,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"hide", @"show")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuPinnedFolderDocuments&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.")]
-        public System.String startMenuPinnedFolderDocuments { get; set; }
+        public System.String StartMenuPinnedFolderDocuments { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuPinnedFolderDownloads&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.</para>
@@ -2668,7 +2668,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"hide", @"show")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuPinnedFolderDownloads&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.")]
-        public System.String startMenuPinnedFolderDownloads { get; set; }
+        public System.String StartMenuPinnedFolderDownloads { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuPinnedFolderFileExplorer&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.</para>
@@ -2682,7 +2682,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"hide", @"show")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuPinnedFolderFileExplorer&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.")]
-        public System.String startMenuPinnedFolderFileExplorer { get; set; }
+        public System.String StartMenuPinnedFolderFileExplorer { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuPinnedFolderHomeGroup&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.</para>
@@ -2696,7 +2696,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"hide", @"show")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuPinnedFolderHomeGroup&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.")]
-        public System.String startMenuPinnedFolderHomeGroup { get; set; }
+        public System.String StartMenuPinnedFolderHomeGroup { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuPinnedFolderMusic&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.</para>
@@ -2710,7 +2710,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"hide", @"show")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuPinnedFolderMusic&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.")]
-        public System.String startMenuPinnedFolderMusic { get; set; }
+        public System.String StartMenuPinnedFolderMusic { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuPinnedFolderNetwork&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.</para>
@@ -2724,7 +2724,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"hide", @"show")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuPinnedFolderNetwork&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.")]
-        public System.String startMenuPinnedFolderNetwork { get; set; }
+        public System.String StartMenuPinnedFolderNetwork { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuPinnedFolderPersonalFolder&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.</para>
@@ -2738,7 +2738,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"hide", @"show")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuPinnedFolderPersonalFolder&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.")]
-        public System.String startMenuPinnedFolderPersonalFolder { get; set; }
+        public System.String StartMenuPinnedFolderPersonalFolder { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuPinnedFolderPictures&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.</para>
@@ -2752,7 +2752,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"hide", @"show")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuPinnedFolderPictures&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.")]
-        public System.String startMenuPinnedFolderPictures { get; set; }
+        public System.String StartMenuPinnedFolderPictures { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuPinnedFolderSettings&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.</para>
@@ -2766,7 +2766,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"hide", @"show")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuPinnedFolderSettings&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.")]
-        public System.String startMenuPinnedFolderSettings { get; set; }
+        public System.String StartMenuPinnedFolderSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startMenuPinnedFolderVideos&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.</para>
@@ -2780,7 +2780,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"hide", @"show")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;startMenuPinnedFolderVideos&quot; property, of type &quot;microsoft.graph.visibilitySetting&quot;.")]
-        public System.String startMenuPinnedFolderVideos { get; set; }
+        public System.String StartMenuPinnedFolderVideos { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockSettingsApp&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2790,7 +2790,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockSettingsApp&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockSettingsApp { get; set; }
+        public System.Boolean SettingsBlockSettingsApp { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockSystemPage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2800,7 +2800,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockSystemPage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockSystemPage { get; set; }
+        public System.Boolean SettingsBlockSystemPage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockDevicesPage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2810,7 +2810,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockDevicesPage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockDevicesPage { get; set; }
+        public System.Boolean SettingsBlockDevicesPage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockNetworkInternetPage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2820,7 +2820,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockNetworkInternetPage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockNetworkInternetPage { get; set; }
+        public System.Boolean SettingsBlockNetworkInternetPage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockPersonalizationPage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2830,7 +2830,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockPersonalizationPage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockPersonalizationPage { get; set; }
+        public System.Boolean SettingsBlockPersonalizationPage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockAccountsPage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2840,7 +2840,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockAccountsPage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockAccountsPage { get; set; }
+        public System.Boolean SettingsBlockAccountsPage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockTimeLanguagePage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2850,7 +2850,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockTimeLanguagePage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockTimeLanguagePage { get; set; }
+        public System.Boolean SettingsBlockTimeLanguagePage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockEaseOfAccessPage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2860,7 +2860,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockEaseOfAccessPage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockEaseOfAccessPage { get; set; }
+        public System.Boolean SettingsBlockEaseOfAccessPage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockPrivacyPage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2870,7 +2870,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockPrivacyPage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockPrivacyPage { get; set; }
+        public System.Boolean SettingsBlockPrivacyPage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockUpdateSecurityPage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2880,7 +2880,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockUpdateSecurityPage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockUpdateSecurityPage { get; set; }
+        public System.Boolean SettingsBlockUpdateSecurityPage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockAppsPage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2890,7 +2890,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockAppsPage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockAppsPage { get; set; }
+        public System.Boolean SettingsBlockAppsPage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockGamingPage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2900,7 +2900,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockGamingPage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockGamingPage { get; set; }
+        public System.Boolean SettingsBlockGamingPage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsSpotlightBlockConsumerSpecificFeatures&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2910,7 +2910,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;windowsSpotlightBlockConsumerSpecificFeatures&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean windowsSpotlightBlockConsumerSpecificFeatures { get; set; }
+        public System.Boolean WindowsSpotlightBlockConsumerSpecificFeatures { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsSpotlightBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2920,7 +2920,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;windowsSpotlightBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean windowsSpotlightBlocked { get; set; }
+        public System.Boolean WindowsSpotlightBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsSpotlightBlockOnActionCenter&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2930,7 +2930,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;windowsSpotlightBlockOnActionCenter&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean windowsSpotlightBlockOnActionCenter { get; set; }
+        public System.Boolean WindowsSpotlightBlockOnActionCenter { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsSpotlightBlockTailoredExperiences&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2940,7 +2940,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;windowsSpotlightBlockTailoredExperiences&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean windowsSpotlightBlockTailoredExperiences { get; set; }
+        public System.Boolean WindowsSpotlightBlockTailoredExperiences { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsSpotlightBlockThirdPartyNotifications&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2950,7 +2950,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;windowsSpotlightBlockThirdPartyNotifications&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean windowsSpotlightBlockThirdPartyNotifications { get; set; }
+        public System.Boolean WindowsSpotlightBlockThirdPartyNotifications { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsSpotlightBlockWelcomeExperience&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2960,7 +2960,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;windowsSpotlightBlockWelcomeExperience&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean windowsSpotlightBlockWelcomeExperience { get; set; }
+        public System.Boolean WindowsSpotlightBlockWelcomeExperience { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsSpotlightBlockWindowsTips&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2970,7 +2970,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;windowsSpotlightBlockWindowsTips&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean windowsSpotlightBlockWindowsTips { get; set; }
+        public System.Boolean WindowsSpotlightBlockWindowsTips { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsSpotlightConfigureOnLockScreen&quot; property, of type &quot;microsoft.graph.windowsSpotlightEnablementSettings&quot;.</para>
@@ -2984,7 +2984,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"disabled", @"enabled")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;windowsSpotlightConfigureOnLockScreen&quot; property, of type &quot;microsoft.graph.windowsSpotlightEnablementSettings&quot;.")]
-        public System.String windowsSpotlightConfigureOnLockScreen { get; set; }
+        public System.String WindowsSpotlightConfigureOnLockScreen { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;networkProxyApplySettingsDeviceWide&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -2994,7 +2994,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;networkProxyApplySettingsDeviceWide&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean networkProxyApplySettingsDeviceWide { get; set; }
+        public System.Boolean NetworkProxyApplySettingsDeviceWide { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;networkProxyDisableAutoDetect&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3004,7 +3004,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;networkProxyDisableAutoDetect&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean networkProxyDisableAutoDetect { get; set; }
+        public System.Boolean NetworkProxyDisableAutoDetect { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;networkProxyAutomaticConfigurationUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -3014,7 +3014,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;networkProxyAutomaticConfigurationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String networkProxyAutomaticConfigurationUrl { get; set; }
+        public System.String NetworkProxyAutomaticConfigurationUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;networkProxyServer&quot; property, of type &quot;microsoft.graph.windows10NetworkProxyServer&quot;.</para>
@@ -3024,7 +3024,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windows10NetworkProxyServer")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;networkProxyServer&quot; property, of type &quot;microsoft.graph.windows10NetworkProxyServer&quot;.")]
-        public System.Object networkProxyServer { get; set; }
+        public System.Object NetworkProxyServer { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;antiTheftModeBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3034,7 +3034,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;antiTheftModeBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean antiTheftModeBlocked { get; set; }
+        public System.Boolean AntiTheftModeBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;connectedDevicesServiceBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3044,7 +3044,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;connectedDevicesServiceBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean connectedDevicesServiceBlocked { get; set; }
+        public System.Boolean ConnectedDevicesServiceBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;certificatesBlockManualRootCertificateInstallation&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3054,7 +3054,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;certificatesBlockManualRootCertificateInstallation&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean certificatesBlockManualRootCertificateInstallation { get; set; }
+        public System.Boolean CertificatesBlockManualRootCertificateInstallation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;copyPasteBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3064,7 +3064,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;copyPasteBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean copyPasteBlocked { get; set; }
+        public System.Boolean CopyPasteBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cortanaBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3074,7 +3074,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;cortanaBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean cortanaBlocked { get; set; }
+        public System.Boolean CortanaBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceManagementBlockFactoryResetOnMobile&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3084,7 +3084,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;deviceManagementBlockFactoryResetOnMobile&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean deviceManagementBlockFactoryResetOnMobile { get; set; }
+        public System.Boolean DeviceManagementBlockFactoryResetOnMobile { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceManagementBlockManualUnenroll&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3094,7 +3094,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;deviceManagementBlockManualUnenroll&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean deviceManagementBlockManualUnenroll { get; set; }
+        public System.Boolean DeviceManagementBlockManualUnenroll { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;safeSearchFilter&quot; property, of type &quot;microsoft.graph.safeSearchFilterType&quot;.</para>
@@ -3108,7 +3108,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"strict", @"moderate")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;safeSearchFilter&quot; property, of type &quot;microsoft.graph.safeSearchFilterType&quot;.")]
-        public System.String safeSearchFilter { get; set; }
+        public System.String SafeSearchFilter { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockPopups&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3118,7 +3118,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlockPopups&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeBlockPopups { get; set; }
+        public System.Boolean EdgeBlockPopups { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockSearchSuggestions&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3128,7 +3128,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlockSearchSuggestions&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeBlockSearchSuggestions { get; set; }
+        public System.Boolean EdgeBlockSearchSuggestions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockSendingIntranetTrafficToInternetExplorer&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3138,7 +3138,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlockSendingIntranetTrafficToInternetExplorer&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeBlockSendingIntranetTrafficToInternetExplorer { get; set; }
+        public System.Boolean EdgeBlockSendingIntranetTrafficToInternetExplorer { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeRequireSmartScreen&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3148,7 +3148,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeRequireSmartScreen&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeRequireSmartScreen { get; set; }
+        public System.Boolean EdgeRequireSmartScreen { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeEnterpriseModeSiteListLocation&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -3158,7 +3158,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeEnterpriseModeSiteListLocation&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String edgeEnterpriseModeSiteListLocation { get; set; }
+        public System.String EdgeEnterpriseModeSiteListLocation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeFirstRunUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -3168,7 +3168,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeFirstRunUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String edgeFirstRunUrl { get; set; }
+        public System.String EdgeFirstRunUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeSearchEngine&quot; property, of type &quot;microsoft.graph.edgeSearchEngineBase&quot;.</para>
@@ -3178,7 +3178,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.edgeSearchEngineBase")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeSearchEngine&quot; property, of type &quot;microsoft.graph.edgeSearchEngineBase&quot;.")]
-        public System.Object edgeSearchEngine { get; set; }
+        public System.Object EdgeSearchEngine { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeHomepageUrls&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -3189,7 +3189,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeHomepageUrls&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] edgeHomepageUrls { get; set; }
+        public System.String[] EdgeHomepageUrls { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockAccessToAboutFlags&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3199,7 +3199,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlockAccessToAboutFlags&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean edgeBlockAccessToAboutFlags { get; set; }
+        public System.Boolean EdgeBlockAccessToAboutFlags { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;smartScreenBlockPromptOverride&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3209,7 +3209,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;smartScreenBlockPromptOverride&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean smartScreenBlockPromptOverride { get; set; }
+        public System.Boolean SmartScreenBlockPromptOverride { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;smartScreenBlockPromptOverrideForFiles&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3219,7 +3219,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;smartScreenBlockPromptOverrideForFiles&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean smartScreenBlockPromptOverrideForFiles { get; set; }
+        public System.Boolean SmartScreenBlockPromptOverrideForFiles { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;webRtcBlockLocalhostIpAddress&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3229,7 +3229,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;webRtcBlockLocalhostIpAddress&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean webRtcBlockLocalhostIpAddress { get; set; }
+        public System.Boolean WebRtcBlockLocalhostIpAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;internetSharingBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3239,7 +3239,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;internetSharingBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean internetSharingBlocked { get; set; }
+        public System.Boolean InternetSharingBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockAddProvisioningPackage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3249,7 +3249,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockAddProvisioningPackage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockAddProvisioningPackage { get; set; }
+        public System.Boolean SettingsBlockAddProvisioningPackage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockRemoveProvisioningPackage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3259,7 +3259,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockRemoveProvisioningPackage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockRemoveProvisioningPackage { get; set; }
+        public System.Boolean SettingsBlockRemoveProvisioningPackage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockChangeSystemTime&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3269,7 +3269,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockChangeSystemTime&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockChangeSystemTime { get; set; }
+        public System.Boolean SettingsBlockChangeSystemTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockEditDeviceName&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3279,7 +3279,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockEditDeviceName&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockEditDeviceName { get; set; }
+        public System.Boolean SettingsBlockEditDeviceName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockChangeRegion&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3289,7 +3289,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockChangeRegion&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockChangeRegion { get; set; }
+        public System.Boolean SettingsBlockChangeRegion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockChangeLanguage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3299,7 +3299,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockChangeLanguage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockChangeLanguage { get; set; }
+        public System.Boolean SettingsBlockChangeLanguage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingsBlockChangePowerSleep&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3309,7 +3309,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;settingsBlockChangePowerSleep&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean settingsBlockChangePowerSleep { get; set; }
+        public System.Boolean SettingsBlockChangePowerSleep { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;microsoftAccountBlockSettingsSync&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3319,7 +3319,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;microsoftAccountBlockSettingsSync&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean microsoftAccountBlockSettingsSync { get; set; }
+        public System.Boolean MicrosoftAccountBlockSettingsSync { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;resetProtectionModeBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3329,7 +3329,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;resetProtectionModeBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean resetProtectionModeBlocked { get; set; }
+        public System.Boolean ResetProtectionModeBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;storageRequireMobileDeviceEncryption&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3339,7 +3339,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;storageRequireMobileDeviceEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean storageRequireMobileDeviceEncryption { get; set; }
+        public System.Boolean StorageRequireMobileDeviceEncryption { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;usbBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3349,7 +3349,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;usbBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean usbBlocked { get; set; }
+        public System.Boolean UsbBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;voiceRecordingBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3359,7 +3359,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;voiceRecordingBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean voiceRecordingBlocked { get; set; }
+        public System.Boolean VoiceRecordingBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;wiFiBlockAutomaticConnectHotspots&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3369,7 +3369,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;wiFiBlockAutomaticConnectHotspots&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean wiFiBlockAutomaticConnectHotspots { get; set; }
+        public System.Boolean WiFiBlockAutomaticConnectHotspots { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;wiFiBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3380,7 +3380,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;wiFiBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;wiFiBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean wiFiBlocked { get; set; }
+        public System.Boolean WiFiBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;wiFiBlockManualConfiguration&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3390,7 +3390,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;wiFiBlockManualConfiguration&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean wiFiBlockManualConfiguration { get; set; }
+        public System.Boolean WiFiBlockManualConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;wiFiScanInterval&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -3400,7 +3400,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;wiFiScanInterval&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 wiFiScanInterval { get; set; }
+        public System.Int32 WiFiScanInterval { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;wirelessDisplayBlockProjectionToThisDevice&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3410,7 +3410,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;wirelessDisplayBlockProjectionToThisDevice&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean wirelessDisplayBlockProjectionToThisDevice { get; set; }
+        public System.Boolean WirelessDisplayBlockProjectionToThisDevice { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;wirelessDisplayBlockUserInputFromReceiver&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3420,7 +3420,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;wirelessDisplayBlockUserInputFromReceiver&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean wirelessDisplayBlockUserInputFromReceiver { get; set; }
+        public System.Boolean WirelessDisplayBlockUserInputFromReceiver { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;wirelessDisplayRequirePinForPairing&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3430,7 +3430,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;wirelessDisplayRequirePinForPairing&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean wirelessDisplayRequirePinForPairing { get; set; }
+        public System.Boolean WirelessDisplayRequirePinForPairing { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appsAllowTrustedAppsSideloading&quot; property, of type &quot;microsoft.graph.stateManagementSetting&quot;.</para>
@@ -3444,7 +3444,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"blocked", @"allowed")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;appsAllowTrustedAppsSideloading&quot; property, of type &quot;microsoft.graph.stateManagementSetting&quot;.")]
-        public System.String appsAllowTrustedAppsSideloading { get; set; }
+        public System.String AppsAllowTrustedAppsSideloading { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsStoreBlockAutoUpdate&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3454,7 +3454,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;windowsStoreBlockAutoUpdate&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean windowsStoreBlockAutoUpdate { get; set; }
+        public System.Boolean WindowsStoreBlockAutoUpdate { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;developerUnlockSetting&quot; property, of type &quot;microsoft.graph.stateManagementSetting&quot;.</para>
@@ -3468,7 +3468,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"blocked", @"allowed")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;developerUnlockSetting&quot; property, of type &quot;microsoft.graph.stateManagementSetting&quot;.")]
-        public System.String developerUnlockSetting { get; set; }
+        public System.String DeveloperUnlockSetting { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sharedUserAppDataAllowed&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3478,7 +3478,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;sharedUserAppDataAllowed&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean sharedUserAppDataAllowed { get; set; }
+        public System.Boolean SharedUserAppDataAllowed { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appsBlockWindowsStoreOriginatedApps&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3488,7 +3488,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;appsBlockWindowsStoreOriginatedApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean appsBlockWindowsStoreOriginatedApps { get; set; }
+        public System.Boolean AppsBlockWindowsStoreOriginatedApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsStoreEnablePrivateStoreOnly&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3498,7 +3498,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;windowsStoreEnablePrivateStoreOnly&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean windowsStoreEnablePrivateStoreOnly { get; set; }
+        public System.Boolean WindowsStoreEnablePrivateStoreOnly { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;storageRestrictAppDataToSystemVolume&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3508,7 +3508,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;storageRestrictAppDataToSystemVolume&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean storageRestrictAppDataToSystemVolume { get; set; }
+        public System.Boolean StorageRestrictAppDataToSystemVolume { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;storageRestrictAppInstallToSystemVolume&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3518,7 +3518,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;storageRestrictAppInstallToSystemVolume&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean storageRestrictAppInstallToSystemVolume { get; set; }
+        public System.Boolean StorageRestrictAppInstallToSystemVolume { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;gameDvrBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3528,7 +3528,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;gameDvrBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean gameDvrBlocked { get; set; }
+        public System.Boolean GameDvrBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;experienceBlockDeviceDiscovery&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3538,7 +3538,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;experienceBlockDeviceDiscovery&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean experienceBlockDeviceDiscovery { get; set; }
+        public System.Boolean ExperienceBlockDeviceDiscovery { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;experienceBlockErrorDialogWhenNoSIM&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3548,7 +3548,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;experienceBlockErrorDialogWhenNoSIM&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean experienceBlockErrorDialogWhenNoSIM { get; set; }
+        public System.Boolean ExperienceBlockErrorDialogWhenNoSIM { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;experienceBlockTaskSwitcher&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3558,7 +3558,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;experienceBlockTaskSwitcher&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean experienceBlockTaskSwitcher { get; set; }
+        public System.Boolean ExperienceBlockTaskSwitcher { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;logonBlockFastUserSwitching&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3568,7 +3568,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;logonBlockFastUserSwitching&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean logonBlockFastUserSwitching { get; set; }
+        public System.Boolean LogonBlockFastUserSwitching { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10EndpointProtectionConfiguration&quot; type.</para>
@@ -3576,7 +3576,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.windows10EndpointProtectionConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10EndpointProtectionConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter windows10EndpointProtectionConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter Windows10EndpointProtectionConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;firewallBlockStatefulFTP&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3586,7 +3586,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;firewallBlockStatefulFTP&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean firewallBlockStatefulFTP { get; set; }
+        public System.Boolean FirewallBlockStatefulFTP { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;firewallIdleTimeoutForSecurityAssociationInSeconds&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -3596,7 +3596,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;firewallIdleTimeoutForSecurityAssociationInSeconds&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 firewallIdleTimeoutForSecurityAssociationInSeconds { get; set; }
+        public System.Int32 FirewallIdleTimeoutForSecurityAssociationInSeconds { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;firewallPreSharedKeyEncodingMethod&quot; property, of type &quot;microsoft.graph.firewallPreSharedKeyEncodingMethodType&quot;.</para>
@@ -3610,7 +3610,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"deviceDefault", @"none", @"utF8")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;firewallPreSharedKeyEncodingMethod&quot; property, of type &quot;microsoft.graph.firewallPreSharedKeyEncodingMethodType&quot;.")]
-        public System.String firewallPreSharedKeyEncodingMethod { get; set; }
+        public System.String FirewallPreSharedKeyEncodingMethod { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;firewallIPSecExemptionsAllowNeighborDiscovery&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3620,7 +3620,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;firewallIPSecExemptionsAllowNeighborDiscovery&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean firewallIPSecExemptionsAllowNeighborDiscovery { get; set; }
+        public System.Boolean FirewallIPSecExemptionsAllowNeighborDiscovery { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;firewallIPSecExemptionsAllowICMP&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3630,7 +3630,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;firewallIPSecExemptionsAllowICMP&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean firewallIPSecExemptionsAllowICMP { get; set; }
+        public System.Boolean FirewallIPSecExemptionsAllowICMP { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;firewallIPSecExemptionsAllowRouterDiscovery&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3640,7 +3640,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;firewallIPSecExemptionsAllowRouterDiscovery&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean firewallIPSecExemptionsAllowRouterDiscovery { get; set; }
+        public System.Boolean FirewallIPSecExemptionsAllowRouterDiscovery { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;firewallIPSecExemptionsAllowDHCP&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3650,7 +3650,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;firewallIPSecExemptionsAllowDHCP&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean firewallIPSecExemptionsAllowDHCP { get; set; }
+        public System.Boolean FirewallIPSecExemptionsAllowDHCP { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;firewallCertificateRevocationListCheckMethod&quot; property, of type &quot;microsoft.graph.firewallCertificateRevocationListCheckMethodType&quot;.</para>
@@ -3664,7 +3664,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"deviceDefault", @"none", @"attempt", @"require")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;firewallCertificateRevocationListCheckMethod&quot; property, of type &quot;microsoft.graph.firewallCertificateRevocationListCheckMethodType&quot;.")]
-        public System.String firewallCertificateRevocationListCheckMethod { get; set; }
+        public System.String FirewallCertificateRevocationListCheckMethod { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;firewallMergeKeyingModuleSettings&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3674,7 +3674,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;firewallMergeKeyingModuleSettings&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean firewallMergeKeyingModuleSettings { get; set; }
+        public System.Boolean FirewallMergeKeyingModuleSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;firewallPacketQueueingMethod&quot; property, of type &quot;microsoft.graph.firewallPacketQueueingMethodType&quot;.</para>
@@ -3688,7 +3688,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"deviceDefault", @"disabled", @"queueInbound", @"queueOutbound", @"queueBoth")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;firewallPacketQueueingMethod&quot; property, of type &quot;microsoft.graph.firewallPacketQueueingMethodType&quot;.")]
-        public System.String firewallPacketQueueingMethod { get; set; }
+        public System.String FirewallPacketQueueingMethod { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;firewallProfileDomain&quot; property, of type &quot;microsoft.graph.windowsFirewallNetworkProfile&quot;.</para>
@@ -3698,7 +3698,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsFirewallNetworkProfile")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;firewallProfileDomain&quot; property, of type &quot;microsoft.graph.windowsFirewallNetworkProfile&quot;.")]
-        public System.Object firewallProfileDomain { get; set; }
+        public System.Object FirewallProfileDomain { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;firewallProfilePublic&quot; property, of type &quot;microsoft.graph.windowsFirewallNetworkProfile&quot;.</para>
@@ -3708,7 +3708,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsFirewallNetworkProfile")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;firewallProfilePublic&quot; property, of type &quot;microsoft.graph.windowsFirewallNetworkProfile&quot;.")]
-        public System.Object firewallProfilePublic { get; set; }
+        public System.Object FirewallProfilePublic { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;firewallProfilePrivate&quot; property, of type &quot;microsoft.graph.windowsFirewallNetworkProfile&quot;.</para>
@@ -3718,7 +3718,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsFirewallNetworkProfile")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;firewallProfilePrivate&quot; property, of type &quot;microsoft.graph.windowsFirewallNetworkProfile&quot;.")]
-        public System.Object firewallProfilePrivate { get; set; }
+        public System.Object FirewallProfilePrivate { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderAttackSurfaceReductionExcludedPaths&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -3729,7 +3729,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;defenderAttackSurfaceReductionExcludedPaths&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] defenderAttackSurfaceReductionExcludedPaths { get; set; }
+        public System.String[] DefenderAttackSurfaceReductionExcludedPaths { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderGuardedFoldersAllowedAppPaths&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -3740,7 +3740,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;defenderGuardedFoldersAllowedAppPaths&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] defenderGuardedFoldersAllowedAppPaths { get; set; }
+        public System.String[] DefenderGuardedFoldersAllowedAppPaths { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderAdditionalGuardedFolders&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -3751,7 +3751,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;defenderAdditionalGuardedFolders&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] defenderAdditionalGuardedFolders { get; set; }
+        public System.String[] DefenderAdditionalGuardedFolders { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderExploitProtectionXml&quot; property, of type &quot;Edm.Binary&quot;.</para>
@@ -3762,7 +3762,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;defenderExploitProtectionXml&quot; property, of type &quot;Edm.Binary&quot;.")]
-        public System.Byte[] defenderExploitProtectionXml { get; set; }
+        public System.Byte[] DefenderExploitProtectionXml { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderExploitProtectionXmlFileName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -3772,7 +3772,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;defenderExploitProtectionXmlFileName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String defenderExploitProtectionXmlFileName { get; set; }
+        public System.String DefenderExploitProtectionXmlFileName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defenderSecurityCenterBlockExploitProtectionOverride&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3782,7 +3782,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;defenderSecurityCenterBlockExploitProtectionOverride&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean defenderSecurityCenterBlockExploitProtectionOverride { get; set; }
+        public System.Boolean DefenderSecurityCenterBlockExploitProtectionOverride { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appLockerApplicationControl&quot; property, of type &quot;microsoft.graph.appLockerApplicationControlType&quot;.</para>
@@ -3796,7 +3796,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"enforceComponentsAndStoreApps", @"auditComponentsAndStoreApps", @"enforceComponentsStoreAppsAndSmartlocker", @"auditComponentsStoreAppsAndSmartlocker")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;appLockerApplicationControl&quot; property, of type &quot;microsoft.graph.appLockerApplicationControlType&quot;.")]
-        public System.String appLockerApplicationControl { get; set; }
+        public System.String AppLockerApplicationControl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;smartScreenEnableInShell&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3806,7 +3806,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;smartScreenEnableInShell&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean smartScreenEnableInShell { get; set; }
+        public System.Boolean SmartScreenEnableInShell { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;smartScreenBlockOverrideForFiles&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3816,7 +3816,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;smartScreenBlockOverrideForFiles&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean smartScreenBlockOverrideForFiles { get; set; }
+        public System.Boolean SmartScreenBlockOverrideForFiles { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;applicationGuardEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3826,7 +3826,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;applicationGuardEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean applicationGuardEnabled { get; set; }
+        public System.Boolean ApplicationGuardEnabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;applicationGuardBlockFileTransfer&quot; property, of type &quot;microsoft.graph.applicationGuardBlockFileTransferType&quot;.</para>
@@ -3840,7 +3840,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"blockImageAndTextFile", @"blockImageFile", @"blockNone", @"blockTextFile")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;applicationGuardBlockFileTransfer&quot; property, of type &quot;microsoft.graph.applicationGuardBlockFileTransferType&quot;.")]
-        public System.String applicationGuardBlockFileTransfer { get; set; }
+        public System.String ApplicationGuardBlockFileTransfer { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;applicationGuardBlockNonEnterpriseContent&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3850,7 +3850,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;applicationGuardBlockNonEnterpriseContent&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean applicationGuardBlockNonEnterpriseContent { get; set; }
+        public System.Boolean ApplicationGuardBlockNonEnterpriseContent { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;applicationGuardAllowPersistence&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3860,7 +3860,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;applicationGuardAllowPersistence&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean applicationGuardAllowPersistence { get; set; }
+        public System.Boolean ApplicationGuardAllowPersistence { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;applicationGuardForceAuditing&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3870,7 +3870,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;applicationGuardForceAuditing&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean applicationGuardForceAuditing { get; set; }
+        public System.Boolean ApplicationGuardForceAuditing { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;applicationGuardBlockClipboardSharing&quot; property, of type &quot;microsoft.graph.applicationGuardBlockClipboardSharingType&quot;.</para>
@@ -3884,7 +3884,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notConfigured", @"blockBoth", @"blockHostToContainer", @"blockContainerToHost", @"blockNone")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;applicationGuardBlockClipboardSharing&quot; property, of type &quot;microsoft.graph.applicationGuardBlockClipboardSharingType&quot;.")]
-        public System.String applicationGuardBlockClipboardSharing { get; set; }
+        public System.String ApplicationGuardBlockClipboardSharing { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;applicationGuardAllowPrintToPDF&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3894,7 +3894,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;applicationGuardAllowPrintToPDF&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean applicationGuardAllowPrintToPDF { get; set; }
+        public System.Boolean ApplicationGuardAllowPrintToPDF { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;applicationGuardAllowPrintToXPS&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3904,7 +3904,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;applicationGuardAllowPrintToXPS&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean applicationGuardAllowPrintToXPS { get; set; }
+        public System.Boolean ApplicationGuardAllowPrintToXPS { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;applicationGuardAllowPrintToLocalPrinters&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3914,7 +3914,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;applicationGuardAllowPrintToLocalPrinters&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean applicationGuardAllowPrintToLocalPrinters { get; set; }
+        public System.Boolean ApplicationGuardAllowPrintToLocalPrinters { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;applicationGuardAllowPrintToNetworkPrinters&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3924,7 +3924,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;applicationGuardAllowPrintToNetworkPrinters&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean applicationGuardAllowPrintToNetworkPrinters { get; set; }
+        public System.Boolean ApplicationGuardAllowPrintToNetworkPrinters { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bitLockerDisableWarningForOtherDiskEncryption&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3934,7 +3934,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;bitLockerDisableWarningForOtherDiskEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean bitLockerDisableWarningForOtherDiskEncryption { get; set; }
+        public System.Boolean BitLockerDisableWarningForOtherDiskEncryption { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bitLockerEnableStorageCardEncryptionOnMobile&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3944,7 +3944,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;bitLockerEnableStorageCardEncryptionOnMobile&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean bitLockerEnableStorageCardEncryptionOnMobile { get; set; }
+        public System.Boolean BitLockerEnableStorageCardEncryptionOnMobile { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bitLockerEncryptDevice&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3954,7 +3954,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;bitLockerEncryptDevice&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean bitLockerEncryptDevice { get; set; }
+        public System.Boolean BitLockerEncryptDevice { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bitLockerRemovableDrivePolicy&quot; property, of type &quot;microsoft.graph.bitLockerRemovableDrivePolicy&quot;.</para>
@@ -3964,7 +3964,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.bitLockerRemovableDrivePolicy")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;bitLockerRemovableDrivePolicy&quot; property, of type &quot;microsoft.graph.bitLockerRemovableDrivePolicy&quot;.")]
-        public System.Object bitLockerRemovableDrivePolicy { get; set; }
+        public System.Object BitLockerRemovableDrivePolicy { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
@@ -3972,7 +3972,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.editionUpgradeConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.editionUpgradeConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter editionUpgradeConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter EditionUpgradeConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;licenseType&quot; property, of type &quot;microsoft.graph.editionUpgradeLicenseType&quot;.</para>
@@ -3986,7 +3986,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"productKey", @"licenseFile")]
         [Parameter(ParameterSetName = @"#microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;licenseType&quot; property, of type &quot;microsoft.graph.editionUpgradeLicenseType&quot;.")]
-        public System.String licenseType { get; set; }
+        public System.String LicenseType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;targetEdition&quot; property, of type &quot;microsoft.graph.windows10EditionType&quot;.</para>
@@ -4000,7 +4000,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"windows10Enterprise", @"windows10EnterpriseN", @"windows10Education", @"windows10EducationN", @"windows10MobileEnterprise", @"windows10HolographicEnterprise", @"windows10Professional", @"windows10ProfessionalN", @"windows10ProfessionalEducation", @"windows10ProfessionalEducationN", @"windows10ProfessionalWorkstation", @"windows10ProfessionalWorkstationN")]
         [Parameter(ParameterSetName = @"#microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;targetEdition&quot; property, of type &quot;microsoft.graph.windows10EditionType&quot;.")]
-        public System.String targetEdition { get; set; }
+        public System.String TargetEdition { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;license&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -4010,7 +4010,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;license&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String license { get; set; }
+        public System.String License { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -4020,7 +4020,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String productKey { get; set; }
+        public System.String ProductKey { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.</para>
@@ -4028,7 +4028,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter windowsDefenderAdvancedThreatProtectionConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter WindowsDefenderAdvancedThreatProtectionConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowSampleSharing&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4038,7 +4038,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;allowSampleSharing&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean allowSampleSharing { get; set; }
+        public System.Boolean AllowSampleSharing { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enableExpeditedTelemetryReporting&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4048,7 +4048,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;enableExpeditedTelemetryReporting&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean enableExpeditedTelemetryReporting { get; set; }
+        public System.Boolean EnableExpeditedTelemetryReporting { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSDeviceFeaturesConfiguration&quot; type.</para>
@@ -4056,7 +4056,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.macOSDeviceFeaturesConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSDeviceFeaturesConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSDeviceFeaturesConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter macOSDeviceFeaturesConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter MacOSDeviceFeaturesConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosDeviceFeaturesConfiguration&quot; type.</para>
@@ -4064,7 +4064,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.iosDeviceFeaturesConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosDeviceFeaturesConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosDeviceFeaturesConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter iosDeviceFeaturesConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter IosDeviceFeaturesConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;assetTagTemplate&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -4074,7 +4074,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;assetTagTemplate&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String assetTagTemplate { get; set; }
+        public System.String AssetTagTemplate { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lockScreenFootnote&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -4084,7 +4084,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;lockScreenFootnote&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String lockScreenFootnote { get; set; }
+        public System.String LockScreenFootnote { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;homeScreenDockIcons&quot; property, of type &quot;microsoft.graph.iosHomeScreenItem&quot;.</para>
@@ -4095,7 +4095,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;homeScreenDockIcons&quot; property, of type &quot;microsoft.graph.iosHomeScreenItem&quot;.")]
-        public System.Object[] homeScreenDockIcons { get; set; }
+        public System.Object[] HomeScreenDockIcons { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;homeScreenPages&quot; property, of type &quot;microsoft.graph.iosHomeScreenPage&quot;.</para>
@@ -4106,7 +4106,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;homeScreenPages&quot; property, of type &quot;microsoft.graph.iosHomeScreenPage&quot;.")]
-        public System.Object[] homeScreenPages { get; set; }
+        public System.Object[] HomeScreenPages { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notificationSettings&quot; property, of type &quot;microsoft.graph.iosNotificationSettings&quot;.</para>
@@ -4117,7 +4117,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;notificationSettings&quot; property, of type &quot;microsoft.graph.iosNotificationSettings&quot;.")]
-        public System.Object[] notificationSettings { get; set; }
+        public System.Object[] NotificationSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSGeneralDeviceConfiguration&quot; type.</para>
@@ -4125,7 +4125,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.macOSGeneralDeviceConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSGeneralDeviceConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSGeneralDeviceConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter macOSGeneralDeviceConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter MacOSGeneralDeviceConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;emailInDomainSuffixes&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -4137,7 +4137,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;emailInDomainSuffixes&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;emailInDomainSuffixes&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] emailInDomainSuffixes { get; set; }
+        public System.String[] EmailInDomainSuffixes { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordMinutesOfInactivityBeforeLock&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -4147,7 +4147,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeLock&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 passwordMinutesOfInactivityBeforeLock { get; set; }
+        public System.Int32 PasswordMinutesOfInactivityBeforeLock { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSCustomConfiguration&quot; type.</para>
@@ -4155,7 +4155,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.macOSCustomConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSCustomConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSCustomConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter macOSCustomConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter MacOSCustomConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;payloadName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -4166,7 +4166,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSCustomConfiguration", HelpMessage = @"The &quot;payloadName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;payloadName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String payloadName { get; set; }
+        public System.String PayloadName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;payloadFileName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -4177,7 +4177,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSCustomConfiguration", HelpMessage = @"The &quot;payloadFileName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;payloadFileName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String payloadFileName { get; set; }
+        public System.String PayloadFileName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;payload&quot; property, of type &quot;Edm.Binary&quot;.</para>
@@ -4189,7 +4189,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.macOSCustomConfiguration", HelpMessage = @"The &quot;payload&quot; property, of type &quot;Edm.Binary&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;payload&quot; property, of type &quot;Edm.Binary&quot;.")]
-        public System.Byte[] payload { get; set; }
+        public System.Byte[] Payload { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosUpdateConfiguration&quot; type.</para>
@@ -4197,7 +4197,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.iosUpdateConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosUpdateConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter iosUpdateConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter IosUpdateConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;activeHoursStart&quot; property, of type &quot;Edm.TimeOfDay&quot;.</para>
@@ -4207,7 +4207,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateConfiguration", HelpMessage = @"The &quot;activeHoursStart&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
-        public System.TimeSpan activeHoursStart { get; set; }
+        public System.TimeSpan ActiveHoursStart { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;activeHoursEnd&quot; property, of type &quot;Edm.TimeOfDay&quot;.</para>
@@ -4217,7 +4217,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateConfiguration", HelpMessage = @"The &quot;activeHoursEnd&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
-        public System.TimeSpan activeHoursEnd { get; set; }
+        public System.TimeSpan ActiveHoursEnd { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;scheduledInstallDays&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.</para>
@@ -4232,7 +4232,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"sunday", @"monday", @"tuesday", @"wednesday", @"thursday", @"friday", @"saturday")]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateConfiguration", HelpMessage = @"The &quot;scheduledInstallDays&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.")]
-        public System.String[] scheduledInstallDays { get; set; }
+        public System.String[] ScheduledInstallDays { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;utcTimeOffsetInMinutes&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -4242,7 +4242,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateConfiguration", HelpMessage = @"The &quot;utcTimeOffsetInMinutes&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 utcTimeOffsetInMinutes { get; set; }
+        public System.Int32 UtcTimeOffsetInMinutes { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosGeneralDeviceConfiguration&quot; type.</para>
@@ -4250,7 +4250,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.iosGeneralDeviceConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosGeneralDeviceConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter iosGeneralDeviceConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter IosGeneralDeviceConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;accountBlockModification&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4260,7 +4260,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;accountBlockModification&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean accountBlockModification { get; set; }
+        public System.Boolean AccountBlockModification { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;activationLockAllowWhenSupervised&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4270,7 +4270,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;activationLockAllowWhenSupervised&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean activationLockAllowWhenSupervised { get; set; }
+        public System.Boolean ActivationLockAllowWhenSupervised { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;airDropBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4280,7 +4280,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;airDropBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean airDropBlocked { get; set; }
+        public System.Boolean AirDropBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;airDropForceUnmanagedDropTarget&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4290,7 +4290,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;airDropForceUnmanagedDropTarget&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean airDropForceUnmanagedDropTarget { get; set; }
+        public System.Boolean AirDropForceUnmanagedDropTarget { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;airPlayForcePairingPasswordForOutgoingRequests&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4300,7 +4300,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;airPlayForcePairingPasswordForOutgoingRequests&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean airPlayForcePairingPasswordForOutgoingRequests { get; set; }
+        public System.Boolean AirPlayForcePairingPasswordForOutgoingRequests { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appleWatchBlockPairing&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4310,7 +4310,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;appleWatchBlockPairing&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean appleWatchBlockPairing { get; set; }
+        public System.Boolean AppleWatchBlockPairing { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appleWatchForceWristDetection&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4320,7 +4320,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;appleWatchForceWristDetection&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean appleWatchForceWristDetection { get; set; }
+        public System.Boolean AppleWatchForceWristDetection { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appleNewsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4330,7 +4330,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;appleNewsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean appleNewsBlocked { get; set; }
+        public System.Boolean AppleNewsBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appsSingleAppModeList&quot; property, of type &quot;microsoft.graph.appListItem&quot;.</para>
@@ -4341,7 +4341,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;appsSingleAppModeList&quot; property, of type &quot;microsoft.graph.appListItem&quot;.")]
-        public System.Object[] appsSingleAppModeList { get; set; }
+        public System.Object[] AppsSingleAppModeList { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appsVisibilityList&quot; property, of type &quot;microsoft.graph.appListItem&quot;.</para>
@@ -4352,7 +4352,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;appsVisibilityList&quot; property, of type &quot;microsoft.graph.appListItem&quot;.")]
-        public System.Object[] appsVisibilityList { get; set; }
+        public System.Object[] AppsVisibilityList { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appsVisibilityListType&quot; property, of type &quot;microsoft.graph.appListType&quot;.</para>
@@ -4366,7 +4366,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"none", @"appsInListCompliant", @"appsNotInListCompliant")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;appsVisibilityListType&quot; property, of type &quot;microsoft.graph.appListType&quot;.")]
-        public System.String appsVisibilityListType { get; set; }
+        public System.String AppsVisibilityListType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appStoreBlockAutomaticDownloads&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4376,7 +4376,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;appStoreBlockAutomaticDownloads&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean appStoreBlockAutomaticDownloads { get; set; }
+        public System.Boolean AppStoreBlockAutomaticDownloads { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appStoreBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4386,7 +4386,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;appStoreBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean appStoreBlocked { get; set; }
+        public System.Boolean AppStoreBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appStoreBlockInAppPurchases&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4396,7 +4396,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;appStoreBlockInAppPurchases&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean appStoreBlockInAppPurchases { get; set; }
+        public System.Boolean AppStoreBlockInAppPurchases { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appStoreBlockUIAppInstallation&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4406,7 +4406,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;appStoreBlockUIAppInstallation&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean appStoreBlockUIAppInstallation { get; set; }
+        public System.Boolean AppStoreBlockUIAppInstallation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appStoreRequirePassword&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4416,7 +4416,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;appStoreRequirePassword&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean appStoreRequirePassword { get; set; }
+        public System.Boolean AppStoreRequirePassword { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bluetoothBlockModification&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4426,7 +4426,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;bluetoothBlockModification&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean bluetoothBlockModification { get; set; }
+        public System.Boolean BluetoothBlockModification { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cellularBlockGlobalBackgroundFetchWhileRoaming&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4436,7 +4436,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;cellularBlockGlobalBackgroundFetchWhileRoaming&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean cellularBlockGlobalBackgroundFetchWhileRoaming { get; set; }
+        public System.Boolean CellularBlockGlobalBackgroundFetchWhileRoaming { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cellularBlockPerAppDataModification&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4446,7 +4446,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;cellularBlockPerAppDataModification&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean cellularBlockPerAppDataModification { get; set; }
+        public System.Boolean CellularBlockPerAppDataModification { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cellularBlockPersonalHotspot&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4456,7 +4456,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;cellularBlockPersonalHotspot&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean cellularBlockPersonalHotspot { get; set; }
+        public System.Boolean CellularBlockPersonalHotspot { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cellularBlockVoiceRoaming&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4467,7 +4467,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;cellularBlockVoiceRoaming&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;cellularBlockVoiceRoaming&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean cellularBlockVoiceRoaming { get; set; }
+        public System.Boolean CellularBlockVoiceRoaming { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;certificatesBlockUntrustedTlsCertificates&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4477,7 +4477,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;certificatesBlockUntrustedTlsCertificates&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean certificatesBlockUntrustedTlsCertificates { get; set; }
+        public System.Boolean CertificatesBlockUntrustedTlsCertificates { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;classroomAppBlockRemoteScreenObservation&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4487,7 +4487,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;classroomAppBlockRemoteScreenObservation&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean classroomAppBlockRemoteScreenObservation { get; set; }
+        public System.Boolean ClassroomAppBlockRemoteScreenObservation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;classroomAppForceUnpromptedScreenObservation&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4497,7 +4497,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;classroomAppForceUnpromptedScreenObservation&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean classroomAppForceUnpromptedScreenObservation { get; set; }
+        public System.Boolean ClassroomAppForceUnpromptedScreenObservation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;configurationProfileBlockChanges&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4507,7 +4507,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;configurationProfileBlockChanges&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean configurationProfileBlockChanges { get; set; }
+        public System.Boolean ConfigurationProfileBlockChanges { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;definitionLookupBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4517,7 +4517,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;definitionLookupBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean definitionLookupBlocked { get; set; }
+        public System.Boolean DefinitionLookupBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceBlockEnableRestrictions&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4527,7 +4527,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;deviceBlockEnableRestrictions&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean deviceBlockEnableRestrictions { get; set; }
+        public System.Boolean DeviceBlockEnableRestrictions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceBlockEraseContentAndSettings&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4537,7 +4537,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;deviceBlockEraseContentAndSettings&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean deviceBlockEraseContentAndSettings { get; set; }
+        public System.Boolean DeviceBlockEraseContentAndSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceBlockNameModification&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4547,7 +4547,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;deviceBlockNameModification&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean deviceBlockNameModification { get; set; }
+        public System.Boolean DeviceBlockNameModification { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;diagnosticDataBlockSubmissionModification&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4557,7 +4557,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;diagnosticDataBlockSubmissionModification&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean diagnosticDataBlockSubmissionModification { get; set; }
+        public System.Boolean DiagnosticDataBlockSubmissionModification { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;documentsBlockManagedDocumentsInUnmanagedApps&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4567,7 +4567,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;documentsBlockManagedDocumentsInUnmanagedApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean documentsBlockManagedDocumentsInUnmanagedApps { get; set; }
+        public System.Boolean DocumentsBlockManagedDocumentsInUnmanagedApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;documentsBlockUnmanagedDocumentsInManagedApps&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4577,7 +4577,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;documentsBlockUnmanagedDocumentsInManagedApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean documentsBlockUnmanagedDocumentsInManagedApps { get; set; }
+        public System.Boolean DocumentsBlockUnmanagedDocumentsInManagedApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseAppBlockTrust&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4587,7 +4587,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;enterpriseAppBlockTrust&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean enterpriseAppBlockTrust { get; set; }
+        public System.Boolean EnterpriseAppBlockTrust { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseAppBlockTrustModification&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4597,7 +4597,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;enterpriseAppBlockTrustModification&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean enterpriseAppBlockTrustModification { get; set; }
+        public System.Boolean EnterpriseAppBlockTrustModification { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;faceTimeBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4607,7 +4607,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;faceTimeBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean faceTimeBlocked { get; set; }
+        public System.Boolean FaceTimeBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;findMyFriendsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4617,7 +4617,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;findMyFriendsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean findMyFriendsBlocked { get; set; }
+        public System.Boolean FindMyFriendsBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;gamingBlockGameCenterFriends&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4627,7 +4627,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;gamingBlockGameCenterFriends&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean gamingBlockGameCenterFriends { get; set; }
+        public System.Boolean GamingBlockGameCenterFriends { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;gamingBlockMultiplayer&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4637,7 +4637,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;gamingBlockMultiplayer&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean gamingBlockMultiplayer { get; set; }
+        public System.Boolean GamingBlockMultiplayer { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;gameCenterBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4647,7 +4647,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;gameCenterBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean gameCenterBlocked { get; set; }
+        public System.Boolean GameCenterBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;hostPairingBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4657,7 +4657,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;hostPairingBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean hostPairingBlocked { get; set; }
+        public System.Boolean HostPairingBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iBooksStoreBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4667,7 +4667,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;iBooksStoreBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean iBooksStoreBlocked { get; set; }
+        public System.Boolean IBooksStoreBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iBooksStoreBlockErotica&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4677,7 +4677,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;iBooksStoreBlockErotica&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean iBooksStoreBlockErotica { get; set; }
+        public System.Boolean IBooksStoreBlockErotica { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iCloudBlockActivityContinuation&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4687,7 +4687,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;iCloudBlockActivityContinuation&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean iCloudBlockActivityContinuation { get; set; }
+        public System.Boolean ICloudBlockActivityContinuation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iCloudBlockBackup&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4697,7 +4697,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;iCloudBlockBackup&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean iCloudBlockBackup { get; set; }
+        public System.Boolean ICloudBlockBackup { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iCloudBlockDocumentSync&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4707,7 +4707,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;iCloudBlockDocumentSync&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean iCloudBlockDocumentSync { get; set; }
+        public System.Boolean ICloudBlockDocumentSync { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iCloudBlockManagedAppsSync&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4717,7 +4717,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;iCloudBlockManagedAppsSync&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean iCloudBlockManagedAppsSync { get; set; }
+        public System.Boolean ICloudBlockManagedAppsSync { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iCloudBlockPhotoLibrary&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4727,7 +4727,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;iCloudBlockPhotoLibrary&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean iCloudBlockPhotoLibrary { get; set; }
+        public System.Boolean ICloudBlockPhotoLibrary { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iCloudBlockPhotoStreamSync&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4737,7 +4737,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;iCloudBlockPhotoStreamSync&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean iCloudBlockPhotoStreamSync { get; set; }
+        public System.Boolean ICloudBlockPhotoStreamSync { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iCloudBlockSharedPhotoStream&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4747,7 +4747,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;iCloudBlockSharedPhotoStream&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean iCloudBlockSharedPhotoStream { get; set; }
+        public System.Boolean ICloudBlockSharedPhotoStream { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iCloudRequireEncryptedBackup&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4757,7 +4757,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;iCloudRequireEncryptedBackup&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean iCloudRequireEncryptedBackup { get; set; }
+        public System.Boolean ICloudRequireEncryptedBackup { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iTunesBlockExplicitContent&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4767,7 +4767,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;iTunesBlockExplicitContent&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean iTunesBlockExplicitContent { get; set; }
+        public System.Boolean ITunesBlockExplicitContent { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iTunesBlockMusicService&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4777,7 +4777,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;iTunesBlockMusicService&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean iTunesBlockMusicService { get; set; }
+        public System.Boolean ITunesBlockMusicService { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iTunesBlockRadio&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4787,7 +4787,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;iTunesBlockRadio&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean iTunesBlockRadio { get; set; }
+        public System.Boolean ITunesBlockRadio { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;keyboardBlockAutoCorrect&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4797,7 +4797,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;keyboardBlockAutoCorrect&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean keyboardBlockAutoCorrect { get; set; }
+        public System.Boolean KeyboardBlockAutoCorrect { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;keyboardBlockDictation&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4807,7 +4807,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;keyboardBlockDictation&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean keyboardBlockDictation { get; set; }
+        public System.Boolean KeyboardBlockDictation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;keyboardBlockPredictive&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4817,7 +4817,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;keyboardBlockPredictive&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean keyboardBlockPredictive { get; set; }
+        public System.Boolean KeyboardBlockPredictive { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;keyboardBlockShortcuts&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4827,7 +4827,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;keyboardBlockShortcuts&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean keyboardBlockShortcuts { get; set; }
+        public System.Boolean KeyboardBlockShortcuts { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;keyboardBlockSpellCheck&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4837,7 +4837,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;keyboardBlockSpellCheck&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean keyboardBlockSpellCheck { get; set; }
+        public System.Boolean KeyboardBlockSpellCheck { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeAllowAssistiveSpeak&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4847,7 +4847,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeAllowAssistiveSpeak&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeAllowAssistiveSpeak { get; set; }
+        public System.Boolean KioskModeAllowAssistiveSpeak { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeAllowAssistiveTouchSettings&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4857,7 +4857,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeAllowAssistiveTouchSettings&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeAllowAssistiveTouchSettings { get; set; }
+        public System.Boolean KioskModeAllowAssistiveTouchSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeAllowAutoLock&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4867,7 +4867,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeAllowAutoLock&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeAllowAutoLock { get; set; }
+        public System.Boolean KioskModeAllowAutoLock { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeAllowColorInversionSettings&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4877,7 +4877,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeAllowColorInversionSettings&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeAllowColorInversionSettings { get; set; }
+        public System.Boolean KioskModeAllowColorInversionSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeAllowRingerSwitch&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4887,7 +4887,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeAllowRingerSwitch&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeAllowRingerSwitch { get; set; }
+        public System.Boolean KioskModeAllowRingerSwitch { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeAllowScreenRotation&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4897,7 +4897,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeAllowScreenRotation&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeAllowScreenRotation { get; set; }
+        public System.Boolean KioskModeAllowScreenRotation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeAllowSleepButton&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4907,7 +4907,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeAllowSleepButton&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeAllowSleepButton { get; set; }
+        public System.Boolean KioskModeAllowSleepButton { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeAllowTouchscreen&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4917,7 +4917,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeAllowTouchscreen&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeAllowTouchscreen { get; set; }
+        public System.Boolean KioskModeAllowTouchscreen { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeAllowVoiceOverSettings&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4927,7 +4927,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeAllowVoiceOverSettings&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeAllowVoiceOverSettings { get; set; }
+        public System.Boolean KioskModeAllowVoiceOverSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeAllowVolumeButtons&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4937,7 +4937,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeAllowVolumeButtons&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeAllowVolumeButtons { get; set; }
+        public System.Boolean KioskModeAllowVolumeButtons { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeAllowZoomSettings&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4947,7 +4947,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeAllowZoomSettings&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeAllowZoomSettings { get; set; }
+        public System.Boolean KioskModeAllowZoomSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeAppStoreUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -4957,7 +4957,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeAppStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String kioskModeAppStoreUrl { get; set; }
+        public System.String KioskModeAppStoreUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeRequireAssistiveTouch&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4967,7 +4967,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeRequireAssistiveTouch&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeRequireAssistiveTouch { get; set; }
+        public System.Boolean KioskModeRequireAssistiveTouch { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeRequireColorInversion&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4977,7 +4977,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeRequireColorInversion&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeRequireColorInversion { get; set; }
+        public System.Boolean KioskModeRequireColorInversion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeRequireMonoAudio&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4987,7 +4987,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeRequireMonoAudio&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeRequireMonoAudio { get; set; }
+        public System.Boolean KioskModeRequireMonoAudio { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeRequireVoiceOver&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -4997,7 +4997,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeRequireVoiceOver&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeRequireVoiceOver { get; set; }
+        public System.Boolean KioskModeRequireVoiceOver { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeRequireZoom&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5007,7 +5007,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeRequireZoom&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeRequireZoom { get; set; }
+        public System.Boolean KioskModeRequireZoom { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeManagedAppId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -5017,7 +5017,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeManagedAppId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String kioskModeManagedAppId { get; set; }
+        public System.String KioskModeManagedAppId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lockScreenBlockControlCenter&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5027,7 +5027,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;lockScreenBlockControlCenter&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean lockScreenBlockControlCenter { get; set; }
+        public System.Boolean LockScreenBlockControlCenter { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lockScreenBlockNotificationView&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5037,7 +5037,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;lockScreenBlockNotificationView&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean lockScreenBlockNotificationView { get; set; }
+        public System.Boolean LockScreenBlockNotificationView { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lockScreenBlockPassbook&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5047,7 +5047,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;lockScreenBlockPassbook&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean lockScreenBlockPassbook { get; set; }
+        public System.Boolean LockScreenBlockPassbook { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lockScreenBlockTodayView&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5057,7 +5057,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;lockScreenBlockTodayView&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean lockScreenBlockTodayView { get; set; }
+        public System.Boolean LockScreenBlockTodayView { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mediaContentRatingAustralia&quot; property, of type &quot;microsoft.graph.mediaContentRatingAustralia&quot;.</para>
@@ -5067,7 +5067,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mediaContentRatingAustralia")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;mediaContentRatingAustralia&quot; property, of type &quot;microsoft.graph.mediaContentRatingAustralia&quot;.")]
-        public System.Object mediaContentRatingAustralia { get; set; }
+        public System.Object MediaContentRatingAustralia { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mediaContentRatingCanada&quot; property, of type &quot;microsoft.graph.mediaContentRatingCanada&quot;.</para>
@@ -5077,7 +5077,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mediaContentRatingCanada")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;mediaContentRatingCanada&quot; property, of type &quot;microsoft.graph.mediaContentRatingCanada&quot;.")]
-        public System.Object mediaContentRatingCanada { get; set; }
+        public System.Object MediaContentRatingCanada { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mediaContentRatingFrance&quot; property, of type &quot;microsoft.graph.mediaContentRatingFrance&quot;.</para>
@@ -5087,7 +5087,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mediaContentRatingFrance")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;mediaContentRatingFrance&quot; property, of type &quot;microsoft.graph.mediaContentRatingFrance&quot;.")]
-        public System.Object mediaContentRatingFrance { get; set; }
+        public System.Object MediaContentRatingFrance { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mediaContentRatingGermany&quot; property, of type &quot;microsoft.graph.mediaContentRatingGermany&quot;.</para>
@@ -5097,7 +5097,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mediaContentRatingGermany")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;mediaContentRatingGermany&quot; property, of type &quot;microsoft.graph.mediaContentRatingGermany&quot;.")]
-        public System.Object mediaContentRatingGermany { get; set; }
+        public System.Object MediaContentRatingGermany { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mediaContentRatingIreland&quot; property, of type &quot;microsoft.graph.mediaContentRatingIreland&quot;.</para>
@@ -5107,7 +5107,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mediaContentRatingIreland")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;mediaContentRatingIreland&quot; property, of type &quot;microsoft.graph.mediaContentRatingIreland&quot;.")]
-        public System.Object mediaContentRatingIreland { get; set; }
+        public System.Object MediaContentRatingIreland { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mediaContentRatingJapan&quot; property, of type &quot;microsoft.graph.mediaContentRatingJapan&quot;.</para>
@@ -5117,7 +5117,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mediaContentRatingJapan")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;mediaContentRatingJapan&quot; property, of type &quot;microsoft.graph.mediaContentRatingJapan&quot;.")]
-        public System.Object mediaContentRatingJapan { get; set; }
+        public System.Object MediaContentRatingJapan { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mediaContentRatingNewZealand&quot; property, of type &quot;microsoft.graph.mediaContentRatingNewZealand&quot;.</para>
@@ -5127,7 +5127,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mediaContentRatingNewZealand")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;mediaContentRatingNewZealand&quot; property, of type &quot;microsoft.graph.mediaContentRatingNewZealand&quot;.")]
-        public System.Object mediaContentRatingNewZealand { get; set; }
+        public System.Object MediaContentRatingNewZealand { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mediaContentRatingUnitedKingdom&quot; property, of type &quot;microsoft.graph.mediaContentRatingUnitedKingdom&quot;.</para>
@@ -5137,7 +5137,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mediaContentRatingUnitedKingdom")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;mediaContentRatingUnitedKingdom&quot; property, of type &quot;microsoft.graph.mediaContentRatingUnitedKingdom&quot;.")]
-        public System.Object mediaContentRatingUnitedKingdom { get; set; }
+        public System.Object MediaContentRatingUnitedKingdom { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mediaContentRatingUnitedStates&quot; property, of type &quot;microsoft.graph.mediaContentRatingUnitedStates&quot;.</para>
@@ -5147,7 +5147,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mediaContentRatingUnitedStates")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;mediaContentRatingUnitedStates&quot; property, of type &quot;microsoft.graph.mediaContentRatingUnitedStates&quot;.")]
-        public System.Object mediaContentRatingUnitedStates { get; set; }
+        public System.Object MediaContentRatingUnitedStates { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;networkUsageRules&quot; property, of type &quot;microsoft.graph.iosNetworkUsageRule&quot;.</para>
@@ -5158,7 +5158,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;networkUsageRules&quot; property, of type &quot;microsoft.graph.iosNetworkUsageRule&quot;.")]
-        public System.Object[] networkUsageRules { get; set; }
+        public System.Object[] NetworkUsageRules { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mediaContentRatingApps&quot; property, of type &quot;microsoft.graph.ratingAppsType&quot;.</para>
@@ -5172,7 +5172,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"allAllowed", @"allBlocked", @"agesAbove4", @"agesAbove9", @"agesAbove12", @"agesAbove17")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;mediaContentRatingApps&quot; property, of type &quot;microsoft.graph.ratingAppsType&quot;.")]
-        public System.String mediaContentRatingApps { get; set; }
+        public System.String MediaContentRatingApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;messagesBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5182,7 +5182,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;messagesBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean messagesBlocked { get; set; }
+        public System.Boolean MessagesBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notificationsBlockSettingsModification&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5192,7 +5192,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;notificationsBlockSettingsModification&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean notificationsBlockSettingsModification { get; set; }
+        public System.Boolean NotificationsBlockSettingsModification { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passcodeBlockFingerprintUnlock&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5202,7 +5202,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;passcodeBlockFingerprintUnlock&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean passcodeBlockFingerprintUnlock { get; set; }
+        public System.Boolean PasscodeBlockFingerprintUnlock { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passcodeBlockFingerprintModification&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5212,7 +5212,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;passcodeBlockFingerprintModification&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean passcodeBlockFingerprintModification { get; set; }
+        public System.Boolean PasscodeBlockFingerprintModification { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passcodeBlockModification&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5222,7 +5222,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;passcodeBlockModification&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean passcodeBlockModification { get; set; }
+        public System.Boolean PasscodeBlockModification { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passcodeBlockSimple&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5232,7 +5232,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;passcodeBlockSimple&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean passcodeBlockSimple { get; set; }
+        public System.Boolean PasscodeBlockSimple { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passcodeExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -5242,7 +5242,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;passcodeExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 passcodeExpirationDays { get; set; }
+        public System.Int32 PasscodeExpirationDays { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passcodeMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -5252,7 +5252,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;passcodeMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 passcodeMinimumLength { get; set; }
+        public System.Int32 PasscodeMinimumLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passcodeMinutesOfInactivityBeforeLock&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -5262,7 +5262,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;passcodeMinutesOfInactivityBeforeLock&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 passcodeMinutesOfInactivityBeforeLock { get; set; }
+        public System.Int32 PasscodeMinutesOfInactivityBeforeLock { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passcodeMinutesOfInactivityBeforeScreenTimeout&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -5272,7 +5272,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;passcodeMinutesOfInactivityBeforeScreenTimeout&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 passcodeMinutesOfInactivityBeforeScreenTimeout { get; set; }
+        public System.Int32 PasscodeMinutesOfInactivityBeforeScreenTimeout { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passcodeMinimumCharacterSetCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -5282,7 +5282,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;passcodeMinimumCharacterSetCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 passcodeMinimumCharacterSetCount { get; set; }
+        public System.Int32 PasscodeMinimumCharacterSetCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passcodePreviousPasscodeBlockCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -5292,7 +5292,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;passcodePreviousPasscodeBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 passcodePreviousPasscodeBlockCount { get; set; }
+        public System.Int32 PasscodePreviousPasscodeBlockCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passcodeSignInFailureCountBeforeWipe&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -5302,7 +5302,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;passcodeSignInFailureCountBeforeWipe&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 passcodeSignInFailureCountBeforeWipe { get; set; }
+        public System.Int32 PasscodeSignInFailureCountBeforeWipe { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passcodeRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.</para>
@@ -5316,7 +5316,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"deviceDefault", @"alphanumeric", @"numeric")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;passcodeRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
-        public System.String passcodeRequiredType { get; set; }
+        public System.String PasscodeRequiredType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passcodeRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5326,7 +5326,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;passcodeRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean passcodeRequired { get; set; }
+        public System.Boolean PasscodeRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;podcastsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5336,7 +5336,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;podcastsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean podcastsBlocked { get; set; }
+        public System.Boolean PodcastsBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;safariBlockAutofill&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5346,7 +5346,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;safariBlockAutofill&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean safariBlockAutofill { get; set; }
+        public System.Boolean SafariBlockAutofill { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;safariBlockJavaScript&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5356,7 +5356,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;safariBlockJavaScript&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean safariBlockJavaScript { get; set; }
+        public System.Boolean SafariBlockJavaScript { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;safariBlockPopups&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5366,7 +5366,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;safariBlockPopups&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean safariBlockPopups { get; set; }
+        public System.Boolean SafariBlockPopups { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;safariBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5376,7 +5376,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;safariBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean safariBlocked { get; set; }
+        public System.Boolean SafariBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;safariCookieSettings&quot; property, of type &quot;microsoft.graph.webBrowserCookieSettings&quot;.</para>
@@ -5390,7 +5390,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"browserDefault", @"blockAlways", @"allowCurrentWebSite", @"allowFromWebsitesVisited", @"allowAlways")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;safariCookieSettings&quot; property, of type &quot;microsoft.graph.webBrowserCookieSettings&quot;.")]
-        public System.String safariCookieSettings { get; set; }
+        public System.String SafariCookieSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;safariManagedDomains&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -5401,7 +5401,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;safariManagedDomains&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] safariManagedDomains { get; set; }
+        public System.String[] SafariManagedDomains { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;safariPasswordAutoFillDomains&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -5412,7 +5412,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;safariPasswordAutoFillDomains&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] safariPasswordAutoFillDomains { get; set; }
+        public System.String[] SafariPasswordAutoFillDomains { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;safariRequireFraudWarning&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5422,7 +5422,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;safariRequireFraudWarning&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean safariRequireFraudWarning { get; set; }
+        public System.Boolean SafariRequireFraudWarning { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;siriBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5432,7 +5432,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;siriBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean siriBlocked { get; set; }
+        public System.Boolean SiriBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;siriBlockedWhenLocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5442,7 +5442,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;siriBlockedWhenLocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean siriBlockedWhenLocked { get; set; }
+        public System.Boolean SiriBlockedWhenLocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;siriBlockUserGeneratedContent&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5452,7 +5452,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;siriBlockUserGeneratedContent&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean siriBlockUserGeneratedContent { get; set; }
+        public System.Boolean SiriBlockUserGeneratedContent { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;siriRequireProfanityFilter&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5462,7 +5462,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;siriRequireProfanityFilter&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean siriRequireProfanityFilter { get; set; }
+        public System.Boolean SiriRequireProfanityFilter { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;spotlightBlockInternetResults&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5472,7 +5472,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;spotlightBlockInternetResults&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean spotlightBlockInternetResults { get; set; }
+        public System.Boolean SpotlightBlockInternetResults { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;voiceDialingBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5483,7 +5483,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;voiceDialingBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;voiceDialingBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean voiceDialingBlocked { get; set; }
+        public System.Boolean VoiceDialingBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;wallpaperBlockModification&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5493,7 +5493,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;wallpaperBlockModification&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean wallpaperBlockModification { get; set; }
+        public System.Boolean WallpaperBlockModification { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;wiFiConnectOnlyToConfiguredNetworks&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5503,7 +5503,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;wiFiConnectOnlyToConfiguredNetworks&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean wiFiConnectOnlyToConfiguredNetworks { get; set; }
+        public System.Boolean WiFiConnectOnlyToConfiguredNetworks { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosCustomConfiguration&quot; type.</para>
@@ -5511,7 +5511,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.iosCustomConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosCustomConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosCustomConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter iosCustomConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter IosCustomConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidGeneralDeviceConfiguration&quot; type.</para>
@@ -5519,7 +5519,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.androidGeneralDeviceConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidGeneralDeviceConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter androidGeneralDeviceConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter AndroidGeneralDeviceConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appsBlockClipboardSharing&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5529,7 +5529,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;appsBlockClipboardSharing&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean appsBlockClipboardSharing { get; set; }
+        public System.Boolean AppsBlockClipboardSharing { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appsBlockYouTube&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5539,7 +5539,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;appsBlockYouTube&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean appsBlockYouTube { get; set; }
+        public System.Boolean AppsBlockYouTube { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cellularBlockMessaging&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5549,7 +5549,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;cellularBlockMessaging&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean cellularBlockMessaging { get; set; }
+        public System.Boolean CellularBlockMessaging { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cellularBlockWiFiTethering&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5559,7 +5559,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;cellularBlockWiFiTethering&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean cellularBlockWiFiTethering { get; set; }
+        public System.Boolean CellularBlockWiFiTethering { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;googleAccountBlockAutoSync&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5569,7 +5569,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;googleAccountBlockAutoSync&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean googleAccountBlockAutoSync { get; set; }
+        public System.Boolean GoogleAccountBlockAutoSync { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;googlePlayStoreBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5579,7 +5579,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;googlePlayStoreBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean googlePlayStoreBlocked { get; set; }
+        public System.Boolean GooglePlayStoreBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeBlockSleepButton&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5589,7 +5589,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeBlockSleepButton&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeBlockSleepButton { get; set; }
+        public System.Boolean KioskModeBlockSleepButton { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeBlockVolumeButtons&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5599,7 +5599,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeBlockVolumeButtons&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean kioskModeBlockVolumeButtons { get; set; }
+        public System.Boolean KioskModeBlockVolumeButtons { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;kioskModeApps&quot; property, of type &quot;microsoft.graph.appListItem&quot;.</para>
@@ -5610,7 +5610,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeApps&quot; property, of type &quot;microsoft.graph.appListItem&quot;.")]
-        public System.Object[] kioskModeApps { get; set; }
+        public System.Object[] KioskModeApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordBlockFingerprintUnlock&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5620,7 +5620,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordBlockFingerprintUnlock&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean passwordBlockFingerprintUnlock { get; set; }
+        public System.Boolean PasswordBlockFingerprintUnlock { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordBlockTrustAgents&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5630,7 +5630,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordBlockTrustAgents&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean passwordBlockTrustAgents { get; set; }
+        public System.Boolean PasswordBlockTrustAgents { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;powerOffBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5640,7 +5640,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;powerOffBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean powerOffBlocked { get; set; }
+        public System.Boolean PowerOffBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;factoryResetBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5650,7 +5650,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;factoryResetBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean factoryResetBlocked { get; set; }
+        public System.Boolean FactoryResetBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceSharingAllowed&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5660,7 +5660,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;deviceSharingAllowed&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean deviceSharingAllowed { get; set; }
+        public System.Boolean DeviceSharingAllowed { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;storageBlockGoogleBackup&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5670,7 +5670,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;storageBlockGoogleBackup&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean storageBlockGoogleBackup { get; set; }
+        public System.Boolean StorageBlockGoogleBackup { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;storageRequireRemovableStorageEncryption&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5680,7 +5680,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;storageRequireRemovableStorageEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean storageRequireRemovableStorageEncryption { get; set; }
+        public System.Boolean StorageRequireRemovableStorageEncryption { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;voiceAssistantBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5690,7 +5690,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;voiceAssistantBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean voiceAssistantBlocked { get; set; }
+        public System.Boolean VoiceAssistantBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;webBrowserBlockPopups&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5700,7 +5700,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;webBrowserBlockPopups&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean webBrowserBlockPopups { get; set; }
+        public System.Boolean WebBrowserBlockPopups { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;webBrowserBlockAutofill&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5710,7 +5710,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;webBrowserBlockAutofill&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean webBrowserBlockAutofill { get; set; }
+        public System.Boolean WebBrowserBlockAutofill { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;webBrowserBlockJavaScript&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5720,7 +5720,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;webBrowserBlockJavaScript&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean webBrowserBlockJavaScript { get; set; }
+        public System.Boolean WebBrowserBlockJavaScript { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;webBrowserCookieSettings&quot; property, of type &quot;microsoft.graph.webBrowserCookieSettings&quot;.</para>
@@ -5734,7 +5734,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"browserDefault", @"blockAlways", @"allowCurrentWebSite", @"allowFromWebsitesVisited", @"allowAlways")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;webBrowserCookieSettings&quot; property, of type &quot;microsoft.graph.webBrowserCookieSettings&quot;.")]
-        public System.String webBrowserCookieSettings { get; set; }
+        public System.String WebBrowserCookieSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appsInstallAllowList&quot; property, of type &quot;microsoft.graph.appListItem&quot;.</para>
@@ -5745,7 +5745,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;appsInstallAllowList&quot; property, of type &quot;microsoft.graph.appListItem&quot;.")]
-        public System.Object[] appsInstallAllowList { get; set; }
+        public System.Object[] AppsInstallAllowList { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appsLaunchBlockList&quot; property, of type &quot;microsoft.graph.appListItem&quot;.</para>
@@ -5756,7 +5756,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;appsLaunchBlockList&quot; property, of type &quot;microsoft.graph.appListItem&quot;.")]
-        public System.Object[] appsLaunchBlockList { get; set; }
+        public System.Object[] AppsLaunchBlockList { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appsHideList&quot; property, of type &quot;microsoft.graph.appListItem&quot;.</para>
@@ -5767,7 +5767,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;appsHideList&quot; property, of type &quot;microsoft.graph.appListItem&quot;.")]
-        public System.Object[] appsHideList { get; set; }
+        public System.Object[] AppsHideList { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireVerifyApps&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5777,7 +5777,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;securityRequireVerifyApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean securityRequireVerifyApps { get; set; }
+        public System.Boolean SecurityRequireVerifyApps { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidCustomConfiguration&quot; type.</para>
@@ -5785,6 +5785,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.androidCustomConfiguration")]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidCustomConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidCustomConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter androidCustomConfiguration { get; set; }
+        public System.Management.Automation.SwitchParameter AndroidCustomConfiguration { get; set; }
     }
 }

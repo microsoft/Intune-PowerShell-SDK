@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.recipient")]
         [Parameter(ParameterSetName = @"#microsoft.graph.recipient", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.recipient&quot; type.")]
-        public System.Management.Automation.SwitchParameter recipient { get; set; }
+        public System.Management.Automation.SwitchParameter Recipient { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;emailAddress&quot; property, of type &quot;microsoft.graph.emailAddress&quot;.</para>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.recipient", HelpMessage = @"The &quot;emailAddress&quot; property, of type &quot;microsoft.graph.emailAddress&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.attendeeBase", HelpMessage = @"The &quot;emailAddress&quot; property, of type &quot;microsoft.graph.emailAddress&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.attendee", HelpMessage = @"The &quot;emailAddress&quot; property, of type &quot;microsoft.graph.emailAddress&quot;.")]
-        public System.Object emailAddress { get; set; }
+        public System.Object EmailAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.attendeeBase&quot; type.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.attendeeBase")]
         [Parameter(ParameterSetName = @"#microsoft.graph.attendeeBase", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.attendeeBase&quot; type.")]
-        public System.Management.Automation.SwitchParameter attendeeBase { get; set; }
+        public System.Management.Automation.SwitchParameter AttendeeBase { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;type&quot; property, of type &quot;microsoft.graph.attendeeType&quot;.</para>
@@ -51,7 +51,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"required", @"optional", @"resource")]
         [Parameter(ParameterSetName = @"#microsoft.graph.attendeeBase", HelpMessage = @"The &quot;type&quot; property, of type &quot;microsoft.graph.attendeeType&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.attendee", HelpMessage = @"The &quot;type&quot; property, of type &quot;microsoft.graph.attendeeType&quot;.")]
-        public System.String type { get; set; }
+        public System.String Type { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.attendee&quot; type.</para>
@@ -59,7 +59,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.attendee")]
         [Parameter(ParameterSetName = @"#microsoft.graph.attendee", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.attendee&quot; type.")]
-        public System.Management.Automation.SwitchParameter attendee { get; set; }
+        public System.Management.Automation.SwitchParameter Attendee { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;status&quot; property, of type &quot;microsoft.graph.responseStatus&quot;.</para>
@@ -68,6 +68,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.responseStatus")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.attendee", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.responseStatus&quot;.")]
-        public System.Object status { get; set; }
+        public System.Object Status { get; set; }
     }
 }

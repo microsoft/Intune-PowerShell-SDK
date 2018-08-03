@@ -12,7 +12,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceAppManagement_DefaultManagedAppProtections", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.defaultManagedAppProtection")]
-    [ResourceIdPropertyName("defaultManagedAppProtectionId")]
+    [ResourceIdPropertyName("DefaultManagedAppProtectionId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_DefaultManagedAppProtections : GetOrSearchCmdlet
     {
@@ -20,10 +20,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.defaultManagedAppProtection&quot; object in the &quot;defaultManagedAppProtections&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.defaultManagedAppProtection&quot; object in the &quot;defaultManagedAppProtections&quot; collection.")]
-        public System.String defaultManagedAppProtectionId { get; set; }
+        public System.String DefaultManagedAppProtectionId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appDataEncryptionType&quot; property, of type &quot;microsoft.graph.managedAppDataEncryptionType&quot;.</para>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedAppDataEncryptionType")]
         [Selectable]
         [Sortable]
-        public System.String appDataEncryptionType { get; set; }
+        public System.String AppDataEncryptionType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;screenCaptureBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -43,7 +43,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean screenCaptureBlocked { get; set; }
+        public System.Boolean ScreenCaptureBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;encryptAppData&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -53,7 +53,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean encryptAppData { get; set; }
+        public System.Boolean EncryptAppData { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;disableAppEncryptionIfDeviceEncryptionIsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean disableAppEncryptionIfDeviceEncryptionIsEnabled { get; set; }
+        public System.Boolean DisableAppEncryptionIfDeviceEncryptionIsEnabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumRequiredSdkVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String minimumRequiredSdkVersion { get; set; }
+        public System.String MinimumRequiredSdkVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;customSettings&quot; property, of type &quot;microsoft.graph.keyValuePair&quot;.</para>
@@ -82,7 +82,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.keyValuePair")]
         [Selectable]
-        public System.Object[] customSettings { get; set; }
+        public System.Object[] CustomSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deployedAppCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -92,7 +92,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 deployedAppCount { get; set; }
+        public System.Int32 DeployedAppCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumRequiredPatchVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -102,7 +102,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String minimumRequiredPatchVersion { get; set; }
+        public System.String MinimumRequiredPatchVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumWarningPatchVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -112,7 +112,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String minimumWarningPatchVersion { get; set; }
+        public System.String MinimumWarningPatchVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;faceIdBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -122,7 +122,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean faceIdBlocked { get; set; }
+        public System.Boolean FaceIdBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;apps&quot; property, of type &quot;microsoft.graph.managedMobileApp&quot;.</para>
@@ -132,7 +132,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedMobileApp")]
         [Selectable]
         [Expandable]
-        public System.Object[] apps { get; set; }
+        public System.Object[] Apps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deploymentSummary&quot; property, of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;.</para>
@@ -143,7 +143,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Expandable]
         [Sortable]
-        public System.Object deploymentSummary { get; set; }
+        public System.Object DeploymentSummary { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;periodOfflineBeforeAccessCheck&quot; property, of type &quot;Edm.Duration&quot;.</para>
@@ -153,7 +153,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Duration")]
         [Selectable]
         [Sortable]
-        public System.TimeSpan periodOfflineBeforeAccessCheck { get; set; }
+        public System.TimeSpan PeriodOfflineBeforeAccessCheck { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;periodOnlineBeforeAccessCheck&quot; property, of type &quot;Edm.Duration&quot;.</para>
@@ -163,7 +163,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Duration")]
         [Selectable]
         [Sortable]
-        public System.TimeSpan periodOnlineBeforeAccessCheck { get; set; }
+        public System.TimeSpan PeriodOnlineBeforeAccessCheck { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowedInboundDataTransferSources&quot; property, of type &quot;microsoft.graph.managedAppDataTransferLevel&quot;.</para>
@@ -173,7 +173,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedAppDataTransferLevel")]
         [Selectable]
         [Sortable]
-        public System.String allowedInboundDataTransferSources { get; set; }
+        public System.String AllowedInboundDataTransferSources { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowedOutboundDataTransferDestinations&quot; property, of type &quot;microsoft.graph.managedAppDataTransferLevel&quot;.</para>
@@ -183,7 +183,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedAppDataTransferLevel")]
         [Selectable]
         [Sortable]
-        public System.String allowedOutboundDataTransferDestinations { get; set; }
+        public System.String AllowedOutboundDataTransferDestinations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;organizationalCredentialsRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -193,7 +193,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean organizationalCredentialsRequired { get; set; }
+        public System.Boolean OrganizationalCredentialsRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowedOutboundClipboardSharingLevel&quot; property, of type &quot;microsoft.graph.managedAppClipboardSharingLevel&quot;.</para>
@@ -203,7 +203,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedAppClipboardSharingLevel")]
         [Selectable]
         [Sortable]
-        public System.String allowedOutboundClipboardSharingLevel { get; set; }
+        public System.String AllowedOutboundClipboardSharingLevel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;dataBackupBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -213,7 +213,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean dataBackupBlocked { get; set; }
+        public System.Boolean DataBackupBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceComplianceRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -223,7 +223,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean deviceComplianceRequired { get; set; }
+        public System.Boolean DeviceComplianceRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedBrowserToOpenLinksRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -233,7 +233,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean managedBrowserToOpenLinksRequired { get; set; }
+        public System.Boolean ManagedBrowserToOpenLinksRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;saveAsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -243,7 +243,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean saveAsBlocked { get; set; }
+        public System.Boolean SaveAsBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;periodOfflineBeforeWipeIsEnforced&quot; property, of type &quot;Edm.Duration&quot;.</para>
@@ -253,7 +253,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Duration")]
         [Selectable]
         [Sortable]
-        public System.TimeSpan periodOfflineBeforeWipeIsEnforced { get; set; }
+        public System.TimeSpan PeriodOfflineBeforeWipeIsEnforced { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -263,7 +263,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean pinRequired { get; set; }
+        public System.Boolean PinRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;maximumPinRetries&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -273,7 +273,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 maximumPinRetries { get; set; }
+        public System.Int32 MaximumPinRetries { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;simplePinBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -283,7 +283,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean simplePinBlocked { get; set; }
+        public System.Boolean SimplePinBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumPinLength&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -293,7 +293,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 minimumPinLength { get; set; }
+        public System.Int32 MinimumPinLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinCharacterSet&quot; property, of type &quot;microsoft.graph.managedAppPinCharacterSet&quot;.</para>
@@ -303,7 +303,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedAppPinCharacterSet")]
         [Selectable]
         [Sortable]
-        public System.String pinCharacterSet { get; set; }
+        public System.String PinCharacterSet { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;periodBeforePinReset&quot; property, of type &quot;Edm.Duration&quot;.</para>
@@ -313,7 +313,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Duration")]
         [Selectable]
         [Sortable]
-        public System.TimeSpan periodBeforePinReset { get; set; }
+        public System.TimeSpan PeriodBeforePinReset { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowedDataStorageLocations&quot; property, of type &quot;microsoft.graph.managedAppDataStorageLocation&quot;.</para>
@@ -322,7 +322,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedAppDataStorageLocation")]
         [Selectable]
-        public System.String[] allowedDataStorageLocations { get; set; }
+        public System.String[] AllowedDataStorageLocations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;contactSyncBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -332,7 +332,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean contactSyncBlocked { get; set; }
+        public System.Boolean ContactSyncBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;printBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -342,7 +342,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean printBlocked { get; set; }
+        public System.Boolean PrintBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;fingerprintBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -352,7 +352,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean fingerprintBlocked { get; set; }
+        public System.Boolean FingerprintBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;disableAppPinIfDevicePinIsSet&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -362,7 +362,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean disableAppPinIfDevicePinIsSet { get; set; }
+        public System.Boolean DisableAppPinIfDevicePinIsSet { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumRequiredOsVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -372,7 +372,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String minimumRequiredOsVersion { get; set; }
+        public System.String MinimumRequiredOsVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumWarningOsVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -382,7 +382,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String minimumWarningOsVersion { get; set; }
+        public System.String MinimumWarningOsVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumRequiredAppVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -392,7 +392,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String minimumRequiredAppVersion { get; set; }
+        public System.String MinimumRequiredAppVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumWarningAppVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -402,7 +402,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String minimumWarningAppVersion { get; set; }
+        public System.String MinimumWarningAppVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -412,7 +412,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -422,7 +422,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -432,7 +432,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset createdDateTime { get; set; }
+        public System.DateTimeOffset CreatedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -442,7 +442,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -452,11 +452,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String version { get; set; }
+        public System.String Version { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.defaultManagedAppProtection&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId ?? string.Empty}";
+            return $"deviceAppManagement/defaultManagedAppProtections/{DefaultManagedAppProtectionId ?? string.Empty}";
         }
     }
 
@@ -484,7 +493,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"useDeviceSettings", @"afterDeviceRestart", @"whenDeviceLockedExceptOpenFiles", @"whenDeviceLocked")]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;appDataEncryptionType&quot; property, of type &quot;microsoft.graph.managedAppDataEncryptionType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appDataEncryptionType&quot; property, of type &quot;microsoft.graph.managedAppDataEncryptionType&quot;.")]
-        public System.String appDataEncryptionType { get; set; }
+        public System.String AppDataEncryptionType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;screenCaptureBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -495,7 +504,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;screenCaptureBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;screenCaptureBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean screenCaptureBlocked { get; set; }
+        public System.Boolean ScreenCaptureBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;encryptAppData&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -506,7 +515,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;encryptAppData&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;encryptAppData&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean encryptAppData { get; set; }
+        public System.Boolean EncryptAppData { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;disableAppEncryptionIfDeviceEncryptionIsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -517,7 +526,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;disableAppEncryptionIfDeviceEncryptionIsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;disableAppEncryptionIfDeviceEncryptionIsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean disableAppEncryptionIfDeviceEncryptionIsEnabled { get; set; }
+        public System.Boolean DisableAppEncryptionIfDeviceEncryptionIsEnabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumRequiredSdkVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -528,7 +537,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;minimumRequiredSdkVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumRequiredSdkVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String minimumRequiredSdkVersion { get; set; }
+        public System.String MinimumRequiredSdkVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;customSettings&quot; property, of type &quot;microsoft.graph.keyValuePair&quot;.</para>
@@ -540,7 +549,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;customSettings&quot; property, of type &quot;microsoft.graph.keyValuePair&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;customSettings&quot; property, of type &quot;microsoft.graph.keyValuePair&quot;.")]
-        public System.Object[] customSettings { get; set; }
+        public System.Object[] CustomSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deployedAppCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -551,7 +560,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;deployedAppCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deployedAppCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 deployedAppCount { get; set; }
+        public System.Int32 DeployedAppCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumRequiredPatchVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -562,7 +571,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;minimumRequiredPatchVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumRequiredPatchVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String minimumRequiredPatchVersion { get; set; }
+        public System.String MinimumRequiredPatchVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumWarningPatchVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -573,7 +582,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;minimumWarningPatchVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumWarningPatchVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String minimumWarningPatchVersion { get; set; }
+        public System.String MinimumWarningPatchVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;faceIdBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -584,7 +593,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;faceIdBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;faceIdBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean faceIdBlocked { get; set; }
+        public System.Boolean FaceIdBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;apps&quot; property, of type &quot;microsoft.graph.managedMobileApp&quot;.</para>
@@ -596,7 +605,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;apps&quot; property, of type &quot;microsoft.graph.managedMobileApp&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;apps&quot; property, of type &quot;microsoft.graph.managedMobileApp&quot;.")]
-        public System.Object[] apps { get; set; }
+        public System.Object[] Apps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deploymentSummary&quot; property, of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;.</para>
@@ -607,7 +616,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;deploymentSummary&quot; property, of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deploymentSummary&quot; property, of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;.")]
-        public System.Object deploymentSummary { get; set; }
+        public System.Object DeploymentSummary { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;periodOfflineBeforeAccessCheck&quot; property, of type &quot;Edm.Duration&quot;.</para>
@@ -618,7 +627,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;periodOfflineBeforeAccessCheck&quot; property, of type &quot;Edm.Duration&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;periodOfflineBeforeAccessCheck&quot; property, of type &quot;Edm.Duration&quot;.")]
-        public System.TimeSpan periodOfflineBeforeAccessCheck { get; set; }
+        public System.TimeSpan PeriodOfflineBeforeAccessCheck { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;periodOnlineBeforeAccessCheck&quot; property, of type &quot;Edm.Duration&quot;.</para>
@@ -629,7 +638,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;periodOnlineBeforeAccessCheck&quot; property, of type &quot;Edm.Duration&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;periodOnlineBeforeAccessCheck&quot; property, of type &quot;Edm.Duration&quot;.")]
-        public System.TimeSpan periodOnlineBeforeAccessCheck { get; set; }
+        public System.TimeSpan PeriodOnlineBeforeAccessCheck { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowedInboundDataTransferSources&quot; property, of type &quot;microsoft.graph.managedAppDataTransferLevel&quot;.</para>
@@ -644,7 +653,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"allApps", @"managedApps", @"none")]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;allowedInboundDataTransferSources&quot; property, of type &quot;microsoft.graph.managedAppDataTransferLevel&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;allowedInboundDataTransferSources&quot; property, of type &quot;microsoft.graph.managedAppDataTransferLevel&quot;.")]
-        public System.String allowedInboundDataTransferSources { get; set; }
+        public System.String AllowedInboundDataTransferSources { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowedOutboundDataTransferDestinations&quot; property, of type &quot;microsoft.graph.managedAppDataTransferLevel&quot;.</para>
@@ -659,7 +668,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"allApps", @"managedApps", @"none")]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;allowedOutboundDataTransferDestinations&quot; property, of type &quot;microsoft.graph.managedAppDataTransferLevel&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;allowedOutboundDataTransferDestinations&quot; property, of type &quot;microsoft.graph.managedAppDataTransferLevel&quot;.")]
-        public System.String allowedOutboundDataTransferDestinations { get; set; }
+        public System.String AllowedOutboundDataTransferDestinations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;organizationalCredentialsRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -670,7 +679,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;organizationalCredentialsRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;organizationalCredentialsRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean organizationalCredentialsRequired { get; set; }
+        public System.Boolean OrganizationalCredentialsRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowedOutboundClipboardSharingLevel&quot; property, of type &quot;microsoft.graph.managedAppClipboardSharingLevel&quot;.</para>
@@ -685,7 +694,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"allApps", @"managedAppsWithPasteIn", @"managedApps", @"blocked")]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;allowedOutboundClipboardSharingLevel&quot; property, of type &quot;microsoft.graph.managedAppClipboardSharingLevel&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;allowedOutboundClipboardSharingLevel&quot; property, of type &quot;microsoft.graph.managedAppClipboardSharingLevel&quot;.")]
-        public System.String allowedOutboundClipboardSharingLevel { get; set; }
+        public System.String AllowedOutboundClipboardSharingLevel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;dataBackupBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -696,7 +705,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;dataBackupBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;dataBackupBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean dataBackupBlocked { get; set; }
+        public System.Boolean DataBackupBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceComplianceRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -707,7 +716,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;deviceComplianceRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceComplianceRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean deviceComplianceRequired { get; set; }
+        public System.Boolean DeviceComplianceRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedBrowserToOpenLinksRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -718,7 +727,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;managedBrowserToOpenLinksRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;managedBrowserToOpenLinksRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean managedBrowserToOpenLinksRequired { get; set; }
+        public System.Boolean ManagedBrowserToOpenLinksRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;saveAsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -729,7 +738,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;saveAsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;saveAsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean saveAsBlocked { get; set; }
+        public System.Boolean SaveAsBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;periodOfflineBeforeWipeIsEnforced&quot; property, of type &quot;Edm.Duration&quot;.</para>
@@ -740,7 +749,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;periodOfflineBeforeWipeIsEnforced&quot; property, of type &quot;Edm.Duration&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;periodOfflineBeforeWipeIsEnforced&quot; property, of type &quot;Edm.Duration&quot;.")]
-        public System.TimeSpan periodOfflineBeforeWipeIsEnforced { get; set; }
+        public System.TimeSpan PeriodOfflineBeforeWipeIsEnforced { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -751,7 +760,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;pinRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean pinRequired { get; set; }
+        public System.Boolean PinRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;maximumPinRetries&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -762,7 +771,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;maximumPinRetries&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;maximumPinRetries&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 maximumPinRetries { get; set; }
+        public System.Int32 MaximumPinRetries { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;simplePinBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -773,7 +782,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;simplePinBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;simplePinBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean simplePinBlocked { get; set; }
+        public System.Boolean SimplePinBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumPinLength&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -784,7 +793,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;minimumPinLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumPinLength&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 minimumPinLength { get; set; }
+        public System.Int32 MinimumPinLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinCharacterSet&quot; property, of type &quot;microsoft.graph.managedAppPinCharacterSet&quot;.</para>
@@ -799,7 +808,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"numeric", @"alphanumericAndSymbol")]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;pinCharacterSet&quot; property, of type &quot;microsoft.graph.managedAppPinCharacterSet&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinCharacterSet&quot; property, of type &quot;microsoft.graph.managedAppPinCharacterSet&quot;.")]
-        public System.String pinCharacterSet { get; set; }
+        public System.String PinCharacterSet { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;periodBeforePinReset&quot; property, of type &quot;Edm.Duration&quot;.</para>
@@ -810,7 +819,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;periodBeforePinReset&quot; property, of type &quot;Edm.Duration&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;periodBeforePinReset&quot; property, of type &quot;Edm.Duration&quot;.")]
-        public System.TimeSpan periodBeforePinReset { get; set; }
+        public System.TimeSpan PeriodBeforePinReset { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowedDataStorageLocations&quot; property, of type &quot;microsoft.graph.managedAppDataStorageLocation&quot;.</para>
@@ -826,7 +835,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;allowedDataStorageLocations&quot; property, of type &quot;microsoft.graph.managedAppDataStorageLocation&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;allowedDataStorageLocations&quot; property, of type &quot;microsoft.graph.managedAppDataStorageLocation&quot;.")]
-        public System.String[] allowedDataStorageLocations { get; set; }
+        public System.String[] AllowedDataStorageLocations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;contactSyncBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -837,7 +846,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;contactSyncBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;contactSyncBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean contactSyncBlocked { get; set; }
+        public System.Boolean ContactSyncBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;printBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -848,7 +857,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;printBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;printBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean printBlocked { get; set; }
+        public System.Boolean PrintBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;fingerprintBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -859,7 +868,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;fingerprintBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;fingerprintBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean fingerprintBlocked { get; set; }
+        public System.Boolean FingerprintBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;disableAppPinIfDevicePinIsSet&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -870,7 +879,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;disableAppPinIfDevicePinIsSet&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;disableAppPinIfDevicePinIsSet&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean disableAppPinIfDevicePinIsSet { get; set; }
+        public System.Boolean DisableAppPinIfDevicePinIsSet { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumRequiredOsVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -881,7 +890,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;minimumRequiredOsVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumRequiredOsVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String minimumRequiredOsVersion { get; set; }
+        public System.String MinimumRequiredOsVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumWarningOsVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -892,7 +901,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;minimumWarningOsVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumWarningOsVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String minimumWarningOsVersion { get; set; }
+        public System.String MinimumWarningOsVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumRequiredAppVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -903,7 +912,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;minimumRequiredAppVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumRequiredAppVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String minimumRequiredAppVersion { get; set; }
+        public System.String MinimumRequiredAppVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumWarningAppVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -914,7 +923,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;minimumWarningAppVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumWarningAppVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String minimumWarningAppVersion { get; set; }
+        public System.String MinimumWarningAppVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -925,7 +934,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -936,7 +945,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -947,7 +956,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset createdDateTime { get; set; }
+        public System.DateTimeOffset CreatedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -958,7 +967,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -969,7 +978,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String version { get; set; }
+        public System.String Version { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -985,17 +994,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Update", "DeviceAppManagement_DefaultManagedAppProtections", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.defaultManagedAppProtection")]
     [ODataType("microsoft.graph.defaultManagedAppProtection")]
-    [ResourceIdPropertyName("defaultManagedAppProtectionId")]
+    [ResourceIdPropertyName("DefaultManagedAppProtectionId")]
     public class Update_DeviceAppManagement_DefaultManagedAppProtections : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.defaultManagedAppProtection&quot; object in the &quot;defaultManagedAppProtections&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.defaultManagedAppProtection&quot; object in the &quot;defaultManagedAppProtections&quot; collection.")]
-        public System.String defaultManagedAppProtectionId { get; set; }
+        public System.String DefaultManagedAppProtectionId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appDataEncryptionType&quot; property, of type &quot;microsoft.graph.managedAppDataEncryptionType&quot;.</para>
@@ -1010,7 +1019,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"useDeviceSettings", @"afterDeviceRestart", @"whenDeviceLockedExceptOpenFiles", @"whenDeviceLocked")]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;appDataEncryptionType&quot; property, of type &quot;microsoft.graph.managedAppDataEncryptionType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appDataEncryptionType&quot; property, of type &quot;microsoft.graph.managedAppDataEncryptionType&quot;.")]
-        public System.String appDataEncryptionType { get; set; }
+        public System.String AppDataEncryptionType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;screenCaptureBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1021,7 +1030,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;screenCaptureBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;screenCaptureBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean screenCaptureBlocked { get; set; }
+        public System.Boolean ScreenCaptureBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;encryptAppData&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1032,7 +1041,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;encryptAppData&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;encryptAppData&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean encryptAppData { get; set; }
+        public System.Boolean EncryptAppData { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;disableAppEncryptionIfDeviceEncryptionIsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1043,7 +1052,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;disableAppEncryptionIfDeviceEncryptionIsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;disableAppEncryptionIfDeviceEncryptionIsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean disableAppEncryptionIfDeviceEncryptionIsEnabled { get; set; }
+        public System.Boolean DisableAppEncryptionIfDeviceEncryptionIsEnabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumRequiredSdkVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1054,7 +1063,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;minimumRequiredSdkVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumRequiredSdkVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String minimumRequiredSdkVersion { get; set; }
+        public System.String MinimumRequiredSdkVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;customSettings&quot; property, of type &quot;microsoft.graph.keyValuePair&quot;.</para>
@@ -1066,7 +1075,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;customSettings&quot; property, of type &quot;microsoft.graph.keyValuePair&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;customSettings&quot; property, of type &quot;microsoft.graph.keyValuePair&quot;.")]
-        public System.Object[] customSettings { get; set; }
+        public System.Object[] CustomSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deployedAppCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -1077,7 +1086,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;deployedAppCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deployedAppCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 deployedAppCount { get; set; }
+        public System.Int32 DeployedAppCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumRequiredPatchVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1088,7 +1097,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;minimumRequiredPatchVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumRequiredPatchVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String minimumRequiredPatchVersion { get; set; }
+        public System.String MinimumRequiredPatchVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumWarningPatchVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1099,7 +1108,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;minimumWarningPatchVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumWarningPatchVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String minimumWarningPatchVersion { get; set; }
+        public System.String MinimumWarningPatchVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;faceIdBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1110,7 +1119,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;faceIdBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;faceIdBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean faceIdBlocked { get; set; }
+        public System.Boolean FaceIdBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;apps&quot; property, of type &quot;microsoft.graph.managedMobileApp&quot;.</para>
@@ -1122,7 +1131,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;apps&quot; property, of type &quot;microsoft.graph.managedMobileApp&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;apps&quot; property, of type &quot;microsoft.graph.managedMobileApp&quot;.")]
-        public System.Object[] apps { get; set; }
+        public System.Object[] Apps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deploymentSummary&quot; property, of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;.</para>
@@ -1133,7 +1142,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;deploymentSummary&quot; property, of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deploymentSummary&quot; property, of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;.")]
-        public System.Object deploymentSummary { get; set; }
+        public System.Object DeploymentSummary { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;periodOfflineBeforeAccessCheck&quot; property, of type &quot;Edm.Duration&quot;.</para>
@@ -1144,7 +1153,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;periodOfflineBeforeAccessCheck&quot; property, of type &quot;Edm.Duration&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;periodOfflineBeforeAccessCheck&quot; property, of type &quot;Edm.Duration&quot;.")]
-        public System.TimeSpan periodOfflineBeforeAccessCheck { get; set; }
+        public System.TimeSpan PeriodOfflineBeforeAccessCheck { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;periodOnlineBeforeAccessCheck&quot; property, of type &quot;Edm.Duration&quot;.</para>
@@ -1155,7 +1164,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;periodOnlineBeforeAccessCheck&quot; property, of type &quot;Edm.Duration&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;periodOnlineBeforeAccessCheck&quot; property, of type &quot;Edm.Duration&quot;.")]
-        public System.TimeSpan periodOnlineBeforeAccessCheck { get; set; }
+        public System.TimeSpan PeriodOnlineBeforeAccessCheck { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowedInboundDataTransferSources&quot; property, of type &quot;microsoft.graph.managedAppDataTransferLevel&quot;.</para>
@@ -1170,7 +1179,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"allApps", @"managedApps", @"none")]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;allowedInboundDataTransferSources&quot; property, of type &quot;microsoft.graph.managedAppDataTransferLevel&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;allowedInboundDataTransferSources&quot; property, of type &quot;microsoft.graph.managedAppDataTransferLevel&quot;.")]
-        public System.String allowedInboundDataTransferSources { get; set; }
+        public System.String AllowedInboundDataTransferSources { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowedOutboundDataTransferDestinations&quot; property, of type &quot;microsoft.graph.managedAppDataTransferLevel&quot;.</para>
@@ -1185,7 +1194,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"allApps", @"managedApps", @"none")]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;allowedOutboundDataTransferDestinations&quot; property, of type &quot;microsoft.graph.managedAppDataTransferLevel&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;allowedOutboundDataTransferDestinations&quot; property, of type &quot;microsoft.graph.managedAppDataTransferLevel&quot;.")]
-        public System.String allowedOutboundDataTransferDestinations { get; set; }
+        public System.String AllowedOutboundDataTransferDestinations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;organizationalCredentialsRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1196,7 +1205,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;organizationalCredentialsRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;organizationalCredentialsRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean organizationalCredentialsRequired { get; set; }
+        public System.Boolean OrganizationalCredentialsRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowedOutboundClipboardSharingLevel&quot; property, of type &quot;microsoft.graph.managedAppClipboardSharingLevel&quot;.</para>
@@ -1211,7 +1220,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"allApps", @"managedAppsWithPasteIn", @"managedApps", @"blocked")]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;allowedOutboundClipboardSharingLevel&quot; property, of type &quot;microsoft.graph.managedAppClipboardSharingLevel&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;allowedOutboundClipboardSharingLevel&quot; property, of type &quot;microsoft.graph.managedAppClipboardSharingLevel&quot;.")]
-        public System.String allowedOutboundClipboardSharingLevel { get; set; }
+        public System.String AllowedOutboundClipboardSharingLevel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;dataBackupBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1222,7 +1231,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;dataBackupBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;dataBackupBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean dataBackupBlocked { get; set; }
+        public System.Boolean DataBackupBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceComplianceRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1233,7 +1242,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;deviceComplianceRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceComplianceRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean deviceComplianceRequired { get; set; }
+        public System.Boolean DeviceComplianceRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedBrowserToOpenLinksRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1244,7 +1253,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;managedBrowserToOpenLinksRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;managedBrowserToOpenLinksRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean managedBrowserToOpenLinksRequired { get; set; }
+        public System.Boolean ManagedBrowserToOpenLinksRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;saveAsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1255,7 +1264,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;saveAsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;saveAsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean saveAsBlocked { get; set; }
+        public System.Boolean SaveAsBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;periodOfflineBeforeWipeIsEnforced&quot; property, of type &quot;Edm.Duration&quot;.</para>
@@ -1266,7 +1275,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;periodOfflineBeforeWipeIsEnforced&quot; property, of type &quot;Edm.Duration&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;periodOfflineBeforeWipeIsEnforced&quot; property, of type &quot;Edm.Duration&quot;.")]
-        public System.TimeSpan periodOfflineBeforeWipeIsEnforced { get; set; }
+        public System.TimeSpan PeriodOfflineBeforeWipeIsEnforced { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1277,7 +1286,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;pinRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean pinRequired { get; set; }
+        public System.Boolean PinRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;maximumPinRetries&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -1288,7 +1297,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;maximumPinRetries&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;maximumPinRetries&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 maximumPinRetries { get; set; }
+        public System.Int32 MaximumPinRetries { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;simplePinBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1299,7 +1308,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;simplePinBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;simplePinBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean simplePinBlocked { get; set; }
+        public System.Boolean SimplePinBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumPinLength&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -1310,7 +1319,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;minimumPinLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumPinLength&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 minimumPinLength { get; set; }
+        public System.Int32 MinimumPinLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinCharacterSet&quot; property, of type &quot;microsoft.graph.managedAppPinCharacterSet&quot;.</para>
@@ -1325,7 +1334,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"numeric", @"alphanumericAndSymbol")]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;pinCharacterSet&quot; property, of type &quot;microsoft.graph.managedAppPinCharacterSet&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinCharacterSet&quot; property, of type &quot;microsoft.graph.managedAppPinCharacterSet&quot;.")]
-        public System.String pinCharacterSet { get; set; }
+        public System.String PinCharacterSet { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;periodBeforePinReset&quot; property, of type &quot;Edm.Duration&quot;.</para>
@@ -1336,7 +1345,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;periodBeforePinReset&quot; property, of type &quot;Edm.Duration&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;periodBeforePinReset&quot; property, of type &quot;Edm.Duration&quot;.")]
-        public System.TimeSpan periodBeforePinReset { get; set; }
+        public System.TimeSpan PeriodBeforePinReset { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowedDataStorageLocations&quot; property, of type &quot;microsoft.graph.managedAppDataStorageLocation&quot;.</para>
@@ -1352,7 +1361,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;allowedDataStorageLocations&quot; property, of type &quot;microsoft.graph.managedAppDataStorageLocation&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;allowedDataStorageLocations&quot; property, of type &quot;microsoft.graph.managedAppDataStorageLocation&quot;.")]
-        public System.String[] allowedDataStorageLocations { get; set; }
+        public System.String[] AllowedDataStorageLocations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;contactSyncBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1363,7 +1372,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;contactSyncBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;contactSyncBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean contactSyncBlocked { get; set; }
+        public System.Boolean ContactSyncBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;printBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1374,7 +1383,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;printBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;printBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean printBlocked { get; set; }
+        public System.Boolean PrintBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;fingerprintBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1385,7 +1394,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;fingerprintBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;fingerprintBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean fingerprintBlocked { get; set; }
+        public System.Boolean FingerprintBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;disableAppPinIfDevicePinIsSet&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1396,7 +1405,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;disableAppPinIfDevicePinIsSet&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;disableAppPinIfDevicePinIsSet&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean disableAppPinIfDevicePinIsSet { get; set; }
+        public System.Boolean DisableAppPinIfDevicePinIsSet { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumRequiredOsVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1407,7 +1416,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;minimumRequiredOsVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumRequiredOsVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String minimumRequiredOsVersion { get; set; }
+        public System.String MinimumRequiredOsVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumWarningOsVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1418,7 +1427,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;minimumWarningOsVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumWarningOsVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String minimumWarningOsVersion { get; set; }
+        public System.String MinimumWarningOsVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumRequiredAppVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1429,7 +1438,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;minimumRequiredAppVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumRequiredAppVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String minimumRequiredAppVersion { get; set; }
+        public System.String MinimumRequiredAppVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimumWarningAppVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1440,7 +1449,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;minimumWarningAppVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumWarningAppVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String minimumWarningAppVersion { get; set; }
+        public System.String MinimumWarningAppVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1451,7 +1460,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1462,7 +1471,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -1473,7 +1482,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset createdDateTime { get; set; }
+        public System.DateTimeOffset CreatedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -1484,7 +1493,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1495,37 +1504,37 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String version { get; set; }
+        public System.String Version { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}";
+            return $"deviceAppManagement/defaultManagedAppProtections/{DefaultManagedAppProtectionId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.defaultManagedAppProtection&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/defaultManagedAppProtections/defaultManagedAppProtectionId</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/defaultManagedAppProtections/DefaultManagedAppProtectionId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.defaultManagedAppProtection&quot; object from the &quot;defaultManagedAppProtections&quot; collection.</para>
     ///     <para type="description">Default managed app policies.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_DefaultManagedAppProtections", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.defaultManagedAppProtection")]
-    [ResourceIdPropertyName("defaultManagedAppProtectionId")]
+    [ResourceIdPropertyName("DefaultManagedAppProtectionId")]
     public class Remove_DeviceAppManagement_DefaultManagedAppProtections : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.defaultManagedAppProtection&quot; object in the &quot;defaultManagedAppProtections&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.defaultManagedAppProtection&quot; object in the &quot;defaultManagedAppProtections&quot; collection.")]
-        public System.String defaultManagedAppProtectionId { get; set; }
+        public System.String DefaultManagedAppProtectionId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}";
+            return $"deviceAppManagement/defaultManagedAppProtections/{DefaultManagedAppProtectionId}";
         }
     }
 }

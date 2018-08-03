@@ -21,6 +21,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceAndAppManagementAssignmentTarget")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditionsAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
-        public System.Object target { get; set; }
+        public System.Object Target { get; set; }
     }
 }

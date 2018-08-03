@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.baseItemVersion", HelpMessage = @"The &quot;lastModifiedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.listItemVersion", HelpMessage = @"The &quot;lastModifiedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.driveItemVersion", HelpMessage = @"The &quot;lastModifiedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
-        public System.Object lastModifiedBy { get; set; }
+        public System.Object LastModifiedBy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.baseItemVersion", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.listItemVersion", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.driveItemVersion", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;publication&quot; property, of type &quot;microsoft.graph.publicationFacet&quot;.</para>
@@ -43,7 +43,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.baseItemVersion", HelpMessage = @"The &quot;publication&quot; property, of type &quot;microsoft.graph.publicationFacet&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.listItemVersion", HelpMessage = @"The &quot;publication&quot; property, of type &quot;microsoft.graph.publicationFacet&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.driveItemVersion", HelpMessage = @"The &quot;publication&quot; property, of type &quot;microsoft.graph.publicationFacet&quot;.")]
-        public System.Object publication { get; set; }
+        public System.Object Publication { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.listItemVersion&quot; type.</para>
@@ -51,7 +51,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.listItemVersion")]
         [Parameter(ParameterSetName = @"#microsoft.graph.listItemVersion", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.listItemVersion&quot; type.")]
-        public System.Management.Automation.SwitchParameter listItemVersion { get; set; }
+        public System.Management.Automation.SwitchParameter ListItemVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;fields&quot; property, of type &quot;microsoft.graph.fieldValueSet&quot;.</para>
@@ -60,7 +60,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.fieldValueSet")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.listItemVersion", HelpMessage = @"The &quot;fields&quot; property, of type &quot;microsoft.graph.fieldValueSet&quot;.")]
-        public System.Object fields { get; set; }
+        public System.Object Fields { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.driveItemVersion&quot; type.</para>
@@ -68,7 +68,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.driveItemVersion")]
         [Parameter(ParameterSetName = @"#microsoft.graph.driveItemVersion", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.driveItemVersion&quot; type.")]
-        public System.Management.Automation.SwitchParameter driveItemVersion { get; set; }
+        public System.Management.Automation.SwitchParameter DriveItemVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;content&quot; property, of type &quot;Edm.Stream&quot;.</para>
@@ -77,7 +77,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Stream")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.driveItemVersion", HelpMessage = @"The &quot;content&quot; property, of type &quot;Edm.Stream&quot;.")]
-        public System.IO.Stream content { get; set; }
+        public System.IO.Stream Content { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.</para>
@@ -86,6 +86,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int64")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.driveItemVersion", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        public System.Int64 size { get; set; }
+        public System.Int64 Size { get; set; }
     }
 }

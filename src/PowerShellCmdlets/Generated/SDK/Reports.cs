@@ -13,6 +13,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [ODataType("microsoft.graph.reportRoot")]
     public class Get_Reports : GetCmdlet
     {
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.reportRoot&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
+
         internal override System.String GetResourcePath()
         {
             return $"reports";
@@ -125,7 +134,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365ActiveUserDetail&quot; function.")]
-        public System.DateTimeOffset date { get; set; }
+        public System.DateTimeOffset Date { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365ActiveUserDetail&quot; function.</para>
@@ -134,7 +143,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365ActiveUserDetail&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -158,7 +167,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365ServicesUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -182,7 +191,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365ActiveUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -206,7 +215,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityDetail&quot; function.")]
-        public System.DateTimeOffset date { get; set; }
+        public System.DateTimeOffset Date { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityDetail&quot; function.</para>
@@ -215,7 +224,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityDetail&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -239,7 +248,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -263,7 +272,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityGroupCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -287,7 +296,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityStorage&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -311,7 +320,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityFileCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -335,7 +344,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailActivityUserDetail&quot; function.")]
-        public System.DateTimeOffset date { get; set; }
+        public System.DateTimeOffset Date { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailActivityUserDetail&quot; function.</para>
@@ -344,7 +353,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailActivityUserDetail&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -368,7 +377,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailActivityCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -392,7 +401,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailActivityUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -416,7 +425,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailAppUsageUserDetail&quot; function.")]
-        public System.DateTimeOffset date { get; set; }
+        public System.DateTimeOffset Date { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailAppUsageUserDetail&quot; function.</para>
@@ -425,7 +434,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailAppUsageUserDetail&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -449,7 +458,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailAppUsageAppsUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -473,7 +482,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailAppUsageUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -497,7 +506,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailAppUsageVersionsUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -521,7 +530,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getMailboxUsageDetail&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -545,7 +554,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getMailboxUsageMailboxCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -569,7 +578,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getMailboxUsageQuotaStatusMailboxCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -593,7 +602,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getMailboxUsageStorage&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -617,7 +626,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveActivityUserDetail&quot; function.")]
-        public System.DateTimeOffset date { get; set; }
+        public System.DateTimeOffset Date { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveActivityUserDetail&quot; function.</para>
@@ -626,7 +635,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveActivityUserDetail&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -650,7 +659,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveActivityUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -674,7 +683,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveActivityFileCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -698,7 +707,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveUsageAccountDetail&quot; function.")]
-        public System.DateTimeOffset date { get; set; }
+        public System.DateTimeOffset Date { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveUsageAccountDetail&quot; function.</para>
@@ -707,7 +716,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveUsageAccountDetail&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -731,7 +740,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveUsageAccountCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -755,7 +764,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveUsageFileCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -779,7 +788,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveUsageStorage&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -803,7 +812,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointActivityUserDetail&quot; function.")]
-        public System.DateTimeOffset date { get; set; }
+        public System.DateTimeOffset Date { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointActivityUserDetail&quot; function.</para>
@@ -812,7 +821,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointActivityUserDetail&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -836,7 +845,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointActivityFileCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -860,7 +869,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointActivityUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -884,7 +893,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointActivityPages&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -908,7 +917,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsageDetail&quot; function.")]
-        public System.DateTimeOffset date { get; set; }
+        public System.DateTimeOffset Date { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsageDetail&quot; function.</para>
@@ -917,7 +926,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsageDetail&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -941,7 +950,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsageFileCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -965,7 +974,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsageSiteCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -989,7 +998,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsageStorage&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1013,7 +1022,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsagePages&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1037,7 +1046,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessActivityUserDetail&quot; function.")]
-        public System.DateTimeOffset date { get; set; }
+        public System.DateTimeOffset Date { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessActivityUserDetail&quot; function.</para>
@@ -1046,7 +1055,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessActivityUserDetail&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1070,7 +1079,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessActivityCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1094,7 +1103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessActivityUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1118,7 +1127,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessPeerToPeerActivityCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1142,7 +1151,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessPeerToPeerActivityUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1166,7 +1175,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessPeerToPeerActivityMinuteCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1190,7 +1199,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessOrganizerActivityCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1214,7 +1223,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessOrganizerActivityUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1238,7 +1247,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessOrganizerActivityMinuteCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1262,7 +1271,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessParticipantActivityCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1286,7 +1295,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessParticipantActivityUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1310,7 +1319,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessParticipantActivityMinuteCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1334,7 +1343,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessDeviceUsageUserDetail&quot; function.")]
-        public System.DateTimeOffset date { get; set; }
+        public System.DateTimeOffset Date { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessDeviceUsageUserDetail&quot; function.</para>
@@ -1343,7 +1352,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessDeviceUsageUserDetail&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1367,7 +1376,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessDeviceUsageDistributionUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1391,7 +1400,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessDeviceUsageUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1415,7 +1424,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerActivityUserDetail&quot; function.")]
-        public System.DateTimeOffset date { get; set; }
+        public System.DateTimeOffset Date { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerActivityUserDetail&quot; function.</para>
@@ -1424,7 +1433,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerActivityUserDetail&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1448,7 +1457,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerActivityCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1472,7 +1481,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerActivityUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1496,7 +1505,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerDeviceUsageUserDetail&quot; function.")]
-        public System.DateTimeOffset date { get; set; }
+        public System.DateTimeOffset Date { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerDeviceUsageUserDetail&quot; function.</para>
@@ -1505,7 +1514,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerDeviceUsageUserDetail&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1529,7 +1538,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerDeviceUsageDistributionUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1553,7 +1562,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerDeviceUsageUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1577,7 +1586,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerGroupsActivityDetail&quot; function.")]
-        public System.DateTimeOffset date { get; set; }
+        public System.DateTimeOffset Date { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerGroupsActivityDetail&quot; function.</para>
@@ -1586,7 +1595,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerGroupsActivityDetail&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1610,7 +1619,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerGroupsActivityGroupCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1634,7 +1643,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerGroupsActivityCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1658,7 +1667,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsUserActivityUserDetail&quot; function.")]
-        public System.DateTimeOffset date { get; set; }
+        public System.DateTimeOffset Date { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsUserActivityUserDetail&quot; function.</para>
@@ -1667,7 +1676,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsUserActivityUserDetail&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1691,7 +1700,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsUserActivityCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1715,7 +1724,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsUserActivityUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1739,7 +1748,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsDeviceUsageUserDetail&quot; function.")]
-        public System.DateTimeOffset date { get; set; }
+        public System.DateTimeOffset Date { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsDeviceUsageUserDetail&quot; function.</para>
@@ -1748,7 +1757,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsDeviceUsageUserDetail&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1772,7 +1781,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsDeviceUsageUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1796,7 +1805,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsDeviceUsageDistributionUserCounts&quot; function.")]
-        public System.String period { get; set; }
+        public System.String Period { get; set; }
 
         internal override System.String GetResourcePath()
         {

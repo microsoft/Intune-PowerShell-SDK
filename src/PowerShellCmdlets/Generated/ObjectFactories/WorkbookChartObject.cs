@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChart", HelpMessage = @"The &quot;height&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double height { get; set; }
+        public System.Double Height { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;left&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChart", HelpMessage = @"The &quot;left&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double left { get; set; }
+        public System.Double Left { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;name&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChart", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String name { get; set; }
+        public System.String Name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;top&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChart", HelpMessage = @"The &quot;top&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double top { get; set; }
+        public System.Double Top { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;width&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChart", HelpMessage = @"The &quot;width&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double width { get; set; }
+        public System.Double Width { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;axes&quot; property, of type &quot;microsoft.graph.workbookChartAxes&quot;.</para>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartAxes")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChart", HelpMessage = @"The &quot;axes&quot; property, of type &quot;microsoft.graph.workbookChartAxes&quot;.")]
-        public System.Object axes { get; set; }
+        public System.Object Axes { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;dataLabels&quot; property, of type &quot;microsoft.graph.workbookChartDataLabels&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartDataLabels")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChart", HelpMessage = @"The &quot;dataLabels&quot; property, of type &quot;microsoft.graph.workbookChartDataLabels&quot;.")]
-        public System.Object dataLabels { get; set; }
+        public System.Object DataLabels { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartAreaFormat&quot;.</para>
@@ -82,7 +82,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartAreaFormat")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChart", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartAreaFormat&quot;.")]
-        public System.Object format { get; set; }
+        public System.Object Format { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;legend&quot; property, of type &quot;microsoft.graph.workbookChartLegend&quot;.</para>
@@ -91,7 +91,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartLegend")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChart", HelpMessage = @"The &quot;legend&quot; property, of type &quot;microsoft.graph.workbookChartLegend&quot;.")]
-        public System.Object legend { get; set; }
+        public System.Object Legend { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;series&quot; property, of type &quot;microsoft.graph.workbookChartSeries&quot;.</para>
@@ -101,7 +101,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChart", HelpMessage = @"The &quot;series&quot; property, of type &quot;microsoft.graph.workbookChartSeries&quot;.")]
-        public System.Object[] series { get; set; }
+        public System.Object[] Series { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;title&quot; property, of type &quot;microsoft.graph.workbookChartTitle&quot;.</para>
@@ -110,7 +110,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartTitle")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChart", HelpMessage = @"The &quot;title&quot; property, of type &quot;microsoft.graph.workbookChartTitle&quot;.")]
-        public System.Object title { get; set; }
+        public System.Object Title { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;worksheet&quot; property, of type &quot;microsoft.graph.workbookWorksheet&quot;.</para>
@@ -119,6 +119,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookWorksheet")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChart", HelpMessage = @"The &quot;worksheet&quot; property, of type &quot;microsoft.graph.workbookWorksheet&quot;.")]
-        public System.Object worksheet { get; set; }
+        public System.Object Worksheet { get; set; }
     }
 }

@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.timeSlot")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.meetingTimeSuggestion", HelpMessage = @"The &quot;meetingTimeSlot&quot; property, of type &quot;microsoft.graph.timeSlot&quot;.")]
-        public System.Object meetingTimeSlot { get; set; }
+        public System.Object MeetingTimeSlot { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;confidence&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.meetingTimeSuggestion", HelpMessage = @"The &quot;confidence&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double confidence { get; set; }
+        public System.Double Confidence { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;organizerAvailability&quot; property, of type &quot;microsoft.graph.freeBusyStatus&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"free", @"tentative", @"busy", @"oof", @"workingElsewhere", @"unknown")]
         [Parameter(ParameterSetName = @"#microsoft.graph.meetingTimeSuggestion", HelpMessage = @"The &quot;organizerAvailability&quot; property, of type &quot;microsoft.graph.freeBusyStatus&quot;.")]
-        public System.String organizerAvailability { get; set; }
+        public System.String OrganizerAvailability { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;attendeeAvailability&quot; property, of type &quot;microsoft.graph.attendeeAvailability&quot;.</para>
@@ -51,7 +51,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.meetingTimeSuggestion", HelpMessage = @"The &quot;attendeeAvailability&quot; property, of type &quot;microsoft.graph.attendeeAvailability&quot;.")]
-        public System.Object[] attendeeAvailability { get; set; }
+        public System.Object[] AttendeeAvailability { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;locations&quot; property, of type &quot;microsoft.graph.location&quot;.</para>
@@ -61,7 +61,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.meetingTimeSuggestion", HelpMessage = @"The &quot;locations&quot; property, of type &quot;microsoft.graph.location&quot;.")]
-        public System.Object[] locations { get; set; }
+        public System.Object[] Locations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;suggestionReason&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -70,6 +70,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.meetingTimeSuggestion", HelpMessage = @"The &quot;suggestionReason&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String suggestionReason { get; set; }
+        public System.String SuggestionReason { get; set; }
     }
 }

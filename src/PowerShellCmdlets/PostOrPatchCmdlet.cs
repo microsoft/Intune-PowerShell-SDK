@@ -65,10 +65,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override HttpContent WriteContent(object content)
         {
-            // This should already be a serialized JSON string (provided by the GetContent() method)
-            string stringContent = content as string;
+            HttpContent result = null;
 
-            return stringContent == null ? null : new StringContent(stringContent);
+            // This should already be a serialized JSON string (provided by the GetContent() method)
+            if (content is string stringContent)
+            {
+                result = new StringContent(stringContent);
+            }
+
+            return result;
         }
 
         #region Helper Methods

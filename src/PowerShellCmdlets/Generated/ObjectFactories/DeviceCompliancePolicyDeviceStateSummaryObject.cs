@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceCompliancePolicyDeviceStateSummary", HelpMessage = @"The &quot;inGracePeriodCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 inGracePeriodCount { get; set; }
+        public System.Int32 InGracePeriodCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;configManagerCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceCompliancePolicyDeviceStateSummary", HelpMessage = @"The &quot;configManagerCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 configManagerCount { get; set; }
+        public System.Int32 ConfigManagerCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;unknownDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceCompliancePolicyDeviceStateSummary", HelpMessage = @"The &quot;unknownDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 unknownDeviceCount { get; set; }
+        public System.Int32 UnknownDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notApplicableDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceCompliancePolicyDeviceStateSummary", HelpMessage = @"The &quot;notApplicableDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 notApplicableDeviceCount { get; set; }
+        public System.Int32 NotApplicableDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;compliantDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -60,7 +60,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceCompliancePolicyDeviceStateSummary", HelpMessage = @"The &quot;compliantDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 compliantDeviceCount { get; set; }
+        public System.Int32 CompliantDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;remediatedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -70,7 +70,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceCompliancePolicyDeviceStateSummary", HelpMessage = @"The &quot;remediatedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 remediatedDeviceCount { get; set; }
+        public System.Int32 RemediatedDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;nonCompliantDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -80,7 +80,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceCompliancePolicyDeviceStateSummary", HelpMessage = @"The &quot;nonCompliantDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 nonCompliantDeviceCount { get; set; }
+        public System.Int32 NonCompliantDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;errorDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -90,7 +90,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceCompliancePolicyDeviceStateSummary", HelpMessage = @"The &quot;errorDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 errorDeviceCount { get; set; }
+        public System.Int32 ErrorDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;conflictDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -100,6 +100,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceCompliancePolicyDeviceStateSummary", HelpMessage = @"The &quot;conflictDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 conflictDeviceCount { get; set; }
+        public System.Int32 ConflictDeviceCount { get; set; }
     }
 }

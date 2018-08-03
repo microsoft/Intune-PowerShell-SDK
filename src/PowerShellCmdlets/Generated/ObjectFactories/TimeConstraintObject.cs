@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"unknown", @"work", @"personal", @"unrestricted")]
         [Parameter(ParameterSetName = @"#microsoft.graph.timeConstraint", HelpMessage = @"The &quot;activityDomain&quot; property, of type &quot;microsoft.graph.activityDomain&quot;.")]
-        public System.String activityDomain { get; set; }
+        public System.String ActivityDomain { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;timeslots&quot; property, of type &quot;microsoft.graph.timeSlot&quot;.</para>
@@ -33,6 +33,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.timeConstraint", HelpMessage = @"The &quot;timeslots&quot; property, of type &quot;microsoft.graph.timeSlot&quot;.")]
-        public System.Object[] timeslots { get; set; }
+        public System.Object[] Timeslots { get; set; }
     }
 }

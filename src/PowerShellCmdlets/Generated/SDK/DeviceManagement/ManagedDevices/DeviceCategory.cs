@@ -6,7 +6,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;deviceCategory&quot; object.</para>
-    ///     <para type="description">GET ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCategory</para>
+    ///     <para type="description">GET ~/deviceManagement/managedDevices/{ManagedDeviceId}/deviceCategory</para>
     ///     <para type="description">Retrieves the &quot;deviceCategory&quot; object (which is of type &quot;microsoft.graph.deviceCategory&quot;).</para>
     ///     <para type="description">Device category</para>
     /// </summary>
@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.")]
-        public System.String managedDeviceId { get; set; }
+        public System.String ManagedDeviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -41,17 +41,26 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.deviceCategory&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/managedDevices/{managedDeviceId}/deviceCategory";
+            return $"deviceManagement/managedDevices/{ManagedDeviceId}/deviceCategory";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceCategory&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCategory</para>
+    ///     <para type="description">POST ~/deviceManagement/managedDevices/{ManagedDeviceId}/deviceCategory</para>
     ///     <para type="description">Creates the &quot;deviceCategory&quot; object (which is of type &quot;microsoft.graph.deviceCategory&quot;).</para>
     ///     <para type="description">Device category</para>
     /// </summary>
@@ -66,7 +75,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.")]
-        public System.String managedDeviceId { get; set; }
+        public System.String ManagedDeviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -77,7 +86,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceCategory", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -88,17 +97,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceCategory", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/managedDevices/{managedDeviceId}/deviceCategory";
+            return $"deviceManagement/managedDevices/{ManagedDeviceId}/deviceCategory";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceCategory&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCategory</para>
+    ///     <para type="description">PATCH ~/deviceManagement/managedDevices/{ManagedDeviceId}/deviceCategory</para>
     ///     <para type="description">Updates the &quot;deviceCategory&quot; object (which is of type &quot;microsoft.graph.deviceCategory&quot;).</para>
     ///     <para type="description">Device category</para>
     /// </summary>
@@ -112,7 +121,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.")]
-        public System.String managedDeviceId { get; set; }
+        public System.String ManagedDeviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -123,7 +132,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceCategory", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -134,17 +143,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceCategory", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/managedDevices/{managedDeviceId}/deviceCategory";
+            return $"deviceManagement/managedDevices/{ManagedDeviceId}/deviceCategory";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceCategory&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCategory</para>
+    ///     <para type="description">DELETE ~/deviceManagement/managedDevices/{ManagedDeviceId}/deviceCategory</para>
     ///     <para type="description">Removes the &quot;deviceCategory&quot; object (which is of type &quot;microsoft.graph.deviceCategory&quot;).</para>
     ///     <para type="description">Device category</para>
     /// </summary>
@@ -158,11 +167,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.")]
-        public System.String managedDeviceId { get; set; }
+        public System.String ManagedDeviceId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/managedDevices/{managedDeviceId}/deviceCategory";
+            return $"deviceManagement/managedDevices/{ManagedDeviceId}/deviceCategory";
         }
     }
 }

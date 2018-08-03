@@ -12,7 +12,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceAppManagement_WindowsInformationProtectionPolicies", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.windowsInformationProtectionPolicy")]
-    [ResourceIdPropertyName("windowsInformationProtectionPolicyId")]
+    [ResourceIdPropertyName("WindowsInformationProtectionPolicyId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_WindowsInformationProtectionPolicies : GetOrSearchCmdlet
     {
@@ -20,10 +20,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object in the &quot;windowsInformationProtectionPolicies&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object in the &quot;windowsInformationProtectionPolicies&quot; collection.")]
-        public System.String windowsInformationProtectionPolicyId { get; set; }
+        public System.String WindowsInformationProtectionPolicyId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;revokeOnMdmHandoffDisabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean revokeOnMdmHandoffDisabled { get; set; }
+        public System.Boolean RevokeOnMdmHandoffDisabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mdmEnrollmentUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -43,7 +43,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String mdmEnrollmentUrl { get; set; }
+        public System.String MdmEnrollmentUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsHelloForBusinessBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -53,7 +53,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean windowsHelloForBusinessBlocked { get; set; }
+        public System.Boolean WindowsHelloForBusinessBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 pinMinimumLength { get; set; }
+        public System.Int32 PinMinimumLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinUppercaseLetters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsInformationProtectionPinCharacterRequirements")]
         [Selectable]
         [Sortable]
-        public System.String pinUppercaseLetters { get; set; }
+        public System.String PinUppercaseLetters { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinLowercaseLetters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.</para>
@@ -83,7 +83,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsInformationProtectionPinCharacterRequirements")]
         [Selectable]
         [Sortable]
-        public System.String pinLowercaseLetters { get; set; }
+        public System.String PinLowercaseLetters { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinSpecialCharacters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.</para>
@@ -93,7 +93,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsInformationProtectionPinCharacterRequirements")]
         [Selectable]
         [Sortable]
-        public System.String pinSpecialCharacters { get; set; }
+        public System.String PinSpecialCharacters { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -103,7 +103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 pinExpirationDays { get; set; }
+        public System.Int32 PinExpirationDays { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;numberOfPastPinsRemembered&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -113,7 +113,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 numberOfPastPinsRemembered { get; set; }
+        public System.Int32 NumberOfPastPinsRemembered { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordMaximumAttemptCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -123,7 +123,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 passwordMaximumAttemptCount { get; set; }
+        public System.Int32 PasswordMaximumAttemptCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minutesOfInactivityBeforeDeviceLock&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -133,7 +133,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 minutesOfInactivityBeforeDeviceLock { get; set; }
+        public System.Int32 MinutesOfInactivityBeforeDeviceLock { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;daysWithoutContactBeforeUnenroll&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -143,7 +143,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 daysWithoutContactBeforeUnenroll { get; set; }
+        public System.Int32 DaysWithoutContactBeforeUnenroll { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enforcementLevel&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionEnforcementLevel&quot;.</para>
@@ -153,7 +153,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsInformationProtectionEnforcementLevel")]
         [Selectable]
         [Sortable]
-        public System.String enforcementLevel { get; set; }
+        public System.String EnforcementLevel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseDomain&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -163,7 +163,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String enterpriseDomain { get; set; }
+        public System.String EnterpriseDomain { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseProtectedDomainNames&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -172,7 +172,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.windowsInformationProtectionResourceCollection")]
         [Selectable]
-        public System.Object[] enterpriseProtectedDomainNames { get; set; }
+        public System.Object[] EnterpriseProtectedDomainNames { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;protectionUnderLockConfigRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -182,7 +182,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean protectionUnderLockConfigRequired { get; set; }
+        public System.Boolean ProtectionUnderLockConfigRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;dataRecoveryCertificate&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionDataRecoveryCertificate&quot;.</para>
@@ -192,7 +192,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsInformationProtectionDataRecoveryCertificate")]
         [Selectable]
         [Sortable]
-        public System.Object dataRecoveryCertificate { get; set; }
+        public System.Object DataRecoveryCertificate { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;revokeOnUnenrollDisabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -202,7 +202,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean revokeOnUnenrollDisabled { get; set; }
+        public System.Boolean RevokeOnUnenrollDisabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;rightsManagementServicesTemplateId&quot; property, of type &quot;Edm.Guid&quot;.</para>
@@ -212,7 +212,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Guid")]
         [Selectable]
         [Sortable]
-        public System.Guid rightsManagementServicesTemplateId { get; set; }
+        public System.Guid RightsManagementServicesTemplateId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;azureRightsManagementServicesAllowed&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -222,7 +222,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean azureRightsManagementServicesAllowed { get; set; }
+        public System.Boolean AzureRightsManagementServicesAllowed { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iconsVisible&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -232,7 +232,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean iconsVisible { get; set; }
+        public System.Boolean IconsVisible { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;protectedApps&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionApp&quot;.</para>
@@ -241,7 +241,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.windowsInformationProtectionApp")]
         [Selectable]
-        public System.Object[] protectedApps { get; set; }
+        public System.Object[] ProtectedApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exemptApps&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionApp&quot;.</para>
@@ -250,7 +250,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.windowsInformationProtectionApp")]
         [Selectable]
-        public System.Object[] exemptApps { get; set; }
+        public System.Object[] ExemptApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseNetworkDomainNames&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -259,7 +259,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.windowsInformationProtectionResourceCollection")]
         [Selectable]
-        public System.Object[] enterpriseNetworkDomainNames { get; set; }
+        public System.Object[] EnterpriseNetworkDomainNames { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseProxiedDomains&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionProxiedDomainCollection&quot;.</para>
@@ -268,7 +268,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.windowsInformationProtectionProxiedDomainCollection")]
         [Selectable]
-        public System.Object[] enterpriseProxiedDomains { get; set; }
+        public System.Object[] EnterpriseProxiedDomains { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseIPRanges&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionIPRangeCollection&quot;.</para>
@@ -277,7 +277,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.windowsInformationProtectionIPRangeCollection")]
         [Selectable]
-        public System.Object[] enterpriseIPRanges { get; set; }
+        public System.Object[] EnterpriseIPRanges { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseIPRangesAreAuthoritative&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -287,7 +287,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean enterpriseIPRangesAreAuthoritative { get; set; }
+        public System.Boolean EnterpriseIPRangesAreAuthoritative { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseProxyServers&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -296,7 +296,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.windowsInformationProtectionResourceCollection")]
         [Selectable]
-        public System.Object[] enterpriseProxyServers { get; set; }
+        public System.Object[] EnterpriseProxyServers { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseInternalProxyServers&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -305,7 +305,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.windowsInformationProtectionResourceCollection")]
         [Selectable]
-        public System.Object[] enterpriseInternalProxyServers { get; set; }
+        public System.Object[] EnterpriseInternalProxyServers { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseProxyServersAreAuthoritative&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -315,7 +315,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean enterpriseProxyServersAreAuthoritative { get; set; }
+        public System.Boolean EnterpriseProxyServersAreAuthoritative { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;neutralDomainResources&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -324,7 +324,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.windowsInformationProtectionResourceCollection")]
         [Selectable]
-        public System.Object[] neutralDomainResources { get; set; }
+        public System.Object[] NeutralDomainResources { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;indexingEncryptedStoresOrItemsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -334,7 +334,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean indexingEncryptedStoresOrItemsBlocked { get; set; }
+        public System.Boolean IndexingEncryptedStoresOrItemsBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;smbAutoEncryptedFileExtensions&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -343,7 +343,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.windowsInformationProtectionResourceCollection")]
         [Selectable]
-        public System.Object[] smbAutoEncryptedFileExtensions { get; set; }
+        public System.Object[] SmbAutoEncryptedFileExtensions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isAssigned&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -353,7 +353,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean isAssigned { get; set; }
+        public System.Boolean IsAssigned { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;protectedAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.</para>
@@ -363,7 +363,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
         [Selectable]
         [Expandable]
-        public System.Object[] protectedAppLockerFiles { get; set; }
+        public System.Object[] ProtectedAppLockerFiles { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exemptAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.</para>
@@ -373,7 +373,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
         [Selectable]
         [Expandable]
-        public System.Object[] exemptAppLockerFiles { get; set; }
+        public System.Object[] ExemptAppLockerFiles { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;assignments&quot; property, of type &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot;.</para>
@@ -383,7 +383,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.targetedManagedAppPolicyAssignment")]
         [Selectable]
         [Expandable]
-        public System.Object[] assignments { get; set; }
+        public System.Object[] Assignments { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -393,7 +393,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -403,7 +403,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -413,7 +413,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset createdDateTime { get; set; }
+        public System.DateTimeOffset CreatedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -423,7 +423,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -433,11 +433,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String version { get; set; }
+        public System.String Version { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId ?? string.Empty}";
+            return $"deviceAppManagement/windowsInformationProtectionPolicies/{WindowsInformationProtectionPolicyId ?? string.Empty}";
         }
     }
 
@@ -461,7 +470,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;revokeOnMdmHandoffDisabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;revokeOnMdmHandoffDisabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean revokeOnMdmHandoffDisabled { get; set; }
+        public System.Boolean RevokeOnMdmHandoffDisabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mdmEnrollmentUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -472,7 +481,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;mdmEnrollmentUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;mdmEnrollmentUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String mdmEnrollmentUrl { get; set; }
+        public System.String MdmEnrollmentUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsHelloForBusinessBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -483,7 +492,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;windowsHelloForBusinessBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;windowsHelloForBusinessBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean windowsHelloForBusinessBlocked { get; set; }
+        public System.Boolean WindowsHelloForBusinessBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -494,7 +503,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;pinMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 pinMinimumLength { get; set; }
+        public System.Int32 PinMinimumLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinUppercaseLetters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.</para>
@@ -509,7 +518,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"notAllow", @"requireAtLeastOne", @"allow")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;pinUppercaseLetters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinUppercaseLetters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.")]
-        public System.String pinUppercaseLetters { get; set; }
+        public System.String PinUppercaseLetters { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinLowercaseLetters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.</para>
@@ -524,7 +533,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"notAllow", @"requireAtLeastOne", @"allow")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;pinLowercaseLetters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinLowercaseLetters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.")]
-        public System.String pinLowercaseLetters { get; set; }
+        public System.String PinLowercaseLetters { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinSpecialCharacters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.</para>
@@ -539,7 +548,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"notAllow", @"requireAtLeastOne", @"allow")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;pinSpecialCharacters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinSpecialCharacters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.")]
-        public System.String pinSpecialCharacters { get; set; }
+        public System.String PinSpecialCharacters { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -550,7 +559,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;pinExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 pinExpirationDays { get; set; }
+        public System.Int32 PinExpirationDays { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;numberOfPastPinsRemembered&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -561,7 +570,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;numberOfPastPinsRemembered&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;numberOfPastPinsRemembered&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 numberOfPastPinsRemembered { get; set; }
+        public System.Int32 NumberOfPastPinsRemembered { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordMaximumAttemptCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -572,7 +581,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;passwordMaximumAttemptCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;passwordMaximumAttemptCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 passwordMaximumAttemptCount { get; set; }
+        public System.Int32 PasswordMaximumAttemptCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minutesOfInactivityBeforeDeviceLock&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -583,7 +592,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;minutesOfInactivityBeforeDeviceLock&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minutesOfInactivityBeforeDeviceLock&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 minutesOfInactivityBeforeDeviceLock { get; set; }
+        public System.Int32 MinutesOfInactivityBeforeDeviceLock { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;daysWithoutContactBeforeUnenroll&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -594,7 +603,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;daysWithoutContactBeforeUnenroll&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;daysWithoutContactBeforeUnenroll&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 daysWithoutContactBeforeUnenroll { get; set; }
+        public System.Int32 DaysWithoutContactBeforeUnenroll { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enforcementLevel&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionEnforcementLevel&quot;.</para>
@@ -609,7 +618,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"noProtection", @"encryptAndAuditOnly", @"encryptAuditAndPrompt", @"encryptAuditAndBlock")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enforcementLevel&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionEnforcementLevel&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enforcementLevel&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionEnforcementLevel&quot;.")]
-        public System.String enforcementLevel { get; set; }
+        public System.String EnforcementLevel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseDomain&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -620,7 +629,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseDomain&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseDomain&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String enterpriseDomain { get; set; }
+        public System.String EnterpriseDomain { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseProtectedDomainNames&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -632,7 +641,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseProtectedDomainNames&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseProtectedDomainNames&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
-        public System.Object[] enterpriseProtectedDomainNames { get; set; }
+        public System.Object[] EnterpriseProtectedDomainNames { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;protectionUnderLockConfigRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -643,7 +652,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;protectionUnderLockConfigRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;protectionUnderLockConfigRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean protectionUnderLockConfigRequired { get; set; }
+        public System.Boolean ProtectionUnderLockConfigRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;dataRecoveryCertificate&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionDataRecoveryCertificate&quot;.</para>
@@ -654,7 +663,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;dataRecoveryCertificate&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionDataRecoveryCertificate&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;dataRecoveryCertificate&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionDataRecoveryCertificate&quot;.")]
-        public System.Object dataRecoveryCertificate { get; set; }
+        public System.Object DataRecoveryCertificate { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;revokeOnUnenrollDisabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -665,7 +674,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;revokeOnUnenrollDisabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;revokeOnUnenrollDisabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean revokeOnUnenrollDisabled { get; set; }
+        public System.Boolean RevokeOnUnenrollDisabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;rightsManagementServicesTemplateId&quot; property, of type &quot;Edm.Guid&quot;.</para>
@@ -676,7 +685,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;rightsManagementServicesTemplateId&quot; property, of type &quot;Edm.Guid&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;rightsManagementServicesTemplateId&quot; property, of type &quot;Edm.Guid&quot;.")]
-        public System.Guid rightsManagementServicesTemplateId { get; set; }
+        public System.Guid RightsManagementServicesTemplateId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;azureRightsManagementServicesAllowed&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -687,7 +696,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;azureRightsManagementServicesAllowed&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;azureRightsManagementServicesAllowed&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean azureRightsManagementServicesAllowed { get; set; }
+        public System.Boolean AzureRightsManagementServicesAllowed { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iconsVisible&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -698,7 +707,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;iconsVisible&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;iconsVisible&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean iconsVisible { get; set; }
+        public System.Boolean IconsVisible { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;protectedApps&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionApp&quot;.</para>
@@ -710,7 +719,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;protectedApps&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionApp&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;protectedApps&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionApp&quot;.")]
-        public System.Object[] protectedApps { get; set; }
+        public System.Object[] ProtectedApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exemptApps&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionApp&quot;.</para>
@@ -722,7 +731,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;exemptApps&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionApp&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;exemptApps&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionApp&quot;.")]
-        public System.Object[] exemptApps { get; set; }
+        public System.Object[] ExemptApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseNetworkDomainNames&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -734,7 +743,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseNetworkDomainNames&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseNetworkDomainNames&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
-        public System.Object[] enterpriseNetworkDomainNames { get; set; }
+        public System.Object[] EnterpriseNetworkDomainNames { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseProxiedDomains&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionProxiedDomainCollection&quot;.</para>
@@ -746,7 +755,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseProxiedDomains&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionProxiedDomainCollection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseProxiedDomains&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionProxiedDomainCollection&quot;.")]
-        public System.Object[] enterpriseProxiedDomains { get; set; }
+        public System.Object[] EnterpriseProxiedDomains { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseIPRanges&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionIPRangeCollection&quot;.</para>
@@ -758,7 +767,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseIPRanges&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionIPRangeCollection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseIPRanges&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionIPRangeCollection&quot;.")]
-        public System.Object[] enterpriseIPRanges { get; set; }
+        public System.Object[] EnterpriseIPRanges { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseIPRangesAreAuthoritative&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -769,7 +778,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseIPRangesAreAuthoritative&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseIPRangesAreAuthoritative&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean enterpriseIPRangesAreAuthoritative { get; set; }
+        public System.Boolean EnterpriseIPRangesAreAuthoritative { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseProxyServers&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -781,7 +790,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseProxyServers&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseProxyServers&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
-        public System.Object[] enterpriseProxyServers { get; set; }
+        public System.Object[] EnterpriseProxyServers { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseInternalProxyServers&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -793,7 +802,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseInternalProxyServers&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseInternalProxyServers&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
-        public System.Object[] enterpriseInternalProxyServers { get; set; }
+        public System.Object[] EnterpriseInternalProxyServers { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseProxyServersAreAuthoritative&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -804,7 +813,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseProxyServersAreAuthoritative&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseProxyServersAreAuthoritative&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean enterpriseProxyServersAreAuthoritative { get; set; }
+        public System.Boolean EnterpriseProxyServersAreAuthoritative { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;neutralDomainResources&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -816,7 +825,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;neutralDomainResources&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;neutralDomainResources&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
-        public System.Object[] neutralDomainResources { get; set; }
+        public System.Object[] NeutralDomainResources { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;indexingEncryptedStoresOrItemsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -827,7 +836,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;indexingEncryptedStoresOrItemsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;indexingEncryptedStoresOrItemsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean indexingEncryptedStoresOrItemsBlocked { get; set; }
+        public System.Boolean IndexingEncryptedStoresOrItemsBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;smbAutoEncryptedFileExtensions&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -839,7 +848,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;smbAutoEncryptedFileExtensions&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;smbAutoEncryptedFileExtensions&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
-        public System.Object[] smbAutoEncryptedFileExtensions { get; set; }
+        public System.Object[] SmbAutoEncryptedFileExtensions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isAssigned&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -850,7 +859,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;isAssigned&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;isAssigned&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isAssigned { get; set; }
+        public System.Boolean IsAssigned { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;protectedAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.</para>
@@ -862,7 +871,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;protectedAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;protectedAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.")]
-        public System.Object[] protectedAppLockerFiles { get; set; }
+        public System.Object[] ProtectedAppLockerFiles { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exemptAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.</para>
@@ -874,7 +883,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;exemptAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;exemptAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.")]
-        public System.Object[] exemptAppLockerFiles { get; set; }
+        public System.Object[] ExemptAppLockerFiles { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;assignments&quot; property, of type &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot;.</para>
@@ -886,7 +895,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot;.")]
-        public System.Object[] assignments { get; set; }
+        public System.Object[] Assignments { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -897,7 +906,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -908,7 +917,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -919,7 +928,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset createdDateTime { get; set; }
+        public System.DateTimeOffset CreatedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -930,7 +939,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -941,7 +950,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String version { get; set; }
+        public System.String Version { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -957,17 +966,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Update", "DeviceAppManagement_WindowsInformationProtectionPolicies", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy")]
     [ODataType("microsoft.graph.windowsInformationProtectionPolicy")]
-    [ResourceIdPropertyName("windowsInformationProtectionPolicyId")]
+    [ResourceIdPropertyName("WindowsInformationProtectionPolicyId")]
     public class Update_DeviceAppManagement_WindowsInformationProtectionPolicies : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object in the &quot;windowsInformationProtectionPolicies&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object in the &quot;windowsInformationProtectionPolicies&quot; collection.")]
-        public System.String windowsInformationProtectionPolicyId { get; set; }
+        public System.String WindowsInformationProtectionPolicyId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;revokeOnMdmHandoffDisabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -978,7 +987,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;revokeOnMdmHandoffDisabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;revokeOnMdmHandoffDisabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean revokeOnMdmHandoffDisabled { get; set; }
+        public System.Boolean RevokeOnMdmHandoffDisabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mdmEnrollmentUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -989,7 +998,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;mdmEnrollmentUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;mdmEnrollmentUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String mdmEnrollmentUrl { get; set; }
+        public System.String MdmEnrollmentUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsHelloForBusinessBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1000,7 +1009,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;windowsHelloForBusinessBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;windowsHelloForBusinessBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean windowsHelloForBusinessBlocked { get; set; }
+        public System.Boolean WindowsHelloForBusinessBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -1011,7 +1020,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;pinMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 pinMinimumLength { get; set; }
+        public System.Int32 PinMinimumLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinUppercaseLetters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.</para>
@@ -1026,7 +1035,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"notAllow", @"requireAtLeastOne", @"allow")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;pinUppercaseLetters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinUppercaseLetters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.")]
-        public System.String pinUppercaseLetters { get; set; }
+        public System.String PinUppercaseLetters { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinLowercaseLetters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.</para>
@@ -1041,7 +1050,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"notAllow", @"requireAtLeastOne", @"allow")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;pinLowercaseLetters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinLowercaseLetters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.")]
-        public System.String pinLowercaseLetters { get; set; }
+        public System.String PinLowercaseLetters { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinSpecialCharacters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.</para>
@@ -1056,7 +1065,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"notAllow", @"requireAtLeastOne", @"allow")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;pinSpecialCharacters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinSpecialCharacters&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPinCharacterRequirements&quot;.")]
-        public System.String pinSpecialCharacters { get; set; }
+        public System.String PinSpecialCharacters { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pinExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -1067,7 +1076,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;pinExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;pinExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 pinExpirationDays { get; set; }
+        public System.Int32 PinExpirationDays { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;numberOfPastPinsRemembered&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -1078,7 +1087,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;numberOfPastPinsRemembered&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;numberOfPastPinsRemembered&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 numberOfPastPinsRemembered { get; set; }
+        public System.Int32 NumberOfPastPinsRemembered { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordMaximumAttemptCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -1089,7 +1098,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;passwordMaximumAttemptCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;passwordMaximumAttemptCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 passwordMaximumAttemptCount { get; set; }
+        public System.Int32 PasswordMaximumAttemptCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minutesOfInactivityBeforeDeviceLock&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -1100,7 +1109,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;minutesOfInactivityBeforeDeviceLock&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minutesOfInactivityBeforeDeviceLock&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 minutesOfInactivityBeforeDeviceLock { get; set; }
+        public System.Int32 MinutesOfInactivityBeforeDeviceLock { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;daysWithoutContactBeforeUnenroll&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -1111,7 +1120,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;daysWithoutContactBeforeUnenroll&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;daysWithoutContactBeforeUnenroll&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 daysWithoutContactBeforeUnenroll { get; set; }
+        public System.Int32 DaysWithoutContactBeforeUnenroll { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enforcementLevel&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionEnforcementLevel&quot;.</para>
@@ -1126,7 +1135,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"noProtection", @"encryptAndAuditOnly", @"encryptAuditAndPrompt", @"encryptAuditAndBlock")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enforcementLevel&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionEnforcementLevel&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enforcementLevel&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionEnforcementLevel&quot;.")]
-        public System.String enforcementLevel { get; set; }
+        public System.String EnforcementLevel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseDomain&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1137,7 +1146,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseDomain&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseDomain&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String enterpriseDomain { get; set; }
+        public System.String EnterpriseDomain { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseProtectedDomainNames&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -1149,7 +1158,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseProtectedDomainNames&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseProtectedDomainNames&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
-        public System.Object[] enterpriseProtectedDomainNames { get; set; }
+        public System.Object[] EnterpriseProtectedDomainNames { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;protectionUnderLockConfigRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1160,7 +1169,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;protectionUnderLockConfigRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;protectionUnderLockConfigRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean protectionUnderLockConfigRequired { get; set; }
+        public System.Boolean ProtectionUnderLockConfigRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;dataRecoveryCertificate&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionDataRecoveryCertificate&quot;.</para>
@@ -1171,7 +1180,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;dataRecoveryCertificate&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionDataRecoveryCertificate&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;dataRecoveryCertificate&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionDataRecoveryCertificate&quot;.")]
-        public System.Object dataRecoveryCertificate { get; set; }
+        public System.Object DataRecoveryCertificate { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;revokeOnUnenrollDisabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1182,7 +1191,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;revokeOnUnenrollDisabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;revokeOnUnenrollDisabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean revokeOnUnenrollDisabled { get; set; }
+        public System.Boolean RevokeOnUnenrollDisabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;rightsManagementServicesTemplateId&quot; property, of type &quot;Edm.Guid&quot;.</para>
@@ -1193,7 +1202,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;rightsManagementServicesTemplateId&quot; property, of type &quot;Edm.Guid&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;rightsManagementServicesTemplateId&quot; property, of type &quot;Edm.Guid&quot;.")]
-        public System.Guid rightsManagementServicesTemplateId { get; set; }
+        public System.Guid RightsManagementServicesTemplateId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;azureRightsManagementServicesAllowed&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1204,7 +1213,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;azureRightsManagementServicesAllowed&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;azureRightsManagementServicesAllowed&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean azureRightsManagementServicesAllowed { get; set; }
+        public System.Boolean AzureRightsManagementServicesAllowed { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iconsVisible&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1215,7 +1224,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;iconsVisible&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;iconsVisible&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean iconsVisible { get; set; }
+        public System.Boolean IconsVisible { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;protectedApps&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionApp&quot;.</para>
@@ -1227,7 +1236,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;protectedApps&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionApp&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;protectedApps&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionApp&quot;.")]
-        public System.Object[] protectedApps { get; set; }
+        public System.Object[] ProtectedApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exemptApps&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionApp&quot;.</para>
@@ -1239,7 +1248,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;exemptApps&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionApp&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;exemptApps&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionApp&quot;.")]
-        public System.Object[] exemptApps { get; set; }
+        public System.Object[] ExemptApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseNetworkDomainNames&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -1251,7 +1260,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseNetworkDomainNames&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseNetworkDomainNames&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
-        public System.Object[] enterpriseNetworkDomainNames { get; set; }
+        public System.Object[] EnterpriseNetworkDomainNames { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseProxiedDomains&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionProxiedDomainCollection&quot;.</para>
@@ -1263,7 +1272,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseProxiedDomains&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionProxiedDomainCollection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseProxiedDomains&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionProxiedDomainCollection&quot;.")]
-        public System.Object[] enterpriseProxiedDomains { get; set; }
+        public System.Object[] EnterpriseProxiedDomains { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseIPRanges&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionIPRangeCollection&quot;.</para>
@@ -1275,7 +1284,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseIPRanges&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionIPRangeCollection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseIPRanges&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionIPRangeCollection&quot;.")]
-        public System.Object[] enterpriseIPRanges { get; set; }
+        public System.Object[] EnterpriseIPRanges { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseIPRangesAreAuthoritative&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1286,7 +1295,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseIPRangesAreAuthoritative&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseIPRangesAreAuthoritative&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean enterpriseIPRangesAreAuthoritative { get; set; }
+        public System.Boolean EnterpriseIPRangesAreAuthoritative { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseProxyServers&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -1298,7 +1307,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseProxyServers&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseProxyServers&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
-        public System.Object[] enterpriseProxyServers { get; set; }
+        public System.Object[] EnterpriseProxyServers { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseInternalProxyServers&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -1310,7 +1319,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseInternalProxyServers&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseInternalProxyServers&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
-        public System.Object[] enterpriseInternalProxyServers { get; set; }
+        public System.Object[] EnterpriseInternalProxyServers { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enterpriseProxyServersAreAuthoritative&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1321,7 +1330,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;enterpriseProxyServersAreAuthoritative&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enterpriseProxyServersAreAuthoritative&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean enterpriseProxyServersAreAuthoritative { get; set; }
+        public System.Boolean EnterpriseProxyServersAreAuthoritative { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;neutralDomainResources&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -1333,7 +1342,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;neutralDomainResources&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;neutralDomainResources&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
-        public System.Object[] neutralDomainResources { get; set; }
+        public System.Object[] NeutralDomainResources { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;indexingEncryptedStoresOrItemsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1344,7 +1353,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;indexingEncryptedStoresOrItemsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;indexingEncryptedStoresOrItemsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean indexingEncryptedStoresOrItemsBlocked { get; set; }
+        public System.Boolean IndexingEncryptedStoresOrItemsBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;smbAutoEncryptedFileExtensions&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.</para>
@@ -1356,7 +1365,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;smbAutoEncryptedFileExtensions&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;smbAutoEncryptedFileExtensions&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot;.")]
-        public System.Object[] smbAutoEncryptedFileExtensions { get; set; }
+        public System.Object[] SmbAutoEncryptedFileExtensions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isAssigned&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -1367,7 +1376,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;isAssigned&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;isAssigned&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isAssigned { get; set; }
+        public System.Boolean IsAssigned { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;protectedAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.</para>
@@ -1379,7 +1388,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;protectedAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;protectedAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.")]
-        public System.Object[] protectedAppLockerFiles { get; set; }
+        public System.Object[] ProtectedAppLockerFiles { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exemptAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.</para>
@@ -1391,7 +1400,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;exemptAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;exemptAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.")]
-        public System.Object[] exemptAppLockerFiles { get; set; }
+        public System.Object[] ExemptAppLockerFiles { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;assignments&quot; property, of type &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot;.</para>
@@ -1403,7 +1412,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot;.")]
-        public System.Object[] assignments { get; set; }
+        public System.Object[] Assignments { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1414,7 +1423,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1425,7 +1434,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -1436,7 +1445,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset createdDateTime { get; set; }
+        public System.DateTimeOffset CreatedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -1447,7 +1456,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1458,37 +1467,37 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String version { get; set; }
+        public System.String Version { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}";
+            return $"deviceAppManagement/windowsInformationProtectionPolicies/{WindowsInformationProtectionPolicyId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/windowsInformationProtectionPolicies/windowsInformationProtectionPolicyId</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/windowsInformationProtectionPolicies/WindowsInformationProtectionPolicyId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object from the &quot;windowsInformationProtectionPolicies&quot; collection.</para>
     ///     <para type="description">Windows information protection for apps running on devices which are not MDM enrolled.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_WindowsInformationProtectionPolicies", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.windowsInformationProtectionPolicy")]
-    [ResourceIdPropertyName("windowsInformationProtectionPolicyId")]
+    [ResourceIdPropertyName("WindowsInformationProtectionPolicyId")]
     public class Remove_DeviceAppManagement_WindowsInformationProtectionPolicies : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object in the &quot;windowsInformationProtectionPolicies&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object in the &quot;windowsInformationProtectionPolicies&quot; collection.")]
-        public System.String windowsInformationProtectionPolicyId { get; set; }
+        public System.String WindowsInformationProtectionPolicyId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}";
+            return $"deviceAppManagement/windowsInformationProtectionPolicies/{WindowsInformationProtectionPolicyId}";
         }
     }
 }

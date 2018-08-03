@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.identitySet")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerAssignment", HelpMessage = @"The &quot;assignedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
-        public System.Object assignedBy { get; set; }
+        public System.Object AssignedBy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;assignedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerAssignment", HelpMessage = @"The &quot;assignedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset assignedDateTime { get; set; }
+        public System.DateTimeOffset AssignedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;orderHint&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,6 +37,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerAssignment", HelpMessage = @"The &quot;orderHint&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String orderHint { get; set; }
+        public System.String OrderHint { get; set; }
     }
 }

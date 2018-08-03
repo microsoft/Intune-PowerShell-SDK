@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.booleanColumn")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;boolean&quot; property, of type &quot;microsoft.graph.booleanColumn&quot;.")]
-        public System.Object boolean { get; set; }
+        public System.Object Boolean { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;calculated&quot; property, of type &quot;microsoft.graph.calculatedColumn&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.calculatedColumn")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;calculated&quot; property, of type &quot;microsoft.graph.calculatedColumn&quot;.")]
-        public System.Object calculated { get; set; }
+        public System.Object Calculated { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;choice&quot; property, of type &quot;microsoft.graph.choiceColumn&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.choiceColumn")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;choice&quot; property, of type &quot;microsoft.graph.choiceColumn&quot;.")]
-        public System.Object choice { get; set; }
+        public System.Object Choice { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;columnGroup&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;columnGroup&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String columnGroup { get; set; }
+        public System.String ColumnGroup { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;currency&quot; property, of type &quot;microsoft.graph.currencyColumn&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.currencyColumn")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;currency&quot; property, of type &quot;microsoft.graph.currencyColumn&quot;.")]
-        public System.Object currency { get; set; }
+        public System.Object Currency { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;dateTime&quot; property, of type &quot;microsoft.graph.dateTimeColumn&quot;.</para>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.dateTimeColumn")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;dateTime&quot; property, of type &quot;microsoft.graph.dateTimeColumn&quot;.")]
-        public System.Object dateTime { get; set; }
+        public System.Object DateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;defaultValue&quot; property, of type &quot;microsoft.graph.defaultColumnValue&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.defaultColumnValue")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;defaultValue&quot; property, of type &quot;microsoft.graph.defaultColumnValue&quot;.")]
-        public System.Object defaultValue { get; set; }
+        public System.Object DefaultValue { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -82,7 +82,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -91,7 +91,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enforceUniqueValues&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -100,7 +100,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;enforceUniqueValues&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean enforceUniqueValues { get; set; }
+        public System.Boolean EnforceUniqueValues { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;hidden&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -109,7 +109,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;hidden&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean hidden { get; set; }
+        public System.Boolean Hidden { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;indexed&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -118,7 +118,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;indexed&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean indexed { get; set; }
+        public System.Boolean Indexed { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lookup&quot; property, of type &quot;microsoft.graph.lookupColumn&quot;.</para>
@@ -127,7 +127,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.lookupColumn")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;lookup&quot; property, of type &quot;microsoft.graph.lookupColumn&quot;.")]
-        public System.Object lookup { get; set; }
+        public System.Object Lookup { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;name&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -136,7 +136,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String name { get; set; }
+        public System.String Name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;number&quot; property, of type &quot;microsoft.graph.numberColumn&quot;.</para>
@@ -145,7 +145,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.numberColumn")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;number&quot; property, of type &quot;microsoft.graph.numberColumn&quot;.")]
-        public System.Object number { get; set; }
+        public System.Object Number { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;personOrGroup&quot; property, of type &quot;microsoft.graph.personOrGroupColumn&quot;.</para>
@@ -154,7 +154,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.personOrGroupColumn")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;personOrGroup&quot; property, of type &quot;microsoft.graph.personOrGroupColumn&quot;.")]
-        public System.Object personOrGroup { get; set; }
+        public System.Object PersonOrGroup { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;readOnly&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -163,7 +163,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;readOnly&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean readOnly { get; set; }
+        public System.Boolean ReadOnly { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;required&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -172,7 +172,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;required&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean required { get; set; }
+        public System.Boolean Required { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;text&quot; property, of type &quot;microsoft.graph.textColumn&quot;.</para>
@@ -181,6 +181,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.textColumn")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.columnDefinition", HelpMessage = @"The &quot;text&quot; property, of type &quot;microsoft.graph.textColumn&quot;.")]
-        public System.Object text { get; set; }
+        public System.Object Text { get; set; }
     }
 }

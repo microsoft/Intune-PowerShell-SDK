@@ -24,7 +24,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"immediate", @"diskSpaceThreshold", @"diskSpaceThresholdOrInactiveThreshold")]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCAccountManagerPolicy", HelpMessage = @"The &quot;accountDeletionPolicy&quot; property, of type &quot;microsoft.graph.sharedPCAccountDeletionPolicyType&quot;.")]
-        public System.String accountDeletionPolicy { get; set; }
+        public System.String AccountDeletionPolicy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cacheAccountsAboveDiskFreePercentage&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -34,7 +34,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCAccountManagerPolicy", HelpMessage = @"The &quot;cacheAccountsAboveDiskFreePercentage&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 cacheAccountsAboveDiskFreePercentage { get; set; }
+        public System.Int32 CacheAccountsAboveDiskFreePercentage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;inactiveThresholdDays&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -44,7 +44,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCAccountManagerPolicy", HelpMessage = @"The &quot;inactiveThresholdDays&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 inactiveThresholdDays { get; set; }
+        public System.Int32 InactiveThresholdDays { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;removeAccountsBelowDiskFreePercentage&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -54,6 +54,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharedPCAccountManagerPolicy", HelpMessage = @"The &quot;removeAccountsBelowDiskFreePercentage&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 removeAccountsBelowDiskFreePercentage { get; set; }
+        public System.Int32 RemoveAccountsBelowDiskFreePercentage { get; set; }
     }
 }

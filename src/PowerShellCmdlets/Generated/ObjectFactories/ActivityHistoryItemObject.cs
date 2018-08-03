@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"active", @"updated", @"deleted", @"ignored", @"unknownFutureValue")]
         [Parameter(ParameterSetName = @"#microsoft.graph.activityHistoryItem", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.status&quot;.")]
-        public System.String status { get; set; }
+        public System.String Status { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;activeDurationSeconds&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.activityHistoryItem", HelpMessage = @"The &quot;activeDurationSeconds&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 activeDurationSeconds { get; set; }
+        public System.Int32 ActiveDurationSeconds { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.activityHistoryItem", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset createdDateTime { get; set; }
+        public System.DateTimeOffset CreatedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastActiveDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.activityHistoryItem", HelpMessage = @"The &quot;lastActiveDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastActiveDateTime { get; set; }
+        public System.DateTimeOffset LastActiveDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -59,7 +59,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.activityHistoryItem", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -68,7 +68,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.activityHistoryItem", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset expirationDateTime { get; set; }
+        public System.DateTimeOffset ExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -77,7 +77,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.activityHistoryItem", HelpMessage = @"The &quot;startedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset startedDateTime { get; set; }
+        public System.DateTimeOffset StartedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userTimezone&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -86,7 +86,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.activityHistoryItem", HelpMessage = @"The &quot;userTimezone&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String userTimezone { get; set; }
+        public System.String UserTimezone { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;activity&quot; property, of type &quot;microsoft.graph.userActivity&quot;.</para>
@@ -95,6 +95,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.userActivity")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.activityHistoryItem", HelpMessage = @"The &quot;activity&quot; property, of type &quot;microsoft.graph.userActivity&quot;.")]
-        public System.Object activity { get; set; }
+        public System.Object Activity { get; set; }
     }
 }

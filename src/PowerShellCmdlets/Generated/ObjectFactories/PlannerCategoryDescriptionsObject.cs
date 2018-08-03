@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerCategoryDescriptions", HelpMessage = @"The &quot;category1&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String category1 { get; set; }
+        public System.String Category1 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;category2&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerCategoryDescriptions", HelpMessage = @"The &quot;category2&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String category2 { get; set; }
+        public System.String Category2 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;category3&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerCategoryDescriptions", HelpMessage = @"The &quot;category3&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String category3 { get; set; }
+        public System.String Category3 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;category4&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerCategoryDescriptions", HelpMessage = @"The &quot;category4&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String category4 { get; set; }
+        public System.String Category4 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;category5&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerCategoryDescriptions", HelpMessage = @"The &quot;category5&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String category5 { get; set; }
+        public System.String Category5 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;category6&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -64,6 +64,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerCategoryDescriptions", HelpMessage = @"The &quot;category6&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String category6 { get; set; }
+        public System.String Category6 { get; set; }
     }
 }

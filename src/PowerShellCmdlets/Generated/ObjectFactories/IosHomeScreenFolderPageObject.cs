@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosHomeScreenFolderPage", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;apps&quot; property, of type &quot;microsoft.graph.iosHomeScreenApp&quot;.</para>
@@ -31,6 +31,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosHomeScreenFolderPage", HelpMessage = @"The &quot;apps&quot; property, of type &quot;microsoft.graph.iosHomeScreenApp&quot;.")]
-        public System.Object[] apps { get; set; }
+        public System.Object[] Apps { get; set; }
     }
 }

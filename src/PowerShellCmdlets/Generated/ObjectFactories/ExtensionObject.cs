@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.openTypeExtension")]
         [Parameter(ParameterSetName = @"#microsoft.graph.openTypeExtension", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.openTypeExtension&quot; type.")]
-        public System.Management.Automation.SwitchParameter openTypeExtension { get; set; }
+        public System.Management.Automation.SwitchParameter OpenTypeExtension { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;extensionName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -27,6 +27,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.openTypeExtension", HelpMessage = @"The &quot;extensionName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String extensionName { get; set; }
+        public System.String ExtensionName { get; set; }
     }
 }

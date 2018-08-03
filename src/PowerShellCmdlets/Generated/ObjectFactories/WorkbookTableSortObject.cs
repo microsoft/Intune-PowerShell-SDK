@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTableSort", HelpMessage = @"The &quot;fields&quot; property, of type &quot;microsoft.graph.workbookSortField&quot;.")]
-        public System.Object[] fields { get; set; }
+        public System.Object[] Fields { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;matchCase&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTableSort", HelpMessage = @"The &quot;matchCase&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean matchCase { get; set; }
+        public System.Boolean MatchCase { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;method&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -38,6 +38,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookTableSort", HelpMessage = @"The &quot;method&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String method { get; set; }
+        public System.String Method { get; set; }
     }
 }

@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.assignedPlan", HelpMessage = @"The &quot;assignedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset assignedDateTime { get; set; }
+        public System.DateTimeOffset AssignedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;capabilityStatus&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.assignedPlan", HelpMessage = @"The &quot;capabilityStatus&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String capabilityStatus { get; set; }
+        public System.String CapabilityStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;service&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.assignedPlan", HelpMessage = @"The &quot;service&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String service { get; set; }
+        public System.String Service { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;servicePlanId&quot; property, of type &quot;Edm.Guid&quot;.</para>
@@ -46,6 +46,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Guid")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.assignedPlan", HelpMessage = @"The &quot;servicePlanId&quot; property, of type &quot;Edm.Guid&quot;.")]
-        public System.Guid servicePlanId { get; set; }
+        public System.Guid ServicePlanId { get; set; }
     }
 }

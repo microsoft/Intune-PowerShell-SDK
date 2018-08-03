@@ -6,7 +6,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;roleDefinition&quot; object.</para>
-    ///     <para type="description">GET ~/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition</para>
+    ///     <para type="description">GET ~/deviceManagement/roleDefinitions/{RoleDefinitionId}/roleAssignments/{RoleAssignmentId}/roleDefinition</para>
     ///     <para type="description">Retrieves the &quot;roleDefinition&quot; object (which is of type &quot;microsoft.graph.roleDefinition&quot;).</para>
     ///     <para type="description">Role definition this assignment is part of.</para>
     /// </summary>
@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.roleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
-        public System.String roleAssignmentId { get; set; }
+        public System.String RoleAssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.")]
-        public System.String roleDefinitionId { get; set; }
+        public System.String RoleDefinitionId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -38,7 +38,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -48,7 +48,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;rolePermissions&quot; property, of type &quot;microsoft.graph.rolePermission&quot;.</para>
@@ -57,7 +57,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.rolePermission")]
         [Selectable]
-        public System.Object[] rolePermissions { get; set; }
+        public System.Object[] RolePermissions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isBuiltIn&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -67,7 +67,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean isBuiltIn { get; set; }
+        public System.Boolean IsBuiltIn { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.</para>
@@ -77,17 +77,26 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.roleAssignment")]
         [Selectable]
         [Expandable]
-        public System.Object[] roleAssignments { get; set; }
+        public System.Object[] RoleAssignments { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.roleDefinition&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition";
+            return $"deviceManagement/roleDefinitions/{RoleDefinitionId}/roleAssignments/{RoleAssignmentId}/roleDefinition";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;roleDefinition&quot; object reference.</para>
-    ///     <para type="description">GET ~/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition/$ref</para>
+    ///     <para type="description">GET ~/deviceManagement/roleDefinitions/{RoleDefinitionId}/roleAssignments/{RoleAssignmentId}/roleDefinition/$ref</para>
     ///     <para type="description">Retrieves the &quot;roleDefinition&quot; object reference (which is of type &quot;microsoft.graph.roleDefinition&quot;).</para>
     ///     <para type="description">Role definition this assignment is part of.</para>
     /// </summary>
@@ -101,7 +110,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.roleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
-        public System.String roleAssignmentId { get; set; }
+        public System.String RoleAssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.</para>
@@ -109,7 +118,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.")]
-        public System.String roleDefinitionId { get; set; }
+        public System.String RoleDefinitionId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -119,7 +128,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -129,7 +138,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;rolePermissions&quot; property, of type &quot;microsoft.graph.rolePermission&quot;.</para>
@@ -138,7 +147,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.rolePermission")]
         [Selectable]
-        public System.Object[] rolePermissions { get; set; }
+        public System.Object[] RolePermissions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isBuiltIn&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -148,7 +157,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean isBuiltIn { get; set; }
+        public System.Boolean IsBuiltIn { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.</para>
@@ -158,23 +167,32 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.roleAssignment")]
         [Selectable]
         [Expandable]
-        public System.Object[] roleAssignments { get; set; }
+        public System.Object[] RoleAssignments { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.roleDefinition&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition/$ref";
+            return $"deviceManagement/roleDefinitions/{RoleDefinitionId}/roleAssignments/{RoleAssignmentId}/roleDefinition/$ref";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Creates a reference from a &quot;roleAssignment&quot; to a &quot;microsoft.graph.roleDefinition&quot; object.</para>
-    ///     <para type="description">PUT ~/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition/$ref</para>
+    ///     <para type="description">PUT ~/deviceManagement/roleDefinitions/{RoleDefinitionId}/roleAssignments/{RoleAssignmentId}/roleDefinition/$ref</para>
     ///     <para type="description">Creates a reference from the &quot;roleAssignment&quot; object to a &quot;roleDefinition&quot;.</para>
     ///     <para type="description">Role definition this assignment is part of.</para>
     /// </summary>
     [Cmdlet("New", "DeviceManagement_RoleDefinitions_RoleAssignments_RoleDefinitionReference", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.roleDefinition")]
-    [ResourceIdPropertyName("roleDefinitionReferenceUrl")]
+    [ResourceIdPropertyName("RoleDefinitionReferenceUrl")]
     public class New_DeviceManagement_RoleDefinitions_RoleAssignments_RoleDefinitionReference : PutReferenceToEntityCmdlet
     {
         /// <summary>
@@ -183,7 +201,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.roleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
-        public System.String roleAssignmentId { get; set; }
+        public System.String RoleAssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.</para>
@@ -191,26 +209,26 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.")]
-        public System.String roleDefinitionId { get; set; }
+        public System.String RoleDefinitionId { get; set; }
 
         /// <summary>
         ///     <para type="description">The URL which should be used to access a &quot;microsoft.graph.roleDefinition&quot; object.</para>
         /// </summary>
         [Selectable]
-        [Alias("deviceAndAppManagementRoleDefinitionReferenceUrl")]
+        [Alias("DeviceAndAppManagementRoleDefinitionReferenceUrl")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The URL which should be used to access a &quot;microsoft.graph.roleDefinition&quot; object.")]
-        public System.String roleDefinitionReferenceUrl { get; set; }
+        public System.String RoleDefinitionReferenceUrl { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition/$ref";
+            return $"deviceManagement/roleDefinitions/{RoleDefinitionId}/roleAssignments/{RoleAssignmentId}/roleDefinition/$ref";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a reference from a &quot;roleAssignment&quot; to a &quot;microsoft.graph.roleDefinition&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition/$ref</para>
+    ///     <para type="description">DELETE ~/deviceManagement/roleDefinitions/{RoleDefinitionId}/roleAssignments/{RoleAssignmentId}/roleDefinition/$ref</para>
     ///     <para type="description">Removes a reference from the &quot;roleAssignment&quot; object to a &quot;roleDefinition&quot;.</para>
     ///     <para type="description">Role definition this assignment is part of.</para>
     /// </summary>
@@ -224,7 +242,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.roleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
-        public System.String roleAssignmentId { get; set; }
+        public System.String RoleAssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.</para>
@@ -232,11 +250,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.")]
-        public System.String roleDefinitionId { get; set; }
+        public System.String RoleDefinitionId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition/$ref";
+            return $"deviceManagement/roleDefinitions/{RoleDefinitionId}/roleAssignments/{RoleAssignmentId}/roleDefinition/$ref";
         }
     }
 }

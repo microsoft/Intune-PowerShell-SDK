@@ -12,7 +12,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_WindowsInformationProtectionNetworkLearningSummaries", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.windowsInformationProtectionNetworkLearningSummary")]
-    [ResourceIdPropertyName("windowsInformationProtectionNetworkLearningSummaryId")]
+    [ResourceIdPropertyName("WindowsInformationProtectionNetworkLearningSummaryId")]
     [ResourceReference]
     public class Get_DeviceManagement_WindowsInformationProtectionNetworkLearningSummaries : GetOrSearchCmdlet
     {
@@ -20,10 +20,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot; object in the &quot;windowsInformationProtectionNetworkLearningSummaries&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot; object in the &quot;windowsInformationProtectionNetworkLearningSummaries&quot; collection.")]
-        public System.String windowsInformationProtectionNetworkLearningSummaryId { get; set; }
+        public System.String WindowsInformationProtectionNetworkLearningSummaryId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;url&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String url { get; set; }
+        public System.String Url { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -43,11 +43,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 deviceCount { get; set; }
+        public System.Int32 DeviceCount { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{windowsInformationProtectionNetworkLearningSummaryId ?? string.Empty}";
+            return $"deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{WindowsInformationProtectionNetworkLearningSummaryId ?? string.Empty}";
         }
     }
 
@@ -71,7 +80,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionNetworkLearningSummary", HelpMessage = @"The &quot;url&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;url&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String url { get; set; }
+        public System.String Url { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -82,7 +91,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionNetworkLearningSummary", HelpMessage = @"The &quot;deviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 deviceCount { get; set; }
+        public System.Int32 DeviceCount { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -98,17 +107,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Update", "DeviceManagement_WindowsInformationProtectionNetworkLearningSummaries", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.windowsInformationProtectionNetworkLearningSummary")]
     [ODataType("microsoft.graph.windowsInformationProtectionNetworkLearningSummary")]
-    [ResourceIdPropertyName("windowsInformationProtectionNetworkLearningSummaryId")]
+    [ResourceIdPropertyName("WindowsInformationProtectionNetworkLearningSummaryId")]
     public class Update_DeviceManagement_WindowsInformationProtectionNetworkLearningSummaries : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot; object in the &quot;windowsInformationProtectionNetworkLearningSummaries&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot; object in the &quot;windowsInformationProtectionNetworkLearningSummaries&quot; collection.")]
-        public System.String windowsInformationProtectionNetworkLearningSummaryId { get; set; }
+        public System.String WindowsInformationProtectionNetworkLearningSummaryId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;url&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -119,7 +128,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionNetworkLearningSummary", HelpMessage = @"The &quot;url&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;url&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String url { get; set; }
+        public System.String Url { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -130,37 +139,37 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionNetworkLearningSummary", HelpMessage = @"The &quot;deviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 deviceCount { get; set; }
+        public System.Int32 DeviceCount { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{windowsInformationProtectionNetworkLearningSummaryId}";
+            return $"deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{WindowsInformationProtectionNetworkLearningSummaryId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/windowsInformationProtectionNetworkLearningSummaries/windowsInformationProtectionNetworkLearningSummaryId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/windowsInformationProtectionNetworkLearningSummaries/WindowsInformationProtectionNetworkLearningSummaryId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot; object from the &quot;windowsInformationProtectionNetworkLearningSummaries&quot; collection.</para>
     ///     <para type="description">The windows information protection network learning summaries.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_WindowsInformationProtectionNetworkLearningSummaries", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.windowsInformationProtectionNetworkLearningSummary")]
-    [ResourceIdPropertyName("windowsInformationProtectionNetworkLearningSummaryId")]
+    [ResourceIdPropertyName("WindowsInformationProtectionNetworkLearningSummaryId")]
     public class Remove_DeviceManagement_WindowsInformationProtectionNetworkLearningSummaries : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot; object in the &quot;windowsInformationProtectionNetworkLearningSummaries&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot; object in the &quot;windowsInformationProtectionNetworkLearningSummaries&quot; collection.")]
-        public System.String windowsInformationProtectionNetworkLearningSummaryId { get; set; }
+        public System.String WindowsInformationProtectionNetworkLearningSummaryId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{windowsInformationProtectionNetworkLearningSummaryId}";
+            return $"deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{WindowsInformationProtectionNetworkLearningSummaryId}";
         }
     }
 }

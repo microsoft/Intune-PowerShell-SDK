@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Byte")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.rgbColor", HelpMessage = @"The &quot;r&quot; property, of type &quot;Edm.Byte&quot;.")]
-        public System.Byte r { get; set; }
+        public System.Byte R { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;g&quot; property, of type &quot;Edm.Byte&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Byte")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.rgbColor", HelpMessage = @"The &quot;g&quot; property, of type &quot;Edm.Byte&quot;.")]
-        public System.Byte g { get; set; }
+        public System.Byte G { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;b&quot; property, of type &quot;Edm.Byte&quot;.</para>
@@ -40,6 +40,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Byte")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.rgbColor", HelpMessage = @"The &quot;b&quot; property, of type &quot;Edm.Byte&quot;.")]
-        public System.Byte b { get; set; }
+        public System.Byte B { get; set; }
     }
 }

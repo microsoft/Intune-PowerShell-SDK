@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.driveRecipient", HelpMessage = @"The &quot;alias&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String alias { get; set; }
+        public System.String Alias { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;email&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.driveRecipient", HelpMessage = @"The &quot;email&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String email { get; set; }
+        public System.String Email { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;objectId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,6 +37,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.driveRecipient", HelpMessage = @"The &quot;objectId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String objectId { get; set; }
+        public System.String ObjectId { get; set; }
     }
 }

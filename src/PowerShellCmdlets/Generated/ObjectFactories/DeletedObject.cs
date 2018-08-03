@@ -19,6 +19,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deleted", HelpMessage = @"The &quot;state&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String state { get; set; }
+        public System.String State { get; set; }
     }
 }

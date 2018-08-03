@@ -20,6 +20,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.outlookUser", HelpMessage = @"The &quot;masterCategories&quot; property, of type &quot;microsoft.graph.outlookCategory&quot;.")]
-        public System.Object[] masterCategories { get; set; }
+        public System.Object[] MasterCategories { get; set; }
     }
 }

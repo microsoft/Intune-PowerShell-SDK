@@ -22,6 +22,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.mobileAppContent", HelpMessage = @"The &quot;files&quot; property, of type &quot;microsoft.graph.mobileAppContentFile&quot;.")]
-        public System.Object[] files { get; set; }
+        public System.Object[] Files { get; set; }
     }
 }

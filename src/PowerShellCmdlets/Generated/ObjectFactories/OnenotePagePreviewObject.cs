@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePagePreview", HelpMessage = @"The &quot;previewText&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String previewText { get; set; }
+        public System.String PreviewText { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;links&quot; property, of type &quot;microsoft.graph.onenotePagePreviewLinks&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.onenotePagePreviewLinks")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePagePreview", HelpMessage = @"The &quot;links&quot; property, of type &quot;microsoft.graph.onenotePagePreviewLinks&quot;.")]
-        public System.Object links { get; set; }
+        public System.Object Links { get; set; }
     }
 }

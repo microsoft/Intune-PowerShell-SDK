@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.dateTimeTimeZone")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.followupFlag", HelpMessage = @"The &quot;completedDateTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
-        public System.Object completedDateTime { get; set; }
+        public System.Object CompletedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;dueDateTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.dateTimeTimeZone")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.followupFlag", HelpMessage = @"The &quot;dueDateTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
-        public System.Object dueDateTime { get; set; }
+        public System.Object DueDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startDateTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.dateTimeTimeZone")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.followupFlag", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
-        public System.Object startDateTime { get; set; }
+        public System.Object StartDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;flagStatus&quot; property, of type &quot;microsoft.graph.followupFlagStatus&quot;.</para>
@@ -50,6 +50,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notFlagged", @"complete", @"flagged")]
         [Parameter(ParameterSetName = @"#microsoft.graph.followupFlag", HelpMessage = @"The &quot;flagStatus&quot; property, of type &quot;microsoft.graph.followupFlagStatus&quot;.")]
-        public System.String flagStatus { get; set; }
+        public System.String FlagStatus { get; set; }
     }
 }

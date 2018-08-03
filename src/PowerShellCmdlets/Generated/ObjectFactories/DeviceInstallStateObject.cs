@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceInstallState", HelpMessage = @"The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String deviceName { get; set; }
+        public System.String DeviceName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceInstallState", HelpMessage = @"The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String deviceId { get; set; }
+        public System.String DeviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceInstallState", HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastSyncDateTime { get; set; }
+        public System.DateTimeOffset LastSyncDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;installState&quot; property, of type &quot;microsoft.graph.installState&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notApplicable", @"installed", @"failed", @"notInstalled", @"uninstallFailed", @"unknown")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceInstallState", HelpMessage = @"The &quot;installState&quot; property, of type &quot;microsoft.graph.installState&quot;.")]
-        public System.String installState { get; set; }
+        public System.String InstallState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;errorCode&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -65,7 +65,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceInstallState", HelpMessage = @"The &quot;errorCode&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String errorCode { get; set; }
+        public System.String ErrorCode { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;osVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -75,7 +75,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceInstallState", HelpMessage = @"The &quot;osVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String osVersion { get; set; }
+        public System.String OsVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;osDescription&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -85,7 +85,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceInstallState", HelpMessage = @"The &quot;osDescription&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String osDescription { get; set; }
+        public System.String OsDescription { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -95,6 +95,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceInstallState", HelpMessage = @"The &quot;userName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String userName { get; set; }
+        public System.String UserName { get; set; }
     }
 }

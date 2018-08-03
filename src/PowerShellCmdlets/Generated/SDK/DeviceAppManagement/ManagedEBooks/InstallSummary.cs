@@ -6,7 +6,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;installSummary&quot; object.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/managedEBooks/{managedEBookId}/installSummary</para>
+    ///     <para type="description">GET ~/deviceAppManagement/managedEBooks/{ManagedEBookId}/installSummary</para>
     ///     <para type="description">Retrieves the &quot;installSummary&quot; object (which is of type &quot;microsoft.graph.eBookInstallSummary&quot;).</para>
     ///     <para type="description">Mobile App Install Summary.</para>
     /// </summary>
@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.")]
-        public System.String managedEBookId { get; set; }
+        public System.String ManagedEBookId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;installedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 installedDeviceCount { get; set; }
+        public System.Int32 InstalledDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;failedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 failedDeviceCount { get; set; }
+        public System.Int32 FailedDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notInstalledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -51,7 +51,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 notInstalledDeviceCount { get; set; }
+        public System.Int32 NotInstalledDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;installedUserCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -61,7 +61,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 installedUserCount { get; set; }
+        public System.Int32 InstalledUserCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;failedUserCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -71,7 +71,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 failedUserCount { get; set; }
+        public System.Int32 FailedUserCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notInstalledUserCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -81,17 +81,26 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 notInstalledUserCount { get; set; }
+        public System.Int32 NotInstalledUserCount { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.eBookInstallSummary&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedEBooks/{managedEBookId}/installSummary";
+            return $"deviceAppManagement/managedEBooks/{ManagedEBookId}/installSummary";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.eBookInstallSummary&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/managedEBooks/{managedEBookId}/installSummary</para>
+    ///     <para type="description">POST ~/deviceAppManagement/managedEBooks/{ManagedEBookId}/installSummary</para>
     ///     <para type="description">Creates the &quot;installSummary&quot; object (which is of type &quot;microsoft.graph.eBookInstallSummary&quot;).</para>
     ///     <para type="description">Mobile App Install Summary.</para>
     /// </summary>
@@ -106,7 +115,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.")]
-        public System.String managedEBookId { get; set; }
+        public System.String ManagedEBookId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;installedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -117,7 +126,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;installedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;installedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 installedDeviceCount { get; set; }
+        public System.Int32 InstalledDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;failedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -128,7 +137,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;failedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;failedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 failedDeviceCount { get; set; }
+        public System.Int32 FailedDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notInstalledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -139,7 +148,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;notInstalledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;notInstalledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 notInstalledDeviceCount { get; set; }
+        public System.Int32 NotInstalledDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;installedUserCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -150,7 +159,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;installedUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;installedUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 installedUserCount { get; set; }
+        public System.Int32 InstalledUserCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;failedUserCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -161,7 +170,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;failedUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;failedUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 failedUserCount { get; set; }
+        public System.Int32 FailedUserCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notInstalledUserCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -172,17 +181,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;notInstalledUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;notInstalledUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 notInstalledUserCount { get; set; }
+        public System.Int32 NotInstalledUserCount { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedEBooks/{managedEBookId}/installSummary";
+            return $"deviceAppManagement/managedEBooks/{ManagedEBookId}/installSummary";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.eBookInstallSummary&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/managedEBooks/{managedEBookId}/installSummary</para>
+    ///     <para type="description">PATCH ~/deviceAppManagement/managedEBooks/{ManagedEBookId}/installSummary</para>
     ///     <para type="description">Updates the &quot;installSummary&quot; object (which is of type &quot;microsoft.graph.eBookInstallSummary&quot;).</para>
     ///     <para type="description">Mobile App Install Summary.</para>
     /// </summary>
@@ -196,7 +205,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.")]
-        public System.String managedEBookId { get; set; }
+        public System.String ManagedEBookId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;installedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -207,7 +216,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;installedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;installedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 installedDeviceCount { get; set; }
+        public System.Int32 InstalledDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;failedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -218,7 +227,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;failedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;failedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 failedDeviceCount { get; set; }
+        public System.Int32 FailedDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notInstalledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -229,7 +238,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;notInstalledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;notInstalledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 notInstalledDeviceCount { get; set; }
+        public System.Int32 NotInstalledDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;installedUserCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -240,7 +249,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;installedUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;installedUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 installedUserCount { get; set; }
+        public System.Int32 InstalledUserCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;failedUserCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -251,7 +260,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;failedUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;failedUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 failedUserCount { get; set; }
+        public System.Int32 FailedUserCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notInstalledUserCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -262,17 +271,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;notInstalledUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;notInstalledUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 notInstalledUserCount { get; set; }
+        public System.Int32 NotInstalledUserCount { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedEBooks/{managedEBookId}/installSummary";
+            return $"deviceAppManagement/managedEBooks/{ManagedEBookId}/installSummary";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.eBookInstallSummary&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/managedEBooks/{managedEBookId}/installSummary</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/managedEBooks/{ManagedEBookId}/installSummary</para>
     ///     <para type="description">Removes the &quot;installSummary&quot; object (which is of type &quot;microsoft.graph.eBookInstallSummary&quot;).</para>
     ///     <para type="description">Mobile App Install Summary.</para>
     /// </summary>
@@ -286,11 +295,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.")]
-        public System.String managedEBookId { get; set; }
+        public System.String ManagedEBookId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedEBooks/{managedEBookId}/installSummary";
+            return $"deviceAppManagement/managedEBooks/{ManagedEBookId}/installSummary";
         }
     }
 }

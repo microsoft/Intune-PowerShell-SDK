@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.appListItem", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String name { get; set; }
+        public System.String Name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.appListItem", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String publisher { get; set; }
+        public System.String Publisher { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.appListItem", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String appStoreUrl { get; set; }
+        public System.String AppStoreUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -50,6 +50,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.appListItem", HelpMessage = @"The &quot;appId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String appId { get; set; }
+        public System.String AppId { get; set; }
     }
 }

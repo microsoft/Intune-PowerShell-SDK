@@ -12,7 +12,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_ExchangeConnectors", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceManagementExchangeConnector")]
-    [ResourceIdPropertyName("exchangeConnectorId")]
+    [ResourceIdPropertyName("ExchangeConnectorId")]
     [ResourceReference]
     public class Get_DeviceManagement_ExchangeConnectors : GetOrSearchCmdlet
     {
@@ -20,10 +20,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.")]
-        public System.String exchangeConnectorId { get; set; }
+        public System.String ExchangeConnectorId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset lastSyncDateTime { get; set; }
+        public System.DateTimeOffset LastSyncDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;status&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnectorStatus&quot;.</para>
@@ -43,7 +43,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceManagementExchangeConnectorStatus")]
         [Selectable]
         [Sortable]
-        public System.String status { get; set; }
+        public System.String Status { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;primarySmtpAddress&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -53,7 +53,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String primarySmtpAddress { get; set; }
+        public System.String PrimarySmtpAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;serverName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String serverName { get; set; }
+        public System.String ServerName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeConnectorType&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnectorType&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceManagementExchangeConnectorType")]
         [Selectable]
         [Sortable]
-        public System.String exchangeConnectorType { get; set; }
+        public System.String ExchangeConnectorType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -83,7 +83,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String version { get; set; }
+        public System.String Version { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeAlias&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -93,7 +93,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String exchangeAlias { get; set; }
+        public System.String ExchangeAlias { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeOrganization&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -103,11 +103,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String exchangeOrganization { get; set; }
+        public System.String ExchangeOrganization { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.deviceManagementExchangeConnector&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/exchangeConnectors/{exchangeConnectorId ?? string.Empty}";
+            return $"deviceManagement/exchangeConnectors/{ExchangeConnectorId ?? string.Empty}";
         }
     }
 
@@ -131,7 +140,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastSyncDateTime { get; set; }
+        public System.DateTimeOffset LastSyncDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;status&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnectorStatus&quot;.</para>
@@ -146,7 +155,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"none", @"connectionPending", @"connected", @"disconnected")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnectorStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnectorStatus&quot;.")]
-        public System.String status { get; set; }
+        public System.String Status { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;primarySmtpAddress&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -157,7 +166,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;primarySmtpAddress&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;primarySmtpAddress&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String primarySmtpAddress { get; set; }
+        public System.String PrimarySmtpAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;serverName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -168,7 +177,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;serverName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;serverName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String serverName { get; set; }
+        public System.String ServerName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeConnectorType&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnectorType&quot;.</para>
@@ -183,7 +192,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"onPremises", @"hosted", @"serviceToService", @"dedicated")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;exchangeConnectorType&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnectorType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;exchangeConnectorType&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnectorType&quot;.")]
-        public System.String exchangeConnectorType { get; set; }
+        public System.String ExchangeConnectorType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -194,7 +203,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String version { get; set; }
+        public System.String Version { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeAlias&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -205,7 +214,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;exchangeAlias&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;exchangeAlias&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String exchangeAlias { get; set; }
+        public System.String ExchangeAlias { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeOrganization&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -216,7 +225,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;exchangeOrganization&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;exchangeOrganization&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String exchangeOrganization { get; set; }
+        public System.String ExchangeOrganization { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -232,17 +241,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Update", "DeviceManagement_ExchangeConnectors", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector")]
     [ODataType("microsoft.graph.deviceManagementExchangeConnector")]
-    [ResourceIdPropertyName("exchangeConnectorId")]
+    [ResourceIdPropertyName("ExchangeConnectorId")]
     public class Update_DeviceManagement_ExchangeConnectors : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.")]
-        public System.String exchangeConnectorId { get; set; }
+        public System.String ExchangeConnectorId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -253,7 +262,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastSyncDateTime { get; set; }
+        public System.DateTimeOffset LastSyncDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;status&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnectorStatus&quot;.</para>
@@ -268,7 +277,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"none", @"connectionPending", @"connected", @"disconnected")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnectorStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnectorStatus&quot;.")]
-        public System.String status { get; set; }
+        public System.String Status { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;primarySmtpAddress&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -279,7 +288,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;primarySmtpAddress&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;primarySmtpAddress&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String primarySmtpAddress { get; set; }
+        public System.String PrimarySmtpAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;serverName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -290,7 +299,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;serverName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;serverName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String serverName { get; set; }
+        public System.String ServerName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeConnectorType&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnectorType&quot;.</para>
@@ -305,7 +314,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"onPremises", @"hosted", @"serviceToService", @"dedicated")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;exchangeConnectorType&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnectorType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;exchangeConnectorType&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnectorType&quot;.")]
-        public System.String exchangeConnectorType { get; set; }
+        public System.String ExchangeConnectorType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -316,7 +325,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String version { get; set; }
+        public System.String Version { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeAlias&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -327,7 +336,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;exchangeAlias&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;exchangeAlias&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String exchangeAlias { get; set; }
+        public System.String ExchangeAlias { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeOrganization&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -338,37 +347,37 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;exchangeOrganization&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;exchangeOrganization&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String exchangeOrganization { get; set; }
+        public System.String ExchangeOrganization { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/exchangeConnectors/{exchangeConnectorId}";
+            return $"deviceManagement/exchangeConnectors/{ExchangeConnectorId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/exchangeConnectors/exchangeConnectorId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/exchangeConnectors/ExchangeConnectorId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object from the &quot;exchangeConnectors&quot; collection.</para>
     ///     <para type="description">The list of Exchange Connectors configured by the tenant.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_ExchangeConnectors", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceManagementExchangeConnector")]
-    [ResourceIdPropertyName("exchangeConnectorId")]
+    [ResourceIdPropertyName("ExchangeConnectorId")]
     public class Remove_DeviceManagement_ExchangeConnectors : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.")]
-        public System.String exchangeConnectorId { get; set; }
+        public System.String ExchangeConnectorId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/exchangeConnectors/{exchangeConnectorId}";
+            return $"deviceManagement/exchangeConnectors/{ExchangeConnectorId}";
         }
     }
 
@@ -379,7 +388,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "DeviceManagement_ExchangeConnectors_Sync", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceManagementExchangeConnector")]
-    [ResourceIdPropertyName("exchangeConnectorId")]
+    [ResourceIdPropertyName("ExchangeConnectorId")]
     public class Invoke_DeviceManagement_ExchangeConnectors_Sync : ActionCmdlet
     {
         /// <summary>
@@ -393,20 +402,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"fullSync", @"deltaSync")]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;syncType&quot; parameter, which is accepted by the &quot;microsoft.graph.sync&quot; action.")]
-        public System.String syncType { get; set; }
+        public System.String SyncType { get; set; }
 
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.")]
-        public System.String exchangeConnectorId { get; set; }
+        public System.String ExchangeConnectorId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/exchangeConnectors/{exchangeConnectorId}/sync";
+            return $"deviceManagement/exchangeConnectors/{ExchangeConnectorId}/sync";
         }
     }
 }

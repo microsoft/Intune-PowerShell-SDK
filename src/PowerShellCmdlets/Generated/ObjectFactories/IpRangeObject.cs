@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.iPv4Range")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iPv4Range", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iPv4Range&quot; type.")]
-        public System.Management.Automation.SwitchParameter iPv4Range { get; set; }
+        public System.Management.Automation.SwitchParameter IPv4Range { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lowerAddress&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iPv4Range", HelpMessage = @"The &quot;lowerAddress&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iPv6Range", HelpMessage = @"The &quot;lowerAddress&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String lowerAddress { get; set; }
+        public System.String LowerAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;upperAddress&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iPv4Range", HelpMessage = @"The &quot;upperAddress&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iPv6Range", HelpMessage = @"The &quot;upperAddress&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String upperAddress { get; set; }
+        public System.String UpperAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iPv6Range&quot; type.</para>
@@ -48,6 +48,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.iPv6Range")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iPv6Range", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iPv6Range&quot; type.")]
-        public System.Management.Automation.SwitchParameter iPv6Range { get; set; }
+        public System.Management.Automation.SwitchParameter IPv6Range { get; set; }
     }
 }

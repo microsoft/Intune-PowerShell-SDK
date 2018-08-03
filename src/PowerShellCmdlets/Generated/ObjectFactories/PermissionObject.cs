@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.identitySet")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.permission", HelpMessage = @"The &quot;grantedTo&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
-        public System.Object grantedTo { get; set; }
+        public System.Object GrantedTo { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;inheritedFrom&quot; property, of type &quot;microsoft.graph.itemReference&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.itemReference")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.permission", HelpMessage = @"The &quot;inheritedFrom&quot; property, of type &quot;microsoft.graph.itemReference&quot;.")]
-        public System.Object inheritedFrom { get; set; }
+        public System.Object InheritedFrom { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;invitation&quot; property, of type &quot;microsoft.graph.sharingInvitation&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.sharingInvitation")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.permission", HelpMessage = @"The &quot;invitation&quot; property, of type &quot;microsoft.graph.sharingInvitation&quot;.")]
-        public System.Object invitation { get; set; }
+        public System.Object Invitation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;link&quot; property, of type &quot;microsoft.graph.sharingLink&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.sharingLink")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.permission", HelpMessage = @"The &quot;link&quot; property, of type &quot;microsoft.graph.sharingLink&quot;.")]
-        public System.Object link { get; set; }
+        public System.Object Link { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;roles&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -56,7 +56,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.permission", HelpMessage = @"The &quot;roles&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] roles { get; set; }
+        public System.String[] Roles { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;shareId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -65,6 +65,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.permission", HelpMessage = @"The &quot;shareId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String shareId { get; set; }
+        public System.String ShareId { get; set; }
     }
 }

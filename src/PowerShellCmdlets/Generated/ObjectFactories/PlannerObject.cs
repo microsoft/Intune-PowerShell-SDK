@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.planner", HelpMessage = @"The &quot;tasks&quot; property, of type &quot;microsoft.graph.plannerTask&quot;.")]
-        public System.Object[] tasks { get; set; }
+        public System.Object[] Tasks { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;plans&quot; property, of type &quot;microsoft.graph.plannerPlan&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.planner", HelpMessage = @"The &quot;plans&quot; property, of type &quot;microsoft.graph.plannerPlan&quot;.")]
-        public System.Object[] plans { get; set; }
+        public System.Object[] Plans { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;buckets&quot; property, of type &quot;microsoft.graph.plannerBucket&quot;.</para>
@@ -40,6 +40,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.planner", HelpMessage = @"The &quot;buckets&quot; property, of type &quot;microsoft.graph.plannerBucket&quot;.")]
-        public System.Object[] buckets { get; set; }
+        public System.Object[] Buckets { get; set; }
     }
 }

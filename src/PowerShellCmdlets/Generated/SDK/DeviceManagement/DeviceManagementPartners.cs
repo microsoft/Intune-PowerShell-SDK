@@ -12,7 +12,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_DeviceManagementPartners", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceManagementPartner")]
-    [ResourceIdPropertyName("deviceManagementPartnerId")]
+    [ResourceIdPropertyName("DeviceManagementPartnerId")]
     [ResourceReference]
     public class Get_DeviceManagement_DeviceManagementPartners : GetOrSearchCmdlet
     {
@@ -20,10 +20,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementPartner&quot; object in the &quot;deviceManagementPartners&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementPartner&quot; object in the &quot;deviceManagementPartners&quot; collection.")]
-        public System.String deviceManagementPartnerId { get; set; }
+        public System.String DeviceManagementPartnerId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastHeartbeatDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset lastHeartbeatDateTime { get; set; }
+        public System.DateTimeOffset LastHeartbeatDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;partnerState&quot; property, of type &quot;microsoft.graph.deviceManagementPartnerTenantState&quot;.</para>
@@ -43,7 +43,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceManagementPartnerTenantState")]
         [Selectable]
         [Sortable]
-        public System.String partnerState { get; set; }
+        public System.String PartnerState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;partnerAppType&quot; property, of type &quot;microsoft.graph.deviceManagementPartnerAppType&quot;.</para>
@@ -53,7 +53,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceManagementPartnerAppType")]
         [Selectable]
         [Sortable]
-        public System.String partnerAppType { get; set; }
+        public System.String PartnerAppType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;singleTenantAppId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String singleTenantAppId { get; set; }
+        public System.String SingleTenantAppId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isConfigured&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -83,7 +83,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean isConfigured { get; set; }
+        public System.Boolean IsConfigured { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;whenPartnerDevicesWillBeRemovedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -93,7 +93,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset whenPartnerDevicesWillBeRemovedDateTime { get; set; }
+        public System.DateTimeOffset WhenPartnerDevicesWillBeRemovedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -103,11 +103,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime { get; set; }
+        public System.DateTimeOffset WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.deviceManagementPartner&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceManagementPartners/{deviceManagementPartnerId ?? string.Empty}";
+            return $"deviceManagement/deviceManagementPartners/{DeviceManagementPartnerId ?? string.Empty}";
         }
     }
 
@@ -131,7 +140,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;lastHeartbeatDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastHeartbeatDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastHeartbeatDateTime { get; set; }
+        public System.DateTimeOffset LastHeartbeatDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;partnerState&quot; property, of type &quot;microsoft.graph.deviceManagementPartnerTenantState&quot;.</para>
@@ -146,7 +155,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"unknown", @"unavailable", @"enabled", @"terminated", @"rejected", @"unresponsive")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;partnerState&quot; property, of type &quot;microsoft.graph.deviceManagementPartnerTenantState&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;partnerState&quot; property, of type &quot;microsoft.graph.deviceManagementPartnerTenantState&quot;.")]
-        public System.String partnerState { get; set; }
+        public System.String PartnerState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;partnerAppType&quot; property, of type &quot;microsoft.graph.deviceManagementPartnerAppType&quot;.</para>
@@ -161,7 +170,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"unknown", @"singleTenantApp", @"multiTenantApp")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;partnerAppType&quot; property, of type &quot;microsoft.graph.deviceManagementPartnerAppType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;partnerAppType&quot; property, of type &quot;microsoft.graph.deviceManagementPartnerAppType&quot;.")]
-        public System.String partnerAppType { get; set; }
+        public System.String PartnerAppType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;singleTenantAppId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -172,7 +181,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;singleTenantAppId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;singleTenantAppId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String singleTenantAppId { get; set; }
+        public System.String SingleTenantAppId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -183,7 +192,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isConfigured&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -194,7 +203,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;isConfigured&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;isConfigured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isConfigured { get; set; }
+        public System.Boolean IsConfigured { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;whenPartnerDevicesWillBeRemovedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -205,7 +214,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;whenPartnerDevicesWillBeRemovedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;whenPartnerDevicesWillBeRemovedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset whenPartnerDevicesWillBeRemovedDateTime { get; set; }
+        public System.DateTimeOffset WhenPartnerDevicesWillBeRemovedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -216,7 +225,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime { get; set; }
+        public System.DateTimeOffset WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -232,17 +241,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Update", "DeviceManagement_DeviceManagementPartners", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.deviceManagementPartner")]
     [ODataType("microsoft.graph.deviceManagementPartner")]
-    [ResourceIdPropertyName("deviceManagementPartnerId")]
+    [ResourceIdPropertyName("DeviceManagementPartnerId")]
     public class Update_DeviceManagement_DeviceManagementPartners : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementPartner&quot; object in the &quot;deviceManagementPartners&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementPartner&quot; object in the &quot;deviceManagementPartners&quot; collection.")]
-        public System.String deviceManagementPartnerId { get; set; }
+        public System.String DeviceManagementPartnerId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastHeartbeatDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -253,7 +262,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;lastHeartbeatDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastHeartbeatDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastHeartbeatDateTime { get; set; }
+        public System.DateTimeOffset LastHeartbeatDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;partnerState&quot; property, of type &quot;microsoft.graph.deviceManagementPartnerTenantState&quot;.</para>
@@ -268,7 +277,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"unknown", @"unavailable", @"enabled", @"terminated", @"rejected", @"unresponsive")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;partnerState&quot; property, of type &quot;microsoft.graph.deviceManagementPartnerTenantState&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;partnerState&quot; property, of type &quot;microsoft.graph.deviceManagementPartnerTenantState&quot;.")]
-        public System.String partnerState { get; set; }
+        public System.String PartnerState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;partnerAppType&quot; property, of type &quot;microsoft.graph.deviceManagementPartnerAppType&quot;.</para>
@@ -283,7 +292,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"unknown", @"singleTenantApp", @"multiTenantApp")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;partnerAppType&quot; property, of type &quot;microsoft.graph.deviceManagementPartnerAppType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;partnerAppType&quot; property, of type &quot;microsoft.graph.deviceManagementPartnerAppType&quot;.")]
-        public System.String partnerAppType { get; set; }
+        public System.String PartnerAppType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;singleTenantAppId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -294,7 +303,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;singleTenantAppId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;singleTenantAppId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String singleTenantAppId { get; set; }
+        public System.String SingleTenantAppId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -305,7 +314,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isConfigured&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -316,7 +325,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;isConfigured&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;isConfigured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isConfigured { get; set; }
+        public System.Boolean IsConfigured { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;whenPartnerDevicesWillBeRemovedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -327,7 +336,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;whenPartnerDevicesWillBeRemovedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;whenPartnerDevicesWillBeRemovedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset whenPartnerDevicesWillBeRemovedDateTime { get; set; }
+        public System.DateTimeOffset WhenPartnerDevicesWillBeRemovedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -338,37 +347,37 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime { get; set; }
+        public System.DateTimeOffset WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}";
+            return $"deviceManagement/deviceManagementPartners/{DeviceManagementPartnerId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceManagementPartner&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceManagementPartners/deviceManagementPartnerId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/deviceManagementPartners/DeviceManagementPartnerId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceManagementPartner&quot; object from the &quot;deviceManagementPartners&quot; collection.</para>
     ///     <para type="description">The list of Device Management Partners configured by the tenant.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_DeviceManagementPartners", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceManagementPartner")]
-    [ResourceIdPropertyName("deviceManagementPartnerId")]
+    [ResourceIdPropertyName("DeviceManagementPartnerId")]
     public class Remove_DeviceManagement_DeviceManagementPartners : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementPartner&quot; object in the &quot;deviceManagementPartners&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementPartner&quot; object in the &quot;deviceManagementPartners&quot; collection.")]
-        public System.String deviceManagementPartnerId { get; set; }
+        public System.String DeviceManagementPartnerId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}";
+            return $"deviceManagement/deviceManagementPartners/{DeviceManagementPartnerId}";
         }
     }
 }

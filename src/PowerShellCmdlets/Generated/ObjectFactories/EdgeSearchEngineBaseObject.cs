@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.edgeSearchEngine")]
         [Parameter(ParameterSetName = @"#microsoft.graph.edgeSearchEngine", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.edgeSearchEngine&quot; type.")]
-        public System.Management.Automation.SwitchParameter edgeSearchEngine { get; set; }
+        public System.Management.Automation.SwitchParameter EdgeSearchEngine { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeSearchEngineType&quot; property, of type &quot;microsoft.graph.edgeSearchEngineType&quot;.</para>
@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"default", @"bing")]
         [Parameter(ParameterSetName = @"#microsoft.graph.edgeSearchEngine", HelpMessage = @"The &quot;edgeSearchEngineType&quot; property, of type &quot;microsoft.graph.edgeSearchEngineType&quot;.")]
-        public System.String edgeSearchEngineType { get; set; }
+        public System.String EdgeSearchEngineType { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.edgeSearchEngineCustom&quot; type.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.edgeSearchEngineCustom")]
         [Parameter(ParameterSetName = @"#microsoft.graph.edgeSearchEngineCustom", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.edgeSearchEngineCustom&quot; type.")]
-        public System.Management.Automation.SwitchParameter edgeSearchEngineCustom { get; set; }
+        public System.Management.Automation.SwitchParameter EdgeSearchEngineCustom { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeSearchEngineOpenSearchXmlUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -50,6 +50,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.edgeSearchEngineCustom", HelpMessage = @"The &quot;edgeSearchEngineOpenSearchXmlUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String edgeSearchEngineOpenSearchXmlUrl { get; set; }
+        public System.String EdgeSearchEngineOpenSearchXmlUrl { get; set; }
     }
 }

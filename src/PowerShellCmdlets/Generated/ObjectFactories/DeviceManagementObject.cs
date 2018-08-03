@@ -25,7 +25,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"pending", @"active", @"warning", @"disabled", @"deleted", @"blocked", @"lockedOut")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;subscriptionState&quot; property, of type &quot;microsoft.graph.deviceManagementSubscriptionState&quot;.")]
-        public System.String subscriptionState { get; set; }
+        public System.String SubscriptionState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settings&quot; property, of type &quot;microsoft.graph.deviceManagementSettings&quot;.</para>
@@ -35,7 +35,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceManagementSettings")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;settings&quot; property, of type &quot;microsoft.graph.deviceManagementSettings&quot;.")]
-        public System.Object settings { get; set; }
+        public System.Object Settings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;intuneBrand&quot; property, of type &quot;microsoft.graph.intuneBrand&quot;.</para>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.intuneBrand")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;intuneBrand&quot; property, of type &quot;microsoft.graph.intuneBrand&quot;.")]
-        public System.Object intuneBrand { get; set; }
+        public System.Object IntuneBrand { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;termsAndConditions&quot; property, of type &quot;microsoft.graph.termsAndConditions&quot;.</para>
@@ -56,7 +56,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;termsAndConditions&quot; property, of type &quot;microsoft.graph.termsAndConditions&quot;.")]
-        public System.Object[] termsAndConditions { get; set; }
+        public System.Object[] TermsAndConditions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;applePushNotificationCertificate&quot; property, of type &quot;microsoft.graph.applePushNotificationCertificate&quot;.</para>
@@ -66,7 +66,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.applePushNotificationCertificate")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;applePushNotificationCertificate&quot; property, of type &quot;microsoft.graph.applePushNotificationCertificate&quot;.")]
-        public System.Object applePushNotificationCertificate { get; set; }
+        public System.Object ApplePushNotificationCertificate { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedDeviceOverview&quot; property, of type &quot;microsoft.graph.managedDeviceOverview&quot;.</para>
@@ -76,7 +76,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedDeviceOverview")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;managedDeviceOverview&quot; property, of type &quot;microsoft.graph.managedDeviceOverview&quot;.")]
-        public System.Object managedDeviceOverview { get; set; }
+        public System.Object ManagedDeviceOverview { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;detectedApps&quot; property, of type &quot;microsoft.graph.detectedApp&quot;.</para>
@@ -87,7 +87,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;detectedApps&quot; property, of type &quot;microsoft.graph.detectedApp&quot;.")]
-        public System.Object[] detectedApps { get; set; }
+        public System.Object[] DetectedApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedDevices&quot; property, of type &quot;microsoft.graph.managedDevice&quot;.</para>
@@ -98,7 +98,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;managedDevices&quot; property, of type &quot;microsoft.graph.managedDevice&quot;.")]
-        public System.Object[] managedDevices { get; set; }
+        public System.Object[] ManagedDevices { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceConfigurations&quot; property, of type &quot;microsoft.graph.deviceConfiguration&quot;.</para>
@@ -109,7 +109,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;deviceConfigurations&quot; property, of type &quot;microsoft.graph.deviceConfiguration&quot;.")]
-        public System.Object[] deviceConfigurations { get; set; }
+        public System.Object[] DeviceConfigurations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceCompliancePolicies&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicy&quot;.</para>
@@ -120,7 +120,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;deviceCompliancePolicies&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicy&quot;.")]
-        public System.Object[] deviceCompliancePolicies { get; set; }
+        public System.Object[] DeviceCompliancePolicies { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;softwareUpdateStatusSummary&quot; property, of type &quot;microsoft.graph.softwareUpdateStatusSummary&quot;.</para>
@@ -130,7 +130,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.softwareUpdateStatusSummary")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;softwareUpdateStatusSummary&quot; property, of type &quot;microsoft.graph.softwareUpdateStatusSummary&quot;.")]
-        public System.Object softwareUpdateStatusSummary { get; set; }
+        public System.Object SoftwareUpdateStatusSummary { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceCompliancePolicyDeviceStateSummary&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyDeviceStateSummary&quot;.</para>
@@ -140,7 +140,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceCompliancePolicyDeviceStateSummary")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;deviceCompliancePolicyDeviceStateSummary&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyDeviceStateSummary&quot;.")]
-        public System.Object deviceCompliancePolicyDeviceStateSummary { get; set; }
+        public System.Object DeviceCompliancePolicyDeviceStateSummary { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceCompliancePolicySettingStateSummaries&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot;.</para>
@@ -151,7 +151,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;deviceCompliancePolicySettingStateSummaries&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot;.")]
-        public System.Object[] deviceCompliancePolicySettingStateSummaries { get; set; }
+        public System.Object[] DeviceCompliancePolicySettingStateSummaries { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceConfigurationDeviceStateSummaries&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStateSummary&quot;.</para>
@@ -161,7 +161,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceConfigurationDeviceStateSummary")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;deviceConfigurationDeviceStateSummaries&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStateSummary&quot;.")]
-        public System.Object deviceConfigurationDeviceStateSummaries { get; set; }
+        public System.Object DeviceConfigurationDeviceStateSummaries { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iosUpdateStatuses&quot; property, of type &quot;microsoft.graph.iosUpdateDeviceStatus&quot;.</para>
@@ -172,7 +172,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;iosUpdateStatuses&quot; property, of type &quot;microsoft.graph.iosUpdateDeviceStatus&quot;.")]
-        public System.Object[] iosUpdateStatuses { get; set; }
+        public System.Object[] IosUpdateStatuses { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceCategories&quot; property, of type &quot;microsoft.graph.deviceCategory&quot;.</para>
@@ -183,7 +183,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;deviceCategories&quot; property, of type &quot;microsoft.graph.deviceCategory&quot;.")]
-        public System.Object[] deviceCategories { get; set; }
+        public System.Object[] DeviceCategories { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeConnectors&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnector&quot;.</para>
@@ -194,7 +194,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;exchangeConnectors&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnector&quot;.")]
-        public System.Object[] exchangeConnectors { get; set; }
+        public System.Object[] ExchangeConnectors { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceEnrollmentConfigurations&quot; property, of type &quot;microsoft.graph.deviceEnrollmentConfiguration&quot;.</para>
@@ -205,7 +205,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;deviceEnrollmentConfigurations&quot; property, of type &quot;microsoft.graph.deviceEnrollmentConfiguration&quot;.")]
-        public System.Object[] deviceEnrollmentConfigurations { get; set; }
+        public System.Object[] DeviceEnrollmentConfigurations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;conditionalAccessSettings&quot; property, of type &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot;.</para>
@@ -215,7 +215,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.onPremisesConditionalAccessSettings")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;conditionalAccessSettings&quot; property, of type &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot;.")]
-        public System.Object conditionalAccessSettings { get; set; }
+        public System.Object ConditionalAccessSettings { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mobileThreatDefenseConnectors&quot; property, of type &quot;microsoft.graph.mobileThreatDefenseConnector&quot;.</para>
@@ -226,7 +226,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;mobileThreatDefenseConnectors&quot; property, of type &quot;microsoft.graph.mobileThreatDefenseConnector&quot;.")]
-        public System.Object[] mobileThreatDefenseConnectors { get; set; }
+        public System.Object[] MobileThreatDefenseConnectors { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceManagementPartners&quot; property, of type &quot;microsoft.graph.deviceManagementPartner&quot;.</para>
@@ -237,7 +237,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;deviceManagementPartners&quot; property, of type &quot;microsoft.graph.deviceManagementPartner&quot;.")]
-        public System.Object[] deviceManagementPartners { get; set; }
+        public System.Object[] DeviceManagementPartners { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notificationMessageTemplates&quot; property, of type &quot;microsoft.graph.notificationMessageTemplate&quot;.</para>
@@ -248,7 +248,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;notificationMessageTemplates&quot; property, of type &quot;microsoft.graph.notificationMessageTemplate&quot;.")]
-        public System.Object[] notificationMessageTemplates { get; set; }
+        public System.Object[] NotificationMessageTemplates { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;roleDefinitions&quot; property, of type &quot;microsoft.graph.roleDefinition&quot;.</para>
@@ -259,7 +259,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;roleDefinitions&quot; property, of type &quot;microsoft.graph.roleDefinition&quot;.")]
-        public System.Object[] roleDefinitions { get; set; }
+        public System.Object[] RoleDefinitions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot;.</para>
@@ -270,7 +270,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot;.")]
-        public System.Object[] roleAssignments { get; set; }
+        public System.Object[] RoleAssignments { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;resourceOperations&quot; property, of type &quot;microsoft.graph.resourceOperation&quot;.</para>
@@ -281,7 +281,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;resourceOperations&quot; property, of type &quot;microsoft.graph.resourceOperation&quot;.")]
-        public System.Object[] resourceOperations { get; set; }
+        public System.Object[] ResourceOperations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;telecomExpenseManagementPartners&quot; property, of type &quot;microsoft.graph.telecomExpenseManagementPartner&quot;.</para>
@@ -292,7 +292,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;telecomExpenseManagementPartners&quot; property, of type &quot;microsoft.graph.telecomExpenseManagementPartner&quot;.")]
-        public System.Object[] telecomExpenseManagementPartners { get; set; }
+        public System.Object[] TelecomExpenseManagementPartners { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;remoteAssistancePartners&quot; property, of type &quot;microsoft.graph.remoteAssistancePartner&quot;.</para>
@@ -303,7 +303,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;remoteAssistancePartners&quot; property, of type &quot;microsoft.graph.remoteAssistancePartner&quot;.")]
-        public System.Object[] remoteAssistancePartners { get; set; }
+        public System.Object[] RemoteAssistancePartners { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsInformationProtectionAppLearningSummaries&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLearningSummary&quot;.</para>
@@ -314,7 +314,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;windowsInformationProtectionAppLearningSummaries&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLearningSummary&quot;.")]
-        public System.Object[] windowsInformationProtectionAppLearningSummaries { get; set; }
+        public System.Object[] WindowsInformationProtectionAppLearningSummaries { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsInformationProtectionNetworkLearningSummaries&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot;.</para>
@@ -325,7 +325,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;windowsInformationProtectionNetworkLearningSummaries&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot;.")]
-        public System.Object[] windowsInformationProtectionNetworkLearningSummaries { get; set; }
+        public System.Object[] WindowsInformationProtectionNetworkLearningSummaries { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;troubleshootingEvents&quot; property, of type &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot;.</para>
@@ -336,6 +336,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagement", HelpMessage = @"The &quot;troubleshootingEvents&quot; property, of type &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot;.")]
-        public System.Object[] troubleshootingEvents { get; set; }
+        public System.Object[] TroubleshootingEvents { get; set; }
     }
 }

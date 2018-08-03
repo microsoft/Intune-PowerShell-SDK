@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartGridlines", HelpMessage = @"The &quot;visible&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean visible { get; set; }
+        public System.Boolean Visible { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartGridlinesFormat&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartGridlinesFormat")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartGridlines", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartGridlinesFormat&quot;.")]
-        public System.Object format { get; set; }
+        public System.Object Format { get; set; }
     }
 }

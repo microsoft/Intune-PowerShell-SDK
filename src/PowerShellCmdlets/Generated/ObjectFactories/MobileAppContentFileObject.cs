@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.mobileAppContentFile", HelpMessage = @"The &quot;azureStorageUri&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String azureStorageUri { get; set; }
+        public System.String AzureStorageUri { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isCommitted&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.mobileAppContentFile", HelpMessage = @"The &quot;isCommitted&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isCommitted { get; set; }
+        public System.Boolean IsCommitted { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.mobileAppContentFile", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset createdDateTime { get; set; }
+        public System.DateTimeOffset CreatedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;name&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -51,7 +51,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.mobileAppContentFile", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String name { get; set; }
+        public System.String Name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.</para>
@@ -61,7 +61,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int64")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.mobileAppContentFile", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        public System.Int64 size { get; set; }
+        public System.Int64 Size { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sizeEncrypted&quot; property, of type &quot;Edm.Int64&quot;.</para>
@@ -71,7 +71,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int64")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.mobileAppContentFile", HelpMessage = @"The &quot;sizeEncrypted&quot; property, of type &quot;Edm.Int64&quot;.")]
-        public System.Int64 sizeEncrypted { get; set; }
+        public System.Int64 SizeEncrypted { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;azureStorageUriExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -81,7 +81,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.mobileAppContentFile", HelpMessage = @"The &quot;azureStorageUriExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset azureStorageUriExpirationDateTime { get; set; }
+        public System.DateTimeOffset AzureStorageUriExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;manifest&quot; property, of type &quot;Edm.Binary&quot;.</para>
@@ -92,7 +92,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.mobileAppContentFile", HelpMessage = @"The &quot;manifest&quot; property, of type &quot;Edm.Binary&quot;.")]
-        public System.Byte[] manifest { get; set; }
+        public System.Byte[] Manifest { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;uploadState&quot; property, of type &quot;microsoft.graph.mobileAppContentFileUploadState&quot;.</para>
@@ -106,6 +106,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"success", @"transientError", @"error", @"unknown", @"azureStorageUriRequestSuccess", @"azureStorageUriRequestPending", @"azureStorageUriRequestFailed", @"azureStorageUriRequestTimedOut", @"azureStorageUriRenewalSuccess", @"azureStorageUriRenewalPending", @"azureStorageUriRenewalFailed", @"azureStorageUriRenewalTimedOut", @"commitFileSuccess", @"commitFilePending", @"commitFileFailed", @"commitFileTimedOut")]
         [Parameter(ParameterSetName = @"#microsoft.graph.mobileAppContentFile", HelpMessage = @"The &quot;uploadState&quot; property, of type &quot;microsoft.graph.mobileAppContentFileUploadState&quot;.")]
-        public System.String uploadState { get; set; }
+        public System.String UploadState { get; set; }
     }
 }

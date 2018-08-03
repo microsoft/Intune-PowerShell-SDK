@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.appConfigurationSettingItem", HelpMessage = @"The &quot;appConfigKey&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String appConfigKey { get; set; }
+        public System.String AppConfigKey { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appConfigKeyType&quot; property, of type &quot;microsoft.graph.mdmAppConfigKeyType&quot;.</para>
@@ -34,7 +34,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"stringType", @"integerType", @"realType", @"booleanType", @"tokenType")]
         [Parameter(ParameterSetName = @"#microsoft.graph.appConfigurationSettingItem", HelpMessage = @"The &quot;appConfigKeyType&quot; property, of type &quot;microsoft.graph.mdmAppConfigKeyType&quot;.")]
-        public System.String appConfigKeyType { get; set; }
+        public System.String AppConfigKeyType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appConfigKeyValue&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -44,6 +44,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.appConfigurationSettingItem", HelpMessage = @"The &quot;appConfigKeyValue&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String appConfigKeyValue { get; set; }
+        public System.String AppConfigKeyValue { get; set; }
     }
 }

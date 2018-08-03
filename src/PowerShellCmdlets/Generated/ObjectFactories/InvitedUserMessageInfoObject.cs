@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.invitedUserMessageInfo", HelpMessage = @"The &quot;ccRecipients&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
-        public System.Object[] ccRecipients { get; set; }
+        public System.Object[] CcRecipients { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;messageLanguage&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.invitedUserMessageInfo", HelpMessage = @"The &quot;messageLanguage&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String messageLanguage { get; set; }
+        public System.String MessageLanguage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;customizedMessageBody&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -38,6 +38,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.invitedUserMessageInfo", HelpMessage = @"The &quot;customizedMessageBody&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String customizedMessageBody { get; set; }
+        public System.String CustomizedMessageBody { get; set; }
     }
 }

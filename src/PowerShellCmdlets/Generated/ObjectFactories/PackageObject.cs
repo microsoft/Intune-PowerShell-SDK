@@ -19,6 +19,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.package", HelpMessage = @"The &quot;type&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String type { get; set; }
+        public System.String Type { get; set; }
     }
 }

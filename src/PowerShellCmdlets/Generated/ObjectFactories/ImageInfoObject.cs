@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.imageInfo", HelpMessage = @"The &quot;iconUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String iconUrl { get; set; }
+        public System.String IconUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;alternativeText&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.imageInfo", HelpMessage = @"The &quot;alternativeText&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String alternativeText { get; set; }
+        public System.String AlternativeText { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;alternateText&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.imageInfo", HelpMessage = @"The &quot;alternateText&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String alternateText { get; set; }
+        public System.String AlternateText { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;addImageQuery&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -46,6 +46,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.imageInfo", HelpMessage = @"The &quot;addImageQuery&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean addImageQuery { get; set; }
+        public System.Boolean AddImageQuery { get; set; }
     }
 }

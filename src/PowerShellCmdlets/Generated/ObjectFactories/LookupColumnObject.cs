@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.lookupColumn", HelpMessage = @"The &quot;allowMultipleValues&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean allowMultipleValues { get; set; }
+        public System.Boolean AllowMultipleValues { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowUnlimitedLength&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.lookupColumn", HelpMessage = @"The &quot;allowUnlimitedLength&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean allowUnlimitedLength { get; set; }
+        public System.Boolean AllowUnlimitedLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;columnName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.lookupColumn", HelpMessage = @"The &quot;columnName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String columnName { get; set; }
+        public System.String ColumnName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;listId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.lookupColumn", HelpMessage = @"The &quot;listId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String listId { get; set; }
+        public System.String ListId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;primaryLookupColumnId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -55,6 +55,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.lookupColumn", HelpMessage = @"The &quot;primaryLookupColumnId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String primaryLookupColumnId { get; set; }
+        public System.String PrimaryLookupColumnId { get; set; }
     }
 }

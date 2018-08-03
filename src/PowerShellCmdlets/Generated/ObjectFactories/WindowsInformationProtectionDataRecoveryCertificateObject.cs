@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDataRecoveryCertificate", HelpMessage = @"The &quot;subjectName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String subjectName { get; set; }
+        public System.String SubjectName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDataRecoveryCertificate", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDataRecoveryCertificate", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset expirationDateTime { get; set; }
+        public System.DateTimeOffset ExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;certificate&quot; property, of type &quot;Edm.Binary&quot;.</para>
@@ -51,6 +51,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDataRecoveryCertificate", HelpMessage = @"The &quot;certificate&quot; property, of type &quot;Edm.Binary&quot;.")]
-        public System.Byte[] certificate { get; set; }
+        public System.Byte[] Certificate { get; set; }
     }
 }

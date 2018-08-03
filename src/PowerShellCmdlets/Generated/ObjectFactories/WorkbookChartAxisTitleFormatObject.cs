@@ -19,6 +19,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartFont")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartAxisTitleFormat", HelpMessage = @"The &quot;font&quot; property, of type &quot;microsoft.graph.workbookChartFont&quot;.")]
-        public System.Object font { get; set; }
+        public System.Object Font { get; set; }
     }
 }

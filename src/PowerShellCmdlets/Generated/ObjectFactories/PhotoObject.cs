@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.photo", HelpMessage = @"The &quot;cameraMake&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String cameraMake { get; set; }
+        public System.String CameraMake { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cameraModel&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.photo", HelpMessage = @"The &quot;cameraModel&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String cameraModel { get; set; }
+        public System.String CameraModel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exposureDenominator&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.photo", HelpMessage = @"The &quot;exposureDenominator&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double exposureDenominator { get; set; }
+        public System.Double ExposureDenominator { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exposureNumerator&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.photo", HelpMessage = @"The &quot;exposureNumerator&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double exposureNumerator { get; set; }
+        public System.Double ExposureNumerator { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;fNumber&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.photo", HelpMessage = @"The &quot;fNumber&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double fNumber { get; set; }
+        public System.Double FNumber { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;focalLength&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.photo", HelpMessage = @"The &quot;focalLength&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double focalLength { get; set; }
+        public System.Double FocalLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iso&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.photo", HelpMessage = @"The &quot;iso&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 iso { get; set; }
+        public System.Int32 Iso { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;takenDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -82,6 +82,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.photo", HelpMessage = @"The &quot;takenDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset takenDateTime { get; set; }
+        public System.DateTimeOffset TakenDateTime { get; set; }
     }
 }

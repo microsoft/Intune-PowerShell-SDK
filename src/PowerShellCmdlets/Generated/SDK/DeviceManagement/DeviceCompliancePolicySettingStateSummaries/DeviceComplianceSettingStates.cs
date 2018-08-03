@@ -6,12 +6,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.deviceComplianceSettingState&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates</para>
+    ///     <para type="description">GET ~/deviceManagement/deviceCompliancePolicySettingStateSummaries/{DeviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceComplianceSettingState&quot; objects in the &quot;deviceComplianceSettingStates&quot; collection.</para>
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_DeviceCompliancePolicySettingStateSummaries_DeviceComplianceSettingStates", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceComplianceSettingState")]
-    [ResourceIdPropertyName("deviceComplianceSettingStateId")]
+    [ResourceIdPropertyName("DeviceComplianceSettingStateId")]
     [ResourceReference]
     public class Get_DeviceManagement_DeviceCompliancePolicySettingStateSummaries_DeviceComplianceSettingStates : GetOrSearchCmdlet
     {
@@ -21,16 +21,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object in the &quot;deviceCompliancePolicySettingStateSummaries&quot; collection.")]
-        public System.String deviceCompliancePolicySettingStateSummaryId { get; set; }
+        public System.String DeviceCompliancePolicySettingStateSummaryId { get; set; }
 
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceComplianceSettingState&quot; object in the &quot;deviceComplianceSettingStates&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceComplianceSettingState&quot; object in the &quot;deviceComplianceSettingStates&quot; collection.")]
-        public System.String deviceComplianceSettingStateId { get; set; }
+        public System.String DeviceComplianceSettingStateId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;setting&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String setting { get; set; }
+        public System.String Setting { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String settingName { get; set; }
+        public System.String SettingName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -60,7 +60,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String deviceId { get; set; }
+        public System.String DeviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -70,7 +70,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String deviceName { get; set; }
+        public System.String DeviceName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -80,7 +80,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String userId { get; set; }
+        public System.String UserId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userEmail&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -90,7 +90,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String userEmail { get; set; }
+        public System.String UserEmail { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -100,7 +100,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String userName { get; set; }
+        public System.String UserName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -110,7 +110,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String userPrincipalName { get; set; }
+        public System.String UserPrincipalName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceModel&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -120,7 +120,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String deviceModel { get; set; }
+        public System.String DeviceModel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;state&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.</para>
@@ -130,7 +130,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.complianceStatus")]
         [Selectable]
         [Sortable]
-        public System.String state { get; set; }
+        public System.String State { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;complianceGracePeriodExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -140,17 +140,26 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset complianceGracePeriodExpirationDateTime { get; set; }
+        public System.DateTimeOffset ComplianceGracePeriodExpirationDateTime { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.deviceComplianceSettingState&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String Id { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/{deviceComplianceSettingStateId ?? string.Empty}";
+            return $"deviceManagement/deviceCompliancePolicySettingStateSummaries/{DeviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/{DeviceComplianceSettingStateId ?? string.Empty}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceComplianceSettingState&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates</para>
+    ///     <para type="description">POST ~/deviceManagement/deviceCompliancePolicySettingStateSummaries/{DeviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceComplianceSettingState&quot; object to the &quot;deviceComplianceSettingStates&quot; collection.</para>
     /// </summary>
     [Cmdlet("New", "DeviceManagement_DeviceCompliancePolicySettingStateSummaries_DeviceComplianceSettingStates", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"#microsoft.graph.deviceComplianceSettingState")]
@@ -164,7 +173,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object in the &quot;deviceCompliancePolicySettingStateSummaries&quot; collection.")]
-        public System.String deviceCompliancePolicySettingStateSummaryId { get; set; }
+        public System.String DeviceCompliancePolicySettingStateSummaryId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;setting&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -175,7 +184,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;setting&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;setting&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String setting { get; set; }
+        public System.String Setting { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -186,7 +195,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;settingName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;settingName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String settingName { get; set; }
+        public System.String SettingName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -197,7 +206,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String deviceId { get; set; }
+        public System.String DeviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -208,7 +217,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String deviceName { get; set; }
+        public System.String DeviceName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -219,7 +228,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String userId { get; set; }
+        public System.String UserId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userEmail&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -230,7 +239,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;userEmail&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userEmail&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String userEmail { get; set; }
+        public System.String UserEmail { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -241,7 +250,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;userName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String userName { get; set; }
+        public System.String UserName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -252,7 +261,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String userPrincipalName { get; set; }
+        public System.String UserPrincipalName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceModel&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -263,7 +272,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;deviceModel&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceModel&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String deviceModel { get; set; }
+        public System.String DeviceModel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;state&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.</para>
@@ -278,7 +287,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"unknown", @"notApplicable", @"compliant", @"remediated", @"nonCompliant", @"error", @"conflict")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.")]
-        public System.String state { get; set; }
+        public System.String State { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;complianceGracePeriodExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -289,32 +298,32 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;complianceGracePeriodExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;complianceGracePeriodExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset complianceGracePeriodExpirationDateTime { get; set; }
+        public System.DateTimeOffset ComplianceGracePeriodExpirationDateTime { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates";
+            return $"deviceManagement/deviceCompliancePolicySettingStateSummaries/{DeviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceComplianceSettingState&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates</para>
+    ///     <para type="description">PATCH ~/deviceManagement/deviceCompliancePolicySettingStateSummaries/{DeviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceComplianceSettingState&quot; object in the &quot;deviceComplianceSettingStates&quot; collection.</para>
     /// </summary>
     [Cmdlet("Update", "DeviceManagement_DeviceCompliancePolicySettingStateSummaries_DeviceComplianceSettingStates", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.deviceComplianceSettingState")]
     [ODataType("microsoft.graph.deviceComplianceSettingState")]
-    [ResourceIdPropertyName("deviceComplianceSettingStateId")]
+    [ResourceIdPropertyName("DeviceComplianceSettingStateId")]
     public class Update_DeviceManagement_DeviceCompliancePolicySettingStateSummaries_DeviceComplianceSettingStates : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceComplianceSettingState&quot; object in the &quot;deviceComplianceSettingStates&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceComplianceSettingState&quot; object in the &quot;deviceComplianceSettingStates&quot; collection.")]
-        public System.String deviceComplianceSettingStateId { get; set; }
+        public System.String DeviceComplianceSettingStateId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object in the &quot;deviceCompliancePolicySettingStateSummaries&quot; collection.</para>
@@ -322,7 +331,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object in the &quot;deviceCompliancePolicySettingStateSummaries&quot; collection.")]
-        public System.String deviceCompliancePolicySettingStateSummaryId { get; set; }
+        public System.String DeviceCompliancePolicySettingStateSummaryId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;setting&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -333,7 +342,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;setting&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;setting&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String setting { get; set; }
+        public System.String Setting { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -344,7 +353,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;settingName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;settingName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String settingName { get; set; }
+        public System.String SettingName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -355,7 +364,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String deviceId { get; set; }
+        public System.String DeviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -366,7 +375,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String deviceName { get; set; }
+        public System.String DeviceName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -377,7 +386,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String userId { get; set; }
+        public System.String UserId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userEmail&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -388,7 +397,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;userEmail&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userEmail&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String userEmail { get; set; }
+        public System.String UserEmail { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -399,7 +408,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;userName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String userName { get; set; }
+        public System.String UserName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -410,7 +419,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String userPrincipalName { get; set; }
+        public System.String UserPrincipalName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceModel&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -421,7 +430,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;deviceModel&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceModel&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String deviceModel { get; set; }
+        public System.String DeviceModel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;state&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.</para>
@@ -436,7 +445,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"unknown", @"notApplicable", @"compliant", @"remediated", @"nonCompliant", @"error", @"conflict")]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.")]
-        public System.String state { get; set; }
+        public System.String State { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;complianceGracePeriodExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -447,32 +456,32 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;complianceGracePeriodExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;complianceGracePeriodExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset complianceGracePeriodExpirationDateTime { get; set; }
+        public System.DateTimeOffset ComplianceGracePeriodExpirationDateTime { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/{deviceComplianceSettingStateId}";
+            return $"deviceManagement/deviceCompliancePolicySettingStateSummaries/{DeviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/{DeviceComplianceSettingStateId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceComplianceSettingState&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/deviceComplianceSettingStateId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/deviceCompliancePolicySettingStateSummaries/{DeviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/DeviceComplianceSettingStateId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceComplianceSettingState&quot; object from the &quot;deviceComplianceSettingStates&quot; collection.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_DeviceCompliancePolicySettingStateSummaries_DeviceComplianceSettingStates", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceComplianceSettingState")]
-    [ResourceIdPropertyName("deviceComplianceSettingStateId")]
+    [ResourceIdPropertyName("DeviceComplianceSettingStateId")]
     public class Remove_DeviceManagement_DeviceCompliancePolicySettingStateSummaries_DeviceComplianceSettingStates : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceComplianceSettingState&quot; object in the &quot;deviceComplianceSettingStates&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("id")]
+        [Alias("Id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceComplianceSettingState&quot; object in the &quot;deviceComplianceSettingStates&quot; collection.")]
-        public System.String deviceComplianceSettingStateId { get; set; }
+        public System.String DeviceComplianceSettingStateId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object in the &quot;deviceCompliancePolicySettingStateSummaries&quot; collection.</para>
@@ -480,11 +489,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object in the &quot;deviceCompliancePolicySettingStateSummaries&quot; collection.")]
-        public System.String deviceCompliancePolicySettingStateSummaryId { get; set; }
+        public System.String DeviceCompliancePolicySettingStateSummaryId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/{deviceComplianceSettingStateId}";
+            return $"deviceManagement/deviceCompliancePolicySettingStateSummaries/{DeviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/{DeviceComplianceSettingStateId}";
         }
     }
 }

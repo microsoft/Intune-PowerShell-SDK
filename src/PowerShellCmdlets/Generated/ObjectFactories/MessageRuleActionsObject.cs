@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRuleActions", HelpMessage = @"The &quot;moveToFolder&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String moveToFolder { get; set; }
+        public System.String MoveToFolder { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;copyToFolder&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRuleActions", HelpMessage = @"The &quot;copyToFolder&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String copyToFolder { get; set; }
+        public System.String CopyToFolder { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;delete&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRuleActions", HelpMessage = @"The &quot;delete&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean delete { get; set; }
+        public System.Boolean Delete { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;permanentDelete&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRuleActions", HelpMessage = @"The &quot;permanentDelete&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean permanentDelete { get; set; }
+        public System.Boolean PermanentDelete { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;markAsRead&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRuleActions", HelpMessage = @"The &quot;markAsRead&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean markAsRead { get; set; }
+        public System.Boolean MarkAsRead { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;markImportance&quot; property, of type &quot;microsoft.graph.importance&quot;.</para>
@@ -68,7 +68,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"low", @"normal", @"high")]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRuleActions", HelpMessage = @"The &quot;markImportance&quot; property, of type &quot;microsoft.graph.importance&quot;.")]
-        public System.String markImportance { get; set; }
+        public System.String MarkImportance { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;forwardTo&quot; property, of type &quot;microsoft.graph.recipient&quot;.</para>
@@ -78,7 +78,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRuleActions", HelpMessage = @"The &quot;forwardTo&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
-        public System.Object[] forwardTo { get; set; }
+        public System.Object[] ForwardTo { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;forwardAsAttachmentTo&quot; property, of type &quot;microsoft.graph.recipient&quot;.</para>
@@ -88,7 +88,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRuleActions", HelpMessage = @"The &quot;forwardAsAttachmentTo&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
-        public System.Object[] forwardAsAttachmentTo { get; set; }
+        public System.Object[] ForwardAsAttachmentTo { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;redirectTo&quot; property, of type &quot;microsoft.graph.recipient&quot;.</para>
@@ -98,7 +98,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRuleActions", HelpMessage = @"The &quot;redirectTo&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
-        public System.Object[] redirectTo { get; set; }
+        public System.Object[] RedirectTo { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;assignCategories&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -108,7 +108,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRuleActions", HelpMessage = @"The &quot;assignCategories&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] assignCategories { get; set; }
+        public System.String[] AssignCategories { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;stopProcessingRules&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -117,6 +117,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRuleActions", HelpMessage = @"The &quot;stopProcessingRules&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean stopProcessingRules { get; set; }
+        public System.Boolean StopProcessingRules { get; set; }
     }
 }

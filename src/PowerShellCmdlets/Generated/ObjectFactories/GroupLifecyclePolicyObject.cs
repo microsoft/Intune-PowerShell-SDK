@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.groupLifecyclePolicy", HelpMessage = @"The &quot;groupLifetimeInDays&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 groupLifetimeInDays { get; set; }
+        public System.Int32 GroupLifetimeInDays { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedGroupTypes&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.groupLifecyclePolicy", HelpMessage = @"The &quot;managedGroupTypes&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String managedGroupTypes { get; set; }
+        public System.String ManagedGroupTypes { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;alternateNotificationEmails&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,6 +37,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.groupLifecyclePolicy", HelpMessage = @"The &quot;alternateNotificationEmails&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String alternateNotificationEmails { get; set; }
+        public System.String AlternateNotificationEmails { get; set; }
     }
 }

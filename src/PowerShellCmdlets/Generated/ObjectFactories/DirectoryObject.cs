@@ -20,6 +20,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.directory", HelpMessage = @"The &quot;deletedItems&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
-        public System.Object[] deletedItems { get; set; }
+        public System.Object[] DeletedItems { get; set; }
     }
 }

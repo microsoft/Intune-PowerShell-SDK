@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.attendeeBase")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.attendeeAvailability", HelpMessage = @"The &quot;attendee&quot; property, of type &quot;microsoft.graph.attendeeBase&quot;.")]
-        public System.Object attendee { get; set; }
+        public System.Object Attendee { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;availability&quot; property, of type &quot;microsoft.graph.freeBusyStatus&quot;.</para>
@@ -32,6 +32,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"free", @"tentative", @"busy", @"oof", @"workingElsewhere", @"unknown")]
         [Parameter(ParameterSetName = @"#microsoft.graph.attendeeAvailability", HelpMessage = @"The &quot;availability&quot; property, of type &quot;microsoft.graph.freeBusyStatus&quot;.")]
-        public System.String availability { get; set; }
+        public System.String Availability { get; set; }
     }
 }

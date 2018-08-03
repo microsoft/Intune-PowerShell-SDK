@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.automaticRepliesSetting")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.mailboxSettings", HelpMessage = @"The &quot;automaticRepliesSetting&quot; property, of type &quot;microsoft.graph.automaticRepliesSetting&quot;.")]
-        public System.Object automaticRepliesSetting { get; set; }
+        public System.Object AutomaticRepliesSetting { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;archiveFolder&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.mailboxSettings", HelpMessage = @"The &quot;archiveFolder&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String archiveFolder { get; set; }
+        public System.String ArchiveFolder { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;timeZone&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.mailboxSettings", HelpMessage = @"The &quot;timeZone&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String timeZone { get; set; }
+        public System.String TimeZone { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;language&quot; property, of type &quot;microsoft.graph.localeInfo&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.localeInfo")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.mailboxSettings", HelpMessage = @"The &quot;language&quot; property, of type &quot;microsoft.graph.localeInfo&quot;.")]
-        public System.Object language { get; set; }
+        public System.Object Language { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;workingHours&quot; property, of type &quot;microsoft.graph.workingHours&quot;.</para>
@@ -55,6 +55,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workingHours")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.mailboxSettings", HelpMessage = @"The &quot;workingHours&quot; property, of type &quot;microsoft.graph.workingHours&quot;.")]
-        public System.Object workingHours { get; set; }
+        public System.Object WorkingHours { get; set; }
     }
 }

@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedDeviceOverview", HelpMessage = @"The &quot;enrolledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 enrolledDeviceCount { get; set; }
+        public System.Int32 EnrolledDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mdmEnrolledCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedDeviceOverview", HelpMessage = @"The &quot;mdmEnrolledCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 mdmEnrolledCount { get; set; }
+        public System.Int32 MdmEnrolledCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;dualEnrolledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedDeviceOverview", HelpMessage = @"The &quot;dualEnrolledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 dualEnrolledDeviceCount { get; set; }
+        public System.Int32 DualEnrolledDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceOperatingSystemSummary&quot; property, of type &quot;microsoft.graph.deviceOperatingSystemSummary&quot;.</para>
@@ -51,7 +51,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceOperatingSystemSummary")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedDeviceOverview", HelpMessage = @"The &quot;deviceOperatingSystemSummary&quot; property, of type &quot;microsoft.graph.deviceOperatingSystemSummary&quot;.")]
-        public System.Object deviceOperatingSystemSummary { get; set; }
+        public System.Object DeviceOperatingSystemSummary { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceExchangeAccessStateSummary&quot; property, of type &quot;microsoft.graph.deviceExchangeAccessStateSummary&quot;.</para>
@@ -61,6 +61,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceExchangeAccessStateSummary")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedDeviceOverview", HelpMessage = @"The &quot;deviceExchangeAccessStateSummary&quot; property, of type &quot;microsoft.graph.deviceExchangeAccessStateSummary&quot;.")]
-        public System.Object deviceExchangeAccessStateSummary { get; set; }
+        public System.Object DeviceExchangeAccessStateSummary { get; set; }
     }
 }

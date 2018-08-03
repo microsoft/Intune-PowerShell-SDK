@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.externalLink")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebookLinks", HelpMessage = @"The &quot;oneNoteClientUrl&quot; property, of type &quot;microsoft.graph.externalLink&quot;.")]
-        public System.Object oneNoteClientUrl { get; set; }
+        public System.Object OneNoteClientUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;oneNoteWebUrl&quot; property, of type &quot;microsoft.graph.externalLink&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.externalLink")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebookLinks", HelpMessage = @"The &quot;oneNoteWebUrl&quot; property, of type &quot;microsoft.graph.externalLink&quot;.")]
-        public System.Object oneNoteWebUrl { get; set; }
+        public System.Object OneNoteWebUrl { get; set; }
     }
 }

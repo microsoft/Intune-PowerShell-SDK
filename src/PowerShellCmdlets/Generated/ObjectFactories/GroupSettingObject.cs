@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.groupSetting", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;templateId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.groupSetting", HelpMessage = @"The &quot;templateId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String templateId { get; set; }
+        public System.String TemplateId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;values&quot; property, of type &quot;microsoft.graph.settingValue&quot;.</para>
@@ -38,6 +38,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.groupSetting", HelpMessage = @"The &quot;values&quot; property, of type &quot;microsoft.graph.settingValue&quot;.")]
-        public System.Object[] values { get; set; }
+        public System.Object[] Values { get; set; }
     }
 }

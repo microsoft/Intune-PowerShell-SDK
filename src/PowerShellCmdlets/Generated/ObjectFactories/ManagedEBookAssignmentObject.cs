@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.managedEBookAssignment")]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedEBookAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedEBookAssignment&quot; type.")]
-        public System.Management.Automation.SwitchParameter managedEBookAssignment { get; set; }
+        public System.Management.Automation.SwitchParameter ManagedEBookAssignment { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedEBookAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBookAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
-        public System.Object target { get; set; }
+        public System.Object Target { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.</para>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"available", @"required", @"uninstall", @"availableWithoutEnrollment")]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedEBookAssignment", HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBookAssignment", HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
-        public System.String installIntent { get; set; }
+        public System.String InstallIntent { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppEBookAssignment&quot; type.</para>
@@ -53,6 +53,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.iosVppEBookAssignment")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBookAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppEBookAssignment&quot; type.")]
-        public System.Management.Automation.SwitchParameter iosVppEBookAssignment { get; set; }
+        public System.Management.Automation.SwitchParameter IosVppEBookAssignment { get; set; }
     }
 }

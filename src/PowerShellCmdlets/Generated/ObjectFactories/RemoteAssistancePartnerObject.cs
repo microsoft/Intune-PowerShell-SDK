@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteAssistancePartner", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;onboardingUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteAssistancePartner", HelpMessage = @"The &quot;onboardingUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String onboardingUrl { get; set; }
+        public System.String OnboardingUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;onboardingStatus&quot; property, of type &quot;microsoft.graph.remoteAssistanceOnboardingStatus&quot;.</para>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notOnboarded", @"onboarding", @"onboarded")]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteAssistancePartner", HelpMessage = @"The &quot;onboardingStatus&quot; property, of type &quot;microsoft.graph.remoteAssistanceOnboardingStatus&quot;.")]
-        public System.String onboardingStatus { get; set; }
+        public System.String OnboardingStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -55,6 +55,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteAssistancePartner", HelpMessage = @"The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastConnectionDateTime { get; set; }
+        public System.DateTimeOffset LastConnectionDateTime { get; set; }
     }
 }

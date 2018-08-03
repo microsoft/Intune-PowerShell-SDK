@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.localizedNotificationMessage", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;locale&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.localizedNotificationMessage", HelpMessage = @"The &quot;locale&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String locale { get; set; }
+        public System.String Locale { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;subject&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.localizedNotificationMessage", HelpMessage = @"The &quot;subject&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String subject { get; set; }
+        public System.String Subject { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;messageTemplate&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -51,7 +51,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.localizedNotificationMessage", HelpMessage = @"The &quot;messageTemplate&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String messageTemplate { get; set; }
+        public System.String MessageTemplate { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isDefault&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -61,6 +61,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.localizedNotificationMessage", HelpMessage = @"The &quot;isDefault&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isDefault { get; set; }
+        public System.Boolean IsDefault { get; set; }
     }
 }

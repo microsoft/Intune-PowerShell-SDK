@@ -24,7 +24,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"sunday", @"monday", @"tuesday", @"wednesday", @"thursday", @"friday", @"saturday")]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.workingHours", HelpMessage = @"The &quot;daysOfWeek&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.")]
-        public System.String[] daysOfWeek { get; set; }
+        public System.String[] DaysOfWeek { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.</para>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workingHours", HelpMessage = @"The &quot;startTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
-        public System.TimeSpan startTime { get; set; }
+        public System.TimeSpan StartTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;endTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.</para>
@@ -42,7 +42,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workingHours", HelpMessage = @"The &quot;endTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
-        public System.TimeSpan endTime { get; set; }
+        public System.TimeSpan EndTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;timeZone&quot; property, of type &quot;microsoft.graph.timeZoneBase&quot;.</para>
@@ -51,6 +51,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.timeZoneBase")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workingHours", HelpMessage = @"The &quot;timeZone&quot; property, of type &quot;microsoft.graph.timeZoneBase&quot;.")]
-        public System.Object timeZone { get; set; }
+        public System.Object TimeZone { get; set; }
     }
 }

@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerChecklistItem", HelpMessage = @"The &quot;isChecked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isChecked { get; set; }
+        public System.Boolean IsChecked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;title&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerChecklistItem", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String title { get; set; }
+        public System.String Title { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;orderHint&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerChecklistItem", HelpMessage = @"The &quot;orderHint&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String orderHint { get; set; }
+        public System.String OrderHint { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.identitySet")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerChecklistItem", HelpMessage = @"The &quot;lastModifiedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
-        public System.Object lastModifiedBy { get; set; }
+        public System.Object LastModifiedBy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -55,6 +55,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerChecklistItem", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
     }
 }

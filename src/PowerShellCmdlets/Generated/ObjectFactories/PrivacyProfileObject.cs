@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.privacyProfile", HelpMessage = @"The &quot;contactEmail&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String contactEmail { get; set; }
+        public System.String ContactEmail { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;statementUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.privacyProfile", HelpMessage = @"The &quot;statementUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String statementUrl { get; set; }
+        public System.String StatementUrl { get; set; }
     }
 }

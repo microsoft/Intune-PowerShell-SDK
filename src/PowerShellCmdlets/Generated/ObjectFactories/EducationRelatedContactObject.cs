@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationRelatedContact", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;emailAddress&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationRelatedContact", HelpMessage = @"The &quot;emailAddress&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String emailAddress { get; set; }
+        public System.String EmailAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mobilePhone&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationRelatedContact", HelpMessage = @"The &quot;mobilePhone&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String mobilePhone { get; set; }
+        public System.String MobilePhone { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;relationship&quot; property, of type &quot;microsoft.graph.educationContactRelationship&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"parent", @"relative", @"aide", @"doctor", @"guardian", @"child", @"other", @"unknownFutureValue")]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationRelatedContact", HelpMessage = @"The &quot;relationship&quot; property, of type &quot;microsoft.graph.educationContactRelationship&quot;.")]
-        public System.String relationship { get; set; }
+        public System.String Relationship { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;accessConsent&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -59,6 +59,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationRelatedContact", HelpMessage = @"The &quot;accessConsent&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean accessConsent { get; set; }
+        public System.Boolean AccessConsent { get; set; }
     }
 }

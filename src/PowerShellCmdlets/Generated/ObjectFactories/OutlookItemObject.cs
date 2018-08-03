@@ -24,7 +24,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset createdDateTime { get; set; }
+        public System.DateTimeOffset CreatedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -38,7 +38,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;changeKey&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -52,7 +52,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;changeKey&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;changeKey&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;changeKey&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String changeKey { get; set; }
+        public System.String ChangeKey { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;categories&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -67,7 +67,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;categories&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;categories&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;categories&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] categories { get; set; }
+        public System.String[] Categories { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.post&quot; type.</para>
@@ -75,7 +75,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.post")]
         [Parameter(ParameterSetName = @"#microsoft.graph.post", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.post&quot; type.")]
-        public System.Management.Automation.SwitchParameter post { get; set; }
+        public System.Management.Automation.SwitchParameter Post { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;body&quot; property, of type &quot;microsoft.graph.itemBody&quot;.</para>
@@ -87,7 +87,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;body&quot; property, of type &quot;microsoft.graph.itemBody&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;body&quot; property, of type &quot;microsoft.graph.itemBody&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;body&quot; property, of type &quot;microsoft.graph.itemBody&quot;.")]
-        public System.Object body { get; set; }
+        public System.Object Body { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;receivedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -98,7 +98,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.post", HelpMessage = @"The &quot;receivedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;receivedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;receivedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset receivedDateTime { get; set; }
+        public System.DateTimeOffset ReceivedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;hasAttachments&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -110,7 +110,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;hasAttachments&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;hasAttachments&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;hasAttachments&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean hasAttachments { get; set; }
+        public System.Boolean HasAttachments { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;from&quot; property, of type &quot;microsoft.graph.recipient&quot;.</para>
@@ -121,7 +121,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.post", HelpMessage = @"The &quot;from&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;from&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;from&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
-        public System.Object from { get; set; }
+        public System.Object From { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sender&quot; property, of type &quot;microsoft.graph.recipient&quot;.</para>
@@ -132,7 +132,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.post", HelpMessage = @"The &quot;sender&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;sender&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;sender&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
-        public System.Object sender { get; set; }
+        public System.Object Sender { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;conversationThreadId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -141,7 +141,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.post", HelpMessage = @"The &quot;conversationThreadId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String conversationThreadId { get; set; }
+        public System.String ConversationThreadId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;newParticipants&quot; property, of type &quot;microsoft.graph.recipient&quot;.</para>
@@ -151,7 +151,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.post", HelpMessage = @"The &quot;newParticipants&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
-        public System.Object[] newParticipants { get; set; }
+        public System.Object[] NewParticipants { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;conversationId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -162,7 +162,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.post", HelpMessage = @"The &quot;conversationId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;conversationId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;conversationId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String conversationId { get; set; }
+        public System.String ConversationId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;extensions&quot; property, of type &quot;microsoft.graph.extension&quot;.</para>
@@ -176,7 +176,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;extensions&quot; property, of type &quot;microsoft.graph.extension&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;extensions&quot; property, of type &quot;microsoft.graph.extension&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;extensions&quot; property, of type &quot;microsoft.graph.extension&quot;.")]
-        public System.Object[] extensions { get; set; }
+        public System.Object[] Extensions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;inReplyTo&quot; property, of type &quot;microsoft.graph.post&quot;.</para>
@@ -185,7 +185,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.post")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.post", HelpMessage = @"The &quot;inReplyTo&quot; property, of type &quot;microsoft.graph.post&quot;.")]
-        public System.Object inReplyTo { get; set; }
+        public System.Object InReplyTo { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;attachments&quot; property, of type &quot;microsoft.graph.attachment&quot;.</para>
@@ -198,7 +198,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;attachments&quot; property, of type &quot;microsoft.graph.attachment&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;attachments&quot; property, of type &quot;microsoft.graph.attachment&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;attachments&quot; property, of type &quot;microsoft.graph.attachment&quot;.")]
-        public System.Object[] attachments { get; set; }
+        public System.Object[] Attachments { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;singleValueExtendedProperties&quot; property, of type &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot;.</para>
@@ -212,7 +212,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;singleValueExtendedProperties&quot; property, of type &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;singleValueExtendedProperties&quot; property, of type &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;singleValueExtendedProperties&quot; property, of type &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot;.")]
-        public System.Object[] singleValueExtendedProperties { get; set; }
+        public System.Object[] SingleValueExtendedProperties { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;multiValueExtendedProperties&quot; property, of type &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot;.</para>
@@ -226,7 +226,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;multiValueExtendedProperties&quot; property, of type &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;multiValueExtendedProperties&quot; property, of type &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;multiValueExtendedProperties&quot; property, of type &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot;.")]
-        public System.Object[] multiValueExtendedProperties { get; set; }
+        public System.Object[] MultiValueExtendedProperties { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contact&quot; type.</para>
@@ -234,7 +234,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.contact")]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contact&quot; type.")]
-        public System.Management.Automation.SwitchParameter contact { get; set; }
+        public System.Management.Automation.SwitchParameter Contact { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;parentFolderId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -245,7 +245,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;parentFolderId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;parentFolderId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;parentFolderId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String parentFolderId { get; set; }
+        public System.String ParentFolderId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;birthday&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -254,7 +254,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;birthday&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset birthday { get; set; }
+        public System.DateTimeOffset Birthday { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;fileAs&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -263,7 +263,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;fileAs&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String fileAs { get; set; }
+        public System.String FileAs { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -272,7 +272,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;givenName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -281,7 +281,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;givenName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String givenName { get; set; }
+        public System.String GivenName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;initials&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -290,7 +290,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;initials&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String initials { get; set; }
+        public System.String Initials { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;middleName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -299,7 +299,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;middleName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String middleName { get; set; }
+        public System.String MiddleName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;nickName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -308,7 +308,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;nickName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String nickName { get; set; }
+        public System.String NickName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;surname&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -317,7 +317,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;surname&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String surname { get; set; }
+        public System.String Surname { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;title&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -326,7 +326,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String title { get; set; }
+        public System.String Title { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;yomiGivenName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -335,7 +335,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;yomiGivenName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String yomiGivenName { get; set; }
+        public System.String YomiGivenName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;yomiSurname&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -344,7 +344,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;yomiSurname&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String yomiSurname { get; set; }
+        public System.String YomiSurname { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;yomiCompanyName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -353,7 +353,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;yomiCompanyName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String yomiCompanyName { get; set; }
+        public System.String YomiCompanyName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;generation&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -362,7 +362,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;generation&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String generation { get; set; }
+        public System.String Generation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;emailAddresses&quot; property, of type &quot;microsoft.graph.emailAddress&quot;.</para>
@@ -372,7 +372,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;emailAddresses&quot; property, of type &quot;microsoft.graph.emailAddress&quot;.")]
-        public System.Object[] emailAddresses { get; set; }
+        public System.Object[] EmailAddresses { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;imAddresses&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -382,7 +382,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;imAddresses&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] imAddresses { get; set; }
+        public System.String[] ImAddresses { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;jobTitle&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -391,7 +391,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;jobTitle&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String jobTitle { get; set; }
+        public System.String JobTitle { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;companyName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -400,7 +400,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;companyName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String companyName { get; set; }
+        public System.String CompanyName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;department&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -409,7 +409,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;department&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String department { get; set; }
+        public System.String Department { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;officeLocation&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -418,7 +418,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;officeLocation&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String officeLocation { get; set; }
+        public System.String OfficeLocation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;profession&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -427,7 +427,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;profession&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String profession { get; set; }
+        public System.String Profession { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;businessHomePage&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -436,7 +436,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;businessHomePage&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String businessHomePage { get; set; }
+        public System.String BusinessHomePage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;assistantName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -445,7 +445,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;assistantName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String assistantName { get; set; }
+        public System.String AssistantName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;manager&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -454,7 +454,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;manager&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String manager { get; set; }
+        public System.String Manager { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;homePhones&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -464,7 +464,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;homePhones&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] homePhones { get; set; }
+        public System.String[] HomePhones { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mobilePhone&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -473,7 +473,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;mobilePhone&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String mobilePhone { get; set; }
+        public System.String MobilePhone { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;businessPhones&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -483,7 +483,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;businessPhones&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] businessPhones { get; set; }
+        public System.String[] BusinessPhones { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;homeAddress&quot; property, of type &quot;microsoft.graph.physicalAddress&quot;.</para>
@@ -492,7 +492,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.physicalAddress")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;homeAddress&quot; property, of type &quot;microsoft.graph.physicalAddress&quot;.")]
-        public System.Object homeAddress { get; set; }
+        public System.Object HomeAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;businessAddress&quot; property, of type &quot;microsoft.graph.physicalAddress&quot;.</para>
@@ -501,7 +501,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.physicalAddress")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;businessAddress&quot; property, of type &quot;microsoft.graph.physicalAddress&quot;.")]
-        public System.Object businessAddress { get; set; }
+        public System.Object BusinessAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;otherAddress&quot; property, of type &quot;microsoft.graph.physicalAddress&quot;.</para>
@@ -510,7 +510,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.physicalAddress")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;otherAddress&quot; property, of type &quot;microsoft.graph.physicalAddress&quot;.")]
-        public System.Object otherAddress { get; set; }
+        public System.Object OtherAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;spouseName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -519,7 +519,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;spouseName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String spouseName { get; set; }
+        public System.String SpouseName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;personalNotes&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -528,7 +528,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;personalNotes&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String personalNotes { get; set; }
+        public System.String PersonalNotes { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;children&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -538,7 +538,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;children&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] children { get; set; }
+        public System.String[] Children { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;photo&quot; property, of type &quot;microsoft.graph.profilePhoto&quot;.</para>
@@ -547,7 +547,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.profilePhoto")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contact", HelpMessage = @"The &quot;photo&quot; property, of type &quot;microsoft.graph.profilePhoto&quot;.")]
-        public System.Object photo { get; set; }
+        public System.Object Photo { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.message&quot; type.</para>
@@ -555,7 +555,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.message")]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.message&quot; type.")]
-        public System.Management.Automation.SwitchParameter message { get; set; }
+        public System.Management.Automation.SwitchParameter Message { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sentDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -565,7 +565,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;sentDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;sentDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset sentDateTime { get; set; }
+        public System.DateTimeOffset SentDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;internetMessageId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -575,7 +575,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;internetMessageId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;internetMessageId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String internetMessageId { get; set; }
+        public System.String InternetMessageId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;internetMessageHeaders&quot; property, of type &quot;microsoft.graph.internetMessageHeader&quot;.</para>
@@ -586,7 +586,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;internetMessageHeaders&quot; property, of type &quot;microsoft.graph.internetMessageHeader&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;internetMessageHeaders&quot; property, of type &quot;microsoft.graph.internetMessageHeader&quot;.")]
-        public System.Object[] internetMessageHeaders { get; set; }
+        public System.Object[] InternetMessageHeaders { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;subject&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -597,7 +597,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;subject&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;subject&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;subject&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String subject { get; set; }
+        public System.String Subject { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bodyPreview&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -608,7 +608,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;bodyPreview&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;bodyPreview&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;bodyPreview&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String bodyPreview { get; set; }
+        public System.String BodyPreview { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;importance&quot; property, of type &quot;microsoft.graph.importance&quot;.</para>
@@ -623,7 +623,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;importance&quot; property, of type &quot;microsoft.graph.importance&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;importance&quot; property, of type &quot;microsoft.graph.importance&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;importance&quot; property, of type &quot;microsoft.graph.importance&quot;.")]
-        public System.String importance { get; set; }
+        public System.String Importance { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;toRecipients&quot; property, of type &quot;microsoft.graph.recipient&quot;.</para>
@@ -634,7 +634,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;toRecipients&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;toRecipients&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
-        public System.Object[] toRecipients { get; set; }
+        public System.Object[] ToRecipients { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;ccRecipients&quot; property, of type &quot;microsoft.graph.recipient&quot;.</para>
@@ -645,7 +645,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;ccRecipients&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;ccRecipients&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
-        public System.Object[] ccRecipients { get; set; }
+        public System.Object[] CcRecipients { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bccRecipients&quot; property, of type &quot;microsoft.graph.recipient&quot;.</para>
@@ -656,7 +656,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;bccRecipients&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;bccRecipients&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
-        public System.Object[] bccRecipients { get; set; }
+        public System.Object[] BccRecipients { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;replyTo&quot; property, of type &quot;microsoft.graph.recipient&quot;.</para>
@@ -667,7 +667,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;replyTo&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;replyTo&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
-        public System.Object[] replyTo { get; set; }
+        public System.Object[] ReplyTo { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;uniqueBody&quot; property, of type &quot;microsoft.graph.itemBody&quot;.</para>
@@ -677,7 +677,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;uniqueBody&quot; property, of type &quot;microsoft.graph.itemBody&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;uniqueBody&quot; property, of type &quot;microsoft.graph.itemBody&quot;.")]
-        public System.Object uniqueBody { get; set; }
+        public System.Object UniqueBody { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isDeliveryReceiptRequested&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -687,7 +687,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;isDeliveryReceiptRequested&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;isDeliveryReceiptRequested&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isDeliveryReceiptRequested { get; set; }
+        public System.Boolean IsDeliveryReceiptRequested { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isReadReceiptRequested&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -697,7 +697,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;isReadReceiptRequested&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;isReadReceiptRequested&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isReadReceiptRequested { get; set; }
+        public System.Boolean IsReadReceiptRequested { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isRead&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -707,7 +707,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;isRead&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;isRead&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isRead { get; set; }
+        public System.Boolean IsRead { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isDraft&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -717,7 +717,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;isDraft&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;isDraft&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isDraft { get; set; }
+        public System.Boolean IsDraft { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;webLink&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -728,7 +728,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;webLink&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;webLink&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;webLink&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String webLink { get; set; }
+        public System.String WebLink { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;inferenceClassification&quot; property, of type &quot;microsoft.graph.inferenceClassificationType&quot;.</para>
@@ -742,7 +742,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"focused", @"other")]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;inferenceClassification&quot; property, of type &quot;microsoft.graph.inferenceClassificationType&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;inferenceClassification&quot; property, of type &quot;microsoft.graph.inferenceClassificationType&quot;.")]
-        public System.String inferenceClassification { get; set; }
+        public System.String InferenceClassification { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;flag&quot; property, of type &quot;microsoft.graph.followupFlag&quot;.</para>
@@ -752,7 +752,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.message", HelpMessage = @"The &quot;flag&quot; property, of type &quot;microsoft.graph.followupFlag&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;flag&quot; property, of type &quot;microsoft.graph.followupFlag&quot;.")]
-        public System.Object flag { get; set; }
+        public System.Object Flag { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.eventMessage&quot; type.</para>
@@ -760,7 +760,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.eventMessage")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.eventMessage&quot; type.")]
-        public System.Management.Automation.SwitchParameter eventMessage { get; set; }
+        public System.Management.Automation.SwitchParameter EventMessage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;meetingMessageType&quot; property, of type &quot;microsoft.graph.meetingMessageType&quot;.</para>
@@ -773,7 +773,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"none", @"meetingRequest", @"meetingCancelled", @"meetingAccepted", @"meetingTenativelyAccepted", @"meetingDeclined")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;meetingMessageType&quot; property, of type &quot;microsoft.graph.meetingMessageType&quot;.")]
-        public System.String meetingMessageType { get; set; }
+        public System.String MeetingMessageType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;event&quot; property, of type &quot;microsoft.graph.event&quot;.</para>
@@ -783,7 +783,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ParameterSetSelector(@"#microsoft.graph.event")]
         [Parameter(ParameterSetName = @"#microsoft.graph.eventMessage", HelpMessage = @"The &quot;event&quot; property, of type &quot;microsoft.graph.event&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;event&quot; property, of type &quot;microsoft.graph.event&quot;.")]
-        public System.Object @event { get; set; }
+        public System.Object Event { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;originalStartTimeZone&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -792,7 +792,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;originalStartTimeZone&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String originalStartTimeZone { get; set; }
+        public System.String OriginalStartTimeZone { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;originalEndTimeZone&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -801,7 +801,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;originalEndTimeZone&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String originalEndTimeZone { get; set; }
+        public System.String OriginalEndTimeZone { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;responseStatus&quot; property, of type &quot;microsoft.graph.responseStatus&quot;.</para>
@@ -810,7 +810,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.responseStatus")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;responseStatus&quot; property, of type &quot;microsoft.graph.responseStatus&quot;.")]
-        public System.Object responseStatus { get; set; }
+        public System.Object ResponseStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iCalUId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -819,7 +819,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;iCalUId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String iCalUId { get; set; }
+        public System.String ICalUId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;reminderMinutesBeforeStart&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -828,7 +828,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;reminderMinutesBeforeStart&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 reminderMinutesBeforeStart { get; set; }
+        public System.Int32 ReminderMinutesBeforeStart { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isReminderOn&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -837,7 +837,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;isReminderOn&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isReminderOn { get; set; }
+        public System.Boolean IsReminderOn { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sensitivity&quot; property, of type &quot;microsoft.graph.sensitivity&quot;.</para>
@@ -850,7 +850,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"normal", @"personal", @"private", @"confidential")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;sensitivity&quot; property, of type &quot;microsoft.graph.sensitivity&quot;.")]
-        public System.String sensitivity { get; set; }
+        public System.String Sensitivity { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;start&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.</para>
@@ -859,7 +859,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.dateTimeTimeZone")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;start&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
-        public System.Object start { get; set; }
+        public System.Object Start { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;originalStart&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -868,7 +868,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;originalStart&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset originalStart { get; set; }
+        public System.DateTimeOffset OriginalStart { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;end&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.</para>
@@ -877,7 +877,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.dateTimeTimeZone")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;end&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
-        public System.Object end { get; set; }
+        public System.Object End { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;location&quot; property, of type &quot;microsoft.graph.location&quot;.</para>
@@ -886,7 +886,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.location")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;location&quot; property, of type &quot;microsoft.graph.location&quot;.")]
-        public System.Object location { get; set; }
+        public System.Object Location { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;locations&quot; property, of type &quot;microsoft.graph.location&quot;.</para>
@@ -896,7 +896,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;locations&quot; property, of type &quot;microsoft.graph.location&quot;.")]
-        public System.Object[] locations { get; set; }
+        public System.Object[] Locations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isAllDay&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -905,7 +905,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;isAllDay&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isAllDay { get; set; }
+        public System.Boolean IsAllDay { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isCancelled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -914,7 +914,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;isCancelled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isCancelled { get; set; }
+        public System.Boolean IsCancelled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isOrganizer&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -923,7 +923,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;isOrganizer&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean isOrganizer { get; set; }
+        public System.Boolean IsOrganizer { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;recurrence&quot; property, of type &quot;microsoft.graph.patternedRecurrence&quot;.</para>
@@ -932,7 +932,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.patternedRecurrence")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;recurrence&quot; property, of type &quot;microsoft.graph.patternedRecurrence&quot;.")]
-        public System.Object recurrence { get; set; }
+        public System.Object Recurrence { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;responseRequested&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -941,7 +941,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;responseRequested&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean responseRequested { get; set; }
+        public System.Boolean ResponseRequested { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;seriesMasterId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -950,7 +950,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;seriesMasterId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String seriesMasterId { get; set; }
+        public System.String SeriesMasterId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showAs&quot; property, of type &quot;microsoft.graph.freeBusyStatus&quot;.</para>
@@ -963,7 +963,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"free", @"tentative", @"busy", @"oof", @"workingElsewhere", @"unknown")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;showAs&quot; property, of type &quot;microsoft.graph.freeBusyStatus&quot;.")]
-        public System.String showAs { get; set; }
+        public System.String ShowAs { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;type&quot; property, of type &quot;microsoft.graph.eventType&quot;.</para>
@@ -976,7 +976,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"singleInstance", @"occurrence", @"exception", @"seriesMaster")]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;type&quot; property, of type &quot;microsoft.graph.eventType&quot;.")]
-        public System.String type { get; set; }
+        public System.String Type { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;attendees&quot; property, of type &quot;microsoft.graph.attendee&quot;.</para>
@@ -986,7 +986,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;attendees&quot; property, of type &quot;microsoft.graph.attendee&quot;.")]
-        public System.Object[] attendees { get; set; }
+        public System.Object[] Attendees { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;organizer&quot; property, of type &quot;microsoft.graph.recipient&quot;.</para>
@@ -995,7 +995,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.recipient")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;organizer&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
-        public System.Object organizer { get; set; }
+        public System.Object Organizer { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;onlineMeetingUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1004,7 +1004,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;onlineMeetingUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String onlineMeetingUrl { get; set; }
+        public System.String OnlineMeetingUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;calendar&quot; property, of type &quot;microsoft.graph.calendar&quot;.</para>
@@ -1013,7 +1013,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.calendar")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;calendar&quot; property, of type &quot;microsoft.graph.calendar&quot;.")]
-        public System.Object calendar { get; set; }
+        public System.Object Calendar { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;instances&quot; property, of type &quot;microsoft.graph.event&quot;.</para>
@@ -1023,6 +1023,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.event", HelpMessage = @"The &quot;instances&quot; property, of type &quot;microsoft.graph.event&quot;.")]
-        public System.Object[] instances { get; set; }
+        public System.Object[] Instances { get; set; }
     }
 }

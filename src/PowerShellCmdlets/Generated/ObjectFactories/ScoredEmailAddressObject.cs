@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.scoredEmailAddress", HelpMessage = @"The &quot;address&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String address { get; set; }
+        public System.String Address { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;relevanceScore&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.scoredEmailAddress", HelpMessage = @"The &quot;relevanceScore&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double relevanceScore { get; set; }
+        public System.Double RelevanceScore { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;selectionLikelihood&quot; property, of type &quot;microsoft.graph.selectionLikelihoodInfo&quot;.</para>
@@ -41,6 +41,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"notSpecified", @"high")]
         [Parameter(ParameterSetName = @"#microsoft.graph.scoredEmailAddress", HelpMessage = @"The &quot;selectionLikelihood&quot; property, of type &quot;microsoft.graph.selectionLikelihoodInfo&quot;.")]
-        public System.String selectionLikelihood { get; set; }
+        public System.String SelectionLikelihood { get; set; }
     }
 }

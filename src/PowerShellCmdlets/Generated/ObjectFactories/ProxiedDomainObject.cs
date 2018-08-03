@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.proxiedDomain", HelpMessage = @"The &quot;ipAddressOrFQDN&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ipAddressOrFQDN { get; set; }
+        public System.String IpAddressOrFQDN { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;proxy&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -30,6 +30,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.proxiedDomain", HelpMessage = @"The &quot;proxy&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String proxy { get; set; }
+        public System.String Proxy { get; set; }
     }
 }

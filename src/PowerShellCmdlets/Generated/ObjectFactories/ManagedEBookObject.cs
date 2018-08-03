@@ -22,7 +22,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedEBook", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
+        public System.String DisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedEBook", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String description { get; set; }
+        public System.String Description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -44,7 +44,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedEBook", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String publisher { get; set; }
+        public System.String Publisher { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;publishedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedEBook", HelpMessage = @"The &quot;publishedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;publishedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset publishedDateTime { get; set; }
+        public System.DateTimeOffset PublishedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;largeCover&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.</para>
@@ -66,7 +66,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedEBook", HelpMessage = @"The &quot;largeCover&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;largeCover&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        public System.Object largeCover { get; set; }
+        public System.Object LargeCover { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -77,7 +77,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedEBook", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset createdDateTime { get; set; }
+        public System.DateTimeOffset CreatedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -88,7 +88,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedEBook", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastModifiedDateTime { get; set; }
+        public System.DateTimeOffset LastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -99,7 +99,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedEBook", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String informationUrl { get; set; }
+        public System.String InformationUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -110,7 +110,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedEBook", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String privacyInformationUrl { get; set; }
+        public System.String PrivacyInformationUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;assignments&quot; property, of type &quot;microsoft.graph.managedEBookAssignment&quot;.</para>
@@ -122,7 +122,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedEBook", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.managedEBookAssignment&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.managedEBookAssignment&quot;.")]
-        public System.Object[] assignments { get; set; }
+        public System.Object[] Assignments { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;installSummary&quot; property, of type &quot;microsoft.graph.eBookInstallSummary&quot;.</para>
@@ -133,7 +133,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedEBook", HelpMessage = @"The &quot;installSummary&quot; property, of type &quot;microsoft.graph.eBookInstallSummary&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;installSummary&quot; property, of type &quot;microsoft.graph.eBookInstallSummary&quot;.")]
-        public System.Object installSummary { get; set; }
+        public System.Object InstallSummary { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceStates&quot; property, of type &quot;microsoft.graph.deviceInstallState&quot;.</para>
@@ -145,7 +145,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedEBook", HelpMessage = @"The &quot;deviceStates&quot; property, of type &quot;microsoft.graph.deviceInstallState&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;deviceStates&quot; property, of type &quot;microsoft.graph.deviceInstallState&quot;.")]
-        public System.Object[] deviceStates { get; set; }
+        public System.Object[] DeviceStates { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userStateSummary&quot; property, of type &quot;microsoft.graph.userInstallStateSummary&quot;.</para>
@@ -157,7 +157,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.managedEBook", HelpMessage = @"The &quot;userStateSummary&quot; property, of type &quot;microsoft.graph.userInstallStateSummary&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;userStateSummary&quot; property, of type &quot;microsoft.graph.userInstallStateSummary&quot;.")]
-        public System.Object[] userStateSummary { get; set; }
+        public System.Object[] UserStateSummary { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppEBook&quot; type.</para>
@@ -165,7 +165,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.iosVppEBook")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppEBook&quot; type.")]
-        public System.Management.Automation.SwitchParameter iosVppEBook { get; set; }
+        public System.Management.Automation.SwitchParameter IosVppEBook { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;vppTokenId&quot; property, of type &quot;Edm.Guid&quot;.</para>
@@ -175,7 +175,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Guid")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;vppTokenId&quot; property, of type &quot;Edm.Guid&quot;.")]
-        public System.Guid vppTokenId { get; set; }
+        public System.Guid VppTokenId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appleId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -185,7 +185,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;appleId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String appleId { get; set; }
+        public System.String AppleId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;vppOrganizationName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -195,7 +195,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;vppOrganizationName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String vppOrganizationName { get; set; }
+        public System.String VppOrganizationName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;genres&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -206,7 +206,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;genres&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] genres { get; set; }
+        public System.String[] Genres { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;language&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -216,7 +216,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;language&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String language { get; set; }
+        public System.String Language { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;seller&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -226,7 +226,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;seller&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String seller { get; set; }
+        public System.String Seller { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;totalLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -236,7 +236,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;totalLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 totalLicenseCount { get; set; }
+        public System.Int32 TotalLicenseCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;usedLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -246,6 +246,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;usedLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 usedLicenseCount { get; set; }
+        public System.Int32 UsedLicenseCount { get; set; }
     }
 }

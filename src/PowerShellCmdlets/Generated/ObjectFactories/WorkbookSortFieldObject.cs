@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookSortField", HelpMessage = @"The &quot;ascending&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ascending { get; set; }
+        public System.Boolean Ascending { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;color&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookSortField", HelpMessage = @"The &quot;color&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String color { get; set; }
+        public System.String Color { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;dataOption&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookSortField", HelpMessage = @"The &quot;dataOption&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String dataOption { get; set; }
+        public System.String DataOption { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;icon&quot; property, of type &quot;microsoft.graph.workbookIcon&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookIcon")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookSortField", HelpMessage = @"The &quot;icon&quot; property, of type &quot;microsoft.graph.workbookIcon&quot;.")]
-        public System.Object icon { get; set; }
+        public System.Object Icon { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;key&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookSortField", HelpMessage = @"The &quot;key&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 key { get; set; }
+        public System.Int32 Key { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sortOn&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -64,6 +64,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookSortField", HelpMessage = @"The &quot;sortOn&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String sortOn { get; set; }
+        public System.String SortOn { get; set; }
     }
 }

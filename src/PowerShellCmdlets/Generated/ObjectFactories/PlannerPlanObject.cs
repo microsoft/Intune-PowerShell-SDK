@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.identitySet")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerPlan", HelpMessage = @"The &quot;createdBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
-        public System.Object createdBy { get; set; }
+        public System.Object CreatedBy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerPlan", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset createdDateTime { get; set; }
+        public System.DateTimeOffset CreatedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;owner&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerPlan", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String owner { get; set; }
+        public System.String Owner { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;title&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerPlan", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String title { get; set; }
+        public System.String Title { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;tasks&quot; property, of type &quot;microsoft.graph.plannerTask&quot;.</para>
@@ -56,7 +56,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerPlan", HelpMessage = @"The &quot;tasks&quot; property, of type &quot;microsoft.graph.plannerTask&quot;.")]
-        public System.Object[] tasks { get; set; }
+        public System.Object[] Tasks { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;buckets&quot; property, of type &quot;microsoft.graph.plannerBucket&quot;.</para>
@@ -66,7 +66,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerPlan", HelpMessage = @"The &quot;buckets&quot; property, of type &quot;microsoft.graph.plannerBucket&quot;.")]
-        public System.Object[] buckets { get; set; }
+        public System.Object[] Buckets { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;details&quot; property, of type &quot;microsoft.graph.plannerPlanDetails&quot;.</para>
@@ -75,6 +75,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.plannerPlanDetails")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerPlan", HelpMessage = @"The &quot;details&quot; property, of type &quot;microsoft.graph.plannerPlanDetails&quot;.")]
-        public System.Object details { get; set; }
+        public System.Object Details { get; set; }
     }
 }

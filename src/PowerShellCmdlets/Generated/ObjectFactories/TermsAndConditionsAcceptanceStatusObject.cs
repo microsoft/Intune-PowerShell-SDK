@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditionsAcceptanceStatus", HelpMessage = @"The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String userDisplayName { get; set; }
+        public System.String UserDisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;acceptedVersion&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditionsAcceptanceStatus", HelpMessage = @"The &quot;acceptedVersion&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 acceptedVersion { get; set; }
+        public System.Int32 AcceptedVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;acceptedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditionsAcceptanceStatus", HelpMessage = @"The &quot;acceptedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset acceptedDateTime { get; set; }
+        public System.DateTimeOffset AcceptedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;termsAndConditions&quot; property, of type &quot;microsoft.graph.termsAndConditions&quot;.</para>
@@ -51,6 +51,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.termsAndConditions")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditionsAcceptanceStatus", HelpMessage = @"The &quot;termsAndConditions&quot; property, of type &quot;microsoft.graph.termsAndConditions&quot;.")]
-        public System.Object termsAndConditions { get; set; }
+        public System.Object TermsAndConditions { get; set; }
     }
 }
