@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartPoint", HelpMessage = @"The &quot;value&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object Value { get; set; }
+        public System.Object value { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartPointFormat&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartPointFormat")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartPoint", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartPointFormat&quot;.")]
-        public System.Object Format { get; set; }
+        public System.Object format { get; set; }
     }
 }

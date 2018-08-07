@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;installedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 InstalledDeviceCount { get; set; }
+        public System.Int32 installedDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;failedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;failedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 FailedDeviceCount { get; set; }
+        public System.Int32 failedDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notInstalledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;notInstalledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 NotInstalledDeviceCount { get; set; }
+        public System.Int32 notInstalledDeviceCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;installedUserCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -51,7 +51,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;installedUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 InstalledUserCount { get; set; }
+        public System.Int32 installedUserCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;failedUserCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -61,7 +61,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;failedUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 FailedUserCount { get; set; }
+        public System.Int32 failedUserCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notInstalledUserCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -71,6 +71,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.eBookInstallSummary", HelpMessage = @"The &quot;notInstalledUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 NotInstalledUserCount { get; set; }
+        public System.Int32 notInstalledUserCount { get; set; }
     }
 }

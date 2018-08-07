@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;bold&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean Bold { get; set; }
+        public System.Boolean bold { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;color&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;color&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Color { get; set; }
+        public System.String color { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;italic&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;italic&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean Italic { get; set; }
+        public System.Boolean italic { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;name&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Name { get; set; }
+        public System.String name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;size&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double Size { get; set; }
+        public System.Double size { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;underline&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -64,6 +64,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;underline&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Underline { get; set; }
+        public System.String underline { get; set; }
     }
 }

@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.intuneBrand", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayName { get; set; }
+        public System.String displayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;contactITName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.intuneBrand", HelpMessage = @"The &quot;contactITName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ContactITName { get; set; }
+        public System.String contactITName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;contactITPhoneNumber&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.intuneBrand", HelpMessage = @"The &quot;contactITPhoneNumber&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ContactITPhoneNumber { get; set; }
+        public System.String contactITPhoneNumber { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;contactITEmailAddress&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.intuneBrand", HelpMessage = @"The &quot;contactITEmailAddress&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ContactITEmailAddress { get; set; }
+        public System.String contactITEmailAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;contactITNotes&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -60,7 +60,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.intuneBrand", HelpMessage = @"The &quot;contactITNotes&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ContactITNotes { get; set; }
+        public System.String contactITNotes { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;privacyUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -70,7 +70,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.intuneBrand", HelpMessage = @"The &quot;privacyUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String PrivacyUrl { get; set; }
+        public System.String privacyUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;onlineSupportSiteUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -80,7 +80,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.intuneBrand", HelpMessage = @"The &quot;onlineSupportSiteUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String OnlineSupportSiteUrl { get; set; }
+        public System.String onlineSupportSiteUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;onlineSupportSiteName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -90,7 +90,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.intuneBrand", HelpMessage = @"The &quot;onlineSupportSiteName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String OnlineSupportSiteName { get; set; }
+        public System.String onlineSupportSiteName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;themeColor&quot; property, of type &quot;microsoft.graph.rgbColor&quot;.</para>
@@ -100,7 +100,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.rgbColor")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.intuneBrand", HelpMessage = @"The &quot;themeColor&quot; property, of type &quot;microsoft.graph.rgbColor&quot;.")]
-        public System.Object ThemeColor { get; set; }
+        public System.Object themeColor { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showLogo&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -110,7 +110,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.intuneBrand", HelpMessage = @"The &quot;showLogo&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ShowLogo { get; set; }
+        public System.Boolean showLogo { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lightBackgroundLogo&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.</para>
@@ -120,7 +120,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mimeContent")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.intuneBrand", HelpMessage = @"The &quot;lightBackgroundLogo&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        public System.Object LightBackgroundLogo { get; set; }
+        public System.Object lightBackgroundLogo { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;darkBackgroundLogo&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.</para>
@@ -130,7 +130,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mimeContent")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.intuneBrand", HelpMessage = @"The &quot;darkBackgroundLogo&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        public System.Object DarkBackgroundLogo { get; set; }
+        public System.Object darkBackgroundLogo { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showNameNextToLogo&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -140,7 +140,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.intuneBrand", HelpMessage = @"The &quot;showNameNextToLogo&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ShowNameNextToLogo { get; set; }
+        public System.Boolean showNameNextToLogo { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showDisplayNameNextToLogo&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -150,6 +150,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.intuneBrand", HelpMessage = @"The &quot;showDisplayNameNextToLogo&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ShowDisplayNameNextToLogo { get; set; }
+        public System.Boolean showDisplayNameNextToLogo { get; set; }
     }
 }

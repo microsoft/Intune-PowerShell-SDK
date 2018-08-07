@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.personOrGroupColumn", HelpMessage = @"The &quot;allowMultipleSelection&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AllowMultipleSelection { get; set; }
+        public System.Boolean allowMultipleSelection { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;chooseFromType&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.personOrGroupColumn", HelpMessage = @"The &quot;chooseFromType&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ChooseFromType { get; set; }
+        public System.String chooseFromType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayAs&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,6 +37,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.personOrGroupColumn", HelpMessage = @"The &quot;displayAs&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayAs { get; set; }
+        public System.String displayAs { get; set; }
     }
 }

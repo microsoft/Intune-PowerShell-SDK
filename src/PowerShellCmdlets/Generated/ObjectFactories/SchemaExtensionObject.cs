@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.schemaExtension", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Description { get; set; }
+        public System.String description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;targetTypes&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.schemaExtension", HelpMessage = @"The &quot;targetTypes&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] TargetTypes { get; set; }
+        public System.String[] targetTypes { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;properties&quot; property, of type &quot;microsoft.graph.extensionSchemaProperty&quot;.</para>
@@ -39,7 +39,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.schemaExtension", HelpMessage = @"The &quot;properties&quot; property, of type &quot;microsoft.graph.extensionSchemaProperty&quot;.")]
-        public System.Object[] Properties { get; set; }
+        public System.Object[] properties { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;status&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -48,7 +48,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.schemaExtension", HelpMessage = @"The &quot;status&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Status { get; set; }
+        public System.String status { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;owner&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -57,6 +57,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.schemaExtension", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Owner { get; set; }
+        public System.String owner { get; set; }
     }
 }

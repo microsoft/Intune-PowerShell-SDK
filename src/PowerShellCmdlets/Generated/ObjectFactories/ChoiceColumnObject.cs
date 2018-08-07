@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.choiceColumn", HelpMessage = @"The &quot;allowTextEntry&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AllowTextEntry { get; set; }
+        public System.Boolean allowTextEntry { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;choices&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.choiceColumn", HelpMessage = @"The &quot;choices&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] Choices { get; set; }
+        public System.String[] choices { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayAs&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -38,6 +38,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.choiceColumn", HelpMessage = @"The &quot;displayAs&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayAs { get; set; }
+        public System.String displayAs { get; set; }
     }
 }

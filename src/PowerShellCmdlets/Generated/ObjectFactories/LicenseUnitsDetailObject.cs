@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.licenseUnitsDetail", HelpMessage = @"The &quot;enabled&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Enabled { get; set; }
+        public System.Int32 enabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;suspended&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.licenseUnitsDetail", HelpMessage = @"The &quot;suspended&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Suspended { get; set; }
+        public System.Int32 suspended { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;warning&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -37,6 +37,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.licenseUnitsDetail", HelpMessage = @"The &quot;warning&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Warning { get; set; }
+        public System.Int32 warning { get; set; }
     }
 }

@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationRoot", HelpMessage = @"The &quot;classes&quot; property, of type &quot;microsoft.graph.educationClass&quot;.")]
-        public System.Object[] Classes { get; set; }
+        public System.Object[] classes { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;schools&quot; property, of type &quot;microsoft.graph.educationSchool&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationRoot", HelpMessage = @"The &quot;schools&quot; property, of type &quot;microsoft.graph.educationSchool&quot;.")]
-        public System.Object[] Schools { get; set; }
+        public System.Object[] schools { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;users&quot; property, of type &quot;microsoft.graph.educationUser&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationRoot", HelpMessage = @"The &quot;users&quot; property, of type &quot;microsoft.graph.educationUser&quot;.")]
-        public System.Object[] Users { get; set; }
+        public System.Object[] users { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;me&quot; property, of type &quot;microsoft.graph.educationUser&quot;.</para>
@@ -49,6 +49,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.educationUser")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationRoot", HelpMessage = @"The &quot;me&quot; property, of type &quot;microsoft.graph.educationUser&quot;.")]
-        public System.Object Me { get; set; }
+        public System.Object me { get; set; }
     }
 }

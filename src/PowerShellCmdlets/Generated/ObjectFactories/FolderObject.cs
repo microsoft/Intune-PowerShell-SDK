@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.folder", HelpMessage = @"The &quot;childCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 ChildCount { get; set; }
+        public System.Int32 childCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;view&quot; property, of type &quot;microsoft.graph.folderView&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.folderView")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.folder", HelpMessage = @"The &quot;view&quot; property, of type &quot;microsoft.graph.folderView&quot;.")]
-        public System.Object View { get; set; }
+        public System.Object view { get; set; }
     }
 }

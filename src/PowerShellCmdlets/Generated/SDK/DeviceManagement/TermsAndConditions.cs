@@ -12,7 +12,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_TermsAndConditions", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.termsAndConditions")]
-    [ResourceIdPropertyName("TermsAndConditionId")]
+    [ResourceIdPropertyName("termsAndConditionId")]
     [ResourceReference]
     public class Get_DeviceManagement_TermsAndConditions : GetOrSearchCmdlet
     {
@@ -20,10 +20,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.")]
-        public System.String TermsAndConditionId { get; set; }
+        public System.String termsAndConditionId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset CreatedDateTime { get; set; }
+        public System.DateTimeOffset createdDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -43,7 +43,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset LastModifiedDateTime { get; set; }
+        public System.DateTimeOffset lastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -53,7 +53,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String DisplayName { get; set; }
+        public System.String displayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String Description { get; set; }
+        public System.String description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;title&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String Title { get; set; }
+        public System.String title { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bodyText&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -83,7 +83,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String BodyText { get; set; }
+        public System.String bodyText { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;acceptanceStatement&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -93,7 +93,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String AcceptanceStatement { get; set; }
+        public System.String acceptanceStatement { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -103,7 +103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Sortable]
-        public System.Int32 Version { get; set; }
+        public System.Int32 version { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;assignments&quot; property, of type &quot;microsoft.graph.termsAndConditionsAssignment&quot;.</para>
@@ -113,7 +113,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.termsAndConditionsAssignment")]
         [Selectable]
         [Expandable]
-        public System.Object[] Assignments { get; set; }
+        public System.Object[] assignments { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;acceptanceStatuses&quot; property, of type &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot;.</para>
@@ -123,20 +123,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.termsAndConditionsAcceptanceStatus")]
         [Selectable]
         [Expandable]
-        public System.Object[] AcceptanceStatuses { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.termsAndConditions&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Sortable]
-        public System.String Id { get; set; }
+        public System.Object[] acceptanceStatuses { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/termsAndConditions/{TermsAndConditionId ?? string.Empty}";
+            return $"deviceManagement/termsAndConditions/{termsAndConditionId ?? string.Empty}";
         }
     }
 
@@ -160,7 +151,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset CreatedDateTime { get; set; }
+        public System.DateTimeOffset createdDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -171,7 +162,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset LastModifiedDateTime { get; set; }
+        public System.DateTimeOffset lastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -182,7 +173,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayName { get; set; }
+        public System.String displayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -193,7 +184,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Description { get; set; }
+        public System.String description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;title&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -204,7 +195,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Title { get; set; }
+        public System.String title { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bodyText&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -215,7 +206,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;bodyText&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;bodyText&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String BodyText { get; set; }
+        public System.String bodyText { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;acceptanceStatement&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -226,7 +217,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;acceptanceStatement&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;acceptanceStatement&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String AcceptanceStatement { get; set; }
+        public System.String acceptanceStatement { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -237,7 +228,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Version { get; set; }
+        public System.Int32 version { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;assignments&quot; property, of type &quot;microsoft.graph.termsAndConditionsAssignment&quot;.</para>
@@ -249,7 +240,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.termsAndConditionsAssignment&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.termsAndConditionsAssignment&quot;.")]
-        public System.Object[] Assignments { get; set; }
+        public System.Object[] assignments { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;acceptanceStatuses&quot; property, of type &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot;.</para>
@@ -261,7 +252,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;acceptanceStatuses&quot; property, of type &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;acceptanceStatuses&quot; property, of type &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot;.")]
-        public System.Object[] AcceptanceStatuses { get; set; }
+        public System.Object[] acceptanceStatuses { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -277,17 +268,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Update", "DeviceManagement_TermsAndConditions", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.termsAndConditions")]
     [ODataType("microsoft.graph.termsAndConditions")]
-    [ResourceIdPropertyName("TermsAndConditionId")]
+    [ResourceIdPropertyName("termsAndConditionId")]
     public class Update_DeviceManagement_TermsAndConditions : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.")]
-        public System.String TermsAndConditionId { get; set; }
+        public System.String termsAndConditionId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -298,7 +289,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset CreatedDateTime { get; set; }
+        public System.DateTimeOffset createdDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -309,7 +300,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset LastModifiedDateTime { get; set; }
+        public System.DateTimeOffset lastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -320,7 +311,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayName { get; set; }
+        public System.String displayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -331,7 +322,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Description { get; set; }
+        public System.String description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;title&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -342,7 +333,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Title { get; set; }
+        public System.String title { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bodyText&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -353,7 +344,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;bodyText&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;bodyText&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String BodyText { get; set; }
+        public System.String bodyText { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;acceptanceStatement&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -364,7 +355,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;acceptanceStatement&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;acceptanceStatement&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String AcceptanceStatement { get; set; }
+        public System.String acceptanceStatement { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -375,7 +366,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Version { get; set; }
+        public System.Int32 version { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;assignments&quot; property, of type &quot;microsoft.graph.termsAndConditionsAssignment&quot;.</para>
@@ -387,7 +378,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.termsAndConditionsAssignment&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.termsAndConditionsAssignment&quot;.")]
-        public System.Object[] Assignments { get; set; }
+        public System.Object[] assignments { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;acceptanceStatuses&quot; property, of type &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot;.</para>
@@ -399,37 +390,37 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;acceptanceStatuses&quot; property, of type &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;acceptanceStatuses&quot; property, of type &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot;.")]
-        public System.Object[] AcceptanceStatuses { get; set; }
+        public System.Object[] acceptanceStatuses { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/termsAndConditions/{TermsAndConditionId}";
+            return $"deviceManagement/termsAndConditions/{termsAndConditionId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.termsAndConditions&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/termsAndConditions/TermsAndConditionId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/termsAndConditions/termsAndConditionId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.termsAndConditions&quot; object from the &quot;termsAndConditions&quot; collection.</para>
     ///     <para type="description">The terms and conditions associated with device management of the company.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_TermsAndConditions", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.termsAndConditions")]
-    [ResourceIdPropertyName("TermsAndConditionId")]
+    [ResourceIdPropertyName("termsAndConditionId")]
     public class Remove_DeviceManagement_TermsAndConditions : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.")]
-        public System.String TermsAndConditionId { get; set; }
+        public System.String termsAndConditionId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/termsAndConditions/{TermsAndConditionId}";
+            return $"deviceManagement/termsAndConditions/{termsAndConditionId}";
         }
     }
 }

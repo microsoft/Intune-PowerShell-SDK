@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.keyValuePair", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Name { get; set; }
+        public System.String name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;value&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -30,6 +30,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.keyValuePair", HelpMessage = @"The &quot;value&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Value { get; set; }
+        public System.String value { get; set; }
     }
 }

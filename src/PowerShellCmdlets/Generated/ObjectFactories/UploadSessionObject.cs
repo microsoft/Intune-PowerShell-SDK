@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.uploadSession", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset ExpirationDateTime { get; set; }
+        public System.DateTimeOffset expirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;nextExpectedRanges&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.uploadSession", HelpMessage = @"The &quot;nextExpectedRanges&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] NextExpectedRanges { get; set; }
+        public System.String[] nextExpectedRanges { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;uploadUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -38,6 +38,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.uploadSession", HelpMessage = @"The &quot;uploadUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String UploadUrl { get; set; }
+        public System.String uploadUrl { get; set; }
     }
 }

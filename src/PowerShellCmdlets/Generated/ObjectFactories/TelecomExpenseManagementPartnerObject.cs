@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayName { get; set; }
+        public System.String displayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;url&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;url&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Url { get; set; }
+        public System.String url { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appAuthorized&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;appAuthorized&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AppAuthorized { get; set; }
+        public System.Boolean appAuthorized { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -51,7 +51,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean Enabled { get; set; }
+        public System.Boolean enabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -61,6 +61,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset LastConnectionDateTime { get; set; }
+        public System.DateTimeOffset lastConnectionDateTime { get; set; }
     }
 }

@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosDeviceType", HelpMessage = @"The &quot;iPad&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean IPad { get; set; }
+        public System.Boolean iPad { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iPhoneAndIPod&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -30,6 +30,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosDeviceType", HelpMessage = @"The &quot;iPhoneAndIPod&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean IPhoneAndIPod { get; set; }
+        public System.Boolean iPhoneAndIPod { get; set; }
     }
 }

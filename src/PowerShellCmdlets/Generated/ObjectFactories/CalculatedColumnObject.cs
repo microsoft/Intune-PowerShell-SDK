@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.calculatedColumn", HelpMessage = @"The &quot;format&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Format { get; set; }
+        public System.String format { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;formula&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.calculatedColumn", HelpMessage = @"The &quot;formula&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Formula { get; set; }
+        public System.String formula { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;outputType&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,6 +37,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.calculatedColumn", HelpMessage = @"The &quot;outputType&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String OutputType { get; set; }
+        public System.String outputType { get; set; }
     }
 }

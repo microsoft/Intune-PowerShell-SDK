@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeBorder", HelpMessage = @"The &quot;color&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Color { get; set; }
+        public System.String color { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sideIndex&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeBorder", HelpMessage = @"The &quot;sideIndex&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String SideIndex { get; set; }
+        public System.String sideIndex { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;style&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeBorder", HelpMessage = @"The &quot;style&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Style { get; set; }
+        public System.String style { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;weight&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,6 +46,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeBorder", HelpMessage = @"The &quot;weight&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Weight { get; set; }
+        public System.String weight { get; set; }
     }
 }

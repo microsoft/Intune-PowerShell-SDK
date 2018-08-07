@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.recurrencePattern")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.patternedRecurrence", HelpMessage = @"The &quot;pattern&quot; property, of type &quot;microsoft.graph.recurrencePattern&quot;.")]
-        public System.Object Pattern { get; set; }
+        public System.Object pattern { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;range&quot; property, of type &quot;microsoft.graph.recurrenceRange&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.recurrenceRange")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.patternedRecurrence", HelpMessage = @"The &quot;range&quot; property, of type &quot;microsoft.graph.recurrenceRange&quot;.")]
-        public System.Object Range { get; set; }
+        public System.Object range { get; set; }
     }
 }

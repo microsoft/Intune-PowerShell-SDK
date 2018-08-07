@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.calendar", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Name { get; set; }
+        public System.String name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;color&quot; property, of type &quot;microsoft.graph.calendarColor&quot;.</para>
@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"lightBlue", @"lightGreen", @"lightOrange", @"lightGray", @"lightYellow", @"lightTeal", @"lightPink", @"lightBrown", @"lightRed", @"maxColor", @"auto")]
         [Parameter(ParameterSetName = @"#microsoft.graph.calendar", HelpMessage = @"The &quot;color&quot; property, of type &quot;microsoft.graph.calendarColor&quot;.")]
-        public System.String Color { get; set; }
+        public System.String color { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;changeKey&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.calendar", HelpMessage = @"The &quot;changeKey&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ChangeKey { get; set; }
+        public System.String changeKey { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;canShare&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.calendar", HelpMessage = @"The &quot;canShare&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean CanShare { get; set; }
+        public System.Boolean canShare { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;canViewPrivateItems&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -59,7 +59,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.calendar", HelpMessage = @"The &quot;canViewPrivateItems&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean CanViewPrivateItems { get; set; }
+        public System.Boolean canViewPrivateItems { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;canEdit&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -68,7 +68,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.calendar", HelpMessage = @"The &quot;canEdit&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean CanEdit { get; set; }
+        public System.Boolean canEdit { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;owner&quot; property, of type &quot;microsoft.graph.emailAddress&quot;.</para>
@@ -77,7 +77,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.emailAddress")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.calendar", HelpMessage = @"The &quot;owner&quot; property, of type &quot;microsoft.graph.emailAddress&quot;.")]
-        public System.Object Owner { get; set; }
+        public System.Object owner { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;events&quot; property, of type &quot;microsoft.graph.event&quot;.</para>
@@ -87,7 +87,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.calendar", HelpMessage = @"The &quot;events&quot; property, of type &quot;microsoft.graph.event&quot;.")]
-        public System.Object[] Events { get; set; }
+        public System.Object[] events { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;calendarView&quot; property, of type &quot;microsoft.graph.event&quot;.</para>
@@ -97,7 +97,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.calendar", HelpMessage = @"The &quot;calendarView&quot; property, of type &quot;microsoft.graph.event&quot;.")]
-        public System.Object[] CalendarView { get; set; }
+        public System.Object[] calendarView { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;singleValueExtendedProperties&quot; property, of type &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot;.</para>
@@ -107,7 +107,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.calendar", HelpMessage = @"The &quot;singleValueExtendedProperties&quot; property, of type &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot;.")]
-        public System.Object[] SingleValueExtendedProperties { get; set; }
+        public System.Object[] singleValueExtendedProperties { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;multiValueExtendedProperties&quot; property, of type &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot;.</para>
@@ -117,6 +117,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.calendar", HelpMessage = @"The &quot;multiValueExtendedProperties&quot; property, of type &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot;.")]
-        public System.Object[] MultiValueExtendedProperties { get; set; }
+        public System.Object[] multiValueExtendedProperties { get; set; }
     }
 }

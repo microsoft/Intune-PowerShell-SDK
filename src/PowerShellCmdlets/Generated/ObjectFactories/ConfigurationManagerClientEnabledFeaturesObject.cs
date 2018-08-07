@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.configurationManagerClientEnabledFeatures", HelpMessage = @"The &quot;inventory&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean Inventory { get; set; }
+        public System.Boolean inventory { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;modernApps&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.configurationManagerClientEnabledFeatures", HelpMessage = @"The &quot;modernApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ModernApps { get; set; }
+        public System.Boolean modernApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;resourceAccess&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.configurationManagerClientEnabledFeatures", HelpMessage = @"The &quot;resourceAccess&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ResourceAccess { get; set; }
+        public System.Boolean resourceAccess { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceConfiguration&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.configurationManagerClientEnabledFeatures", HelpMessage = @"The &quot;deviceConfiguration&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean DeviceConfiguration { get; set; }
+        public System.Boolean deviceConfiguration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;compliancePolicy&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -60,7 +60,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.configurationManagerClientEnabledFeatures", HelpMessage = @"The &quot;compliancePolicy&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean CompliancePolicy { get; set; }
+        public System.Boolean compliancePolicy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsUpdateForBusiness&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -70,6 +70,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.configurationManagerClientEnabledFeatures", HelpMessage = @"The &quot;windowsUpdateForBusiness&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean WindowsUpdateForBusiness { get; set; }
+        public System.Boolean windowsUpdateForBusiness { get; set; }
     }
 }

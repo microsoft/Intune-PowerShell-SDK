@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.hashes", HelpMessage = @"The &quot;crc32Hash&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Crc32Hash { get; set; }
+        public System.String crc32Hash { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;quickXorHash&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.hashes", HelpMessage = @"The &quot;quickXorHash&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String QuickXorHash { get; set; }
+        public System.String quickXorHash { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sha1Hash&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,6 +37,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.hashes", HelpMessage = @"The &quot;sha1Hash&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Sha1Hash { get; set; }
+        public System.String sha1Hash { get; set; }
     }
 }

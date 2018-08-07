@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
             }
 
             // Get the short name of the type
-            string shortTypeName = typeFullName.Substring(typeFullName.LastIndexOf('.') + 1).ToPascalCase();
+            string shortTypeName = typeFullName.Substring(typeFullName.LastIndexOf('.') + 1);
 
             return $"{shortTypeName}ReferenceUrl";
         }

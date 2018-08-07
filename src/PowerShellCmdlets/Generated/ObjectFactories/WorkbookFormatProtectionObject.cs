@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookFormatProtection", HelpMessage = @"The &quot;formulaHidden&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean FormulaHidden { get; set; }
+        public System.Boolean formulaHidden { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;locked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookFormatProtection", HelpMessage = @"The &quot;locked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean Locked { get; set; }
+        public System.Boolean locked { get; set; }
     }
 }

@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;lastUpdateDateTime&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String LastUpdateDateTime { get; set; }
+        public System.String lastUpdateDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;contentNamespaceUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;contentNamespaceUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ContentNamespaceUrl { get; set; }
+        public System.String contentNamespaceUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceHealthAttestationStatus&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;deviceHealthAttestationStatus&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DeviceHealthAttestationStatus { get; set; }
+        public System.String deviceHealthAttestationStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;contentVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;contentVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ContentVersion { get; set; }
+        public System.String contentVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;issuedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -60,7 +60,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;issuedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset IssuedDateTime { get; set; }
+        public System.DateTimeOffset issuedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;attestationIdentityKey&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -70,7 +70,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;attestationIdentityKey&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String AttestationIdentityKey { get; set; }
+        public System.String attestationIdentityKey { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;resetCount&quot; property, of type &quot;Edm.Int64&quot;.</para>
@@ -80,7 +80,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int64")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;resetCount&quot; property, of type &quot;Edm.Int64&quot;.")]
-        public System.Int64 ResetCount { get; set; }
+        public System.Int64 resetCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;restartCount&quot; property, of type &quot;Edm.Int64&quot;.</para>
@@ -90,7 +90,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int64")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;restartCount&quot; property, of type &quot;Edm.Int64&quot;.")]
-        public System.Int64 RestartCount { get; set; }
+        public System.Int64 restartCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;dataExcutionPolicy&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -100,7 +100,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;dataExcutionPolicy&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DataExcutionPolicy { get; set; }
+        public System.String dataExcutionPolicy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bitLockerStatus&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -110,7 +110,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;bitLockerStatus&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String BitLockerStatus { get; set; }
+        public System.String bitLockerStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bootManagerVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -120,7 +120,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;bootManagerVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String BootManagerVersion { get; set; }
+        public System.String bootManagerVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;codeIntegrityCheckVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -130,7 +130,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;codeIntegrityCheckVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String CodeIntegrityCheckVersion { get; set; }
+        public System.String codeIntegrityCheckVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;secureBoot&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -140,7 +140,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;secureBoot&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String SecureBoot { get; set; }
+        public System.String secureBoot { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bootDebugging&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -150,7 +150,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;bootDebugging&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String BootDebugging { get; set; }
+        public System.String bootDebugging { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;operatingSystemKernelDebugging&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -160,7 +160,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;operatingSystemKernelDebugging&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String OperatingSystemKernelDebugging { get; set; }
+        public System.String operatingSystemKernelDebugging { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;codeIntegrity&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -170,7 +170,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;codeIntegrity&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String CodeIntegrity { get; set; }
+        public System.String codeIntegrity { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;testSigning&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -180,7 +180,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;testSigning&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String TestSigning { get; set; }
+        public System.String testSigning { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;safeMode&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -190,7 +190,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;safeMode&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String SafeMode { get; set; }
+        public System.String safeMode { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsPE&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -200,7 +200,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;windowsPE&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String WindowsPE { get; set; }
+        public System.String windowsPE { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;earlyLaunchAntiMalwareDriverProtection&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -210,7 +210,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;earlyLaunchAntiMalwareDriverProtection&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String EarlyLaunchAntiMalwareDriverProtection { get; set; }
+        public System.String earlyLaunchAntiMalwareDriverProtection { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;virtualSecureMode&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -220,7 +220,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;virtualSecureMode&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String VirtualSecureMode { get; set; }
+        public System.String virtualSecureMode { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pcrHashAlgorithm&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -230,7 +230,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;pcrHashAlgorithm&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String PcrHashAlgorithm { get; set; }
+        public System.String pcrHashAlgorithm { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bootAppSecurityVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -240,7 +240,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;bootAppSecurityVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String BootAppSecurityVersion { get; set; }
+        public System.String bootAppSecurityVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bootManagerSecurityVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -250,7 +250,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;bootManagerSecurityVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String BootManagerSecurityVersion { get; set; }
+        public System.String bootManagerSecurityVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;tpmVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -260,7 +260,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;tpmVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String TpmVersion { get; set; }
+        public System.String tpmVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pcr0&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -270,7 +270,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;pcr0&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Pcr0 { get; set; }
+        public System.String pcr0 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;secureBootConfigurationPolicyFingerPrint&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -280,7 +280,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;secureBootConfigurationPolicyFingerPrint&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String SecureBootConfigurationPolicyFingerPrint { get; set; }
+        public System.String secureBootConfigurationPolicyFingerPrint { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;codeIntegrityPolicy&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -290,7 +290,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;codeIntegrityPolicy&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String CodeIntegrityPolicy { get; set; }
+        public System.String codeIntegrityPolicy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bootRevisionListInfo&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -300,7 +300,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;bootRevisionListInfo&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String BootRevisionListInfo { get; set; }
+        public System.String bootRevisionListInfo { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;operatingSystemRevListInfo&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -310,7 +310,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;operatingSystemRevListInfo&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String OperatingSystemRevListInfo { get; set; }
+        public System.String operatingSystemRevListInfo { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;healthStatusMismatchInfo&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -320,7 +320,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;healthStatusMismatchInfo&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String HealthStatusMismatchInfo { get; set; }
+        public System.String healthStatusMismatchInfo { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;healthAttestationSupportedStatus&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -330,6 +330,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceHealthAttestationState", HelpMessage = @"The &quot;healthAttestationSupportedStatus&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String HealthAttestationSupportedStatus { get; set; }
+        public System.String healthAttestationSupportedStatus { get; set; }
     }
 }

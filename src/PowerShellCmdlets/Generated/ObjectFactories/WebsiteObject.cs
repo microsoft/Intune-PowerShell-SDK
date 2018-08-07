@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"other", @"home", @"work", @"blog", @"profile")]
         [Parameter(ParameterSetName = @"#microsoft.graph.website", HelpMessage = @"The &quot;type&quot; property, of type &quot;microsoft.graph.websiteType&quot;.")]
-        public System.String Type { get; set; }
+        public System.String type { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;address&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.website", HelpMessage = @"The &quot;address&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Address { get; set; }
+        public System.String address { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -41,6 +41,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.website", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayName { get; set; }
+        public System.String displayName { get; set; }
     }
 }

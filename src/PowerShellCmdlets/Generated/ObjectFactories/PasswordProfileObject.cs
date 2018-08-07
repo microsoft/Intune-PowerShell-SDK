@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.passwordProfile", HelpMessage = @"The &quot;password&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Password { get; set; }
+        public System.String password { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;forceChangePasswordNextSignIn&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.passwordProfile", HelpMessage = @"The &quot;forceChangePasswordNextSignIn&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ForceChangePasswordNextSignIn { get; set; }
+        public System.Boolean forceChangePasswordNextSignIn { get; set; }
     }
 }

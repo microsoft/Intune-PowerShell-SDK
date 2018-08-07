@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.siteCollection", HelpMessage = @"The &quot;hostname&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Hostname { get; set; }
+        public System.String hostname { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;root&quot; property, of type &quot;microsoft.graph.root&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.root")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.siteCollection", HelpMessage = @"The &quot;root&quot; property, of type &quot;microsoft.graph.root&quot;.")]
-        public System.Object Root { get; set; }
+        public System.Object root { get; set; }
     }
 }

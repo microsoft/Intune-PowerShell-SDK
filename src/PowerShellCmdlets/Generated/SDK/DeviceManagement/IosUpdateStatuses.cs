@@ -12,7 +12,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_IosUpdateStatuses", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.iosUpdateDeviceStatus")]
-    [ResourceIdPropertyName("IosUpdateStatusId")]
+    [ResourceIdPropertyName("iosUpdateStatusId")]
     [ResourceReference]
     public class Get_DeviceManagement_IosUpdateStatuses : GetOrSearchCmdlet
     {
@@ -20,10 +20,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.")]
-        public System.String IosUpdateStatusId { get; set; }
+        public System.String iosUpdateStatusId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;installStatus&quot; property, of type &quot;microsoft.graph.iosUpdatesInstallStatus&quot;.</para>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.iosUpdatesInstallStatus")]
         [Selectable]
         [Sortable]
-        public System.String InstallStatus { get; set; }
+        public System.String installStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;osVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -43,7 +43,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String OsVersion { get; set; }
+        public System.String osVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -53,7 +53,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String DeviceId { get; set; }
+        public System.String deviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String UserId { get; set; }
+        public System.String userId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceDisplayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String DeviceDisplayName { get; set; }
+        public System.String deviceDisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -83,7 +83,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String UserName { get; set; }
+        public System.String userName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceModel&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -93,7 +93,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String DeviceModel { get; set; }
+        public System.String deviceModel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;complianceGracePeriodExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -103,7 +103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset ComplianceGracePeriodExpirationDateTime { get; set; }
+        public System.DateTimeOffset complianceGracePeriodExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;status&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.</para>
@@ -113,7 +113,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.complianceStatus")]
         [Selectable]
         [Sortable]
-        public System.String Status { get; set; }
+        public System.String status { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastReportedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -123,7 +123,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset LastReportedDateTime { get; set; }
+        public System.DateTimeOffset lastReportedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -133,20 +133,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String UserPrincipalName { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.iosUpdateDeviceStatus&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Sortable]
-        public System.String Id { get; set; }
+        public System.String userPrincipalName { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/iosUpdateStatuses/{IosUpdateStatusId ?? string.Empty}";
+            return $"deviceManagement/iosUpdateStatuses/{iosUpdateStatusId ?? string.Empty}";
         }
     }
 
@@ -174,7 +165,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"success", @"available", @"idle", @"downloading", @"downloadFailed", @"downloadRequiresComputer", @"downloadInsufficientSpace", @"downloadInsufficientPower", @"downloadInsufficientNetwork", @"installing", @"installInsufficientSpace", @"installInsufficientPower", @"installPhoneCallInProgress", @"installFailed", @"notSupportedOperation", @"sharedDeviceUserLoggedInError")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;installStatus&quot; property, of type &quot;microsoft.graph.iosUpdatesInstallStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;installStatus&quot; property, of type &quot;microsoft.graph.iosUpdatesInstallStatus&quot;.")]
-        public System.String InstallStatus { get; set; }
+        public System.String installStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;osVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -185,7 +176,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;osVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;osVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String OsVersion { get; set; }
+        public System.String osVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -196,7 +187,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DeviceId { get; set; }
+        public System.String deviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -207,7 +198,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String UserId { get; set; }
+        public System.String userId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceDisplayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -218,7 +209,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;deviceDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DeviceDisplayName { get; set; }
+        public System.String deviceDisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -229,7 +220,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;userName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String UserName { get; set; }
+        public System.String userName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceModel&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -240,7 +231,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;deviceModel&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceModel&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DeviceModel { get; set; }
+        public System.String deviceModel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;complianceGracePeriodExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -251,7 +242,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;complianceGracePeriodExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;complianceGracePeriodExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset ComplianceGracePeriodExpirationDateTime { get; set; }
+        public System.DateTimeOffset complianceGracePeriodExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;status&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.</para>
@@ -266,7 +257,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"unknown", @"notApplicable", @"compliant", @"remediated", @"nonCompliant", @"error", @"conflict")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.")]
-        public System.String Status { get; set; }
+        public System.String status { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastReportedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -277,7 +268,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;lastReportedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastReportedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset LastReportedDateTime { get; set; }
+        public System.DateTimeOffset lastReportedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -288,7 +279,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String UserPrincipalName { get; set; }
+        public System.String userPrincipalName { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -304,17 +295,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Update", "DeviceManagement_IosUpdateStatuses", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus")]
     [ODataType("microsoft.graph.iosUpdateDeviceStatus")]
-    [ResourceIdPropertyName("IosUpdateStatusId")]
+    [ResourceIdPropertyName("iosUpdateStatusId")]
     public class Update_DeviceManagement_IosUpdateStatuses : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.")]
-        public System.String IosUpdateStatusId { get; set; }
+        public System.String iosUpdateStatusId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;installStatus&quot; property, of type &quot;microsoft.graph.iosUpdatesInstallStatus&quot;.</para>
@@ -329,7 +320,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"success", @"available", @"idle", @"downloading", @"downloadFailed", @"downloadRequiresComputer", @"downloadInsufficientSpace", @"downloadInsufficientPower", @"downloadInsufficientNetwork", @"installing", @"installInsufficientSpace", @"installInsufficientPower", @"installPhoneCallInProgress", @"installFailed", @"notSupportedOperation", @"sharedDeviceUserLoggedInError")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;installStatus&quot; property, of type &quot;microsoft.graph.iosUpdatesInstallStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;installStatus&quot; property, of type &quot;microsoft.graph.iosUpdatesInstallStatus&quot;.")]
-        public System.String InstallStatus { get; set; }
+        public System.String installStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;osVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -340,7 +331,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;osVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;osVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String OsVersion { get; set; }
+        public System.String osVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -351,7 +342,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DeviceId { get; set; }
+        public System.String deviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -362,7 +353,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String UserId { get; set; }
+        public System.String userId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceDisplayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -373,7 +364,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;deviceDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DeviceDisplayName { get; set; }
+        public System.String deviceDisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -384,7 +375,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;userName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String UserName { get; set; }
+        public System.String userName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceModel&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -395,7 +386,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;deviceModel&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceModel&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DeviceModel { get; set; }
+        public System.String deviceModel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;complianceGracePeriodExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -406,7 +397,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;complianceGracePeriodExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;complianceGracePeriodExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset ComplianceGracePeriodExpirationDateTime { get; set; }
+        public System.DateTimeOffset complianceGracePeriodExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;status&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.</para>
@@ -421,7 +412,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"unknown", @"notApplicable", @"compliant", @"remediated", @"nonCompliant", @"error", @"conflict")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.")]
-        public System.String Status { get; set; }
+        public System.String status { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastReportedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -432,7 +423,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;lastReportedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastReportedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset LastReportedDateTime { get; set; }
+        public System.DateTimeOffset lastReportedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -443,37 +434,37 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String UserPrincipalName { get; set; }
+        public System.String userPrincipalName { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/iosUpdateStatuses/{IosUpdateStatusId}";
+            return $"deviceManagement/iosUpdateStatuses/{iosUpdateStatusId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/iosUpdateStatuses/IosUpdateStatusId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/iosUpdateStatuses/iosUpdateStatusId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object from the &quot;iosUpdateStatuses&quot; collection.</para>
     ///     <para type="description">The IOS software update installation statuses for this account.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_IosUpdateStatuses", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.iosUpdateDeviceStatus")]
-    [ResourceIdPropertyName("IosUpdateStatusId")]
+    [ResourceIdPropertyName("iosUpdateStatusId")]
     public class Remove_DeviceManagement_IosUpdateStatuses : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.")]
-        public System.String IosUpdateStatusId { get; set; }
+        public System.String iosUpdateStatusId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/iosUpdateStatuses/{IosUpdateStatusId}";
+            return $"deviceManagement/iosUpdateStatuses/{iosUpdateStatusId}";
         }
     }
 }

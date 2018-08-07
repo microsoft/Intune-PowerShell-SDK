@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.calendarGroup", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Name { get; set; }
+        public System.String name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;classId&quot; property, of type &quot;Edm.Guid&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Guid")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.calendarGroup", HelpMessage = @"The &quot;classId&quot; property, of type &quot;Edm.Guid&quot;.")]
-        public System.Guid ClassId { get; set; }
+        public System.Guid classId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;changeKey&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.calendarGroup", HelpMessage = @"The &quot;changeKey&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ChangeKey { get; set; }
+        public System.String changeKey { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;calendars&quot; property, of type &quot;microsoft.graph.calendar&quot;.</para>
@@ -47,6 +47,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.calendarGroup", HelpMessage = @"The &quot;calendars&quot; property, of type &quot;microsoft.graph.calendar&quot;.")]
-        public System.Object[] Calendars { get; set; }
+        public System.Object[] calendars { get; set; }
     }
 }

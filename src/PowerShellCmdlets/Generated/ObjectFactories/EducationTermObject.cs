@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationTerm", HelpMessage = @"The &quot;externalId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ExternalId { get; set; }
+        public System.String externalId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startDate&quot; property, of type &quot;Edm.Date&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Date")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationTerm", HelpMessage = @"The &quot;startDate&quot; property, of type &quot;Edm.Date&quot;.")]
-        public System.DateTimeOffset StartDate { get; set; }
+        public System.DateTimeOffset startDate { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;endDate&quot; property, of type &quot;Edm.Date&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Date")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationTerm", HelpMessage = @"The &quot;endDate&quot; property, of type &quot;Edm.Date&quot;.")]
-        public System.DateTimeOffset EndDate { get; set; }
+        public System.DateTimeOffset endDate { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,6 +46,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationTerm", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayName { get; set; }
+        public System.String displayName { get; set; }
     }
 }

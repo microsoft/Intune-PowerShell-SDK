@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppLicensingType", HelpMessage = @"The &quot;supportsUserLicensing&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean SupportsUserLicensing { get; set; }
+        public System.Boolean supportsUserLicensing { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;supportsDeviceLicensing&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -30,6 +30,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.vppLicensingType", HelpMessage = @"The &quot;supportsDeviceLicensing&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean SupportsDeviceLicensing { get; set; }
+        public System.Boolean supportsDeviceLicensing { get; set; }
     }
 }

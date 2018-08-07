@@ -19,6 +19,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.currencyColumn", HelpMessage = @"The &quot;locale&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Locale { get; set; }
+        public System.String locale { get; set; }
     }
 }

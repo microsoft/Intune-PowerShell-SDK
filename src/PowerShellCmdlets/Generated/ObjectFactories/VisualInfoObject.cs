@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.imageInfo")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.visualInfo", HelpMessage = @"The &quot;attribution&quot; property, of type &quot;microsoft.graph.imageInfo&quot;.")]
-        public System.Object Attribution { get; set; }
+        public System.Object attribution { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;backgroundColor&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.visualInfo", HelpMessage = @"The &quot;backgroundColor&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String BackgroundColor { get; set; }
+        public System.String backgroundColor { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.visualInfo", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Description { get; set; }
+        public System.String description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayText&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.visualInfo", HelpMessage = @"The &quot;displayText&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayText { get; set; }
+        public System.String displayText { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;content&quot; property, of type &quot;microsoft.graph.Json&quot;.</para>
@@ -55,6 +55,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.visualInfo", HelpMessage = @"The &quot;content&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object Content { get; set; }
+        public System.Object content { get; set; }
     }
 }

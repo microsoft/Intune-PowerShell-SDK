@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementSettings", HelpMessage = @"The &quot;deviceComplianceCheckinThresholdDays&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 DeviceComplianceCheckinThresholdDays { get; set; }
+        public System.Int32 deviceComplianceCheckinThresholdDays { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isScheduledActionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementSettings", HelpMessage = @"The &quot;isScheduledActionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean IsScheduledActionEnabled { get; set; }
+        public System.Boolean isScheduledActionEnabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;secureByDefault&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -40,6 +40,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceManagementSettings", HelpMessage = @"The &quot;secureByDefault&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean SecureByDefault { get; set; }
+        public System.Boolean secureByDefault { get; set; }
     }
 }

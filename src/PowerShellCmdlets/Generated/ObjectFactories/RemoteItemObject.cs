@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.identitySet")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteItem", HelpMessage = @"The &quot;createdBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
-        public System.Object CreatedBy { get; set; }
+        public System.Object createdBy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteItem", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset CreatedDateTime { get; set; }
+        public System.DateTimeOffset createdDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;file&quot; property, of type &quot;microsoft.graph.file&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.file")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteItem", HelpMessage = @"The &quot;file&quot; property, of type &quot;microsoft.graph.file&quot;.")]
-        public System.Object File { get; set; }
+        public System.Object file { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;fileSystemInfo&quot; property, of type &quot;microsoft.graph.fileSystemInfo&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.fileSystemInfo")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteItem", HelpMessage = @"The &quot;fileSystemInfo&quot; property, of type &quot;microsoft.graph.fileSystemInfo&quot;.")]
-        public System.Object FileSystemInfo { get; set; }
+        public System.Object fileSystemInfo { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;folder&quot; property, of type &quot;microsoft.graph.folder&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.folder")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteItem", HelpMessage = @"The &quot;folder&quot; property, of type &quot;microsoft.graph.folder&quot;.")]
-        public System.Object Folder { get; set; }
+        public System.Object folder { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.</para>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.identitySet")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteItem", HelpMessage = @"The &quot;lastModifiedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
-        public System.Object LastModifiedBy { get; set; }
+        public System.Object lastModifiedBy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteItem", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset LastModifiedDateTime { get; set; }
+        public System.DateTimeOffset lastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;name&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -82,7 +82,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteItem", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Name { get; set; }
+        public System.String name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;package&quot; property, of type &quot;microsoft.graph.package&quot;.</para>
@@ -91,7 +91,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.package")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteItem", HelpMessage = @"The &quot;package&quot; property, of type &quot;microsoft.graph.package&quot;.")]
-        public System.Object Package { get; set; }
+        public System.Object package { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;parentReference&quot; property, of type &quot;microsoft.graph.itemReference&quot;.</para>
@@ -100,7 +100,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.itemReference")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteItem", HelpMessage = @"The &quot;parentReference&quot; property, of type &quot;microsoft.graph.itemReference&quot;.")]
-        public System.Object ParentReference { get; set; }
+        public System.Object parentReference { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;shared&quot; property, of type &quot;microsoft.graph.shared&quot;.</para>
@@ -109,7 +109,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.shared")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteItem", HelpMessage = @"The &quot;shared&quot; property, of type &quot;microsoft.graph.shared&quot;.")]
-        public System.Object Shared { get; set; }
+        public System.Object shared { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.</para>
@@ -118,7 +118,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.sharepointIds")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteItem", HelpMessage = @"The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
-        public System.Object SharepointIds { get; set; }
+        public System.Object sharepointIds { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.</para>
@@ -127,7 +127,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int64")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteItem", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        public System.Int64 Size { get; set; }
+        public System.Int64 size { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;specialFolder&quot; property, of type &quot;microsoft.graph.specialFolder&quot;.</para>
@@ -136,7 +136,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.specialFolder")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteItem", HelpMessage = @"The &quot;specialFolder&quot; property, of type &quot;microsoft.graph.specialFolder&quot;.")]
-        public System.Object SpecialFolder { get; set; }
+        public System.Object specialFolder { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;webDavUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -145,7 +145,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteItem", HelpMessage = @"The &quot;webDavUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String WebDavUrl { get; set; }
+        public System.String webDavUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -154,6 +154,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteItem", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String WebUrl { get; set; }
+        public System.String webUrl { get; set; }
     }
 }

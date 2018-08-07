@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"none", @"organizer", @"tentativelyAccepted", @"accepted", @"declined", @"notResponded")]
         [Parameter(ParameterSetName = @"#microsoft.graph.responseStatus", HelpMessage = @"The &quot;response&quot; property, of type &quot;microsoft.graph.responseType&quot;.")]
-        public System.String Response { get; set; }
+        public System.String response { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;time&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -32,6 +32,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.responseStatus", HelpMessage = @"The &quot;time&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset Time { get; set; }
+        public System.DateTimeOffset time { get; set; }
     }
 }

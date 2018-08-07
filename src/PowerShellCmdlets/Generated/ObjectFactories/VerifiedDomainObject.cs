@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.verifiedDomain", HelpMessage = @"The &quot;capabilities&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Capabilities { get; set; }
+        public System.String capabilities { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isDefault&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.verifiedDomain", HelpMessage = @"The &quot;isDefault&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean IsDefault { get; set; }
+        public System.Boolean isDefault { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isInitial&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.verifiedDomain", HelpMessage = @"The &quot;isInitial&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean IsInitial { get; set; }
+        public System.Boolean isInitial { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;name&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.verifiedDomain", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Name { get; set; }
+        public System.String name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;type&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -55,6 +55,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.verifiedDomain", HelpMessage = @"The &quot;type&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Type { get; set; }
+        public System.String type { get; set; }
     }
 }

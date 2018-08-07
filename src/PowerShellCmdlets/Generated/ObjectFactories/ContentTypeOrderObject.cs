@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contentTypeOrder", HelpMessage = @"The &quot;default&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean Default { get; set; }
+        public System.Boolean @default { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;position&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.contentTypeOrder", HelpMessage = @"The &quot;position&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Position { get; set; }
+        public System.Int32 position { get; set; }
     }
 }

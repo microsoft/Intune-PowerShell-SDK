@@ -19,12 +19,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK
         /// <summary>
         /// An instance of the cmdlet type that we should use to get the resource URL.
         /// </summary>
-        private readonly ODataCmdletBase _cmdletInstance;
+        private ODataCmdletBase _cmdletInstance;
 
         /// <summary>
         /// The "id" property on the cmdlet instance that we need to set before getting the resource URL.
         /// </summary>
-        private readonly PropertyInfo _idProperty;
+        private PropertyInfo _idProperty;
 
         internal ReferencePathGenerator(ODataCmdletBase cmdletInstance)
         {
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
             // Get the "id" property
             PropertyInfo idProperty = cmdletType.GetProperties()
                 .Where(prop => prop.GetCustomAttribute<AliasAttribute>()?.AliasNames?
-                    .Contains(ODataConstants.RequestProperties.Id.ToPascalCase()) == true)
+                    .Contains(ODataConstants.RequestProperties.Id) == true)
                 .FirstOrDefault();
 
             this._idProperty = idProperty;

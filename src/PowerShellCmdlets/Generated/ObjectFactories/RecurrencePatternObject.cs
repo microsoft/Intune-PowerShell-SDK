@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"daily", @"weekly", @"absoluteMonthly", @"relativeMonthly", @"absoluteYearly", @"relativeYearly")]
         [Parameter(ParameterSetName = @"#microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;type&quot; property, of type &quot;microsoft.graph.recurrencePatternType&quot;.")]
-        public System.String Type { get; set; }
+        public System.String type { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;interval&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;interval&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Interval { get; set; }
+        public System.Int32 interval { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;month&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;month&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Month { get; set; }
+        public System.Int32 month { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;dayOfMonth&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;dayOfMonth&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 DayOfMonth { get; set; }
+        public System.Int32 dayOfMonth { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;daysOfWeek&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.</para>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"sunday", @"monday", @"tuesday", @"wednesday", @"thursday", @"friday", @"saturday")]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;daysOfWeek&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.")]
-        public System.String[] DaysOfWeek { get; set; }
+        public System.String[] daysOfWeek { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;firstDayOfWeek&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.</para>
@@ -77,7 +77,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"sunday", @"monday", @"tuesday", @"wednesday", @"thursday", @"friday", @"saturday")]
         [Parameter(ParameterSetName = @"#microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;firstDayOfWeek&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.")]
-        public System.String FirstDayOfWeek { get; set; }
+        public System.String firstDayOfWeek { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;index&quot; property, of type &quot;microsoft.graph.weekIndex&quot;.</para>
@@ -90,6 +90,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"first", @"second", @"third", @"fourth", @"last")]
         [Parameter(ParameterSetName = @"#microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;index&quot; property, of type &quot;microsoft.graph.weekIndex&quot;.")]
-        public System.String Index { get; set; }
+        public System.String index { get; set; }
     }
 }

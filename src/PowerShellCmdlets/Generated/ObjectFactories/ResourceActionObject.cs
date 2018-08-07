@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.resourceAction", HelpMessage = @"The &quot;allowedResourceActions&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] AllowedResourceActions { get; set; }
+        public System.String[] allowedResourceActions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notAllowedResourceActions&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -32,6 +32,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.resourceAction", HelpMessage = @"The &quot;notAllowedResourceActions&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] NotAllowedResourceActions { get; set; }
+        public System.String[] notAllowedResourceActions { get; set; }
     }
 }

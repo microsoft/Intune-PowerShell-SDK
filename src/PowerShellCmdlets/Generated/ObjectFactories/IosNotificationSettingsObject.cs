@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;bundleID&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String BundleID { get; set; }
+        public System.String bundleID { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;appName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String AppName { get; set; }
+        public System.String appName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Publisher { get; set; }
+        public System.String publisher { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean Enabled { get; set; }
+        public System.Boolean enabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showInNotificationCenter&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -60,7 +60,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;showInNotificationCenter&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ShowInNotificationCenter { get; set; }
+        public System.Boolean showInNotificationCenter { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showOnLockScreen&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -70,7 +70,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;showOnLockScreen&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ShowOnLockScreen { get; set; }
+        public System.Boolean showOnLockScreen { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;alertType&quot; property, of type &quot;microsoft.graph.iosNotificationAlertType&quot;.</para>
@@ -84,7 +84,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"deviceDefault", @"banner", @"modal", @"none")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;alertType&quot; property, of type &quot;microsoft.graph.iosNotificationAlertType&quot;.")]
-        public System.String AlertType { get; set; }
+        public System.String alertType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;badgesEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -94,7 +94,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;badgesEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean BadgesEnabled { get; set; }
+        public System.Boolean badgesEnabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;soundsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -104,6 +104,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;soundsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean SoundsEnabled { get; set; }
+        public System.Boolean soundsEnabled { get; set; }
     }
 }

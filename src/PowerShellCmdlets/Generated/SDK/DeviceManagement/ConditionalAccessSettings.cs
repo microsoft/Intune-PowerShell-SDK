@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean Enabled { get; set; }
+        public System.Boolean enabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;includedGroups&quot; property, of type &quot;Edm.Guid&quot;.</para>
@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Guid")]
         [Selectable]
-        public System.Guid[] IncludedGroups { get; set; }
+        public System.Guid[] includedGroups { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;excludedGroups&quot; property, of type &quot;Edm.Guid&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Guid")]
         [Selectable]
-        public System.Guid[] ExcludedGroups { get; set; }
+        public System.Guid[] excludedGroups { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;overrideDefaultRule&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -51,16 +51,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean OverrideDefaultRule { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Sortable]
-        public System.String Id { get; set; }
+        public System.Boolean overrideDefaultRule { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -88,7 +79,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onPremisesConditionalAccessSettings", HelpMessage = @"The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean Enabled { get; set; }
+        public System.Boolean enabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;includedGroups&quot; property, of type &quot;Edm.Guid&quot;.</para>
@@ -100,7 +91,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.onPremisesConditionalAccessSettings", HelpMessage = @"The &quot;includedGroups&quot; property, of type &quot;Edm.Guid&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;includedGroups&quot; property, of type &quot;Edm.Guid&quot;.")]
-        public System.Guid[] IncludedGroups { get; set; }
+        public System.Guid[] includedGroups { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;excludedGroups&quot; property, of type &quot;Edm.Guid&quot;.</para>
@@ -112,7 +103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.onPremisesConditionalAccessSettings", HelpMessage = @"The &quot;excludedGroups&quot; property, of type &quot;Edm.Guid&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;excludedGroups&quot; property, of type &quot;Edm.Guid&quot;.")]
-        public System.Guid[] ExcludedGroups { get; set; }
+        public System.Guid[] excludedGroups { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;overrideDefaultRule&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -123,7 +114,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onPremisesConditionalAccessSettings", HelpMessage = @"The &quot;overrideDefaultRule&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;overrideDefaultRule&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean OverrideDefaultRule { get; set; }
+        public System.Boolean overrideDefaultRule { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -150,7 +141,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onPremisesConditionalAccessSettings", HelpMessage = @"The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean Enabled { get; set; }
+        public System.Boolean enabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;includedGroups&quot; property, of type &quot;Edm.Guid&quot;.</para>
@@ -162,7 +153,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.onPremisesConditionalAccessSettings", HelpMessage = @"The &quot;includedGroups&quot; property, of type &quot;Edm.Guid&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;includedGroups&quot; property, of type &quot;Edm.Guid&quot;.")]
-        public System.Guid[] IncludedGroups { get; set; }
+        public System.Guid[] includedGroups { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;excludedGroups&quot; property, of type &quot;Edm.Guid&quot;.</para>
@@ -174,7 +165,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.onPremisesConditionalAccessSettings", HelpMessage = @"The &quot;excludedGroups&quot; property, of type &quot;Edm.Guid&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;excludedGroups&quot; property, of type &quot;Edm.Guid&quot;.")]
-        public System.Guid[] ExcludedGroups { get; set; }
+        public System.Guid[] excludedGroups { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;overrideDefaultRule&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -185,7 +176,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onPremisesConditionalAccessSettings", HelpMessage = @"The &quot;overrideDefaultRule&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;overrideDefaultRule&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean OverrideDefaultRule { get; set; }
+        public System.Boolean overrideDefaultRule { get; set; }
 
         internal override System.String GetResourcePath()
         {

@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheetProtectionOptions", HelpMessage = @"The &quot;allowAutoFilter&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AllowAutoFilter { get; set; }
+        public System.Boolean allowAutoFilter { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowDeleteColumns&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheetProtectionOptions", HelpMessage = @"The &quot;allowDeleteColumns&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AllowDeleteColumns { get; set; }
+        public System.Boolean allowDeleteColumns { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowDeleteRows&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheetProtectionOptions", HelpMessage = @"The &quot;allowDeleteRows&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AllowDeleteRows { get; set; }
+        public System.Boolean allowDeleteRows { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowFormatCells&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheetProtectionOptions", HelpMessage = @"The &quot;allowFormatCells&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AllowFormatCells { get; set; }
+        public System.Boolean allowFormatCells { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowFormatColumns&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheetProtectionOptions", HelpMessage = @"The &quot;allowFormatColumns&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AllowFormatColumns { get; set; }
+        public System.Boolean allowFormatColumns { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowFormatRows&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheetProtectionOptions", HelpMessage = @"The &quot;allowFormatRows&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AllowFormatRows { get; set; }
+        public System.Boolean allowFormatRows { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowInsertColumns&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheetProtectionOptions", HelpMessage = @"The &quot;allowInsertColumns&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AllowInsertColumns { get; set; }
+        public System.Boolean allowInsertColumns { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowInsertHyperlinks&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -82,7 +82,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheetProtectionOptions", HelpMessage = @"The &quot;allowInsertHyperlinks&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AllowInsertHyperlinks { get; set; }
+        public System.Boolean allowInsertHyperlinks { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowInsertRows&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -91,7 +91,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheetProtectionOptions", HelpMessage = @"The &quot;allowInsertRows&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AllowInsertRows { get; set; }
+        public System.Boolean allowInsertRows { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowPivotTables&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -100,7 +100,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheetProtectionOptions", HelpMessage = @"The &quot;allowPivotTables&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AllowPivotTables { get; set; }
+        public System.Boolean allowPivotTables { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;allowSort&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -109,6 +109,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheetProtectionOptions", HelpMessage = @"The &quot;allowSort&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AllowSort { get; set; }
+        public System.Boolean allowSort { get; set; }
     }
 }

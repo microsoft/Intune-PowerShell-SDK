@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.locationConstraint", HelpMessage = @"The &quot;isRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean IsRequired { get; set; }
+        public System.Boolean isRequired { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;suggestLocation&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.locationConstraint", HelpMessage = @"The &quot;suggestLocation&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean SuggestLocation { get; set; }
+        public System.Boolean suggestLocation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;locations&quot; property, of type &quot;microsoft.graph.locationConstraintItem&quot;.</para>
@@ -38,6 +38,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.locationConstraint", HelpMessage = @"The &quot;locations&quot; property, of type &quot;microsoft.graph.locationConstraintItem&quot;.")]
-        public System.Object[] Locations { get; set; }
+        public System.Object[] locations { get; set; }
     }
 }

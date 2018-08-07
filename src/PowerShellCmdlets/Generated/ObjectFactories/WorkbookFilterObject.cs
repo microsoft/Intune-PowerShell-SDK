@@ -19,6 +19,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookFilterCriteria")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookFilter", HelpMessage = @"The &quot;criteria&quot; property, of type &quot;microsoft.graph.workbookFilterCriteria&quot;.")]
-        public System.Object Criteria { get; set; }
+        public System.Object criteria { get; set; }
     }
 }

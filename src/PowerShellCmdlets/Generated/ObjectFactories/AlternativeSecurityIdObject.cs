@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.alternativeSecurityId", HelpMessage = @"The &quot;type&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Type { get; set; }
+        public System.Int32 type { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;identityProvider&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.alternativeSecurityId", HelpMessage = @"The &quot;identityProvider&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String IdentityProvider { get; set; }
+        public System.String identityProvider { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;key&quot; property, of type &quot;Edm.Binary&quot;.</para>
@@ -38,6 +38,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.alternativeSecurityId", HelpMessage = @"The &quot;key&quot; property, of type &quot;Edm.Binary&quot;.")]
-        public System.Byte[] Key { get; set; }
+        public System.Byte[] key { get; set; }
     }
 }

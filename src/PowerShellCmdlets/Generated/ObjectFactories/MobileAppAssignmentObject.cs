@@ -25,7 +25,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"available", @"required", @"uninstall", @"availableWithoutEnrollment")]
         [Parameter(ParameterSetName = @"#microsoft.graph.mobileAppAssignment", HelpMessage = @"The &quot;intent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
-        public System.String Intent { get; set; }
+        public System.String intent { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.</para>
@@ -35,7 +35,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceAndAppManagementAssignmentTarget")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.mobileAppAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
-        public System.Object Target { get; set; }
+        public System.Object target { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settings&quot; property, of type &quot;microsoft.graph.mobileAppAssignmentSettings&quot;.</para>
@@ -45,6 +45,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mobileAppAssignmentSettings")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.mobileAppAssignment", HelpMessage = @"The &quot;settings&quot; property, of type &quot;microsoft.graph.mobileAppAssignmentSettings&quot;.")]
-        public System.Object Settings { get; set; }
+        public System.Object settings { get; set; }
     }
 }

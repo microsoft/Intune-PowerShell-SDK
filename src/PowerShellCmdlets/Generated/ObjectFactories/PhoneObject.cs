@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"home", @"business", @"mobile", @"other", @"assistant", @"homeFax", @"businessFax", @"otherFax", @"pager", @"radio")]
         [Parameter(ParameterSetName = @"#microsoft.graph.phone", HelpMessage = @"The &quot;type&quot; property, of type &quot;microsoft.graph.phoneType&quot;.")]
-        public System.String Type { get; set; }
+        public System.String type { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;number&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.phone", HelpMessage = @"The &quot;number&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Number { get; set; }
+        public System.String number { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;region&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.phone", HelpMessage = @"The &quot;region&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Region { get; set; }
+        public System.String region { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;language&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -50,6 +50,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.phone", HelpMessage = @"The &quot;language&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Language { get; set; }
+        public System.String language { get; set; }
     }
 }

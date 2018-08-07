@@ -19,6 +19,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartLineFormat", HelpMessage = @"The &quot;color&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Color { get; set; }
+        public System.String color { get; set; }
     }
 }

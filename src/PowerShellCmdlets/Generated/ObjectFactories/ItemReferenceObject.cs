@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.itemReference", HelpMessage = @"The &quot;driveId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DriveId { get; set; }
+        public System.String driveId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;driveType&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.itemReference", HelpMessage = @"The &quot;driveType&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DriveType { get; set; }
+        public System.String driveType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;name&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.itemReference", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Name { get; set; }
+        public System.String name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;path&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.itemReference", HelpMessage = @"The &quot;path&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Path { get; set; }
+        public System.String path { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;shareId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.itemReference", HelpMessage = @"The &quot;shareId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ShareId { get; set; }
+        public System.String shareId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.</para>
@@ -64,6 +64,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.sharepointIds")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.itemReference", HelpMessage = @"The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
-        public System.Object SharepointIds { get; set; }
+        public System.Object sharepointIds { get; set; }
     }
 }

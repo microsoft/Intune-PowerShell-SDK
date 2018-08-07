@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.identity")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharingLink", HelpMessage = @"The &quot;application&quot; property, of type &quot;microsoft.graph.identity&quot;.")]
-        public System.Object Application { get; set; }
+        public System.Object application { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;scope&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharingLink", HelpMessage = @"The &quot;scope&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Scope { get; set; }
+        public System.String scope { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;type&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharingLink", HelpMessage = @"The &quot;type&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Type { get; set; }
+        public System.String type { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,6 +46,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sharingLink", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String WebUrl { get; set; }
+        public System.String webUrl { get; set; }
     }
 }

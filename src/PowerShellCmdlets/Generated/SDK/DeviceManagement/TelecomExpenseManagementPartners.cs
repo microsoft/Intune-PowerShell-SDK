@@ -12,7 +12,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_TelecomExpenseManagementPartners", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.telecomExpenseManagementPartner")]
-    [ResourceIdPropertyName("TelecomExpenseManagementPartnerId")]
+    [ResourceIdPropertyName("telecomExpenseManagementPartnerId")]
     [ResourceReference]
     public class Get_DeviceManagement_TelecomExpenseManagementPartners : GetOrSearchCmdlet
     {
@@ -20,10 +20,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.")]
-        public System.String TelecomExpenseManagementPartnerId { get; set; }
+        public System.String telecomExpenseManagementPartnerId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String DisplayName { get; set; }
+        public System.String displayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;url&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -43,7 +43,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String Url { get; set; }
+        public System.String url { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appAuthorized&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -53,7 +53,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean AppAuthorized { get; set; }
+        public System.Boolean appAuthorized { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean Enabled { get; set; }
+        public System.Boolean enabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -73,20 +73,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset LastConnectionDateTime { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.telecomExpenseManagementPartner&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Sortable]
-        public System.String Id { get; set; }
+        public System.DateTimeOffset lastConnectionDateTime { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/telecomExpenseManagementPartners/{TelecomExpenseManagementPartnerId ?? string.Empty}";
+            return $"deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagementPartnerId ?? string.Empty}";
         }
     }
 
@@ -110,7 +101,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayName { get; set; }
+        public System.String displayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;url&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -121,7 +112,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;url&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;url&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Url { get; set; }
+        public System.String url { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appAuthorized&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -132,7 +123,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;appAuthorized&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appAuthorized&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AppAuthorized { get; set; }
+        public System.Boolean appAuthorized { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -143,7 +134,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean Enabled { get; set; }
+        public System.Boolean enabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -154,7 +145,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset LastConnectionDateTime { get; set; }
+        public System.DateTimeOffset lastConnectionDateTime { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -170,17 +161,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Update", "DeviceManagement_TelecomExpenseManagementPartners", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.telecomExpenseManagementPartner")]
     [ODataType("microsoft.graph.telecomExpenseManagementPartner")]
-    [ResourceIdPropertyName("TelecomExpenseManagementPartnerId")]
+    [ResourceIdPropertyName("telecomExpenseManagementPartnerId")]
     public class Update_DeviceManagement_TelecomExpenseManagementPartners : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.")]
-        public System.String TelecomExpenseManagementPartnerId { get; set; }
+        public System.String telecomExpenseManagementPartnerId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -191,7 +182,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayName { get; set; }
+        public System.String displayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;url&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -202,7 +193,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;url&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;url&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Url { get; set; }
+        public System.String url { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appAuthorized&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -213,7 +204,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;appAuthorized&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appAuthorized&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AppAuthorized { get; set; }
+        public System.Boolean appAuthorized { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -224,7 +215,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean Enabled { get; set; }
+        public System.Boolean enabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -235,37 +226,37 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset LastConnectionDateTime { get; set; }
+        public System.DateTimeOffset lastConnectionDateTime { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/telecomExpenseManagementPartners/{TelecomExpenseManagementPartnerId}";
+            return $"deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagementPartnerId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/telecomExpenseManagementPartners/TelecomExpenseManagementPartnerId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/telecomExpenseManagementPartners/telecomExpenseManagementPartnerId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object from the &quot;telecomExpenseManagementPartners&quot; collection.</para>
     ///     <para type="description">The telecom expense management partners.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_TelecomExpenseManagementPartners", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.telecomExpenseManagementPartner")]
-    [ResourceIdPropertyName("TelecomExpenseManagementPartnerId")]
+    [ResourceIdPropertyName("telecomExpenseManagementPartnerId")]
     public class Remove_DeviceManagement_TelecomExpenseManagementPartners : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.")]
-        public System.String TelecomExpenseManagementPartnerId { get; set; }
+        public System.String telecomExpenseManagementPartnerId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/telecomExpenseManagementPartners/{TelecomExpenseManagementPartnerId}";
+            return $"deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagementPartnerId}";
         }
     }
 }

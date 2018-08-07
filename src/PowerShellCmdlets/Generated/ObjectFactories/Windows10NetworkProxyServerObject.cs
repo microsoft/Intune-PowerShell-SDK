@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10NetworkProxyServer", HelpMessage = @"The &quot;address&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Address { get; set; }
+        public System.String address { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exceptions&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10NetworkProxyServer", HelpMessage = @"The &quot;exceptions&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] Exceptions { get; set; }
+        public System.String[] exceptions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;useForLocalAddresses&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -41,6 +41,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windows10NetworkProxyServer", HelpMessage = @"The &quot;useForLocalAddresses&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean UseForLocalAddresses { get; set; }
+        public System.Boolean useForLocalAddresses { get; set; }
     }
 }

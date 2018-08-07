@@ -12,7 +12,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_ResourceOperations", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.resourceOperation")]
-    [ResourceIdPropertyName("ResourceOperationId")]
+    [ResourceIdPropertyName("resourceOperationId")]
     [ResourceReference]
     public class Get_DeviceManagement_ResourceOperations : GetOrSearchCmdlet
     {
@@ -20,10 +20,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.resourceOperation&quot; object in the &quot;resourceOperations&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.resourceOperation&quot; object in the &quot;resourceOperations&quot; collection.")]
-        public System.String ResourceOperationId { get; set; }
+        public System.String resourceOperationId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;resourceName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String ResourceName { get; set; }
+        public System.String resourceName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -43,7 +43,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String ActionName { get; set; }
+        public System.String actionName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -53,20 +53,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String Description { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.resourceOperation&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Sortable]
-        public System.String Id { get; set; }
+        public System.String description { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/resourceOperations/{ResourceOperationId ?? string.Empty}";
+            return $"deviceManagement/resourceOperations/{resourceOperationId ?? string.Empty}";
         }
     }
 
@@ -90,7 +81,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.resourceOperation", HelpMessage = @"The &quot;resourceName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;resourceName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ResourceName { get; set; }
+        public System.String resourceName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -101,7 +92,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.resourceOperation", HelpMessage = @"The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ActionName { get; set; }
+        public System.String actionName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -112,7 +103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.resourceOperation", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Description { get; set; }
+        public System.String description { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -128,17 +119,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Update", "DeviceManagement_ResourceOperations", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.resourceOperation")]
     [ODataType("microsoft.graph.resourceOperation")]
-    [ResourceIdPropertyName("ResourceOperationId")]
+    [ResourceIdPropertyName("resourceOperationId")]
     public class Update_DeviceManagement_ResourceOperations : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.resourceOperation&quot; object in the &quot;resourceOperations&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.resourceOperation&quot; object in the &quot;resourceOperations&quot; collection.")]
-        public System.String ResourceOperationId { get; set; }
+        public System.String resourceOperationId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;resourceName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -149,7 +140,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.resourceOperation", HelpMessage = @"The &quot;resourceName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;resourceName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ResourceName { get; set; }
+        public System.String resourceName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -160,7 +151,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.resourceOperation", HelpMessage = @"The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ActionName { get; set; }
+        public System.String actionName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -171,37 +162,37 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.resourceOperation", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Description { get; set; }
+        public System.String description { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/resourceOperations/{ResourceOperationId}";
+            return $"deviceManagement/resourceOperations/{resourceOperationId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.resourceOperation&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/resourceOperations/ResourceOperationId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/resourceOperations/resourceOperationId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.resourceOperation&quot; object from the &quot;resourceOperations&quot; collection.</para>
     ///     <para type="description">The Resource Operations.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_ResourceOperations", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.resourceOperation")]
-    [ResourceIdPropertyName("ResourceOperationId")]
+    [ResourceIdPropertyName("resourceOperationId")]
     public class Remove_DeviceManagement_ResourceOperations : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.resourceOperation&quot; object in the &quot;resourceOperations&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.resourceOperation&quot; object in the &quot;resourceOperations&quot; collection.")]
-        public System.String ResourceOperationId { get; set; }
+        public System.String resourceOperationId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/resourceOperations/{ResourceOperationId}";
+            return $"deviceManagement/resourceOperations/{resourceOperationId}";
         }
     }
 }

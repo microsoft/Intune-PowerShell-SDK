@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.textColumn", HelpMessage = @"The &quot;allowMultipleLines&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AllowMultipleLines { get; set; }
+        public System.Boolean allowMultipleLines { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appendChangesToExistingText&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.textColumn", HelpMessage = @"The &quot;appendChangesToExistingText&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean AppendChangesToExistingText { get; set; }
+        public System.Boolean appendChangesToExistingText { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;linesForEditing&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.textColumn", HelpMessage = @"The &quot;linesForEditing&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 LinesForEditing { get; set; }
+        public System.Int32 linesForEditing { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;maxLength&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.textColumn", HelpMessage = @"The &quot;maxLength&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 MaxLength { get; set; }
+        public System.Int32 maxLength { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;textType&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -55,6 +55,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.textColumn", HelpMessage = @"The &quot;textType&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String TextType { get; set; }
+        public System.String textType { get; set; }
     }
 }

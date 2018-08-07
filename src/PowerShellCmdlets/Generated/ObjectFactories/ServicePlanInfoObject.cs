@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Guid")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.servicePlanInfo", HelpMessage = @"The &quot;servicePlanId&quot; property, of type &quot;Edm.Guid&quot;.")]
-        public System.Guid ServicePlanId { get; set; }
+        public System.Guid servicePlanId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;servicePlanName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.servicePlanInfo", HelpMessage = @"The &quot;servicePlanName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ServicePlanName { get; set; }
+        public System.String servicePlanName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;provisioningStatus&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.servicePlanInfo", HelpMessage = @"The &quot;provisioningStatus&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ProvisioningStatus { get; set; }
+        public System.String provisioningStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;appliesTo&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,6 +46,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.servicePlanInfo", HelpMessage = @"The &quot;appliesTo&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String AppliesTo { get; set; }
+        public System.String appliesTo { get; set; }
     }
 }

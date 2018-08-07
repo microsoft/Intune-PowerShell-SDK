@@ -12,7 +12,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_RemoteAssistancePartners", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
-    [ResourceIdPropertyName("RemoteAssistancePartnerId")]
+    [ResourceIdPropertyName("remoteAssistancePartnerId")]
     [ResourceReference]
     public class Get_DeviceManagement_RemoteAssistancePartners : GetOrSearchCmdlet
     {
@@ -20,10 +20,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.")]
-        public System.String RemoteAssistancePartnerId { get; set; }
+        public System.String remoteAssistancePartnerId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String DisplayName { get; set; }
+        public System.String displayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;onboardingUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -43,7 +43,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String OnboardingUrl { get; set; }
+        public System.String onboardingUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;onboardingStatus&quot; property, of type &quot;microsoft.graph.remoteAssistanceOnboardingStatus&quot;.</para>
@@ -53,7 +53,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.remoteAssistanceOnboardingStatus")]
         [Selectable]
         [Sortable]
-        public System.String OnboardingStatus { get; set; }
+        public System.String onboardingStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -63,20 +63,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset LastConnectionDateTime { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.remoteAssistancePartner&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Sortable]
-        public System.String Id { get; set; }
+        public System.DateTimeOffset lastConnectionDateTime { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/remoteAssistancePartners/{RemoteAssistancePartnerId ?? string.Empty}";
+            return $"deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId ?? string.Empty}";
         }
     }
 
@@ -100,7 +91,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteAssistancePartner", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayName { get; set; }
+        public System.String displayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;onboardingUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -111,7 +102,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteAssistancePartner", HelpMessage = @"The &quot;onboardingUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;onboardingUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String OnboardingUrl { get; set; }
+        public System.String onboardingUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;onboardingStatus&quot; property, of type &quot;microsoft.graph.remoteAssistanceOnboardingStatus&quot;.</para>
@@ -126,7 +117,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"notOnboarded", @"onboarding", @"onboarded")]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteAssistancePartner", HelpMessage = @"The &quot;onboardingStatus&quot; property, of type &quot;microsoft.graph.remoteAssistanceOnboardingStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;onboardingStatus&quot; property, of type &quot;microsoft.graph.remoteAssistanceOnboardingStatus&quot;.")]
-        public System.String OnboardingStatus { get; set; }
+        public System.String onboardingStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -137,7 +128,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteAssistancePartner", HelpMessage = @"The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset LastConnectionDateTime { get; set; }
+        public System.DateTimeOffset lastConnectionDateTime { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -153,17 +144,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Update", "DeviceManagement_RemoteAssistancePartners", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.remoteAssistancePartner")]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
-    [ResourceIdPropertyName("RemoteAssistancePartnerId")]
+    [ResourceIdPropertyName("remoteAssistancePartnerId")]
     public class Update_DeviceManagement_RemoteAssistancePartners : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.")]
-        public System.String RemoteAssistancePartnerId { get; set; }
+        public System.String remoteAssistancePartnerId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -174,7 +165,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteAssistancePartner", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayName { get; set; }
+        public System.String displayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;onboardingUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -185,7 +176,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteAssistancePartner", HelpMessage = @"The &quot;onboardingUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;onboardingUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String OnboardingUrl { get; set; }
+        public System.String onboardingUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;onboardingStatus&quot; property, of type &quot;microsoft.graph.remoteAssistanceOnboardingStatus&quot;.</para>
@@ -200,7 +191,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"notOnboarded", @"onboarding", @"onboarded")]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteAssistancePartner", HelpMessage = @"The &quot;onboardingStatus&quot; property, of type &quot;microsoft.graph.remoteAssistanceOnboardingStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;onboardingStatus&quot; property, of type &quot;microsoft.graph.remoteAssistanceOnboardingStatus&quot;.")]
-        public System.String OnboardingStatus { get; set; }
+        public System.String onboardingStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -211,37 +202,37 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.remoteAssistancePartner", HelpMessage = @"The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastConnectionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset LastConnectionDateTime { get; set; }
+        public System.DateTimeOffset lastConnectionDateTime { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/remoteAssistancePartners/{RemoteAssistancePartnerId}";
+            return $"deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.remoteAssistancePartner&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/remoteAssistancePartners/RemoteAssistancePartnerId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/remoteAssistancePartners/remoteAssistancePartnerId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.remoteAssistancePartner&quot; object from the &quot;remoteAssistancePartners&quot; collection.</para>
     ///     <para type="description">The remote assist partners.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_RemoteAssistancePartners", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
-    [ResourceIdPropertyName("RemoteAssistancePartnerId")]
+    [ResourceIdPropertyName("remoteAssistancePartnerId")]
     public class Remove_DeviceManagement_RemoteAssistancePartners : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.")]
-        public System.String RemoteAssistancePartnerId { get; set; }
+        public System.String remoteAssistancePartnerId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/remoteAssistancePartners/{RemoteAssistancePartnerId}";
+            return $"deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}";
         }
     }
 
@@ -252,21 +243,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "DeviceManagement_RemoteAssistancePartners_BeginOnboarding", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
-    [ResourceIdPropertyName("RemoteAssistancePartnerId")]
+    [ResourceIdPropertyName("remoteAssistancePartnerId")]
     public class Invoke_DeviceManagement_RemoteAssistancePartners_BeginOnboarding : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.")]
-        public System.String RemoteAssistancePartnerId { get; set; }
+        public System.String remoteAssistancePartnerId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/remoteAssistancePartners/{RemoteAssistancePartnerId}/beginOnboarding";
+            return $"deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/beginOnboarding";
         }
     }
 
@@ -277,21 +268,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "DeviceManagement_RemoteAssistancePartners_Disconnect", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
-    [ResourceIdPropertyName("RemoteAssistancePartnerId")]
+    [ResourceIdPropertyName("remoteAssistancePartnerId")]
     public class Invoke_DeviceManagement_RemoteAssistancePartners_Disconnect : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.")]
-        public System.String RemoteAssistancePartnerId { get; set; }
+        public System.String remoteAssistancePartnerId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/remoteAssistancePartners/{RemoteAssistancePartnerId}/disconnect";
+            return $"deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/disconnect";
         }
     }
 }

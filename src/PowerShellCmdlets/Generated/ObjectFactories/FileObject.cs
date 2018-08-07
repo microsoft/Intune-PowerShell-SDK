@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.hashes")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.file", HelpMessage = @"The &quot;hashes&quot; property, of type &quot;microsoft.graph.hashes&quot;.")]
-        public System.Object Hashes { get; set; }
+        public System.Object hashes { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mimeType&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.file", HelpMessage = @"The &quot;mimeType&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String MimeType { get; set; }
+        public System.String mimeType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;processingMetadata&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -37,6 +37,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.file", HelpMessage = @"The &quot;processingMetadata&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ProcessingMetadata { get; set; }
+        public System.Boolean processingMetadata { get; set; }
     }
 }

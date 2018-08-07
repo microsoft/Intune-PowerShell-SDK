@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerTaskDetails", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Description { get; set; }
+        public System.String description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;previewType&quot; property, of type &quot;microsoft.graph.plannerPreviewType&quot;.</para>
@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"automatic", @"noPreview", @"checklist", @"description", @"reference")]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerTaskDetails", HelpMessage = @"The &quot;previewType&quot; property, of type &quot;microsoft.graph.plannerPreviewType&quot;.")]
-        public System.String PreviewType { get; set; }
+        public System.String previewType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;references&quot; property, of type &quot;microsoft.graph.plannerExternalReferences&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.plannerExternalReferences")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerTaskDetails", HelpMessage = @"The &quot;references&quot; property, of type &quot;microsoft.graph.plannerExternalReferences&quot;.")]
-        public System.Object References { get; set; }
+        public System.Object references { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;checklist&quot; property, of type &quot;microsoft.graph.plannerChecklistItems&quot;.</para>
@@ -50,6 +50,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.plannerChecklistItems")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerTaskDetails", HelpMessage = @"The &quot;checklist&quot; property, of type &quot;microsoft.graph.plannerChecklistItems&quot;.")]
-        public System.Object Checklist { get; set; }
+        public System.Object checklist { get; set; }
     }
 }

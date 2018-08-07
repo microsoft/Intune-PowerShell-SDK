@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         /// Mapping between parameter names and their type cast.
         /// </summary>
-        protected IDictionary<string, string> TypeCastMappings { get; } = new Dictionary<string, string>();
+        protected IDictionary<string, string> TypeCastMappings = new Dictionary<string, string>();
 
         /// <summary>
         /// The list of $select query option values (i.e. property names).
@@ -53,14 +53,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             foreach (PropertyInfo prop in properties)
             {
                 // Store the mapping between the parameter name and its type cast if necessary
-                string camelCasePropertyName = prop.Name.ToCamelCase();
-                this.TypeCastMappings.Add(prop.Name, camelCasePropertyName);
+                this.TypeCastMappings.Add(prop.Name, prop.Name);
                 if (Attribute.IsDefined(prop, typeof(DerivedTypeAttribute)))
                 {
                     DerivedTypeAttribute selectableAttr = prop.GetCustomAttribute<DerivedTypeAttribute>(false);
                     if (!string.IsNullOrWhiteSpace(selectableAttr.FullName))
                     {
-                        this.TypeCastMappings[prop.Name] = $"{selectableAttr.FullName}/{camelCasePropertyName}";
+                        this.TypeCastMappings[prop.Name] = $"{selectableAttr.FullName}/{prop.Name}";
                     }
                 }
             }
@@ -152,8 +151,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             // Expand
             if (Expand != null && Expand.Any())
             {
-                IEnumerable<string> expandable = this.Expand.Select(param => this.TypeCastMappings[param]);
-                queryOptions.Add(ODataConstants.QueryParameters.Expand, string.Join(",", expandable));
+                IEnumerable<string> selectable = this.Expand.Select(param => this.TypeCastMappings[param]);
+                queryOptions.Add(ODataConstants.QueryParameters.Expand, string.Join(",", this.Expand));
             }
 
             return queryOptions;
@@ -174,20 +173,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                     && ((this is GetOrSearchCmdlet && this.ParameterSetName == GetOrSearchCmdlet.OperationName) || this is FunctionReturningCollectionCmdlet))
                 {
                     // Process the results
-                    string valuePropertyPascalCase = ODataConstants.SearchResultProperties.Value.ToPascalCase();
                     IEnumerable<object> resultObjects = null;
-                    if (response.Properties.Any(property => property.Name == valuePropertyPascalCase))
+                    if (response.Properties.Any(property => property.Name == ODataConstants.SearchResultProperties.Value))
                     {
                         // Get the values
-                        resultObjects = response.Properties[valuePropertyPascalCase].Value as IEnumerable<object>;
+                        resultObjects = response.Properties[ODataConstants.SearchResultProperties.Value].Value as IEnumerable<object>;
 
                         // Add an alias to the ID properties of each result object
                         foreach (object obj in resultObjects)
                         {
-                            if (obj is PSObject psObj)
-                            {
-                                this.ProcessResultObject(psObj);
-                            }
+                            this.ProcessResultObject(obj);
                         }
                     }
 
@@ -197,11 +192,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                         // There were values in the page and there was no nextLink, so unwrap and return the values
                         result = resultObjects;
                     }
+                    else
+                    {
+                        // There was a nextLink - return the whole response so we don't lose the link to the next page
+                        result = response;
+                    }
                 }
                 else // The response is not a collection of results, it is just a single object
                 {
                     // Process the result object
-                    this.ProcessResultObject(response);
+                    this.ProcessResultObject(result);
                 }
             }
 
@@ -229,13 +229,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 object paramValue = param.GetValue(this);
                 Type paramType = param.PropertyType;
                 string oDataType = param.GetODataTypeName();
-                string camelCaseParamName = param.Name.ToCamelCase();
 
                 // Check if we need special handling of the value based on the parameter type
                 string paramArgumentValue = paramValue.ToODataString(oDataType, isArray: paramType.IsArray, isUrlValue: true);
 
                 // Create the parameter mapping
-                return $"{camelCaseParamName}={WebUtility.UrlEncode(paramArgumentValue)}";
+                return $"{param.Name}={WebUtility.UrlEncode(paramArgumentValue)}";
             });
 
             // Join the list of arguments

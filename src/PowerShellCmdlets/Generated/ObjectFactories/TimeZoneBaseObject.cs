@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.timeZoneBase")]
         [Parameter(ParameterSetName = @"#microsoft.graph.timeZoneBase", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.timeZoneBase&quot; type.")]
-        public System.Management.Automation.SwitchParameter TimeZoneBase { get; set; }
+        public System.Management.Automation.SwitchParameter timeZoneBase { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;name&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.timeZoneBase", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.customTimeZone", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Name { get; set; }
+        public System.String name { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.customTimeZone&quot; type.</para>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.customTimeZone")]
         [Parameter(ParameterSetName = @"#microsoft.graph.customTimeZone", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.customTimeZone&quot; type.")]
-        public System.Management.Automation.SwitchParameter CustomTimeZone { get; set; }
+        public System.Management.Automation.SwitchParameter customTimeZone { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bias&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.customTimeZone", HelpMessage = @"The &quot;bias&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Bias { get; set; }
+        public System.Int32 bias { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;standardOffset&quot; property, of type &quot;microsoft.graph.standardTimeZoneOffset&quot;.</para>
@@ -54,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.standardTimeZoneOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.customTimeZone", HelpMessage = @"The &quot;standardOffset&quot; property, of type &quot;microsoft.graph.standardTimeZoneOffset&quot;.")]
-        public System.Object StandardOffset { get; set; }
+        public System.Object standardOffset { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;daylightOffset&quot; property, of type &quot;microsoft.graph.daylightTimeZoneOffset&quot;.</para>
@@ -63,6 +63,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.daylightTimeZoneOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.customTimeZone", HelpMessage = @"The &quot;daylightOffset&quot; property, of type &quot;microsoft.graph.daylightTimeZoneOffset&quot;.")]
-        public System.Object DaylightOffset { get; set; }
+        public System.Object daylightOffset { get; set; }
     }
 }

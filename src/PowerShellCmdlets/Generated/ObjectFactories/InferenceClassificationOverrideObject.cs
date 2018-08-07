@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"focused", @"other")]
         [Parameter(ParameterSetName = @"#microsoft.graph.inferenceClassificationOverride", HelpMessage = @"The &quot;classifyAs&quot; property, of type &quot;microsoft.graph.inferenceClassificationType&quot;.")]
-        public System.String ClassifyAs { get; set; }
+        public System.String classifyAs { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;senderEmailAddress&quot; property, of type &quot;microsoft.graph.emailAddress&quot;.</para>
@@ -32,6 +32,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.emailAddress")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.inferenceClassificationOverride", HelpMessage = @"The &quot;senderEmailAddress&quot; property, of type &quot;microsoft.graph.emailAddress&quot;.")]
-        public System.Object SenderEmailAddress { get; set; }
+        public System.Object senderEmailAddress { get; set; }
     }
 }

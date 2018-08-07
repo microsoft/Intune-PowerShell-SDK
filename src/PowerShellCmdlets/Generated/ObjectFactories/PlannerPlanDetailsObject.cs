@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.plannerUserIds")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerPlanDetails", HelpMessage = @"The &quot;sharedWith&quot; property, of type &quot;microsoft.graph.plannerUserIds&quot;.")]
-        public System.Object SharedWith { get; set; }
+        public System.Object sharedWith { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;categoryDescriptions&quot; property, of type &quot;microsoft.graph.plannerCategoryDescriptions&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.plannerCategoryDescriptions")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.plannerPlanDetails", HelpMessage = @"The &quot;categoryDescriptions&quot; property, of type &quot;microsoft.graph.plannerCategoryDescriptions&quot;.")]
-        public System.Object CategoryDescriptions { get; set; }
+        public System.Object categoryDescriptions { get; set; }
     }
 }

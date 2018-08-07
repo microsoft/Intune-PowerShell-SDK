@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"endDate", @"noEnd", @"numbered")]
         [Parameter(ParameterSetName = @"#microsoft.graph.recurrenceRange", HelpMessage = @"The &quot;type&quot; property, of type &quot;microsoft.graph.recurrenceRangeType&quot;.")]
-        public System.String Type { get; set; }
+        public System.String type { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;startDate&quot; property, of type &quot;Edm.Date&quot;.</para>
@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Date")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.recurrenceRange", HelpMessage = @"The &quot;startDate&quot; property, of type &quot;Edm.Date&quot;.")]
-        public System.DateTimeOffset StartDate { get; set; }
+        public System.DateTimeOffset startDate { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;endDate&quot; property, of type &quot;Edm.Date&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Date")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.recurrenceRange", HelpMessage = @"The &quot;endDate&quot; property, of type &quot;Edm.Date&quot;.")]
-        public System.DateTimeOffset EndDate { get; set; }
+        public System.DateTimeOffset endDate { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;recurrenceTimeZone&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.recurrenceRange", HelpMessage = @"The &quot;recurrenceTimeZone&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String RecurrenceTimeZone { get; set; }
+        public System.String recurrenceTimeZone { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;numberOfOccurrences&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -59,6 +59,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.recurrenceRange", HelpMessage = @"The &quot;numberOfOccurrences&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 NumberOfOccurrences { get; set; }
+        public System.Int32 numberOfOccurrences { get; set; }
     }
 }

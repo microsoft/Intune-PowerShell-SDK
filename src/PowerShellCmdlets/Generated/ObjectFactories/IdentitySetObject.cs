@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.identity")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.identitySet", HelpMessage = @"The &quot;application&quot; property, of type &quot;microsoft.graph.identity&quot;.")]
-        public System.Object Application { get; set; }
+        public System.Object application { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;device&quot; property, of type &quot;microsoft.graph.identity&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.identity")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.identitySet", HelpMessage = @"The &quot;device&quot; property, of type &quot;microsoft.graph.identity&quot;.")]
-        public System.Object Device { get; set; }
+        public System.Object device { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;user&quot; property, of type &quot;microsoft.graph.identity&quot;.</para>
@@ -37,6 +37,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.identity")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.identitySet", HelpMessage = @"The &quot;user&quot; property, of type &quot;microsoft.graph.identity&quot;.")]
-        public System.Object User { get; set; }
+        public System.Object user { get; set; }
     }
 }

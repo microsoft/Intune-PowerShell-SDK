@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationTeacher", HelpMessage = @"The &quot;teacherNumber&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String TeacherNumber { get; set; }
+        public System.String teacherNumber { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;externalId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.educationTeacher", HelpMessage = @"The &quot;externalId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ExternalId { get; set; }
+        public System.String externalId { get; set; }
     }
 }

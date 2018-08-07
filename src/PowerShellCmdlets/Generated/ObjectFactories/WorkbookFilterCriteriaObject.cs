@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookFilterCriteria", HelpMessage = @"The &quot;color&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Color { get; set; }
+        public System.String color { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;criterion1&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookFilterCriteria", HelpMessage = @"The &quot;criterion1&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Criterion1 { get; set; }
+        public System.String criterion1 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;criterion2&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookFilterCriteria", HelpMessage = @"The &quot;criterion2&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Criterion2 { get; set; }
+        public System.String criterion2 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;dynamicCriteria&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookFilterCriteria", HelpMessage = @"The &quot;dynamicCriteria&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DynamicCriteria { get; set; }
+        public System.String dynamicCriteria { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;filterOn&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookFilterCriteria", HelpMessage = @"The &quot;filterOn&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String FilterOn { get; set; }
+        public System.String filterOn { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;icon&quot; property, of type &quot;microsoft.graph.workbookIcon&quot;.</para>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookIcon")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookFilterCriteria", HelpMessage = @"The &quot;icon&quot; property, of type &quot;microsoft.graph.workbookIcon&quot;.")]
-        public System.Object Icon { get; set; }
+        public System.Object icon { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;operator&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookFilterCriteria", HelpMessage = @"The &quot;operator&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Operator { get; set; }
+        public System.String @operator { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;values&quot; property, of type &quot;microsoft.graph.Json&quot;.</para>
@@ -82,6 +82,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookFilterCriteria", HelpMessage = @"The &quot;values&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object Values { get; set; }
+        public System.Object values { get; set; }
     }
 }

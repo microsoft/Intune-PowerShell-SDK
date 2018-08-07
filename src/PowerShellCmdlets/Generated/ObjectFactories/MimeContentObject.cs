@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.mimeContent", HelpMessage = @"The &quot;type&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Type { get; set; }
+        public System.String type { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;value&quot; property, of type &quot;Edm.Binary&quot;.</para>
@@ -31,6 +31,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.mimeContent", HelpMessage = @"The &quot;value&quot; property, of type &quot;Edm.Binary&quot;.")]
-        public System.Byte[] Value { get; set; }
+        public System.Byte[] value { get; set; }
     }
 }

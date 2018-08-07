@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.identitySet")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.shared", HelpMessage = @"The &quot;owner&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
-        public System.Object Owner { get; set; }
+        public System.Object owner { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;scope&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.shared", HelpMessage = @"The &quot;scope&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Scope { get; set; }
+        public System.String scope { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sharedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.identitySet")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.shared", HelpMessage = @"The &quot;sharedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
-        public System.Object SharedBy { get; set; }
+        public System.Object sharedBy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sharedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -46,6 +46,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.shared", HelpMessage = @"The &quot;sharedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset SharedDateTime { get; set; }
+        public System.DateTimeOffset sharedDateTime { get; set; }
     }
 }

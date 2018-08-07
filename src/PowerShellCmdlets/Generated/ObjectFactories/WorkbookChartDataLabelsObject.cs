@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartDataLabels", HelpMessage = @"The &quot;position&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Position { get; set; }
+        public System.String position { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;separator&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartDataLabels", HelpMessage = @"The &quot;separator&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Separator { get; set; }
+        public System.String separator { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showBubbleSize&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartDataLabels", HelpMessage = @"The &quot;showBubbleSize&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ShowBubbleSize { get; set; }
+        public System.Boolean showBubbleSize { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showCategoryName&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartDataLabels", HelpMessage = @"The &quot;showCategoryName&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ShowCategoryName { get; set; }
+        public System.Boolean showCategoryName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showLegendKey&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartDataLabels", HelpMessage = @"The &quot;showLegendKey&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ShowLegendKey { get; set; }
+        public System.Boolean showLegendKey { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showPercentage&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartDataLabels", HelpMessage = @"The &quot;showPercentage&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ShowPercentage { get; set; }
+        public System.Boolean showPercentage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showSeriesName&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartDataLabels", HelpMessage = @"The &quot;showSeriesName&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ShowSeriesName { get; set; }
+        public System.Boolean showSeriesName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;showValue&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -82,7 +82,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartDataLabels", HelpMessage = @"The &quot;showValue&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ShowValue { get; set; }
+        public System.Boolean showValue { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartDataLabelFormat&quot;.</para>
@@ -91,6 +91,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartDataLabelFormat")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartDataLabels", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartDataLabelFormat&quot;.")]
-        public System.Object Format { get; set; }
+        public System.Object format { get; set; }
     }
 }

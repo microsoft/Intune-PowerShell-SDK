@@ -6,13 +6,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.managedDevice&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/detectedApps/{DetectedAppId}/managedDevices</para>
+    ///     <para type="description">GET ~/deviceManagement/detectedApps/{detectedAppId}/managedDevices</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedDevice&quot; objects in the &quot;managedDevices&quot; collection.</para>
     ///     <para type="description">The devices that have the discovered application installed</para>
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_DetectedApps_ManagedDevices", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDevice")]
-    [ResourceIdPropertyName("ManagedDeviceId")]
+    [ResourceIdPropertyName("managedDeviceId")]
     public class Get_DeviceManagement_DetectedApps_ManagedDevices : GetOrSearchCmdlet
     {
         /// <summary>
@@ -21,16 +21,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.")]
-        public System.String DetectedAppId { get; set; }
+        public System.String detectedAppId { get; set; }
 
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.")]
-        public System.String ManagedDeviceId { get; set; }
+        public System.String managedDeviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String UserId { get; set; }
+        public System.String userId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String DeviceName { get; set; }
+        public System.String deviceName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedDeviceOwnerType&quot; property, of type &quot;microsoft.graph.managedDeviceOwnerType&quot;.</para>
@@ -60,7 +60,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedDeviceOwnerType")]
         [Selectable]
         [Sortable]
-        public System.String ManagedDeviceOwnerType { get; set; }
+        public System.String managedDeviceOwnerType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceActionResults&quot; property, of type &quot;microsoft.graph.deviceActionResult&quot;.</para>
@@ -69,7 +69,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceActionResult")]
         [Selectable]
-        public System.Object[] DeviceActionResults { get; set; }
+        public System.Object[] deviceActionResults { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enrolledDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -79,7 +79,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset EnrolledDateTime { get; set; }
+        public System.DateTimeOffset enrolledDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -89,7 +89,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset LastSyncDateTime { get; set; }
+        public System.DateTimeOffset lastSyncDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;operatingSystem&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -99,7 +99,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String OperatingSystem { get; set; }
+        public System.String operatingSystem { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;complianceState&quot; property, of type &quot;microsoft.graph.complianceState&quot;.</para>
@@ -109,7 +109,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.complianceState")]
         [Selectable]
         [Sortable]
-        public System.String ComplianceState { get; set; }
+        public System.String complianceState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;jailBroken&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -119,7 +119,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String JailBroken { get; set; }
+        public System.String jailBroken { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managementAgent&quot; property, of type &quot;microsoft.graph.managementAgentType&quot;.</para>
@@ -129,7 +129,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managementAgentType")]
         [Selectable]
         [Sortable]
-        public System.String ManagementAgent { get; set; }
+        public System.String managementAgent { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;osVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -139,7 +139,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String OsVersion { get; set; }
+        public System.String osVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;easActivated&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -149,7 +149,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean EasActivated { get; set; }
+        public System.Boolean easActivated { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;easDeviceId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -159,7 +159,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String EasDeviceId { get; set; }
+        public System.String easDeviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;easActivationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -169,7 +169,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset EasActivationDateTime { get; set; }
+        public System.DateTimeOffset easActivationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;azureADRegistered&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -179,7 +179,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean AzureADRegistered { get; set; }
+        public System.Boolean azureADRegistered { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceEnrollmentType&quot; property, of type &quot;microsoft.graph.deviceEnrollmentType&quot;.</para>
@@ -189,7 +189,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceEnrollmentType")]
         [Selectable]
         [Sortable]
-        public System.String DeviceEnrollmentType { get; set; }
+        public System.String deviceEnrollmentType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;activationLockBypassCode&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -199,7 +199,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String ActivationLockBypassCode { get; set; }
+        public System.String activationLockBypassCode { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;emailAddress&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -209,7 +209,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String EmailAddress { get; set; }
+        public System.String emailAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;azureADDeviceId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -219,7 +219,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String AzureADDeviceId { get; set; }
+        public System.String azureADDeviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceRegistrationState&quot; property, of type &quot;microsoft.graph.deviceRegistrationState&quot;.</para>
@@ -229,7 +229,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceRegistrationState")]
         [Selectable]
         [Sortable]
-        public System.String DeviceRegistrationState { get; set; }
+        public System.String deviceRegistrationState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceCategoryDisplayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -239,7 +239,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String DeviceCategoryDisplayName { get; set; }
+        public System.String deviceCategoryDisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isSupervised&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -249,7 +249,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean IsSupervised { get; set; }
+        public System.Boolean isSupervised { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeLastSuccessfulSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -259,7 +259,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset ExchangeLastSuccessfulSyncDateTime { get; set; }
+        public System.DateTimeOffset exchangeLastSuccessfulSyncDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeAccessState&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeAccessState&quot;.</para>
@@ -269,7 +269,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceManagementExchangeAccessState")]
         [Selectable]
         [Sortable]
-        public System.String ExchangeAccessState { get; set; }
+        public System.String exchangeAccessState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeAccessStateReason&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeAccessStateReason&quot;.</para>
@@ -279,7 +279,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceManagementExchangeAccessStateReason")]
         [Selectable]
         [Sortable]
-        public System.String ExchangeAccessStateReason { get; set; }
+        public System.String exchangeAccessStateReason { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;remoteAssistanceSessionUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -289,7 +289,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String RemoteAssistanceSessionUrl { get; set; }
+        public System.String remoteAssistanceSessionUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;remoteAssistanceSessionErrorDetails&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -299,7 +299,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String RemoteAssistanceSessionErrorDetails { get; set; }
+        public System.String remoteAssistanceSessionErrorDetails { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isEncrypted&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -309,7 +309,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean IsEncrypted { get; set; }
+        public System.Boolean isEncrypted { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -319,7 +319,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String UserPrincipalName { get; set; }
+        public System.String userPrincipalName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;model&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -329,7 +329,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String Model { get; set; }
+        public System.String model { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;manufacturer&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -339,7 +339,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String Manufacturer { get; set; }
+        public System.String manufacturer { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;imei&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -349,7 +349,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String Imei { get; set; }
+        public System.String imei { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;complianceGracePeriodExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -359,7 +359,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset ComplianceGracePeriodExpirationDateTime { get; set; }
+        public System.DateTimeOffset complianceGracePeriodExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;serialNumber&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -369,7 +369,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String SerialNumber { get; set; }
+        public System.String serialNumber { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;phoneNumber&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -379,7 +379,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String PhoneNumber { get; set; }
+        public System.String phoneNumber { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;androidSecurityPatchLevel&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -389,7 +389,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String AndroidSecurityPatchLevel { get; set; }
+        public System.String androidSecurityPatchLevel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -399,7 +399,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String UserDisplayName { get; set; }
+        public System.String userDisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;configurationManagerClientEnabledFeatures&quot; property, of type &quot;microsoft.graph.configurationManagerClientEnabledFeatures&quot;.</para>
@@ -409,7 +409,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.configurationManagerClientEnabledFeatures")]
         [Selectable]
         [Sortable]
-        public System.Object ConfigurationManagerClientEnabledFeatures { get; set; }
+        public System.Object configurationManagerClientEnabledFeatures { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;wiFiMacAddress&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -419,7 +419,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String WiFiMacAddress { get; set; }
+        public System.String wiFiMacAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceHealthAttestationState&quot; property, of type &quot;microsoft.graph.deviceHealthAttestationState&quot;.</para>
@@ -429,7 +429,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceHealthAttestationState")]
         [Selectable]
         [Sortable]
-        public System.Object DeviceHealthAttestationState { get; set; }
+        public System.Object deviceHealthAttestationState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;subscriberCarrier&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -439,7 +439,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String SubscriberCarrier { get; set; }
+        public System.String subscriberCarrier { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;meid&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -449,7 +449,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String Meid { get; set; }
+        public System.String meid { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;totalStorageSpaceInBytes&quot; property, of type &quot;Edm.Int64&quot;.</para>
@@ -459,7 +459,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int64")]
         [Selectable]
         [Sortable]
-        public System.Int64 TotalStorageSpaceInBytes { get; set; }
+        public System.Int64 totalStorageSpaceInBytes { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;freeStorageSpaceInBytes&quot; property, of type &quot;Edm.Int64&quot;.</para>
@@ -469,7 +469,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int64")]
         [Selectable]
         [Sortable]
-        public System.Int64 FreeStorageSpaceInBytes { get; set; }
+        public System.Int64 freeStorageSpaceInBytes { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedDeviceName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -479,7 +479,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String ManagedDeviceName { get; set; }
+        public System.String managedDeviceName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;partnerReportedThreatState&quot; property, of type &quot;microsoft.graph.managedDevicePartnerReportedHealthState&quot;.</para>
@@ -489,7 +489,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedDevicePartnerReportedHealthState")]
         [Selectable]
         [Sortable]
-        public System.String PartnerReportedThreatState { get; set; }
+        public System.String partnerReportedThreatState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceConfigurationStates&quot; property, of type &quot;microsoft.graph.deviceConfigurationState&quot;.</para>
@@ -499,7 +499,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceConfigurationState")]
         [Selectable]
         [Expandable]
-        public System.Object[] DeviceConfigurationStates { get; set; }
+        public System.Object[] deviceConfigurationStates { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceCategory&quot; property, of type &quot;microsoft.graph.deviceCategory&quot;.</para>
@@ -510,7 +510,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Expandable]
         [Sortable]
-        public System.Object DeviceCategory { get; set; }
+        public System.Object deviceCategory { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceCompliancePolicyStates&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyState&quot;.</para>
@@ -520,32 +520,23 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceCompliancePolicyState")]
         [Selectable]
         [Expandable]
-        public System.Object[] DeviceCompliancePolicyStates { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.managedDevice&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Sortable]
-        public System.String Id { get; set; }
+        public System.Object[] deviceCompliancePolicyStates { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/detectedApps/{DetectedAppId}/managedDevices/{ManagedDeviceId ?? string.Empty}";
+            return $"deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId ?? string.Empty}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.managedDevice&quot; object references.</para>
-    ///     <para type="description">GET ~/deviceManagement/detectedApps/{DetectedAppId}/managedDevices/$ref</para>
+    ///     <para type="description">GET ~/deviceManagement/detectedApps/{detectedAppId}/managedDevices/$ref</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedDevice&quot; object references in the &quot;managedDevices&quot; collection.</para>
     ///     <para type="description">The devices that have the discovered application installed</para>
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_DetectedApps_ManagedDevicesReferences", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDevice")]
-    [ResourceIdPropertyName("ManagedDeviceId")]
+    [ResourceIdPropertyName("managedDeviceId")]
     public class Get_DeviceManagement_DetectedApps_ManagedDevicesReferences : GetOrSearchCmdlet
     {
         /// <summary>
@@ -554,16 +545,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.")]
-        public System.String DetectedAppId { get; set; }
+        public System.String detectedAppId { get; set; }
 
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.")]
-        public System.String ManagedDeviceId { get; set; }
+        public System.String managedDeviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -573,7 +564,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String UserId { get; set; }
+        public System.String userId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -583,7 +574,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String DeviceName { get; set; }
+        public System.String deviceName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedDeviceOwnerType&quot; property, of type &quot;microsoft.graph.managedDeviceOwnerType&quot;.</para>
@@ -593,7 +584,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedDeviceOwnerType")]
         [Selectable]
         [Sortable]
-        public System.String ManagedDeviceOwnerType { get; set; }
+        public System.String managedDeviceOwnerType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceActionResults&quot; property, of type &quot;microsoft.graph.deviceActionResult&quot;.</para>
@@ -602,7 +593,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceActionResult")]
         [Selectable]
-        public System.Object[] DeviceActionResults { get; set; }
+        public System.Object[] deviceActionResults { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;enrolledDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -612,7 +603,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset EnrolledDateTime { get; set; }
+        public System.DateTimeOffset enrolledDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -622,7 +613,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset LastSyncDateTime { get; set; }
+        public System.DateTimeOffset lastSyncDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;operatingSystem&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -632,7 +623,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String OperatingSystem { get; set; }
+        public System.String operatingSystem { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;complianceState&quot; property, of type &quot;microsoft.graph.complianceState&quot;.</para>
@@ -642,7 +633,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.complianceState")]
         [Selectable]
         [Sortable]
-        public System.String ComplianceState { get; set; }
+        public System.String complianceState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;jailBroken&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -652,7 +643,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String JailBroken { get; set; }
+        public System.String jailBroken { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managementAgent&quot; property, of type &quot;microsoft.graph.managementAgentType&quot;.</para>
@@ -662,7 +653,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managementAgentType")]
         [Selectable]
         [Sortable]
-        public System.String ManagementAgent { get; set; }
+        public System.String managementAgent { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;osVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -672,7 +663,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String OsVersion { get; set; }
+        public System.String osVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;easActivated&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -682,7 +673,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean EasActivated { get; set; }
+        public System.Boolean easActivated { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;easDeviceId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -692,7 +683,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String EasDeviceId { get; set; }
+        public System.String easDeviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;easActivationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -702,7 +693,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset EasActivationDateTime { get; set; }
+        public System.DateTimeOffset easActivationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;azureADRegistered&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -712,7 +703,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean AzureADRegistered { get; set; }
+        public System.Boolean azureADRegistered { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceEnrollmentType&quot; property, of type &quot;microsoft.graph.deviceEnrollmentType&quot;.</para>
@@ -722,7 +713,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceEnrollmentType")]
         [Selectable]
         [Sortable]
-        public System.String DeviceEnrollmentType { get; set; }
+        public System.String deviceEnrollmentType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;activationLockBypassCode&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -732,7 +723,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String ActivationLockBypassCode { get; set; }
+        public System.String activationLockBypassCode { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;emailAddress&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -742,7 +733,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String EmailAddress { get; set; }
+        public System.String emailAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;azureADDeviceId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -752,7 +743,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String AzureADDeviceId { get; set; }
+        public System.String azureADDeviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceRegistrationState&quot; property, of type &quot;microsoft.graph.deviceRegistrationState&quot;.</para>
@@ -762,7 +753,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceRegistrationState")]
         [Selectable]
         [Sortable]
-        public System.String DeviceRegistrationState { get; set; }
+        public System.String deviceRegistrationState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceCategoryDisplayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -772,7 +763,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String DeviceCategoryDisplayName { get; set; }
+        public System.String deviceCategoryDisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isSupervised&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -782,7 +773,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean IsSupervised { get; set; }
+        public System.Boolean isSupervised { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeLastSuccessfulSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -792,7 +783,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset ExchangeLastSuccessfulSyncDateTime { get; set; }
+        public System.DateTimeOffset exchangeLastSuccessfulSyncDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeAccessState&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeAccessState&quot;.</para>
@@ -802,7 +793,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceManagementExchangeAccessState")]
         [Selectable]
         [Sortable]
-        public System.String ExchangeAccessState { get; set; }
+        public System.String exchangeAccessState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeAccessStateReason&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeAccessStateReason&quot;.</para>
@@ -812,7 +803,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceManagementExchangeAccessStateReason")]
         [Selectable]
         [Sortable]
-        public System.String ExchangeAccessStateReason { get; set; }
+        public System.String exchangeAccessStateReason { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;remoteAssistanceSessionUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -822,7 +813,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String RemoteAssistanceSessionUrl { get; set; }
+        public System.String remoteAssistanceSessionUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;remoteAssistanceSessionErrorDetails&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -832,7 +823,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String RemoteAssistanceSessionErrorDetails { get; set; }
+        public System.String remoteAssistanceSessionErrorDetails { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isEncrypted&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -842,7 +833,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        public System.Boolean IsEncrypted { get; set; }
+        public System.Boolean isEncrypted { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -852,7 +843,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String UserPrincipalName { get; set; }
+        public System.String userPrincipalName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;model&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -862,7 +853,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String Model { get; set; }
+        public System.String model { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;manufacturer&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -872,7 +863,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String Manufacturer { get; set; }
+        public System.String manufacturer { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;imei&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -882,7 +873,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String Imei { get; set; }
+        public System.String imei { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;complianceGracePeriodExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -892,7 +883,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Sortable]
-        public System.DateTimeOffset ComplianceGracePeriodExpirationDateTime { get; set; }
+        public System.DateTimeOffset complianceGracePeriodExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;serialNumber&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -902,7 +893,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String SerialNumber { get; set; }
+        public System.String serialNumber { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;phoneNumber&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -912,7 +903,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String PhoneNumber { get; set; }
+        public System.String phoneNumber { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;androidSecurityPatchLevel&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -922,7 +913,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String AndroidSecurityPatchLevel { get; set; }
+        public System.String androidSecurityPatchLevel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -932,7 +923,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String UserDisplayName { get; set; }
+        public System.String userDisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;configurationManagerClientEnabledFeatures&quot; property, of type &quot;microsoft.graph.configurationManagerClientEnabledFeatures&quot;.</para>
@@ -942,7 +933,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.configurationManagerClientEnabledFeatures")]
         [Selectable]
         [Sortable]
-        public System.Object ConfigurationManagerClientEnabledFeatures { get; set; }
+        public System.Object configurationManagerClientEnabledFeatures { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;wiFiMacAddress&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -952,7 +943,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String WiFiMacAddress { get; set; }
+        public System.String wiFiMacAddress { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceHealthAttestationState&quot; property, of type &quot;microsoft.graph.deviceHealthAttestationState&quot;.</para>
@@ -962,7 +953,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceHealthAttestationState")]
         [Selectable]
         [Sortable]
-        public System.Object DeviceHealthAttestationState { get; set; }
+        public System.Object deviceHealthAttestationState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;subscriberCarrier&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -972,7 +963,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String SubscriberCarrier { get; set; }
+        public System.String subscriberCarrier { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;meid&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -982,7 +973,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String Meid { get; set; }
+        public System.String meid { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;totalStorageSpaceInBytes&quot; property, of type &quot;Edm.Int64&quot;.</para>
@@ -992,7 +983,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int64")]
         [Selectable]
         [Sortable]
-        public System.Int64 TotalStorageSpaceInBytes { get; set; }
+        public System.Int64 totalStorageSpaceInBytes { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;freeStorageSpaceInBytes&quot; property, of type &quot;Edm.Int64&quot;.</para>
@@ -1002,7 +993,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int64")]
         [Selectable]
         [Sortable]
-        public System.Int64 FreeStorageSpaceInBytes { get; set; }
+        public System.Int64 freeStorageSpaceInBytes { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedDeviceName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1012,7 +1003,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        public System.String ManagedDeviceName { get; set; }
+        public System.String managedDeviceName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;partnerReportedThreatState&quot; property, of type &quot;microsoft.graph.managedDevicePartnerReportedHealthState&quot;.</para>
@@ -1022,7 +1013,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedDevicePartnerReportedHealthState")]
         [Selectable]
         [Sortable]
-        public System.String PartnerReportedThreatState { get; set; }
+        public System.String partnerReportedThreatState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceConfigurationStates&quot; property, of type &quot;microsoft.graph.deviceConfigurationState&quot;.</para>
@@ -1032,7 +1023,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceConfigurationState")]
         [Selectable]
         [Expandable]
-        public System.Object[] DeviceConfigurationStates { get; set; }
+        public System.Object[] deviceConfigurationStates { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceCategory&quot; property, of type &quot;microsoft.graph.deviceCategory&quot;.</para>
@@ -1043,7 +1034,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Expandable]
         [Sortable]
-        public System.Object DeviceCategory { get; set; }
+        public System.Object deviceCategory { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceCompliancePolicyStates&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyState&quot;.</para>
@@ -1053,32 +1044,23 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceCompliancePolicyState")]
         [Selectable]
         [Expandable]
-        public System.Object[] DeviceCompliancePolicyStates { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;id&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.managedDevice&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Sortable]
-        public System.String Id { get; set; }
+        public System.Object[] deviceCompliancePolicyStates { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/detectedApps/{DetectedAppId}/managedDevices/{ManagedDeviceId ?? string.Empty}/$ref";
+            return $"deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId ?? string.Empty}/$ref";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Creates a reference from a &quot;detectedApp&quot; to a &quot;microsoft.graph.managedDevice&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/detectedApps/{DetectedAppId}/managedDevices/$ref</para>
+    ///     <para type="description">POST ~/deviceManagement/detectedApps/{detectedAppId}/managedDevices/$ref</para>
     ///     <para type="description">Creates a reference from the specified &quot;detectedApp&quot; object to a &quot;managedDevice&quot;.</para>
     ///     <para type="description">The devices that have the discovered application installed</para>
     /// </summary>
     [Cmdlet("New", "DeviceManagement_DetectedApps_ManagedDevicesReferences", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedDevice")]
-    [ResourceIdPropertyName("ManagedDeviceReferenceUrl")]
+    [ResourceIdPropertyName("managedDeviceReferenceUrl")]
     public class New_DeviceManagement_DetectedApps_ManagedDevicesReferences : PostReferenceToCollectionCmdlet
     {
         /// <summary>
@@ -1087,7 +1069,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.")]
-        public System.String DetectedAppId { get; set; }
+        public System.String detectedAppId { get; set; }
 
         /// <summary>
         ///     <para type="description">The URL which should be used to access a &quot;microsoft.graph.managedDevice&quot; object.</para>
@@ -1095,38 +1077,38 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The URL which should be used to access a &quot;microsoft.graph.managedDevice&quot; object.")]
-        public System.String ManagedDeviceReferenceUrl { get; set; }
+        public System.String managedDeviceReferenceUrl { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/detectedApps/{DetectedAppId}/managedDevices/$ref";
+            return $"deviceManagement/detectedApps/{detectedAppId}/managedDevices/$ref";
         }
 
         internal override System.Object GetContent()
         {
-            return this.GetReferenceRequestContent(ManagedDeviceReferenceUrl);
+            return this.GetReferenceRequestContent(managedDeviceReferenceUrl);
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a reference from a &quot;detectedApp&quot; to a &quot;microsoft.graph.managedDevice&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/detectedApps/{DetectedAppId}/managedDevices/ManagedDeviceId/$ref</para>
+    ///     <para type="description">DELETE ~/deviceManagement/detectedApps/{detectedAppId}/managedDevices/managedDeviceId/$ref</para>
     ///     <para type="description">Removes a reference from the specified &quot;detectedApp&quot; object to a &quot;managedDevice&quot;.</para>
     ///     <para type="description">The devices that have the discovered application installed</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_DetectedApps_ManagedDevicesReferences", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
-    [ResourceIdPropertyName("ManagedDeviceId")]
+    [ResourceIdPropertyName("managedDeviceId")]
     public class Remove_DeviceManagement_DetectedApps_ManagedDevicesReferences : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [Alias("Id")]
+        [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.")]
-        public System.String ManagedDeviceId { get; set; }
+        public System.String managedDeviceId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.</para>
@@ -1134,11 +1116,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.")]
-        public System.String DetectedAppId { get; set; }
+        public System.String detectedAppId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/detectedApps/{DetectedAppId}/managedDevices/{ManagedDeviceId}/$ref";
+            return $"deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/$ref";
         }
     }
 }

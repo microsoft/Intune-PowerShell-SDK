@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteOperationError", HelpMessage = @"The &quot;code&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Code { get; set; }
+        public System.String code { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;message&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteOperationError", HelpMessage = @"The &quot;message&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Message { get; set; }
+        public System.String message { get; set; }
     }
 }

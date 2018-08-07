@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsDeviceAccount")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.updateWindowsDeviceAccountActionParameter", HelpMessage = @"The &quot;deviceAccount&quot; property, of type &quot;microsoft.graph.windowsDeviceAccount&quot;.")]
-        public System.Object DeviceAccount { get; set; }
+        public System.Object deviceAccount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;passwordRotationEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.updateWindowsDeviceAccountActionParameter", HelpMessage = @"The &quot;passwordRotationEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean PasswordRotationEnabled { get; set; }
+        public System.Boolean passwordRotationEnabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;calendarSyncEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.updateWindowsDeviceAccountActionParameter", HelpMessage = @"The &quot;calendarSyncEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean CalendarSyncEnabled { get; set; }
+        public System.Boolean calendarSyncEnabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceAccountEmail&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.updateWindowsDeviceAccountActionParameter", HelpMessage = @"The &quot;deviceAccountEmail&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DeviceAccountEmail { get; set; }
+        public System.String deviceAccountEmail { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exchangeServer&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.updateWindowsDeviceAccountActionParameter", HelpMessage = @"The &quot;exchangeServer&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ExchangeServer { get; set; }
+        public System.String exchangeServer { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sessionInitiationProtocalAddress&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -64,6 +64,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.updateWindowsDeviceAccountActionParameter", HelpMessage = @"The &quot;sessionInitiationProtocalAddress&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String SessionInitiationProtocalAddress { get; set; }
+        public System.String sessionInitiationProtocalAddress { get; set; }
     }
 }

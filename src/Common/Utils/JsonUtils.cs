@@ -149,7 +149,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                     foreach (JProperty property in jObj.Properties())
                     {
                         // Recursively convert this JObject into a PSObject
-                        psObj.Members.Add(new PSNoteProperty(property.Name.ToPascalCase(), property.Value.ToPowerShellObject()));
+                        psObj.Members.Add(new PSNoteProperty(property.Name, property.Value.ToPowerShellObject()));
                     }
 
                     return PSObject.AsPSObject(psObj);

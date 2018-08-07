@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sizeRange", HelpMessage = @"The &quot;minimumSize&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 MinimumSize { get; set; }
+        public System.Int32 minimumSize { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;maximumSize&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sizeRange", HelpMessage = @"The &quot;maximumSize&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 MaximumSize { get; set; }
+        public System.Int32 maximumSize { get; set; }
     }
 }

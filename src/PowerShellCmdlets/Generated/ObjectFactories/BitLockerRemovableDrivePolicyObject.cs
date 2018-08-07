@@ -24,7 +24,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"aesCbc128", @"aesCbc256", @"xtsAes128", @"xtsAes256")]
         [Parameter(ParameterSetName = @"#microsoft.graph.bitLockerRemovableDrivePolicy", HelpMessage = @"The &quot;encryptionMethod&quot; property, of type &quot;microsoft.graph.bitLockerEncryptionMethod&quot;.")]
-        public System.String EncryptionMethod { get; set; }
+        public System.String encryptionMethod { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;requireEncryptionForWriteAccess&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -34,7 +34,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.bitLockerRemovableDrivePolicy", HelpMessage = @"The &quot;requireEncryptionForWriteAccess&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean RequireEncryptionForWriteAccess { get; set; }
+        public System.Boolean requireEncryptionForWriteAccess { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;blockCrossOrganizationWriteAccess&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -44,6 +44,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.bitLockerRemovableDrivePolicy", HelpMessage = @"The &quot;blockCrossOrganizationWriteAccess&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean BlockCrossOrganizationWriteAccess { get; set; }
+        public System.Boolean blockCrossOrganizationWriteAccess { get; set; }
     }
 }

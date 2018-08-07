@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.listInfo", HelpMessage = @"The &quot;contentTypesEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean ContentTypesEnabled { get; set; }
+        public System.Boolean contentTypesEnabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;hidden&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.listInfo", HelpMessage = @"The &quot;hidden&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean Hidden { get; set; }
+        public System.Boolean hidden { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;template&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,6 +37,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.listInfo", HelpMessage = @"The &quot;template&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Template { get; set; }
+        public System.String template { get; set; }
     }
 }

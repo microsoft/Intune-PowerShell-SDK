@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartAxis", HelpMessage = @"The &quot;majorUnit&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object MajorUnit { get; set; }
+        public System.Object majorUnit { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;maximum&quot; property, of type &quot;microsoft.graph.Json&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartAxis", HelpMessage = @"The &quot;maximum&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object Maximum { get; set; }
+        public System.Object maximum { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimum&quot; property, of type &quot;microsoft.graph.Json&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartAxis", HelpMessage = @"The &quot;minimum&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object Minimum { get; set; }
+        public System.Object minimum { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minorUnit&quot; property, of type &quot;microsoft.graph.Json&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartAxis", HelpMessage = @"The &quot;minorUnit&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object MinorUnit { get; set; }
+        public System.Object minorUnit { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartAxisFormat&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartAxisFormat")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartAxis", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartAxisFormat&quot;.")]
-        public System.Object Format { get; set; }
+        public System.Object format { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;majorGridlines&quot; property, of type &quot;microsoft.graph.workbookChartGridlines&quot;.</para>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartGridlines")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartAxis", HelpMessage = @"The &quot;majorGridlines&quot; property, of type &quot;microsoft.graph.workbookChartGridlines&quot;.")]
-        public System.Object MajorGridlines { get; set; }
+        public System.Object majorGridlines { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minorGridlines&quot; property, of type &quot;microsoft.graph.workbookChartGridlines&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartGridlines")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartAxis", HelpMessage = @"The &quot;minorGridlines&quot; property, of type &quot;microsoft.graph.workbookChartGridlines&quot;.")]
-        public System.Object MinorGridlines { get; set; }
+        public System.Object minorGridlines { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;title&quot; property, of type &quot;microsoft.graph.workbookChartAxisTitle&quot;.</para>
@@ -82,6 +82,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartAxisTitle")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartAxis", HelpMessage = @"The &quot;title&quot; property, of type &quot;microsoft.graph.workbookChartAxisTitle&quot;.")]
-        public System.Object Title { get; set; }
+        public System.Object title { get; set; }
     }
 }

@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRule", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayName { get; set; }
+        public System.String displayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sequence&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRule", HelpMessage = @"The &quot;sequence&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Sequence { get; set; }
+        public System.Int32 sequence { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;conditions&quot; property, of type &quot;microsoft.graph.messageRulePredicates&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.messageRulePredicates")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRule", HelpMessage = @"The &quot;conditions&quot; property, of type &quot;microsoft.graph.messageRulePredicates&quot;.")]
-        public System.Object Conditions { get; set; }
+        public System.Object conditions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;actions&quot; property, of type &quot;microsoft.graph.messageRuleActions&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.messageRuleActions")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRule", HelpMessage = @"The &quot;actions&quot; property, of type &quot;microsoft.graph.messageRuleActions&quot;.")]
-        public System.Object Actions { get; set; }
+        public System.Object actions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;exceptions&quot; property, of type &quot;microsoft.graph.messageRulePredicates&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.messageRulePredicates")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRule", HelpMessage = @"The &quot;exceptions&quot; property, of type &quot;microsoft.graph.messageRulePredicates&quot;.")]
-        public System.Object Exceptions { get; set; }
+        public System.Object exceptions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRule", HelpMessage = @"The &quot;isEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean IsEnabled { get; set; }
+        public System.Boolean isEnabled { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;hasError&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRule", HelpMessage = @"The &quot;hasError&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean HasError { get; set; }
+        public System.Boolean hasError { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isReadOnly&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -82,6 +82,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.messageRule", HelpMessage = @"The &quot;isReadOnly&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean IsReadOnly { get; set; }
+        public System.Boolean isReadOnly { get; set; }
     }
 }

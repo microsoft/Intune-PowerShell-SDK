@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosNetworkUsageRule", HelpMessage = @"The &quot;managedApps&quot; property, of type &quot;microsoft.graph.appListItem&quot;.")]
-        public System.Object[] ManagedApps { get; set; }
+        public System.Object[] managedApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cellularDataBlockWhenRoaming&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosNetworkUsageRule", HelpMessage = @"The &quot;cellularDataBlockWhenRoaming&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean CellularDataBlockWhenRoaming { get; set; }
+        public System.Boolean cellularDataBlockWhenRoaming { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;cellularDataBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -41,6 +41,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosNetworkUsageRule", HelpMessage = @"The &quot;cellularDataBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean CellularDataBlocked { get; set; }
+        public System.Boolean cellularDataBlocked { get; set; }
     }
 }

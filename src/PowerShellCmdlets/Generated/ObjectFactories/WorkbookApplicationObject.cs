@@ -19,6 +19,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookApplication", HelpMessage = @"The &quot;calculationMode&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String CalculationMode { get; set; }
+        public System.String calculationMode { get; set; }
     }
 }

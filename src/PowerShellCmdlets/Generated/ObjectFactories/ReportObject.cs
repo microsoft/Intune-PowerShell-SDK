@@ -19,6 +19,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Stream")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.report", HelpMessage = @"The &quot;content&quot; property, of type &quot;Edm.Stream&quot;.")]
-        public System.IO.Stream Content { get; set; }
+        public System.IO.Stream content { get; set; }
     }
 }

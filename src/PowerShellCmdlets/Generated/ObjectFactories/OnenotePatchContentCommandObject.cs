@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"Replace", @"Append", @"Delete", @"Insert", @"Prepend")]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePatchContentCommand", HelpMessage = @"The &quot;action&quot; property, of type &quot;microsoft.graph.onenotePatchActionType&quot;.")]
-        public System.String Action { get; set; }
+        public System.String action { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;target&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePatchContentCommand", HelpMessage = @"The &quot;target&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Target { get; set; }
+        public System.String target { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;content&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -41,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePatchContentCommand", HelpMessage = @"The &quot;content&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Content { get; set; }
+        public System.String content { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;position&quot; property, of type &quot;microsoft.graph.onenotePatchInsertPosition&quot;.</para>
@@ -54,6 +54,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"After", @"Before")]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePatchContentCommand", HelpMessage = @"The &quot;position&quot; property, of type &quot;microsoft.graph.onenotePatchInsertPosition&quot;.")]
-        public System.String Position { get; set; }
+        public System.String position { get; set; }
     }
 }

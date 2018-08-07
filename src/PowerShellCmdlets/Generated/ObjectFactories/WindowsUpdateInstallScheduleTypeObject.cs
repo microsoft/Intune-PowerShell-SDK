@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.windowsUpdateActiveHoursInstall")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateActiveHoursInstall", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateActiveHoursInstall&quot; type.")]
-        public System.Management.Automation.SwitchParameter WindowsUpdateActiveHoursInstall { get; set; }
+        public System.Management.Automation.SwitchParameter windowsUpdateActiveHoursInstall { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;activeHoursStart&quot; property, of type &quot;Edm.TimeOfDay&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateActiveHoursInstall", HelpMessage = @"The &quot;activeHoursStart&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
-        public System.TimeSpan ActiveHoursStart { get; set; }
+        public System.TimeSpan activeHoursStart { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;activeHoursEnd&quot; property, of type &quot;Edm.TimeOfDay&quot;.</para>
@@ -38,7 +38,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateActiveHoursInstall", HelpMessage = @"The &quot;activeHoursEnd&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
-        public System.TimeSpan ActiveHoursEnd { get; set; }
+        public System.TimeSpan activeHoursEnd { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateScheduledInstall&quot; type.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.windowsUpdateScheduledInstall")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateScheduledInstall", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateScheduledInstall&quot; type.")]
-        public System.Management.Automation.SwitchParameter WindowsUpdateScheduledInstall { get; set; }
+        public System.Management.Automation.SwitchParameter windowsUpdateScheduledInstall { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;scheduledInstallDay&quot; property, of type &quot;microsoft.graph.weeklySchedule&quot;.</para>
@@ -60,7 +60,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"userDefined", @"everyday", @"sunday", @"monday", @"tuesday", @"wednesday", @"thursday", @"friday", @"saturday")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateScheduledInstall", HelpMessage = @"The &quot;scheduledInstallDay&quot; property, of type &quot;microsoft.graph.weeklySchedule&quot;.")]
-        public System.String ScheduledInstallDay { get; set; }
+        public System.String scheduledInstallDay { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;scheduledInstallTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.</para>
@@ -70,6 +70,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateScheduledInstall", HelpMessage = @"The &quot;scheduledInstallTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
-        public System.TimeSpan ScheduledInstallTime { get; set; }
+        public System.TimeSpan scheduledInstallTime { get; set; }
     }
 }

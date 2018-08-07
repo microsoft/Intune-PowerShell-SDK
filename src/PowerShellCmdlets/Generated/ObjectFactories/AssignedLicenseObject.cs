@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.assignedLicense", HelpMessage = @"The &quot;disabledPlans&quot; property, of type &quot;Edm.Guid&quot;.")]
-        public System.Guid[] DisabledPlans { get; set; }
+        public System.Guid[] disabledPlans { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;skuId&quot; property, of type &quot;Edm.Guid&quot;.</para>
@@ -29,6 +29,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Guid")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.assignedLicense", HelpMessage = @"The &quot;skuId&quot; property, of type &quot;Edm.Guid&quot;.")]
-        public System.Guid SkuId { get; set; }
+        public System.Guid skuId { get; set; }
     }
 }

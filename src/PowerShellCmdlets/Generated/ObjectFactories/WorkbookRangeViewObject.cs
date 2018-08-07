@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeView", HelpMessage = @"The &quot;cellAddresses&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object CellAddresses { get; set; }
+        public System.Object cellAddresses { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;columnCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeView", HelpMessage = @"The &quot;columnCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 ColumnCount { get; set; }
+        public System.Int32 columnCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;formulas&quot; property, of type &quot;microsoft.graph.Json&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeView", HelpMessage = @"The &quot;formulas&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object Formulas { get; set; }
+        public System.Object formulas { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;formulasLocal&quot; property, of type &quot;microsoft.graph.Json&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeView", HelpMessage = @"The &quot;formulasLocal&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object FormulasLocal { get; set; }
+        public System.Object formulasLocal { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;formulasR1C1&quot; property, of type &quot;microsoft.graph.Json&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeView", HelpMessage = @"The &quot;formulasR1C1&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object FormulasR1C1 { get; set; }
+        public System.Object formulasR1C1 { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;index&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeView", HelpMessage = @"The &quot;index&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Index { get; set; }
+        public System.Int32 index { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;numberFormat&quot; property, of type &quot;microsoft.graph.Json&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeView", HelpMessage = @"The &quot;numberFormat&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object NumberFormat { get; set; }
+        public System.Object numberFormat { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;rowCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -82,7 +82,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeView", HelpMessage = @"The &quot;rowCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 RowCount { get; set; }
+        public System.Int32 rowCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;text&quot; property, of type &quot;microsoft.graph.Json&quot;.</para>
@@ -91,7 +91,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeView", HelpMessage = @"The &quot;text&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object Text { get; set; }
+        public System.Object text { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;valueTypes&quot; property, of type &quot;microsoft.graph.Json&quot;.</para>
@@ -100,7 +100,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeView", HelpMessage = @"The &quot;valueTypes&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object ValueTypes { get; set; }
+        public System.Object valueTypes { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;values&quot; property, of type &quot;microsoft.graph.Json&quot;.</para>
@@ -109,7 +109,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.Json")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeView", HelpMessage = @"The &quot;values&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        public System.Object Values { get; set; }
+        public System.Object values { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;rows&quot; property, of type &quot;microsoft.graph.workbookRangeView&quot;.</para>
@@ -119,6 +119,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeView", HelpMessage = @"The &quot;rows&quot; property, of type &quot;microsoft.graph.workbookRangeView&quot;.")]
-        public System.Object[] Rows { get; set; }
+        public System.Object[] rows { get; set; }
     }
 }

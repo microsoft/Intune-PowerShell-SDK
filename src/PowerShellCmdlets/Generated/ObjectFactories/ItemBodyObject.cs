@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"text", @"html")]
         [Parameter(ParameterSetName = @"#microsoft.graph.itemBody", HelpMessage = @"The &quot;contentType&quot; property, of type &quot;microsoft.graph.bodyType&quot;.")]
-        public System.String ContentType { get; set; }
+        public System.String contentType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;content&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -32,6 +32,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.itemBody", HelpMessage = @"The &quot;content&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Content { get; set; }
+        public System.String content { get; set; }
     }
 }

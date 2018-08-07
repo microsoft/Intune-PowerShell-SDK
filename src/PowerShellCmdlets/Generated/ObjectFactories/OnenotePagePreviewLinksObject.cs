@@ -19,6 +19,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.externalLink")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePagePreviewLinks", HelpMessage = @"The &quot;previewImageUrl&quot; property, of type &quot;microsoft.graph.externalLink&quot;.")]
-        public System.Object PreviewImageUrl { get; set; }
+        public System.Object previewImageUrl { get; set; }
     }
 }

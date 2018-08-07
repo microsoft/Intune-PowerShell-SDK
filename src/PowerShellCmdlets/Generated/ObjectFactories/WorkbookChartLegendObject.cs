@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartLegend", HelpMessage = @"The &quot;overlay&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean Overlay { get; set; }
+        public System.Boolean overlay { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;position&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartLegend", HelpMessage = @"The &quot;position&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Position { get; set; }
+        public System.String position { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;visible&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartLegend", HelpMessage = @"The &quot;visible&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean Visible { get; set; }
+        public System.Boolean visible { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartLegendFormat&quot;.</para>
@@ -46,6 +46,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartLegendFormat")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartLegend", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartLegendFormat&quot;.")]
-        public System.Object Format { get; set; }
+        public System.Object format { get; set; }
     }
 }

@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.meetingTimeSuggestionsResult", HelpMessage = @"The &quot;meetingTimeSuggestions&quot; property, of type &quot;microsoft.graph.meetingTimeSuggestion&quot;.")]
-        public System.Object[] MeetingTimeSuggestions { get; set; }
+        public System.Object[] meetingTimeSuggestions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;emptySuggestionsReason&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -29,6 +29,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.meetingTimeSuggestionsResult", HelpMessage = @"The &quot;emptySuggestionsReason&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String EmptySuggestionsReason { get; set; }
+        public System.String emptySuggestionsReason { get; set; }
     }
 }

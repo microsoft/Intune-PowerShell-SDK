@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;androidCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 AndroidCount { get; set; }
+        public System.Int32 androidCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;iosCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;iosCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 IosCount { get; set; }
+        public System.Int32 iosCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;macOSCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;macOSCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 MacOSCount { get; set; }
+        public System.Int32 macOSCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsMobileCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;windowsMobileCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 WindowsMobileCount { get; set; }
+        public System.Int32 windowsMobileCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;windowsCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -60,7 +60,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;windowsCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 WindowsCount { get; set; }
+        public System.Int32 windowsCount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;unknownCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -70,6 +70,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;unknownCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 UnknownCount { get; set; }
+        public System.Int32 unknownCount { get; set; }
     }
 }

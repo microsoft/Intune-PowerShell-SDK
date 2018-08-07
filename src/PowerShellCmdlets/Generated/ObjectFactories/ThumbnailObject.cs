@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Stream")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.thumbnail", HelpMessage = @"The &quot;content&quot; property, of type &quot;Edm.Stream&quot;.")]
-        public System.IO.Stream Content { get; set; }
+        public System.IO.Stream content { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;height&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.thumbnail", HelpMessage = @"The &quot;height&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Height { get; set; }
+        public System.Int32 height { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sourceItemId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.thumbnail", HelpMessage = @"The &quot;sourceItemId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String SourceItemId { get; set; }
+        public System.String sourceItemId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;url&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.thumbnail", HelpMessage = @"The &quot;url&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Url { get; set; }
+        public System.String url { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;width&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -55,6 +55,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.thumbnail", HelpMessage = @"The &quot;width&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Width { get; set; }
+        public System.Int32 width { get; set; }
     }
 }

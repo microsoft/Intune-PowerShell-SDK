@@ -19,6 +19,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.searchResult", HelpMessage = @"The &quot;onClickTelemetryUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String OnClickTelemetryUrl { get; set; }
+        public System.String onClickTelemetryUrl { get; set; }
     }
 }

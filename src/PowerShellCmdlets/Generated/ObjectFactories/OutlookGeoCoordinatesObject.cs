@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.outlookGeoCoordinates", HelpMessage = @"The &quot;altitude&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double Altitude { get; set; }
+        public System.Double altitude { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;latitude&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.outlookGeoCoordinates", HelpMessage = @"The &quot;latitude&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double Latitude { get; set; }
+        public System.Double latitude { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;longitude&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.outlookGeoCoordinates", HelpMessage = @"The &quot;longitude&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double Longitude { get; set; }
+        public System.Double longitude { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;accuracy&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.outlookGeoCoordinates", HelpMessage = @"The &quot;accuracy&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double Accuracy { get; set; }
+        public System.Double accuracy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;altitudeAccuracy&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -55,6 +55,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.outlookGeoCoordinates", HelpMessage = @"The &quot;altitudeAccuracy&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double AltitudeAccuracy { get; set; }
+        public System.Double altitudeAccuracy { get; set; }
     }
 }

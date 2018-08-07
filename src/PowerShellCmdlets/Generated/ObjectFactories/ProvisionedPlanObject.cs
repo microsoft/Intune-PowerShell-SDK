@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.provisionedPlan", HelpMessage = @"The &quot;capabilityStatus&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String CapabilityStatus { get; set; }
+        public System.String capabilityStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;provisioningStatus&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.provisionedPlan", HelpMessage = @"The &quot;provisioningStatus&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ProvisioningStatus { get; set; }
+        public System.String provisioningStatus { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;service&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,6 +37,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.provisionedPlan", HelpMessage = @"The &quot;service&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Service { get; set; }
+        public System.String service { get; set; }
     }
 }

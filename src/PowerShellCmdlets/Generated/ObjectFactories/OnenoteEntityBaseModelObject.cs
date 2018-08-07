@@ -26,7 +26,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.sectionGroup", HelpMessage = @"The &quot;self&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteSection", HelpMessage = @"The &quot;self&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebook", HelpMessage = @"The &quot;self&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Self { get; set; }
+        public System.String self { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenoteResource&quot; type.</para>
@@ -34,7 +34,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.onenoteResource")]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteResource", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenoteResource&quot; type.")]
-        public System.Management.Automation.SwitchParameter OnenoteResource { get; set; }
+        public System.Management.Automation.SwitchParameter onenoteResource { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;content&quot; property, of type &quot;Edm.Stream&quot;.</para>
@@ -44,7 +44,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteResource", HelpMessage = @"The &quot;content&quot; property, of type &quot;Edm.Stream&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePage", HelpMessage = @"The &quot;content&quot; property, of type &quot;Edm.Stream&quot;.")]
-        public System.IO.Stream Content { get; set; }
+        public System.IO.Stream content { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;contentUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -54,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteResource", HelpMessage = @"The &quot;contentUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePage", HelpMessage = @"The &quot;contentUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ContentUrl { get; set; }
+        public System.String contentUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -68,7 +68,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.sectionGroup", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteSection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebook", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset CreatedDateTime { get; set; }
+        public System.DateTimeOffset createdDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenotePage&quot; type.</para>
@@ -76,7 +76,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.onenotePage")]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePage", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenotePage&quot; type.")]
-        public System.Management.Automation.SwitchParameter OnenotePage { get; set; }
+        public System.Management.Automation.SwitchParameter onenotePage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;title&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -85,7 +85,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePage", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Title { get; set; }
+        public System.String title { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdByAppId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -94,7 +94,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePage", HelpMessage = @"The &quot;createdByAppId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String CreatedByAppId { get; set; }
+        public System.String createdByAppId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;links&quot; property, of type &quot;microsoft.graph.pageLinks&quot;.</para>
@@ -105,7 +105,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePage", HelpMessage = @"The &quot;links&quot; property, of type &quot;microsoft.graph.pageLinks&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteSection", HelpMessage = @"The &quot;links&quot; property, of type &quot;microsoft.graph.pageLinks&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebook", HelpMessage = @"The &quot;links&quot; property, of type &quot;microsoft.graph.pageLinks&quot;.")]
-        public System.Object Links { get; set; }
+        public System.Object links { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -118,7 +118,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.sectionGroup", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteSection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebook", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset LastModifiedDateTime { get; set; }
+        public System.DateTimeOffset lastModifiedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;level&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -127,7 +127,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePage", HelpMessage = @"The &quot;level&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Level { get; set; }
+        public System.Int32 level { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;order&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -136,7 +136,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePage", HelpMessage = @"The &quot;order&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Order { get; set; }
+        public System.Int32 order { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userTags&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -146,7 +146,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePage", HelpMessage = @"The &quot;userTags&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] UserTags { get; set; }
+        public System.String[] userTags { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;parentSection&quot; property, of type &quot;microsoft.graph.onenoteSection&quot;.</para>
@@ -155,7 +155,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.onenoteSection")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePage", HelpMessage = @"The &quot;parentSection&quot; property, of type &quot;microsoft.graph.onenoteSection&quot;.")]
-        public System.Object ParentSection { get; set; }
+        public System.Object parentSection { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;parentNotebook&quot; property, of type &quot;microsoft.graph.notebook&quot;.</para>
@@ -166,7 +166,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.onenotePage", HelpMessage = @"The &quot;parentNotebook&quot; property, of type &quot;microsoft.graph.notebook&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.sectionGroup", HelpMessage = @"The &quot;parentNotebook&quot; property, of type &quot;microsoft.graph.notebook&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteSection", HelpMessage = @"The &quot;parentNotebook&quot; property, of type &quot;microsoft.graph.notebook&quot;.")]
-        public System.Object ParentNotebook { get; set; }
+        public System.Object parentNotebook { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -178,7 +178,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.sectionGroup", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteSection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebook", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayName { get; set; }
+        public System.String displayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.</para>
@@ -190,7 +190,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.sectionGroup", HelpMessage = @"The &quot;createdBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteSection", HelpMessage = @"The &quot;createdBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebook", HelpMessage = @"The &quot;createdBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
-        public System.Object CreatedBy { get; set; }
+        public System.Object createdBy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastModifiedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.</para>
@@ -202,7 +202,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.sectionGroup", HelpMessage = @"The &quot;lastModifiedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteSection", HelpMessage = @"The &quot;lastModifiedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebook", HelpMessage = @"The &quot;lastModifiedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
-        public System.Object LastModifiedBy { get; set; }
+        public System.Object lastModifiedBy { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.sectionGroup&quot; type.</para>
@@ -210,7 +210,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.sectionGroup")]
         [Parameter(ParameterSetName = @"#microsoft.graph.sectionGroup", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.sectionGroup&quot; type.")]
-        public System.Management.Automation.SwitchParameter SectionGroup { get; set; }
+        public System.Management.Automation.SwitchParameter sectionGroup { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sectionsUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -220,7 +220,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sectionGroup", HelpMessage = @"The &quot;sectionsUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebook", HelpMessage = @"The &quot;sectionsUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String SectionsUrl { get; set; }
+        public System.String sectionsUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sectionGroupsUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -230,7 +230,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sectionGroup", HelpMessage = @"The &quot;sectionGroupsUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebook", HelpMessage = @"The &quot;sectionGroupsUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String SectionGroupsUrl { get; set; }
+        public System.String sectionGroupsUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;parentSectionGroup&quot; property, of type &quot;microsoft.graph.sectionGroup&quot;.</para>
@@ -240,7 +240,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.sectionGroup", HelpMessage = @"The &quot;parentSectionGroup&quot; property, of type &quot;microsoft.graph.sectionGroup&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteSection", HelpMessage = @"The &quot;parentSectionGroup&quot; property, of type &quot;microsoft.graph.sectionGroup&quot;.")]
-        public System.Object ParentSectionGroup { get; set; }
+        public System.Object parentSectionGroup { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sections&quot; property, of type &quot;microsoft.graph.onenoteSection&quot;.</para>
@@ -251,7 +251,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.sectionGroup", HelpMessage = @"The &quot;sections&quot; property, of type &quot;microsoft.graph.onenoteSection&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebook", HelpMessage = @"The &quot;sections&quot; property, of type &quot;microsoft.graph.onenoteSection&quot;.")]
-        public System.Object[] Sections { get; set; }
+        public System.Object[] sections { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sectionGroups&quot; property, of type &quot;microsoft.graph.sectionGroup&quot;.</para>
@@ -262,7 +262,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.sectionGroup", HelpMessage = @"The &quot;sectionGroups&quot; property, of type &quot;microsoft.graph.sectionGroup&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebook", HelpMessage = @"The &quot;sectionGroups&quot; property, of type &quot;microsoft.graph.sectionGroup&quot;.")]
-        public System.Object[] SectionGroups { get; set; }
+        public System.Object[] sectionGroups { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenoteSection&quot; type.</para>
@@ -270,7 +270,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.onenoteSection")]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteSection", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenoteSection&quot; type.")]
-        public System.Management.Automation.SwitchParameter OnenoteSection { get; set; }
+        public System.Management.Automation.SwitchParameter onenoteSection { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isDefault&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -280,7 +280,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteSection", HelpMessage = @"The &quot;isDefault&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebook", HelpMessage = @"The &quot;isDefault&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean IsDefault { get; set; }
+        public System.Boolean isDefault { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pagesUrl&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -289,7 +289,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteSection", HelpMessage = @"The &quot;pagesUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String PagesUrl { get; set; }
+        public System.String pagesUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pages&quot; property, of type &quot;microsoft.graph.onenotePage&quot;.</para>
@@ -299,7 +299,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.onenoteSection", HelpMessage = @"The &quot;pages&quot; property, of type &quot;microsoft.graph.onenotePage&quot;.")]
-        public System.Object[] Pages { get; set; }
+        public System.Object[] pages { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.notebook&quot; type.</para>
@@ -307,7 +307,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.notebook")]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebook", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.notebook&quot; type.")]
-        public System.Management.Automation.SwitchParameter Notebook { get; set; }
+        public System.Management.Automation.SwitchParameter notebook { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userRole&quot; property, of type &quot;microsoft.graph.onenoteUserRole&quot;.</para>
@@ -320,7 +320,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"Owner", @"Contributor", @"Reader", @"None")]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebook", HelpMessage = @"The &quot;userRole&quot; property, of type &quot;microsoft.graph.onenoteUserRole&quot;.")]
-        public System.String UserRole { get; set; }
+        public System.String userRole { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;isShared&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -329,6 +329,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.notebook", HelpMessage = @"The &quot;isShared&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean IsShared { get; set; }
+        public System.Boolean isShared { get; set; }
     }
 }

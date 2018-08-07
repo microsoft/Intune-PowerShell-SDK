@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.numberColumn", HelpMessage = @"The &quot;decimalPlaces&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DecimalPlaces { get; set; }
+        public System.String decimalPlaces { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayAs&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.numberColumn", HelpMessage = @"The &quot;displayAs&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayAs { get; set; }
+        public System.String displayAs { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;maximum&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.numberColumn", HelpMessage = @"The &quot;maximum&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double Maximum { get; set; }
+        public System.Double maximum { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minimum&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -46,6 +46,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.numberColumn", HelpMessage = @"The &quot;minimum&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double Minimum { get; set; }
+        public System.Double minimum { get; set; }
     }
 }

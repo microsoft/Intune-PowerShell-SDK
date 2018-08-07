@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.windowsDeviceAccount")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsDeviceAccount", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDeviceAccount&quot; type.")]
-        public System.Management.Automation.SwitchParameter WindowsDeviceAccount { get; set; }
+        public System.Management.Automation.SwitchParameter windowsDeviceAccount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;password&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsDeviceAccount", HelpMessage = @"The &quot;password&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsDeviceAzureADAccount", HelpMessage = @"The &quot;password&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsDeviceADAccount", HelpMessage = @"The &quot;password&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Password { get; set; }
+        public System.String password { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDeviceAzureADAccount&quot; type.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.windowsDeviceAzureADAccount")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsDeviceAzureADAccount", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDeviceAzureADAccount&quot; type.")]
-        public System.Management.Automation.SwitchParameter WindowsDeviceAzureADAccount { get; set; }
+        public System.Management.Automation.SwitchParameter windowsDeviceAzureADAccount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsDeviceAzureADAccount", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String UserPrincipalName { get; set; }
+        public System.String userPrincipalName { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDeviceADAccount&quot; type.</para>
@@ -54,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.windowsDeviceADAccount")]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsDeviceADAccount", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDeviceADAccount&quot; type.")]
-        public System.Management.Automation.SwitchParameter WindowsDeviceADAccount { get; set; }
+        public System.Management.Automation.SwitchParameter windowsDeviceADAccount { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;domainName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsDeviceADAccount", HelpMessage = @"The &quot;domainName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DomainName { get; set; }
+        public System.String domainName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -72,6 +72,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsDeviceADAccount", HelpMessage = @"The &quot;userName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String UserName { get; set; }
+        public System.String userName { get; set; }
     }
 }

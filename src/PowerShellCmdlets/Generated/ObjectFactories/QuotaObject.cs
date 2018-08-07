@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int64")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.quota", HelpMessage = @"The &quot;deleted&quot; property, of type &quot;Edm.Int64&quot;.")]
-        public System.Int64 Deleted { get; set; }
+        public System.Int64 deleted { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;remaining&quot; property, of type &quot;Edm.Int64&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int64")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.quota", HelpMessage = @"The &quot;remaining&quot; property, of type &quot;Edm.Int64&quot;.")]
-        public System.Int64 Remaining { get; set; }
+        public System.Int64 remaining { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;state&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.quota", HelpMessage = @"The &quot;state&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String State { get; set; }
+        public System.String state { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;total&quot; property, of type &quot;Edm.Int64&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int64")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.quota", HelpMessage = @"The &quot;total&quot; property, of type &quot;Edm.Int64&quot;.")]
-        public System.Int64 Total { get; set; }
+        public System.Int64 total { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;used&quot; property, of type &quot;Edm.Int64&quot;.</para>
@@ -55,6 +55,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int64")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.quota", HelpMessage = @"The &quot;used&quot; property, of type &quot;Edm.Int64&quot;.")]
-        public System.Int64 Used { get; set; }
+        public System.Int64 used { get; set; }
     }
 }

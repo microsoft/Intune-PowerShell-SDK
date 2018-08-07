@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             if (result is PSObject response)
             {
                 // Process the result object
-                this.ProcessResultObject(response);
+                this.ProcessResultObject(result);
             }
 
             return result;

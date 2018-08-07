@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceGeoLocation", HelpMessage = @"The &quot;lastCollectedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset LastCollectedDateTime { get; set; }
+        public System.DateTimeOffset lastCollectedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;longitude&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceGeoLocation", HelpMessage = @"The &quot;longitude&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double Longitude { get; set; }
+        public System.Double longitude { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;latitude&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceGeoLocation", HelpMessage = @"The &quot;latitude&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double Latitude { get; set; }
+        public System.Double latitude { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;altitude&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceGeoLocation", HelpMessage = @"The &quot;altitude&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double Altitude { get; set; }
+        public System.Double altitude { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;horizontalAccuracy&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -60,7 +60,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceGeoLocation", HelpMessage = @"The &quot;horizontalAccuracy&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double HorizontalAccuracy { get; set; }
+        public System.Double horizontalAccuracy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;verticalAccuracy&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -70,7 +70,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceGeoLocation", HelpMessage = @"The &quot;verticalAccuracy&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double VerticalAccuracy { get; set; }
+        public System.Double verticalAccuracy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;heading&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -80,7 +80,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceGeoLocation", HelpMessage = @"The &quot;heading&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double Heading { get; set; }
+        public System.Double heading { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;speed&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -90,6 +90,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceGeoLocation", HelpMessage = @"The &quot;speed&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double Speed { get; set; }
+        public System.Double speed { get; set; }
     }
 }

@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"disabled", @"alwaysEnabled", @"scheduled")]
         [Parameter(ParameterSetName = @"#microsoft.graph.automaticRepliesSetting", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.automaticRepliesStatus&quot;.")]
-        public System.String Status { get; set; }
+        public System.String status { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;externalAudience&quot; property, of type &quot;microsoft.graph.externalAudienceScope&quot;.</para>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"none", @"contactsOnly", @"all")]
         [Parameter(ParameterSetName = @"#microsoft.graph.automaticRepliesSetting", HelpMessage = @"The &quot;externalAudience&quot; property, of type &quot;microsoft.graph.externalAudienceScope&quot;.")]
-        public System.String ExternalAudience { get; set; }
+        public System.String externalAudience { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;scheduledStartDateTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.</para>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.dateTimeTimeZone")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.automaticRepliesSetting", HelpMessage = @"The &quot;scheduledStartDateTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
-        public System.Object ScheduledStartDateTime { get; set; }
+        public System.Object scheduledStartDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;scheduledEndDateTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.</para>
@@ -54,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.dateTimeTimeZone")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.automaticRepliesSetting", HelpMessage = @"The &quot;scheduledEndDateTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
-        public System.Object ScheduledEndDateTime { get; set; }
+        public System.Object scheduledEndDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;internalReplyMessage&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.automaticRepliesSetting", HelpMessage = @"The &quot;internalReplyMessage&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String InternalReplyMessage { get; set; }
+        public System.String internalReplyMessage { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;externalReplyMessage&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -72,6 +72,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.automaticRepliesSetting", HelpMessage = @"The &quot;externalReplyMessage&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ExternalReplyMessage { get; set; }
+        public System.String externalReplyMessage { get; set; }
     }
 }

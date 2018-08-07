@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;audioBitsPerSample&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 AudioBitsPerSample { get; set; }
+        public System.Int32 audioBitsPerSample { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;audioChannels&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;audioChannels&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 AudioChannels { get; set; }
+        public System.Int32 audioChannels { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;audioFormat&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;audioFormat&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String AudioFormat { get; set; }
+        public System.String audioFormat { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;audioSamplesPerSecond&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;audioSamplesPerSecond&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 AudioSamplesPerSecond { get; set; }
+        public System.Int32 audioSamplesPerSecond { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bitrate&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;bitrate&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Bitrate { get; set; }
+        public System.Int32 bitrate { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;duration&quot; property, of type &quot;Edm.Int64&quot;.</para>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int64")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;duration&quot; property, of type &quot;Edm.Int64&quot;.")]
-        public System.Int64 Duration { get; set; }
+        public System.Int64 duration { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;fourCC&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;fourCC&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String FourCC { get; set; }
+        public System.String fourCC { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;frameRate&quot; property, of type &quot;Edm.Double&quot;.</para>
@@ -82,7 +82,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Double")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;frameRate&quot; property, of type &quot;Edm.Double&quot;.")]
-        public System.Double FrameRate { get; set; }
+        public System.Double frameRate { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;height&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -91,7 +91,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;height&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Height { get; set; }
+        public System.Int32 height { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;width&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -100,6 +100,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;width&quot; property, of type &quot;Edm.Int32&quot;.")]
-        public System.Int32 Width { get; set; }
+        public System.Int32 width { get; set; }
     }
 }

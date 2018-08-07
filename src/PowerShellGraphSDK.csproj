@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>Library</OutputType>
-        <Version>6.1808.110</Version>
+        <Version>6.1809.1.0</Version>
         <Authors>Rajesh Soy, Rohit Ramu</Authors>
         <Company>Microsoft Corporation</Company>
         <Product>Microsoft Intune Graph PowerShell Client SDK</Product>
@@ -38,7 +38,6 @@
         <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="3.19.2" />
         <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
         <PackageReference Include="XmlDoc2CmdletDoc" Version="0.2.10" />
-        <PackageReference Include="Humanizer.Core" Version="2.4.2" />
     </ItemGroup>
 
     <PropertyGroup Condition="'$(TargetFramework)'!='$(WindowsTargetFramework)'">
@@ -55,6 +54,16 @@
         <Reference Include="System.Net.Http" />
         <PackageReference Include="Microsoft.PowerShell.5.ReferenceAssemblies" Version="1.1.0" />
     </ItemGroup>
+
+    <Target Name="DeleteOutputDirs" BeforeTargets="Compile;PreBuildEvent">
+        <PropertyGroup>
+            <REMOVE_DIRS>$(MSBuildProjectDirectory)\bin\$(Configuration); $(MSBuildProjectDirectory)\obj</REMOVE_DIRS>
+        </PropertyGroup>
+        <ItemGroup>
+            <_REMOVE_DIRS Include="$(REMOVE_DIRS)" />
+        </ItemGroup>
+        <RemoveDir Directories="@(REMOVE_DIRS)" />
+    </Target>
 
     <Target Name="CopyPowerShellModuleAdditions" AfterTargets="PostBuildEvent">
         <PropertyGroup>

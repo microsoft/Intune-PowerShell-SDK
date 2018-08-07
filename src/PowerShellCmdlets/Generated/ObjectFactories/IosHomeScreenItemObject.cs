@@ -22,7 +22,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.iosHomeScreenItem", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosHomeScreenApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosHomeScreenFolder", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String DisplayName { get; set; }
+        public System.String displayName { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosHomeScreenApp&quot; type.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.iosHomeScreenApp")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosHomeScreenApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosHomeScreenApp&quot; type.")]
-        public System.Management.Automation.SwitchParameter IosHomeScreenApp { get; set; }
+        public System.Management.Automation.SwitchParameter iosHomeScreenApp { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;bundleID&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosHomeScreenApp", HelpMessage = @"The &quot;bundleID&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String BundleID { get; set; }
+        public System.String bundleID { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosHomeScreenFolder&quot; type.</para>
@@ -48,7 +48,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ParameterSetSelector(@"#microsoft.graph.iosHomeScreenFolder")]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosHomeScreenFolder", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosHomeScreenFolder&quot; type.")]
-        public System.Management.Automation.SwitchParameter IosHomeScreenFolder { get; set; }
+        public System.Management.Automation.SwitchParameter iosHomeScreenFolder { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pages&quot; property, of type &quot;microsoft.graph.iosHomeScreenFolderPage&quot;.</para>
@@ -59,6 +59,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.iosHomeScreenFolder", HelpMessage = @"The &quot;pages&quot; property, of type &quot;microsoft.graph.iosHomeScreenFolderPage&quot;.")]
-        public System.Object[] Pages { get; set; }
+        public System.Object[] pages { get; set; }
     }
 }

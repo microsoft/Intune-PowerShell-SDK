@@ -20,6 +20,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"#microsoft.graph.inferenceClassification", HelpMessage = @"The &quot;overrides&quot; property, of type &quot;microsoft.graph.inferenceClassificationOverride&quot;.")]
-        public System.Object[] Overrides { get; set; }
+        public System.Object[] overrides { get; set; }
     }
 }

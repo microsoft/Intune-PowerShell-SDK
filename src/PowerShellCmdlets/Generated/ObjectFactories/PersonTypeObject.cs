@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.personType", HelpMessage = @"The &quot;class&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Class { get; set; }
+        public System.String @class { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;subclass&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.personType", HelpMessage = @"The &quot;subclass&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Subclass { get; set; }
+        public System.String subclass { get; set; }
     }
 }

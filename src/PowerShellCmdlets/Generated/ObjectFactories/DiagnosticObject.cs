@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.diagnostic", HelpMessage = @"The &quot;message&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Message { get; set; }
+        public System.String message { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;url&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,6 +28,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.diagnostic", HelpMessage = @"The &quot;url&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String Url { get; set; }
+        public System.String url { get; set; }
     }
 }

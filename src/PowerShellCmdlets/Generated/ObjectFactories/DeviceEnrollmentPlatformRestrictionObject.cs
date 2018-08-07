@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestriction", HelpMessage = @"The &quot;platformBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean PlatformBlocked { get; set; }
+        public System.Boolean platformBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;personalDeviceEnrollmentBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestriction", HelpMessage = @"The &quot;personalDeviceEnrollmentBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean PersonalDeviceEnrollmentBlocked { get; set; }
+        public System.Boolean personalDeviceEnrollmentBlocked { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;osMinimumVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestriction", HelpMessage = @"The &quot;osMinimumVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String OsMinimumVersion { get; set; }
+        public System.String osMinimumVersion { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;osMaximumVersion&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -50,6 +50,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestriction", HelpMessage = @"The &quot;osMaximumVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String OsMaximumVersion { get; set; }
+        public System.String osMaximumVersion { get; set; }
     }
 }

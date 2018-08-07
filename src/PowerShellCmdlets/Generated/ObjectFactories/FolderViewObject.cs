@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.folderView", HelpMessage = @"The &quot;sortBy&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String SortBy { get; set; }
+        public System.String sortBy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sortOrder&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.folderView", HelpMessage = @"The &quot;sortOrder&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String SortOrder { get; set; }
+        public System.String sortOrder { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;viewType&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -37,6 +37,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.folderView", HelpMessage = @"The &quot;viewType&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String ViewType { get; set; }
+        public System.String viewType { get; set; }
     }
 }
