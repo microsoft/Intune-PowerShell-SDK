@@ -3832,6 +3832,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;cellularBlockWifiTethering&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;cellularBlockWifiTethering&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean cellularBlockWifiTethering { get; set; }
 
         /// <summary>
@@ -3995,6 +3996,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;wifiBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;wifiBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;wifiBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean wifiBlocked { get; set; }
 
         /// <summary>
@@ -4005,6 +4008,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;wifiBlockAutomaticConnectHotspots&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;wifiBlockAutomaticConnectHotspots&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean wifiBlockAutomaticConnectHotspots { get; set; }
 
         /// <summary>
@@ -6410,27 +6414,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Boolean voiceRecordingBlocked { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;wiFiBlockAutomaticConnectHotspots&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.</para>
-        ///     <para type="description">Indicating whether or not to block automatically connecting to Wi-Fi hotspots. Has no impact if Wi-Fi is blocked.</para>
-        /// </summary>
-        [ODataType("Edm.Boolean")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;wiFiBlockAutomaticConnectHotspots&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean wiFiBlockAutomaticConnectHotspots { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;wiFiBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.</para>
-        ///     <para type="description">Indicates whether or not to Block the user from using Wi-Fi.</para>
-        /// </summary>
-        [ODataType("Edm.Boolean")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;wiFiBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;wiFiBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean wiFiBlocked { get; set; }
-
-        /// <summary>
         ///     <para type="description">The &quot;wiFiBlockManualConfiguration&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.</para>
         ///     <para type="description">Indicates whether or not to Block the user from using Wi-Fi manual configuration.</para>
@@ -8506,16 +8489,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;cellularBlockMessaging&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean cellularBlockMessaging { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;cellularBlockWiFiTethering&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidGeneralDeviceConfiguration&quot; type.</para>
-        ///     <para type="description">Indicates whether or not to block syncing Wi-Fi tethering.</para>
-        /// </summary>
-        [ODataType("Edm.Boolean")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;cellularBlockWiFiTethering&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean cellularBlockWiFiTethering { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;googleAccountBlockAutoSync&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -16298,6 +16271,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.list", HelpMessage = @"The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.driveItem", HelpMessage = @"The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.site", HelpMessage = @"The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
+        [Parameter(ParameterSetName = @"#microsoft.graph.drive", HelpMessage = @"The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
         public System.Object sharepointIds { get; set; }
 
         /// <summary>
@@ -16572,15 +16546,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.drive", HelpMessage = @"The &quot;quota&quot; property, of type &quot;microsoft.graph.quota&quot;.")]
         public System.Object quota { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;sharePointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.drive&quot; type.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.sharepointIds")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.drive", HelpMessage = @"The &quot;sharePointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
-        public System.Object sharePointIds { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;special&quot; property, of type &quot;microsoft.graph.driveItem&quot;.</para>

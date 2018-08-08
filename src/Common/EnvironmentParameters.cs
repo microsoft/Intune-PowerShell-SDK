@@ -86,7 +86,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
             GraphBaseAddress = "https://graph.microsoft-ppe.com",
             AppId = powerShellClientId,
             RedirectLink = applicationRedirectLink,
-            SchemaVersion = "v1.0",
+            SchemaVersion = "beta",
         };
     }
 }

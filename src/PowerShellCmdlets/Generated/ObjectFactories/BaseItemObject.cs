@@ -282,6 +282,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"#microsoft.graph.list", HelpMessage = @"The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.driveItem", HelpMessage = @"The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
         [Parameter(ParameterSetName = @"#microsoft.graph.site", HelpMessage = @"The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
+        [Parameter(ParameterSetName = @"#microsoft.graph.drive", HelpMessage = @"The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
         public System.Object sharepointIds { get; set; }
 
         /// <summary>
@@ -632,15 +633,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"#microsoft.graph.drive", HelpMessage = @"The &quot;quota&quot; property, of type &quot;microsoft.graph.quota&quot;.")]
         public System.Object quota { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;sharePointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.drive&quot; type.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.sharepointIds")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.drive", HelpMessage = @"The &quot;sharePointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
-        public System.Object sharePointIds { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;special&quot; property, of type &quot;microsoft.graph.driveItem&quot;.</para>
