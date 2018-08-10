@@ -17,6 +17,12 @@
         <WindowsTargetFramework>net471</WindowsTargetFramework>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <PowerShellModuleName>Intune</PowerShellModuleName>
+        <PowerShellExe Condition=" '$(PowerShellExe)'=='' ">powershell.exe</PowerShellExe>
+        <PowerShellModuleManifestGenerationScript Condition=" '$(PowerShellModuleManifestGenerationScript)'=='' ">$(MSBuildProjectDirectory)\Scripts\generateModuleManifest.ps1</PowerShellModuleManifestGenerationScript>
+    </PropertyGroup>
+
     <PropertyGroup Condition=" '$(OS)' != 'Windows_NT' ">
         <TargetFramework>netstandard2.0</TargetFramework>
     </PropertyGroup>
@@ -78,6 +84,10 @@
         <Message Importance="high" Text="Project Directory:                      $(MSBuildProjectDirectory)" />
         <Message Importance="high" Text="Target Framework:                       $(TargetFramework)" />
         <Message Importance="high" Text="OS:                                     $(OS)" />
+    </Target>
+
+    <Target Name="GeneratePowerShellModuleManifest" AfterTargets="CopyPowerShellModuleAdditions">
+        <Exec Command="$(PowerShellExe) -NonInteractive -ExecutionPolicy Unrestricted -Command &quot;&amp; { $(PowerShellModuleManifestGenerationScript) -ModuleName &apos;$(PowerShellModuleName)&apos; -OutputDirectory &apos;$(OutputPath)&apos; -MainModuleRelativePath &apos;$(AssemblyName).dll&apos; }&quot;" />
     </Target>
 
 </Project>

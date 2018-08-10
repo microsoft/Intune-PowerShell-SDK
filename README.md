@@ -1,6 +1,7 @@
 # Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Intune-PowerShell-SDK](#intune-powershell-sdk)
+- [Azure CloudShell](#azure-cloudshell)
 - [Getting started](#getting-started)
     - [One-time setup](#one-time-setup)
     - [Each time you use the module](#each-time-you-use-the-module)
@@ -17,11 +18,16 @@
 # Intune-PowerShell-SDK
 This repository contains the source code for the PowerShell module which provides support for the Intune API through Microsoft Graph.
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.microsoft.com. 
+This project welcomes contributions and suggestions.  Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.microsoft.com.
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repos using our CLA. 
+When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repos using our CLA.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+# Azure CloudShell
+This module has been designed to work with Azure CloudShell.
+
+[![Launch Cloud Shell](https://shell.azure.com/images/launchcloudshell.png "Launch Cloud Shell")](https://shell.azure.com/powershell)
 
 # Getting started
 ## One-time setup
@@ -38,7 +44,7 @@ Import the module:
 ```PowerShell
 Import-Module Intune
 ```
-To authenticate with Microsoft Graph:
+To authenticate with Microsoft Graph (this is not required when using CloudShell):
 ```PowerShell
 Connect-MSGraph
 ```
@@ -73,7 +79,7 @@ Get-DeviceManagement_ManagedDevices
 ## Creating objects
 Create a web application:
 ```PowerShell
-$bingWebApp = New-DeviceAppManagement_MobileApps -webApp -displayName 'Bing' -publisher 'Microsoft Corporation' -appUrl 'https://www.bing.com'
+$bingWebApp = New-DeviceAppManagement_MobileApps -webApp -displayName 'Bing' -publisher 'Microsoft Corporation' -AppUrl 'https://www.bing.com'
 ```
 
 ## Modifying objects

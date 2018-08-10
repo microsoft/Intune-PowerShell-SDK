@@ -9,13 +9,11 @@ param(
 
     [Parameter(Mandatory = $true)]
     [ValidateNotNullOrEmpty()]
-    [string]$MainModuleRelativePath,
-
-    [Parameter()]
-    [string[]]$NestedModulesRelativePaths
+    [string]$MainModuleRelativePath
 )
 
 $OutputDirectory = $OutputDirectory | Resolve-Path
+$modulePath = "$OutputDirectory/$ModuleName.psd1"
 
 # Maintain a list of all the cmdlets, functions and aliases to export
 $cmdlets = @()
@@ -26,46 +24,50 @@ $variables = @()
 # Get the version of the main module and use it to set the version of the overall module
 $moduleVersion = "0.0.0.0"
 
-# Create a single list of all modules
-$modulePaths = @()
-$modulePaths += $MainModuleRelativePath
-if ($NestedModulesRelativePaths) {
-    $modulePaths += $NestedModulesRelativePaths
-}
-
 Push-Location $OutputDirectory
 try {
+    # Normalize the path to the main module
+    $mainModulePath = Get-ChildItem $MainModuleRelativePath -File | Resolve-Path -Relative
+
+    # Create a single list of all modules
+    $modulePaths = @()
+    $modulePaths += $mainModulePath
+    $nestedModules = Get-ChildItem -Include '*.psm1', '*.ps1' -Recurse -File | Resolve-Path -Relative
+    if ($nestedModules) {
+        $modulePaths += $nestedModules
+    }
+
     # Collect module information
-    foreach ($modulePath in $modulePaths) {
-        if (-Not $modulePath.StartsWith('.\')) {
-            throw "Provided paths must start with '.\', but '$modulePath' does not"
+    foreach ($current in $modulePaths) {
+        if (-Not $current.StartsWith('.\')) {
+            throw "Provided paths must start with '.\', but '$current' does not"
         }
-        if (-Not (Test-Path $modulePath)) {
-            throw "Module not found at '$modulePath'. Does this path exist under '$OutputDirectory'?"
+        if (-Not (Test-Path $current)) {
+            throw "Module not found at '$current'. Does this path exist under '$OutputDirectory'?"
         }
 
-        Write-Host "Including module: '$modulePath'"
+        Write-Host "Including module: '$current'"
 
         # Get the module's information
-        $moduleInfo = Get-Module $modulePath -ListAvailable
+        $info = Get-Module $current -ListAvailable
 
         # Get the module version from the main module
-        if ($modulePath -eq $MainModuleRelativePath)
+        if ($current -eq $mainModulePath)
         {
-            $moduleVersion = $moduleInfo.Version
+            $moduleVersion = $info.Version
         }
 
         # Get cmdlets
-        $cmdlets += [string[]]$moduleInfo.ExportedCmdlets.Keys
+        $cmdlets += [string[]]$info.ExportedCmdlets.Keys
 
         # Get functions
-        $functions += [string[]]$moduleInfo.ExportedFunctions.Keys
+        $functions += [string[]]$info.ExportedFunctions.Keys
 
         # Get aliases
-        $aliases += [string[]]$moduleInfo.ExportedAliases.Keys
+        $aliases += [string[]]$info.ExportedAliases.Keys
 
         # Get Variables
-        $variables += [string[]]$moduleInfo.ExportedVariables.Keys
+        $variables += [string[]]$info.ExportedVariables.Keys
     }
 } finally {
     Pop-Location
@@ -73,7 +75,7 @@ try {
 
 # Build the content of the generated manifest
 $generateManifestArgs = @{
-    Path = "$OutputDirectory/$ModuleName.psd1"
+    Path = $modulePath
 
     # START PrivateData.PSData
         # Tags applied to this module. These help with module discovery in online galleries.
@@ -105,7 +107,7 @@ $generateManifestArgs = @{
     # END PrivateData.PSData
 
     # Script module or binary module file associated with this manifest
-    RootModule = 'Microsoft.Intune.PowerShellGraphSDK.dll'
+    RootModule = $mainModulePath
 
     # Version number of this module.
     ModuleVersion = $moduleVersion
@@ -186,7 +188,7 @@ $generateManifestArgs = @{
     # DefaultCommandPrefix = 'MSGraph'
 
     # Modules to import as nested modules of the module specified in RootModule/ModuleToProcess
-    NestedModules = $NestedModulesRelativePaths
+    NestedModules = $nestedModules
 }
 
 New-ModuleManifest @generateManifestArgs
