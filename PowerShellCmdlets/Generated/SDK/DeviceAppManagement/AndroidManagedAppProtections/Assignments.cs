@@ -28,8 +28,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.androidManagedAppProtection&quot; objects.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;microsoft.graph.androidManagedAppProtection&apos;
+        ///     </para>
         /// </summary>
         [Selectable]
+        [ValidateSet(@"microsoft.graph.androidManagedAppProtection")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.androidManagedAppProtection&quot; objects.")]
@@ -92,8 +96,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.androidManagedAppProtection&quot; objects.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;microsoft.graph.androidManagedAppProtection&apos;
+        ///     </para>
         /// </summary>
         [Selectable]
+        [ValidateSet(@"microsoft.graph.androidManagedAppProtection")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.androidManagedAppProtection&quot; objects.")]
@@ -149,8 +157,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.androidManagedAppProtection&quot; objects.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;microsoft.graph.androidManagedAppProtection&apos;
+        ///     </para>
         /// </summary>
         [Selectable]
+        [ValidateSet(@"microsoft.graph.androidManagedAppProtection")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.androidManagedAppProtection&quot; objects.")]
@@ -206,8 +218,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.androidManagedAppProtection&quot; objects.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;microsoft.graph.androidManagedAppProtection&apos;
+        ///     </para>
         /// </summary>
         [Selectable]
+        [ValidateSet(@"microsoft.graph.androidManagedAppProtection")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.androidManagedAppProtection&quot; objects.")]

@@ -28,8 +28,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.mobileApp&quot; objects.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;microsoft.graph.mobileApp&apos;, &apos;microsoft.graph.iosStoreApp&apos;, &apos;microsoft.graph.iosVppApp&apos;, &apos;microsoft.graph.androidStoreApp&apos;, &apos;microsoft.graph.webApp&apos;, &apos;microsoft.graph.microsoftStoreForBusinessApp&apos;, &apos;microsoft.graph.mobileLobApp&apos;, &apos;microsoft.graph.iosLobApp&apos;, &apos;microsoft.graph.androidLobApp&apos;, &apos;microsoft.graph.windowsUniversalAppX&apos;, &apos;microsoft.graph.windowsMobileMSI&apos;, &apos;microsoft.graph.managedApp&apos;, &apos;microsoft.graph.managedMobileLobApp&apos;, &apos;microsoft.graph.managedIOSLobApp&apos;, &apos;microsoft.graph.managedAndroidLobApp&apos;, &apos;microsoft.graph.managedIOSStoreApp&apos;, &apos;microsoft.graph.managedAndroidStoreApp&apos;, &apos;microsoft.graph.macOSOfficeSuiteApp&apos;
+        ///     </para>
         /// </summary>
         [Selectable]
+        [ValidateSet(@"microsoft.graph.mobileApp", @"microsoft.graph.iosStoreApp", @"microsoft.graph.iosVppApp", @"microsoft.graph.androidStoreApp", @"microsoft.graph.webApp", @"microsoft.graph.microsoftStoreForBusinessApp", @"microsoft.graph.mobileLobApp", @"microsoft.graph.iosLobApp", @"microsoft.graph.androidLobApp", @"microsoft.graph.windowsUniversalAppX", @"microsoft.graph.windowsMobileMSI", @"microsoft.graph.managedApp", @"microsoft.graph.managedMobileLobApp", @"microsoft.graph.managedIOSLobApp", @"microsoft.graph.managedAndroidLobApp", @"microsoft.graph.managedIOSStoreApp", @"microsoft.graph.managedAndroidStoreApp", @"microsoft.graph.macOSOfficeSuiteApp")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.mobileApp&quot; objects.")]
@@ -92,8 +96,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.mobileApp&quot; objects.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;microsoft.graph.mobileApp&apos;, &apos;microsoft.graph.iosStoreApp&apos;, &apos;microsoft.graph.iosVppApp&apos;, &apos;microsoft.graph.androidStoreApp&apos;, &apos;microsoft.graph.webApp&apos;, &apos;microsoft.graph.microsoftStoreForBusinessApp&apos;, &apos;microsoft.graph.mobileLobApp&apos;, &apos;microsoft.graph.iosLobApp&apos;, &apos;microsoft.graph.androidLobApp&apos;, &apos;microsoft.graph.windowsUniversalAppX&apos;, &apos;microsoft.graph.windowsMobileMSI&apos;, &apos;microsoft.graph.managedApp&apos;, &apos;microsoft.graph.managedMobileLobApp&apos;, &apos;microsoft.graph.managedIOSLobApp&apos;, &apos;microsoft.graph.managedAndroidLobApp&apos;, &apos;microsoft.graph.managedIOSStoreApp&apos;, &apos;microsoft.graph.managedAndroidStoreApp&apos;, &apos;microsoft.graph.macOSOfficeSuiteApp&apos;
+        ///     </para>
         /// </summary>
         [Selectable]
+        [ValidateSet(@"microsoft.graph.mobileApp", @"microsoft.graph.iosStoreApp", @"microsoft.graph.iosVppApp", @"microsoft.graph.androidStoreApp", @"microsoft.graph.webApp", @"microsoft.graph.microsoftStoreForBusinessApp", @"microsoft.graph.mobileLobApp", @"microsoft.graph.iosLobApp", @"microsoft.graph.androidLobApp", @"microsoft.graph.windowsUniversalAppX", @"microsoft.graph.windowsMobileMSI", @"microsoft.graph.managedApp", @"microsoft.graph.managedMobileLobApp", @"microsoft.graph.managedIOSLobApp", @"microsoft.graph.managedAndroidLobApp", @"microsoft.graph.managedIOSStoreApp", @"microsoft.graph.managedAndroidStoreApp", @"microsoft.graph.macOSOfficeSuiteApp")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.mobileApp&quot; objects.")]
@@ -150,8 +158,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.mobileApp&quot; objects.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;microsoft.graph.mobileApp&apos;, &apos;microsoft.graph.iosStoreApp&apos;, &apos;microsoft.graph.iosVppApp&apos;, &apos;microsoft.graph.androidStoreApp&apos;, &apos;microsoft.graph.webApp&apos;, &apos;microsoft.graph.microsoftStoreForBusinessApp&apos;, &apos;microsoft.graph.mobileLobApp&apos;, &apos;microsoft.graph.iosLobApp&apos;, &apos;microsoft.graph.androidLobApp&apos;, &apos;microsoft.graph.windowsUniversalAppX&apos;, &apos;microsoft.graph.windowsMobileMSI&apos;, &apos;microsoft.graph.managedApp&apos;, &apos;microsoft.graph.managedMobileLobApp&apos;, &apos;microsoft.graph.managedIOSLobApp&apos;, &apos;microsoft.graph.managedAndroidLobApp&apos;, &apos;microsoft.graph.managedIOSStoreApp&apos;, &apos;microsoft.graph.managedAndroidStoreApp&apos;, &apos;microsoft.graph.macOSOfficeSuiteApp&apos;
+        ///     </para>
         /// </summary>
         [Selectable]
+        [ValidateSet(@"microsoft.graph.mobileApp", @"microsoft.graph.iosStoreApp", @"microsoft.graph.iosVppApp", @"microsoft.graph.androidStoreApp", @"microsoft.graph.webApp", @"microsoft.graph.microsoftStoreForBusinessApp", @"microsoft.graph.mobileLobApp", @"microsoft.graph.iosLobApp", @"microsoft.graph.androidLobApp", @"microsoft.graph.windowsUniversalAppX", @"microsoft.graph.windowsMobileMSI", @"microsoft.graph.managedApp", @"microsoft.graph.managedMobileLobApp", @"microsoft.graph.managedIOSLobApp", @"microsoft.graph.managedAndroidLobApp", @"microsoft.graph.managedIOSStoreApp", @"microsoft.graph.managedAndroidStoreApp", @"microsoft.graph.macOSOfficeSuiteApp")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.mobileApp&quot; objects.")]
@@ -208,8 +220,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.mobileApp&quot; objects.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;microsoft.graph.mobileApp&apos;, &apos;microsoft.graph.iosStoreApp&apos;, &apos;microsoft.graph.iosVppApp&apos;, &apos;microsoft.graph.androidStoreApp&apos;, &apos;microsoft.graph.webApp&apos;, &apos;microsoft.graph.microsoftStoreForBusinessApp&apos;, &apos;microsoft.graph.mobileLobApp&apos;, &apos;microsoft.graph.iosLobApp&apos;, &apos;microsoft.graph.androidLobApp&apos;, &apos;microsoft.graph.windowsUniversalAppX&apos;, &apos;microsoft.graph.windowsMobileMSI&apos;, &apos;microsoft.graph.managedApp&apos;, &apos;microsoft.graph.managedMobileLobApp&apos;, &apos;microsoft.graph.managedIOSLobApp&apos;, &apos;microsoft.graph.managedAndroidLobApp&apos;, &apos;microsoft.graph.managedIOSStoreApp&apos;, &apos;microsoft.graph.managedAndroidStoreApp&apos;, &apos;microsoft.graph.macOSOfficeSuiteApp&apos;
+        ///     </para>
         /// </summary>
         [Selectable]
+        [ValidateSet(@"microsoft.graph.mobileApp", @"microsoft.graph.iosStoreApp", @"microsoft.graph.iosVppApp", @"microsoft.graph.androidStoreApp", @"microsoft.graph.webApp", @"microsoft.graph.microsoftStoreForBusinessApp", @"microsoft.graph.mobileLobApp", @"microsoft.graph.iosLobApp", @"microsoft.graph.androidLobApp", @"microsoft.graph.windowsUniversalAppX", @"microsoft.graph.windowsMobileMSI", @"microsoft.graph.managedApp", @"microsoft.graph.managedMobileLobApp", @"microsoft.graph.managedIOSLobApp", @"microsoft.graph.managedAndroidLobApp", @"microsoft.graph.managedIOSStoreApp", @"microsoft.graph.managedAndroidStoreApp", @"microsoft.graph.macOSOfficeSuiteApp")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.mobileApp&quot; objects.")]

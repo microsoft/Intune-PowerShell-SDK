@@ -26,8 +26,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; objects.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;microsoft.graph.deviceAndAppManagementRoleAssignment&apos;
+        ///     </para>
         /// </summary>
         [Selectable]
+        [ValidateSet(@"microsoft.graph.deviceAndAppManagementRoleAssignment")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; objects.")]
@@ -110,8 +114,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; objects.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;microsoft.graph.deviceAndAppManagementRoleAssignment&apos;
+        ///     </para>
         /// </summary>
         [Selectable]
+        [ValidateSet(@"microsoft.graph.deviceAndAppManagementRoleAssignment")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; objects.")]
@@ -195,8 +203,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; objects.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;microsoft.graph.deviceAndAppManagementRoleAssignment&apos;
+        ///     </para>
         /// </summary>
         [Selectable]
+        [ValidateSet(@"microsoft.graph.deviceAndAppManagementRoleAssignment")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; objects.")]
@@ -239,8 +251,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; objects.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;microsoft.graph.deviceAndAppManagementRoleAssignment&apos;
+        ///     </para>
         /// </summary>
         [Selectable]
+        [ValidateSet(@"microsoft.graph.deviceAndAppManagementRoleAssignment")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; objects.")]

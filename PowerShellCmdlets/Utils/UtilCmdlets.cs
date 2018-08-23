@@ -404,19 +404,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         /// <para type="description">The HTTP method to use when making the request.</para>
         /// </summary>
-        [Parameter(
-            Mandatory = true,
-            ValueFromPipeline = true, ValueFromPipelineByPropertyName = true)]
-        [ValidateNotNullOrEmpty]
+        [Parameter(Mandatory = false, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true)]
+        [ValidateNotNull]
         [ValidateSet("GET", "POST", "PUT", "PATCH", "DELETE")]
-        public string HttpMethod { get; set; }
+        public string HttpMethod { get; set; } = "GET";
 
         /// <summary>
         /// <para type="description">The URL to send the request to.</para>
         /// </summary>
-        [Parameter(
-            Mandatory = true,
-            ValueFromPipeline = true, ValueFromPipelineByPropertyName = true)]
+        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true)]
         [ValidateUrl(System.UriKind.RelativeOrAbsolute)]
         public string Url { get; set; }
 
@@ -507,7 +503,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                         }
                         else
                         {
-                            throw new PSArgumentException($"Key in the 'Headers' hashtable strings - the provided key is of type '{key.GetType()}'");
+                            throw new PSArgumentException($"Keys in the 'Headers' hashtable must be strings - a provided key is of type '{key.GetType()}'");
                         }
                     }
                 }
