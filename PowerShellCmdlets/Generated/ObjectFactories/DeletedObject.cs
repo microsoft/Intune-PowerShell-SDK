@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.deleted&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deleted&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "DeletedObject", DefaultParameterSetName = @"#microsoft.graph.deleted")]
+    [Cmdlet("New", "DeletedObject", DefaultParameterSetName = @"microsoft.graph.deleted")]
     [ODataType("microsoft.graph.deleted")]
     public class New_DeletedObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deleted", HelpMessage = @"The &quot;state&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deleted", HelpMessage = @"The &quot;state&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String state { get; set; }
     }
 }

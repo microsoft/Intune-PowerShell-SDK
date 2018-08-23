@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.numberColumn&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.numberColumn&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "NumberColumnObject", DefaultParameterSetName = @"#microsoft.graph.numberColumn")]
+    [Cmdlet("New", "NumberColumnObject", DefaultParameterSetName = @"microsoft.graph.numberColumn")]
     [ODataType("microsoft.graph.numberColumn")]
     public class New_NumberColumnObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.numberColumn", HelpMessage = @"The &quot;decimalPlaces&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.numberColumn", HelpMessage = @"The &quot;decimalPlaces&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String decimalPlaces { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.numberColumn", HelpMessage = @"The &quot;displayAs&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.numberColumn", HelpMessage = @"The &quot;displayAs&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayAs { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Double")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.numberColumn", HelpMessage = @"The &quot;maximum&quot; property, of type &quot;Edm.Double&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.numberColumn", HelpMessage = @"The &quot;maximum&quot; property, of type &quot;Edm.Double&quot;.")]
         public System.Double maximum { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Double")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.numberColumn", HelpMessage = @"The &quot;minimum&quot; property, of type &quot;Edm.Double&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.numberColumn", HelpMessage = @"The &quot;minimum&quot; property, of type &quot;Edm.Double&quot;.")]
         public System.Double minimum { get; set; }
     }
 }

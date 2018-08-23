@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookChartGridlinesFormat&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookChartGridlinesFormat&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookChartGridlinesFormatObject", DefaultParameterSetName = @"#microsoft.graph.workbookChartGridlinesFormat")]
+    [Cmdlet("New", "WorkbookChartGridlinesFormatObject", DefaultParameterSetName = @"microsoft.graph.workbookChartGridlinesFormat")]
     [ODataType("microsoft.graph.workbookChartGridlinesFormat")]
     public class New_WorkbookChartGridlinesFormatObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartLineFormat")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartGridlinesFormat", HelpMessage = @"The &quot;line&quot; property, of type &quot;microsoft.graph.workbookChartLineFormat&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartGridlinesFormat", HelpMessage = @"The &quot;line&quot; property, of type &quot;microsoft.graph.workbookChartLineFormat&quot;.")]
         public System.Object line { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.outlookCategory&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.outlookCategory&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "OutlookCategoryObject", DefaultParameterSetName = @"#microsoft.graph.outlookCategory")]
+    [Cmdlet("New", "OutlookCategoryObject", DefaultParameterSetName = @"microsoft.graph.outlookCategory")]
     [ODataType("microsoft.graph.outlookCategory")]
     public class New_OutlookCategoryObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.outlookCategory", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.outlookCategory", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.categoryColor")]
         [Selectable]
         [ValidateSet(@"preset0", @"preset1", @"preset2", @"preset3", @"preset4", @"preset5", @"preset6", @"preset7", @"preset8", @"preset9", @"preset10", @"preset11", @"preset12", @"preset13", @"preset14", @"preset15", @"preset16", @"preset17", @"preset18", @"preset19", @"preset20", @"preset21", @"preset22", @"preset23", @"preset24", @"none")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.outlookCategory", HelpMessage = @"The &quot;color&quot; property, of type &quot;microsoft.graph.categoryColor&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.outlookCategory", HelpMessage = @"The &quot;color&quot; property, of type &quot;microsoft.graph.categoryColor&quot;.")]
         public System.String color { get; set; }
     }
 }

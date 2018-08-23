@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.notebookLinks&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.notebookLinks&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "NotebookLinksObject", DefaultParameterSetName = @"#microsoft.graph.notebookLinks")]
+    [Cmdlet("New", "NotebookLinksObject", DefaultParameterSetName = @"microsoft.graph.notebookLinks")]
     [ODataType("microsoft.graph.notebookLinks")]
     public class New_NotebookLinksObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.externalLink")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.notebookLinks", HelpMessage = @"The &quot;oneNoteClientUrl&quot; property, of type &quot;microsoft.graph.externalLink&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.notebookLinks", HelpMessage = @"The &quot;oneNoteClientUrl&quot; property, of type &quot;microsoft.graph.externalLink&quot;.")]
         public System.Object oneNoteClientUrl { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.externalLink")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.notebookLinks", HelpMessage = @"The &quot;oneNoteWebUrl&quot; property, of type &quot;microsoft.graph.externalLink&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.notebookLinks", HelpMessage = @"The &quot;oneNoteWebUrl&quot; property, of type &quot;microsoft.graph.externalLink&quot;.")]
         public System.Object oneNoteWebUrl { get; set; }
     }
 }

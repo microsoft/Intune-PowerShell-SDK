@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.booleanColumn&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.booleanColumn&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "BooleanColumnObject", DefaultParameterSetName = @"#microsoft.graph.booleanColumn")]
+    [Cmdlet("New", "BooleanColumnObject", DefaultParameterSetName = @"microsoft.graph.booleanColumn")]
     [ODataType("microsoft.graph.booleanColumn")]
     public class New_BooleanColumnObject : ObjectFactoryCmdletBase
     {

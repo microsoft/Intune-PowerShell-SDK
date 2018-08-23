@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.domainState&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.domainState&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "DomainStateObject", DefaultParameterSetName = @"#microsoft.graph.domainState")]
+    [Cmdlet("New", "DomainStateObject", DefaultParameterSetName = @"microsoft.graph.domainState")]
     [ODataType("microsoft.graph.domainState")]
     public class New_DomainStateObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.domainState", HelpMessage = @"The &quot;status&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domainState", HelpMessage = @"The &quot;status&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String status { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.domainState", HelpMessage = @"The &quot;operation&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domainState", HelpMessage = @"The &quot;operation&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String operation { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.domainState", HelpMessage = @"The &quot;lastActionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domainState", HelpMessage = @"The &quot;lastActionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset lastActionDateTime { get; set; }
     }
 }

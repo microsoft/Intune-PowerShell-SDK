@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.windowsInformationProtectionApp&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.windowsInformationProtectionApp&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WindowsInformationProtectionAppObject", DefaultParameterSetName = @"#microsoft.graph.windowsInformationProtectionApp")]
+    [Cmdlet("New", "WindowsInformationProtectionAppObject", DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionApp")]
     [ODataType("microsoft.graph.windowsInformationProtectionApp")]
     public class New_WindowsInformationProtectionAppObject : ObjectFactoryCmdletBase
     {
@@ -19,9 +19,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDesktopApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionDesktopApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -31,9 +31,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDesktopApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionDesktopApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String description { get; set; }
 
         /// <summary>
@@ -43,9 +43,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionApp", HelpMessage = @"The &quot;publisherName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDesktopApp", HelpMessage = @"The &quot;publisherName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionStoreApp", HelpMessage = @"The &quot;publisherName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionApp", HelpMessage = @"The &quot;publisherName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionDesktopApp", HelpMessage = @"The &quot;publisherName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionStoreApp", HelpMessage = @"The &quot;publisherName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String publisherName { get; set; }
 
         /// <summary>
@@ -55,9 +55,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionApp", HelpMessage = @"The &quot;productName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDesktopApp", HelpMessage = @"The &quot;productName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionStoreApp", HelpMessage = @"The &quot;productName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionApp", HelpMessage = @"The &quot;productName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionDesktopApp", HelpMessage = @"The &quot;productName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionStoreApp", HelpMessage = @"The &quot;productName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String productName { get; set; }
 
         /// <summary>
@@ -67,17 +67,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionApp", HelpMessage = @"The &quot;denied&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDesktopApp", HelpMessage = @"The &quot;denied&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionStoreApp", HelpMessage = @"The &quot;denied&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionApp", HelpMessage = @"The &quot;denied&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionDesktopApp", HelpMessage = @"The &quot;denied&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionStoreApp", HelpMessage = @"The &quot;denied&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean denied { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionDesktopApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.windowsInformationProtectionDesktopApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDesktopApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionDesktopApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.windowsInformationProtectionDesktopApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionDesktopApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionDesktopApp&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsInformationProtectionDesktopApp { get; set; }
 
         /// <summary>
@@ -87,7 +87,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDesktopApp", HelpMessage = @"The &quot;binaryName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionDesktopApp", HelpMessage = @"The &quot;binaryName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String binaryName { get; set; }
 
         /// <summary>
@@ -97,7 +97,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDesktopApp", HelpMessage = @"The &quot;binaryVersionLow&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionDesktopApp", HelpMessage = @"The &quot;binaryVersionLow&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String binaryVersionLow { get; set; }
 
         /// <summary>
@@ -107,15 +107,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDesktopApp", HelpMessage = @"The &quot;binaryVersionHigh&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionDesktopApp", HelpMessage = @"The &quot;binaryVersionHigh&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String binaryVersionHigh { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.windowsInformationProtectionStoreApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionStoreApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.windowsInformationProtectionStoreApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsInformationProtectionStoreApp { get; set; }
     }
 }

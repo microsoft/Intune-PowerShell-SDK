@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbook&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbook&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookObject", DefaultParameterSetName = @"#microsoft.graph.workbook")]
+    [Cmdlet("New", "WorkbookObject", DefaultParameterSetName = @"microsoft.graph.workbook")]
     [ODataType("microsoft.graph.workbook")]
     public class New_WorkbookObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookApplication")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbook", HelpMessage = @"The &quot;application&quot; property, of type &quot;microsoft.graph.workbookApplication&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbook", HelpMessage = @"The &quot;application&quot; property, of type &quot;microsoft.graph.workbookApplication&quot;.")]
         public System.Object application { get; set; }
 
         /// <summary>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookNamedItem")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbook", HelpMessage = @"The &quot;names&quot; property, of type &quot;microsoft.graph.workbookNamedItem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbook", HelpMessage = @"The &quot;names&quot; property, of type &quot;microsoft.graph.workbookNamedItem&quot;.")]
         public System.Object[] names { get; set; }
 
         /// <summary>
@@ -38,7 +38,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookTable")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbook", HelpMessage = @"The &quot;tables&quot; property, of type &quot;microsoft.graph.workbookTable&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbook", HelpMessage = @"The &quot;tables&quot; property, of type &quot;microsoft.graph.workbookTable&quot;.")]
         public System.Object[] tables { get; set; }
 
         /// <summary>
@@ -48,7 +48,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookWorksheet")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbook", HelpMessage = @"The &quot;worksheets&quot; property, of type &quot;microsoft.graph.workbookWorksheet&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbook", HelpMessage = @"The &quot;worksheets&quot; property, of type &quot;microsoft.graph.workbookWorksheet&quot;.")]
         public System.Object[] worksheets { get; set; }
 
         /// <summary>
@@ -57,7 +57,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookFunctions")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbook", HelpMessage = @"The &quot;functions&quot; property, of type &quot;microsoft.graph.workbookFunctions&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbook", HelpMessage = @"The &quot;functions&quot; property, of type &quot;microsoft.graph.workbookFunctions&quot;.")]
         public System.Object functions { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookChartPoint&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookChartPoint&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookChartPointObject", DefaultParameterSetName = @"#microsoft.graph.workbookChartPoint")]
+    [Cmdlet("New", "WorkbookChartPointObject", DefaultParameterSetName = @"microsoft.graph.workbookChartPoint")]
     [ODataType("microsoft.graph.workbookChartPoint")]
     public class New_WorkbookChartPointObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.Json")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartPoint", HelpMessage = @"The &quot;value&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartPoint", HelpMessage = @"The &quot;value&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
         public System.Object value { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartPointFormat")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartPoint", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartPointFormat&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartPoint", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartPointFormat&quot;.")]
         public System.Object format { get; set; }
     }
 }

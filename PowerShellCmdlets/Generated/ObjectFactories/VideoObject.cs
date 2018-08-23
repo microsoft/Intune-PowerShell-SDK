@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.video&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.video&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "VideoObject", DefaultParameterSetName = @"#microsoft.graph.video")]
+    [Cmdlet("New", "VideoObject", DefaultParameterSetName = @"microsoft.graph.video")]
     [ODataType("microsoft.graph.video")]
     public class New_VideoObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;audioBitsPerSample&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.video", HelpMessage = @"The &quot;audioBitsPerSample&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 audioBitsPerSample { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;audioChannels&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.video", HelpMessage = @"The &quot;audioChannels&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 audioChannels { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;audioFormat&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.video", HelpMessage = @"The &quot;audioFormat&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String audioFormat { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;audioSamplesPerSecond&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.video", HelpMessage = @"The &quot;audioSamplesPerSecond&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 audioSamplesPerSecond { get; set; }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;bitrate&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.video", HelpMessage = @"The &quot;bitrate&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 bitrate { get; set; }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int64")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;duration&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.video", HelpMessage = @"The &quot;duration&quot; property, of type &quot;Edm.Int64&quot;.")]
         public System.Int64 duration { get; set; }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;fourCC&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.video", HelpMessage = @"The &quot;fourCC&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String fourCC { get; set; }
 
         /// <summary>
@@ -81,7 +81,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Double")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;frameRate&quot; property, of type &quot;Edm.Double&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.video", HelpMessage = @"The &quot;frameRate&quot; property, of type &quot;Edm.Double&quot;.")]
         public System.Double frameRate { get; set; }
 
         /// <summary>
@@ -90,7 +90,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;height&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.video", HelpMessage = @"The &quot;height&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 height { get; set; }
 
         /// <summary>
@@ -99,7 +99,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.video", HelpMessage = @"The &quot;width&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.video", HelpMessage = @"The &quot;width&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 width { get; set; }
     }
 }

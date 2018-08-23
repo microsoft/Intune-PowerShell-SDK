@@ -4,6 +4,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using System.Management.Automation;
     using System.Reflection;
     using System.Text;
@@ -76,7 +77,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 }
 
                 // Get the type of this property
-                string propertyODataType = property.GetODataTypeName();
+                string propertyODataType = property.GetODataTypeAttribute()?.TypeFullName;
 
                 // Convert the value into a JSON string
                 string propertyValueString = propertyValue.ToODataString(propertyODataType, isArray: property.PropertyType.IsArray);
@@ -103,6 +104,71 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             };
         }
 
+        internal IEnumerable<PropertyInfo> GetTypeCastParameters()
+        {
+            return this.GetBoundProperties()
+                .Where(property => 
+                    property.PropertyType == typeof(string)
+                    && property.GetCustomAttribute<TypeCastParameterAttribute>() != null);
+        }
+
+        /// <summary>
+        /// Gets the names and values of the parameters which are used to specify type casts in the URL.
+        /// </summary>
+        /// <returns>The names and values of the parameters which are used to specify type casts in the URL.</returns>
+        internal IDictionary<string, string> GetTypeCastParametersAndValues()
+        {
+            return this.GetTypeCastParameters()
+                .GroupBy(property => property.Name)
+                .ToDictionary(group => group.Key, group => group.First().GetValue(this) as string);
+        }
+
+        /// <summary>
+        /// Gets the name of the property that should hold the object's type name.
+        /// </summary>
+        /// <returns>The name of the property that should hold the object's type name.</returns>
+        internal string GetResourceTypePropertyName()
+        {
+            return this.GetType().GetCustomAttribute<ResourceTypePropertyNameAttribute>()?.ResourceTypePropertyName;
+        }
+
+        /// <summary>
+        /// Gets the name of the property that should hold the object's ID.
+        /// </summary>
+        /// <returns>The name of the property that should hold the object's ID.</returns>
+        internal string GetResourceIdPropertyName()
+        {
+            return this.GetType().GetCustomAttribute<ResourceIdPropertyNameAttribute>()?.PropertyName;
+        }
+
+        /// <summary>
+        /// Returns the ID parameters that are used to specify IDs in the URL.
+        /// </summary>
+        /// <returns>The ID parameters that are used to specify IDs in the URL.</returns>
+        internal IEnumerable<PropertyInfo> GetIdParameterProperties()
+        {
+            return this.GetBoundProperties()
+                .Where(property =>
+                    property.PropertyType == typeof(string) &&
+                    property.GetCustomAttribute<IdParameterAttribute>() != null);
+        }
+
+        /// <summary>
+        /// Gets the names and values of the ID parameters that are used to specify IDs in the URL.
+        /// </summary>
+        /// <returns>The names and values of the ID parameters that are used to specify IDs in the URL.</returns>
+        internal IDictionary<string, string> GetIdParameterNamesAndValues()
+        {
+            return this.GetIdParameterProperties()
+                .GroupBy(property => property.Name)
+                .ToDictionary(group => group.Key, group => group.First().GetValue(this) as string);
+        }
+
+        internal bool IsReferencableResource()
+        {
+            return this.GetType().GetCustomAttribute<ResourceReferenceAttribute>() != null;
+        }
+
         /// <summary>
         /// Processes a result object.
         /// </summary>
@@ -119,7 +185,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 if (objectId != null)
                 {
                     // Get the name of the alias property
-                    string idPropertyName = this.GetType().GetCustomAttribute<ResourceIdPropertyNameAttribute>()?.PropertyName;
+                    string idPropertyName = this.GetResourceIdPropertyName();
                     if (idPropertyName != null)
                     {
                         // Create the alias
@@ -130,37 +196,62 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                     }
                 }
 
-                // Get the type name without the leading "#"
-                string typeName = psObj.Properties[ODataConstants.SearchResultProperties.ODataType]?.Name?.TrimStart('#');
-                if (string.IsNullOrEmpty(typeName))
+                // ID parameters for parent resources
+                foreach (var entry in this.GetIdParameterNamesAndValues())
                 {
-                    typeName = this.GetType().GetCustomAttribute<ODataTypeAttribute>(false)?.FullName;
+                    // Create the property
+                    string propertyName = entry.Key;
+                    string propertyValue = entry.Value;
+                    psObj.Properties.Add(new PSNoteProperty(propertyName, propertyValue));
+
+                    // Hide this property
+                    propertiesToHide.Add(propertyName);
                 }
 
-                // Add the type name to the list of PowerShell type names for this object
+                // Type cast parameters for parent resources
+                foreach (var entry in this.GetTypeCastParametersAndValues())
+                {
+                    // Add a property to store the type name
+                    string propertyName = entry.Key;
+                    string propertyValue = entry.Value;
+                    psObj.Properties.Add(new PSNoteProperty(propertyName, propertyValue));
+
+                    // Hide this property
+                    propertiesToHide.Add(propertyName);
+                }
+
+                // Get the type name without the leading "#"
+                string typeName = (psObj.Properties[ODataConstants.SearchResultProperties.ODataType]?.Value as string)?.TrimStart('#');
+                if (string.IsNullOrEmpty(typeName))
+                {
+                    typeName = this.GetType().GetCustomAttribute<ODataTypeAttribute>(false)?.TypeFullName;
+                }
+
                 if (typeName != null)
                 {
+                    // Add the type name to the list of PowerShell type names for this object
                     psObj.TypeNames.Insert(0, typeName);
 
-                    // Get this cmdlet's noun
-                    string cmdletNoun = this.GetCmdletNoun();
+                    // Add the type cast property
+                    string typeCastPropertyName = this.GetResourceTypePropertyName();
+                    psObj.Properties.Add(new PSNoteProperty(typeCastPropertyName, typeName));
+
+                    // Hide the type cast property
+                    propertiesToHide.Add(typeCastPropertyName);
 
                     // If this cmdlet retrieves resources that can be referenced, add a property to represent the URL which can be used to retrieve this object
-                    if (ReferencePathGenerator.TryGetFromCache(cmdletNoun, out ReferencePathGenerator pathGenerator))
+                    if (ReferencePathGenerator.TryGetFromCache(this.GetCmdletNoun(), out ReferencePathGenerator pathGenerator))
                     {
                         // Get the full resource URL
-                        string referencePath = pathGenerator.GenerateResourcePath(objectId);
+                        string referencePath = pathGenerator.GenerateResourcePath(this, objectId);
                         string referenceUrl = this.BuildUrl(referencePath);
 
-                        // Get the name of the reference parameter
-                        string propertyName = ODataTypeUtils.GetReferenceUrlParameterName(typeName);
-
                         // Add this reference URL as a property
-                        PSNoteProperty psNoteProperty = new PSNoteProperty(propertyName, referenceUrl);
-                        psObj.Properties.Add(psNoteProperty);
+                        string referenceUrlPropertyName = ODataTypeUtils.GetReferenceUrlParameterName(typeName);
+                        psObj.Properties.Add(new PSNoteProperty(referenceUrlPropertyName, referenceUrl));
 
                         // Hide this property
-                        propertiesToHide.Add(propertyName);
+                        propertiesToHide.Add(referenceUrlPropertyName);
                     }
                 }
 

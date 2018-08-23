@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookChartLineFormat&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookChartLineFormat&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookChartLineFormatObject", DefaultParameterSetName = @"#microsoft.graph.workbookChartLineFormat")]
+    [Cmdlet("New", "WorkbookChartLineFormatObject", DefaultParameterSetName = @"microsoft.graph.workbookChartLineFormat")]
     [ODataType("microsoft.graph.workbookChartLineFormat")]
     public class New_WorkbookChartLineFormatObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartLineFormat", HelpMessage = @"The &quot;color&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartLineFormat", HelpMessage = @"The &quot;color&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String color { get; set; }
     }
 }

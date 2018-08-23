@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookTableRow&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookTableRow&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookTableRowObject", DefaultParameterSetName = @"#microsoft.graph.workbookTableRow")]
+    [Cmdlet("New", "WorkbookTableRowObject", DefaultParameterSetName = @"microsoft.graph.workbookTableRow")]
     [ODataType("microsoft.graph.workbookTableRow")]
     public class New_WorkbookTableRowObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookTableRow", HelpMessage = @"The &quot;index&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookTableRow", HelpMessage = @"The &quot;index&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 index { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.Json")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookTableRow", HelpMessage = @"The &quot;values&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookTableRow", HelpMessage = @"The &quot;values&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
         public System.Object values { get; set; }
     }
 }

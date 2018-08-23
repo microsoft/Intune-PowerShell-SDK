@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.onenote&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.onenote&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "OnenoteObject", DefaultParameterSetName = @"#microsoft.graph.onenote")]
+    [Cmdlet("New", "OnenoteObject", DefaultParameterSetName = @"microsoft.graph.onenote")]
     [ODataType("microsoft.graph.onenote")]
     public class New_OnenoteObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.notebook")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenote", HelpMessage = @"The &quot;notebooks&quot; property, of type &quot;microsoft.graph.notebook&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenote", HelpMessage = @"The &quot;notebooks&quot; property, of type &quot;microsoft.graph.notebook&quot;.")]
         public System.Object[] notebooks { get; set; }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.onenoteSection")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenote", HelpMessage = @"The &quot;sections&quot; property, of type &quot;microsoft.graph.onenoteSection&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenote", HelpMessage = @"The &quot;sections&quot; property, of type &quot;microsoft.graph.onenoteSection&quot;.")]
         public System.Object[] sections { get; set; }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.sectionGroup")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenote", HelpMessage = @"The &quot;sectionGroups&quot; property, of type &quot;microsoft.graph.sectionGroup&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenote", HelpMessage = @"The &quot;sectionGroups&quot; property, of type &quot;microsoft.graph.sectionGroup&quot;.")]
         public System.Object[] sectionGroups { get; set; }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.onenotePage")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenote", HelpMessage = @"The &quot;pages&quot; property, of type &quot;microsoft.graph.onenotePage&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenote", HelpMessage = @"The &quot;pages&quot; property, of type &quot;microsoft.graph.onenotePage&quot;.")]
         public System.Object[] pages { get; set; }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.onenoteResource")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenote", HelpMessage = @"The &quot;resources&quot; property, of type &quot;microsoft.graph.onenoteResource&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenote", HelpMessage = @"The &quot;resources&quot; property, of type &quot;microsoft.graph.onenoteResource&quot;.")]
         public System.Object[] resources { get; set; }
 
         /// <summary>
@@ -69,7 +69,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.onenoteOperation")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenote", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.onenoteOperation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenote", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.onenoteOperation&quot;.")]
         public System.Object[] operations { get; set; }
     }
 }

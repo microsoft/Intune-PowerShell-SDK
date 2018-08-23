@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookFilter&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookFilter&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookFilterObject", DefaultParameterSetName = @"#microsoft.graph.workbookFilter")]
+    [Cmdlet("New", "WorkbookFilterObject", DefaultParameterSetName = @"microsoft.graph.workbookFilter")]
     [ODataType("microsoft.graph.workbookFilter")]
     public class New_WorkbookFilterObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookFilterCriteria")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookFilter", HelpMessage = @"The &quot;criteria&quot; property, of type &quot;microsoft.graph.workbookFilterCriteria&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookFilter", HelpMessage = @"The &quot;criteria&quot; property, of type &quot;microsoft.graph.workbookFilterCriteria&quot;.")]
         public System.Object criteria { get; set; }
     }
 }

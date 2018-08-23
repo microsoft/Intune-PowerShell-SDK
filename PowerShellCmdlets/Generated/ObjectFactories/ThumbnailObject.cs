@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.thumbnail&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.thumbnail&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ThumbnailObject", DefaultParameterSetName = @"#microsoft.graph.thumbnail")]
+    [Cmdlet("New", "ThumbnailObject", DefaultParameterSetName = @"microsoft.graph.thumbnail")]
     [ODataType("microsoft.graph.thumbnail")]
     public class New_ThumbnailObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Stream")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.thumbnail", HelpMessage = @"The &quot;content&quot; property, of type &quot;Edm.Stream&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.thumbnail", HelpMessage = @"The &quot;content&quot; property, of type &quot;Edm.Stream&quot;.")]
         public System.IO.Stream content { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.thumbnail", HelpMessage = @"The &quot;height&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.thumbnail", HelpMessage = @"The &quot;height&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 height { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.thumbnail", HelpMessage = @"The &quot;sourceItemId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.thumbnail", HelpMessage = @"The &quot;sourceItemId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String sourceItemId { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.thumbnail", HelpMessage = @"The &quot;url&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.thumbnail", HelpMessage = @"The &quot;url&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String url { get; set; }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.thumbnail", HelpMessage = @"The &quot;width&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.thumbnail", HelpMessage = @"The &quot;width&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 width { get; set; }
     }
 }

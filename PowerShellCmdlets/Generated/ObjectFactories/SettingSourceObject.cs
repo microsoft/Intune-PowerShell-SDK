@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.settingSource&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.settingSource&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "SettingSourceObject", DefaultParameterSetName = @"#microsoft.graph.settingSource")]
+    [Cmdlet("New", "SettingSourceObject", DefaultParameterSetName = @"microsoft.graph.settingSource")]
     [ODataType("microsoft.graph.settingSource")]
     public class New_SettingSourceObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.settingSource", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.settingSource", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.ComplexExtensionValue&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.ComplexExtensionValue&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ComplexExtensionValueObject", DefaultParameterSetName = @"#microsoft.graph.ComplexExtensionValue")]
+    [Cmdlet("New", "ComplexExtensionValueObject", DefaultParameterSetName = @"microsoft.graph.ComplexExtensionValue")]
     [ODataType("microsoft.graph.ComplexExtensionValue")]
     public class New_ComplexExtensionValueObject : ObjectFactoryCmdletBase
     {

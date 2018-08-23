@@ -11,7 +11,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of assignments for this eBook.</para>
     /// </summary>
     [Cmdlet("Get", "DeviceAppManagement_ManagedEBooks_Assignments", DefaultParameterSetName = @"Search")]
-    [ODataType("microsoft.graph.managedEBookAssignment")]
+    [ODataType("microsoft.graph.managedEBookAssignment", "microsoft.graph.iosVppEBookAssignment")]
+    [ResourceTypePropertyName("assignmentODataType")]
     [ResourceIdPropertyName("assignmentId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_ManagedEBooks_Assignments : GetOrSearchCmdlet
@@ -20,6 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.")]
         public System.String managedEBookId { get; set; }
@@ -28,6 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedEBookAssignment&quot; object in the &quot;assignments&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedEBookAssignment&quot; object in the &quot;assignments&quot; collection.")]
@@ -38,7 +41,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.managedEBookAssignment&quot; type.</para>
         ///     <para type="description">The assignment target for eBook.</para>
         /// </summary>
-        [ODataType("microsoft.graph.deviceAndAppManagementAssignmentTarget")]
+        [ODataType("microsoft.graph.deviceAndAppManagementAssignmentTarget", "microsoft.graph.allDevicesAssignmentTarget", "microsoft.graph.groupAssignmentTarget", "microsoft.graph.exclusionGroupAssignmentTarget", "microsoft.graph.allLicensedUsersAssignmentTarget")]
         [Selectable]
         [Sortable]
         public System.Object target { get; set; }
@@ -66,14 +69,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of assignments for this eBook.</para>
     /// </summary>
     [Cmdlet("New", "DeviceAppManagement_ManagedEBooks_Assignments", ConfirmImpact = ConfirmImpact.Low)]
-    [ODataType("microsoft.graph.managedEBookAssignment")]
+    [ODataType("microsoft.graph.managedEBookAssignment", "microsoft.graph.iosVppEBookAssignment")]
+    [ResourceTypePropertyName("assignmentODataType")]
+    [ResourceIdPropertyName("assignmentId")]
     [ResourceReference]
     public class New_DeviceAppManagement_ManagedEBooks_Assignments : PostCmdlet
     {
         /// <summary>
+        ///     <para type="description">The ID for a &quot;microsoft.graph.managedEBookAssignment&quot; object in the &quot;assignments&quot; collection.</para>
+        /// </summary>
+        [Selectable]
+        [IdParameter]
+        public System.String assignmentId { get; set; }
+
+        /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.")]
         public System.String managedEBookId { get; set; }
@@ -82,8 +95,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedEBookAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.managedEBookAssignment")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedEBookAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedEBookAssignment&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.managedEBookAssignment")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBookAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedEBookAssignment&quot; type.")]
         public System.Management.Automation.SwitchParameter managedEBookAssignment { get; set; }
 
         /// <summary>
@@ -91,10 +104,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.managedEBookAssignment&quot; type.</para>
         ///     <para type="description">The assignment target for eBook.</para>
         /// </summary>
-        [ODataType("microsoft.graph.deviceAndAppManagementAssignmentTarget")]
+        [ODataType("microsoft.graph.deviceAndAppManagementAssignmentTarget", "microsoft.graph.allDevicesAssignmentTarget", "microsoft.graph.groupAssignmentTarget", "microsoft.graph.exclusionGroupAssignmentTarget", "microsoft.graph.allLicensedUsersAssignmentTarget")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedEBookAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBookAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBookAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBookAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
         public System.Object target { get; set; }
 
@@ -109,8 +122,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.installIntent")]
         [Selectable]
         [ValidateSet(@"available", @"required", @"uninstall", @"availableWithoutEnrollment")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedEBookAssignment", HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBookAssignment", HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBookAssignment", HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBookAssignment", HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
         public System.String installIntent { get; set; }
 
@@ -118,13 +131,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppEBookAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.iosVppEBookAssignment")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBookAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppEBookAssignment&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.iosVppEBookAssignment")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBookAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppEBookAssignment&quot; type.")]
         public System.Management.Automation.SwitchParameter iosVppEBookAssignment { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedEBooks/{managedEBookId}/assignments";
+            return $"deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{assignmentId}";
         }
     }
 
@@ -135,7 +148,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of assignments for this eBook.</para>
     /// </summary>
     [Cmdlet("Update", "DeviceAppManagement_ManagedEBooks_Assignments", ConfirmImpact = ConfirmImpact.Medium)]
-    [ODataType("microsoft.graph.managedEBookAssignment")]
+    [ODataType("microsoft.graph.managedEBookAssignment", "microsoft.graph.iosVppEBookAssignment")]
+    [ResourceTypePropertyName("assignmentODataType")]
     [ResourceIdPropertyName("assignmentId")]
     public class Update_DeviceAppManagement_ManagedEBooks_Assignments : PatchCmdlet
     {
@@ -143,6 +157,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedEBookAssignment&quot; object in the &quot;assignments&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedEBookAssignment&quot; object in the &quot;assignments&quot; collection.")]
@@ -152,6 +167,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.")]
         public System.String managedEBookId { get; set; }
@@ -160,8 +176,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedEBookAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.managedEBookAssignment")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedEBookAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedEBookAssignment&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.managedEBookAssignment")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBookAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedEBookAssignment&quot; type.")]
         public System.Management.Automation.SwitchParameter managedEBookAssignment { get; set; }
 
         /// <summary>
@@ -169,10 +185,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.managedEBookAssignment&quot; type.</para>
         ///     <para type="description">The assignment target for eBook.</para>
         /// </summary>
-        [ODataType("microsoft.graph.deviceAndAppManagementAssignmentTarget")]
+        [ODataType("microsoft.graph.deviceAndAppManagementAssignmentTarget", "microsoft.graph.allDevicesAssignmentTarget", "microsoft.graph.groupAssignmentTarget", "microsoft.graph.exclusionGroupAssignmentTarget", "microsoft.graph.allLicensedUsersAssignmentTarget")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedEBookAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBookAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBookAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBookAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
         public System.Object target { get; set; }
 
@@ -187,8 +203,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.installIntent")]
         [Selectable]
         [ValidateSet(@"available", @"required", @"uninstall", @"availableWithoutEnrollment")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedEBookAssignment", HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBookAssignment", HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBookAssignment", HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBookAssignment", HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
         public System.String installIntent { get; set; }
 
@@ -196,8 +212,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppEBookAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.iosVppEBookAssignment")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppEBookAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppEBookAssignment&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.iosVppEBookAssignment")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBookAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppEBookAssignment&quot; type.")]
         public System.Management.Automation.SwitchParameter iosVppEBookAssignment { get; set; }
 
         internal override System.String GetResourcePath()
@@ -213,7 +229,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of assignments for this eBook.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_ManagedEBooks_Assignments", ConfirmImpact = ConfirmImpact.High)]
-    [ODataType("microsoft.graph.managedEBookAssignment")]
+    [ODataType("microsoft.graph.managedEBookAssignment", "microsoft.graph.iosVppEBookAssignment")]
+    [ResourceTypePropertyName("assignmentODataType")]
     [ResourceIdPropertyName("assignmentId")]
     public class Remove_DeviceAppManagement_ManagedEBooks_Assignments : DeleteCmdlet
     {
@@ -221,6 +238,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedEBookAssignment&quot; object in the &quot;assignments&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedEBookAssignment&quot; object in the &quot;assignments&quot; collection.")]
@@ -230,6 +248,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.")]
         public System.String managedEBookId { get; set; }

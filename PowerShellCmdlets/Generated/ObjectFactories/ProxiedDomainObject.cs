@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.proxiedDomain&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.proxiedDomain&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ProxiedDomainObject", DefaultParameterSetName = @"#microsoft.graph.proxiedDomain")]
+    [Cmdlet("New", "ProxiedDomainObject", DefaultParameterSetName = @"microsoft.graph.proxiedDomain")]
     [ODataType("microsoft.graph.proxiedDomain")]
     public class New_ProxiedDomainObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.proxiedDomain", HelpMessage = @"The &quot;ipAddressOrFQDN&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.proxiedDomain", HelpMessage = @"The &quot;ipAddressOrFQDN&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String ipAddressOrFQDN { get; set; }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.proxiedDomain", HelpMessage = @"The &quot;proxy&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.proxiedDomain", HelpMessage = @"The &quot;proxy&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String proxy { get; set; }
     }
 }

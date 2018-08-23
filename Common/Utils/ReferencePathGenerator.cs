@@ -19,12 +19,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK
         /// <summary>
         /// An instance of the cmdlet type that we should use to get the resource URL.
         /// </summary>
-        private ODataCmdletBase _cmdletInstance;
+        private readonly ODataCmdletBase _cmdletInstance;
 
         /// <summary>
         /// The "id" property on the cmdlet instance that we need to set before getting the resource URL.
         /// </summary>
-        private PropertyInfo _idProperty;
+        private readonly PropertyInfo _idProperty;
+
+        /// <summary>
+        /// The URL placeholder properties on the cmdlet instance that we need to set before getting the resource URL.
+        /// </summary>
+        private readonly IEnumerable<PropertyInfo> _placeholderProperties;
 
         internal ReferencePathGenerator(ODataCmdletBase cmdletInstance)
         {
@@ -34,12 +39,18 @@ namespace Microsoft.Intune.PowerShellGraphSDK
             Type cmdletType = this._cmdletInstance.GetType();
 
             // Get the "id" property
-            PropertyInfo idProperty = cmdletType.GetProperties()
+            this._idProperty = cmdletType.GetProperties()
                 .Where(prop => prop.GetCustomAttribute<AliasAttribute>()?.AliasNames?
                     .Contains(ODataConstants.RequestProperties.Id) == true)
                 .FirstOrDefault();
 
-            this._idProperty = idProperty;
+            // Get the placeholder properties
+            this._placeholderProperties = cmdletType.GetProperties()
+                .Where(prop =>
+                    // ID properties (except the entity ID property that we just retrieved)
+                    (prop != this._idProperty && prop.GetCustomAttribute<IdParameterAttribute>() != null)
+                    // Type cast properties
+                    || prop.GetCustomAttribute<TypeCastParameterAttribute>() != null);
         }
 
         internal static void AddToCache(string cmdletNoun, ReferencePathGenerator referencePathGenerator)
@@ -69,12 +80,32 @@ namespace Microsoft.Intune.PowerShellGraphSDK
         /// <summary>
         /// Generates a resource path from the given object ID.
         /// </summary>
+        /// <param name="currentCmdlet">The currently running cmdlet (which has the properties that represent URL placeholders)</param>
         /// <param name="id">The ID of the object being referenced</param>
         /// <returns>The generated URL.</returns>
-        internal string GenerateResourcePath(string id)
+        internal string GenerateResourcePath(ODataCmdletBase currentCmdlet, string id)
         {
-            // Set the ID
+            // Set the entity ID
             this._idProperty?.SetValue(this._cmdletInstance, id);
+
+            // Set the placeholder properties
+            foreach (PropertyInfo property in this._placeholderProperties)
+            {
+                // Get the equivalent property on the current cmdlet (if the type is different)
+                PropertyInfo currentCmdletProperty = property;
+                Type currentCmdletType = currentCmdlet.GetType();
+                if (currentCmdletType != this._cmdletInstance.GetType())
+                {
+                    // The property name and type must match
+                    currentCmdletProperty = currentCmdletType.GetProperty(property.Name, property.PropertyType);
+                }
+
+                // Get the value from the currently running cmdlet
+                object propertyValue = currentCmdletProperty.GetValue(currentCmdlet);
+
+                // Set the cached cmdlet instance's equivalent property to the same value
+                property.SetValue(this._cmdletInstance, propertyValue);
+            }
 
             // Create the relative resource path
             string path = this._cmdletInstance.GetResourcePath();

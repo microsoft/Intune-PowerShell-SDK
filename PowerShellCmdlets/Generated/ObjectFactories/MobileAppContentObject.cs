@@ -9,7 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.mobileAppContent&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Contains content properties for a specific app version. Each mobileAppContent can have multiple mobileAppContentFile.</para>
     /// </summary>
-    [Cmdlet("New", "MobileAppContentObject", DefaultParameterSetName = @"#microsoft.graph.mobileAppContent")]
+    [Cmdlet("New", "MobileAppContentObject", DefaultParameterSetName = @"microsoft.graph.mobileAppContent")]
     [ODataType("microsoft.graph.mobileAppContent")]
     public class New_MobileAppContentObject : ObjectFactoryCmdletBase
     {
@@ -21,7 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mobileAppContentFile")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileAppContent", HelpMessage = @"The &quot;files&quot; property, of type &quot;microsoft.graph.mobileAppContentFile&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileAppContent", HelpMessage = @"The &quot;files&quot; property, of type &quot;microsoft.graph.mobileAppContentFile&quot;.")]
         public System.Object[] files { get; set; }
     }
 }

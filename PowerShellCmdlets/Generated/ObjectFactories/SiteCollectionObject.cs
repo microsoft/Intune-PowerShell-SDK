@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.siteCollection&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.siteCollection&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "SiteCollectionObject", DefaultParameterSetName = @"#microsoft.graph.siteCollection")]
+    [Cmdlet("New", "SiteCollectionObject", DefaultParameterSetName = @"microsoft.graph.siteCollection")]
     [ODataType("microsoft.graph.siteCollection")]
     public class New_SiteCollectionObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.siteCollection", HelpMessage = @"The &quot;hostname&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.siteCollection", HelpMessage = @"The &quot;hostname&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String hostname { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.root")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.siteCollection", HelpMessage = @"The &quot;root&quot; property, of type &quot;microsoft.graph.root&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.siteCollection", HelpMessage = @"The &quot;root&quot; property, of type &quot;microsoft.graph.root&quot;.")]
         public System.Object root { get; set; }
     }
 }

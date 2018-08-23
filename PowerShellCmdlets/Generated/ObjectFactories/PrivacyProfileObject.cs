@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.privacyProfile&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.privacyProfile&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "PrivacyProfileObject", DefaultParameterSetName = @"#microsoft.graph.privacyProfile")]
+    [Cmdlet("New", "PrivacyProfileObject", DefaultParameterSetName = @"microsoft.graph.privacyProfile")]
     [ODataType("microsoft.graph.privacyProfile")]
     public class New_PrivacyProfileObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.privacyProfile", HelpMessage = @"The &quot;contactEmail&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.privacyProfile", HelpMessage = @"The &quot;contactEmail&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String contactEmail { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.privacyProfile", HelpMessage = @"The &quot;statementUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.privacyProfile", HelpMessage = @"The &quot;statementUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String statementUrl { get; set; }
     }
 }

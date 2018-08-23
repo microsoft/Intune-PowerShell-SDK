@@ -9,7 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Contains properties, inherited properties and actions for an MDM mobile app configuration user status summary.</para>
     /// </summary>
-    [Cmdlet("New", "ManagedDeviceMobileAppConfigurationUserSummaryObject", DefaultParameterSetName = @"#microsoft.graph.managedDeviceMobileAppConfigurationUserSummary")]
+    [Cmdlet("New", "ManagedDeviceMobileAppConfigurationUserSummaryObject", DefaultParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserSummary")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationUserSummary")]
     public class New_ManagedDeviceMobileAppConfigurationUserSummaryObject : ObjectFactoryCmdletBase
     {
@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", HelpMessage = @"The &quot;pendingCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", HelpMessage = @"The &quot;pendingCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 pendingCount { get; set; }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", HelpMessage = @"The &quot;notApplicableCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", HelpMessage = @"The &quot;notApplicableCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 notApplicableCount { get; set; }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", HelpMessage = @"The &quot;successCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", HelpMessage = @"The &quot;successCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 successCount { get; set; }
 
         /// <summary>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", HelpMessage = @"The &quot;errorCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", HelpMessage = @"The &quot;errorCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 errorCount { get; set; }
 
         /// <summary>
@@ -60,7 +60,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", HelpMessage = @"The &quot;failedCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", HelpMessage = @"The &quot;failedCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 failedCount { get; set; }
 
         /// <summary>
@@ -70,7 +70,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", HelpMessage = @"The &quot;lastUpdateDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", HelpMessage = @"The &quot;lastUpdateDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset lastUpdateDateTime { get; set; }
 
         /// <summary>
@@ -80,7 +80,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", HelpMessage = @"The &quot;configurationVersion&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", HelpMessage = @"The &quot;configurationVersion&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 configurationVersion { get; set; }
     }
 }

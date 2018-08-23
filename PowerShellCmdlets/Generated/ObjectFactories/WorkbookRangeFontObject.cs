@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookRangeFont&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookRangeFont&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookRangeFontObject", DefaultParameterSetName = @"#microsoft.graph.workbookRangeFont")]
+    [Cmdlet("New", "WorkbookRangeFontObject", DefaultParameterSetName = @"microsoft.graph.workbookRangeFont")]
     [ODataType("microsoft.graph.workbookRangeFont")]
     public class New_WorkbookRangeFontObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;bold&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;bold&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean bold { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;color&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;color&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String color { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;italic&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;italic&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean italic { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String name { get; set; }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Double")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Double&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Double&quot;.")]
         public System.Double size { get; set; }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;underline&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;underline&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String underline { get; set; }
     }
 }

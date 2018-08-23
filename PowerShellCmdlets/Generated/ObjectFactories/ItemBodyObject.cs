@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.itemBody&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.itemBody&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ItemBodyObject", DefaultParameterSetName = @"#microsoft.graph.itemBody")]
+    [Cmdlet("New", "ItemBodyObject", DefaultParameterSetName = @"microsoft.graph.itemBody")]
     [ODataType("microsoft.graph.itemBody")]
     public class New_ItemBodyObject : ObjectFactoryCmdletBase
     {
@@ -22,7 +22,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.bodyType")]
         [Selectable]
         [ValidateSet(@"text", @"html")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.itemBody", HelpMessage = @"The &quot;contentType&quot; property, of type &quot;microsoft.graph.bodyType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemBody", HelpMessage = @"The &quot;contentType&quot; property, of type &quot;microsoft.graph.bodyType&quot;.")]
         public System.String contentType { get; set; }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.itemBody", HelpMessage = @"The &quot;content&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemBody", HelpMessage = @"The &quot;content&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String content { get; set; }
     }
 }

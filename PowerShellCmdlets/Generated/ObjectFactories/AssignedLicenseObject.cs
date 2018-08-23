@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.assignedLicense&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.assignedLicense&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "AssignedLicenseObject", DefaultParameterSetName = @"#microsoft.graph.assignedLicense")]
+    [Cmdlet("New", "AssignedLicenseObject", DefaultParameterSetName = @"microsoft.graph.assignedLicense")]
     [ODataType("microsoft.graph.assignedLicense")]
     public class New_AssignedLicenseObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Guid")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.assignedLicense", HelpMessage = @"The &quot;disabledPlans&quot; property, of type &quot;Edm.Guid&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.assignedLicense", HelpMessage = @"The &quot;disabledPlans&quot; property, of type &quot;Edm.Guid&quot;.")]
         public System.Guid[] disabledPlans { get; set; }
 
         /// <summary>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Guid")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.assignedLicense", HelpMessage = @"The &quot;skuId&quot; property, of type &quot;Edm.Guid&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.assignedLicense", HelpMessage = @"The &quot;skuId&quot; property, of type &quot;Edm.Guid&quot;.")]
         public System.Guid skuId { get; set; }
     }
 }

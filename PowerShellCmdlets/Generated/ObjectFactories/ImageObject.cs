@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.image&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.image&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ImageObject", DefaultParameterSetName = @"#microsoft.graph.image")]
+    [Cmdlet("New", "ImageObject", DefaultParameterSetName = @"microsoft.graph.image")]
     [ODataType("microsoft.graph.image")]
     public class New_ImageObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.image", HelpMessage = @"The &quot;height&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.image", HelpMessage = @"The &quot;height&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 height { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.image", HelpMessage = @"The &quot;width&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.image", HelpMessage = @"The &quot;width&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 width { get; set; }
     }
 }

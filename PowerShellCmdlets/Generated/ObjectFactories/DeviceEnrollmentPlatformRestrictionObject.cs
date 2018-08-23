@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceEnrollmentPlatformRestriction&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "DeviceEnrollmentPlatformRestrictionObject", DefaultParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestriction")]
+    [Cmdlet("New", "DeviceEnrollmentPlatformRestrictionObject", DefaultParameterSetName = @"microsoft.graph.deviceEnrollmentPlatformRestriction")]
     [ODataType("microsoft.graph.deviceEnrollmentPlatformRestriction")]
     public class New_DeviceEnrollmentPlatformRestrictionObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestriction", HelpMessage = @"The &quot;platformBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentPlatformRestriction", HelpMessage = @"The &quot;platformBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean platformBlocked { get; set; }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestriction", HelpMessage = @"The &quot;personalDeviceEnrollmentBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentPlatformRestriction", HelpMessage = @"The &quot;personalDeviceEnrollmentBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean personalDeviceEnrollmentBlocked { get; set; }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestriction", HelpMessage = @"The &quot;osMinimumVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentPlatformRestriction", HelpMessage = @"The &quot;osMinimumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String osMinimumVersion { get; set; }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceEnrollmentPlatformRestriction", HelpMessage = @"The &quot;osMaximumVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentPlatformRestriction", HelpMessage = @"The &quot;osMaximumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String osMaximumVersion { get; set; }
     }
 }

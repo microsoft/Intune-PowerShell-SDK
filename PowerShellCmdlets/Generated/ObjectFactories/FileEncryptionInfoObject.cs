@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.fileEncryptionInfo&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.fileEncryptionInfo&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "FileEncryptionInfoObject", DefaultParameterSetName = @"#microsoft.graph.fileEncryptionInfo")]
+    [Cmdlet("New", "FileEncryptionInfoObject", DefaultParameterSetName = @"microsoft.graph.fileEncryptionInfo")]
     [ODataType("microsoft.graph.fileEncryptionInfo")]
     public class New_FileEncryptionInfoObject : ObjectFactoryCmdletBase
     {
@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Binary")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.fileEncryptionInfo", HelpMessage = @"The &quot;encryptionKey&quot; property, of type &quot;Edm.Binary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.fileEncryptionInfo", HelpMessage = @"The &quot;encryptionKey&quot; property, of type &quot;Edm.Binary&quot;.")]
         public System.Byte[] encryptionKey { get; set; }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Binary")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.fileEncryptionInfo", HelpMessage = @"The &quot;initializationVector&quot; property, of type &quot;Edm.Binary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.fileEncryptionInfo", HelpMessage = @"The &quot;initializationVector&quot; property, of type &quot;Edm.Binary&quot;.")]
         public System.Byte[] initializationVector { get; set; }
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Binary")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.fileEncryptionInfo", HelpMessage = @"The &quot;mac&quot; property, of type &quot;Edm.Binary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.fileEncryptionInfo", HelpMessage = @"The &quot;mac&quot; property, of type &quot;Edm.Binary&quot;.")]
         public System.Byte[] mac { get; set; }
 
         /// <summary>
@@ -53,7 +53,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Binary")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.fileEncryptionInfo", HelpMessage = @"The &quot;macKey&quot; property, of type &quot;Edm.Binary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.fileEncryptionInfo", HelpMessage = @"The &quot;macKey&quot; property, of type &quot;Edm.Binary&quot;.")]
         public System.Byte[] macKey { get; set; }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.fileEncryptionInfo", HelpMessage = @"The &quot;profileIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.fileEncryptionInfo", HelpMessage = @"The &quot;profileIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String profileIdentifier { get; set; }
 
         /// <summary>
@@ -74,7 +74,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Binary")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.fileEncryptionInfo", HelpMessage = @"The &quot;fileDigest&quot; property, of type &quot;Edm.Binary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.fileEncryptionInfo", HelpMessage = @"The &quot;fileDigest&quot; property, of type &quot;Edm.Binary&quot;.")]
         public System.Byte[] fileDigest { get; set; }
 
         /// <summary>
@@ -84,7 +84,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.fileEncryptionInfo", HelpMessage = @"The &quot;fileDigestAlgorithm&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.fileEncryptionInfo", HelpMessage = @"The &quot;fileDigestAlgorithm&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String fileDigestAlgorithm { get; set; }
     }
 }

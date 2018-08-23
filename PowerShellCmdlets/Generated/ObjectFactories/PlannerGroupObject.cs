@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.plannerGroup&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.plannerGroup&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "PlannerGroupObject", DefaultParameterSetName = @"#microsoft.graph.plannerGroup")]
+    [Cmdlet("New", "PlannerGroupObject", DefaultParameterSetName = @"microsoft.graph.plannerGroup")]
     [ODataType("microsoft.graph.plannerGroup")]
     public class New_PlannerGroupObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.plannerPlan")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.plannerGroup", HelpMessage = @"The &quot;plans&quot; property, of type &quot;microsoft.graph.plannerPlan&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerGroup", HelpMessage = @"The &quot;plans&quot; property, of type &quot;microsoft.graph.plannerPlan&quot;.")]
         public System.Object[] plans { get; set; }
     }
 }

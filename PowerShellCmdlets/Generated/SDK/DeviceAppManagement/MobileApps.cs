@@ -11,7 +11,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The mobile apps.</para>
     /// </summary>
     [Cmdlet("Get", "DeviceAppManagement_MobileApps", DefaultParameterSetName = @"Search")]
-    [ODataType("microsoft.graph.mobileApp")]
+    [ODataType("microsoft.graph.mobileApp", "microsoft.graph.iosStoreApp", "microsoft.graph.iosVppApp", "microsoft.graph.androidStoreApp", "microsoft.graph.webApp", "microsoft.graph.microsoftStoreForBusinessApp", "microsoft.graph.mobileLobApp", "microsoft.graph.iosLobApp", "microsoft.graph.androidLobApp", "microsoft.graph.windowsUniversalAppX", "microsoft.graph.windowsMobileMSI", "microsoft.graph.managedApp", "microsoft.graph.managedMobileLobApp", "microsoft.graph.managedIOSLobApp", "microsoft.graph.managedAndroidLobApp", "microsoft.graph.managedIOSStoreApp", "microsoft.graph.managedAndroidStoreApp", "microsoft.graph.macOSOfficeSuiteApp")]
+    [ResourceTypePropertyName("mobileAppODataType")]
     [ResourceIdPropertyName("mobileAppId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_MobileApps : GetOrSearchCmdlet
@@ -20,6 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.")]
@@ -617,10 +619,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The mobile apps.</para>
     /// </summary>
     [Cmdlet("New", "DeviceAppManagement_MobileApps", ConfirmImpact = ConfirmImpact.Low)]
-    [ODataType("microsoft.graph.mobileApp")]
+    [ODataType("microsoft.graph.mobileApp", "microsoft.graph.iosStoreApp", "microsoft.graph.iosVppApp", "microsoft.graph.androidStoreApp", "microsoft.graph.webApp", "microsoft.graph.microsoftStoreForBusinessApp", "microsoft.graph.mobileLobApp", "microsoft.graph.iosLobApp", "microsoft.graph.androidLobApp", "microsoft.graph.windowsUniversalAppX", "microsoft.graph.windowsMobileMSI", "microsoft.graph.managedApp", "microsoft.graph.managedMobileLobApp", "microsoft.graph.managedIOSLobApp", "microsoft.graph.managedAndroidLobApp", "microsoft.graph.managedIOSStoreApp", "microsoft.graph.managedAndroidStoreApp", "microsoft.graph.macOSOfficeSuiteApp")]
+    [ResourceTypePropertyName("mobileAppODataType")]
+    [ResourceIdPropertyName("mobileAppId")]
     [ResourceReference]
     public class New_DeviceAppManagement_MobileApps : PostCmdlet
     {
+        /// <summary>
+        ///     <para type="description">The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
+        /// </summary>
+        [Selectable]
+        [IdParameter]
+        public System.String mobileAppId { get; set; }
+
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.mobileApp&quot; type.</para>
@@ -628,24 +639,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
@@ -656,24 +667,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String description { get; set; }
 
@@ -684,24 +695,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String publisher { get; set; }
 
@@ -712,24 +723,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mimeContent")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
         public System.Object largeIcon { get; set; }
 
@@ -740,24 +751,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset createdDateTime { get; set; }
 
@@ -768,24 +779,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset lastModifiedDateTime { get; set; }
 
@@ -796,24 +807,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isFeatured { get; set; }
 
@@ -824,24 +835,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String privacyInformationUrl { get; set; }
 
@@ -852,24 +863,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String informationUrl { get; set; }
 
@@ -880,24 +891,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String owner { get; set; }
 
@@ -908,24 +919,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String developer { get; set; }
 
@@ -936,24 +947,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String notes { get; set; }
 
@@ -968,24 +979,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mobileAppPublishingState")]
         [Selectable]
         [ValidateSet(@"notPublished", @"processing", @"published")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
         public System.String publishingState { get; set; }
 
@@ -997,24 +1008,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mobileAppCategory")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
         public System.Object[] categories { get; set; }
 
@@ -1026,24 +1037,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mobileAppAssignment")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
         public System.Object[] assignments { get; set; }
 
@@ -1051,8 +1062,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.iosStoreApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosStoreApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.iosStoreApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter iosStoreApp { get; set; }
 
         /// <summary>
@@ -1062,11 +1073,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String bundleId { get; set; }
 
@@ -1077,11 +1088,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String appStoreUrl { get; set; }
 
@@ -1092,11 +1103,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.iosDeviceType")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
         public System.Object applicableDeviceType { get; set; }
 
@@ -1107,15 +1118,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.androidMinimumOperatingSystem")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
         public System.Object minimumSupportedOperatingSystem { get; set; }
 
@@ -1123,8 +1134,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.iosVppApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.iosVppApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppApp&quot; type.")]
         public System.Management.Automation.SwitchParameter iosVppApp { get; set; }
 
         /// <summary>
@@ -1134,8 +1145,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;usedLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;usedLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;usedLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;usedLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;usedLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 usedLicenseCount { get; set; }
 
@@ -1146,8 +1157,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;totalLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;totalLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;totalLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;totalLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;totalLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 totalLicenseCount { get; set; }
 
@@ -1158,7 +1169,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;releaseDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;releaseDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;releaseDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset releaseDateTime { get; set; }
 
@@ -1169,7 +1180,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.vppLicensingType")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;licensingType&quot; property, of type &quot;microsoft.graph.vppLicensingType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;licensingType&quot; property, of type &quot;microsoft.graph.vppLicensingType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;licensingType&quot; property, of type &quot;microsoft.graph.vppLicensingType&quot;.")]
         public System.Object licensingType { get; set; }
 
@@ -1180,7 +1191,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;vppTokenOrganizationName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;vppTokenOrganizationName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;vppTokenOrganizationName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String vppTokenOrganizationName { get; set; }
 
@@ -1195,7 +1206,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.vppTokenAccountType")]
         [Selectable]
         [ValidateSet(@"business", @"education")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;vppTokenAccountType&quot; property, of type &quot;microsoft.graph.vppTokenAccountType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;vppTokenAccountType&quot; property, of type &quot;microsoft.graph.vppTokenAccountType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;vppTokenAccountType&quot; property, of type &quot;microsoft.graph.vppTokenAccountType&quot;.")]
         public System.String vppTokenAccountType { get; set; }
 
@@ -1206,7 +1217,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;vppTokenAppleId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;vppTokenAppleId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;vppTokenAppleId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String vppTokenAppleId { get; set; }
 
@@ -1214,8 +1225,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.androidStoreApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidStoreApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.androidStoreApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter androidStoreApp { get; set; }
 
         /// <summary>
@@ -1225,10 +1236,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String packageId { get; set; }
 
@@ -1236,8 +1247,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.webApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.webApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.webApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.webApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.webApp&quot; type.")]
         public System.Management.Automation.SwitchParameter webApp { get; set; }
 
         /// <summary>
@@ -1247,7 +1258,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;appUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;appUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String appUrl { get; set; }
 
@@ -1258,7 +1269,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;useManagedBrowser&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;useManagedBrowser&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;useManagedBrowser&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean useManagedBrowser { get; set; }
 
@@ -1266,8 +1277,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.microsoftStoreForBusinessApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.microsoftStoreForBusinessApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.microsoftStoreForBusinessApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.microsoftStoreForBusinessApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.microsoftStoreForBusinessApp&quot; type.")]
         public System.Management.Automation.SwitchParameter microsoftStoreForBusinessApp { get; set; }
 
         /// <summary>
@@ -1277,7 +1288,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String productKey { get; set; }
 
@@ -1292,7 +1303,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.microsoftStoreForBusinessLicenseType")]
         [Selectable]
         [ValidateSet(@"offline", @"online")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;licenseType&quot; property, of type &quot;microsoft.graph.microsoftStoreForBusinessLicenseType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;licenseType&quot; property, of type &quot;microsoft.graph.microsoftStoreForBusinessLicenseType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;licenseType&quot; property, of type &quot;microsoft.graph.microsoftStoreForBusinessLicenseType&quot;.")]
         public System.String licenseType { get; set; }
 
@@ -1303,7 +1314,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;packageIdentityName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;packageIdentityName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;packageIdentityName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String packageIdentityName { get; set; }
 
@@ -1314,14 +1325,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String committedContentVersion { get; set; }
 
@@ -1332,14 +1343,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String fileName { get; set; }
 
@@ -1350,14 +1361,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int64")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
         public System.Int64 size { get; set; }
 
@@ -1369,14 +1380,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mobileAppContent")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
         public System.Object[] contentVersions { get; set; }
 
@@ -1384,8 +1395,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.iosLobApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosLobApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.iosLobApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter iosLobApp { get; set; }
 
         /// <summary>
@@ -1395,8 +1406,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset expirationDateTime { get; set; }
 
@@ -1407,8 +1418,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;versionNumber&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;versionNumber&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;versionNumber&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;versionNumber&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;versionNumber&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String versionNumber { get; set; }
 
@@ -1419,8 +1430,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;buildNumber&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;buildNumber&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;buildNumber&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;buildNumber&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;buildNumber&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String buildNumber { get; set; }
 
@@ -1428,8 +1439,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.androidLobApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidLobApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.androidLobApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter androidLobApp { get; set; }
 
         /// <summary>
@@ -1439,8 +1450,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;versionName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;versionName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;versionName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;versionName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;versionName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String versionName { get; set; }
 
@@ -1451,8 +1462,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;versionCode&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;versionCode&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;versionCode&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;versionCode&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;versionCode&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String versionCode { get; set; }
 
@@ -1460,8 +1471,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUniversalAppX&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.windowsUniversalAppX")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUniversalAppX&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.windowsUniversalAppX")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUniversalAppX&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsUniversalAppX { get; set; }
 
         /// <summary>
@@ -1475,7 +1486,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsArchitecture")]
         [Selectable]
         [ValidateSet(@"none", @"x86", @"x64", @"arm", @"neutral")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;applicableArchitectures&quot; property, of type &quot;microsoft.graph.windowsArchitecture&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;applicableArchitectures&quot; property, of type &quot;microsoft.graph.windowsArchitecture&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;applicableArchitectures&quot; property, of type &quot;microsoft.graph.windowsArchitecture&quot;.")]
         public System.String applicableArchitectures { get; set; }
 
@@ -1490,7 +1501,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsDeviceType")]
         [Selectable]
         [ValidateSet(@"none", @"desktop", @"mobile", @"holographic", @"team")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;applicableDeviceTypes&quot; property, of type &quot;microsoft.graph.windowsDeviceType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;applicableDeviceTypes&quot; property, of type &quot;microsoft.graph.windowsDeviceType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;applicableDeviceTypes&quot; property, of type &quot;microsoft.graph.windowsDeviceType&quot;.")]
         public System.String applicableDeviceTypes { get; set; }
 
@@ -1501,7 +1512,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;identityName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;identityName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;identityName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String identityName { get; set; }
 
@@ -1512,7 +1523,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;identityPublisherHash&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;identityPublisherHash&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;identityPublisherHash&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String identityPublisherHash { get; set; }
 
@@ -1523,7 +1534,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;identityResourceIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;identityResourceIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;identityResourceIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String identityResourceIdentifier { get; set; }
 
@@ -1534,7 +1545,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;isBundle&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;isBundle&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;isBundle&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isBundle { get; set; }
 
@@ -1545,7 +1556,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;identityVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;identityVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;identityVersion&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String identityVersion { get; set; }
 
@@ -1553,8 +1564,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsMobileMSI&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.windowsMobileMSI")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsMobileMSI&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.windowsMobileMSI")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsMobileMSI&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsMobileMSI { get; set; }
 
         /// <summary>
@@ -1564,7 +1575,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;commandLine&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;commandLine&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;commandLine&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String commandLine { get; set; }
 
@@ -1575,7 +1586,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;productCode&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;productCode&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;productCode&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String productCode { get; set; }
 
@@ -1586,7 +1597,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;productVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;productVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;productVersion&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String productVersion { get; set; }
 
@@ -1597,7 +1608,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;ignoreVersionDetection&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;ignoreVersionDetection&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;ignoreVersionDetection&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean ignoreVersionDetection { get; set; }
 
@@ -1612,12 +1623,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedAppAvailability")]
         [Selectable]
         [ValidateSet(@"global", @"lineOfBusiness")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
         public System.String appAvailability { get; set; }
 
@@ -1628,12 +1639,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String version { get; set; }
 
@@ -1641,45 +1652,45 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.managedIOSLobApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSLobApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.managedIOSLobApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedIOSLobApp { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.managedAndroidLobApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidLobApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.managedAndroidLobApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedAndroidLobApp { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.managedIOSStoreApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSStoreApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.managedIOSStoreApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedIOSStoreApp { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.managedAndroidStoreApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidStoreApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.managedAndroidStoreApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedAndroidStoreApp { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSOfficeSuiteApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.macOSOfficeSuiteApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSOfficeSuiteApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.macOSOfficeSuiteApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSOfficeSuiteApp&quot; type.")]
         public System.Management.Automation.SwitchParameter macOSOfficeSuiteApp { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileApps";
+            return $"deviceAppManagement/mobileApps/{mobileAppId}";
         }
     }
 
@@ -1690,7 +1701,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The mobile apps.</para>
     /// </summary>
     [Cmdlet("Update", "DeviceAppManagement_MobileApps", ConfirmImpact = ConfirmImpact.Medium)]
-    [ODataType("microsoft.graph.mobileApp")]
+    [ODataType("microsoft.graph.mobileApp", "microsoft.graph.iosStoreApp", "microsoft.graph.iosVppApp", "microsoft.graph.androidStoreApp", "microsoft.graph.webApp", "microsoft.graph.microsoftStoreForBusinessApp", "microsoft.graph.mobileLobApp", "microsoft.graph.iosLobApp", "microsoft.graph.androidLobApp", "microsoft.graph.windowsUniversalAppX", "microsoft.graph.windowsMobileMSI", "microsoft.graph.managedApp", "microsoft.graph.managedMobileLobApp", "microsoft.graph.managedIOSLobApp", "microsoft.graph.managedAndroidLobApp", "microsoft.graph.managedIOSStoreApp", "microsoft.graph.managedAndroidStoreApp", "microsoft.graph.macOSOfficeSuiteApp")]
+    [ResourceTypePropertyName("mobileAppODataType")]
     [ResourceIdPropertyName("mobileAppId")]
     public class Update_DeviceAppManagement_MobileApps : PatchCmdlet
     {
@@ -1698,6 +1710,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.")]
@@ -1710,24 +1723,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
@@ -1738,24 +1751,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String description { get; set; }
 
@@ -1766,24 +1779,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String publisher { get; set; }
 
@@ -1794,24 +1807,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mimeContent")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;largeIcon&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
         public System.Object largeIcon { get; set; }
 
@@ -1822,24 +1835,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset createdDateTime { get; set; }
 
@@ -1850,24 +1863,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset lastModifiedDateTime { get; set; }
 
@@ -1878,24 +1891,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;isFeatured&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isFeatured { get; set; }
 
@@ -1906,24 +1919,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String privacyInformationUrl { get; set; }
 
@@ -1934,24 +1947,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String informationUrl { get; set; }
 
@@ -1962,24 +1975,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String owner { get; set; }
 
@@ -1990,24 +2003,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;developer&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String developer { get; set; }
 
@@ -2018,24 +2031,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;notes&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String notes { get; set; }
 
@@ -2050,24 +2063,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mobileAppPublishingState")]
         [Selectable]
         [ValidateSet(@"notPublished", @"processing", @"published")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;publishingState&quot; property, of type &quot;microsoft.graph.mobileAppPublishingState&quot;.")]
         public System.String publishingState { get; set; }
 
@@ -2079,24 +2092,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mobileAppCategory")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
         public System.Object[] categories { get; set; }
 
@@ -2108,24 +2121,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mobileAppAssignment")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
         public System.Object[] assignments { get; set; }
 
@@ -2133,8 +2146,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.iosStoreApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosStoreApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.iosStoreApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter iosStoreApp { get; set; }
 
         /// <summary>
@@ -2144,11 +2157,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String bundleId { get; set; }
 
@@ -2159,11 +2172,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appStoreUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String appStoreUrl { get; set; }
 
@@ -2174,11 +2187,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.iosDeviceType")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;applicableDeviceType&quot; property, of type &quot;microsoft.graph.iosDeviceType&quot;.")]
         public System.Object applicableDeviceType { get; set; }
 
@@ -2189,15 +2202,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.androidMinimumOperatingSystem")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minimumSupportedOperatingSystem&quot; property, of type &quot;microsoft.graph.iosMinimumOperatingSystem&quot;.")]
         public System.Object minimumSupportedOperatingSystem { get; set; }
 
@@ -2205,8 +2218,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.iosVppApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.iosVppApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppApp&quot; type.")]
         public System.Management.Automation.SwitchParameter iosVppApp { get; set; }
 
         /// <summary>
@@ -2216,8 +2229,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;usedLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;usedLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;usedLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;usedLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;usedLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 usedLicenseCount { get; set; }
 
@@ -2228,8 +2241,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;totalLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;totalLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;totalLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;totalLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;totalLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 totalLicenseCount { get; set; }
 
@@ -2240,7 +2253,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;releaseDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;releaseDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;releaseDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset releaseDateTime { get; set; }
 
@@ -2251,7 +2264,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.vppLicensingType")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;licensingType&quot; property, of type &quot;microsoft.graph.vppLicensingType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;licensingType&quot; property, of type &quot;microsoft.graph.vppLicensingType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;licensingType&quot; property, of type &quot;microsoft.graph.vppLicensingType&quot;.")]
         public System.Object licensingType { get; set; }
 
@@ -2262,7 +2275,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;vppTokenOrganizationName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;vppTokenOrganizationName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;vppTokenOrganizationName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String vppTokenOrganizationName { get; set; }
 
@@ -2277,7 +2290,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.vppTokenAccountType")]
         [Selectable]
         [ValidateSet(@"business", @"education")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;vppTokenAccountType&quot; property, of type &quot;microsoft.graph.vppTokenAccountType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;vppTokenAccountType&quot; property, of type &quot;microsoft.graph.vppTokenAccountType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;vppTokenAccountType&quot; property, of type &quot;microsoft.graph.vppTokenAccountType&quot;.")]
         public System.String vppTokenAccountType { get; set; }
 
@@ -2288,7 +2301,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosVppApp", HelpMessage = @"The &quot;vppTokenAppleId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;vppTokenAppleId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;vppTokenAppleId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String vppTokenAppleId { get; set; }
 
@@ -2296,8 +2309,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.androidStoreApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidStoreApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.androidStoreApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter androidStoreApp { get; set; }
 
         /// <summary>
@@ -2307,10 +2320,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String packageId { get; set; }
 
@@ -2318,8 +2331,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.webApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.webApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.webApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.webApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.webApp&quot; type.")]
         public System.Management.Automation.SwitchParameter webApp { get; set; }
 
         /// <summary>
@@ -2329,7 +2342,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;appUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;appUrl&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String appUrl { get; set; }
 
@@ -2340,7 +2353,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.webApp", HelpMessage = @"The &quot;useManagedBrowser&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;useManagedBrowser&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;useManagedBrowser&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean useManagedBrowser { get; set; }
 
@@ -2348,8 +2361,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.microsoftStoreForBusinessApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.microsoftStoreForBusinessApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.microsoftStoreForBusinessApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.microsoftStoreForBusinessApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.microsoftStoreForBusinessApp&quot; type.")]
         public System.Management.Automation.SwitchParameter microsoftStoreForBusinessApp { get; set; }
 
         /// <summary>
@@ -2359,7 +2372,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String productKey { get; set; }
 
@@ -2374,7 +2387,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.microsoftStoreForBusinessLicenseType")]
         [Selectable]
         [ValidateSet(@"offline", @"online")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;licenseType&quot; property, of type &quot;microsoft.graph.microsoftStoreForBusinessLicenseType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;licenseType&quot; property, of type &quot;microsoft.graph.microsoftStoreForBusinessLicenseType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;licenseType&quot; property, of type &quot;microsoft.graph.microsoftStoreForBusinessLicenseType&quot;.")]
         public System.String licenseType { get; set; }
 
@@ -2385,7 +2398,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;packageIdentityName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;packageIdentityName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;packageIdentityName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String packageIdentityName { get; set; }
 
@@ -2396,14 +2409,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;committedContentVersion&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String committedContentVersion { get; set; }
 
@@ -2414,14 +2427,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String fileName { get; set; }
 
@@ -2432,14 +2445,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int64")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.")]
         public System.Int64 size { get; set; }
 
@@ -2451,14 +2464,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mobileAppContent")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
         public System.Object[] contentVersions { get; set; }
 
@@ -2466,8 +2479,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.iosLobApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosLobApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.iosLobApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter iosLobApp { get; set; }
 
         /// <summary>
@@ -2477,8 +2490,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset expirationDateTime { get; set; }
 
@@ -2489,8 +2502,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;versionNumber&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;versionNumber&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;versionNumber&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;versionNumber&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;versionNumber&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String versionNumber { get; set; }
 
@@ -2501,8 +2514,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosLobApp", HelpMessage = @"The &quot;buildNumber&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;buildNumber&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;buildNumber&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;buildNumber&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;buildNumber&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String buildNumber { get; set; }
 
@@ -2510,8 +2523,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.androidLobApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidLobApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.androidLobApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter androidLobApp { get; set; }
 
         /// <summary>
@@ -2521,8 +2534,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;versionName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;versionName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;versionName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;versionName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;versionName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String versionName { get; set; }
 
@@ -2533,8 +2546,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidLobApp", HelpMessage = @"The &quot;versionCode&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;versionCode&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;versionCode&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;versionCode&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;versionCode&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String versionCode { get; set; }
 
@@ -2542,8 +2555,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUniversalAppX&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.windowsUniversalAppX")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUniversalAppX&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.windowsUniversalAppX")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUniversalAppX&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsUniversalAppX { get; set; }
 
         /// <summary>
@@ -2557,7 +2570,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsArchitecture")]
         [Selectable]
         [ValidateSet(@"none", @"x86", @"x64", @"arm", @"neutral")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;applicableArchitectures&quot; property, of type &quot;microsoft.graph.windowsArchitecture&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;applicableArchitectures&quot; property, of type &quot;microsoft.graph.windowsArchitecture&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;applicableArchitectures&quot; property, of type &quot;microsoft.graph.windowsArchitecture&quot;.")]
         public System.String applicableArchitectures { get; set; }
 
@@ -2572,7 +2585,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.windowsDeviceType")]
         [Selectable]
         [ValidateSet(@"none", @"desktop", @"mobile", @"holographic", @"team")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;applicableDeviceTypes&quot; property, of type &quot;microsoft.graph.windowsDeviceType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;applicableDeviceTypes&quot; property, of type &quot;microsoft.graph.windowsDeviceType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;applicableDeviceTypes&quot; property, of type &quot;microsoft.graph.windowsDeviceType&quot;.")]
         public System.String applicableDeviceTypes { get; set; }
 
@@ -2583,7 +2596,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;identityName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;identityName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;identityName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String identityName { get; set; }
 
@@ -2594,7 +2607,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;identityPublisherHash&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;identityPublisherHash&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;identityPublisherHash&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String identityPublisherHash { get; set; }
 
@@ -2605,7 +2618,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;identityResourceIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;identityResourceIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;identityResourceIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String identityResourceIdentifier { get; set; }
 
@@ -2616,7 +2629,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;isBundle&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;isBundle&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;isBundle&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isBundle { get; set; }
 
@@ -2627,7 +2640,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;identityVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;identityVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;identityVersion&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String identityVersion { get; set; }
 
@@ -2635,8 +2648,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsMobileMSI&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.windowsMobileMSI")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsMobileMSI&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.windowsMobileMSI")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsMobileMSI&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsMobileMSI { get; set; }
 
         /// <summary>
@@ -2646,7 +2659,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;commandLine&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;commandLine&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;commandLine&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String commandLine { get; set; }
 
@@ -2657,7 +2670,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;productCode&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;productCode&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;productCode&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String productCode { get; set; }
 
@@ -2668,7 +2681,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;productVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;productVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;productVersion&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String productVersion { get; set; }
 
@@ -2679,7 +2692,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;ignoreVersionDetection&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;ignoreVersionDetection&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;ignoreVersionDetection&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean ignoreVersionDetection { get; set; }
 
@@ -2694,12 +2707,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedAppAvailability")]
         [Selectable]
         [ValidateSet(@"global", @"lineOfBusiness")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appAvailability&quot; property, of type &quot;microsoft.graph.managedAppAvailability&quot;.")]
         public System.String appAvailability { get; set; }
 
@@ -2710,12 +2723,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String version { get; set; }
 
@@ -2723,40 +2736,40 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.managedIOSLobApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSLobApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.managedIOSLobApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedIOSLobApp { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.managedAndroidLobApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidLobApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.managedAndroidLobApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedAndroidLobApp { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.managedIOSStoreApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedIOSStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSStoreApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.managedIOSStoreApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedIOSStoreApp { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.managedAndroidStoreApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAndroidStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidStoreApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.managedAndroidStoreApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedAndroidStoreApp { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSOfficeSuiteApp&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.macOSOfficeSuiteApp")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.macOSOfficeSuiteApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSOfficeSuiteApp&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.macOSOfficeSuiteApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSOfficeSuiteApp&quot; type.")]
         public System.Management.Automation.SwitchParameter macOSOfficeSuiteApp { get; set; }
 
         internal override System.String GetResourcePath()
@@ -2772,7 +2785,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The mobile apps.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_MobileApps", ConfirmImpact = ConfirmImpact.High)]
-    [ODataType("microsoft.graph.mobileApp")]
+    [ODataType("microsoft.graph.mobileApp", "microsoft.graph.iosStoreApp", "microsoft.graph.iosVppApp", "microsoft.graph.androidStoreApp", "microsoft.graph.webApp", "microsoft.graph.microsoftStoreForBusinessApp", "microsoft.graph.mobileLobApp", "microsoft.graph.iosLobApp", "microsoft.graph.androidLobApp", "microsoft.graph.windowsUniversalAppX", "microsoft.graph.windowsMobileMSI", "microsoft.graph.managedApp", "microsoft.graph.managedMobileLobApp", "microsoft.graph.managedIOSLobApp", "microsoft.graph.managedAndroidLobApp", "microsoft.graph.managedIOSStoreApp", "microsoft.graph.managedAndroidStoreApp", "microsoft.graph.macOSOfficeSuiteApp")]
+    [ResourceTypePropertyName("mobileAppODataType")]
     [ResourceIdPropertyName("mobileAppId")]
     public class Remove_DeviceAppManagement_MobileApps : DeleteCmdlet
     {
@@ -2780,6 +2794,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.")]
@@ -2797,7 +2812,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     [Cmdlet("Invoke", "DeviceAppManagement_MobileApps_Assign", ConfirmImpact = ConfirmImpact.High)]
-    [ODataType("microsoft.graph.mobileApp")]
+    [ODataType("microsoft.graph.mobileApp", "microsoft.graph.iosStoreApp", "microsoft.graph.iosVppApp", "microsoft.graph.androidStoreApp", "microsoft.graph.webApp", "microsoft.graph.microsoftStoreForBusinessApp", "microsoft.graph.mobileLobApp", "microsoft.graph.iosLobApp", "microsoft.graph.androidLobApp", "microsoft.graph.windowsUniversalAppX", "microsoft.graph.windowsMobileMSI", "microsoft.graph.managedApp", "microsoft.graph.managedMobileLobApp", "microsoft.graph.managedIOSLobApp", "microsoft.graph.managedAndroidLobApp", "microsoft.graph.managedIOSStoreApp", "microsoft.graph.managedAndroidStoreApp", "microsoft.graph.macOSOfficeSuiteApp")]
+    [ResourceTypePropertyName("mobileAppODataType")]
     [ResourceIdPropertyName("mobileAppId")]
     public class Invoke_DeviceAppManagement_MobileApps_Assign : ActionCmdlet
     {
@@ -2814,6 +2830,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.")]

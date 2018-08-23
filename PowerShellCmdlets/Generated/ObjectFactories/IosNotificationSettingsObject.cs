@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.iosNotificationSettings&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.iosNotificationSettings&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "IosNotificationSettingsObject", DefaultParameterSetName = @"#microsoft.graph.iosNotificationSettings")]
+    [Cmdlet("New", "IosNotificationSettingsObject", DefaultParameterSetName = @"microsoft.graph.iosNotificationSettings")]
     [ODataType("microsoft.graph.iosNotificationSettings")]
     public class New_IosNotificationSettingsObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;bundleID&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;bundleID&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String bundleID { get; set; }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;appName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;appName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String appName { get; set; }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String publisher { get; set; }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean enabled { get; set; }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;showInNotificationCenter&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;showInNotificationCenter&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean showInNotificationCenter { get; set; }
 
         /// <summary>
@@ -69,7 +69,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;showOnLockScreen&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;showOnLockScreen&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean showOnLockScreen { get; set; }
 
         /// <summary>
@@ -83,7 +83,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.iosNotificationAlertType")]
         [Selectable]
         [ValidateSet(@"deviceDefault", @"banner", @"modal", @"none")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;alertType&quot; property, of type &quot;microsoft.graph.iosNotificationAlertType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;alertType&quot; property, of type &quot;microsoft.graph.iosNotificationAlertType&quot;.")]
         public System.String alertType { get; set; }
 
         /// <summary>
@@ -93,7 +93,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;badgesEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;badgesEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean badgesEnabled { get; set; }
 
         /// <summary>
@@ -103,7 +103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;soundsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosNotificationSettings", HelpMessage = @"The &quot;soundsEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean soundsEnabled { get; set; }
     }
 }

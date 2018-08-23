@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.searchResult&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.searchResult&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "SearchResultObject", DefaultParameterSetName = @"#microsoft.graph.searchResult")]
+    [Cmdlet("New", "SearchResultObject", DefaultParameterSetName = @"microsoft.graph.searchResult")]
     [ODataType("microsoft.graph.searchResult")]
     public class New_SearchResultObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.searchResult", HelpMessage = @"The &quot;onClickTelemetryUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.searchResult", HelpMessage = @"The &quot;onClickTelemetryUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String onClickTelemetryUrl { get; set; }
     }
 }

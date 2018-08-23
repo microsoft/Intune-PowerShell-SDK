@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.recurrencePattern&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.recurrencePattern&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "RecurrencePatternObject", DefaultParameterSetName = @"#microsoft.graph.recurrencePattern")]
+    [Cmdlet("New", "RecurrencePatternObject", DefaultParameterSetName = @"microsoft.graph.recurrencePattern")]
     [ODataType("microsoft.graph.recurrencePattern")]
     public class New_RecurrencePatternObject : ObjectFactoryCmdletBase
     {
@@ -22,7 +22,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.recurrencePatternType")]
         [Selectable]
         [ValidateSet(@"daily", @"weekly", @"absoluteMonthly", @"relativeMonthly", @"absoluteYearly", @"relativeYearly")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;type&quot; property, of type &quot;microsoft.graph.recurrencePatternType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;type&quot; property, of type &quot;microsoft.graph.recurrencePatternType&quot;.")]
         public System.String type { get; set; }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;interval&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;interval&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 interval { get; set; }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;month&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;month&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 month { get; set; }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;dayOfMonth&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;dayOfMonth&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 dayOfMonth { get; set; }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"sunday", @"monday", @"tuesday", @"wednesday", @"thursday", @"friday", @"saturday")]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;daysOfWeek&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;daysOfWeek&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.")]
         public System.String[] daysOfWeek { get; set; }
 
         /// <summary>
@@ -76,7 +76,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.dayOfWeek")]
         [Selectable]
         [ValidateSet(@"sunday", @"monday", @"tuesday", @"wednesday", @"thursday", @"friday", @"saturday")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;firstDayOfWeek&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;firstDayOfWeek&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.")]
         public System.String firstDayOfWeek { get; set; }
 
         /// <summary>
@@ -89,7 +89,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.weekIndex")]
         [Selectable]
         [ValidateSet(@"first", @"second", @"third", @"fourth", @"last")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;index&quot; property, of type &quot;microsoft.graph.weekIndex&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.recurrencePattern", HelpMessage = @"The &quot;index&quot; property, of type &quot;microsoft.graph.weekIndex&quot;.")]
         public System.String index { get; set; }
     }
 }

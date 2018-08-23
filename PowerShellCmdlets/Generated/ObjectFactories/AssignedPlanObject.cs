@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.assignedPlan&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.assignedPlan&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "AssignedPlanObject", DefaultParameterSetName = @"#microsoft.graph.assignedPlan")]
+    [Cmdlet("New", "AssignedPlanObject", DefaultParameterSetName = @"microsoft.graph.assignedPlan")]
     [ODataType("microsoft.graph.assignedPlan")]
     public class New_AssignedPlanObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.assignedPlan", HelpMessage = @"The &quot;assignedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.assignedPlan", HelpMessage = @"The &quot;assignedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset assignedDateTime { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.assignedPlan", HelpMessage = @"The &quot;capabilityStatus&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.assignedPlan", HelpMessage = @"The &quot;capabilityStatus&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String capabilityStatus { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.assignedPlan", HelpMessage = @"The &quot;service&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.assignedPlan", HelpMessage = @"The &quot;service&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String service { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Guid")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.assignedPlan", HelpMessage = @"The &quot;servicePlanId&quot; property, of type &quot;Edm.Guid&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.assignedPlan", HelpMessage = @"The &quot;servicePlanId&quot; property, of type &quot;Edm.Guid&quot;.")]
         public System.Guid servicePlanId { get; set; }
     }
 }

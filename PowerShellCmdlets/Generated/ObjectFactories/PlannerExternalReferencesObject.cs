@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.plannerExternalReferences&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.plannerExternalReferences&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "PlannerExternalReferencesObject", DefaultParameterSetName = @"#microsoft.graph.plannerExternalReferences")]
+    [Cmdlet("New", "PlannerExternalReferencesObject", DefaultParameterSetName = @"microsoft.graph.plannerExternalReferences")]
     [ODataType("microsoft.graph.plannerExternalReferences")]
     public class New_PlannerExternalReferencesObject : ObjectFactoryCmdletBase
     {

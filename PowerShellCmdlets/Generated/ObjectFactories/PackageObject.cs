@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.package&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.package&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "PackageObject", DefaultParameterSetName = @"#microsoft.graph.package")]
+    [Cmdlet("New", "PackageObject", DefaultParameterSetName = @"microsoft.graph.package")]
     [ODataType("microsoft.graph.package")]
     public class New_PackageObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.package", HelpMessage = @"The &quot;type&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.package", HelpMessage = @"The &quot;type&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String type { get; set; }
     }
 }

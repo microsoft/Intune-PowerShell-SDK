@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.location&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.location&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "LocationObject", DefaultParameterSetName = @"#microsoft.graph.location")]
+    [Cmdlet("New", "LocationObject", DefaultParameterSetName = @"microsoft.graph.location")]
     [ODataType("microsoft.graph.location")]
     public class New_LocationObject : ObjectFactoryCmdletBase
     {
@@ -16,8 +16,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.location&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.location")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.location", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.location&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.location")]
+        [Parameter(ParameterSetName = @"microsoft.graph.location", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.location&quot; type.")]
         public System.Management.Automation.SwitchParameter location { get; set; }
 
         /// <summary>
@@ -26,8 +26,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.location", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.location", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -36,8 +36,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.location", HelpMessage = @"The &quot;locationEmailAddress&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;locationEmailAddress&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.location", HelpMessage = @"The &quot;locationEmailAddress&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;locationEmailAddress&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String locationEmailAddress { get; set; }
 
         /// <summary>
@@ -46,8 +46,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.physicalAddress")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.location", HelpMessage = @"The &quot;address&quot; property, of type &quot;microsoft.graph.physicalAddress&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;address&quot; property, of type &quot;microsoft.graph.physicalAddress&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.location", HelpMessage = @"The &quot;address&quot; property, of type &quot;microsoft.graph.physicalAddress&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;address&quot; property, of type &quot;microsoft.graph.physicalAddress&quot;.")]
         public System.Object address { get; set; }
 
         /// <summary>
@@ -56,8 +56,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.outlookGeoCoordinates")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.location", HelpMessage = @"The &quot;coordinates&quot; property, of type &quot;microsoft.graph.outlookGeoCoordinates&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;coordinates&quot; property, of type &quot;microsoft.graph.outlookGeoCoordinates&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.location", HelpMessage = @"The &quot;coordinates&quot; property, of type &quot;microsoft.graph.outlookGeoCoordinates&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;coordinates&quot; property, of type &quot;microsoft.graph.outlookGeoCoordinates&quot;.")]
         public System.Object coordinates { get; set; }
 
         /// <summary>
@@ -66,8 +66,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.location", HelpMessage = @"The &quot;locationUri&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;locationUri&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.location", HelpMessage = @"The &quot;locationUri&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;locationUri&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String locationUri { get; set; }
 
         /// <summary>
@@ -80,8 +80,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.locationType")]
         [Selectable]
         [ValidateSet(@"default", @"conferenceRoom", @"homeAddress", @"businessAddress", @"geoCoordinates", @"streetAddress", @"hotel", @"restaurant", @"localBusiness", @"postalAddress")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.location", HelpMessage = @"The &quot;locationType&quot; property, of type &quot;microsoft.graph.locationType&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;locationType&quot; property, of type &quot;microsoft.graph.locationType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.location", HelpMessage = @"The &quot;locationType&quot; property, of type &quot;microsoft.graph.locationType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;locationType&quot; property, of type &quot;microsoft.graph.locationType&quot;.")]
         public System.String locationType { get; set; }
 
         /// <summary>
@@ -90,8 +90,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.location", HelpMessage = @"The &quot;uniqueId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;uniqueId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.location", HelpMessage = @"The &quot;uniqueId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;uniqueId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String uniqueId { get; set; }
 
         /// <summary>
@@ -104,16 +104,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.locationUniqueIdType")]
         [Selectable]
         [ValidateSet(@"unknown", @"locationStore", @"directory", @"private", @"bing")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.location", HelpMessage = @"The &quot;uniqueIdType&quot; property, of type &quot;microsoft.graph.locationUniqueIdType&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;uniqueIdType&quot; property, of type &quot;microsoft.graph.locationUniqueIdType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.location", HelpMessage = @"The &quot;uniqueIdType&quot; property, of type &quot;microsoft.graph.locationUniqueIdType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;uniqueIdType&quot; property, of type &quot;microsoft.graph.locationUniqueIdType&quot;.")]
         public System.String uniqueIdType { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.locationConstraintItem&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.locationConstraintItem")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locationConstraintItem", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.locationConstraintItem&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.locationConstraintItem")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locationConstraintItem", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.locationConstraintItem&quot; type.")]
         public System.Management.Automation.SwitchParameter locationConstraintItem { get; set; }
 
         /// <summary>
@@ -122,7 +122,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;resolveAvailability&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locationConstraintItem", HelpMessage = @"The &quot;resolveAvailability&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean resolveAvailability { get; set; }
     }
 }

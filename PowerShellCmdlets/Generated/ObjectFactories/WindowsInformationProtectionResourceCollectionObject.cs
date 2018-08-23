@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.windowsInformationProtectionResourceCollection&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WindowsInformationProtectionResourceCollectionObject", DefaultParameterSetName = @"#microsoft.graph.windowsInformationProtectionResourceCollection")]
+    [Cmdlet("New", "WindowsInformationProtectionResourceCollectionObject", DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionResourceCollection")]
     [ODataType("microsoft.graph.windowsInformationProtectionResourceCollection")]
     public class New_WindowsInformationProtectionResourceCollectionObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionResourceCollection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionResourceCollection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionResourceCollection", HelpMessage = @"The &quot;resources&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionResourceCollection", HelpMessage = @"The &quot;resources&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] resources { get; set; }
     }
 }

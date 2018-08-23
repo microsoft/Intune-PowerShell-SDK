@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.windowsInformationProtectionProxiedDomainCollection&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.windowsInformationProtectionProxiedDomainCollection&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WindowsInformationProtectionProxiedDomainCollectionObject", DefaultParameterSetName = @"#microsoft.graph.windowsInformationProtectionProxiedDomainCollection")]
+    [Cmdlet("New", "WindowsInformationProtectionProxiedDomainCollectionObject", DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionProxiedDomainCollection")]
     [ODataType("microsoft.graph.windowsInformationProtectionProxiedDomainCollection")]
     public class New_WindowsInformationProtectionProxiedDomainCollectionObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionProxiedDomainCollection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionProxiedDomainCollection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.proxiedDomain")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionProxiedDomainCollection", HelpMessage = @"The &quot;proxiedDomains&quot; property, of type &quot;microsoft.graph.proxiedDomain&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionProxiedDomainCollection", HelpMessage = @"The &quot;proxiedDomains&quot; property, of type &quot;microsoft.graph.proxiedDomain&quot;.")]
         public System.Object[] proxiedDomains { get; set; }
     }
 }

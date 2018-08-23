@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.identitySet&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.identitySet&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "IdentitySetObject", DefaultParameterSetName = @"#microsoft.graph.identitySet")]
+    [Cmdlet("New", "IdentitySetObject", DefaultParameterSetName = @"microsoft.graph.identitySet")]
     [ODataType("microsoft.graph.identitySet")]
     public class New_IdentitySetObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.identity")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.identitySet", HelpMessage = @"The &quot;application&quot; property, of type &quot;microsoft.graph.identity&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.identitySet", HelpMessage = @"The &quot;application&quot; property, of type &quot;microsoft.graph.identity&quot;.")]
         public System.Object application { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.identity")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.identitySet", HelpMessage = @"The &quot;device&quot; property, of type &quot;microsoft.graph.identity&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.identitySet", HelpMessage = @"The &quot;device&quot; property, of type &quot;microsoft.graph.identity&quot;.")]
         public System.Object device { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.identity")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.identitySet", HelpMessage = @"The &quot;user&quot; property, of type &quot;microsoft.graph.identity&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.identitySet", HelpMessage = @"The &quot;user&quot; property, of type &quot;microsoft.graph.identity&quot;.")]
         public System.Object user { get; set; }
     }
 }

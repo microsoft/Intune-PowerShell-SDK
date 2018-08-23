@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.userActivity&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.userActivity&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "UserActivityObject", DefaultParameterSetName = @"#microsoft.graph.userActivity")]
+    [Cmdlet("New", "UserActivityObject", DefaultParameterSetName = @"microsoft.graph.userActivity")]
     [ODataType("microsoft.graph.userActivity")]
     public class New_UserActivityObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.visualInfo")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.userActivity", HelpMessage = @"The &quot;visualElements&quot; property, of type &quot;microsoft.graph.visualInfo&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;visualElements&quot; property, of type &quot;microsoft.graph.visualInfo&quot;.")]
         public System.Object visualElements { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.userActivity", HelpMessage = @"The &quot;activitySourceHost&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;activitySourceHost&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String activitySourceHost { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.userActivity", HelpMessage = @"The &quot;activationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;activationUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String activationUrl { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.userActivity", HelpMessage = @"The &quot;appActivityId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;appActivityId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String appActivityId { get; set; }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.userActivity", HelpMessage = @"The &quot;appDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;appDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String appDisplayName { get; set; }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.userActivity", HelpMessage = @"The &quot;contentUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;contentUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String contentUrl { get; set; }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.userActivity", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset createdDateTime { get; set; }
 
         /// <summary>
@@ -81,7 +81,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.userActivity", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset expirationDateTime { get; set; }
 
         /// <summary>
@@ -90,7 +90,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.userActivity", HelpMessage = @"The &quot;fallbackUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;fallbackUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String fallbackUrl { get; set; }
 
         /// <summary>
@@ -99,7 +99,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.userActivity", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset lastModifiedDateTime { get; set; }
 
         /// <summary>
@@ -108,7 +108,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.userActivity", HelpMessage = @"The &quot;userTimezone&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;userTimezone&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String userTimezone { get; set; }
 
         /// <summary>
@@ -117,7 +117,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.Json")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.userActivity", HelpMessage = @"The &quot;contentInfo&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;contentInfo&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
         public System.Object contentInfo { get; set; }
 
         /// <summary>
@@ -130,7 +130,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.status")]
         [Selectable]
         [ValidateSet(@"active", @"updated", @"deleted", @"ignored", @"unknownFutureValue")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.userActivity", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.status&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.status&quot;.")]
         public System.String status { get; set; }
 
         /// <summary>
@@ -140,7 +140,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.activityHistoryItem")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.userActivity", HelpMessage = @"The &quot;historyItems&quot; property, of type &quot;microsoft.graph.activityHistoryItem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;historyItems&quot; property, of type &quot;microsoft.graph.activityHistoryItem&quot;.")]
         public System.Object[] historyItems { get; set; }
     }
 }

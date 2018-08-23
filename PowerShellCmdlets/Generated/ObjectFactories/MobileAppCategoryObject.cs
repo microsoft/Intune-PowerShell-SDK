@@ -9,7 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.mobileAppCategory&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Contains properties for a single Intune app category.</para>
     /// </summary>
-    [Cmdlet("New", "MobileAppCategoryObject", DefaultParameterSetName = @"#microsoft.graph.mobileAppCategory")]
+    [Cmdlet("New", "MobileAppCategoryObject", DefaultParameterSetName = @"microsoft.graph.mobileAppCategory")]
     [ODataType("microsoft.graph.mobileAppCategory")]
     public class New_MobileAppCategoryObject : ObjectFactoryCmdletBase
     {
@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileAppCategory", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileAppCategory", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mobileAppCategory", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileAppCategory", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset lastModifiedDateTime { get; set; }
     }
 }

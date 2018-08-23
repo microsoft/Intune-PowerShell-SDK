@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.root&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.root&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "RootObject", DefaultParameterSetName = @"#microsoft.graph.root")]
+    [Cmdlet("New", "RootObject", DefaultParameterSetName = @"microsoft.graph.root")]
     [ODataType("microsoft.graph.root")]
     public class New_RootObject : ObjectFactoryCmdletBase
     {

@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.currencyColumn&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.currencyColumn&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "CurrencyColumnObject", DefaultParameterSetName = @"#microsoft.graph.currencyColumn")]
+    [Cmdlet("New", "CurrencyColumnObject", DefaultParameterSetName = @"microsoft.graph.currencyColumn")]
     [ODataType("microsoft.graph.currencyColumn")]
     public class New_CurrencyColumnObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.currencyColumn", HelpMessage = @"The &quot;locale&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.currencyColumn", HelpMessage = @"The &quot;locale&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String locale { get; set; }
     }
 }

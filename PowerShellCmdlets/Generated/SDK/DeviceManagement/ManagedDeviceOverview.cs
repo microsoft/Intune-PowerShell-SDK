@@ -12,6 +12,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_ManagedDeviceOverview", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.managedDeviceOverview")]
+    [ResourceTypePropertyName("managedDeviceOverviewODataType")]
     public class Get_DeviceManagement_ManagedDeviceOverview : GetCmdlet
     {
         /// <summary>
@@ -78,6 +79,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_ManagedDeviceOverviewReference", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.managedDeviceOverview")]
+    [ResourceTypePropertyName("managedDeviceOverviewODataType")]
     public class Get_DeviceManagement_ManagedDeviceOverviewReference : GetCmdlet
     {
         /// <summary>
@@ -144,6 +146,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("New", "DeviceManagement_ManagedDeviceOverviewReference", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedDeviceOverview")]
+    [ResourceTypePropertyName("managedDeviceOverviewODataType")]
     [ResourceIdPropertyName("managedDeviceOverviewReferenceUrl")]
     public class New_DeviceManagement_ManagedDeviceOverviewReference : PutReferenceToEntityCmdlet
     {
@@ -169,6 +172,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_ManagedDeviceOverviewReference", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDeviceOverview")]
+    [ResourceTypePropertyName("managedDeviceOverviewODataType")]
     public class Remove_DeviceManagement_ManagedDeviceOverviewReference : DeleteCmdlet
     {
         internal override System.String GetResourcePath()

@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookPivotTable&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookPivotTable&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookPivotTableObject", DefaultParameterSetName = @"#microsoft.graph.workbookPivotTable")]
+    [Cmdlet("New", "WorkbookPivotTableObject", DefaultParameterSetName = @"microsoft.graph.workbookPivotTable")]
     [ODataType("microsoft.graph.workbookPivotTable")]
     public class New_WorkbookPivotTableObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookPivotTable", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookPivotTable", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String name { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookWorksheet")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookPivotTable", HelpMessage = @"The &quot;worksheet&quot; property, of type &quot;microsoft.graph.workbookWorksheet&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookPivotTable", HelpMessage = @"The &quot;worksheet&quot; property, of type &quot;microsoft.graph.workbookWorksheet&quot;.")]
         public System.Object worksheet { get; set; }
     }
 }

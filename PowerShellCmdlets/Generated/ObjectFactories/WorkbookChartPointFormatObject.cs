@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookChartPointFormat&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookChartPointFormat&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookChartPointFormatObject", DefaultParameterSetName = @"#microsoft.graph.workbookChartPointFormat")]
+    [Cmdlet("New", "WorkbookChartPointFormatObject", DefaultParameterSetName = @"microsoft.graph.workbookChartPointFormat")]
     [ODataType("microsoft.graph.workbookChartPointFormat")]
     public class New_WorkbookChartPointFormatObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartFill")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartPointFormat", HelpMessage = @"The &quot;fill&quot; property, of type &quot;microsoft.graph.workbookChartFill&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartPointFormat", HelpMessage = @"The &quot;fill&quot; property, of type &quot;microsoft.graph.workbookChartFill&quot;.")]
         public System.Object fill { get; set; }
     }
 }

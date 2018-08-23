@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.shared&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.shared&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "SharedObject", DefaultParameterSetName = @"#microsoft.graph.shared")]
+    [Cmdlet("New", "SharedObject", DefaultParameterSetName = @"microsoft.graph.shared")]
     [ODataType("microsoft.graph.shared")]
     public class New_SharedObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.identitySet")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.shared", HelpMessage = @"The &quot;owner&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.shared", HelpMessage = @"The &quot;owner&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
         public System.Object owner { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.shared", HelpMessage = @"The &quot;scope&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.shared", HelpMessage = @"The &quot;scope&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String scope { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.identitySet")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.shared", HelpMessage = @"The &quot;sharedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.shared", HelpMessage = @"The &quot;sharedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
         public System.Object sharedBy { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.shared", HelpMessage = @"The &quot;sharedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.shared", HelpMessage = @"The &quot;sharedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset sharedDateTime { get; set; }
     }
 }

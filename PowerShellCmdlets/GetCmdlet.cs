@@ -228,7 +228,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             {
                 object paramValue = param.GetValue(this);
                 Type paramType = param.PropertyType;
-                string oDataType = param.GetODataTypeName();
+                string oDataType = param.GetODataTypeAttribute()?.TypeFullName;
 
                 // Check if we need special handling of the value based on the parameter type
                 string paramArgumentValue = paramValue.ToODataString(oDataType, isArray: paramType.IsArray, isUrlValue: true);

@@ -12,6 +12,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_DetectedApps_ManagedDevices", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDevice")]
+    [ResourceTypePropertyName("managedDeviceODataType")]
     [ResourceIdPropertyName("managedDeviceId")]
     public class Get_DeviceManagement_DetectedApps_ManagedDevices : GetOrSearchCmdlet
     {
@@ -19,6 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.")]
         public System.String detectedAppId { get; set; }
@@ -27,6 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.")]
@@ -67,7 +70,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.managedDevice&quot; type.</para>
         ///     <para type="description">List of ComplexType deviceActionResult objects.</para>
         /// </summary>
-        [ODataType("microsoft.graph.deviceActionResult")]
+        [ODataType("microsoft.graph.deviceActionResult", "microsoft.graph.resetPasscodeActionResult", "microsoft.graph.remoteLockActionResult", "microsoft.graph.locateDeviceActionResult", "microsoft.graph.deleteUserFromSharedAppleDeviceActionResult", "microsoft.graph.windowsDefenderScanActionResult")]
         [Selectable]
         public System.Object[] deviceActionResults { get; set; }
 
@@ -536,6 +539,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_DetectedApps_ManagedDevicesReferences", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDevice")]
+    [ResourceTypePropertyName("managedDeviceODataType")]
     [ResourceIdPropertyName("managedDeviceId")]
     public class Get_DeviceManagement_DetectedApps_ManagedDevicesReferences : GetOrSearchCmdlet
     {
@@ -543,6 +547,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.")]
         public System.String detectedAppId { get; set; }
@@ -551,6 +556,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.")]
@@ -591,7 +597,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.managedDevice&quot; type.</para>
         ///     <para type="description">List of ComplexType deviceActionResult objects.</para>
         /// </summary>
-        [ODataType("microsoft.graph.deviceActionResult")]
+        [ODataType("microsoft.graph.deviceActionResult", "microsoft.graph.resetPasscodeActionResult", "microsoft.graph.remoteLockActionResult", "microsoft.graph.locateDeviceActionResult", "microsoft.graph.deleteUserFromSharedAppleDeviceActionResult", "microsoft.graph.windowsDefenderScanActionResult")]
         [Selectable]
         public System.Object[] deviceActionResults { get; set; }
 
@@ -1060,13 +1066,22 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("New", "DeviceManagement_DetectedApps_ManagedDevicesReferences", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedDevice")]
+    [ResourceTypePropertyName("managedDeviceODataType")]
     [ResourceIdPropertyName("managedDeviceReferenceUrl")]
     public class New_DeviceManagement_DetectedApps_ManagedDevicesReferences : PostReferenceToCollectionCmdlet
     {
         /// <summary>
+        ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
+        /// </summary>
+        [Selectable]
+        [IdParameter]
+        public System.String managedDeviceId { get; set; }
+
+        /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.")]
         public System.String detectedAppId { get; set; }
@@ -1081,7 +1096,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/detectedApps/{detectedAppId}/managedDevices/$ref";
+            return $"deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/$ref";
         }
 
         internal override System.Object GetContent()
@@ -1098,6 +1113,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_DetectedApps_ManagedDevicesReferences", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
+    [ResourceTypePropertyName("managedDeviceODataType")]
     [ResourceIdPropertyName("managedDeviceId")]
     public class Remove_DeviceManagement_DetectedApps_ManagedDevicesReferences : DeleteCmdlet
     {
@@ -1105,6 +1121,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [Alias("id")]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.")]
@@ -1114,6 +1131,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.")]
         public System.String detectedAppId { get; set; }

@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.windowsFirewallNetworkProfile&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.windowsFirewallNetworkProfile&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WindowsFirewallNetworkProfileObject", DefaultParameterSetName = @"#microsoft.graph.windowsFirewallNetworkProfile")]
+    [Cmdlet("New", "WindowsFirewallNetworkProfileObject", DefaultParameterSetName = @"microsoft.graph.windowsFirewallNetworkProfile")]
     [ODataType("microsoft.graph.windowsFirewallNetworkProfile")]
     public class New_WindowsFirewallNetworkProfileObject : ObjectFactoryCmdletBase
     {
@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.stateManagementSetting")]
         [Selectable]
         [ValidateSet(@"notConfigured", @"blocked", @"allowed")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;firewallEnabled&quot; property, of type &quot;microsoft.graph.stateManagementSetting&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;firewallEnabled&quot; property, of type &quot;microsoft.graph.stateManagementSetting&quot;.")]
         public System.String firewallEnabled { get; set; }
 
         /// <summary>
@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;stealthModeBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;stealthModeBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean stealthModeBlocked { get; set; }
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;incomingTrafficBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;incomingTrafficBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean incomingTrafficBlocked { get; set; }
 
         /// <summary>
@@ -53,7 +53,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;unicastResponsesToMulticastBroadcastsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;unicastResponsesToMulticastBroadcastsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean unicastResponsesToMulticastBroadcastsBlocked { get; set; }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;inboundNotificationsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;inboundNotificationsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean inboundNotificationsBlocked { get; set; }
 
         /// <summary>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;authorizedApplicationRulesFromGroupPolicyMerged&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;authorizedApplicationRulesFromGroupPolicyMerged&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean authorizedApplicationRulesFromGroupPolicyMerged { get; set; }
 
         /// <summary>
@@ -83,7 +83,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;globalPortRulesFromGroupPolicyMerged&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;globalPortRulesFromGroupPolicyMerged&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean globalPortRulesFromGroupPolicyMerged { get; set; }
 
         /// <summary>
@@ -93,7 +93,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;connectionSecurityRulesFromGroupPolicyMerged&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;connectionSecurityRulesFromGroupPolicyMerged&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean connectionSecurityRulesFromGroupPolicyMerged { get; set; }
 
         /// <summary>
@@ -103,7 +103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;outboundConnectionsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;outboundConnectionsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean outboundConnectionsBlocked { get; set; }
 
         /// <summary>
@@ -113,7 +113,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;inboundConnectionsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;inboundConnectionsBlocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean inboundConnectionsBlocked { get; set; }
 
         /// <summary>
@@ -123,7 +123,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;securedPacketExemptionAllowed&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;securedPacketExemptionAllowed&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securedPacketExemptionAllowed { get; set; }
 
         /// <summary>
@@ -133,7 +133,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;policyRulesFromGroupPolicyMerged&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsFirewallNetworkProfile", HelpMessage = @"The &quot;policyRulesFromGroupPolicyMerged&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean policyRulesFromGroupPolicyMerged { get; set; }
     }
 }

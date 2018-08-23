@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.windowsInformationProtectionDataRecoveryCertificate&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.windowsInformationProtectionDataRecoveryCertificate&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WindowsInformationProtectionDataRecoveryCertificateObject", DefaultParameterSetName = @"#microsoft.graph.windowsInformationProtectionDataRecoveryCertificate")]
+    [Cmdlet("New", "WindowsInformationProtectionDataRecoveryCertificateObject", DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionDataRecoveryCertificate")]
     [ODataType("microsoft.graph.windowsInformationProtectionDataRecoveryCertificate")]
     public class New_WindowsInformationProtectionDataRecoveryCertificateObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDataRecoveryCertificate", HelpMessage = @"The &quot;subjectName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionDataRecoveryCertificate", HelpMessage = @"The &quot;subjectName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String subjectName { get; set; }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDataRecoveryCertificate", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionDataRecoveryCertificate", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String description { get; set; }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDataRecoveryCertificate", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionDataRecoveryCertificate", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset expirationDateTime { get; set; }
 
         /// <summary>
@@ -50,7 +50,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Binary")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionDataRecoveryCertificate", HelpMessage = @"The &quot;certificate&quot; property, of type &quot;Edm.Binary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionDataRecoveryCertificate", HelpMessage = @"The &quot;certificate&quot; property, of type &quot;Edm.Binary&quot;.")]
         public System.Byte[] certificate { get; set; }
     }
 }

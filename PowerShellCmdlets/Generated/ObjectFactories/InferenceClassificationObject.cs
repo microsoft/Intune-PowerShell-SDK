@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.inferenceClassification&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.inferenceClassification&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "InferenceClassificationObject", DefaultParameterSetName = @"#microsoft.graph.inferenceClassification")]
+    [Cmdlet("New", "InferenceClassificationObject", DefaultParameterSetName = @"microsoft.graph.inferenceClassification")]
     [ODataType("microsoft.graph.inferenceClassification")]
     public class New_InferenceClassificationObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.inferenceClassificationOverride")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.inferenceClassification", HelpMessage = @"The &quot;overrides&quot; property, of type &quot;microsoft.graph.inferenceClassificationOverride&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.inferenceClassification", HelpMessage = @"The &quot;overrides&quot; property, of type &quot;microsoft.graph.inferenceClassificationOverride&quot;.")]
         public System.Object[] overrides { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.messageRulePredicates&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.messageRulePredicates&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "MessageRulePredicatesObject", DefaultParameterSetName = @"#microsoft.graph.messageRulePredicates")]
+    [Cmdlet("New", "MessageRulePredicatesObject", DefaultParameterSetName = @"microsoft.graph.messageRulePredicates")]
     [ODataType("microsoft.graph.messageRulePredicates")]
     public class New_MessageRulePredicatesObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;categories&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;categories&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] categories { get; set; }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;subjectContains&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;subjectContains&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] subjectContains { get; set; }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;bodyContains&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;bodyContains&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] bodyContains { get; set; }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;bodyOrSubjectContains&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;bodyOrSubjectContains&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] bodyOrSubjectContains { get; set; }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;senderContains&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;senderContains&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] senderContains { get; set; }
 
         /// <summary>
@@ -69,7 +69,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;recipientContains&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;recipientContains&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] recipientContains { get; set; }
 
         /// <summary>
@@ -79,7 +79,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;headerContains&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;headerContains&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] headerContains { get; set; }
 
         /// <summary>
@@ -92,7 +92,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.messageActionFlag")]
         [Selectable]
         [ValidateSet(@"any", @"call", @"doNotForward", @"followUp", @"fyi", @"forward", @"noResponseNecessary", @"read", @"reply", @"replyToAll", @"review")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;messageActionFlag&quot; property, of type &quot;microsoft.graph.messageActionFlag&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;messageActionFlag&quot; property, of type &quot;microsoft.graph.messageActionFlag&quot;.")]
         public System.String messageActionFlag { get; set; }
 
         /// <summary>
@@ -105,7 +105,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.importance")]
         [Selectable]
         [ValidateSet(@"low", @"normal", @"high")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;importance&quot; property, of type &quot;microsoft.graph.importance&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;importance&quot; property, of type &quot;microsoft.graph.importance&quot;.")]
         public System.String importance { get; set; }
 
         /// <summary>
@@ -118,27 +118,27 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.sensitivity")]
         [Selectable]
         [ValidateSet(@"normal", @"personal", @"private", @"confidential")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;sensitivity&quot; property, of type &quot;microsoft.graph.sensitivity&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;sensitivity&quot; property, of type &quot;microsoft.graph.sensitivity&quot;.")]
         public System.String sensitivity { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;fromAddresses&quot; property, of type &quot;microsoft.graph.recipient&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.messageRulePredicates&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.recipient")]
+        [ODataType("microsoft.graph.recipient", "microsoft.graph.attendeeBase", "microsoft.graph.attendee")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;fromAddresses&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;fromAddresses&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
         public System.Object[] fromAddresses { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;sentToAddresses&quot; property, of type &quot;microsoft.graph.recipient&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.messageRulePredicates&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.recipient")]
+        [ODataType("microsoft.graph.recipient", "microsoft.graph.attendeeBase", "microsoft.graph.attendee")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;sentToAddresses&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;sentToAddresses&quot; property, of type &quot;microsoft.graph.recipient&quot;.")]
         public System.Object[] sentToAddresses { get; set; }
 
         /// <summary>
@@ -147,7 +147,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;sentToMe&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;sentToMe&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean sentToMe { get; set; }
 
         /// <summary>
@@ -156,7 +156,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;sentOnlyToMe&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;sentOnlyToMe&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean sentOnlyToMe { get; set; }
 
         /// <summary>
@@ -165,7 +165,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;sentCcMe&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;sentCcMe&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean sentCcMe { get; set; }
 
         /// <summary>
@@ -174,7 +174,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;sentToOrCcMe&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;sentToOrCcMe&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean sentToOrCcMe { get; set; }
 
         /// <summary>
@@ -183,7 +183,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;notSentToMe&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;notSentToMe&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean notSentToMe { get; set; }
 
         /// <summary>
@@ -192,7 +192,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;hasAttachments&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;hasAttachments&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean hasAttachments { get; set; }
 
         /// <summary>
@@ -201,7 +201,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isApprovalRequest&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isApprovalRequest&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isApprovalRequest { get; set; }
 
         /// <summary>
@@ -210,7 +210,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isAutomaticForward&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isAutomaticForward&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isAutomaticForward { get; set; }
 
         /// <summary>
@@ -219,7 +219,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isAutomaticReply&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isAutomaticReply&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isAutomaticReply { get; set; }
 
         /// <summary>
@@ -228,7 +228,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isEncrypted&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isEncrypted&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isEncrypted { get; set; }
 
         /// <summary>
@@ -237,7 +237,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isMeetingRequest&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isMeetingRequest&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isMeetingRequest { get; set; }
 
         /// <summary>
@@ -246,7 +246,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isMeetingResponse&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isMeetingResponse&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isMeetingResponse { get; set; }
 
         /// <summary>
@@ -255,7 +255,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isNonDeliveryReport&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isNonDeliveryReport&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isNonDeliveryReport { get; set; }
 
         /// <summary>
@@ -264,7 +264,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isPermissionControlled&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isPermissionControlled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isPermissionControlled { get; set; }
 
         /// <summary>
@@ -273,7 +273,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isReadReceipt&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isReadReceipt&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isReadReceipt { get; set; }
 
         /// <summary>
@@ -282,7 +282,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isSigned&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isSigned&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isSigned { get; set; }
 
         /// <summary>
@@ -291,7 +291,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isVoicemail&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;isVoicemail&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isVoicemail { get; set; }
 
         /// <summary>
@@ -300,7 +300,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.sizeRange")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;withinSizeRange&quot; property, of type &quot;microsoft.graph.sizeRange&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRulePredicates", HelpMessage = @"The &quot;withinSizeRange&quot; property, of type &quot;microsoft.graph.sizeRange&quot;.")]
         public System.Object withinSizeRange { get; set; }
     }
 }

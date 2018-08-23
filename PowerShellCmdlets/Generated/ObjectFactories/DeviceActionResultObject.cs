@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.deviceActionResult&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceActionResult&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "DeviceActionResultObject", DefaultParameterSetName = @"#microsoft.graph.deviceActionResult")]
+    [Cmdlet("New", "DeviceActionResultObject", DefaultParameterSetName = @"microsoft.graph.deviceActionResult")]
     [ODataType("microsoft.graph.deviceActionResult")]
     public class New_DeviceActionResultObject : ObjectFactoryCmdletBase
     {
@@ -16,8 +16,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceActionResult&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.deviceActionResult")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceActionResult&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.deviceActionResult")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceActionResult&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceActionResult { get; set; }
 
         /// <summary>
@@ -27,12 +27,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceActionResult", HelpMessage = @"The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.resetPasscodeActionResult", HelpMessage = @"The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.remoteLockActionResult", HelpMessage = @"The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locateDeviceActionResult", HelpMessage = @"The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deleteUserFromSharedAppleDeviceActionResult", HelpMessage = @"The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsDefenderScanActionResult", HelpMessage = @"The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceActionResult", HelpMessage = @"The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.resetPasscodeActionResult", HelpMessage = @"The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.remoteLockActionResult", HelpMessage = @"The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locateDeviceActionResult", HelpMessage = @"The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deleteUserFromSharedAppleDeviceActionResult", HelpMessage = @"The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderScanActionResult", HelpMessage = @"The &quot;actionName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String actionName { get; set; }
 
         /// <summary>
@@ -46,12 +46,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.actionState")]
         [Selectable]
         [ValidateSet(@"none", @"pending", @"canceled", @"active", @"done", @"failed", @"notSupported")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceActionResult", HelpMessage = @"The &quot;actionState&quot; property, of type &quot;microsoft.graph.actionState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.resetPasscodeActionResult", HelpMessage = @"The &quot;actionState&quot; property, of type &quot;microsoft.graph.actionState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.remoteLockActionResult", HelpMessage = @"The &quot;actionState&quot; property, of type &quot;microsoft.graph.actionState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locateDeviceActionResult", HelpMessage = @"The &quot;actionState&quot; property, of type &quot;microsoft.graph.actionState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deleteUserFromSharedAppleDeviceActionResult", HelpMessage = @"The &quot;actionState&quot; property, of type &quot;microsoft.graph.actionState&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsDefenderScanActionResult", HelpMessage = @"The &quot;actionState&quot; property, of type &quot;microsoft.graph.actionState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceActionResult", HelpMessage = @"The &quot;actionState&quot; property, of type &quot;microsoft.graph.actionState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.resetPasscodeActionResult", HelpMessage = @"The &quot;actionState&quot; property, of type &quot;microsoft.graph.actionState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.remoteLockActionResult", HelpMessage = @"The &quot;actionState&quot; property, of type &quot;microsoft.graph.actionState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locateDeviceActionResult", HelpMessage = @"The &quot;actionState&quot; property, of type &quot;microsoft.graph.actionState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deleteUserFromSharedAppleDeviceActionResult", HelpMessage = @"The &quot;actionState&quot; property, of type &quot;microsoft.graph.actionState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderScanActionResult", HelpMessage = @"The &quot;actionState&quot; property, of type &quot;microsoft.graph.actionState&quot;.")]
         public System.String actionState { get; set; }
 
         /// <summary>
@@ -61,12 +61,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceActionResult", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.resetPasscodeActionResult", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.remoteLockActionResult", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locateDeviceActionResult", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deleteUserFromSharedAppleDeviceActionResult", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsDefenderScanActionResult", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceActionResult", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.resetPasscodeActionResult", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.remoteLockActionResult", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locateDeviceActionResult", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deleteUserFromSharedAppleDeviceActionResult", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderScanActionResult", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset startDateTime { get; set; }
 
         /// <summary>
@@ -76,20 +76,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceActionResult", HelpMessage = @"The &quot;lastUpdatedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.resetPasscodeActionResult", HelpMessage = @"The &quot;lastUpdatedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.remoteLockActionResult", HelpMessage = @"The &quot;lastUpdatedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locateDeviceActionResult", HelpMessage = @"The &quot;lastUpdatedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deleteUserFromSharedAppleDeviceActionResult", HelpMessage = @"The &quot;lastUpdatedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsDefenderScanActionResult", HelpMessage = @"The &quot;lastUpdatedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceActionResult", HelpMessage = @"The &quot;lastUpdatedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.resetPasscodeActionResult", HelpMessage = @"The &quot;lastUpdatedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.remoteLockActionResult", HelpMessage = @"The &quot;lastUpdatedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locateDeviceActionResult", HelpMessage = @"The &quot;lastUpdatedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deleteUserFromSharedAppleDeviceActionResult", HelpMessage = @"The &quot;lastUpdatedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderScanActionResult", HelpMessage = @"The &quot;lastUpdatedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset lastUpdatedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.resetPasscodeActionResult&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.resetPasscodeActionResult")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.resetPasscodeActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.resetPasscodeActionResult&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.resetPasscodeActionResult")]
+        [Parameter(ParameterSetName = @"microsoft.graph.resetPasscodeActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.resetPasscodeActionResult&quot; type.")]
         public System.Management.Automation.SwitchParameter resetPasscodeActionResult { get; set; }
 
         /// <summary>
@@ -99,15 +99,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.resetPasscodeActionResult", HelpMessage = @"The &quot;passcode&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.resetPasscodeActionResult", HelpMessage = @"The &quot;passcode&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String passcode { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.remoteLockActionResult&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.remoteLockActionResult")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.remoteLockActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.remoteLockActionResult&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.remoteLockActionResult")]
+        [Parameter(ParameterSetName = @"microsoft.graph.remoteLockActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.remoteLockActionResult&quot; type.")]
         public System.Management.Automation.SwitchParameter remoteLockActionResult { get; set; }
 
         /// <summary>
@@ -117,15 +117,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.remoteLockActionResult", HelpMessage = @"The &quot;unlockPin&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.remoteLockActionResult", HelpMessage = @"The &quot;unlockPin&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String unlockPin { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.locateDeviceActionResult&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.locateDeviceActionResult")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locateDeviceActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.locateDeviceActionResult&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.locateDeviceActionResult")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locateDeviceActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.locateDeviceActionResult&quot; type.")]
         public System.Management.Automation.SwitchParameter locateDeviceActionResult { get; set; }
 
         /// <summary>
@@ -135,15 +135,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceGeoLocation")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locateDeviceActionResult", HelpMessage = @"The &quot;deviceLocation&quot; property, of type &quot;microsoft.graph.deviceGeoLocation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locateDeviceActionResult", HelpMessage = @"The &quot;deviceLocation&quot; property, of type &quot;microsoft.graph.deviceGeoLocation&quot;.")]
         public System.Object deviceLocation { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deleteUserFromSharedAppleDeviceActionResult&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.deleteUserFromSharedAppleDeviceActionResult")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deleteUserFromSharedAppleDeviceActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deleteUserFromSharedAppleDeviceActionResult&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.deleteUserFromSharedAppleDeviceActionResult")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deleteUserFromSharedAppleDeviceActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deleteUserFromSharedAppleDeviceActionResult&quot; type.")]
         public System.Management.Automation.SwitchParameter deleteUserFromSharedAppleDeviceActionResult { get; set; }
 
         /// <summary>
@@ -153,15 +153,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deleteUserFromSharedAppleDeviceActionResult", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deleteUserFromSharedAppleDeviceActionResult", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String userPrincipalName { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderScanActionResult&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.windowsDefenderScanActionResult")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsDefenderScanActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderScanActionResult&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.windowsDefenderScanActionResult")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderScanActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderScanActionResult&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsDefenderScanActionResult { get; set; }
 
         /// <summary>
@@ -171,7 +171,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsDefenderScanActionResult", HelpMessage = @"The &quot;scanType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderScanActionResult", HelpMessage = @"The &quot;scanType&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String scanType { get; set; }
     }
 }

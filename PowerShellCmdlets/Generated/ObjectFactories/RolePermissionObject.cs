@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.rolePermission&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.rolePermission&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "RolePermissionObject", DefaultParameterSetName = @"#microsoft.graph.rolePermission")]
+    [Cmdlet("New", "RolePermissionObject", DefaultParameterSetName = @"microsoft.graph.rolePermission")]
     [ODataType("microsoft.graph.rolePermission")]
     public class New_RolePermissionObject : ObjectFactoryCmdletBase
     {
@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.resourceAction")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.rolePermission", HelpMessage = @"The &quot;resourceActions&quot; property, of type &quot;microsoft.graph.resourceAction&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.rolePermission", HelpMessage = @"The &quot;resourceActions&quot; property, of type &quot;microsoft.graph.resourceAction&quot;.")]
         public System.Object[] resourceActions { get; set; }
     }
 }

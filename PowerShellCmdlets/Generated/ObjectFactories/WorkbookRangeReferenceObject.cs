@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookRangeReference&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookRangeReference&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookRangeReferenceObject", DefaultParameterSetName = @"#microsoft.graph.workbookRangeReference")]
+    [Cmdlet("New", "WorkbookRangeReferenceObject", DefaultParameterSetName = @"microsoft.graph.workbookRangeReference")]
     [ODataType("microsoft.graph.workbookRangeReference")]
     public class New_WorkbookRangeReferenceObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookRangeReference", HelpMessage = @"The &quot;address&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeReference", HelpMessage = @"The &quot;address&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String address { get; set; }
     }
 }

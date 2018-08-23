@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.managedAppDiagnosticStatus&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.managedAppDiagnosticStatus&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ManagedAppDiagnosticStatusObject", DefaultParameterSetName = @"#microsoft.graph.managedAppDiagnosticStatus")]
+    [Cmdlet("New", "ManagedAppDiagnosticStatusObject", DefaultParameterSetName = @"microsoft.graph.managedAppDiagnosticStatus")]
     [ODataType("microsoft.graph.managedAppDiagnosticStatus")]
     public class New_ManagedAppDiagnosticStatusObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAppDiagnosticStatus", HelpMessage = @"The &quot;validationName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppDiagnosticStatus", HelpMessage = @"The &quot;validationName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String validationName { get; set; }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAppDiagnosticStatus", HelpMessage = @"The &quot;state&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppDiagnosticStatus", HelpMessage = @"The &quot;state&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String state { get; set; }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAppDiagnosticStatus", HelpMessage = @"The &quot;mitigationInstruction&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppDiagnosticStatus", HelpMessage = @"The &quot;mitigationInstruction&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String mitigationInstruction { get; set; }
     }
 }

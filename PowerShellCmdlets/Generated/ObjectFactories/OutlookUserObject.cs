@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.outlookUser&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.outlookUser&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "OutlookUserObject", DefaultParameterSetName = @"#microsoft.graph.outlookUser")]
+    [Cmdlet("New", "OutlookUserObject", DefaultParameterSetName = @"microsoft.graph.outlookUser")]
     [ODataType("microsoft.graph.outlookUser")]
     public class New_OutlookUserObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.outlookCategory")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.outlookUser", HelpMessage = @"The &quot;masterCategories&quot; property, of type &quot;microsoft.graph.outlookCategory&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.outlookUser", HelpMessage = @"The &quot;masterCategories&quot; property, of type &quot;microsoft.graph.outlookCategory&quot;.")]
         public System.Object[] masterCategories { get; set; }
     }
 }

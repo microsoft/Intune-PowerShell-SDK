@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.personOrGroupColumn&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.personOrGroupColumn&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "PersonOrGroupColumnObject", DefaultParameterSetName = @"#microsoft.graph.personOrGroupColumn")]
+    [Cmdlet("New", "PersonOrGroupColumnObject", DefaultParameterSetName = @"microsoft.graph.personOrGroupColumn")]
     [ODataType("microsoft.graph.personOrGroupColumn")]
     public class New_PersonOrGroupColumnObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.personOrGroupColumn", HelpMessage = @"The &quot;allowMultipleSelection&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.personOrGroupColumn", HelpMessage = @"The &quot;allowMultipleSelection&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean allowMultipleSelection { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.personOrGroupColumn", HelpMessage = @"The &quot;chooseFromType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.personOrGroupColumn", HelpMessage = @"The &quot;chooseFromType&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String chooseFromType { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.personOrGroupColumn", HelpMessage = @"The &quot;displayAs&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.personOrGroupColumn", HelpMessage = @"The &quot;displayAs&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayAs { get; set; }
     }
 }

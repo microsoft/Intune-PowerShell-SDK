@@ -12,6 +12,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_SoftwareUpdateStatusSummary", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.softwareUpdateStatusSummary")]
+    [ResourceTypePropertyName("softwareUpdateStatusSummaryODataType")]
     public class Get_DeviceManagement_SoftwareUpdateStatusSummary : GetCmdlet
     {
         /// <summary>
@@ -178,6 +179,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_SoftwareUpdateStatusSummaryReference", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.softwareUpdateStatusSummary")]
+    [ResourceTypePropertyName("softwareUpdateStatusSummaryODataType")]
     public class Get_DeviceManagement_SoftwareUpdateStatusSummaryReference : GetCmdlet
     {
         /// <summary>
@@ -344,6 +346,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("New", "DeviceManagement_SoftwareUpdateStatusSummaryReference", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.softwareUpdateStatusSummary")]
+    [ResourceTypePropertyName("softwareUpdateStatusSummaryODataType")]
     [ResourceIdPropertyName("softwareUpdateStatusSummaryReferenceUrl")]
     public class New_DeviceManagement_SoftwareUpdateStatusSummaryReference : PutReferenceToEntityCmdlet
     {
@@ -369,6 +372,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_SoftwareUpdateStatusSummaryReference", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.softwareUpdateStatusSummary")]
+    [ResourceTypePropertyName("softwareUpdateStatusSummaryODataType")]
     public class Remove_DeviceManagement_SoftwareUpdateStatusSummaryReference : DeleteCmdlet
     {
         internal override System.String GetResourcePath()

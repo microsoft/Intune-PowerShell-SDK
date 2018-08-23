@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.fieldValueSet&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.fieldValueSet&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "FieldValueSetObject", DefaultParameterSetName = @"#microsoft.graph.fieldValueSet")]
+    [Cmdlet("New", "FieldValueSetObject", DefaultParameterSetName = @"microsoft.graph.fieldValueSet")]
     [ODataType("microsoft.graph.fieldValueSet")]
     public class New_FieldValueSetObject : ObjectFactoryCmdletBase
     {

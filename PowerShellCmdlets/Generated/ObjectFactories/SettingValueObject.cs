@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.settingValue&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.settingValue&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "SettingValueObject", DefaultParameterSetName = @"#microsoft.graph.settingValue")]
+    [Cmdlet("New", "SettingValueObject", DefaultParameterSetName = @"microsoft.graph.settingValue")]
     [ODataType("microsoft.graph.settingValue")]
     public class New_SettingValueObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.settingValue", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.settingValue", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String name { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.settingValue", HelpMessage = @"The &quot;value&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.settingValue", HelpMessage = @"The &quot;value&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String value { get; set; }
     }
 }

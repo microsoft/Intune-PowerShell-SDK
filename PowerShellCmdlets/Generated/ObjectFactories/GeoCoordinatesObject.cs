@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.geoCoordinates&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.geoCoordinates&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "GeoCoordinatesObject", DefaultParameterSetName = @"#microsoft.graph.geoCoordinates")]
+    [Cmdlet("New", "GeoCoordinatesObject", DefaultParameterSetName = @"microsoft.graph.geoCoordinates")]
     [ODataType("microsoft.graph.geoCoordinates")]
     public class New_GeoCoordinatesObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Double")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.geoCoordinates", HelpMessage = @"The &quot;altitude&quot; property, of type &quot;Edm.Double&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.geoCoordinates", HelpMessage = @"The &quot;altitude&quot; property, of type &quot;Edm.Double&quot;.")]
         public System.Double altitude { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Double")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.geoCoordinates", HelpMessage = @"The &quot;latitude&quot; property, of type &quot;Edm.Double&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.geoCoordinates", HelpMessage = @"The &quot;latitude&quot; property, of type &quot;Edm.Double&quot;.")]
         public System.Double latitude { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Double")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.geoCoordinates", HelpMessage = @"The &quot;longitude&quot; property, of type &quot;Edm.Double&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.geoCoordinates", HelpMessage = @"The &quot;longitude&quot; property, of type &quot;Edm.Double&quot;.")]
         public System.Double longitude { get; set; }
     }
 }

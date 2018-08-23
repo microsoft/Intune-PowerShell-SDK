@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.plannerAssignments&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.plannerAssignments&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "PlannerAssignmentsObject", DefaultParameterSetName = @"#microsoft.graph.plannerAssignments")]
+    [Cmdlet("New", "PlannerAssignmentsObject", DefaultParameterSetName = @"microsoft.graph.plannerAssignments")]
     [ODataType("microsoft.graph.plannerAssignments")]
     public class New_PlannerAssignmentsObject : ObjectFactoryCmdletBase
     {

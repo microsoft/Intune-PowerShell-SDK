@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.timeZoneInformation&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.timeZoneInformation&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "TimeZoneInformationObject", DefaultParameterSetName = @"#microsoft.graph.timeZoneInformation")]
+    [Cmdlet("New", "TimeZoneInformationObject", DefaultParameterSetName = @"microsoft.graph.timeZoneInformation")]
     [ODataType("microsoft.graph.timeZoneInformation")]
     public class New_TimeZoneInformationObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.timeZoneInformation", HelpMessage = @"The &quot;alias&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.timeZoneInformation", HelpMessage = @"The &quot;alias&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String alias { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.timeZoneInformation", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.timeZoneInformation", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
     }
 }

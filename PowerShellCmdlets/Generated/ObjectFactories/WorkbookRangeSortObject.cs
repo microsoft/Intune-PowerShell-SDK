@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookRangeSort&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookRangeSort&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookRangeSortObject", DefaultParameterSetName = @"#microsoft.graph.workbookRangeSort")]
+    [Cmdlet("New", "WorkbookRangeSortObject", DefaultParameterSetName = @"microsoft.graph.workbookRangeSort")]
     [ODataType("microsoft.graph.workbookRangeSort")]
     public class New_WorkbookRangeSortObject : ObjectFactoryCmdletBase
     {

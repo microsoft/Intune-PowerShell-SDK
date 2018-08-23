@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.folderView&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.folderView&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "FolderViewObject", DefaultParameterSetName = @"#microsoft.graph.folderView")]
+    [Cmdlet("New", "FolderViewObject", DefaultParameterSetName = @"microsoft.graph.folderView")]
     [ODataType("microsoft.graph.folderView")]
     public class New_FolderViewObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.folderView", HelpMessage = @"The &quot;sortBy&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.folderView", HelpMessage = @"The &quot;sortBy&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String sortBy { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.folderView", HelpMessage = @"The &quot;sortOrder&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.folderView", HelpMessage = @"The &quot;sortOrder&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String sortOrder { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.folderView", HelpMessage = @"The &quot;viewType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.folderView", HelpMessage = @"The &quot;viewType&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String viewType { get; set; }
     }
 }

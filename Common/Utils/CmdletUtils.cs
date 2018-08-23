@@ -10,16 +10,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK
 
     internal static class CmdletUtils
     {
-        internal static string GetCmdletNoun(this Type cmdletType)
-        {
-            if (cmdletType == null)
-            {
-                throw new ArgumentNullException(nameof(cmdletType));
-            }
-
-            return cmdletType.GetCustomAttribute<CmdletAttribute>()?.NounName;
-        }
-
+        /// <summary>
+        /// Gets the noun part of a cmdlet's name.
+        /// </summary>
+        /// <param name="cmdlet">The cmdlet</param>
+        /// <returns>The noun part of the cmdlet's name</returns>
         internal static string GetCmdletNoun(this Cmdlet cmdlet)
         {
             if (cmdlet == null)
@@ -27,7 +22,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                 throw new ArgumentNullException(nameof(cmdlet));
             }
 
-            return cmdlet.GetType().GetCmdletNoun();
+            return cmdlet.GetType().GetCustomAttribute<CmdletAttribute>()?.NounName;
         }
 
         /// <summary>
@@ -35,12 +30,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK
         /// </summary>
         /// <param name="cmdlet">The cmdlet to get the properties from</param>
         /// <param name="includeInherited">Whether or not to include inherited properties</param>
-        /// <param name="filter">The filter for the properties to include in the result (if it evaluates to true, the property is included)</param>
         /// <returns>The properties that are bound in the current invocation of this cmdlet.</returns>
-        internal static IEnumerable<PropertyInfo> GetBoundProperties(this PSCmdlet cmdlet, bool includeInherited = true, Func<PropertyInfo, bool> filter = null)
+        internal static IEnumerable<PropertyInfo> GetBoundProperties(this PSCmdlet cmdlet, bool includeInherited = true)
         {
             // Get the cmdlet's properties
-            IEnumerable<PropertyInfo> cmdletProperties = cmdlet.GetProperties(includeInherited, filter);
+            IEnumerable<PropertyInfo> cmdletProperties = cmdlet.GetProperties(includeInherited);
 
             // Get only the properties that were set from PowerShell
             IEnumerable<string> boundParameterNames = cmdlet.MyInvocation.BoundParameters.Keys;
@@ -54,9 +48,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK
         /// </summary>
         /// <param name="cmdlet">The cmdlet to get the properties from</param>
         /// <param name="includeInherited">Whether or not to include inherited properties (defaults to true)</param>
-        /// <param name="filter">The filter for the properties to include in the result (if it evaluates to true, the property is included)</param>
         /// <returns>The properties that are defined on this cmdlet.</returns>
-        internal static IEnumerable<PropertyInfo> GetProperties(this PSCmdlet cmdlet, bool includeInherited, Func<PropertyInfo, bool> filter = null)
+        internal static IEnumerable<PropertyInfo> GetProperties(this PSCmdlet cmdlet, bool includeInherited)
         {
             // Create the binding flags
             BindingFlags bindingFlags =
@@ -69,12 +62,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK
 
             // Get the properties on this cmdlet
             IEnumerable<PropertyInfo> result = cmdlet.GetType().GetProperties(bindingFlags);
-
-            // Apply filter if necessary
-            if (filter != null)
-            {
-                result = result.Where(filter);
-            }
 
             return result;
         }

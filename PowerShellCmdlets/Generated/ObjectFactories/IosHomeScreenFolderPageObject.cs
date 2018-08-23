@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.iosHomeScreenFolderPage&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.iosHomeScreenFolderPage&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "IosHomeScreenFolderPageObject", DefaultParameterSetName = @"#microsoft.graph.iosHomeScreenFolderPage")]
+    [Cmdlet("New", "IosHomeScreenFolderPageObject", DefaultParameterSetName = @"microsoft.graph.iosHomeScreenFolderPage")]
     [ODataType("microsoft.graph.iosHomeScreenFolderPage")]
     public class New_IosHomeScreenFolderPageObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosHomeScreenFolderPage", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosHomeScreenFolderPage", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.iosHomeScreenApp")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosHomeScreenFolderPage", HelpMessage = @"The &quot;apps&quot; property, of type &quot;microsoft.graph.iosHomeScreenApp&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosHomeScreenFolderPage", HelpMessage = @"The &quot;apps&quot; property, of type &quot;microsoft.graph.iosHomeScreenApp&quot;.")]
         public System.Object[] apps { get; set; }
     }
 }

@@ -3,6 +3,7 @@
 namespace Microsoft.Intune.PowerShellGraphSDK
 {
     using System;
+    using System.Management.Automation;
     using System.Reflection;
 
     /// <summary>
@@ -10,9 +11,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK
     /// </summary>
     internal static class ODataTypeUtils
     {
-        internal static string GetODataTypeName(this PropertyInfo cmdletProperty)
+        internal static ODataTypeAttribute GetODataTypeAttribute(this PropertyInfo cmdletProperty)
         {
-            return cmdletProperty.GetCustomAttribute<ODataTypeAttribute>(false)?.FullName;
+            if (cmdletProperty == null)
+            {
+                throw new ArgumentNullException(nameof(cmdletProperty));
+            }
+
+            return cmdletProperty.GetCustomAttribute<ODataTypeAttribute>(false);
+        }
+
+        internal static ODataTypeAttribute GetODataTypeAttribute(this Cmdlet cmdlet)
+        {
+            if (cmdlet == null)
+            {
+                throw new ArgumentNullException(nameof(cmdlet));
+            }
+
+            return cmdlet.GetType().GetCustomAttribute<ODataTypeAttribute>();
         }
 
         /// <summary>
@@ -22,15 +38,30 @@ namespace Microsoft.Intune.PowerShellGraphSDK
         /// <returns>The name of the parameter</returns>
         internal static string GetReferenceUrlParameterName(string typeFullName)
         {
-            if (string.IsNullOrEmpty(typeFullName))
+            if (string.IsNullOrWhiteSpace(typeFullName))
             {
-                throw new ArgumentException("Type name cannot be null or empty", nameof(typeFullName));
+                throw new ArgumentException("Type name cannot be null or whitespace", nameof(typeFullName));
             }
 
             // Get the short name of the type
-            string shortTypeName = typeFullName.Substring(typeFullName.LastIndexOf('.') + 1);
+            string shortTypeName = GetShortTypeName(typeFullName);
 
             return $"{shortTypeName}ReferenceUrl";
+        }
+
+        /// <summary>
+        /// Gets the short name of a type given its full type name.
+        /// </summary>
+        /// <param name="typeFullName">The type's full name</param>
+        /// <returns>The type's short name.</returns>
+        internal static string GetShortTypeName(string typeFullName)
+        {
+            if (string.IsNullOrWhiteSpace(typeFullName))
+            {
+                throw new ArgumentException("Type name cannot be null or whitespace", nameof(typeFullName));
+            }
+
+            return typeFullName.Substring(typeFullName.LastIndexOf('.') + 1);
         }
 
         internal static string ToODataString(this object value, string oDataTypeFullName, bool isArray = false, bool isUrlValue = false)
@@ -40,9 +71,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                 throw new ArgumentException("The OData type name cannot be null or whitespace", nameof(oDataTypeFullName));
             }
 
+            // Null value
             if (value == null)
             {
-                // Null value
                 if (isArray)
                 {
                     return "[]";
@@ -52,14 +83,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                     return "null";
                 }
             }
+            // Boolean
             else if (value is bool boolean)
             {
-                // Boolean
                 return boolean ? "true" : "false";
             }
+            // String
             else if (value is string stringValue)
             {
-                // String
                 if (isUrlValue)
                 {
                     return $"'{stringValue}'";
@@ -69,6 +100,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                     return $"\"{stringValue}\"";
                 }
             }
+            // Date, DateTime or DateTimeOffset
             else if (value is DateTimeOffset date)
             {
                 // Date
@@ -85,13 +117,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                         return $"\"{dateString}\"";
                     }
                 }
-            }
-            else if (value is DateTimeOffset dateTime)
-            {
                 // DateTime or DateTimeOffset
-                if (oDataTypeFullName == "Edm.DateTime" || oDataTypeFullName == "Edm.DateTimeOffset")
+                else if (oDataTypeFullName == "Edm.DateTime" || oDataTypeFullName == "Edm.DateTimeOffset")
                 {
-                    string dateTimeString = dateTime.ToString("o"); // yyyy-MM-ddTHH:mm:ssZ
+                    string dateTimeString = date.ToString("o"); // yyyy-MM-ddTHH:mm:ssZ
 
                     if (isUrlValue)
                     {
@@ -103,6 +132,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                     }
                 }
             }
+            // Time or TimeOfDay
             else if (value is TimeSpan timeSpan)
             {
                 // Time or TimeOfDay
@@ -119,9 +149,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                         return $"\"{timeString}\"";
                     }
                 }
+                // Duration
                 else if (oDataTypeFullName == "Edm.Duration")
                 {
-                    // Duration
                     string durationString;
                     if (timeSpan == TimeSpan.Zero)
                     {

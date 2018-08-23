@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.windowsInformationProtectionIPRangeCollection&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.windowsInformationProtectionIPRangeCollection&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WindowsInformationProtectionIPRangeCollectionObject", DefaultParameterSetName = @"#microsoft.graph.windowsInformationProtectionIPRangeCollection")]
+    [Cmdlet("New", "WindowsInformationProtectionIPRangeCollectionObject", DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionIPRangeCollection")]
     [ODataType("microsoft.graph.windowsInformationProtectionIPRangeCollection")]
     public class New_WindowsInformationProtectionIPRangeCollectionObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionIPRangeCollection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionIPRangeCollection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -27,10 +27,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.windowsInformationProtectionIPRangeCollection&quot; type.</para>
         ///     <para type="description">Collection of ip ranges</para>
         /// </summary>
-        [ODataType("microsoft.graph.ipRange")]
+        [ODataType("microsoft.graph.ipRange", "microsoft.graph.iPv4Range", "microsoft.graph.iPv6Range")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionIPRangeCollection", HelpMessage = @"The &quot;ranges&quot; property, of type &quot;microsoft.graph.ipRange&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionIPRangeCollection", HelpMessage = @"The &quot;ranges&quot; property, of type &quot;microsoft.graph.ipRange&quot;.")]
         public System.Object[] ranges { get; set; }
     }
 }

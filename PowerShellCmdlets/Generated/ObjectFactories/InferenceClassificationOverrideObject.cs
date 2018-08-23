@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.inferenceClassificationOverride&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.inferenceClassificationOverride&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "InferenceClassificationOverrideObject", DefaultParameterSetName = @"#microsoft.graph.inferenceClassificationOverride")]
+    [Cmdlet("New", "InferenceClassificationOverrideObject", DefaultParameterSetName = @"microsoft.graph.inferenceClassificationOverride")]
     [ODataType("microsoft.graph.inferenceClassificationOverride")]
     public class New_InferenceClassificationOverrideObject : ObjectFactoryCmdletBase
     {
@@ -22,7 +22,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.inferenceClassificationType")]
         [Selectable]
         [ValidateSet(@"focused", @"other")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.inferenceClassificationOverride", HelpMessage = @"The &quot;classifyAs&quot; property, of type &quot;microsoft.graph.inferenceClassificationType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.inferenceClassificationOverride", HelpMessage = @"The &quot;classifyAs&quot; property, of type &quot;microsoft.graph.inferenceClassificationType&quot;.")]
         public System.String classifyAs { get; set; }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.emailAddress")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.inferenceClassificationOverride", HelpMessage = @"The &quot;senderEmailAddress&quot; property, of type &quot;microsoft.graph.emailAddress&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.inferenceClassificationOverride", HelpMessage = @"The &quot;senderEmailAddress&quot; property, of type &quot;microsoft.graph.emailAddress&quot;.")]
         public System.Object senderEmailAddress { get; set; }
     }
 }

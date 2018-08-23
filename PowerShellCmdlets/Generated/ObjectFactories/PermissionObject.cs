@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.permission&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.permission&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "PermissionObject", DefaultParameterSetName = @"#microsoft.graph.permission")]
+    [Cmdlet("New", "PermissionObject", DefaultParameterSetName = @"microsoft.graph.permission")]
     [ODataType("microsoft.graph.permission")]
     public class New_PermissionObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.identitySet")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.permission", HelpMessage = @"The &quot;grantedTo&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.permission", HelpMessage = @"The &quot;grantedTo&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
         public System.Object grantedTo { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.itemReference")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.permission", HelpMessage = @"The &quot;inheritedFrom&quot; property, of type &quot;microsoft.graph.itemReference&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.permission", HelpMessage = @"The &quot;inheritedFrom&quot; property, of type &quot;microsoft.graph.itemReference&quot;.")]
         public System.Object inheritedFrom { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.sharingInvitation")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.permission", HelpMessage = @"The &quot;invitation&quot; property, of type &quot;microsoft.graph.sharingInvitation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.permission", HelpMessage = @"The &quot;invitation&quot; property, of type &quot;microsoft.graph.sharingInvitation&quot;.")]
         public System.Object invitation { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.sharingLink")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.permission", HelpMessage = @"The &quot;link&quot; property, of type &quot;microsoft.graph.sharingLink&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.permission", HelpMessage = @"The &quot;link&quot; property, of type &quot;microsoft.graph.sharingLink&quot;.")]
         public System.Object link { get; set; }
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.permission", HelpMessage = @"The &quot;roles&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.permission", HelpMessage = @"The &quot;roles&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] roles { get; set; }
 
         /// <summary>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.permission", HelpMessage = @"The &quot;shareId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.permission", HelpMessage = @"The &quot;shareId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String shareId { get; set; }
     }
 }

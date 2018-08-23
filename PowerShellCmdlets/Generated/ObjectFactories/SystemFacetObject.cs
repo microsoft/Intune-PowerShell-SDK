@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.systemFacet&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.systemFacet&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "SystemFacetObject", DefaultParameterSetName = @"#microsoft.graph.systemFacet")]
+    [Cmdlet("New", "SystemFacetObject", DefaultParameterSetName = @"microsoft.graph.systemFacet")]
     [ODataType("microsoft.graph.systemFacet")]
     public class New_SystemFacetObject : ObjectFactoryCmdletBase
     {

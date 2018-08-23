@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.publicationFacet&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.publicationFacet&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "PublicationFacetObject", DefaultParameterSetName = @"#microsoft.graph.publicationFacet")]
+    [Cmdlet("New", "PublicationFacetObject", DefaultParameterSetName = @"microsoft.graph.publicationFacet")]
     [ODataType("microsoft.graph.publicationFacet")]
     public class New_PublicationFacetObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.publicationFacet", HelpMessage = @"The &quot;level&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.publicationFacet", HelpMessage = @"The &quot;level&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String level { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.publicationFacet", HelpMessage = @"The &quot;versionId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.publicationFacet", HelpMessage = @"The &quot;versionId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String versionId { get; set; }
     }
 }

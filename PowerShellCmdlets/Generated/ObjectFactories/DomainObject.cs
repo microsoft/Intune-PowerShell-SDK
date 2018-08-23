@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.domain&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.domain&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "DomainObject", DefaultParameterSetName = @"#microsoft.graph.domain")]
+    [Cmdlet("New", "DomainObject", DefaultParameterSetName = @"microsoft.graph.domain")]
     [ODataType("microsoft.graph.domain")]
     public class New_DomainObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.domain", HelpMessage = @"The &quot;authenticationType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;authenticationType&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String authenticationType { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.domain", HelpMessage = @"The &quot;availabilityStatus&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;availabilityStatus&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String availabilityStatus { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.domain", HelpMessage = @"The &quot;isAdminManaged&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;isAdminManaged&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isAdminManaged { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.domain", HelpMessage = @"The &quot;isDefault&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;isDefault&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isDefault { get; set; }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.domain", HelpMessage = @"The &quot;isInitial&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;isInitial&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isInitial { get; set; }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.domain", HelpMessage = @"The &quot;isRoot&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;isRoot&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isRoot { get; set; }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.domain", HelpMessage = @"The &quot;isVerified&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;isVerified&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isVerified { get; set; }
 
         /// <summary>
@@ -82,7 +82,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.domain", HelpMessage = @"The &quot;supportedServices&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;supportedServices&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] supportedServices { get; set; }
 
         /// <summary>
@@ -91,37 +91,37 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.domainState")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.domain", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.domainState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.domainState&quot;.")]
         public System.Object state { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;serviceConfigurationRecords&quot; property, of type &quot;microsoft.graph.domainDnsRecord&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.domain&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.domainDnsRecord")]
+        [ODataType("microsoft.graph.domainDnsRecord", "microsoft.graph.domainDnsUnavailableRecord", "microsoft.graph.domainDnsTxtRecord", "microsoft.graph.domainDnsSrvRecord", "microsoft.graph.domainDnsMxRecord", "microsoft.graph.domainDnsCnameRecord")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.domain", HelpMessage = @"The &quot;serviceConfigurationRecords&quot; property, of type &quot;microsoft.graph.domainDnsRecord&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;serviceConfigurationRecords&quot; property, of type &quot;microsoft.graph.domainDnsRecord&quot;.")]
         public System.Object[] serviceConfigurationRecords { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;verificationDnsRecords&quot; property, of type &quot;microsoft.graph.domainDnsRecord&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.domain&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.domainDnsRecord")]
+        [ODataType("microsoft.graph.domainDnsRecord", "microsoft.graph.domainDnsUnavailableRecord", "microsoft.graph.domainDnsTxtRecord", "microsoft.graph.domainDnsSrvRecord", "microsoft.graph.domainDnsMxRecord", "microsoft.graph.domainDnsCnameRecord")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.domain", HelpMessage = @"The &quot;verificationDnsRecords&quot; property, of type &quot;microsoft.graph.domainDnsRecord&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;verificationDnsRecords&quot; property, of type &quot;microsoft.graph.domainDnsRecord&quot;.")]
         public System.Object[] verificationDnsRecords { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;domainNameReferences&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.domain&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.domain", HelpMessage = @"The &quot;domainNameReferences&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;domainNameReferences&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         public System.Object[] domainNameReferences { get; set; }
     }
 }

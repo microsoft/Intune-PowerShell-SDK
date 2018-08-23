@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.plannerAssignedToTaskBoardTaskFormat&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.plannerAssignedToTaskBoardTaskFormat&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "PlannerAssignedToTaskBoardTaskFormatObject", DefaultParameterSetName = @"#microsoft.graph.plannerAssignedToTaskBoardTaskFormat")]
+    [Cmdlet("New", "PlannerAssignedToTaskBoardTaskFormatObject", DefaultParameterSetName = @"microsoft.graph.plannerAssignedToTaskBoardTaskFormat")]
     [ODataType("microsoft.graph.plannerAssignedToTaskBoardTaskFormat")]
     public class New_PlannerAssignedToTaskBoardTaskFormatObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.plannerAssignedToTaskBoardTaskFormat", HelpMessage = @"The &quot;unassignedOrderHint&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerAssignedToTaskBoardTaskFormat", HelpMessage = @"The &quot;unassignedOrderHint&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String unassignedOrderHint { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.plannerOrderHintsByAssignee")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.plannerAssignedToTaskBoardTaskFormat", HelpMessage = @"The &quot;orderHintsByAssignee&quot; property, of type &quot;microsoft.graph.plannerOrderHintsByAssignee&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerAssignedToTaskBoardTaskFormat", HelpMessage = @"The &quot;orderHintsByAssignee&quot; property, of type &quot;microsoft.graph.plannerOrderHintsByAssignee&quot;.")]
         public System.Object orderHintsByAssignee { get; set; }
     }
 }

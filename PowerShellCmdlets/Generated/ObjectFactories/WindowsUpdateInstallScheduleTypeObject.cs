@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.windowsUpdateInstallScheduleType&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.windowsUpdateInstallScheduleType&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WindowsUpdateInstallScheduleTypeObject", DefaultParameterSetName = @"#microsoft.graph.windowsUpdateInstallScheduleType")]
+    [Cmdlet("New", "WindowsUpdateInstallScheduleTypeObject", DefaultParameterSetName = @"microsoft.graph.windowsUpdateInstallScheduleType")]
     [ODataType("microsoft.graph.windowsUpdateInstallScheduleType")]
     public class New_WindowsUpdateInstallScheduleTypeObject : ObjectFactoryCmdletBase
     {
@@ -16,8 +16,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateActiveHoursInstall&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.windowsUpdateActiveHoursInstall")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateActiveHoursInstall", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateActiveHoursInstall&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.windowsUpdateActiveHoursInstall")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateActiveHoursInstall", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateActiveHoursInstall&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsUpdateActiveHoursInstall { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateActiveHoursInstall", HelpMessage = @"The &quot;activeHoursStart&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateActiveHoursInstall", HelpMessage = @"The &quot;activeHoursStart&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
         public System.TimeSpan activeHoursStart { get; set; }
 
         /// <summary>
@@ -37,15 +37,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateActiveHoursInstall", HelpMessage = @"The &quot;activeHoursEnd&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateActiveHoursInstall", HelpMessage = @"The &quot;activeHoursEnd&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
         public System.TimeSpan activeHoursEnd { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateScheduledInstall&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.windowsUpdateScheduledInstall")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateScheduledInstall", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateScheduledInstall&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.windowsUpdateScheduledInstall")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateScheduledInstall", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateScheduledInstall&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsUpdateScheduledInstall { get; set; }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.weeklySchedule")]
         [Selectable]
         [ValidateSet(@"userDefined", @"everyday", @"sunday", @"monday", @"tuesday", @"wednesday", @"thursday", @"friday", @"saturday")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateScheduledInstall", HelpMessage = @"The &quot;scheduledInstallDay&quot; property, of type &quot;microsoft.graph.weeklySchedule&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateScheduledInstall", HelpMessage = @"The &quot;scheduledInstallDay&quot; property, of type &quot;microsoft.graph.weeklySchedule&quot;.")]
         public System.String scheduledInstallDay { get; set; }
 
         /// <summary>
@@ -69,7 +69,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsUpdateScheduledInstall", HelpMessage = @"The &quot;scheduledInstallTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateScheduledInstall", HelpMessage = @"The &quot;scheduledInstallTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
         public System.TimeSpan scheduledInstallTime { get; set; }
     }
 }

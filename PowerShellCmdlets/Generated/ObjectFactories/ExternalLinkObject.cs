@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.externalLink&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.externalLink&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ExternalLinkObject", DefaultParameterSetName = @"#microsoft.graph.externalLink")]
+    [Cmdlet("New", "ExternalLinkObject", DefaultParameterSetName = @"microsoft.graph.externalLink")]
     [ODataType("microsoft.graph.externalLink")]
     public class New_ExternalLinkObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.externalLink", HelpMessage = @"The &quot;href&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.externalLink", HelpMessage = @"The &quot;href&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String href { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.extension&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.extension&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ExtensionObject", DefaultParameterSetName = @"#microsoft.graph.extension")]
+    [Cmdlet("New", "ExtensionObject", DefaultParameterSetName = @"microsoft.graph.extension")]
     [ODataType("microsoft.graph.extension")]
     public class New_ExtensionObject : ObjectFactoryCmdletBase
     {
@@ -16,8 +16,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.openTypeExtension&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.openTypeExtension")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.openTypeExtension", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.openTypeExtension&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.openTypeExtension")]
+        [Parameter(ParameterSetName = @"microsoft.graph.openTypeExtension", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.openTypeExtension&quot; type.")]
         public System.Management.Automation.SwitchParameter openTypeExtension { get; set; }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.openTypeExtension", HelpMessage = @"The &quot;extensionName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.openTypeExtension", HelpMessage = @"The &quot;extensionName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String extensionName { get; set; }
     }
 }

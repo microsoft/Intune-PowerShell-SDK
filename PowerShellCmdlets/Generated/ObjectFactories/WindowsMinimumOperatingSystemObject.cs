@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.windowsMinimumOperatingSystem&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.windowsMinimumOperatingSystem&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WindowsMinimumOperatingSystemObject", DefaultParameterSetName = @"#microsoft.graph.windowsMinimumOperatingSystem")]
+    [Cmdlet("New", "WindowsMinimumOperatingSystemObject", DefaultParameterSetName = @"microsoft.graph.windowsMinimumOperatingSystem")]
     [ODataType("microsoft.graph.windowsMinimumOperatingSystem")]
     public class New_WindowsMinimumOperatingSystemObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMinimumOperatingSystem", HelpMessage = @"The &quot;v8_0&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMinimumOperatingSystem", HelpMessage = @"The &quot;v8_0&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean v8_0 { get; set; }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMinimumOperatingSystem", HelpMessage = @"The &quot;v8_1&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMinimumOperatingSystem", HelpMessage = @"The &quot;v8_1&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean v8_1 { get; set; }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsMinimumOperatingSystem", HelpMessage = @"The &quot;v10_0&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMinimumOperatingSystem", HelpMessage = @"The &quot;v10_0&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean v10_0 { get; set; }
     }
 }

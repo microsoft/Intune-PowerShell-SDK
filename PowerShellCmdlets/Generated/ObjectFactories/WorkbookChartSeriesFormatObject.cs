@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookChartSeriesFormat&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookChartSeriesFormat&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookChartSeriesFormatObject", DefaultParameterSetName = @"#microsoft.graph.workbookChartSeriesFormat")]
+    [Cmdlet("New", "WorkbookChartSeriesFormatObject", DefaultParameterSetName = @"microsoft.graph.workbookChartSeriesFormat")]
     [ODataType("microsoft.graph.workbookChartSeriesFormat")]
     public class New_WorkbookChartSeriesFormatObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartFill")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartSeriesFormat", HelpMessage = @"The &quot;fill&quot; property, of type &quot;microsoft.graph.workbookChartFill&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartSeriesFormat", HelpMessage = @"The &quot;fill&quot; property, of type &quot;microsoft.graph.workbookChartFill&quot;.")]
         public System.Object fill { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartLineFormat")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartSeriesFormat", HelpMessage = @"The &quot;line&quot; property, of type &quot;microsoft.graph.workbookChartLineFormat&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartSeriesFormat", HelpMessage = @"The &quot;line&quot; property, of type &quot;microsoft.graph.workbookChartLineFormat&quot;.")]
         public System.Object line { get; set; }
     }
 }

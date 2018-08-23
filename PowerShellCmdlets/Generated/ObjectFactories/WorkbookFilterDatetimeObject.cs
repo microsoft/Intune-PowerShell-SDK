@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookFilterDatetime&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookFilterDatetime&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookFilterDatetimeObject", DefaultParameterSetName = @"#microsoft.graph.workbookFilterDatetime")]
+    [Cmdlet("New", "WorkbookFilterDatetimeObject", DefaultParameterSetName = @"microsoft.graph.workbookFilterDatetime")]
     [ODataType("microsoft.graph.workbookFilterDatetime")]
     public class New_WorkbookFilterDatetimeObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookFilterDatetime", HelpMessage = @"The &quot;date&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookFilterDatetime", HelpMessage = @"The &quot;date&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String date { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookFilterDatetime", HelpMessage = @"The &quot;specificity&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookFilterDatetime", HelpMessage = @"The &quot;specificity&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String specificity { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.imageInfo&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.imageInfo&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ImageInfoObject", DefaultParameterSetName = @"#microsoft.graph.imageInfo")]
+    [Cmdlet("New", "ImageInfoObject", DefaultParameterSetName = @"microsoft.graph.imageInfo")]
     [ODataType("microsoft.graph.imageInfo")]
     public class New_ImageInfoObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.imageInfo", HelpMessage = @"The &quot;iconUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.imageInfo", HelpMessage = @"The &quot;iconUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String iconUrl { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.imageInfo", HelpMessage = @"The &quot;alternativeText&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.imageInfo", HelpMessage = @"The &quot;alternativeText&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String alternativeText { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.imageInfo", HelpMessage = @"The &quot;alternateText&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.imageInfo", HelpMessage = @"The &quot;alternateText&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String alternateText { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.imageInfo", HelpMessage = @"The &quot;addImageQuery&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.imageInfo", HelpMessage = @"The &quot;addImageQuery&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean addImageQuery { get; set; }
     }
 }

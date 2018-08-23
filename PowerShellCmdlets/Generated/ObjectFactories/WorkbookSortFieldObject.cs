@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookSortField&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookSortField&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookSortFieldObject", DefaultParameterSetName = @"#microsoft.graph.workbookSortField")]
+    [Cmdlet("New", "WorkbookSortFieldObject", DefaultParameterSetName = @"microsoft.graph.workbookSortField")]
     [ODataType("microsoft.graph.workbookSortField")]
     public class New_WorkbookSortFieldObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookSortField", HelpMessage = @"The &quot;ascending&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookSortField", HelpMessage = @"The &quot;ascending&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean ascending { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookSortField", HelpMessage = @"The &quot;color&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookSortField", HelpMessage = @"The &quot;color&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String color { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookSortField", HelpMessage = @"The &quot;dataOption&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookSortField", HelpMessage = @"The &quot;dataOption&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String dataOption { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookIcon")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookSortField", HelpMessage = @"The &quot;icon&quot; property, of type &quot;microsoft.graph.workbookIcon&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookSortField", HelpMessage = @"The &quot;icon&quot; property, of type &quot;microsoft.graph.workbookIcon&quot;.")]
         public System.Object icon { get; set; }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookSortField", HelpMessage = @"The &quot;key&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookSortField", HelpMessage = @"The &quot;key&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 key { get; set; }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookSortField", HelpMessage = @"The &quot;sortOn&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookSortField", HelpMessage = @"The &quot;sortOn&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String sortOn { get; set; }
     }
 }

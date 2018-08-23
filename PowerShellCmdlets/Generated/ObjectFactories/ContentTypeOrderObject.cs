@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.contentTypeOrder&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.contentTypeOrder&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ContentTypeOrderObject", DefaultParameterSetName = @"#microsoft.graph.contentTypeOrder")]
+    [Cmdlet("New", "ContentTypeOrderObject", DefaultParameterSetName = @"microsoft.graph.contentTypeOrder")]
     [ODataType("microsoft.graph.contentTypeOrder")]
     public class New_ContentTypeOrderObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.contentTypeOrder", HelpMessage = @"The &quot;default&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contentTypeOrder", HelpMessage = @"The &quot;default&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean @default { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.contentTypeOrder", HelpMessage = @"The &quot;position&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contentTypeOrder", HelpMessage = @"The &quot;position&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 position { get; set; }
     }
 }

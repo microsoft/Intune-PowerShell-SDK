@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.standardTimeZoneOffset&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.standardTimeZoneOffset&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "StandardTimeZoneOffsetObject", DefaultParameterSetName = @"#microsoft.graph.standardTimeZoneOffset")]
+    [Cmdlet("New", "StandardTimeZoneOffsetObject", DefaultParameterSetName = @"microsoft.graph.standardTimeZoneOffset")]
     [ODataType("microsoft.graph.standardTimeZoneOffset")]
     public class New_StandardTimeZoneOffsetObject : ObjectFactoryCmdletBase
     {
@@ -16,8 +16,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.standardTimeZoneOffset&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.standardTimeZoneOffset")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.standardTimeZoneOffset", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.standardTimeZoneOffset&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.standardTimeZoneOffset")]
+        [Parameter(ParameterSetName = @"microsoft.graph.standardTimeZoneOffset", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.standardTimeZoneOffset&quot; type.")]
         public System.Management.Automation.SwitchParameter standardTimeZoneOffset { get; set; }
 
         /// <summary>
@@ -26,8 +26,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.standardTimeZoneOffset", HelpMessage = @"The &quot;time&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.daylightTimeZoneOffset", HelpMessage = @"The &quot;time&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.standardTimeZoneOffset", HelpMessage = @"The &quot;time&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.daylightTimeZoneOffset", HelpMessage = @"The &quot;time&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
         public System.TimeSpan time { get; set; }
 
         /// <summary>
@@ -36,8 +36,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.standardTimeZoneOffset", HelpMessage = @"The &quot;dayOccurrence&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.daylightTimeZoneOffset", HelpMessage = @"The &quot;dayOccurrence&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.standardTimeZoneOffset", HelpMessage = @"The &quot;dayOccurrence&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.daylightTimeZoneOffset", HelpMessage = @"The &quot;dayOccurrence&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 dayOccurrence { get; set; }
 
         /// <summary>
@@ -50,8 +50,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.dayOfWeek")]
         [Selectable]
         [ValidateSet(@"sunday", @"monday", @"tuesday", @"wednesday", @"thursday", @"friday", @"saturday")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.standardTimeZoneOffset", HelpMessage = @"The &quot;dayOfWeek&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.daylightTimeZoneOffset", HelpMessage = @"The &quot;dayOfWeek&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.standardTimeZoneOffset", HelpMessage = @"The &quot;dayOfWeek&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.daylightTimeZoneOffset", HelpMessage = @"The &quot;dayOfWeek&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.")]
         public System.String dayOfWeek { get; set; }
 
         /// <summary>
@@ -60,8 +60,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.standardTimeZoneOffset", HelpMessage = @"The &quot;month&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.daylightTimeZoneOffset", HelpMessage = @"The &quot;month&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.standardTimeZoneOffset", HelpMessage = @"The &quot;month&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.daylightTimeZoneOffset", HelpMessage = @"The &quot;month&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 month { get; set; }
 
         /// <summary>
@@ -70,16 +70,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.standardTimeZoneOffset", HelpMessage = @"The &quot;year&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.daylightTimeZoneOffset", HelpMessage = @"The &quot;year&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.standardTimeZoneOffset", HelpMessage = @"The &quot;year&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.daylightTimeZoneOffset", HelpMessage = @"The &quot;year&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 year { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.daylightTimeZoneOffset&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.daylightTimeZoneOffset")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.daylightTimeZoneOffset", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.daylightTimeZoneOffset&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.daylightTimeZoneOffset")]
+        [Parameter(ParameterSetName = @"microsoft.graph.daylightTimeZoneOffset", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.daylightTimeZoneOffset&quot; type.")]
         public System.Management.Automation.SwitchParameter daylightTimeZoneOffset { get; set; }
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.daylightTimeZoneOffset", HelpMessage = @"The &quot;daylightBias&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.daylightTimeZoneOffset", HelpMessage = @"The &quot;daylightBias&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 daylightBias { get; set; }
     }
 }

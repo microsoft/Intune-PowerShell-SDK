@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.diagnostic&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.diagnostic&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "DiagnosticObject", DefaultParameterSetName = @"#microsoft.graph.diagnostic")]
+    [Cmdlet("New", "DiagnosticObject", DefaultParameterSetName = @"microsoft.graph.diagnostic")]
     [ODataType("microsoft.graph.diagnostic")]
     public class New_DiagnosticObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.diagnostic", HelpMessage = @"The &quot;message&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.diagnostic", HelpMessage = @"The &quot;message&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String message { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.diagnostic", HelpMessage = @"The &quot;url&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.diagnostic", HelpMessage = @"The &quot;url&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String url { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.defaultColumnValue&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.defaultColumnValue&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "DefaultColumnValueObject", DefaultParameterSetName = @"#microsoft.graph.defaultColumnValue")]
+    [Cmdlet("New", "DefaultColumnValueObject", DefaultParameterSetName = @"microsoft.graph.defaultColumnValue")]
     [ODataType("microsoft.graph.defaultColumnValue")]
     public class New_DefaultColumnValueObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.defaultColumnValue", HelpMessage = @"The &quot;formula&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.defaultColumnValue", HelpMessage = @"The &quot;formula&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String formula { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.defaultColumnValue", HelpMessage = @"The &quot;value&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.defaultColumnValue", HelpMessage = @"The &quot;value&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String value { get; set; }
     }
 }

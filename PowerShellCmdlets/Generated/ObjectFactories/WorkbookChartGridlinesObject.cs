@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookChartGridlines&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookChartGridlines&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookChartGridlinesObject", DefaultParameterSetName = @"#microsoft.graph.workbookChartGridlines")]
+    [Cmdlet("New", "WorkbookChartGridlinesObject", DefaultParameterSetName = @"microsoft.graph.workbookChartGridlines")]
     [ODataType("microsoft.graph.workbookChartGridlines")]
     public class New_WorkbookChartGridlinesObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartGridlines", HelpMessage = @"The &quot;visible&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartGridlines", HelpMessage = @"The &quot;visible&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean visible { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartGridlinesFormat")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartGridlines", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartGridlinesFormat&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartGridlines", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartGridlinesFormat&quot;.")]
         public System.Object format { get; set; }
     }
 }

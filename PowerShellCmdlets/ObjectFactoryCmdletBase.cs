@@ -49,7 +49,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                     {
                         // Throw an error if we found more than 1 type selector property provided by the user (the PowerShell runtime should never allow this to happen)
                         IEnumerable<PropertyInfo> oDataTypeProperties = boundProperties.Where(prop => IsODataTypeSelectorSwitch(prop, out string temp));
-                        throw new PSArgumentException($"Only one type selector switch may be applied at a time.  The following switch parameters were applied: {string.Join(", ", oDataTypeProperties.Select(type => $"\"type\""))}");
+                        throw new PSArgumentException($"Only one type selector switch may be applied at a time.  The following type selector switch parameters were applied: {string.Join(", ", oDataTypeProperties.Select(type => $"\"type\""))}");
                     }
                     else
                     {
@@ -67,7 +67,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             // If there is no "@odata.type" property, add one based on the ODataType attribute applied to this class
             if (!resultProperties.ContainsKey(ODataConstants.RequestProperties.ODataType))
             {
-                string selectedODataType = this.GetType().GetCustomAttribute<ODataTypeAttribute>()?.FullName;
+                string selectedODataType = this.GetType().GetCustomAttribute<ODataTypeAttribute>()?.TypeFullName;
                 if (selectedODataType != null)
                 {
                     resultProperties.Add(ODataConstants.RequestProperties.ODataType, "#" + selectedODataType);

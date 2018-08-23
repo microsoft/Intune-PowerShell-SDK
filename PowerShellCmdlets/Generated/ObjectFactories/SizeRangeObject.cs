@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.sizeRange&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.sizeRange&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "SizeRangeObject", DefaultParameterSetName = @"#microsoft.graph.sizeRange")]
+    [Cmdlet("New", "SizeRangeObject", DefaultParameterSetName = @"microsoft.graph.sizeRange")]
     [ODataType("microsoft.graph.sizeRange")]
     public class New_SizeRangeObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.sizeRange", HelpMessage = @"The &quot;minimumSize&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.sizeRange", HelpMessage = @"The &quot;minimumSize&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 minimumSize { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.sizeRange", HelpMessage = @"The &quot;maximumSize&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.sizeRange", HelpMessage = @"The &quot;maximumSize&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 maximumSize { get; set; }
     }
 }

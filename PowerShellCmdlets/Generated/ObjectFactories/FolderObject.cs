@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.folder&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.folder&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "FolderObject", DefaultParameterSetName = @"#microsoft.graph.folder")]
+    [Cmdlet("New", "FolderObject", DefaultParameterSetName = @"microsoft.graph.folder")]
     [ODataType("microsoft.graph.folder")]
     public class New_FolderObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.folder", HelpMessage = @"The &quot;childCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.folder", HelpMessage = @"The &quot;childCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 childCount { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.folderView")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.folder", HelpMessage = @"The &quot;view&quot; property, of type &quot;microsoft.graph.folderView&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.folder", HelpMessage = @"The &quot;view&quot; property, of type &quot;microsoft.graph.folderView&quot;.")]
         public System.Object view { get; set; }
     }
 }

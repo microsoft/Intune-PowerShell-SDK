@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.scoredEmailAddress&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.scoredEmailAddress&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ScoredEmailAddressObject", DefaultParameterSetName = @"#microsoft.graph.scoredEmailAddress")]
+    [Cmdlet("New", "ScoredEmailAddressObject", DefaultParameterSetName = @"microsoft.graph.scoredEmailAddress")]
     [ODataType("microsoft.graph.scoredEmailAddress")]
     public class New_ScoredEmailAddressObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.scoredEmailAddress", HelpMessage = @"The &quot;address&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.scoredEmailAddress", HelpMessage = @"The &quot;address&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String address { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Double")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.scoredEmailAddress", HelpMessage = @"The &quot;relevanceScore&quot; property, of type &quot;Edm.Double&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.scoredEmailAddress", HelpMessage = @"The &quot;relevanceScore&quot; property, of type &quot;Edm.Double&quot;.")]
         public System.Double relevanceScore { get; set; }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.selectionLikelihoodInfo")]
         [Selectable]
         [ValidateSet(@"notSpecified", @"high")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.scoredEmailAddress", HelpMessage = @"The &quot;selectionLikelihood&quot; property, of type &quot;microsoft.graph.selectionLikelihoodInfo&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.scoredEmailAddress", HelpMessage = @"The &quot;selectionLikelihood&quot; property, of type &quot;microsoft.graph.selectionLikelihoodInfo&quot;.")]
         public System.String selectionLikelihood { get; set; }
     }
 }

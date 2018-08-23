@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookChartSeries&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookChartSeries&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookChartSeriesObject", DefaultParameterSetName = @"#microsoft.graph.workbookChartSeries")]
+    [Cmdlet("New", "WorkbookChartSeriesObject", DefaultParameterSetName = @"microsoft.graph.workbookChartSeries")]
     [ODataType("microsoft.graph.workbookChartSeries")]
     public class New_WorkbookChartSeriesObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartSeries", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartSeries", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String name { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartSeriesFormat")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartSeries", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartSeriesFormat&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartSeries", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartSeriesFormat&quot;.")]
         public System.Object format { get; set; }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookChartPoint")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartSeries", HelpMessage = @"The &quot;points&quot; property, of type &quot;microsoft.graph.workbookChartPoint&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartSeries", HelpMessage = @"The &quot;points&quot; property, of type &quot;microsoft.graph.workbookChartPoint&quot;.")]
         public System.Object[] points { get; set; }
     }
 }

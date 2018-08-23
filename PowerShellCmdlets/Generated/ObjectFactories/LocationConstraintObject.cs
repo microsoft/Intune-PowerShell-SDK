@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.locationConstraint&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.locationConstraint&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "LocationConstraintObject", DefaultParameterSetName = @"#microsoft.graph.locationConstraint")]
+    [Cmdlet("New", "LocationConstraintObject", DefaultParameterSetName = @"microsoft.graph.locationConstraint")]
     [ODataType("microsoft.graph.locationConstraint")]
     public class New_LocationConstraintObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locationConstraint", HelpMessage = @"The &quot;isRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locationConstraint", HelpMessage = @"The &quot;isRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isRequired { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locationConstraint", HelpMessage = @"The &quot;suggestLocation&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locationConstraint", HelpMessage = @"The &quot;suggestLocation&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean suggestLocation { get; set; }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.locationConstraintItem")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.locationConstraint", HelpMessage = @"The &quot;locations&quot; property, of type &quot;microsoft.graph.locationConstraintItem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.locationConstraint", HelpMessage = @"The &quot;locations&quot; property, of type &quot;microsoft.graph.locationConstraintItem&quot;.")]
         public System.Object[] locations { get; set; }
     }
 }

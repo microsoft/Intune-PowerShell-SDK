@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.contentType&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.contentType&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ContentTypeObject", DefaultParameterSetName = @"#microsoft.graph.contentType")]
+    [Cmdlet("New", "ContentTypeObject", DefaultParameterSetName = @"microsoft.graph.contentType")]
     [ODataType("microsoft.graph.contentType")]
     public class New_ContentTypeObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.contentType", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String description { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.contentType", HelpMessage = @"The &quot;group&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;group&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String group { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.contentType", HelpMessage = @"The &quot;hidden&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;hidden&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean hidden { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.itemReference")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.contentType", HelpMessage = @"The &quot;inheritedFrom&quot; property, of type &quot;microsoft.graph.itemReference&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;inheritedFrom&quot; property, of type &quot;microsoft.graph.itemReference&quot;.")]
         public System.Object inheritedFrom { get; set; }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.contentType", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String name { get; set; }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.contentTypeOrder")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.contentType", HelpMessage = @"The &quot;order&quot; property, of type &quot;microsoft.graph.contentTypeOrder&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;order&quot; property, of type &quot;microsoft.graph.contentTypeOrder&quot;.")]
         public System.Object order { get; set; }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.contentType", HelpMessage = @"The &quot;parentId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;parentId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String parentId { get; set; }
 
         /// <summary>
@@ -81,7 +81,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.contentType", HelpMessage = @"The &quot;readOnly&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;readOnly&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean readOnly { get; set; }
 
         /// <summary>
@@ -90,7 +90,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.contentType", HelpMessage = @"The &quot;sealed&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;sealed&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean @sealed { get; set; }
 
         /// <summary>
@@ -100,7 +100,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.columnLink")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.contentType", HelpMessage = @"The &quot;columnLinks&quot; property, of type &quot;microsoft.graph.columnLink&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;columnLinks&quot; property, of type &quot;microsoft.graph.columnLink&quot;.")]
         public System.Object[] columnLinks { get; set; }
     }
 }

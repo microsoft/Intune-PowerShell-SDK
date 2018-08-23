@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.mediaContentRatingIreland&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.mediaContentRatingIreland&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "MediaContentRatingIrelandObject", DefaultParameterSetName = @"#microsoft.graph.mediaContentRatingIreland")]
+    [Cmdlet("New", "MediaContentRatingIrelandObject", DefaultParameterSetName = @"microsoft.graph.mediaContentRatingIreland")]
     [ODataType("microsoft.graph.mediaContentRatingIreland")]
     public class New_MediaContentRatingIrelandObject : ObjectFactoryCmdletBase
     {
@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.ratingIrelandMoviesType")]
         [Selectable]
         [ValidateSet(@"allAllowed", @"allBlocked", @"general", @"parentalGuidance", @"agesAbove12", @"agesAbove15", @"agesAbove16", @"adults")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mediaContentRatingIreland", HelpMessage = @"The &quot;movieRating&quot; property, of type &quot;microsoft.graph.ratingIrelandMoviesType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mediaContentRatingIreland", HelpMessage = @"The &quot;movieRating&quot; property, of type &quot;microsoft.graph.ratingIrelandMoviesType&quot;.")]
         public System.String movieRating { get; set; }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.ratingIrelandTelevisionType")]
         [Selectable]
         [ValidateSet(@"allAllowed", @"allBlocked", @"general", @"children", @"youngAdults", @"parentalSupervision", @"mature")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mediaContentRatingIreland", HelpMessage = @"The &quot;tvRating&quot; property, of type &quot;microsoft.graph.ratingIrelandTelevisionType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mediaContentRatingIreland", HelpMessage = @"The &quot;tvRating&quot; property, of type &quot;microsoft.graph.ratingIrelandTelevisionType&quot;.")]
         public System.String tvRating { get; set; }
     }
 }

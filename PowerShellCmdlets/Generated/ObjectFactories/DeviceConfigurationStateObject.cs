@@ -9,7 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceConfigurationState&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Device Configuration State for a given device.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceConfigurationStateObject", DefaultParameterSetName = @"#microsoft.graph.deviceConfigurationState")]
+    [Cmdlet("New", "DeviceConfigurationStateObject", DefaultParameterSetName = @"microsoft.graph.deviceConfigurationState")]
     [ODataType("microsoft.graph.deviceConfigurationState")]
     public class New_DeviceConfigurationStateObject : ObjectFactoryCmdletBase
     {
@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceConfigurationSettingState")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceConfigurationState", HelpMessage = @"The &quot;settingStates&quot; property, of type &quot;microsoft.graph.deviceConfigurationSettingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationState", HelpMessage = @"The &quot;settingStates&quot; property, of type &quot;microsoft.graph.deviceConfigurationSettingState&quot;.")]
         public System.Object[] settingStates { get; set; }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceConfigurationState", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationState", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceConfigurationState", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationState", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 version { get; set; }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.policyPlatformType")]
         [Selectable]
         [ValidateSet(@"android", @"iOS", @"macOS", @"windowsPhone81", @"windows81AndLater", @"windows10AndLater", @"androidWorkProfile", @"all")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceConfigurationState", HelpMessage = @"The &quot;platformType&quot; property, of type &quot;microsoft.graph.policyPlatformType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationState", HelpMessage = @"The &quot;platformType&quot; property, of type &quot;microsoft.graph.policyPlatformType&quot;.")]
         public System.String platformType { get; set; }
 
         /// <summary>
@@ -68,7 +68,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.complianceStatus")]
         [Selectable]
         [ValidateSet(@"unknown", @"notApplicable", @"compliant", @"remediated", @"nonCompliant", @"error", @"conflict")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceConfigurationState", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationState", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.")]
         public System.String state { get; set; }
 
         /// <summary>
@@ -78,7 +78,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceConfigurationState", HelpMessage = @"The &quot;settingCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationState", HelpMessage = @"The &quot;settingCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 settingCount { get; set; }
     }
 }

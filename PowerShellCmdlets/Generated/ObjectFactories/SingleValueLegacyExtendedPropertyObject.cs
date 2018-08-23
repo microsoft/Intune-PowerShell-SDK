@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "SingleValueLegacyExtendedPropertyObject", DefaultParameterSetName = @"#microsoft.graph.singleValueLegacyExtendedProperty")]
+    [Cmdlet("New", "SingleValueLegacyExtendedPropertyObject", DefaultParameterSetName = @"microsoft.graph.singleValueLegacyExtendedProperty")]
     [ODataType("microsoft.graph.singleValueLegacyExtendedProperty")]
     public class New_SingleValueLegacyExtendedPropertyObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.singleValueLegacyExtendedProperty", HelpMessage = @"The &quot;value&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.singleValueLegacyExtendedProperty", HelpMessage = @"The &quot;value&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String value { get; set; }
     }
 }

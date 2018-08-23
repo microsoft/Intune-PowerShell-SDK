@@ -3,6 +3,7 @@
 namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 {
     using System.Collections.Generic;
+    using System.Management.Automation;
     using System.Net.Http;
     using System.Net.Http.Headers;
     using Newtonsoft.Json.Linq;
@@ -135,7 +136,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// The parameters that are added at runtime.
         /// </summary>
         /// <returns>A <see cref="System.Management.Automation.RuntimeDefinedParameterDictionary"/>.</returns>
-        public object GetDynamicParameters()
+        object IDynamicParameters.GetDynamicParameters()
         {
             return this.DynamicParameters;
         }

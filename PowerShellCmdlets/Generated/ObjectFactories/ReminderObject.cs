@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.reminder&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.reminder&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ReminderObject", DefaultParameterSetName = @"#microsoft.graph.reminder")]
+    [Cmdlet("New", "ReminderObject", DefaultParameterSetName = @"microsoft.graph.reminder")]
     [ODataType("microsoft.graph.reminder")]
     public class New_ReminderObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.reminder", HelpMessage = @"The &quot;eventId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.reminder", HelpMessage = @"The &quot;eventId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String eventId { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.dateTimeTimeZone")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.reminder", HelpMessage = @"The &quot;eventStartTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.reminder", HelpMessage = @"The &quot;eventStartTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
         public System.Object eventStartTime { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.dateTimeTimeZone")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.reminder", HelpMessage = @"The &quot;eventEndTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.reminder", HelpMessage = @"The &quot;eventEndTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
         public System.Object eventEndTime { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.reminder", HelpMessage = @"The &quot;changeKey&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.reminder", HelpMessage = @"The &quot;changeKey&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String changeKey { get; set; }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.reminder", HelpMessage = @"The &quot;eventSubject&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.reminder", HelpMessage = @"The &quot;eventSubject&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String eventSubject { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;eventLocation&quot; property, of type &quot;microsoft.graph.location&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.reminder&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.location")]
+        [ODataType("microsoft.graph.location", "microsoft.graph.locationConstraintItem")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.reminder", HelpMessage = @"The &quot;eventLocation&quot; property, of type &quot;microsoft.graph.location&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.reminder", HelpMessage = @"The &quot;eventLocation&quot; property, of type &quot;microsoft.graph.location&quot;.")]
         public System.Object eventLocation { get; set; }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.reminder", HelpMessage = @"The &quot;eventWebLink&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.reminder", HelpMessage = @"The &quot;eventWebLink&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String eventWebLink { get; set; }
 
         /// <summary>
@@ -81,7 +81,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.dateTimeTimeZone")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.reminder", HelpMessage = @"The &quot;reminderFireTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.reminder", HelpMessage = @"The &quot;reminderFireTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
         public System.Object reminderFireTime { get; set; }
     }
 }

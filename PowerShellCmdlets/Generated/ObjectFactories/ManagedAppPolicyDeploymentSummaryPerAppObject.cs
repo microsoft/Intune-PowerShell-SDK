@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.managedAppPolicyDeploymentSummaryPerApp&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.managedAppPolicyDeploymentSummaryPerApp&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ManagedAppPolicyDeploymentSummaryPerAppObject", DefaultParameterSetName = @"#microsoft.graph.managedAppPolicyDeploymentSummaryPerApp")]
+    [Cmdlet("New", "ManagedAppPolicyDeploymentSummaryPerAppObject", DefaultParameterSetName = @"microsoft.graph.managedAppPolicyDeploymentSummaryPerApp")]
     [ODataType("microsoft.graph.managedAppPolicyDeploymentSummaryPerApp")]
     public class New_ManagedAppPolicyDeploymentSummaryPerAppObject : ObjectFactoryCmdletBase
     {
@@ -17,9 +17,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.managedAppPolicyDeploymentSummaryPerApp&quot; type.</para>
         ///     <para type="description">Deployment of an app.</para>
         /// </summary>
-        [ODataType("microsoft.graph.mobileAppIdentifier")]
+        [ODataType("microsoft.graph.mobileAppIdentifier", "microsoft.graph.iosMobileAppIdentifier", "microsoft.graph.androidMobileAppIdentifier")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAppPolicyDeploymentSummaryPerApp", HelpMessage = @"The &quot;mobileAppIdentifier&quot; property, of type &quot;microsoft.graph.mobileAppIdentifier&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppPolicyDeploymentSummaryPerApp", HelpMessage = @"The &quot;mobileAppIdentifier&quot; property, of type &quot;microsoft.graph.mobileAppIdentifier&quot;.")]
         public System.Object mobileAppIdentifier { get; set; }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.managedAppPolicyDeploymentSummaryPerApp", HelpMessage = @"The &quot;configurationAppliedUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppPolicyDeploymentSummaryPerApp", HelpMessage = @"The &quot;configurationAppliedUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 configurationAppliedUserCount { get; set; }
     }
 }

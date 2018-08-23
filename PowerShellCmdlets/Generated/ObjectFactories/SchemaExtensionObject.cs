@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.schemaExtension&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.schemaExtension&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "SchemaExtensionObject", DefaultParameterSetName = @"#microsoft.graph.schemaExtension")]
+    [Cmdlet("New", "SchemaExtensionObject", DefaultParameterSetName = @"microsoft.graph.schemaExtension")]
     [ODataType("microsoft.graph.schemaExtension")]
     public class New_SchemaExtensionObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.schemaExtension", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.schemaExtension", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String description { get; set; }
 
         /// <summary>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.schemaExtension", HelpMessage = @"The &quot;targetTypes&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.schemaExtension", HelpMessage = @"The &quot;targetTypes&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] targetTypes { get; set; }
 
         /// <summary>
@@ -38,7 +38,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.extensionSchemaProperty")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.schemaExtension", HelpMessage = @"The &quot;properties&quot; property, of type &quot;microsoft.graph.extensionSchemaProperty&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.schemaExtension", HelpMessage = @"The &quot;properties&quot; property, of type &quot;microsoft.graph.extensionSchemaProperty&quot;.")]
         public System.Object[] properties { get; set; }
 
         /// <summary>
@@ -47,7 +47,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.schemaExtension", HelpMessage = @"The &quot;status&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.schemaExtension", HelpMessage = @"The &quot;status&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String status { get; set; }
 
         /// <summary>
@@ -56,7 +56,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.schemaExtension", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.schemaExtension", HelpMessage = @"The &quot;owner&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String owner { get; set; }
     }
 }

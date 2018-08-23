@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookWorksheetProtection&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookWorksheetProtection&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookWorksheetProtectionObject", DefaultParameterSetName = @"#microsoft.graph.workbookWorksheetProtection")]
+    [Cmdlet("New", "WorkbookWorksheetProtectionObject", DefaultParameterSetName = @"microsoft.graph.workbookWorksheetProtection")]
     [ODataType("microsoft.graph.workbookWorksheetProtection")]
     public class New_WorkbookWorksheetProtectionObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookWorksheetProtectionOptions")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheetProtection", HelpMessage = @"The &quot;options&quot; property, of type &quot;microsoft.graph.workbookWorksheetProtectionOptions&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookWorksheetProtection", HelpMessage = @"The &quot;options&quot; property, of type &quot;microsoft.graph.workbookWorksheetProtectionOptions&quot;.")]
         public System.Object options { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookWorksheetProtection", HelpMessage = @"The &quot;protected&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookWorksheetProtection", HelpMessage = @"The &quot;protected&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean @protected { get; set; }
     }
 }

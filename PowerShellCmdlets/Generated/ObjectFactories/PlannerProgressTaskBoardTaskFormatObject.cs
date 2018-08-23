@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.plannerProgressTaskBoardTaskFormat&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.plannerProgressTaskBoardTaskFormat&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "PlannerProgressTaskBoardTaskFormatObject", DefaultParameterSetName = @"#microsoft.graph.plannerProgressTaskBoardTaskFormat")]
+    [Cmdlet("New", "PlannerProgressTaskBoardTaskFormatObject", DefaultParameterSetName = @"microsoft.graph.plannerProgressTaskBoardTaskFormat")]
     [ODataType("microsoft.graph.plannerProgressTaskBoardTaskFormat")]
     public class New_PlannerProgressTaskBoardTaskFormatObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.plannerProgressTaskBoardTaskFormat", HelpMessage = @"The &quot;orderHint&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerProgressTaskBoardTaskFormat", HelpMessage = @"The &quot;orderHint&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String orderHint { get; set; }
     }
 }

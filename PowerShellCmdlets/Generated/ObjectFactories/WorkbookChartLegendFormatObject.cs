@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookChartLegendFormat&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookChartLegendFormat&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookChartLegendFormatObject", DefaultParameterSetName = @"#microsoft.graph.workbookChartLegendFormat")]
+    [Cmdlet("New", "WorkbookChartLegendFormatObject", DefaultParameterSetName = @"microsoft.graph.workbookChartLegendFormat")]
     [ODataType("microsoft.graph.workbookChartLegendFormat")]
     public class New_WorkbookChartLegendFormatObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartFill")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartLegendFormat", HelpMessage = @"The &quot;fill&quot; property, of type &quot;microsoft.graph.workbookChartFill&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartLegendFormat", HelpMessage = @"The &quot;fill&quot; property, of type &quot;microsoft.graph.workbookChartFill&quot;.")]
         public System.Object fill { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartFont")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartLegendFormat", HelpMessage = @"The &quot;font&quot; property, of type &quot;microsoft.graph.workbookChartFont&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartLegendFormat", HelpMessage = @"The &quot;font&quot; property, of type &quot;microsoft.graph.workbookChartFont&quot;.")]
         public System.Object font { get; set; }
     }
 }

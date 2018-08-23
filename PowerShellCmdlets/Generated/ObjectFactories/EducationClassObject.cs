@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.educationClass&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.educationClass&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "EducationClassObject", DefaultParameterSetName = @"#microsoft.graph.educationClass")]
+    [Cmdlet("New", "EducationClassObject", DefaultParameterSetName = @"microsoft.graph.educationClass")]
     [ODataType("microsoft.graph.educationClass")]
     public class New_EducationClassObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationClass", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationClass", HelpMessage = @"The &quot;mailNickname&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;mailNickname&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String mailNickname { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationClass", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String description { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.identitySet")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationClass", HelpMessage = @"The &quot;createdBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;createdBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
         public System.Object createdBy { get; set; }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationClass", HelpMessage = @"The &quot;classCode&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;classCode&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String classCode { get; set; }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationClass", HelpMessage = @"The &quot;externalName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;externalName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String externalName { get; set; }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationClass", HelpMessage = @"The &quot;externalId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;externalId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String externalId { get; set; }
 
         /// <summary>
@@ -85,7 +85,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.educationExternalSource")]
         [Selectable]
         [ValidateSet(@"sis", @"manual", @"unknownFutureValue")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationClass", HelpMessage = @"The &quot;externalSource&quot; property, of type &quot;microsoft.graph.educationExternalSource&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;externalSource&quot; property, of type &quot;microsoft.graph.educationExternalSource&quot;.")]
         public System.String externalSource { get; set; }
 
         /// <summary>
@@ -94,7 +94,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.educationTerm")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationClass", HelpMessage = @"The &quot;term&quot; property, of type &quot;microsoft.graph.educationTerm&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;term&quot; property, of type &quot;microsoft.graph.educationTerm&quot;.")]
         public System.Object term { get; set; }
 
         /// <summary>
@@ -104,7 +104,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.educationSchool")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationClass", HelpMessage = @"The &quot;schools&quot; property, of type &quot;microsoft.graph.educationSchool&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;schools&quot; property, of type &quot;microsoft.graph.educationSchool&quot;.")]
         public System.Object[] schools { get; set; }
 
         /// <summary>
@@ -114,7 +114,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.educationUser")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationClass", HelpMessage = @"The &quot;members&quot; property, of type &quot;microsoft.graph.educationUser&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;members&quot; property, of type &quot;microsoft.graph.educationUser&quot;.")]
         public System.Object[] members { get; set; }
 
         /// <summary>
@@ -124,7 +124,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.educationUser")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationClass", HelpMessage = @"The &quot;teachers&quot; property, of type &quot;microsoft.graph.educationUser&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;teachers&quot; property, of type &quot;microsoft.graph.educationUser&quot;.")]
         public System.Object[] teachers { get; set; }
 
         /// <summary>
@@ -133,7 +133,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.group")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationClass", HelpMessage = @"The &quot;group&quot; property, of type &quot;microsoft.graph.group&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;group&quot; property, of type &quot;microsoft.graph.group&quot;.")]
         public System.Object group { get; set; }
     }
 }

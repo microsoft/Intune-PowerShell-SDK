@@ -10,9 +10,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
     internal class ResourceIdPropertyNameAttribute : Attribute
     {
-        public string PropertyName { get; }
+        internal string PropertyName { get; }
 
-        public ResourceIdPropertyNameAttribute(string propertyName)
+        internal ResourceIdPropertyNameAttribute(string propertyName)
         {
             if (propertyName == null)
             {

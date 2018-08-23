@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.itemReference&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.itemReference&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ItemReferenceObject", DefaultParameterSetName = @"#microsoft.graph.itemReference")]
+    [Cmdlet("New", "ItemReferenceObject", DefaultParameterSetName = @"microsoft.graph.itemReference")]
     [ODataType("microsoft.graph.itemReference")]
     public class New_ItemReferenceObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.itemReference", HelpMessage = @"The &quot;driveId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemReference", HelpMessage = @"The &quot;driveId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String driveId { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.itemReference", HelpMessage = @"The &quot;driveType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemReference", HelpMessage = @"The &quot;driveType&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String driveType { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.itemReference", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemReference", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String name { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.itemReference", HelpMessage = @"The &quot;path&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemReference", HelpMessage = @"The &quot;path&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String path { get; set; }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.itemReference", HelpMessage = @"The &quot;shareId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemReference", HelpMessage = @"The &quot;shareId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String shareId { get; set; }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.sharepointIds")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.itemReference", HelpMessage = @"The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemReference", HelpMessage = @"The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
         public System.Object sharepointIds { get; set; }
     }
 }

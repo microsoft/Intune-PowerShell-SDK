@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookChartLegend&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookChartLegend&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookChartLegendObject", DefaultParameterSetName = @"#microsoft.graph.workbookChartLegend")]
+    [Cmdlet("New", "WorkbookChartLegendObject", DefaultParameterSetName = @"microsoft.graph.workbookChartLegend")]
     [ODataType("microsoft.graph.workbookChartLegend")]
     public class New_WorkbookChartLegendObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartLegend", HelpMessage = @"The &quot;overlay&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartLegend", HelpMessage = @"The &quot;overlay&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean overlay { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartLegend", HelpMessage = @"The &quot;position&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartLegend", HelpMessage = @"The &quot;position&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String position { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartLegend", HelpMessage = @"The &quot;visible&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartLegend", HelpMessage = @"The &quot;visible&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean visible { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartLegendFormat")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartLegend", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartLegendFormat&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartLegend", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartLegendFormat&quot;.")]
         public System.Object format { get; set; }
     }
 }

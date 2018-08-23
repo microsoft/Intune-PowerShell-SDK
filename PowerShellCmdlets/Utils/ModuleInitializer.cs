@@ -55,17 +55,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             foreach (Type cmdletType in referenceableCmdletTypes)
             {
                 // Construct an instance of the cmdlet
-                ODataCmdletBase cmdlet = cmdletType
+                object constructedCmdlet = cmdletType
                     .GetConstructor(Array.Empty<Type>())?
-                    .Invoke(Array.Empty<object>())
-                    as ODataCmdletBase;
-
-                // Get this cmdlet name's noun
-                string cmdletNoun = cmdletType.GetCmdletNoun();
+                    .Invoke(Array.Empty<object>());
 
                 // Make sure we were able to construct an instance of the cmdlet
-                if (cmdlet != null)
+                if (constructedCmdlet is ODataCmdletBase cmdlet)
                 {
+                    // Get this cmdlet name's noun
+                    string cmdletNoun = cmdlet.GetCmdletNoun();
+
                     // Create the URL generator
                     ReferencePathGenerator urlGenerator = new ReferencePathGenerator(cmdlet);
 

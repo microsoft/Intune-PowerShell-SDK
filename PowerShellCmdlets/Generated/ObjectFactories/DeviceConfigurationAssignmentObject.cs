@@ -9,7 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceConfigurationAssignment&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">The device configuration assignment entity assigns an AAD group to a specific device configuration.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceConfigurationAssignmentObject", DefaultParameterSetName = @"#microsoft.graph.deviceConfigurationAssignment")]
+    [Cmdlet("New", "DeviceConfigurationAssignmentObject", DefaultParameterSetName = @"microsoft.graph.deviceConfigurationAssignment")]
     [ODataType("microsoft.graph.deviceConfigurationAssignment")]
     public class New_DeviceConfigurationAssignmentObject : ObjectFactoryCmdletBase
     {
@@ -18,9 +18,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.deviceConfigurationAssignment&quot; type.</para>
         ///     <para type="description">The assignment target for the device configuration.</para>
         /// </summary>
-        [ODataType("microsoft.graph.deviceAndAppManagementAssignmentTarget")]
+        [ODataType("microsoft.graph.deviceAndAppManagementAssignmentTarget", "microsoft.graph.allDevicesAssignmentTarget", "microsoft.graph.groupAssignmentTarget", "microsoft.graph.exclusionGroupAssignmentTarget", "microsoft.graph.allLicensedUsersAssignmentTarget")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceConfigurationAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
         public System.Object target { get; set; }
     }
 }

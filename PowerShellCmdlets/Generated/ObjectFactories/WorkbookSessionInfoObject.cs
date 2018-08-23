@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookSessionInfo&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookSessionInfo&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookSessionInfoObject", DefaultParameterSetName = @"#microsoft.graph.workbookSessionInfo")]
+    [Cmdlet("New", "WorkbookSessionInfoObject", DefaultParameterSetName = @"microsoft.graph.workbookSessionInfo")]
     [ODataType("microsoft.graph.workbookSessionInfo")]
     public class New_WorkbookSessionInfoObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookSessionInfo", HelpMessage = @"The &quot;persistChanges&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookSessionInfo", HelpMessage = @"The &quot;persistChanges&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean persistChanges { get; set; }
     }
 }

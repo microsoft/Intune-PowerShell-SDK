@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.driveItemUploadableProperties&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.driveItemUploadableProperties&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "DriveItemUploadablePropertiesObject", DefaultParameterSetName = @"#microsoft.graph.driveItemUploadableProperties")]
+    [Cmdlet("New", "DriveItemUploadablePropertiesObject", DefaultParameterSetName = @"microsoft.graph.driveItemUploadableProperties")]
     [ODataType("microsoft.graph.driveItemUploadableProperties")]
     public class New_DriveItemUploadablePropertiesObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.driveItemUploadableProperties", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.driveItemUploadableProperties", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String description { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.fileSystemInfo")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.driveItemUploadableProperties", HelpMessage = @"The &quot;fileSystemInfo&quot; property, of type &quot;microsoft.graph.fileSystemInfo&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.driveItemUploadableProperties", HelpMessage = @"The &quot;fileSystemInfo&quot; property, of type &quot;microsoft.graph.fileSystemInfo&quot;.")]
         public System.Object fileSystemInfo { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.driveItemUploadableProperties", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.driveItemUploadableProperties", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String name { get; set; }
     }
 }

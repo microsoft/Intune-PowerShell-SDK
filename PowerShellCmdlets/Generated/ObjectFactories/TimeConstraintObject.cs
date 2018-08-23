@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.timeConstraint&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.timeConstraint&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "TimeConstraintObject", DefaultParameterSetName = @"#microsoft.graph.timeConstraint")]
+    [Cmdlet("New", "TimeConstraintObject", DefaultParameterSetName = @"microsoft.graph.timeConstraint")]
     [ODataType("microsoft.graph.timeConstraint")]
     public class New_TimeConstraintObject : ObjectFactoryCmdletBase
     {
@@ -22,7 +22,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.activityDomain")]
         [Selectable]
         [ValidateSet(@"unknown", @"work", @"personal", @"unrestricted")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.timeConstraint", HelpMessage = @"The &quot;activityDomain&quot; property, of type &quot;microsoft.graph.activityDomain&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.timeConstraint", HelpMessage = @"The &quot;activityDomain&quot; property, of type &quot;microsoft.graph.activityDomain&quot;.")]
         public System.String activityDomain { get; set; }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.timeSlot")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.timeConstraint", HelpMessage = @"The &quot;timeslots&quot; property, of type &quot;microsoft.graph.timeSlot&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.timeConstraint", HelpMessage = @"The &quot;timeslots&quot; property, of type &quot;microsoft.graph.timeSlot&quot;.")]
         public System.Object[] timeslots { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.file&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.file&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "FileObject", DefaultParameterSetName = @"#microsoft.graph.file")]
+    [Cmdlet("New", "FileObject", DefaultParameterSetName = @"microsoft.graph.file")]
     [ODataType("microsoft.graph.file")]
     public class New_FileObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.hashes")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.file", HelpMessage = @"The &quot;hashes&quot; property, of type &quot;microsoft.graph.hashes&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.file", HelpMessage = @"The &quot;hashes&quot; property, of type &quot;microsoft.graph.hashes&quot;.")]
         public System.Object hashes { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.file", HelpMessage = @"The &quot;mimeType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.file", HelpMessage = @"The &quot;mimeType&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String mimeType { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.file", HelpMessage = @"The &quot;processingMetadata&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.file", HelpMessage = @"The &quot;processingMetadata&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean processingMetadata { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookIcon&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookIcon&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookIconObject", DefaultParameterSetName = @"#microsoft.graph.workbookIcon")]
+    [Cmdlet("New", "WorkbookIconObject", DefaultParameterSetName = @"microsoft.graph.workbookIcon")]
     [ODataType("microsoft.graph.workbookIcon")]
     public class New_WorkbookIconObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookIcon", HelpMessage = @"The &quot;index&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookIcon", HelpMessage = @"The &quot;index&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 index { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookIcon", HelpMessage = @"The &quot;set&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookIcon", HelpMessage = @"The &quot;set&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String set { get; set; }
     }
 }

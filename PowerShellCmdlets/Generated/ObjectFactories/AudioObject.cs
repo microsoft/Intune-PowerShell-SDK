@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.audio&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.audio&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "AudioObject", DefaultParameterSetName = @"#microsoft.graph.audio")]
+    [Cmdlet("New", "AudioObject", DefaultParameterSetName = @"microsoft.graph.audio")]
     [ODataType("microsoft.graph.audio")]
     public class New_AudioObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.audio", HelpMessage = @"The &quot;album&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.audio", HelpMessage = @"The &quot;album&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String album { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.audio", HelpMessage = @"The &quot;albumArtist&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.audio", HelpMessage = @"The &quot;albumArtist&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String albumArtist { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.audio", HelpMessage = @"The &quot;artist&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.audio", HelpMessage = @"The &quot;artist&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String artist { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int64")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.audio", HelpMessage = @"The &quot;bitrate&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.audio", HelpMessage = @"The &quot;bitrate&quot; property, of type &quot;Edm.Int64&quot;.")]
         public System.Int64 bitrate { get; set; }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.audio", HelpMessage = @"The &quot;composers&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.audio", HelpMessage = @"The &quot;composers&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String composers { get; set; }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.audio", HelpMessage = @"The &quot;copyright&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.audio", HelpMessage = @"The &quot;copyright&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String copyright { get; set; }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int16")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.audio", HelpMessage = @"The &quot;disc&quot; property, of type &quot;Edm.Int16&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.audio", HelpMessage = @"The &quot;disc&quot; property, of type &quot;Edm.Int16&quot;.")]
         public System.Int16 disc { get; set; }
 
         /// <summary>
@@ -81,7 +81,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int16")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.audio", HelpMessage = @"The &quot;discCount&quot; property, of type &quot;Edm.Int16&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.audio", HelpMessage = @"The &quot;discCount&quot; property, of type &quot;Edm.Int16&quot;.")]
         public System.Int16 discCount { get; set; }
 
         /// <summary>
@@ -90,7 +90,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int64")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.audio", HelpMessage = @"The &quot;duration&quot; property, of type &quot;Edm.Int64&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.audio", HelpMessage = @"The &quot;duration&quot; property, of type &quot;Edm.Int64&quot;.")]
         public System.Int64 duration { get; set; }
 
         /// <summary>
@@ -99,7 +99,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.audio", HelpMessage = @"The &quot;genre&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.audio", HelpMessage = @"The &quot;genre&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String genre { get; set; }
 
         /// <summary>
@@ -108,7 +108,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.audio", HelpMessage = @"The &quot;hasDrm&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.audio", HelpMessage = @"The &quot;hasDrm&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean hasDrm { get; set; }
 
         /// <summary>
@@ -117,7 +117,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.audio", HelpMessage = @"The &quot;isVariableBitrate&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.audio", HelpMessage = @"The &quot;isVariableBitrate&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isVariableBitrate { get; set; }
 
         /// <summary>
@@ -126,7 +126,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.audio", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.audio", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String title { get; set; }
 
         /// <summary>
@@ -135,7 +135,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.audio", HelpMessage = @"The &quot;track&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.audio", HelpMessage = @"The &quot;track&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 track { get; set; }
 
         /// <summary>
@@ -144,7 +144,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.audio", HelpMessage = @"The &quot;trackCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.audio", HelpMessage = @"The &quot;trackCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 trackCount { get; set; }
 
         /// <summary>
@@ -153,7 +153,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.audio", HelpMessage = @"The &quot;year&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.audio", HelpMessage = @"The &quot;year&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 year { get; set; }
     }
 }

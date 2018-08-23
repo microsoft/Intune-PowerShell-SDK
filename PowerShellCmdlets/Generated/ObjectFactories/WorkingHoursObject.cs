@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workingHours&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workingHours&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkingHoursObject", DefaultParameterSetName = @"#microsoft.graph.workingHours")]
+    [Cmdlet("New", "WorkingHoursObject", DefaultParameterSetName = @"microsoft.graph.workingHours")]
     [ODataType("microsoft.graph.workingHours")]
     public class New_WorkingHoursObject : ObjectFactoryCmdletBase
     {
@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"sunday", @"monday", @"tuesday", @"wednesday", @"thursday", @"friday", @"saturday")]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workingHours", HelpMessage = @"The &quot;daysOfWeek&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workingHours", HelpMessage = @"The &quot;daysOfWeek&quot; property, of type &quot;microsoft.graph.dayOfWeek&quot;.")]
         public System.String[] daysOfWeek { get; set; }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workingHours", HelpMessage = @"The &quot;startTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workingHours", HelpMessage = @"The &quot;startTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
         public System.TimeSpan startTime { get; set; }
 
         /// <summary>
@@ -41,16 +41,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.TimeOfDay")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workingHours", HelpMessage = @"The &quot;endTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workingHours", HelpMessage = @"The &quot;endTime&quot; property, of type &quot;Edm.TimeOfDay&quot;.")]
         public System.TimeSpan endTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;timeZone&quot; property, of type &quot;microsoft.graph.timeZoneBase&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.workingHours&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.timeZoneBase")]
+        [ODataType("microsoft.graph.timeZoneBase", "microsoft.graph.customTimeZone")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workingHours", HelpMessage = @"The &quot;timeZone&quot; property, of type &quot;microsoft.graph.timeZoneBase&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workingHours", HelpMessage = @"The &quot;timeZone&quot; property, of type &quot;microsoft.graph.timeZoneBase&quot;.")]
         public System.Object timeZone { get; set; }
     }
 }

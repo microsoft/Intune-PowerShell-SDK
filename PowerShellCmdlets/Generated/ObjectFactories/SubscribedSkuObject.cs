@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.subscribedSku&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.subscribedSku&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "SubscribedSkuObject", DefaultParameterSetName = @"#microsoft.graph.subscribedSku")]
+    [Cmdlet("New", "SubscribedSkuObject", DefaultParameterSetName = @"microsoft.graph.subscribedSku")]
     [ODataType("microsoft.graph.subscribedSku")]
     public class New_SubscribedSkuObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.subscribedSku", HelpMessage = @"The &quot;capabilityStatus&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.subscribedSku", HelpMessage = @"The &quot;capabilityStatus&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String capabilityStatus { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.subscribedSku", HelpMessage = @"The &quot;consumedUnits&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.subscribedSku", HelpMessage = @"The &quot;consumedUnits&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 consumedUnits { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.licenseUnitsDetail")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.subscribedSku", HelpMessage = @"The &quot;prepaidUnits&quot; property, of type &quot;microsoft.graph.licenseUnitsDetail&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.subscribedSku", HelpMessage = @"The &quot;prepaidUnits&quot; property, of type &quot;microsoft.graph.licenseUnitsDetail&quot;.")]
         public System.Object prepaidUnits { get; set; }
 
         /// <summary>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.servicePlanInfo")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.subscribedSku", HelpMessage = @"The &quot;servicePlans&quot; property, of type &quot;microsoft.graph.servicePlanInfo&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.subscribedSku", HelpMessage = @"The &quot;servicePlans&quot; property, of type &quot;microsoft.graph.servicePlanInfo&quot;.")]
         public System.Object[] servicePlans { get; set; }
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Guid")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.subscribedSku", HelpMessage = @"The &quot;skuId&quot; property, of type &quot;Edm.Guid&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.subscribedSku", HelpMessage = @"The &quot;skuId&quot; property, of type &quot;Edm.Guid&quot;.")]
         public System.Guid skuId { get; set; }
 
         /// <summary>
@@ -64,7 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.subscribedSku", HelpMessage = @"The &quot;skuPartNumber&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.subscribedSku", HelpMessage = @"The &quot;skuPartNumber&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String skuPartNumber { get; set; }
 
         /// <summary>
@@ -73,7 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.subscribedSku", HelpMessage = @"The &quot;appliesTo&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.subscribedSku", HelpMessage = @"The &quot;appliesTo&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String appliesTo { get; set; }
     }
 }

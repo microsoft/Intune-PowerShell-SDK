@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.onenotePatchContentCommand&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.onenotePatchContentCommand&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "OnenotePatchContentCommandObject", DefaultParameterSetName = @"#microsoft.graph.onenotePatchContentCommand")]
+    [Cmdlet("New", "OnenotePatchContentCommandObject", DefaultParameterSetName = @"microsoft.graph.onenotePatchContentCommand")]
     [ODataType("microsoft.graph.onenotePatchContentCommand")]
     public class New_OnenotePatchContentCommandObject : ObjectFactoryCmdletBase
     {
@@ -22,7 +22,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.onenotePatchActionType")]
         [Selectable]
         [ValidateSet(@"Replace", @"Append", @"Delete", @"Insert", @"Prepend")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenotePatchContentCommand", HelpMessage = @"The &quot;action&quot; property, of type &quot;microsoft.graph.onenotePatchActionType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenotePatchContentCommand", HelpMessage = @"The &quot;action&quot; property, of type &quot;microsoft.graph.onenotePatchActionType&quot;.")]
         public System.String action { get; set; }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenotePatchContentCommand", HelpMessage = @"The &quot;target&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenotePatchContentCommand", HelpMessage = @"The &quot;target&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String target { get; set; }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenotePatchContentCommand", HelpMessage = @"The &quot;content&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenotePatchContentCommand", HelpMessage = @"The &quot;content&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String content { get; set; }
 
         /// <summary>
@@ -53,7 +53,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.onenotePatchInsertPosition")]
         [Selectable]
         [ValidateSet(@"After", @"Before")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenotePatchContentCommand", HelpMessage = @"The &quot;position&quot; property, of type &quot;microsoft.graph.onenotePatchInsertPosition&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenotePatchContentCommand", HelpMessage = @"The &quot;position&quot; property, of type &quot;microsoft.graph.onenotePatchInsertPosition&quot;.")]
         public System.String position { get; set; }
     }
 }

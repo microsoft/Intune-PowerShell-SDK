@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookChartAxisFormat&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookChartAxisFormat&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookChartAxisFormatObject", DefaultParameterSetName = @"#microsoft.graph.workbookChartAxisFormat")]
+    [Cmdlet("New", "WorkbookChartAxisFormatObject", DefaultParameterSetName = @"microsoft.graph.workbookChartAxisFormat")]
     [ODataType("microsoft.graph.workbookChartAxisFormat")]
     public class New_WorkbookChartAxisFormatObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartFont")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartAxisFormat", HelpMessage = @"The &quot;font&quot; property, of type &quot;microsoft.graph.workbookChartFont&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxisFormat", HelpMessage = @"The &quot;font&quot; property, of type &quot;microsoft.graph.workbookChartFont&quot;.")]
         public System.Object font { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartLineFormat")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartAxisFormat", HelpMessage = @"The &quot;line&quot; property, of type &quot;microsoft.graph.workbookChartLineFormat&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxisFormat", HelpMessage = @"The &quot;line&quot; property, of type &quot;microsoft.graph.workbookChartLineFormat&quot;.")]
         public System.Object line { get; set; }
     }
 }

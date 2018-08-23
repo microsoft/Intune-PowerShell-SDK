@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.plannerTaskDetails&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.plannerTaskDetails&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "PlannerTaskDetailsObject", DefaultParameterSetName = @"#microsoft.graph.plannerTaskDetails")]
+    [Cmdlet("New", "PlannerTaskDetailsObject", DefaultParameterSetName = @"microsoft.graph.plannerTaskDetails")]
     [ODataType("microsoft.graph.plannerTaskDetails")]
     public class New_PlannerTaskDetailsObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.plannerTaskDetails", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerTaskDetails", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String description { get; set; }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.plannerPreviewType")]
         [Selectable]
         [ValidateSet(@"automatic", @"noPreview", @"checklist", @"description", @"reference")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.plannerTaskDetails", HelpMessage = @"The &quot;previewType&quot; property, of type &quot;microsoft.graph.plannerPreviewType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerTaskDetails", HelpMessage = @"The &quot;previewType&quot; property, of type &quot;microsoft.graph.plannerPreviewType&quot;.")]
         public System.String previewType { get; set; }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.plannerExternalReferences")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.plannerTaskDetails", HelpMessage = @"The &quot;references&quot; property, of type &quot;microsoft.graph.plannerExternalReferences&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerTaskDetails", HelpMessage = @"The &quot;references&quot; property, of type &quot;microsoft.graph.plannerExternalReferences&quot;.")]
         public System.Object references { get; set; }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.plannerChecklistItems")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.plannerTaskDetails", HelpMessage = @"The &quot;checklist&quot; property, of type &quot;microsoft.graph.plannerChecklistItems&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerTaskDetails", HelpMessage = @"The &quot;checklist&quot; property, of type &quot;microsoft.graph.plannerChecklistItems&quot;.")]
         public System.Object checklist { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.calendarGroup&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.calendarGroup&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "CalendarGroupObject", DefaultParameterSetName = @"#microsoft.graph.calendarGroup")]
+    [Cmdlet("New", "CalendarGroupObject", DefaultParameterSetName = @"microsoft.graph.calendarGroup")]
     [ODataType("microsoft.graph.calendarGroup")]
     public class New_CalendarGroupObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.calendarGroup", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.calendarGroup", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String name { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Guid")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.calendarGroup", HelpMessage = @"The &quot;classId&quot; property, of type &quot;Edm.Guid&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.calendarGroup", HelpMessage = @"The &quot;classId&quot; property, of type &quot;Edm.Guid&quot;.")]
         public System.Guid classId { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.calendarGroup", HelpMessage = @"The &quot;changeKey&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.calendarGroup", HelpMessage = @"The &quot;changeKey&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String changeKey { get; set; }
 
         /// <summary>
@@ -46,7 +46,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.calendar")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.calendarGroup", HelpMessage = @"The &quot;calendars&quot; property, of type &quot;microsoft.graph.calendar&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.calendarGroup", HelpMessage = @"The &quot;calendars&quot; property, of type &quot;microsoft.graph.calendar&quot;.")]
         public System.Object[] calendars { get; set; }
     }
 }

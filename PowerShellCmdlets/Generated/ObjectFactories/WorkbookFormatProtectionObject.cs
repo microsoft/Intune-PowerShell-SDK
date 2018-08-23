@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookFormatProtection&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookFormatProtection&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookFormatProtectionObject", DefaultParameterSetName = @"#microsoft.graph.workbookFormatProtection")]
+    [Cmdlet("New", "WorkbookFormatProtectionObject", DefaultParameterSetName = @"microsoft.graph.workbookFormatProtection")]
     [ODataType("microsoft.graph.workbookFormatProtection")]
     public class New_WorkbookFormatProtectionObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookFormatProtection", HelpMessage = @"The &quot;formulaHidden&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookFormatProtection", HelpMessage = @"The &quot;formulaHidden&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean formulaHidden { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookFormatProtection", HelpMessage = @"The &quot;locked&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookFormatProtection", HelpMessage = @"The &quot;locked&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean locked { get; set; }
     }
 }

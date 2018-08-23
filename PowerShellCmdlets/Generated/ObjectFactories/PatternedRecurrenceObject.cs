@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.patternedRecurrence&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.patternedRecurrence&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "PatternedRecurrenceObject", DefaultParameterSetName = @"#microsoft.graph.patternedRecurrence")]
+    [Cmdlet("New", "PatternedRecurrenceObject", DefaultParameterSetName = @"microsoft.graph.patternedRecurrence")]
     [ODataType("microsoft.graph.patternedRecurrence")]
     public class New_PatternedRecurrenceObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.recurrencePattern")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.patternedRecurrence", HelpMessage = @"The &quot;pattern&quot; property, of type &quot;microsoft.graph.recurrencePattern&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.patternedRecurrence", HelpMessage = @"The &quot;pattern&quot; property, of type &quot;microsoft.graph.recurrencePattern&quot;.")]
         public System.Object pattern { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.recurrenceRange")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.patternedRecurrence", HelpMessage = @"The &quot;range&quot; property, of type &quot;microsoft.graph.recurrenceRange&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.patternedRecurrence", HelpMessage = @"The &quot;range&quot; property, of type &quot;microsoft.graph.recurrenceRange&quot;.")]
         public System.Object range { get; set; }
     }
 }

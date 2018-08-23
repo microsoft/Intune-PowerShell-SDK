@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.phone&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.phone&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "PhoneObject", DefaultParameterSetName = @"#microsoft.graph.phone")]
+    [Cmdlet("New", "PhoneObject", DefaultParameterSetName = @"microsoft.graph.phone")]
     [ODataType("microsoft.graph.phone")]
     public class New_PhoneObject : ObjectFactoryCmdletBase
     {
@@ -22,7 +22,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.phoneType")]
         [Selectable]
         [ValidateSet(@"home", @"business", @"mobile", @"other", @"assistant", @"homeFax", @"businessFax", @"otherFax", @"pager", @"radio")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.phone", HelpMessage = @"The &quot;type&quot; property, of type &quot;microsoft.graph.phoneType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.phone", HelpMessage = @"The &quot;type&quot; property, of type &quot;microsoft.graph.phoneType&quot;.")]
         public System.String type { get; set; }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.phone", HelpMessage = @"The &quot;number&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.phone", HelpMessage = @"The &quot;number&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String number { get; set; }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.phone", HelpMessage = @"The &quot;region&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.phone", HelpMessage = @"The &quot;region&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String region { get; set; }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.phone", HelpMessage = @"The &quot;language&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.phone", HelpMessage = @"The &quot;language&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String language { get; set; }
     }
 }

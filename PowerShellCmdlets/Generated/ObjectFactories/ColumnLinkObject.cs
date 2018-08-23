@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.columnLink&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.columnLink&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ColumnLinkObject", DefaultParameterSetName = @"#microsoft.graph.columnLink")]
+    [Cmdlet("New", "ColumnLinkObject", DefaultParameterSetName = @"microsoft.graph.columnLink")]
     [ODataType("microsoft.graph.columnLink")]
     public class New_ColumnLinkObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.columnLink", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.columnLink", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String name { get; set; }
     }
 }

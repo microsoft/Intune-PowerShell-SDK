@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.educationRoot&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.educationRoot&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "EducationRootObject", DefaultParameterSetName = @"#microsoft.graph.educationRoot")]
+    [Cmdlet("New", "EducationRootObject", DefaultParameterSetName = @"microsoft.graph.educationRoot")]
     [ODataType("microsoft.graph.educationRoot")]
     public class New_EducationRootObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.educationClass")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationRoot", HelpMessage = @"The &quot;classes&quot; property, of type &quot;microsoft.graph.educationClass&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationRoot", HelpMessage = @"The &quot;classes&quot; property, of type &quot;microsoft.graph.educationClass&quot;.")]
         public System.Object[] classes { get; set; }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.educationSchool")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationRoot", HelpMessage = @"The &quot;schools&quot; property, of type &quot;microsoft.graph.educationSchool&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationRoot", HelpMessage = @"The &quot;schools&quot; property, of type &quot;microsoft.graph.educationSchool&quot;.")]
         public System.Object[] schools { get; set; }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.educationUser")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationRoot", HelpMessage = @"The &quot;users&quot; property, of type &quot;microsoft.graph.educationUser&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationRoot", HelpMessage = @"The &quot;users&quot; property, of type &quot;microsoft.graph.educationUser&quot;.")]
         public System.Object[] users { get; set; }
 
         /// <summary>
@@ -48,7 +48,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.educationUser")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.educationRoot", HelpMessage = @"The &quot;me&quot; property, of type &quot;microsoft.graph.educationUser&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationRoot", HelpMessage = @"The &quot;me&quot; property, of type &quot;microsoft.graph.educationUser&quot;.")]
         public System.Object me { get; set; }
     }
 }

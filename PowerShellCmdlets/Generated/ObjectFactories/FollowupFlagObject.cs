@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.followupFlag&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.followupFlag&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "FollowupFlagObject", DefaultParameterSetName = @"#microsoft.graph.followupFlag")]
+    [Cmdlet("New", "FollowupFlagObject", DefaultParameterSetName = @"microsoft.graph.followupFlag")]
     [ODataType("microsoft.graph.followupFlag")]
     public class New_FollowupFlagObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.dateTimeTimeZone")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.followupFlag", HelpMessage = @"The &quot;completedDateTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.followupFlag", HelpMessage = @"The &quot;completedDateTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
         public System.Object completedDateTime { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.dateTimeTimeZone")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.followupFlag", HelpMessage = @"The &quot;dueDateTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.followupFlag", HelpMessage = @"The &quot;dueDateTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
         public System.Object dueDateTime { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.dateTimeTimeZone")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.followupFlag", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.followupFlag", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;microsoft.graph.dateTimeTimeZone&quot;.")]
         public System.Object startDateTime { get; set; }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.followupFlagStatus")]
         [Selectable]
         [ValidateSet(@"notFlagged", @"complete", @"flagged")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.followupFlag", HelpMessage = @"The &quot;flagStatus&quot; property, of type &quot;microsoft.graph.followupFlagStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.followupFlag", HelpMessage = @"The &quot;flagStatus&quot; property, of type &quot;microsoft.graph.followupFlagStatus&quot;.")]
         public System.String flagStatus { get; set; }
     }
 }

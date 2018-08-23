@@ -52,9 +52,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
             // Get the rest of the properties that will be serialized into the request body
             IEnumerable<PropertyInfo> typeProperties = boundProperties.Where(property =>
-                property.Name != nameof(this.ODataType) // don't include the ODataType parameter since we already got it
-                && property.GetODataTypeName() != null // don't include properties that don't have an OData type associated
-                && !this.GetParameterSetSelectorProperties().Contains(property) // don't include the switch parameters
+                property.Name != nameof(this.ODataType) // exclude the ODataType parameter since we already got it
+                && property.GetODataTypeAttribute() != null // exclude properties that don't have an OData type associated
+                && !this.GetParameterSetSelectorProperties().Contains(property) // exclude the switch parameters
+                && !this.GetTypeCastParameters().Contains(property) // exclude the type cast parameters
             );
 
             // Create the JSON string
@@ -66,9 +67,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         internal override HttpContent WriteContent(object content)
         {
             // This should already be a serialized JSON string (provided by the GetContent() method)
-            string stringContent = content as string;
-
-            return stringContent == null ? null : new StringContent(stringContent);
+            return (content is string stringContent)
+                ? new StringContent(stringContent)
+                : null;
         }
 
         #region Helper Methods
@@ -83,33 +84,54 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             // Get the bound properties
             IEnumerable<PropertyInfo> boundProperties = this.GetBoundProperties();
 
-            // If ODataType was not set, pick the appropriate value based on the parameter set selector that was set
-            bool isODataTypeSet = boundProperties.Any(prop => prop.Name == nameof(this.ODataType));
-            if (!isODataTypeSet)
+            // Get the attribute which specifies the valid types
+            ODataTypeAttribute cmdletTypeAttribute = this.GetODataTypeAttribute();
+
+            // Check if the ODataType parameter was set to a valid value
+            bool isODataTypeSetToValidValue = boundProperties.Any(prop =>
+            {
+                // Check if the parameter was set
+                if (prop.Name == nameof(this.ODataType))
+                {
+                    return cmdletTypeAttribute != null && (
+                        cmdletTypeAttribute.TypeFullName == this.ODataType ||
+                        cmdletTypeAttribute.SubTypeFullNames.Contains(this.ODataType)
+                    );
+                }
+                else
+                {
+                    return false;
+                }
+            });
+
+            // If ODataType was not set to a valid value, pick the appropriate value based on the parameter set selector that was set
+            if (!isODataTypeSetToValidValue)
             {
                 // Try to get the switch parameter which represents the OData type
                 IEnumerable<PropertyInfo> typeSelectorPropertyInfos = this.GetParameterSetSelectorProperties();
 
-                // If no parameter set selector was set, try to use the parameter set name (this may be the case for cmdlets which only deal with 1 OData type)
+                // If no parameter set selector was set, try to use the cmdlet's OData type name (this may be the case for cmdlets which only deal with 1 OData type)
                 if (!typeSelectorPropertyInfos.Any())
                 {
-                    return this.ParameterSetName; //throw new PSArgumentException("Either the ODataType parameter or one of the type switches must be set");
+                    return $"#{cmdletTypeAttribute.TypeFullName}";
                 }
-
-                // If more than 1 parameter set selector was set, throw an exception
-                PropertyInfo typeSelectorPropertyInfo = typeSelectorPropertyInfos.SingleOrDefault();
-                if (typeSelectorPropertyInfo == null)
+                else
                 {
-                    throw new PSArgumentException($"Multiple type switches were set, but only 1 type switch is allowed per invocation of this cmdlet - these are the type switches that were set: [{string.Join(", ", "'" + typeSelectorPropertyInfos.Select(info => info.Name) + "'")}]");
+                    // If more than 1 parameter set selector was set, throw an exception
+                    PropertyInfo typeSelectorPropertyInfo = typeSelectorPropertyInfos.SingleOrDefault();
+                    if (typeSelectorPropertyInfo == null)
+                    {
+                        throw new PSArgumentException($"Multiple type switches were set, but only 1 type switch is allowed per invocation of this cmdlet - these are the type switches that were set: [{string.Join(", ", "'" + typeSelectorPropertyInfos.Select(info => info.Name) + "'")}]");
+                    }
+
+                    // Get the ParameterSetSelector attribute
+                    ParameterSetSelectorAttribute typeSelectorSwitchAttribute = typeSelectorPropertyInfo
+                        .GetCustomAttributes<ParameterSetSelectorAttribute>()
+                        .SingleOrDefault();
+
+                    // Get the OData type name from the "ParameterSetSelector" attribute (parameter set name is the OData type name)
+                    return $"#{typeSelectorSwitchAttribute.ParameterSetName}";
                 }
-
-                // Get the ParameterSetSelector attribute
-                ParameterSetSelectorAttribute typeSelectorSwitchAttribute = typeSelectorPropertyInfo
-                    .GetCustomAttributes<ParameterSetSelectorAttribute>()
-                    .SingleOrDefault();
-
-                // Get the OData type name from the "ParameterSetSelector" attribute (parameter set name is the OData type name)
-                return typeSelectorSwitchAttribute.ParameterSetName;
             }
             else
             {

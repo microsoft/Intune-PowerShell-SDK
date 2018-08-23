@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookChartAxes&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookChartAxes&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookChartAxesObject", DefaultParameterSetName = @"#microsoft.graph.workbookChartAxes")]
+    [Cmdlet("New", "WorkbookChartAxesObject", DefaultParameterSetName = @"microsoft.graph.workbookChartAxes")]
     [ODataType("microsoft.graph.workbookChartAxes")]
     public class New_WorkbookChartAxesObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartAxis")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartAxes", HelpMessage = @"The &quot;categoryAxis&quot; property, of type &quot;microsoft.graph.workbookChartAxis&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxes", HelpMessage = @"The &quot;categoryAxis&quot; property, of type &quot;microsoft.graph.workbookChartAxis&quot;.")]
         public System.Object categoryAxis { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartAxis")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartAxes", HelpMessage = @"The &quot;seriesAxis&quot; property, of type &quot;microsoft.graph.workbookChartAxis&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxes", HelpMessage = @"The &quot;seriesAxis&quot; property, of type &quot;microsoft.graph.workbookChartAxis&quot;.")]
         public System.Object seriesAxis { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartAxis")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartAxes", HelpMessage = @"The &quot;valueAxis&quot; property, of type &quot;microsoft.graph.workbookChartAxis&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxes", HelpMessage = @"The &quot;valueAxis&quot; property, of type &quot;microsoft.graph.workbookChartAxis&quot;.")]
         public System.Object valueAxis { get; set; }
     }
 }

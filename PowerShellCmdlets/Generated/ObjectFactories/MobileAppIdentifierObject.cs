@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.mobileAppIdentifier&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.mobileAppIdentifier&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "MobileAppIdentifierObject", DefaultParameterSetName = @"#microsoft.graph.mobileAppIdentifier")]
+    [Cmdlet("New", "MobileAppIdentifierObject", DefaultParameterSetName = @"microsoft.graph.mobileAppIdentifier")]
     [ODataType("microsoft.graph.mobileAppIdentifier")]
     public class New_MobileAppIdentifierObject : ObjectFactoryCmdletBase
     {
@@ -16,8 +16,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosMobileAppIdentifier&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.iosMobileAppIdentifier")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosMobileAppIdentifier", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosMobileAppIdentifier&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.iosMobileAppIdentifier")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppIdentifier", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosMobileAppIdentifier&quot; type.")]
         public System.Management.Automation.SwitchParameter iosMobileAppIdentifier { get; set; }
 
         /// <summary>
@@ -27,15 +27,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosMobileAppIdentifier", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppIdentifier", HelpMessage = @"The &quot;bundleId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String bundleId { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidMobileAppIdentifier&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.androidMobileAppIdentifier")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidMobileAppIdentifier", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidMobileAppIdentifier&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.androidMobileAppIdentifier")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidMobileAppIdentifier", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidMobileAppIdentifier&quot; type.")]
         public System.Management.Automation.SwitchParameter androidMobileAppIdentifier { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.androidMobileAppIdentifier", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidMobileAppIdentifier", HelpMessage = @"The &quot;packageId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String packageId { get; set; }
     }
 }

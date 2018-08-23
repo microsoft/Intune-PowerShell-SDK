@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.rgbColor&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.rgbColor&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "RgbColorObject", DefaultParameterSetName = @"#microsoft.graph.rgbColor")]
+    [Cmdlet("New", "RgbColorObject", DefaultParameterSetName = @"microsoft.graph.rgbColor")]
     [ODataType("microsoft.graph.rgbColor")]
     public class New_RgbColorObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Byte")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.rgbColor", HelpMessage = @"The &quot;r&quot; property, of type &quot;Edm.Byte&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.rgbColor", HelpMessage = @"The &quot;r&quot; property, of type &quot;Edm.Byte&quot;.")]
         public System.Byte r { get; set; }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Byte")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.rgbColor", HelpMessage = @"The &quot;g&quot; property, of type &quot;Edm.Byte&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.rgbColor", HelpMessage = @"The &quot;g&quot; property, of type &quot;Edm.Byte&quot;.")]
         public System.Byte g { get; set; }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Byte")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.rgbColor", HelpMessage = @"The &quot;b&quot; property, of type &quot;Edm.Byte&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.rgbColor", HelpMessage = @"The &quot;b&quot; property, of type &quot;Edm.Byte&quot;.")]
         public System.Byte b { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookTableSort&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookTableSort&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookTableSortObject", DefaultParameterSetName = @"#microsoft.graph.workbookTableSort")]
+    [Cmdlet("New", "WorkbookTableSortObject", DefaultParameterSetName = @"microsoft.graph.workbookTableSort")]
     [ODataType("microsoft.graph.workbookTableSort")]
     public class New_WorkbookTableSortObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.workbookSortField")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookTableSort", HelpMessage = @"The &quot;fields&quot; property, of type &quot;microsoft.graph.workbookSortField&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookTableSort", HelpMessage = @"The &quot;fields&quot; property, of type &quot;microsoft.graph.workbookSortField&quot;.")]
         public System.Object[] fields { get; set; }
 
         /// <summary>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookTableSort", HelpMessage = @"The &quot;matchCase&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookTableSort", HelpMessage = @"The &quot;matchCase&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean matchCase { get; set; }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookTableSort", HelpMessage = @"The &quot;method&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookTableSort", HelpMessage = @"The &quot;method&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String method { get; set; }
     }
 }

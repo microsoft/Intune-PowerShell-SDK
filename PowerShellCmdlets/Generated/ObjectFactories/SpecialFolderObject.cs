@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.specialFolder&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.specialFolder&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "SpecialFolderObject", DefaultParameterSetName = @"#microsoft.graph.specialFolder")]
+    [Cmdlet("New", "SpecialFolderObject", DefaultParameterSetName = @"microsoft.graph.specialFolder")]
     [ODataType("microsoft.graph.specialFolder")]
     public class New_SpecialFolderObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.specialFolder", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.specialFolder", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String name { get; set; }
     }
 }

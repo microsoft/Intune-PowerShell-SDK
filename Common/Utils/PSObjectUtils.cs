@@ -47,13 +47,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                 if (type.IsNotPublic)
                 {
                     IEnumerable<PropertyInfo> properties = type.GetProperties(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.FlattenHierarchy);
-                    PSObject result = new PSObject();
+                    Hashtable result = new Hashtable();
                     foreach (PropertyInfo property in properties)
                     {
-                        result.Properties.Add(new PSNoteProperty(property.Name, ToPowerShellObject(property.GetValue(obj))));
+                        result.Add(property.Name, property.GetValue(obj).ToPowerShellObject());
                     }
 
-                    return result;
+                    return PSObject.AsPSObject(result);
                 }
                 else
                 {
@@ -69,29 +69,29 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                     // Check for null keys
                     if (key == null)
                     {
-                        throw new ArgumentException($"Unable to convert object of type \"{obj.GetType().FullName}\" because this dictionary or hashtable contains a null key");
+                        throw new ArgumentException($"Unable to convert object of type \"{obj.GetType().FullName}\" to a PSObject because this dictionary or hashtable contains a null key");
                     }
 
                     // Check for string keys
                     if (!(key is string))
                     {
-                        throw new ArgumentException($"Unable to convert object of type \"{obj.GetType().FullName}\" because this dictionary or hashtable contains a key that is not a string");
+                        throw new ArgumentException($"Unable to convert object of type \"{obj.GetType().FullName}\" to a PSObject because this dictionary or hashtable contains a key that is not a string");
                     }
                 }
 
                 // Create a PSObject and process the values
-                PSObject result = new PSObject();
+                Hashtable result = new Hashtable();
                 foreach (object key in objDictionary.Keys)
                 {
-                    result.Properties.Add(new PSNoteProperty(key as string, objDictionary[key].ToPowerShellObject()));
+                    result.Add(key as string, objDictionary[key].ToPowerShellObject());
                 }
 
-                return result;
+                return PSObject.AsPSObject(result);
             }
             else if (obj is IEnumerable objArray) // This MUST be after the IDictionary check because IDictionary extends IEnumerable
             {
                 // Convert each object in the collection to a PowerShell object and then return them as an array
-                return objArray.Cast<object>().Select(o => ToPowerShellObject(o)).ToArray();
+                return objArray.Cast<object>().Select(o => o.ToPowerShellObject()).ToArray();
             }
             else if (type.Assembly == typeof(object).Assembly)
             {
@@ -105,7 +105,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                 PSObject result = new PSObject();
                 foreach (PropertyInfo property in properties)
                 {
-                    result.Properties.Add(new PSNoteProperty(property.Name, ToPowerShellObject(property.GetValue(obj))));
+                    result.Properties.Add(new PSNoteProperty(property.Name, property.GetValue(obj).ToPowerShellObject()));
                 }
 
                 return result;

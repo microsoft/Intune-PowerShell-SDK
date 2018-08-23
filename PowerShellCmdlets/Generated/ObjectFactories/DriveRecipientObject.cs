@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.driveRecipient&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.driveRecipient&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "DriveRecipientObject", DefaultParameterSetName = @"#microsoft.graph.driveRecipient")]
+    [Cmdlet("New", "DriveRecipientObject", DefaultParameterSetName = @"microsoft.graph.driveRecipient")]
     [ODataType("microsoft.graph.driveRecipient")]
     public class New_DriveRecipientObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.driveRecipient", HelpMessage = @"The &quot;alias&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.driveRecipient", HelpMessage = @"The &quot;alias&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String alias { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.driveRecipient", HelpMessage = @"The &quot;email&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.driveRecipient", HelpMessage = @"The &quot;email&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String email { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.driveRecipient", HelpMessage = @"The &quot;objectId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.driveRecipient", HelpMessage = @"The &quot;objectId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String objectId { get; set; }
     }
 }

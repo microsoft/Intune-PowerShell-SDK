@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookTableColumn&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookTableColumn&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookTableColumnObject", DefaultParameterSetName = @"#microsoft.graph.workbookTableColumn")]
+    [Cmdlet("New", "WorkbookTableColumnObject", DefaultParameterSetName = @"microsoft.graph.workbookTableColumn")]
     [ODataType("microsoft.graph.workbookTableColumn")]
     public class New_WorkbookTableColumnObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookTableColumn", HelpMessage = @"The &quot;index&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookTableColumn", HelpMessage = @"The &quot;index&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 index { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookTableColumn", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookTableColumn", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String name { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.Json")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookTableColumn", HelpMessage = @"The &quot;values&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookTableColumn", HelpMessage = @"The &quot;values&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
         public System.Object values { get; set; }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookFilter")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookTableColumn", HelpMessage = @"The &quot;filter&quot; property, of type &quot;microsoft.graph.workbookFilter&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookTableColumn", HelpMessage = @"The &quot;filter&quot; property, of type &quot;microsoft.graph.workbookFilter&quot;.")]
         public System.Object filter { get; set; }
     }
 }

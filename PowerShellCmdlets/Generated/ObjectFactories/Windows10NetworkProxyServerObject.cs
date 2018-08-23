@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.windows10NetworkProxyServer&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.windows10NetworkProxyServer&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "Windows10NetworkProxyServerObject", DefaultParameterSetName = @"#microsoft.graph.windows10NetworkProxyServer")]
+    [Cmdlet("New", "Windows10NetworkProxyServerObject", DefaultParameterSetName = @"microsoft.graph.windows10NetworkProxyServer")]
     [ODataType("microsoft.graph.windows10NetworkProxyServer")]
     public class New_Windows10NetworkProxyServerObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windows10NetworkProxyServer", HelpMessage = @"The &quot;address&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10NetworkProxyServer", HelpMessage = @"The &quot;address&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String address { get; set; }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windows10NetworkProxyServer", HelpMessage = @"The &quot;exceptions&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10NetworkProxyServer", HelpMessage = @"The &quot;exceptions&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] exceptions { get; set; }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windows10NetworkProxyServer", HelpMessage = @"The &quot;useForLocalAddresses&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10NetworkProxyServer", HelpMessage = @"The &quot;useForLocalAddresses&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean useForLocalAddresses { get; set; }
     }
 }

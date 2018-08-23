@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.personType&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.personType&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "PersonTypeObject", DefaultParameterSetName = @"#microsoft.graph.personType")]
+    [Cmdlet("New", "PersonTypeObject", DefaultParameterSetName = @"microsoft.graph.personType")]
     [ODataType("microsoft.graph.personType")]
     public class New_PersonTypeObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.personType", HelpMessage = @"The &quot;class&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.personType", HelpMessage = @"The &quot;class&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String @class { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.personType", HelpMessage = @"The &quot;subclass&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.personType", HelpMessage = @"The &quot;subclass&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String subclass { get; set; }
     }
 }

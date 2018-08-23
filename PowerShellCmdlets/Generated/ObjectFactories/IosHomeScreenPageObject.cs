@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.iosHomeScreenPage&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.iosHomeScreenPage&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "IosHomeScreenPageObject", DefaultParameterSetName = @"#microsoft.graph.iosHomeScreenPage")]
+    [Cmdlet("New", "IosHomeScreenPageObject", DefaultParameterSetName = @"microsoft.graph.iosHomeScreenPage")]
     [ODataType("microsoft.graph.iosHomeScreenPage")]
     public class New_IosHomeScreenPageObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosHomeScreenPage", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosHomeScreenPage", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -27,10 +27,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.iosHomeScreenPage&quot; type.</para>
         ///     <para type="description">A list of apps and folders to appear on a page. This collection can contain a maximum of 500 elements.</para>
         /// </summary>
-        [ODataType("microsoft.graph.iosHomeScreenItem")]
+        [ODataType("microsoft.graph.iosHomeScreenItem", "microsoft.graph.iosHomeScreenApp", "microsoft.graph.iosHomeScreenFolder")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosHomeScreenPage", HelpMessage = @"The &quot;icons&quot; property, of type &quot;microsoft.graph.iosHomeScreenItem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosHomeScreenPage", HelpMessage = @"The &quot;icons&quot; property, of type &quot;microsoft.graph.iosHomeScreenItem&quot;.")]
         public System.Object[] icons { get; set; }
     }
 }

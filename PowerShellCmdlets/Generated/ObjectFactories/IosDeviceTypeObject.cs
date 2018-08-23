@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.iosDeviceType&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.iosDeviceType&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "IosDeviceTypeObject", DefaultParameterSetName = @"#microsoft.graph.iosDeviceType")]
+    [Cmdlet("New", "IosDeviceTypeObject", DefaultParameterSetName = @"microsoft.graph.iosDeviceType")]
     [ODataType("microsoft.graph.iosDeviceType")]
     public class New_IosDeviceTypeObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosDeviceType", HelpMessage = @"The &quot;iPad&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceType", HelpMessage = @"The &quot;iPad&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean iPad { get; set; }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.iosDeviceType", HelpMessage = @"The &quot;iPhoneAndIPod&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceType", HelpMessage = @"The &quot;iPhoneAndIPod&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean iPhoneAndIPod { get; set; }
     }
 }

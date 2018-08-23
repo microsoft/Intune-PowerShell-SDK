@@ -9,7 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.windowsInformationProtectionAppLearningSummary&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Windows Information Protection AppLearning Summary entity.</para>
     /// </summary>
-    [Cmdlet("New", "WindowsInformationProtectionAppLearningSummaryObject", DefaultParameterSetName = @"#microsoft.graph.windowsInformationProtectionAppLearningSummary")]
+    [Cmdlet("New", "WindowsInformationProtectionAppLearningSummaryObject", DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLearningSummary")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLearningSummary")]
     public class New_WindowsInformationProtectionAppLearningSummaryObject : ObjectFactoryCmdletBase
     {
@@ -20,7 +20,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionAppLearningSummary", HelpMessage = @"The &quot;applicationName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLearningSummary", HelpMessage = @"The &quot;applicationName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String applicationName { get; set; }
 
         /// <summary>
@@ -34,7 +34,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.applicationType")]
         [Selectable]
         [ValidateSet(@"universal", @"desktop")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionAppLearningSummary", HelpMessage = @"The &quot;applicationType&quot; property, of type &quot;microsoft.graph.applicationType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLearningSummary", HelpMessage = @"The &quot;applicationType&quot; property, of type &quot;microsoft.graph.applicationType&quot;.")]
         public System.String applicationType { get; set; }
 
         /// <summary>
@@ -44,7 +44,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.windowsInformationProtectionAppLearningSummary", HelpMessage = @"The &quot;deviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLearningSummary", HelpMessage = @"The &quot;deviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 deviceCount { get; set; }
     }
 }

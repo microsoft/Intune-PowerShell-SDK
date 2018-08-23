@@ -11,6 +11,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Get", "Reports", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Get_Reports : GetCmdlet
     {
         internal override System.String GetResourcePath()
@@ -24,8 +25,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">POST ~/reports</para>
     ///     <para type="description">Creates the &quot;reports&quot; object (which is of type &quot;microsoft.graph.reportRoot&quot;).</para>
     /// </summary>
-    [Cmdlet("New", "Reports", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"#microsoft.graph.reportRoot")]
+    [Cmdlet("New", "Reports", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.reportRoot")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class New_Reports : PostCmdlet
     {
         internal override System.String GetResourcePath()
@@ -39,8 +41,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">PATCH ~/reports</para>
     ///     <para type="description">Updates the &quot;reports&quot; object (which is of type &quot;microsoft.graph.reportRoot&quot;).</para>
     /// </summary>
-    [Cmdlet("Update", "Reports", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"#microsoft.graph.reportRoot")]
+    [Cmdlet("Update", "Reports", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.reportRoot")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Update_Reports : PatchCmdlet
     {
         internal override System.String GetResourcePath()
@@ -56,6 +59,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Remove", "Reports", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Remove_Reports : DeleteCmdlet
     {
         internal override System.String GetResourcePath()
@@ -71,6 +75,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOffice365ActivationsUserDetail", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOffice365ActivationsUserDetail : FunctionReturningEntityCmdlet
     {
         internal override System.String GetResourcePath()
@@ -86,6 +91,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOffice365ActivationCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOffice365ActivationCounts : FunctionReturningEntityCmdlet
     {
         internal override System.String GetResourcePath()
@@ -101,6 +107,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOffice365ActivationsUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOffice365ActivationsUserCounts : FunctionReturningEntityCmdlet
     {
         internal override System.String GetResourcePath()
@@ -116,6 +123,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOffice365ActiveUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOffice365ActiveUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -149,6 +157,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOffice365ServicesUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOffice365ServicesUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -173,6 +182,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOffice365ActiveUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOffice365ActiveUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -197,6 +207,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOffice365GroupsActivityDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOffice365GroupsActivityDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -230,6 +241,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOffice365GroupsActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOffice365GroupsActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -254,6 +266,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOffice365GroupsActivityGroupCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOffice365GroupsActivityGroupCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -278,6 +291,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOffice365GroupsActivityStorage", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOffice365GroupsActivityStorage : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -302,6 +316,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOffice365GroupsActivityFileCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOffice365GroupsActivityFileCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -326,6 +341,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetEmailActivityUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetEmailActivityUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -359,6 +375,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetEmailActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetEmailActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -383,6 +400,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetEmailActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetEmailActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -407,6 +425,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetEmailAppUsageUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetEmailAppUsageUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -440,6 +459,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetEmailAppUsageAppsUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetEmailAppUsageAppsUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -464,6 +484,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetEmailAppUsageUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetEmailAppUsageUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -488,6 +509,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetEmailAppUsageVersionsUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetEmailAppUsageVersionsUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -512,6 +534,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetMailboxUsageDetail", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetMailboxUsageDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -536,6 +559,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetMailboxUsageMailboxCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetMailboxUsageMailboxCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -560,6 +584,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetMailboxUsageQuotaStatusMailboxCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetMailboxUsageQuotaStatusMailboxCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -584,6 +609,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetMailboxUsageStorage", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetMailboxUsageStorage : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -608,6 +634,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOneDriveActivityUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOneDriveActivityUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -641,6 +668,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOneDriveActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOneDriveActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -665,6 +693,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOneDriveActivityFileCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOneDriveActivityFileCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -689,6 +718,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOneDriveUsageAccountDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOneDriveUsageAccountDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -722,6 +752,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOneDriveUsageAccountCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOneDriveUsageAccountCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -746,6 +777,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOneDriveUsageFileCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOneDriveUsageFileCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -770,6 +802,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetOneDriveUsageStorage", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetOneDriveUsageStorage : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -794,6 +827,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSharePointActivityUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSharePointActivityUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -827,6 +861,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSharePointActivityFileCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSharePointActivityFileCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -851,6 +886,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSharePointActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSharePointActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -875,6 +911,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSharePointActivityPages", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSharePointActivityPages : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -899,6 +936,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSharePointSiteUsageDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSharePointSiteUsageDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -932,6 +970,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSharePointSiteUsageFileCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSharePointSiteUsageFileCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -956,6 +995,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSharePointSiteUsageSiteCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSharePointSiteUsageSiteCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -980,6 +1020,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSharePointSiteUsageStorage", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSharePointSiteUsageStorage : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1004,6 +1045,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSharePointSiteUsagePages", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSharePointSiteUsagePages : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1028,6 +1070,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessActivityUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSkypeForBusinessActivityUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1061,6 +1104,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSkypeForBusinessActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1085,6 +1129,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSkypeForBusinessActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1109,6 +1154,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessPeerToPeerActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSkypeForBusinessPeerToPeerActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1133,6 +1179,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessPeerToPeerActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSkypeForBusinessPeerToPeerActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1157,6 +1204,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessPeerToPeerActivityMinuteCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSkypeForBusinessPeerToPeerActivityMinuteCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1181,6 +1229,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessOrganizerActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSkypeForBusinessOrganizerActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1205,6 +1254,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessOrganizerActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSkypeForBusinessOrganizerActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1229,6 +1279,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessOrganizerActivityMinuteCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSkypeForBusinessOrganizerActivityMinuteCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1253,6 +1304,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessParticipantActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSkypeForBusinessParticipantActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1277,6 +1329,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessParticipantActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSkypeForBusinessParticipantActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1301,6 +1354,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessParticipantActivityMinuteCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSkypeForBusinessParticipantActivityMinuteCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1325,6 +1379,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessDeviceUsageUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSkypeForBusinessDeviceUsageUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1358,6 +1413,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessDeviceUsageDistributionUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSkypeForBusinessDeviceUsageDistributionUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1382,6 +1438,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessDeviceUsageUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetSkypeForBusinessDeviceUsageUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1406,6 +1463,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetYammerActivityUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetYammerActivityUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1439,6 +1497,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetYammerActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetYammerActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1463,6 +1522,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetYammerActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetYammerActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1487,6 +1547,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetYammerDeviceUsageUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetYammerDeviceUsageUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1520,6 +1581,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetYammerDeviceUsageDistributionUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetYammerDeviceUsageDistributionUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1544,6 +1606,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetYammerDeviceUsageUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetYammerDeviceUsageUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1568,6 +1631,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetYammerGroupsActivityDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetYammerGroupsActivityDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1601,6 +1665,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetYammerGroupsActivityGroupCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetYammerGroupsActivityGroupCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1625,6 +1690,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetYammerGroupsActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetYammerGroupsActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1649,6 +1715,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetTeamsUserActivityUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetTeamsUserActivityUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1682,6 +1749,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetTeamsUserActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetTeamsUserActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1706,6 +1774,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetTeamsUserActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetTeamsUserActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1730,6 +1799,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetTeamsDeviceUsageUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetTeamsDeviceUsageUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1763,6 +1833,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetTeamsDeviceUsageUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetTeamsDeviceUsageUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1787,6 +1858,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_GetTeamsDeviceUsageDistributionUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_GetTeamsDeviceUsageDistributionUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
@@ -1811,6 +1883,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_DeviceConfigurationUserActivity", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_DeviceConfigurationUserActivity : FunctionReturningEntityCmdlet
     {
         internal override System.String GetResourcePath()
@@ -1826,6 +1899,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet("Invoke", "Reports_DeviceConfigurationDeviceActivity", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
     public class Invoke_Reports_DeviceConfigurationDeviceActivity : FunctionReturningEntityCmdlet
     {
         internal override System.String GetResourcePath()

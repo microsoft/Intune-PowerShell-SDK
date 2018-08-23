@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookChartFill&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookChartFill&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookChartFillObject", DefaultParameterSetName = @"#microsoft.graph.workbookChartFill")]
+    [Cmdlet("New", "WorkbookChartFillObject", DefaultParameterSetName = @"microsoft.graph.workbookChartFill")]
     [ODataType("microsoft.graph.workbookChartFill")]
     public class New_WorkbookChartFillObject : ObjectFactoryCmdletBase
     {

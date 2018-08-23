@@ -53,7 +53,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         /// Runs a cmdlet.
         /// </summary>
-        internal void Run()
+        private void Run()
         {
             // Get all the evaluated values
             string httpMethodString = this.GetHttpMethod();

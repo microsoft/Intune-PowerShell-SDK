@@ -9,7 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Device compliance policy assignment.</para>
     /// </summary>
-    [Cmdlet("New", "DeviceCompliancePolicyAssignmentObject", DefaultParameterSetName = @"#microsoft.graph.deviceCompliancePolicyAssignment")]
+    [Cmdlet("New", "DeviceCompliancePolicyAssignmentObject", DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyAssignment")]
     [ODataType("microsoft.graph.deviceCompliancePolicyAssignment")]
     public class New_DeviceCompliancePolicyAssignmentObject : ObjectFactoryCmdletBase
     {
@@ -18,9 +18,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot; type.</para>
         ///     <para type="description">Target for the compliance policy assignment.</para>
         /// </summary>
-        [ODataType("microsoft.graph.deviceAndAppManagementAssignmentTarget")]
+        [ODataType("microsoft.graph.deviceAndAppManagementAssignmentTarget", "microsoft.graph.allDevicesAssignmentTarget", "microsoft.graph.groupAssignmentTarget", "microsoft.graph.exclusionGroupAssignmentTarget", "microsoft.graph.allLicensedUsersAssignmentTarget")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceCompliancePolicyAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
         public System.Object target { get; set; }
     }
 }

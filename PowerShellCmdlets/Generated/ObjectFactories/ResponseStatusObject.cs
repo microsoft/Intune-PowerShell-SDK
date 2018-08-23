@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.responseStatus&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.responseStatus&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ResponseStatusObject", DefaultParameterSetName = @"#microsoft.graph.responseStatus")]
+    [Cmdlet("New", "ResponseStatusObject", DefaultParameterSetName = @"microsoft.graph.responseStatus")]
     [ODataType("microsoft.graph.responseStatus")]
     public class New_ResponseStatusObject : ObjectFactoryCmdletBase
     {
@@ -22,7 +22,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.responseType")]
         [Selectable]
         [ValidateSet(@"none", @"organizer", @"tentativelyAccepted", @"accepted", @"declined", @"notResponded")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.responseStatus", HelpMessage = @"The &quot;response&quot; property, of type &quot;microsoft.graph.responseType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.responseStatus", HelpMessage = @"The &quot;response&quot; property, of type &quot;microsoft.graph.responseType&quot;.")]
         public System.String response { get; set; }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.responseStatus", HelpMessage = @"The &quot;time&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.responseStatus", HelpMessage = @"The &quot;time&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset time { get; set; }
     }
 }

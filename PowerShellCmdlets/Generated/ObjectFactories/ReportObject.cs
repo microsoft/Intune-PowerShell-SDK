@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.report&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.report&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ReportObject", DefaultParameterSetName = @"#microsoft.graph.report")]
+    [Cmdlet("New", "ReportObject", DefaultParameterSetName = @"microsoft.graph.report")]
     [ODataType("microsoft.graph.report")]
     public class New_ReportObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Stream")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.report", HelpMessage = @"The &quot;content&quot; property, of type &quot;Edm.Stream&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.report", HelpMessage = @"The &quot;content&quot; property, of type &quot;Edm.Stream&quot;.")]
         public System.IO.Stream content { get; set; }
     }
 }

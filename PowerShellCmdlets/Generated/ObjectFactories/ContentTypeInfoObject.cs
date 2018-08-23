@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.contentTypeInfo&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.contentTypeInfo&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "ContentTypeInfoObject", DefaultParameterSetName = @"#microsoft.graph.contentTypeInfo")]
+    [Cmdlet("New", "ContentTypeInfoObject", DefaultParameterSetName = @"microsoft.graph.contentTypeInfo")]
     [ODataType("microsoft.graph.contentTypeInfo")]
     public class New_ContentTypeInfoObject : ObjectFactoryCmdletBase
     {

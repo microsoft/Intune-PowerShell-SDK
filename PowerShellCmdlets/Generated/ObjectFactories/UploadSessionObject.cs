@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.uploadSession&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.uploadSession&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "UploadSessionObject", DefaultParameterSetName = @"#microsoft.graph.uploadSession")]
+    [Cmdlet("New", "UploadSessionObject", DefaultParameterSetName = @"microsoft.graph.uploadSession")]
     [ODataType("microsoft.graph.uploadSession")]
     public class New_UploadSessionObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.uploadSession", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.uploadSession", HelpMessage = @"The &quot;expirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset expirationDateTime { get; set; }
 
         /// <summary>
@@ -28,7 +28,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.uploadSession", HelpMessage = @"The &quot;nextExpectedRanges&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.uploadSession", HelpMessage = @"The &quot;nextExpectedRanges&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] nextExpectedRanges { get; set; }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.uploadSession", HelpMessage = @"The &quot;uploadUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.uploadSession", HelpMessage = @"The &quot;uploadUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String uploadUrl { get; set; }
     }
 }

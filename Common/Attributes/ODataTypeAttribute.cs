@@ -17,15 +17,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK
         /// <summary>
         /// The name of the OData type.
         /// </summary>
-        internal string FullName { get; }
+        internal string TypeFullName { get; }
+
+        /// <summary>
+        /// The names of all the subtypes of the given type.
+        /// </summary>
+        internal IEnumerable<string> SubTypeFullNames { get; }
 
         /// <summary>
         /// Creates a new <see cref="ODataTypeAttribute"/>.
         /// </summary>
         /// <param name="oDataTypeFullName">The name of the OData type.</param>
-        internal ODataTypeAttribute(string oDataTypeFullName)
+        /// <param name="oDataSubTypeFullNames">The names of all the subtypes of the given type.</param>
+        internal ODataTypeAttribute(string oDataTypeFullName, params string[] oDataSubTypeFullNames)
         {
-            this.FullName = oDataTypeFullName ?? throw new ArgumentNullException(nameof(oDataTypeFullName));
+            this.TypeFullName = oDataTypeFullName ?? throw new ArgumentNullException(nameof(oDataTypeFullName));
+            this.SubTypeFullNames = oDataSubTypeFullNames != null
+                ? new HashSet<string>(oDataSubTypeFullNames) as IEnumerable<string>
+                : Array.Empty<string>();
         }
     }
 }

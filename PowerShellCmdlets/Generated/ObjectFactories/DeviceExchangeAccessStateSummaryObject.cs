@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.deviceExchangeAccessStateSummary&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceExchangeAccessStateSummary&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "DeviceExchangeAccessStateSummaryObject", DefaultParameterSetName = @"#microsoft.graph.deviceExchangeAccessStateSummary")]
+    [Cmdlet("New", "DeviceExchangeAccessStateSummaryObject", DefaultParameterSetName = @"microsoft.graph.deviceExchangeAccessStateSummary")]
     [ODataType("microsoft.graph.deviceExchangeAccessStateSummary")]
     public class New_DeviceExchangeAccessStateSummaryObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceExchangeAccessStateSummary", HelpMessage = @"The &quot;allowedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceExchangeAccessStateSummary", HelpMessage = @"The &quot;allowedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 allowedDeviceCount { get; set; }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceExchangeAccessStateSummary", HelpMessage = @"The &quot;blockedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceExchangeAccessStateSummary", HelpMessage = @"The &quot;blockedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 blockedDeviceCount { get; set; }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceExchangeAccessStateSummary", HelpMessage = @"The &quot;quarantinedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceExchangeAccessStateSummary", HelpMessage = @"The &quot;quarantinedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 quarantinedDeviceCount { get; set; }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceExchangeAccessStateSummary", HelpMessage = @"The &quot;unknownDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceExchangeAccessStateSummary", HelpMessage = @"The &quot;unknownDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 unknownDeviceCount { get; set; }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceExchangeAccessStateSummary", HelpMessage = @"The &quot;unavailableDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceExchangeAccessStateSummary", HelpMessage = @"The &quot;unavailableDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 unavailableDeviceCount { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.deviceOperatingSystemSummary&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceOperatingSystemSummary&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "DeviceOperatingSystemSummaryObject", DefaultParameterSetName = @"#microsoft.graph.deviceOperatingSystemSummary")]
+    [Cmdlet("New", "DeviceOperatingSystemSummaryObject", DefaultParameterSetName = @"microsoft.graph.deviceOperatingSystemSummary")]
     [ODataType("microsoft.graph.deviceOperatingSystemSummary")]
     public class New_DeviceOperatingSystemSummaryObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;androidCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;androidCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 androidCount { get; set; }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;iosCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;iosCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 iosCount { get; set; }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;macOSCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;macOSCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 macOSCount { get; set; }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;windowsMobileCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;windowsMobileCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 windowsMobileCount { get; set; }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;windowsCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;windowsCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 windowsCount { get; set; }
 
         /// <summary>
@@ -69,7 +69,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;unknownCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceOperatingSystemSummary", HelpMessage = @"The &quot;unknownCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 unknownCount { get; set; }
     }
 }

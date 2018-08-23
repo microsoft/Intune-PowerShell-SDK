@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.licenseUnitsDetail&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.licenseUnitsDetail&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "LicenseUnitsDetailObject", DefaultParameterSetName = @"#microsoft.graph.licenseUnitsDetail")]
+    [Cmdlet("New", "LicenseUnitsDetailObject", DefaultParameterSetName = @"microsoft.graph.licenseUnitsDetail")]
     [ODataType("microsoft.graph.licenseUnitsDetail")]
     public class New_LicenseUnitsDetailObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.licenseUnitsDetail", HelpMessage = @"The &quot;enabled&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.licenseUnitsDetail", HelpMessage = @"The &quot;enabled&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 enabled { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.licenseUnitsDetail", HelpMessage = @"The &quot;suspended&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.licenseUnitsDetail", HelpMessage = @"The &quot;suspended&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 suspended { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.licenseUnitsDetail", HelpMessage = @"The &quot;warning&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.licenseUnitsDetail", HelpMessage = @"The &quot;warning&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 warning { get; set; }
     }
 }

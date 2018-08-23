@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.operation&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.operation&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "OperationObject", DefaultParameterSetName = @"#microsoft.graph.operation")]
+    [Cmdlet("New", "OperationObject", DefaultParameterSetName = @"microsoft.graph.operation")]
     [ODataType("microsoft.graph.operation")]
     public class New_OperationObject : ObjectFactoryCmdletBase
     {
@@ -16,8 +16,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.operation&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.operation")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.operation", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.operation&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.operation")]
+        [Parameter(ParameterSetName = @"microsoft.graph.operation", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.operation&quot; type.")]
         public System.Management.Automation.SwitchParameter operation { get; set; }
 
         /// <summary>
@@ -30,8 +30,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.operationStatus")]
         [Selectable]
         [ValidateSet(@"NotStarted", @"Running", @"Completed", @"Failed")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.operation", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.operationStatus&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.operationStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.operation", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.operationStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.operationStatus&quot;.")]
         public System.String status { get; set; }
 
         /// <summary>
@@ -40,8 +40,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.operation", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.operation", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset createdDateTime { get; set; }
 
         /// <summary>
@@ -50,16 +50,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.operation", HelpMessage = @"The &quot;lastActionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;lastActionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.operation", HelpMessage = @"The &quot;lastActionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;lastActionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset lastActionDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenoteOperation&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"#microsoft.graph.onenoteOperation")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenoteOperation", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenoteOperation&quot; type.")]
+        [ParameterSetSelector(@"microsoft.graph.onenoteOperation")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenoteOperation&quot; type.")]
         public System.Management.Automation.SwitchParameter onenoteOperation { get; set; }
 
         /// <summary>
@@ -68,7 +68,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;resourceLocation&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;resourceLocation&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String resourceLocation { get; set; }
 
         /// <summary>
@@ -77,7 +77,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;resourceId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;resourceId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String resourceId { get; set; }
 
         /// <summary>
@@ -86,7 +86,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.onenoteOperationError")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;error&quot; property, of type &quot;microsoft.graph.onenoteOperationError&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;error&quot; property, of type &quot;microsoft.graph.onenoteOperationError&quot;.")]
         public System.Object error { get; set; }
 
         /// <summary>
@@ -95,7 +95,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;percentComplete&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;percentComplete&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String percentComplete { get; set; }
     }
 }

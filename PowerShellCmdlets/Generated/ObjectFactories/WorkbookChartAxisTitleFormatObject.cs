@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.workbookChartAxisTitleFormat&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.workbookChartAxisTitleFormat&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "WorkbookChartAxisTitleFormatObject", DefaultParameterSetName = @"#microsoft.graph.workbookChartAxisTitleFormat")]
+    [Cmdlet("New", "WorkbookChartAxisTitleFormatObject", DefaultParameterSetName = @"microsoft.graph.workbookChartAxisTitleFormat")]
     [ODataType("microsoft.graph.workbookChartAxisTitleFormat")]
     public class New_WorkbookChartAxisTitleFormatObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartFont")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.workbookChartAxisTitleFormat", HelpMessage = @"The &quot;font&quot; property, of type &quot;microsoft.graph.workbookChartFont&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxisTitleFormat", HelpMessage = @"The &quot;font&quot; property, of type &quot;microsoft.graph.workbookChartFont&quot;.")]
         public System.Object font { get; set; }
     }
 }

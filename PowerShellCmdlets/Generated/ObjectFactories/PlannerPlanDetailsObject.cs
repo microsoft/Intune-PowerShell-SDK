@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.plannerPlanDetails&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.plannerPlanDetails&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "PlannerPlanDetailsObject", DefaultParameterSetName = @"#microsoft.graph.plannerPlanDetails")]
+    [Cmdlet("New", "PlannerPlanDetailsObject", DefaultParameterSetName = @"microsoft.graph.plannerPlanDetails")]
     [ODataType("microsoft.graph.plannerPlanDetails")]
     public class New_PlannerPlanDetailsObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.plannerUserIds")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.plannerPlanDetails", HelpMessage = @"The &quot;sharedWith&quot; property, of type &quot;microsoft.graph.plannerUserIds&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerPlanDetails", HelpMessage = @"The &quot;sharedWith&quot; property, of type &quot;microsoft.graph.plannerUserIds&quot;.")]
         public System.Object sharedWith { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.plannerCategoryDescriptions")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.plannerPlanDetails", HelpMessage = @"The &quot;categoryDescriptions&quot; property, of type &quot;microsoft.graph.plannerCategoryDescriptions&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerPlanDetails", HelpMessage = @"The &quot;categoryDescriptions&quot; property, of type &quot;microsoft.graph.plannerCategoryDescriptions&quot;.")]
         public System.Object categoryDescriptions { get; set; }
     }
 }

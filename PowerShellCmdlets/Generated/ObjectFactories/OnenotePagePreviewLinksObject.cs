@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.onenotePagePreviewLinks&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.onenotePagePreviewLinks&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "OnenotePagePreviewLinksObject", DefaultParameterSetName = @"#microsoft.graph.onenotePagePreviewLinks")]
+    [Cmdlet("New", "OnenotePagePreviewLinksObject", DefaultParameterSetName = @"microsoft.graph.onenotePagePreviewLinks")]
     [ODataType("microsoft.graph.onenotePagePreviewLinks")]
     public class New_OnenotePagePreviewLinksObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.externalLink")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.onenotePagePreviewLinks", HelpMessage = @"The &quot;previewImageUrl&quot; property, of type &quot;microsoft.graph.externalLink&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenotePagePreviewLinks", HelpMessage = @"The &quot;previewImageUrl&quot; property, of type &quot;microsoft.graph.externalLink&quot;.")]
         public System.Object previewImageUrl { get; set; }
     }
 }

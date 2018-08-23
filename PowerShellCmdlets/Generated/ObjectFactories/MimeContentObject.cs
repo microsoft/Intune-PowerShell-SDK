@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.mimeContent&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.mimeContent&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "MimeContentObject", DefaultParameterSetName = @"#microsoft.graph.mimeContent")]
+    [Cmdlet("New", "MimeContentObject", DefaultParameterSetName = @"microsoft.graph.mimeContent")]
     [ODataType("microsoft.graph.mimeContent")]
     public class New_MimeContentObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mimeContent", HelpMessage = @"The &quot;type&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mimeContent", HelpMessage = @"The &quot;type&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String type { get; set; }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Binary")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.mimeContent", HelpMessage = @"The &quot;value&quot; property, of type &quot;Edm.Binary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mimeContent", HelpMessage = @"The &quot;value&quot; property, of type &quot;Edm.Binary&quot;.")]
         public System.Byte[] value { get; set; }
     }
 }

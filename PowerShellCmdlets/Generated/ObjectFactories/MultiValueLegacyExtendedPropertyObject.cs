@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "MultiValueLegacyExtendedPropertyObject", DefaultParameterSetName = @"#microsoft.graph.multiValueLegacyExtendedProperty")]
+    [Cmdlet("New", "MultiValueLegacyExtendedPropertyObject", DefaultParameterSetName = @"microsoft.graph.multiValueLegacyExtendedProperty")]
     [ODataType("microsoft.graph.multiValueLegacyExtendedProperty")]
     public class New_MultiValueLegacyExtendedPropertyObject : ObjectFactoryCmdletBase
     {
@@ -19,7 +19,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.multiValueLegacyExtendedProperty", HelpMessage = @"The &quot;value&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.multiValueLegacyExtendedProperty", HelpMessage = @"The &quot;value&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] value { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.hashes&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.hashes&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "HashesObject", DefaultParameterSetName = @"#microsoft.graph.hashes")]
+    [Cmdlet("New", "HashesObject", DefaultParameterSetName = @"microsoft.graph.hashes")]
     [ODataType("microsoft.graph.hashes")]
     public class New_HashesObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.hashes", HelpMessage = @"The &quot;crc32Hash&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.hashes", HelpMessage = @"The &quot;crc32Hash&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String crc32Hash { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.hashes", HelpMessage = @"The &quot;quickXorHash&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.hashes", HelpMessage = @"The &quot;quickXorHash&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String quickXorHash { get; set; }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.hashes", HelpMessage = @"The &quot;sha1Hash&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.hashes", HelpMessage = @"The &quot;sha1Hash&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String sha1Hash { get; set; }
     }
 }

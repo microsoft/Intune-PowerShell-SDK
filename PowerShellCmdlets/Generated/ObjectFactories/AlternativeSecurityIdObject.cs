@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.alternativeSecurityId&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.alternativeSecurityId&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "AlternativeSecurityIdObject", DefaultParameterSetName = @"#microsoft.graph.alternativeSecurityId")]
+    [Cmdlet("New", "AlternativeSecurityIdObject", DefaultParameterSetName = @"microsoft.graph.alternativeSecurityId")]
     [ODataType("microsoft.graph.alternativeSecurityId")]
     public class New_AlternativeSecurityIdObject : ObjectFactoryCmdletBase
     {
@@ -18,7 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.alternativeSecurityId", HelpMessage = @"The &quot;type&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.alternativeSecurityId", HelpMessage = @"The &quot;type&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 type { get; set; }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.alternativeSecurityId", HelpMessage = @"The &quot;identityProvider&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.alternativeSecurityId", HelpMessage = @"The &quot;identityProvider&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String identityProvider { get; set; }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Binary")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"#microsoft.graph.alternativeSecurityId", HelpMessage = @"The &quot;key&quot; property, of type &quot;Edm.Binary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.alternativeSecurityId", HelpMessage = @"The &quot;key&quot; property, of type &quot;Edm.Binary&quot;.")]
         public System.Byte[] key { get; set; }
     }
 }

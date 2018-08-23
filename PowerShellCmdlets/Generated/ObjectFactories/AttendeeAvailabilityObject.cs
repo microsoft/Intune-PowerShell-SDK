@@ -8,7 +8,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.attendeeAvailability&quot; (or one of it&apos;s derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.attendeeAvailability&quot; (or one of it&apos;s derived types).</para>
     /// </summary>
-    [Cmdlet("New", "AttendeeAvailabilityObject", DefaultParameterSetName = @"#microsoft.graph.attendeeAvailability")]
+    [Cmdlet("New", "AttendeeAvailabilityObject", DefaultParameterSetName = @"microsoft.graph.attendeeAvailability")]
     [ODataType("microsoft.graph.attendeeAvailability")]
     public class New_AttendeeAvailabilityObject : ObjectFactoryCmdletBase
     {
@@ -16,9 +16,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;attendee&quot; property, of type &quot;microsoft.graph.attendeeBase&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.attendeeAvailability&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.attendeeBase")]
+        [ODataType("microsoft.graph.attendeeBase", "microsoft.graph.attendee")]
         [Selectable]
-        [Parameter(ParameterSetName = @"#microsoft.graph.attendeeAvailability", HelpMessage = @"The &quot;attendee&quot; property, of type &quot;microsoft.graph.attendeeBase&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.attendeeAvailability", HelpMessage = @"The &quot;attendee&quot; property, of type &quot;microsoft.graph.attendeeBase&quot;.")]
         public System.Object attendee { get; set; }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.freeBusyStatus")]
         [Selectable]
         [ValidateSet(@"free", @"tentative", @"busy", @"oof", @"workingElsewhere", @"unknown")]
-        [Parameter(ParameterSetName = @"#microsoft.graph.attendeeAvailability", HelpMessage = @"The &quot;availability&quot; property, of type &quot;microsoft.graph.freeBusyStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.attendeeAvailability", HelpMessage = @"The &quot;availability&quot; property, of type &quot;microsoft.graph.freeBusyStatus&quot;.")]
         public System.String availability { get; set; }
     }
 }
