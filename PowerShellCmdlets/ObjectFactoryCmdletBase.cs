@@ -59,8 +59,18 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 }
                 else
                 {
-                    // This is a regular property, so add the name and value to the result object
-                    resultProperties.Add(property.Name, property.GetValue(this));
+                    // Get the value of the regular property
+                    object value = property.GetValue(this);
+
+                    // TODO: Convert the property value into something that can be serialized as JSON
+                    // This currently only satisfies the case where the property is a byte array - it does not satisfy other cases such as nested objects
+                    if (value is byte[] bytes)
+                    {
+                        value = System.Convert.ToBase64String(bytes);
+                    }
+
+                    // Add the serializable value as a property in the result object
+                    resultProperties.Add(property.Name, value);
                 }
             }
 

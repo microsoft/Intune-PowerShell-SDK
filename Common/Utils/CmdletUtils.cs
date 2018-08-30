@@ -38,7 +38,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK
 
             // Get only the properties that were set from PowerShell
             IEnumerable<string> boundParameterNames = cmdlet.MyInvocation.BoundParameters.Keys;
-            IEnumerable<PropertyInfo> boundProperties = cmdletProperties.Where(prop => boundParameterNames.Contains(prop.Name));
+            IEnumerable<PropertyInfo> boundProperties = cmdletProperties.Where(prop =>
+                boundParameterNames.Contains(prop.Name) ||
+                prop.GetCustomAttribute<AliasAttribute>()?.AliasNames?.Intersect(boundParameterNames)?.Any() == true);
 
             return boundProperties;
         }

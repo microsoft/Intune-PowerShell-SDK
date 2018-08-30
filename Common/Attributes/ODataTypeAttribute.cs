@@ -6,7 +6,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
     using System.Collections.Generic;
 
     /// <summary>
-    /// Indicates that the property was generated from an OData property of the given type.
+    /// Indicates that the parameter or cmdlet was generated from an OData property of the given type.
     /// </summary>
     [AttributeUsage(
         AttributeTargets.Property | AttributeTargets.Class,

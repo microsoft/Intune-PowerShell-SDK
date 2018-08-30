@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [Alias("id")]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.enrollmentConfigurationAssignment&quot; object in the &quot;assignments&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.enrollmentConfigurationAssignment&quot; object in the &quot;assignments&quot; collection.")]
         public System.String assignmentId { get; set; }
 
         /// <summary>

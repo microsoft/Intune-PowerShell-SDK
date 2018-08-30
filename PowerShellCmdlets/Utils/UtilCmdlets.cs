@@ -330,8 +330,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// </summary>
     [Cmdlet(
         CmdletVerb, CmdletNoun,
-        ConfirmImpact = ConfirmImpact.Low,
-        DefaultParameterSetName = GetOrSearchCmdlet.OperationName)]
+        ConfirmImpact = ConfirmImpact.Low)]
     public class GetNextPage : GetOrSearchCmdlet // we need the behavior of "Search"
     {
         /// <summary>

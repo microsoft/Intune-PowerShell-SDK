@@ -33,7 +33,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [Alias("id")]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot; object in the &quot;scheduledActionsForRule&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot; object in the &quot;scheduledActionsForRule&quot; collection.")]
         public System.String scheduledActionsForRuleId { get; set; }
 
         /// <summary>

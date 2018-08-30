@@ -55,7 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [Alias("id")]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedMobileApp&quot; object in the &quot;apps&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedMobileApp&quot; object in the &quot;apps&quot; collection.")]
         public System.String appId { get; set; }
 
         /// <summary>

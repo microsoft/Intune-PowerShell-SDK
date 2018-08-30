@@ -3108,7 +3108,7 @@
                 <Property Name="developer" Type="Edm.String" />
                 <Property Name="notes" Type="Edm.String" />
                 <Property Name="publishingState" Type="microsoft.graph.mobileAppPublishingState" Nullable="false" />
-                <NavigationProperty Name="categories" Type="Collection(microsoft.graph.mobileAppCategory)" ContainsTarget="true" />
+                <NavigationProperty Name="categories" Type="Collection(microsoft.graph.mobileAppCategory)" />
                 <NavigationProperty Name="assignments" Type="Collection(microsoft.graph.mobileAppAssignment)" ContainsTarget="true" />
             </EntityType>
             <EntityType Name="mobileAppCategory" BaseType="microsoft.graph.entity">

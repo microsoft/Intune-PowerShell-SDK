@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [Alias("id")]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceComplianceSettingState&quot; object in the &quot;deviceComplianceSettingStates&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceComplianceSettingState&quot; object in the &quot;deviceComplianceSettingStates&quot; collection.")]
         public System.String deviceComplianceSettingStateId { get; set; }
 
         /// <summary>

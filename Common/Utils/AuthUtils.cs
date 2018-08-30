@@ -234,6 +234,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                 string uniqueUserId = deserializedAccessToken["unique_name"]?.Value<string>();
                 string tenantId = deserializedAccessToken["tid"]?.Value<string>();
 
+                // TODO: Validate access token by checking its signature
+
                 // Build and return the result
                 return new SdkAuthResult(
                     accessTokenType: this.AccessTokenType,

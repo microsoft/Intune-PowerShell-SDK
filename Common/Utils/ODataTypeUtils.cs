@@ -100,6 +100,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                     return $"\"{stringValue}\"";
                 }
             }
+            else if (value is byte[] bytes && oDataTypeFullName == "Edm.Binary")
+            {
+                string base64String = System.Convert.ToBase64String(bytes);
+
+                if (isUrlValue)
+                {
+                    return $"'{base64String}'";
+                }
+                else
+                {
+                    return $"\"{base64String}\"";
+                }
+            }
             // Date, DateTime or DateTimeOffset
             else if (value is DateTimeOffset date)
             {

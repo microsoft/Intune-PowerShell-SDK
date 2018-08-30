@@ -79,8 +79,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 // Get the type of this property
                 string propertyODataType = property.GetODataTypeAttribute()?.TypeFullName;
 
+                // Figure out whether this property is an array
+                bool isArray = property.PropertyType.IsArray;
+
                 // Convert the value into a JSON string
-                string propertyValueString = propertyValue.ToODataString(propertyODataType, isArray: property.PropertyType.IsArray);
+                string propertyValueString = propertyValue.ToODataString(propertyODataType, isArray);
                 jsonString.Append($"    \"{propertyName}\": {propertyValueString}");
             }
             jsonString.AppendLine();
@@ -149,8 +152,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         {
             return this.GetBoundProperties()
                 .Where(property =>
-                    property.PropertyType == typeof(string) &&
-                    property.GetCustomAttribute<IdParameterAttribute>() != null);
+                    property.PropertyType == typeof(string)
+                    && property.GetCustomAttribute<IdParameterAttribute>() != null);
         }
 
         /// <summary>

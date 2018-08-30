@@ -24,7 +24,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [Alias("id")]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.")]
         public System.String telecomExpenseManagementPartnerId { get; set; }
 
         /// <summary>

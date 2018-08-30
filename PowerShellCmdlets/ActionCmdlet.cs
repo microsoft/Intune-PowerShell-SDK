@@ -3,6 +3,7 @@
 namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 {
     using System.Collections.Generic;
+    using System.Linq;
     using System.Net.Http;
     using System.Reflection;
 
@@ -19,7 +20,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         internal override object GetContent()
         {
             // Get the properties that were set by the user in this invocation of the PowerShell cmdlet
-            IEnumerable<PropertyInfo> boundProperties = this.GetBoundProperties(false);
+            IEnumerable<PropertyInfo> boundProperties = this.GetBoundProperties(includeInherited: false)
+                // Make sure all the properties have an [ODataType] attribute
+                .Where(prop => prop.GetCustomAttribute<ODataTypeAttribute>() != null);
 
             // Create the JSON string
             string jsonBody = this.WriteJsonFromProperties(boundProperties);

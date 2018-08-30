@@ -47,7 +47,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             if (!selectedODataType.StartsWith("#"))
             {
                 selectedODataType = "#" + selectedODataType;
-                this.WriteWarning($"The ODataType should start with a '#' character.  Prepending ODataType with '#': '{selectedODataType}'");
             }
 
             // Get the rest of the properties that will be serialized into the request body
@@ -81,28 +80,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <exception cref="PSArgumentException">If neither the ODataType property nor any of the type switches are set.</exception>
         private string GetODataType()
         {
-            // Get the bound properties
-            IEnumerable<PropertyInfo> boundProperties = this.GetBoundProperties();
-
             // Get the attribute which specifies the valid types
             ODataTypeAttribute cmdletTypeAttribute = this.GetODataTypeAttribute();
 
             // Check if the ODataType parameter was set to a valid value
-            bool isODataTypeSetToValidValue = boundProperties.Any(prop =>
-            {
-                // Check if the parameter was set
-                if (prop.Name == nameof(this.ODataType))
-                {
-                    return cmdletTypeAttribute != null && (
-                        cmdletTypeAttribute.TypeFullName == this.ODataType ||
-                        cmdletTypeAttribute.SubTypeFullNames.Contains(this.ODataType)
-                    );
-                }
-                else
-                {
-                    return false;
-                }
-            });
+            string userProvidedODataType = this.ODataType?.TrimStart('#');
+            bool isODataTypeSetToValidValue =
+                // Make sure the ODataType parameter is not null or empty
+                !string.IsNullOrWhiteSpace(userProvidedODataType) &&
+                // Make sure that this cmdlet has a set of known valid OData types
+                cmdletTypeAttribute != null && (
+                    // Validate the given type against the set of known valid OData types
+                    cmdletTypeAttribute.TypeFullName == userProvidedODataType ||
+                    cmdletTypeAttribute.SubTypeFullNames.Contains(userProvidedODataType)
+                );
 
             // If ODataType was not set to a valid value, pick the appropriate value based on the parameter set selector that was set
             if (!isODataTypeSetToValidValue)
@@ -142,7 +133,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 }
 
                 // Set the result to the value of the ODataType parameter
-                return this.ODataType;
+                return userProvidedODataType;
             }
         }
 
