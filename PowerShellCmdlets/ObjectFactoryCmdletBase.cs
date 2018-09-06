@@ -59,7 +59,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 }
                 else
                 {
-                    // Get the value of the regular property
+                    // Get the value of the property
                     object value = property.GetValue(this);
 
                     // TODO: Convert the property value into something that can be serialized as JSON
@@ -99,9 +99,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <returns>True if the given property is a OData type selector switch, otherwise false.</returns>
         private bool IsODataTypeSelectorSwitch(PropertyInfo property, out string selectedParameterSet)
         {
-            return (selectedParameterSet = property.GetCustomAttribute<ParameterSetSelectorAttribute>()?.ParameterSetName) != null
-                && property.PropertyType == typeof(SwitchParameter)
-                && selectedParameterSet.StartsWith("#");
+            return 
+                // Prepend the type name with a "#" and set it as the result
+                (selectedParameterSet = property.GetCustomAttribute<ParameterSetSelectorAttribute>()?.ParameterSetName?.Insert(0, "#")) != null &&
+                // If this property has the ParameterSetSelector attribute, make sure it is also a SwitchParameter
+                property.PropertyType == typeof(SwitchParameter);
         }
     }
 }
