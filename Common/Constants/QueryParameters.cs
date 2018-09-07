@@ -23,6 +23,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.ODataConstants
         public const string Filter = "$filter";
 
         /// <summary>
+        /// $filter
+        /// </summary>
+        public const string Search = "$search";
+
+        /// <summary>
         /// $orderBy
         /// </summary>
         public const string OrderBy = "$orderBy";

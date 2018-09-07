@@ -69,17 +69,53 @@ namespace Microsoft.Intune.PowerShellGraphSDK
 
         internal static string ToODataString(this object value, string oDataTypeFullName, bool isArray = false, bool isUrlValue = false)
         {
-            // Null value
-            if (value == null)
+            if (!isArray)
             {
-                if (isArray)
+                return value.ToODataStringInternal(oDataTypeFullName, isUrlValue);
+            }
+            else
+            {
+                if (value == null)
                 {
+                    // Null values aren't allowed in JSON for arrays, so return an empty array instead
                     return "[]";
                 }
                 else
                 {
-                    return "null";
+                    // This must be an array, so cast it as one
+                    object[] values = (object[])value;
+
+                    // We need to build the JSON string for the array of values
+                    StringBuilder result = new StringBuilder();
+                    result.Append('[');
+                    bool first = true;
+                    foreach (object val in values)
+                    {
+                        // Get the JSON value for this object
+                        string jsonValue = val.ToODataStringInternal(oDataTypeFullName, isUrlValue);
+
+                        // Append the JSON value to the result
+                        if (!first)
+                        {
+                            // If this isn't the first value, prepend it with a comma
+                            result.Append(',');
+                        }
+                        first = false;
+                        result.Append(jsonValue);
+                    }
+                    result.Append(']');
+
+                    return result.ToString();
                 }
+            }
+        }
+
+        private static string ToODataStringInternal(this object value, string oDataTypeFullName, bool isUrlValue = false)
+        {
+            // Null value
+            if (value == null)
+            {
+                return "null";
             }
             // Boolean
             else if (value is bool boolean)
@@ -231,7 +267,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                 bool first = true;
                 foreach (Tuple<string, object> keyValuePair in getPropertyNamesAndValues())
                 {
-                    bool valueIsArray = keyValuePair.Item2.GetType().IsArray;
+                    bool valueIsArray = keyValuePair.Item2?.GetType().IsArray == true;
                     jsonObject.Append($"{(first ? " " : ", ")}\"{keyValuePair.Item1}\": {keyValuePair.Item2.ToODataString(null, isArray: valueIsArray, isUrlValue: isUrlValue)}");
                     first = false;
                 }

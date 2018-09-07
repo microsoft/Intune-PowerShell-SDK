@@ -2,13 +2,15 @@
 param()
 
 function Get-MSGraphDebugInfo {
-    $myErrors = Get-AllErrorsDebugInfo
-    if ($myErrors.Count -eq 0) {
+    if ($global:error.Count -eq 0) {
         Write-Information 'No errors found'
-    } elseif (($null -eq $myErrors[0]) -or ('' -eq $myErrors[0])) {
-        Write-Warning 'No debugging information found for the most recent error'
     } else {
-        $myErrors[0] | Write-Output
+        $myError = $global:error[0].TargetObject
+        if (-not $myError) {
+            Write-Warning 'No debugging information found for the most recent error'
+        } else {
+            $myError | Write-Output
+        }
     }
 }
 

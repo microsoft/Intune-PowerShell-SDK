@@ -38,6 +38,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public string Filter { get; set; }
 
         /// <summary>
+        /// <para type="description">The "$search" query option value.</para>
+        /// </summary>
+        [Parameter(ParameterSetName = GetOrSearchCmdlet.OperationName)]
+        public string Search { get; set; }
+
+        /// <summary>
         /// The list of "$orderBy" query option values (i.e. property names).
         /// 
         /// This value is declared as a dynamic parameter so that values can be validated per cmdlet.
@@ -147,6 +153,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             if (!string.IsNullOrEmpty(this.Filter))
             {
                 queryOptions.Add(ODataConstants.QueryParameters.Filter, this.Filter);
+            }
+
+            // Search
+            if (!string.IsNullOrEmpty(this.Search))
+            {
+                queryOptions.Add(ODataConstants.QueryParameters.Search, this.Search);
             }
 
             // Skip
