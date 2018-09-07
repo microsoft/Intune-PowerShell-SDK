@@ -128,8 +128,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.userInstallStateSummary", HelpMessage = @"The &quot;userName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userInstallStateSummary", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String userName { get; set; }
 
         /// <summary>
@@ -139,8 +139,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.userInstallStateSummary", HelpMessage = @"The &quot;installedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;installedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userInstallStateSummary", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;installedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;installedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 installedDeviceCount { get; set; }
 
         /// <summary>
@@ -150,8 +150,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.userInstallStateSummary", HelpMessage = @"The &quot;failedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;failedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userInstallStateSummary", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;failedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;failedDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 failedDeviceCount { get; set; }
 
         /// <summary>
@@ -161,8 +161,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.userInstallStateSummary", HelpMessage = @"The &quot;notInstalledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;notInstalledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userInstallStateSummary", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;notInstalledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;notInstalledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 notInstalledDeviceCount { get; set; }
 
         /// <summary>
@@ -173,8 +173,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceInstallState")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.userInstallStateSummary", HelpMessage = @"The &quot;deviceStates&quot; property, of type &quot;microsoft.graph.deviceInstallState&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceStates&quot; property, of type &quot;microsoft.graph.deviceInstallState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userInstallStateSummary", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStates&quot; property, of type &quot;microsoft.graph.deviceInstallState&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStates&quot; property, of type &quot;microsoft.graph.deviceInstallState&quot;.")]
         public System.Object[] deviceStates { get; set; }
 
         internal override System.String GetResourcePath()

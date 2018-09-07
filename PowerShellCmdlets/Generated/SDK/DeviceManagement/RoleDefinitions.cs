@@ -117,9 +117,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -129,9 +129,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String description { get; set; }
 
         /// <summary>
@@ -142,9 +142,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.rolePermission")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;rolePermissions&quot; property, of type &quot;microsoft.graph.rolePermission&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", HelpMessage = @"The &quot;rolePermissions&quot; property, of type &quot;microsoft.graph.rolePermission&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;rolePermissions&quot; property, of type &quot;microsoft.graph.rolePermission&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;rolePermissions&quot; property, of type &quot;microsoft.graph.rolePermission&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;rolePermissions&quot; property, of type &quot;microsoft.graph.rolePermission&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;rolePermissions&quot; property, of type &quot;microsoft.graph.rolePermission&quot;.")]
         public System.Object[] rolePermissions { get; set; }
 
         /// <summary>
@@ -154,9 +154,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;isBuiltIn&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", HelpMessage = @"The &quot;isBuiltIn&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;isBuiltIn&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;isBuiltIn&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;isBuiltIn&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;isBuiltIn&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isBuiltIn { get; set; }
 
         /// <summary>
@@ -167,9 +167,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.roleAssignment", "microsoft.graph.deviceAndAppManagementRoleAssignment")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
         public System.Object[] roleAssignments { get; set; }
 
         /// <summary>

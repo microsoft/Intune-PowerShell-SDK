@@ -118,8 +118,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppOperation", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppOperation", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -129,8 +129,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppOperation", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppOperation", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset lastModifiedDateTime { get; set; }
 
         /// <summary>
@@ -140,8 +140,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppOperation", HelpMessage = @"The &quot;state&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;state&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppOperation", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;state&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;state&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String state { get; set; }
 
         /// <summary>
@@ -151,8 +151,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppOperation", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppOperation", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String version { get; set; }
 
         internal override System.String GetResourcePath()

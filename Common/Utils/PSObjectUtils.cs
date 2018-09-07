@@ -47,10 +47,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                 if (type.IsNotPublic)
                 {
                     IEnumerable<PropertyInfo> properties = type.GetProperties(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.FlattenHierarchy);
-                    Hashtable result = new Hashtable();
+                    PSObject result = new PSObject();
                     foreach (PropertyInfo property in properties)
                     {
-                        result.Add(property.Name, property.GetValue(obj).ToPowerShellObject());
+                        result.Properties.Add(new PSNoteProperty(property.Name, property.GetValue(obj).ToPowerShellObject()));
                     }
 
                     return PSObject.AsPSObject(result);
@@ -80,10 +80,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                 }
 
                 // Create a PSObject and process the values
-                Hashtable result = new Hashtable();
+                PSObject result = new PSObject();
                 foreach (object key in objDictionary.Keys)
                 {
-                    result.Add(key as string, objDictionary[key].ToPowerShellObject());
+                    result.Properties.Add(new PSNoteProperty(key as string, objDictionary[key].ToPowerShellObject()));
                 }
 
                 return PSObject.AsPSObject(result);

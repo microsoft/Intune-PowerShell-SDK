@@ -136,8 +136,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceCompliancePolicySettingState")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", HelpMessage = @"The &quot;settingStates&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicySettingState&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;settingStates&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicySettingState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;settingStates&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicySettingState&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;settingStates&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicySettingState&quot;.")]
         public System.Object[] settingStates { get; set; }
 
         /// <summary>
@@ -147,8 +147,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 version { get; set; }
 
         /// <summary>
@@ -173,8 +173,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.policyPlatformType")]
         [Selectable]
         [ValidateSet(@"android", @"iOS", @"macOS", @"windowsPhone81", @"windows81AndLater", @"windows10AndLater", @"androidWorkProfile", @"all")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", HelpMessage = @"The &quot;platformType&quot; property, of type &quot;microsoft.graph.policyPlatformType&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;platformType&quot; property, of type &quot;microsoft.graph.policyPlatformType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;platformType&quot; property, of type &quot;microsoft.graph.policyPlatformType&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;platformType&quot; property, of type &quot;microsoft.graph.policyPlatformType&quot;.")]
         public System.String platformType { get; set; }
 
         /// <summary>
@@ -188,8 +188,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.complianceStatus")]
         [Selectable]
         [ValidateSet(@"unknown", @"notApplicable", @"compliant", @"remediated", @"nonCompliant", @"error", @"conflict")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.complianceStatus&quot;.")]
         public System.String state { get; set; }
 
         /// <summary>
@@ -199,8 +199,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", HelpMessage = @"The &quot;settingCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;settingCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;settingCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;settingCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 settingCount { get; set; }
 
         internal override System.String GetResourcePath()

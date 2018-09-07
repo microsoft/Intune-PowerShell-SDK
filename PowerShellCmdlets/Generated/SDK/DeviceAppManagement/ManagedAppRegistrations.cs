@@ -209,10 +209,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset createdDateTime { get; set; }
 
         /// <summary>
@@ -222,10 +222,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset lastSyncDateTime { get; set; }
 
         /// <summary>
@@ -235,10 +235,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;applicationVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;applicationVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;applicationVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;applicationVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;applicationVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;applicationVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;applicationVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;applicationVersion&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String applicationVersion { get; set; }
 
         /// <summary>
@@ -248,10 +248,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;managementSdkVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;managementSdkVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;managementSdkVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;managementSdkVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;managementSdkVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;managementSdkVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;managementSdkVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;managementSdkVersion&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String managementSdkVersion { get; set; }
 
         /// <summary>
@@ -261,10 +261,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;platformVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;platformVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;platformVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;platformVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;platformVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;platformVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;platformVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;platformVersion&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String platformVersion { get; set; }
 
         /// <summary>
@@ -274,10 +274,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;deviceType&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;deviceType&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;deviceType&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceType&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String deviceType { get; set; }
 
         /// <summary>
@@ -287,10 +287,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;deviceTag&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;deviceTag&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;deviceTag&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceTag&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceTag&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceTag&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceTag&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceTag&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String deviceTag { get; set; }
 
         /// <summary>
@@ -300,10 +300,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String deviceName { get; set; }
 
         /// <summary>
@@ -318,10 +318,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"none", @"rootedDevice")]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;flaggedReasons&quot; property, of type &quot;microsoft.graph.managedAppFlaggedReason&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;flaggedReasons&quot; property, of type &quot;microsoft.graph.managedAppFlaggedReason&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;flaggedReasons&quot; property, of type &quot;microsoft.graph.managedAppFlaggedReason&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;flaggedReasons&quot; property, of type &quot;microsoft.graph.managedAppFlaggedReason&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;flaggedReasons&quot; property, of type &quot;microsoft.graph.managedAppFlaggedReason&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;flaggedReasons&quot; property, of type &quot;microsoft.graph.managedAppFlaggedReason&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;flaggedReasons&quot; property, of type &quot;microsoft.graph.managedAppFlaggedReason&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;flaggedReasons&quot; property, of type &quot;microsoft.graph.managedAppFlaggedReason&quot;.")]
         public System.String[] flaggedReasons { get; set; }
 
         /// <summary>
@@ -331,10 +331,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String userId { get; set; }
 
         /// <summary>
@@ -344,10 +344,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mobileAppIdentifier", "microsoft.graph.iosMobileAppIdentifier", "microsoft.graph.androidMobileAppIdentifier")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;appIdentifier&quot; property, of type &quot;microsoft.graph.mobileAppIdentifier&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;appIdentifier&quot; property, of type &quot;microsoft.graph.mobileAppIdentifier&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;appIdentifier&quot; property, of type &quot;microsoft.graph.mobileAppIdentifier&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appIdentifier&quot; property, of type &quot;microsoft.graph.mobileAppIdentifier&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;appIdentifier&quot; property, of type &quot;microsoft.graph.mobileAppIdentifier&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;appIdentifier&quot; property, of type &quot;microsoft.graph.mobileAppIdentifier&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;appIdentifier&quot; property, of type &quot;microsoft.graph.mobileAppIdentifier&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;appIdentifier&quot; property, of type &quot;microsoft.graph.mobileAppIdentifier&quot;.")]
         public System.Object appIdentifier { get; set; }
 
         /// <summary>
@@ -357,10 +357,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String version { get; set; }
 
         /// <summary>
@@ -371,10 +371,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
         public System.Object[] appliedPolicies { get; set; }
 
         /// <summary>
@@ -385,10 +385,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
         public System.Object[] intendedPolicies { get; set; }
 
         /// <summary>
@@ -399,10 +399,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedAppOperation")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
         public System.Object[] operations { get; set; }
 
         /// <summary>

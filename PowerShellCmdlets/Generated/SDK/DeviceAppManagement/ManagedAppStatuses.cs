@@ -91,9 +91,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatus", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatusRaw", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatus", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatusRaw", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -103,9 +103,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatus", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatusRaw", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatus", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatusRaw", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String version { get; set; }
 
         /// <summary>
@@ -123,8 +123,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.Json")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatusRaw", HelpMessage = @"The &quot;content&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;content&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatusRaw", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;content&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;content&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
         public System.Object content { get; set; }
 
         internal override System.String GetResourcePath()

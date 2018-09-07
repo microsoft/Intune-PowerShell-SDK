@@ -98,8 +98,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceScheduledActionForRule", HelpMessage = @"The &quot;ruleName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;ruleName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceScheduledActionForRule", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;ruleName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;ruleName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String ruleName { get; set; }
 
         /// <summary>
@@ -110,8 +110,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceComplianceActionItem")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceScheduledActionForRule", HelpMessage = @"The &quot;scheduledActionConfigurations&quot; property, of type &quot;microsoft.graph.deviceComplianceActionItem&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;scheduledActionConfigurations&quot; property, of type &quot;microsoft.graph.deviceComplianceActionItem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceScheduledActionForRule", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;scheduledActionConfigurations&quot; property, of type &quot;microsoft.graph.deviceComplianceActionItem&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;scheduledActionConfigurations&quot; property, of type &quot;microsoft.graph.deviceComplianceActionItem&quot;.")]
         public System.Object[] scheduledActionConfigurations { get; set; }
 
         internal override System.String GetResourcePath()

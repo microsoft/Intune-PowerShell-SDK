@@ -135,8 +135,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceActionItem", HelpMessage = @"The &quot;gracePeriodHours&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;gracePeriodHours&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceActionItem", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;gracePeriodHours&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;gracePeriodHours&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 gracePeriodHours { get; set; }
 
         /// <summary>
@@ -150,8 +150,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceComplianceActionType")]
         [Selectable]
         [ValidateSet(@"noAction", @"notification", @"block", @"retire", @"wipe", @"removeResourceAccessProfiles")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceActionItem", HelpMessage = @"The &quot;actionType&quot; property, of type &quot;microsoft.graph.deviceComplianceActionType&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;actionType&quot; property, of type &quot;microsoft.graph.deviceComplianceActionType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceActionItem", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;actionType&quot; property, of type &quot;microsoft.graph.deviceComplianceActionType&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;actionType&quot; property, of type &quot;microsoft.graph.deviceComplianceActionType&quot;.")]
         public System.String actionType { get; set; }
 
         /// <summary>
@@ -161,8 +161,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceActionItem", HelpMessage = @"The &quot;notificationTemplateId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;notificationTemplateId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceActionItem", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;notificationTemplateId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;notificationTemplateId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String notificationTemplateId { get; set; }
 
         /// <summary>
@@ -173,8 +173,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceActionItem", HelpMessage = @"The &quot;notificationMessageCCList&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;notificationMessageCCList&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceActionItem", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;notificationMessageCCList&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;notificationMessageCCList&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] notificationMessageCCList { get; set; }
 
         internal override System.String GetResourcePath()

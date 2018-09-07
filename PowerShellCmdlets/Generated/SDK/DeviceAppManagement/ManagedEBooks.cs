@@ -278,9 +278,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -290,9 +290,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String description { get; set; }
 
         /// <summary>
@@ -302,9 +302,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;publisher&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String publisher { get; set; }
 
         /// <summary>
@@ -314,9 +314,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;publishedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;publishedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;publishedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;publishedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;publishedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;publishedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset publishedDateTime { get; set; }
 
         /// <summary>
@@ -326,9 +326,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mimeContent")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;largeCover&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;largeCover&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;largeCover&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;largeCover&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;largeCover&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;largeCover&quot; property, of type &quot;microsoft.graph.mimeContent&quot;.")]
         public System.Object largeCover { get; set; }
 
         /// <summary>
@@ -338,9 +338,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset createdDateTime { get; set; }
 
         /// <summary>
@@ -350,9 +350,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset lastModifiedDateTime { get; set; }
 
         /// <summary>
@@ -362,9 +362,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;informationUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String informationUrl { get; set; }
 
         /// <summary>
@@ -374,9 +374,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;privacyInformationUrl&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String privacyInformationUrl { get; set; }
 
         /// <summary>
@@ -387,9 +387,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedEBookAssignment", "microsoft.graph.iosVppEBookAssignment")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.managedEBookAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.managedEBookAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.managedEBookAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.managedEBookAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.managedEBookAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.managedEBookAssignment&quot;.")]
         public System.Object[] assignments { get; set; }
 
         /// <summary>
@@ -399,9 +399,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.eBookInstallSummary")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;installSummary&quot; property, of type &quot;microsoft.graph.eBookInstallSummary&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;installSummary&quot; property, of type &quot;microsoft.graph.eBookInstallSummary&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;installSummary&quot; property, of type &quot;microsoft.graph.eBookInstallSummary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;installSummary&quot; property, of type &quot;microsoft.graph.eBookInstallSummary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;installSummary&quot; property, of type &quot;microsoft.graph.eBookInstallSummary&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;installSummary&quot; property, of type &quot;microsoft.graph.eBookInstallSummary&quot;.")]
         public System.Object installSummary { get; set; }
 
         /// <summary>
@@ -412,9 +412,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceInstallState")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;deviceStates&quot; property, of type &quot;microsoft.graph.deviceInstallState&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;deviceStates&quot; property, of type &quot;microsoft.graph.deviceInstallState&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceStates&quot; property, of type &quot;microsoft.graph.deviceInstallState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStates&quot; property, of type &quot;microsoft.graph.deviceInstallState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStates&quot; property, of type &quot;microsoft.graph.deviceInstallState&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStates&quot; property, of type &quot;microsoft.graph.deviceInstallState&quot;.")]
         public System.Object[] deviceStates { get; set; }
 
         /// <summary>
@@ -425,9 +425,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.userInstallStateSummary")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;userStateSummary&quot; property, of type &quot;microsoft.graph.userInstallStateSummary&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;userStateSummary&quot; property, of type &quot;microsoft.graph.userInstallStateSummary&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userStateSummary&quot; property, of type &quot;microsoft.graph.userInstallStateSummary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStateSummary&quot; property, of type &quot;microsoft.graph.userInstallStateSummary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStateSummary&quot; property, of type &quot;microsoft.graph.userInstallStateSummary&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStateSummary&quot; property, of type &quot;microsoft.graph.userInstallStateSummary&quot;.")]
         public System.Object[] userStateSummary { get; set; }
 
         /// <summary>
@@ -445,8 +445,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Guid")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;vppTokenId&quot; property, of type &quot;Edm.Guid&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;vppTokenId&quot; property, of type &quot;Edm.Guid&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;vppTokenId&quot; property, of type &quot;Edm.Guid&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;vppTokenId&quot; property, of type &quot;Edm.Guid&quot;.")]
         public System.Guid vppTokenId { get; set; }
 
         /// <summary>
@@ -456,8 +456,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;appleId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appleId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;appleId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;appleId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String appleId { get; set; }
 
         /// <summary>
@@ -467,8 +467,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;vppOrganizationName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;vppOrganizationName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;vppOrganizationName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;vppOrganizationName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String vppOrganizationName { get; set; }
 
         /// <summary>
@@ -479,8 +479,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;genres&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;genres&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;genres&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;genres&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] genres { get; set; }
 
         /// <summary>
@@ -490,8 +490,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;language&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;language&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;language&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;language&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String language { get; set; }
 
         /// <summary>
@@ -501,8 +501,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;seller&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;seller&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;seller&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;seller&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String seller { get; set; }
 
         /// <summary>
@@ -512,8 +512,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;totalLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;totalLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;totalLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;totalLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 totalLicenseCount { get; set; }
 
         /// <summary>
@@ -523,8 +523,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;usedLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;usedLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;usedLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;usedLicenseCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 usedLicenseCount { get; set; }
 
         internal override System.String GetResourcePath()

@@ -193,9 +193,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;targetedMobileApps&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;targetedMobileApps&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;targetedMobileApps&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;targetedMobileApps&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;targetedMobileApps&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;targetedMobileApps&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] targetedMobileApps { get; set; }
 
         /// <summary>
@@ -205,9 +205,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset createdDateTime { get; set; }
 
         /// <summary>
@@ -217,9 +217,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String description { get; set; }
 
         /// <summary>
@@ -229,9 +229,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset lastModifiedDateTime { get; set; }
 
         /// <summary>
@@ -241,9 +241,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
         /// <summary>
@@ -253,9 +253,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 version { get; set; }
 
         /// <summary>
@@ -266,9 +266,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationAssignment")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot;.")]
         public System.Object[] assignments { get; set; }
 
         /// <summary>
@@ -279,9 +279,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus&quot;.")]
         public System.Object[] deviceStatuses { get; set; }
 
         /// <summary>
@@ -292,9 +292,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationUserStatus")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserStatus&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserStatus&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserStatus&quot;.")]
         public System.Object[] userStatuses { get; set; }
 
         /// <summary>
@@ -304,9 +304,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;deviceStatusSummary&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;deviceStatusSummary&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceStatusSummary&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatusSummary&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatusSummary&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatusSummary&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot;.")]
         public System.Object deviceStatusSummary { get; set; }
 
         /// <summary>
@@ -316,9 +316,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationUserSummary")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;userStatusSummary&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;userStatusSummary&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userStatusSummary&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatusSummary&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatusSummary&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatusSummary&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;.")]
         public System.Object userStatusSummary { get; set; }
 
         /// <summary>
@@ -337,8 +337,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Binary")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;encodedSettingXml&quot; property, of type &quot;Edm.Binary&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;encodedSettingXml&quot; property, of type &quot;Edm.Binary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;encodedSettingXml&quot; property, of type &quot;Edm.Binary&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;encodedSettingXml&quot; property, of type &quot;Edm.Binary&quot;.")]
         public System.Byte[] encodedSettingXml { get; set; }
 
         /// <summary>
@@ -349,8 +349,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.appConfigurationSettingItem")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;settings&quot; property, of type &quot;microsoft.graph.appConfigurationSettingItem&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;settings&quot; property, of type &quot;microsoft.graph.appConfigurationSettingItem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;settings&quot; property, of type &quot;microsoft.graph.appConfigurationSettingItem&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;settings&quot; property, of type &quot;microsoft.graph.appConfigurationSettingItem&quot;.")]
         public System.Object[] settings { get; set; }
 
         internal override System.String GetResourcePath()

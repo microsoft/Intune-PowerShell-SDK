@@ -67,14 +67,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 }
                 isFirst = false;
 
+                // Get the name and value for the given property on this instance of the cmdlet
                 string propertyName = property.Name;
-                object propertyValue = property.GetValue(this); // get the value for the given property on this instance of the cmdlet
-
-                // Unwrap PowerShell objects
-                if (propertyValue is PSObject psObj)
-                {
-                    propertyValue = psObj.BaseObject;
-                }
+                object propertyValue = property.GetValue(this);
 
                 // Get the type of this property
                 string propertyODataType = property.GetODataTypeAttribute()?.TypeFullName;
@@ -87,7 +82,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 jsonString.Append($"    \"{propertyName}\": {propertyValueString}");
             }
             jsonString.AppendLine();
-            jsonString.Append("}");
+            jsonString.Append('}');
 
             // Return the JSON string
             return jsonString.ToString();
@@ -110,7 +105,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         internal IEnumerable<PropertyInfo> GetTypeCastParameters()
         {
             return this.GetBoundProperties()
-                .Where(property => 
+                .Where(property =>
                     property.PropertyType == typeof(string)
                     && property.GetCustomAttribute<TypeCastParameterAttribute>() != null);
         }

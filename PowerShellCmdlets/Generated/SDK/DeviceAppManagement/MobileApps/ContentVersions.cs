@@ -115,8 +115,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.mobileAppContentFile")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.mobileAppContent", HelpMessage = @"The &quot;files&quot; property, of type &quot;microsoft.graph.mobileAppContentFile&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;files&quot; property, of type &quot;microsoft.graph.mobileAppContentFile&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileAppContent", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;files&quot; property, of type &quot;microsoft.graph.mobileAppContentFile&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;files&quot; property, of type &quot;microsoft.graph.mobileAppContentFile&quot;.")]
         public System.Object[] files { get; set; }
 
         internal override System.String GetResourcePath()

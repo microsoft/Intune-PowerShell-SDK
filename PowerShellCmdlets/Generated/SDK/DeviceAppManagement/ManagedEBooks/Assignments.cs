@@ -106,9 +106,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceAndAppManagementAssignmentTarget", "microsoft.graph.allDevicesAssignmentTarget", "microsoft.graph.groupAssignmentTarget", "microsoft.graph.exclusionGroupAssignmentTarget", "microsoft.graph.allLicensedUsersAssignmentTarget")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBookAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBookAssignment", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBookAssignment", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBookAssignment", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;target&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementAssignmentTarget&quot;.")]
         public System.Object target { get; set; }
 
         /// <summary>
@@ -122,9 +122,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.installIntent")]
         [Selectable]
         [ValidateSet(@"available", @"required", @"uninstall", @"availableWithoutEnrollment")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBookAssignment", HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBookAssignment", HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBookAssignment", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBookAssignment", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;installIntent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.")]
         public System.String installIntent { get; set; }
 
         /// <summary>

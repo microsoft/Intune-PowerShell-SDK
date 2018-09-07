@@ -176,9 +176,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementTroubleshootingEvent", HelpMessage = @"The &quot;eventDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", HelpMessage = @"The &quot;eventDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;eventDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementTroubleshootingEvent", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;eventDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;eventDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;eventDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset eventDateTime { get; set; }
 
         /// <summary>
@@ -188,9 +188,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementTroubleshootingEvent", HelpMessage = @"The &quot;correlationId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", HelpMessage = @"The &quot;correlationId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;correlationId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementTroubleshootingEvent", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;correlationId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;correlationId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;correlationId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String correlationId { get; set; }
 
         /// <summary>
@@ -208,8 +208,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", HelpMessage = @"The &quot;managedDeviceIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;managedDeviceIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;managedDeviceIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;managedDeviceIdentifier&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String managedDeviceIdentifier { get; set; }
 
         /// <summary>
@@ -219,8 +219,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", HelpMessage = @"The &quot;operatingSystem&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;operatingSystem&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;operatingSystem&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;operatingSystem&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String operatingSystem { get; set; }
 
         /// <summary>
@@ -230,8 +230,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", HelpMessage = @"The &quot;osVersion&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;osVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;osVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;osVersion&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String osVersion { get; set; }
 
         /// <summary>
@@ -241,8 +241,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String userId { get; set; }
 
         /// <summary>
@@ -252,8 +252,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", HelpMessage = @"The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String deviceId { get; set; }
 
         /// <summary>
@@ -267,8 +267,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceEnrollmentType")]
         [Selectable]
         [ValidateSet(@"unknown", @"userEnrollment", @"deviceEnrollmentManager", @"appleBulkWithUser", @"appleBulkWithoutUser", @"windowsAzureADJoin", @"windowsBulkUserless", @"windowsAutoEnrollment", @"windowsBulkAzureDomainJoin", @"windowsCoManagement")]
-        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", HelpMessage = @"The &quot;enrollmentType&quot; property, of type &quot;microsoft.graph.deviceEnrollmentType&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;enrollmentType&quot; property, of type &quot;microsoft.graph.deviceEnrollmentType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;enrollmentType&quot; property, of type &quot;microsoft.graph.deviceEnrollmentType&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;enrollmentType&quot; property, of type &quot;microsoft.graph.deviceEnrollmentType&quot;.")]
         public System.String enrollmentType { get; set; }
 
         /// <summary>
@@ -282,8 +282,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.deviceEnrollmentFailureReason")]
         [Selectable]
         [ValidateSet(@"unknown", @"authentication", @"authorization", @"accountValidation", @"userValidation", @"deviceNotSupported", @"inMaintenance", @"badRequest", @"featureNotSupported", @"enrollmentRestrictionsEnforced", @"clientDisconnected")]
-        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", HelpMessage = @"The &quot;failureCategory&quot; property, of type &quot;microsoft.graph.deviceEnrollmentFailureReason&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;failureCategory&quot; property, of type &quot;microsoft.graph.deviceEnrollmentFailureReason&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;failureCategory&quot; property, of type &quot;microsoft.graph.deviceEnrollmentFailureReason&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;failureCategory&quot; property, of type &quot;microsoft.graph.deviceEnrollmentFailureReason&quot;.")]
         public System.String failureCategory { get; set; }
 
         /// <summary>
@@ -293,8 +293,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", HelpMessage = @"The &quot;failureReason&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;failureReason&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;failureReason&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;failureReason&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String failureReason { get; set; }
 
         internal override System.String GetResourcePath()

@@ -3,8 +3,11 @@
 namespace Microsoft.Intune.PowerShellGraphSDK
 {
     using System;
+    using System.Collections;
+    using System.Collections.Generic;
     using System.Management.Automation;
     using System.Reflection;
+    using System.Text;
 
     /// <summary>
     /// Utility methods for OData (Edm) type conversions.
@@ -66,11 +69,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK
 
         internal static string ToODataString(this object value, string oDataTypeFullName, bool isArray = false, bool isUrlValue = false)
         {
-            if (string.IsNullOrWhiteSpace(oDataTypeFullName))
-            {
-                throw new ArgumentException("The OData type name cannot be null or whitespace", nameof(oDataTypeFullName));
-            }
-
             // Null value
             if (value == null)
             {
@@ -100,7 +98,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                     return $"\"{stringValue}\"";
                 }
             }
-            else if (value is byte[] bytes && oDataTypeFullName == "Edm.Binary")
+            else if (value is byte[] bytes) // && oDataTypeFullName == "Edm.Binary"
             {
                 string base64String = System.Convert.ToBase64String(bytes);
 
@@ -131,7 +129,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                     }
                 }
                 // DateTime or DateTimeOffset
-                else if (oDataTypeFullName == "Edm.DateTime" || oDataTypeFullName == "Edm.DateTimeOffset")
+                else // if (oDataTypeFullName == "Edm.DateTime" || oDataTypeFullName == "Edm.DateTimeOffset")
                 {
                     string dateTimeString = date.ToString("o"); // yyyy-MM-ddTHH:mm:ssZ
 
@@ -163,7 +161,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                     }
                 }
                 // Duration
-                else if (oDataTypeFullName == "Edm.Duration")
+                else // if (oDataTypeFullName == "Edm.Duration")
                 {
                     string durationString;
                     if (timeSpan == TimeSpan.Zero)
@@ -196,6 +194,50 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                         return $"\"{durationString}\"";
                     }
                 }
+            }
+            else if (value is Hashtable || value is PSObject)
+            {
+                // Local function to get property names and values
+                IEnumerable<Tuple<string, object>> getPropertyNamesAndValues()
+                {
+                    if (value is Hashtable hashtable)
+                    {
+                        foreach (string key in hashtable.Keys)
+                        {
+                            if (!(key is string stringKey))
+                            {
+                                throw new ArgumentException($"Found a non-string key in hashtable: {key.ToString()}");
+                            }
+
+                            yield return Tuple.Create(stringKey, hashtable[stringKey]);
+                        }
+                    }
+                    else if (value is PSObject psObject)
+                    {
+                        foreach (PSPropertyInfo prop in psObject.Properties)
+                        {
+                            yield return Tuple.Create(prop.Name, prop.Value);
+                        }
+                    }
+                    else
+                    {
+                        throw new Exception("Value should be Hashtable or PSObject, but was null when casted");
+                    }
+                }
+
+                // Manually construct the JSON from the properties
+                StringBuilder jsonObject = new StringBuilder();
+                jsonObject.Append('{');
+                bool first = true;
+                foreach (Tuple<string, object> keyValuePair in getPropertyNamesAndValues())
+                {
+                    bool valueIsArray = keyValuePair.Item2.GetType().IsArray;
+                    jsonObject.Append($"{(first ? " " : ", ")}\"{keyValuePair.Item1}\": {keyValuePair.Item2.ToODataString(null, isArray: valueIsArray, isUrlValue: isUrlValue)}");
+                    first = false;
+                }
+                jsonObject.Append('}');
+
+                return jsonObject.ToString();
             }
             else
             {
