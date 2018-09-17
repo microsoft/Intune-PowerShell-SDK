@@ -207,23 +207,8 @@ Status: {responseMessage.ReasonPhrase}
                 // Write the result to the pipeline
                 if (cmdletResult != null)
                 {
-                    if (cmdletResult is IEnumerable collectionResult)
-                    {
-                        // Write the items in the collection to the pipeline
-                        try
-                        {
-                            this.WriteObject(collectionResult, true);
-                        }
-                        catch (PipelineStoppedException)
-                        {
-                            // The pipeline was stopped, so swallow the exception and don't output anything else
-                        }
-                    }
-                    else
-                    {
-                        // Write the single object to the pipeline
-                        this.WriteObject(cmdletResult);
-                    }
+                    // Write the items in the collection to the pipeline
+                    this.WriteObject(cmdletResult, true);
                 }
             }
             else

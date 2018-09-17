@@ -78,16 +78,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         protected override sealed void ProcessRecord()
         {
-            try
-            {
-                // Try to run the cmdlet behavior
-                this.Run();
-            }
-            catch (Exception ex)
-            {
-                // Write any errors to the console
-                this.WriteError(ex);
-            }
+            this.Run();
         }
     }
 }
