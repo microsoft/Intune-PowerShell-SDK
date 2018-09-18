@@ -161,16 +161,16 @@ $generateManifestArgs = @{
     # FormatsToProcess = @()
 
     # Functions to export from this module
-    FunctionsToExport = $functions
+    FunctionsToExport = '*' # $functions
 
     # Cmdlets to export from this module
-    CmdletsToExport = $cmdlets
+    CmdletsToExport = '*' # $cmdlets
 
     # Variables to export from this module
-    VariablesToExport = $variables
+    VariablesToExport = '*' # $variables
 
     # Aliases to export from this module
-    AliasesToExport = $aliases
+    AliasesToExport = '*' # $aliases
 
     # List of all modules packaged with this module
     # ModuleList = @()
