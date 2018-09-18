@@ -19,7 +19,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <PowerShellModuleName>Intune</PowerShellModuleName>
+        <PowerShellModuleName>Microsoft.Graph.Intune</PowerShellModuleName>
         <PowerShellExe Condition=" '$(PowerShellExe)'=='' ">powershell.exe</PowerShellExe>
         <PowerShellModuleManifestGenerationScript Condition=" '$(PowerShellModuleManifestGenerationScript)'=='' ">$(MSBuildProjectDirectory)\Scripts\generateModuleManifest.ps1</PowerShellModuleManifestGenerationScript>
     </PropertyGroup>
