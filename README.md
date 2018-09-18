@@ -1,7 +1,6 @@
 # Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Intune-PowerShell-SDK](#intune-powershell-sdk)
-- [Azure CloudShell](#azure-cloudshell)
 - [Getting started](#getting-started)
     - [One-time setup](#one-time-setup)
     - [Each time you use the module](#each-time-you-use-the-module)
@@ -24,25 +23,16 @@ When you submit a pull request, a CLA-bot will automatically determine whether y
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-# Azure CloudShell
-This module has been designed to work with Azure CloudShell.
-
-[![Launch Cloud Shell](https://shell.azure.com/images/launchcloudshell.png "Launch Cloud Shell")](https://shell.azure.com/powershell)
-
 # Getting started
 ## One-time setup
-If you don't have the Intune module installed, install it from PowerShell Gallery:
-```PowerShell
-Install-Module Intune
-```
-If you do have the Intune module installed, you can update it by running this command:
-```PowerShell
-Update-Module Intune
-```
+1. Download the module from the [Releases](https://github.com/Microsoft/Intune-PowerShell-SDK/releases) tab in the GitHub repository.
+2. The "Release" folder in the zip file contains two folders: "net471" and "netstandard2.0".  If you are using Windows, extract the "net471" folder.  If you are using any other operating system or platform (including CloudShell), extract the "netstandard2.0" folder.  You may rename the extracted folder to whatever you like.
+3. The module manifest is the "Microsoft.Graph.Intune.psd1" file inside this folder.  This is the file you would refer to when importing the module (see the next section below).
+
 ## Each time you use the module
 Import the module:
 ```PowerShell
-Import-Module Intune
+Import-Module Microsoft.Graph.Intune.psd1
 ```
 To authenticate with Microsoft Graph (this is not required when using CloudShell):
 ```PowerShell
@@ -51,7 +41,7 @@ Connect-MSGraph
 ## Discovering available commands
 Get the full list of available cmdlets:
 ```PowerShell
-Get-Command -Module Intune
+Get-Command -Module Microsoft.Graph.Intune
 ```
 Get documentation on a particular cmdlet:
 ```PowerShell
