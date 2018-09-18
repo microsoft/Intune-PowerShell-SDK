@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>Library</OutputType>
-        <Version>6.1809.2.0</Version>
+        <Version>6.1810.0.0</Version>
         <Authors>Rajesh Soy, Rohit Ramu</Authors>
         <Company>Microsoft Corporation</Company>
         <Product>Microsoft Intune Graph PowerShell Client SDK</Product>
