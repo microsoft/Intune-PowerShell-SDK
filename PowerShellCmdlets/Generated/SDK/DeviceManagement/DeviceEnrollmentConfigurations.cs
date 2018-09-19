@@ -1005,12 +1005,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceManagement_DeviceEnrollmentConfigurations_SetPriority : ActionCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;priority&quot; parameter, which is accepted by the &quot;microsoft.graph.setPriority&quot; action.</para>
+        ///     <para type="description">The &quot;priority&quot; action parameter of type &quot;Edm.Int32&quot;.</para>
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;priority&quot; parameter, which is accepted by the &quot;microsoft.graph.setPriority&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;priority&quot; action parameter of type &quot;Edm.Int32&quot;.")]
         public System.Int32 priority { get; set; }
 
         /// <summary>
@@ -1041,12 +1041,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceManagement_DeviceEnrollmentConfigurations_Assign : ActionCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;enrollmentConfigurationAssignments&quot; parameter, which is accepted by the &quot;microsoft.graph.assign&quot; action.</para>
+        ///     <para type="description">The &quot;enrollmentConfigurationAssignments&quot; action parameter of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.</para>
         /// </summary>
         [ODataType("microsoft.graph.enrollmentConfigurationAssignment")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;enrollmentConfigurationAssignments&quot; parameter, which is accepted by the &quot;microsoft.graph.assign&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;enrollmentConfigurationAssignments&quot; action parameter of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
         public System.Object[] enrollmentConfigurationAssignments { get; set; }
 
         /// <summary>

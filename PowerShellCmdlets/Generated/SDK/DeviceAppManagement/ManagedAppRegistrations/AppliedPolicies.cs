@@ -3457,12 +3457,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceAppManagement_ManagedAppRegistrations_AppliedPolicies_TargetApps : ActionCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;apps&quot; parameter, which is accepted by the &quot;microsoft.graph.targetApps&quot; action.</para>
+        ///     <para type="description">The &quot;apps&quot; action parameter of type &quot;microsoft.graph.managedMobileApp&quot;.</para>
         /// </summary>
         [ODataType("microsoft.graph.managedMobileApp")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;apps&quot; parameter, which is accepted by the &quot;microsoft.graph.targetApps&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;apps&quot; action parameter of type &quot;microsoft.graph.managedMobileApp&quot;.")]
         public System.Object[] apps { get; set; }
 
         /// <summary>

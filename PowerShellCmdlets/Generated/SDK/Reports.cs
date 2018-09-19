@@ -127,21 +127,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetOffice365ActiveUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365ActiveUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.</para>
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365ActiveUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365ActiveUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365ActiveUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -161,12 +161,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetOffice365ServicesUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365ServicesUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365ServicesUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -186,12 +186,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetOffice365ActiveUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365ActiveUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365ActiveUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -211,21 +211,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetOffice365GroupsActivityDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityDetail&quot; function.</para>
+        ///     <para type="description">The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.</para>
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityDetail&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -245,12 +245,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetOffice365GroupsActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -270,12 +270,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetOffice365GroupsActivityGroupCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityGroupCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityGroupCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -295,12 +295,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetOffice365GroupsActivityStorage : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityStorage&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityStorage&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -320,12 +320,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetOffice365GroupsActivityFileCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityFileCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOffice365GroupsActivityFileCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -345,21 +345,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetEmailActivityUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailActivityUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.</para>
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailActivityUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailActivityUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailActivityUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -379,12 +379,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetEmailActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailActivityCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailActivityCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -404,12 +404,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetEmailActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailActivityUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailActivityUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -429,21 +429,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetEmailAppUsageUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailAppUsageUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.</para>
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailAppUsageUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailAppUsageUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailAppUsageUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -463,12 +463,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetEmailAppUsageAppsUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailAppUsageAppsUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailAppUsageAppsUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -488,12 +488,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetEmailAppUsageUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailAppUsageUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailAppUsageUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -513,12 +513,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetEmailAppUsageVersionsUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailAppUsageVersionsUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getEmailAppUsageVersionsUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -538,12 +538,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetMailboxUsageDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getMailboxUsageDetail&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getMailboxUsageDetail&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -563,12 +563,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetMailboxUsageMailboxCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getMailboxUsageMailboxCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getMailboxUsageMailboxCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -588,12 +588,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetMailboxUsageQuotaStatusMailboxCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getMailboxUsageQuotaStatusMailboxCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getMailboxUsageQuotaStatusMailboxCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -613,12 +613,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetMailboxUsageStorage : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getMailboxUsageStorage&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getMailboxUsageStorage&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -638,21 +638,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetOneDriveActivityUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveActivityUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.</para>
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveActivityUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveActivityUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveActivityUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -672,12 +672,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetOneDriveActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveActivityUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveActivityUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -697,12 +697,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetOneDriveActivityFileCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveActivityFileCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveActivityFileCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -722,21 +722,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetOneDriveUsageAccountDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveUsageAccountDetail&quot; function.</para>
+        ///     <para type="description">The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.</para>
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveUsageAccountDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveUsageAccountDetail&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveUsageAccountDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -756,12 +756,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetOneDriveUsageAccountCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveUsageAccountCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveUsageAccountCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -781,12 +781,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetOneDriveUsageFileCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveUsageFileCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveUsageFileCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -806,12 +806,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetOneDriveUsageStorage : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveUsageStorage&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getOneDriveUsageStorage&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -831,21 +831,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSharePointActivityUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointActivityUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.</para>
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointActivityUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointActivityUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointActivityUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -865,12 +865,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSharePointActivityFileCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointActivityFileCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointActivityFileCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -890,12 +890,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSharePointActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointActivityUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointActivityUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -915,12 +915,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSharePointActivityPages : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointActivityPages&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointActivityPages&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -940,21 +940,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSharePointSiteUsageDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsageDetail&quot; function.</para>
+        ///     <para type="description">The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.</para>
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsageDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsageDetail&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsageDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -974,12 +974,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSharePointSiteUsageFileCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsageFileCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsageFileCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -999,12 +999,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSharePointSiteUsageSiteCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsageSiteCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsageSiteCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1024,12 +1024,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSharePointSiteUsageStorage : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsageStorage&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsageStorage&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1049,12 +1049,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSharePointSiteUsagePages : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsagePages&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSharePointSiteUsagePages&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1074,21 +1074,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSkypeForBusinessActivityUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessActivityUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.</para>
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessActivityUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessActivityUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessActivityUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1108,12 +1108,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSkypeForBusinessActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessActivityCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessActivityCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1133,12 +1133,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSkypeForBusinessActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessActivityUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessActivityUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1158,12 +1158,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSkypeForBusinessPeerToPeerActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessPeerToPeerActivityCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessPeerToPeerActivityCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1183,12 +1183,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSkypeForBusinessPeerToPeerActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessPeerToPeerActivityUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessPeerToPeerActivityUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1208,12 +1208,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSkypeForBusinessPeerToPeerActivityMinuteCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessPeerToPeerActivityMinuteCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessPeerToPeerActivityMinuteCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1233,12 +1233,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSkypeForBusinessOrganizerActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessOrganizerActivityCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessOrganizerActivityCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1258,12 +1258,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSkypeForBusinessOrganizerActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessOrganizerActivityUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessOrganizerActivityUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1283,12 +1283,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSkypeForBusinessOrganizerActivityMinuteCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessOrganizerActivityMinuteCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessOrganizerActivityMinuteCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1308,12 +1308,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSkypeForBusinessParticipantActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessParticipantActivityCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessParticipantActivityCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1333,12 +1333,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSkypeForBusinessParticipantActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessParticipantActivityUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessParticipantActivityUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1358,12 +1358,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSkypeForBusinessParticipantActivityMinuteCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessParticipantActivityMinuteCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessParticipantActivityMinuteCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1383,21 +1383,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSkypeForBusinessDeviceUsageUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessDeviceUsageUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.</para>
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessDeviceUsageUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessDeviceUsageUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessDeviceUsageUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1417,12 +1417,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSkypeForBusinessDeviceUsageDistributionUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessDeviceUsageDistributionUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessDeviceUsageDistributionUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1442,12 +1442,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetSkypeForBusinessDeviceUsageUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessDeviceUsageUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getSkypeForBusinessDeviceUsageUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1467,21 +1467,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetYammerActivityUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerActivityUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.</para>
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerActivityUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerActivityUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerActivityUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1501,12 +1501,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetYammerActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerActivityCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerActivityCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1526,12 +1526,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetYammerActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerActivityUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerActivityUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1551,21 +1551,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetYammerDeviceUsageUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerDeviceUsageUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.</para>
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerDeviceUsageUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerDeviceUsageUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerDeviceUsageUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1585,12 +1585,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetYammerDeviceUsageDistributionUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerDeviceUsageDistributionUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerDeviceUsageDistributionUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1610,12 +1610,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetYammerDeviceUsageUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerDeviceUsageUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerDeviceUsageUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1635,21 +1635,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetYammerGroupsActivityDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerGroupsActivityDetail&quot; function.</para>
+        ///     <para type="description">The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.</para>
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerGroupsActivityDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerGroupsActivityDetail&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerGroupsActivityDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1669,12 +1669,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetYammerGroupsActivityGroupCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerGroupsActivityGroupCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerGroupsActivityGroupCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1694,12 +1694,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetYammerGroupsActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerGroupsActivityCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getYammerGroupsActivityCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1719,21 +1719,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetTeamsUserActivityUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsUserActivityUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.</para>
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsUserActivityUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsUserActivityUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsUserActivityUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1753,12 +1753,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetTeamsUserActivityCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsUserActivityCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsUserActivityCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1778,12 +1778,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetTeamsUserActivityUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsUserActivityUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsUserActivityUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1803,21 +1803,21 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetTeamsDeviceUsageUserDetail : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsDeviceUsageUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.</para>
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsDeviceUsageUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsDeviceUsageUserDetail&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsDeviceUsageUserDetail&quot; function.")]
+        [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1837,12 +1837,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetTeamsDeviceUsageUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsDeviceUsageUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsDeviceUsageUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1862,12 +1862,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_Reports_GetTeamsDeviceUsageDistributionUserCounts : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsDeviceUsageDistributionUserCounts&quot; function.</para>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; parameter, which is accepted by the &quot;microsoft.graph.getTeamsDeviceUsageDistributionUserCounts&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 
         internal override System.String GetResourcePath()

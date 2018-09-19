@@ -1792,27 +1792,27 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceManagement_ManagedDevices_Wipe : ActionCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;keepEnrollmentData&quot; parameter, which is accepted by the &quot;microsoft.graph.wipe&quot; action.</para>
+        ///     <para type="description">The &quot;keepEnrollmentData&quot; action parameter of type &quot;Edm.Boolean&quot;.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;keepEnrollmentData&quot; parameter, which is accepted by the &quot;microsoft.graph.wipe&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;keepEnrollmentData&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean keepEnrollmentData { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;keepUserData&quot; parameter, which is accepted by the &quot;microsoft.graph.wipe&quot; action.</para>
+        ///     <para type="description">The &quot;keepUserData&quot; action parameter of type &quot;Edm.Boolean&quot;.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;keepUserData&quot; parameter, which is accepted by the &quot;microsoft.graph.wipe&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;keepUserData&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean keepUserData { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;macOsUnlockCode&quot; parameter, which is accepted by the &quot;microsoft.graph.wipe&quot; action.</para>
+        ///     <para type="description">The &quot;macOsUnlockCode&quot; action parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;macOsUnlockCode&quot; parameter, which is accepted by the &quot;microsoft.graph.wipe&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;macOsUnlockCode&quot; action parameter of type &quot;Edm.String&quot;.")]
         public System.String macOsUnlockCode { get; set; }
 
         /// <summary>
@@ -2086,12 +2086,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceManagement_ManagedDevices_CleanWindowsDevice : ActionCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;keepUserData&quot; parameter, which is accepted by the &quot;microsoft.graph.cleanWindowsDevice&quot; action.</para>
+        ///     <para type="description">The &quot;keepUserData&quot; action parameter of type &quot;Edm.Boolean&quot;.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;keepUserData&quot; parameter, which is accepted by the &quot;microsoft.graph.cleanWindowsDevice&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;keepUserData&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean keepUserData { get; set; }
 
         /// <summary>
@@ -2149,11 +2149,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceManagement_ManagedDevices_DeleteUserFromSharedAppleDevice : ActionCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;userPrincipalName&quot; parameter, which is accepted by the &quot;microsoft.graph.deleteUserFromSharedAppleDevice&quot; action.</para>
+        ///     <para type="description">The &quot;userPrincipalName&quot; action parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userPrincipalName&quot; parameter, which is accepted by the &quot;microsoft.graph.deleteUserFromSharedAppleDevice&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userPrincipalName&quot; action parameter of type &quot;Edm.String&quot;.")]
         public System.String userPrincipalName { get; set; }
 
         /// <summary>
@@ -2211,12 +2211,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceManagement_ManagedDevices_WindowsDefenderScan : ActionCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;quickScan&quot; parameter, which is accepted by the &quot;microsoft.graph.windowsDefenderScan&quot; action.</para>
+        ///     <para type="description">The &quot;quickScan&quot; action parameter of type &quot;Edm.Boolean&quot;.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;quickScan&quot; parameter, which is accepted by the &quot;microsoft.graph.windowsDefenderScan&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;quickScan&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean quickScan { get; set; }
 
         /// <summary>
@@ -2274,11 +2274,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceManagement_ManagedDevices_UpdateWindowsDeviceAccount : ActionCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;updateWindowsDeviceAccountActionParameter&quot; parameter, which is accepted by the &quot;microsoft.graph.updateWindowsDeviceAccount&quot; action.</para>
+        ///     <para type="description">The &quot;updateWindowsDeviceAccountActionParameter&quot; action parameter of type &quot;microsoft.graph.updateWindowsDeviceAccountActionParameter&quot;.</para>
         /// </summary>
         [ODataType("microsoft.graph.updateWindowsDeviceAccountActionParameter")]
         [Selectable]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;updateWindowsDeviceAccountActionParameter&quot; parameter, which is accepted by the &quot;microsoft.graph.updateWindowsDeviceAccount&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;updateWindowsDeviceAccountActionParameter&quot; action parameter of type &quot;microsoft.graph.updateWindowsDeviceAccountActionParameter&quot;.")]
         public System.Object updateWindowsDeviceAccountActionParameter { get; set; }
 
         /// <summary>

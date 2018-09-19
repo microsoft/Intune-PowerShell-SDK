@@ -1095,11 +1095,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceManagement_VerifyWindowsEnrollmentAutoDiscovery : FunctionReturningEntityCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;domainName&quot; parameter, which is accepted by the &quot;microsoft.graph.verifyWindowsEnrollmentAutoDiscovery&quot; function.</para>
+        ///     <para type="description">The &quot;domainName&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;domainName&quot; parameter, which is accepted by the &quot;microsoft.graph.verifyWindowsEnrollmentAutoDiscovery&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;domainName&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String domainName { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1119,11 +1119,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceManagement_GetEffectivePermissions : FunctionReturningCollectionCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;scope&quot; parameter, which is accepted by the &quot;microsoft.graph.getEffectivePermissions&quot; function.</para>
+        ///     <para type="description">The &quot;scope&quot; function parameter of type &quot;Edm.String&quot;.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;scope&quot; parameter, which is accepted by the &quot;microsoft.graph.getEffectivePermissions&quot; function.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;scope&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String scope { get; set; }
 
         internal override System.String GetResourcePath()

@@ -18084,12 +18084,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceManagement_DeviceConfigurations_Assign : ActionCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;assignments&quot; parameter, which is accepted by the &quot;microsoft.graph.assign&quot; action.</para>
+        ///     <para type="description">The &quot;assignments&quot; action parameter of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.</para>
         /// </summary>
         [ODataType("microsoft.graph.deviceConfigurationAssignment")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; parameter, which is accepted by the &quot;microsoft.graph.assign&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; action parameter of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
         public System.Object[] assignments { get; set; }
 
         /// <summary>

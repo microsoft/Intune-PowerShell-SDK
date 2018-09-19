@@ -857,12 +857,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceAppManagement_ManagedEBooks_Assign : ActionCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;managedEBookAssignments&quot; parameter, which is accepted by the &quot;microsoft.graph.assign&quot; action.</para>
+        ///     <para type="description">The &quot;managedEBookAssignments&quot; action parameter of type &quot;microsoft.graph.managedEBookAssignment&quot;.</para>
         /// </summary>
         [ODataType("microsoft.graph.managedEBookAssignment", "microsoft.graph.iosVppEBookAssignment")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;managedEBookAssignments&quot; parameter, which is accepted by the &quot;microsoft.graph.assign&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;managedEBookAssignments&quot; action parameter of type &quot;microsoft.graph.managedEBookAssignment&quot;.")]
         public System.Object[] managedEBookAssignments { get; set; }
 
         /// <summary>

@@ -431,7 +431,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceManagement_ExchangeConnectors_Sync : ActionCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;syncType&quot; parameter, which is accepted by the &quot;microsoft.graph.sync&quot; action.</para>
+        ///     <para type="description">The &quot;syncType&quot; action parameter of type &quot;microsoft.graph.deviceManagementExchangeConnectorSyncType&quot;.</para>
         ///     <para type="description">
         ///          Valid values: &apos;fullSync&apos;, &apos;deltaSync&apos;
         ///     </para>
@@ -440,7 +440,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [ValidateSet(@"fullSync", @"deltaSync")]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;syncType&quot; parameter, which is accepted by the &quot;microsoft.graph.sync&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;syncType&quot; action parameter of type &quot;microsoft.graph.deviceManagementExchangeConnectorSyncType&quot;.")]
         public System.String syncType { get; set; }
 
         /// <summary>

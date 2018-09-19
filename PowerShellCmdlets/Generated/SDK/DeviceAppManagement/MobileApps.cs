@@ -2818,12 +2818,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceAppManagement_MobileApps_Assign : ActionCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;mobileAppAssignments&quot; parameter, which is accepted by the &quot;microsoft.graph.assign&quot; action.</para>
+        ///     <para type="description">The &quot;mobileAppAssignments&quot; action parameter of type &quot;microsoft.graph.mobileAppAssignment&quot;.</para>
         /// </summary>
         [ODataType("microsoft.graph.mobileAppAssignment")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;mobileAppAssignments&quot; parameter, which is accepted by the &quot;microsoft.graph.assign&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;mobileAppAssignments&quot; action parameter of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
         public System.Object[] mobileAppAssignments { get; set; }
 
         /// <summary>

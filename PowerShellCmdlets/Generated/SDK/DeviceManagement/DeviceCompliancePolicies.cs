@@ -2440,12 +2440,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceManagement_DeviceCompliancePolicies_Assign : ActionCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;assignments&quot; parameter, which is accepted by the &quot;microsoft.graph.assign&quot; action.</para>
+        ///     <para type="description">The &quot;assignments&quot; action parameter of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.</para>
         /// </summary>
         [ODataType("microsoft.graph.deviceCompliancePolicyAssignment")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; parameter, which is accepted by the &quot;microsoft.graph.assign&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; action parameter of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.")]
         public System.Object[] assignments { get; set; }
 
         /// <summary>
@@ -2476,12 +2476,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceManagement_DeviceCompliancePolicies_ScheduleActionsForRules : ActionCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;deviceComplianceScheduledActionForRules&quot; parameter, which is accepted by the &quot;microsoft.graph.scheduleActionsForRules&quot; action.</para>
+        ///     <para type="description">The &quot;deviceComplianceScheduledActionForRules&quot; action parameter of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.</para>
         /// </summary>
         [ODataType("microsoft.graph.deviceComplianceScheduledActionForRule")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceComplianceScheduledActionForRules&quot; parameter, which is accepted by the &quot;microsoft.graph.scheduleActionsForRules&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceComplianceScheduledActionForRules&quot; action parameter of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
         public System.Object[] deviceComplianceScheduledActionForRules { get; set; }
 
         /// <summary>

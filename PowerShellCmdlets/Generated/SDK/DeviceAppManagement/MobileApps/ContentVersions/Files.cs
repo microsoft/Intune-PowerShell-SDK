@@ -549,11 +549,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class Invoke_DeviceAppManagement_MobileApps_ContentVersions_Files_Commit : ActionCmdlet
     {
         /// <summary>
-        ///     <para type="description">The &quot;fileEncryptionInfo&quot; parameter, which is accepted by the &quot;microsoft.graph.commit&quot; action.</para>
+        ///     <para type="description">The &quot;fileEncryptionInfo&quot; action parameter of type &quot;microsoft.graph.fileEncryptionInfo&quot;.</para>
         /// </summary>
         [ODataType("microsoft.graph.fileEncryptionInfo")]
         [Selectable]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;fileEncryptionInfo&quot; parameter, which is accepted by the &quot;microsoft.graph.commit&quot; action.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;fileEncryptionInfo&quot; action parameter of type &quot;microsoft.graph.fileEncryptionInfo&quot;.")]
         public System.Object fileEncryptionInfo { get; set; }
 
         /// <summary>
