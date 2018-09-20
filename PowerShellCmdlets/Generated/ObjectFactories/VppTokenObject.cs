@@ -90,14 +90,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;state&quot; property, of type &quot;microsoft.graph.vppTokenState&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.vppToken&quot; type.</para>
-        ///     <para type="description">Current state of the Apple Volume Purchase Program Token. Possible values are: `unknown`, `valid`, `expired`, `invalid`.</para>
+        ///     <para type="description">Current state of the Apple Volume Purchase Program Token. Possible values are: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`.</para>
         ///     <para type="description">
-        ///          Valid values: &apos;unknown&apos;, &apos;valid&apos;, &apos;expired&apos;, &apos;invalid&apos;
+        ///          Valid values: &apos;unknown&apos;, &apos;valid&apos;, &apos;expired&apos;, &apos;invalid&apos;, &apos;assignedToExternalMDM&apos;
         ///     </para>
         /// </summary>
         [ODataType("microsoft.graph.vppTokenState")]
         [Selectable]
-        [ValidateSet(@"unknown", @"valid", @"expired", @"invalid")]
+        [ValidateSet(@"unknown", @"valid", @"expired", @"invalid", @"assignedToExternalMDM")]
         [Parameter(ParameterSetName = @"microsoft.graph.vppToken", HelpMessage = @"The &quot;state&quot; property, of type &quot;microsoft.graph.vppTokenState&quot;.")]
         public System.String state { get; set; }
 

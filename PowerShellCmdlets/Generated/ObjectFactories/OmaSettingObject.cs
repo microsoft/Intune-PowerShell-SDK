@@ -74,7 +74,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;fileName&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.omaSettingBase64&quot; type.</para>
-        ///     <para type="description">File name associated with the Value property (*.cer | *.crt ).</para>
+        ///     <para type="description">File name associated with the Value property (*.cer | *.crt | *.p7b | *.bin).</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]

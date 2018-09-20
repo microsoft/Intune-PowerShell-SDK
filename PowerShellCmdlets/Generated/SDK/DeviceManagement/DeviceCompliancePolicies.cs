@@ -11,7 +11,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The device compliance policies.</para>
     /// </summary>
     [Cmdlet("Get", "DeviceManagement_DeviceCompliancePolicies", DefaultParameterSetName = @"Search")]
-    [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
+    [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
     [ResourceIdPropertyName("deviceCompliancePolicyId")]
     [ResourceReference]
@@ -547,101 +547,101 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         /// <summary>
         ///     <para type="description">The &quot;securityPreventInstallAppsFromUnknownSources&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require that devices disallow installation of apps from unknown sources.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        [DerivedType("microsoft.graph.androidCompliancePolicy")]
+        [DerivedType("microsoft.graph.androidWorkProfileCompliancePolicy")]
         public System.Boolean securityPreventInstallAppsFromUnknownSources { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityDisableUsbDebugging&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Disable USB debugging on Android devices.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        [DerivedType("microsoft.graph.androidCompliancePolicy")]
+        [DerivedType("microsoft.graph.androidWorkProfileCompliancePolicy")]
         public System.Boolean securityDisableUsbDebugging { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireVerifyApps&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require the Android Verify apps feature is turned on.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        [DerivedType("microsoft.graph.androidCompliancePolicy")]
+        [DerivedType("microsoft.graph.androidWorkProfileCompliancePolicy")]
         public System.Boolean securityRequireVerifyApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minAndroidSecurityPatchLevel&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Minimum Android security patch level.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         [Sortable]
-        [DerivedType("microsoft.graph.androidCompliancePolicy")]
+        [DerivedType("microsoft.graph.androidWorkProfileCompliancePolicy")]
         public System.String minAndroidSecurityPatchLevel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireSafetyNetAttestationBasicIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require the device to pass the SafetyNet basic integrity check.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        [DerivedType("microsoft.graph.androidCompliancePolicy")]
+        [DerivedType("microsoft.graph.androidWorkProfileCompliancePolicy")]
         public System.Boolean securityRequireSafetyNetAttestationBasicIntegrity { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireSafetyNetAttestationCertifiedDevice&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require the device to pass the SafetyNet certified device check.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        [DerivedType("microsoft.graph.androidCompliancePolicy")]
+        [DerivedType("microsoft.graph.androidWorkProfileCompliancePolicy")]
         public System.Boolean securityRequireSafetyNetAttestationCertifiedDevice { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireGooglePlayServices&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require Google Play Services to be installed and enabled on the device.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        [DerivedType("microsoft.graph.androidCompliancePolicy")]
+        [DerivedType("microsoft.graph.androidWorkProfileCompliancePolicy")]
         public System.Boolean securityRequireGooglePlayServices { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireUpToDateSecurityProviders&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        [DerivedType("microsoft.graph.androidCompliancePolicy")]
+        [DerivedType("microsoft.graph.androidWorkProfileCompliancePolicy")]
         public System.Boolean securityRequireUpToDateSecurityProviders { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireCompanyPortalAppIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require the device to pass the Company Portal client app runtime integrity check.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Sortable]
-        [DerivedType("microsoft.graph.androidCompliancePolicy")]
+        [DerivedType("microsoft.graph.androidWorkProfileCompliancePolicy")]
         public System.Boolean securityRequireCompanyPortalAppIntegrity { get; set; }
 
         internal override System.String GetResourcePath()
@@ -657,7 +657,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The device compliance policies.</para>
     /// </summary>
     [Cmdlet("New", "DeviceManagement_DeviceCompliancePolicies", ConfirmImpact = ConfirmImpact.Low)]
-    [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
+    [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
     [ResourceIdPropertyName("deviceCompliancePolicyId")]
     [ResourceReference]
@@ -684,6 +684,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset createdDateTime { get; set; }
@@ -702,6 +703,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String description { get; set; }
@@ -720,6 +722,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset lastModifiedDateTime { get; set; }
@@ -738,6 +741,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
@@ -756,6 +760,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 version { get; set; }
@@ -775,6 +780,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;scheduledActionsForRule&quot; property, of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;scheduledActionsForRule&quot; property, of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;scheduledActionsForRule&quot; property, of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;scheduledActionsForRule&quot; property, of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;scheduledActionsForRule&quot; property, of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;scheduledActionsForRule&quot; property, of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
         public System.Object[] scheduledActionsForRule { get; set; }
@@ -794,6 +800,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         public System.Object[] deviceStatuses { get; set; }
@@ -813,6 +820,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         public System.Object[] userStatuses { get; set; }
@@ -831,6 +839,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         public System.Object deviceStatusOverview { get; set; }
@@ -849,6 +858,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         public System.Object userStatusOverview { get; set; }
@@ -868,6 +878,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         public System.Object[] deviceSettingStateSummaries { get; set; }
@@ -887,6 +898,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.")]
         public System.Object[] assignments { get; set; }
@@ -926,6 +938,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 passwordExpirationDays { get; set; }
@@ -942,6 +955,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 passwordMinimumLength { get; set; }
@@ -958,6 +972,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeLock&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeLock&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeLock&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeLock&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeLock&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeLock&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 passwordMinutesOfInactivityBeforeLock { get; set; }
@@ -993,6 +1008,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
         public System.String passwordRequiredType { get; set; }
@@ -1009,6 +1025,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 passwordPreviousPasswordBlockCount { get; set; }
@@ -1025,6 +1042,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;passwordRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean passwordRequired { get; set; }
@@ -1042,6 +1060,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;osMinimumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;osMinimumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;osMinimumVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;osMinimumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;osMinimumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;osMinimumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String osMinimumVersion { get; set; }
@@ -1059,6 +1078,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;osMaximumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;osMaximumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;osMaximumVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;osMaximumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;osMaximumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;osMaximumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String osMaximumVersion { get; set; }
@@ -1075,6 +1095,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;storageRequireEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;storageRequireEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;storageRequireEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;storageRequireEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;storageRequireEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;storageRequireEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean storageRequireEncryption { get; set; }
@@ -1234,6 +1255,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceThreatProtectionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceThreatProtectionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceThreatProtectionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceThreatProtectionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceThreatProtectionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean deviceThreatProtectionEnabled { get; set; }
@@ -1251,6 +1273,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"unavailable", @"secured", @"low", @"medium", @"high", @"notSet")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceThreatProtectionRequiredSecurityLevel&quot; property, of type &quot;microsoft.graph.deviceThreatProtectionLevel&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceThreatProtectionRequiredSecurityLevel&quot; property, of type &quot;microsoft.graph.deviceThreatProtectionLevel&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceThreatProtectionRequiredSecurityLevel&quot; property, of type &quot;microsoft.graph.deviceThreatProtectionLevel&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceThreatProtectionRequiredSecurityLevel&quot; property, of type &quot;microsoft.graph.deviceThreatProtectionLevel&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceThreatProtectionRequiredSecurityLevel&quot; property, of type &quot;microsoft.graph.deviceThreatProtectionLevel&quot;.")]
         public System.String deviceThreatProtectionRequiredSecurityLevel { get; set; }
@@ -1396,6 +1419,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityBlockJailbrokenDevices&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityBlockJailbrokenDevices&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityBlockJailbrokenDevices&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityBlockJailbrokenDevices&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityBlockJailbrokenDevices { get; set; }
@@ -1412,111 +1436,128 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Boolean managedEmailProfileRequired { get; set; }
 
         /// <summary>
-        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"microsoft.graph.androidCompliancePolicy")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidCompliancePolicy&quot; type.")]
-        public System.Management.Automation.SwitchParameter androidCompliancePolicy { get; set; }
+        [ParameterSetSelector(@"microsoft.graph.androidWorkProfileCompliancePolicy")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.")]
+        public System.Management.Automation.SwitchParameter androidWorkProfileCompliancePolicy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityPreventInstallAppsFromUnknownSources&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require that devices disallow installation of apps from unknown sources.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityPreventInstallAppsFromUnknownSources&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityPreventInstallAppsFromUnknownSources&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityPreventInstallAppsFromUnknownSources&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityPreventInstallAppsFromUnknownSources { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityDisableUsbDebugging&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Disable USB debugging on Android devices.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityDisableUsbDebugging&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityDisableUsbDebugging&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityDisableUsbDebugging&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityDisableUsbDebugging { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireVerifyApps&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require the Android Verify apps feature is turned on.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireVerifyApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireVerifyApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireVerifyApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityRequireVerifyApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minAndroidSecurityPatchLevel&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Minimum Android security patch level.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;minAndroidSecurityPatchLevel&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;minAndroidSecurityPatchLevel&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;minAndroidSecurityPatchLevel&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String minAndroidSecurityPatchLevel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireSafetyNetAttestationBasicIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require the device to pass the SafetyNet basic integrity check.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireSafetyNetAttestationBasicIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireSafetyNetAttestationBasicIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireSafetyNetAttestationBasicIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityRequireSafetyNetAttestationBasicIntegrity { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireSafetyNetAttestationCertifiedDevice&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require the device to pass the SafetyNet certified device check.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireSafetyNetAttestationCertifiedDevice&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireSafetyNetAttestationCertifiedDevice&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireSafetyNetAttestationCertifiedDevice&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityRequireSafetyNetAttestationCertifiedDevice { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireGooglePlayServices&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require Google Play Services to be installed and enabled on the device.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireGooglePlayServices&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireGooglePlayServices&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireGooglePlayServices&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityRequireGooglePlayServices { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireUpToDateSecurityProviders&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireUpToDateSecurityProviders&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireUpToDateSecurityProviders&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireUpToDateSecurityProviders&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityRequireUpToDateSecurityProviders { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireCompanyPortalAppIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require the device to pass the Company Portal client app runtime integrity check.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireCompanyPortalAppIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireCompanyPortalAppIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityRequireCompanyPortalAppIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityRequireCompanyPortalAppIntegrity { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [ParameterSetSelector(@"microsoft.graph.androidCompliancePolicy")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidCompliancePolicy&quot; type.")]
+        public System.Management.Automation.SwitchParameter androidCompliancePolicy { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -1531,7 +1572,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The device compliance policies.</para>
     /// </summary>
     [Cmdlet("Update", "DeviceManagement_DeviceCompliancePolicies", ConfirmImpact = ConfirmImpact.Medium)]
-    [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
+    [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
     [ResourceIdPropertyName("deviceCompliancePolicyId")]
     public class Update_DeviceManagement_DeviceCompliancePolicies : PatchCmdlet
@@ -1560,6 +1601,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset createdDateTime { get; set; }
@@ -1578,6 +1620,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String description { get; set; }
@@ -1596,6 +1639,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset lastModifiedDateTime { get; set; }
@@ -1614,6 +1658,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
@@ -1632,6 +1677,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 version { get; set; }
@@ -1651,6 +1697,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;scheduledActionsForRule&quot; property, of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;scheduledActionsForRule&quot; property, of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;scheduledActionsForRule&quot; property, of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;scheduledActionsForRule&quot; property, of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;scheduledActionsForRule&quot; property, of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;scheduledActionsForRule&quot; property, of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
         public System.Object[] scheduledActionsForRule { get; set; }
@@ -1670,6 +1717,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         public System.Object[] deviceStatuses { get; set; }
@@ -1689,6 +1737,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         public System.Object[] userStatuses { get; set; }
@@ -1707,6 +1756,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         public System.Object deviceStatusOverview { get; set; }
@@ -1725,6 +1775,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         public System.Object userStatusOverview { get; set; }
@@ -1744,6 +1795,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         public System.Object[] deviceSettingStateSummaries { get; set; }
@@ -1763,6 +1815,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.")]
         public System.Object[] assignments { get; set; }
@@ -1802,6 +1855,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 passwordExpirationDays { get; set; }
@@ -1818,6 +1872,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 passwordMinimumLength { get; set; }
@@ -1834,6 +1889,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeLock&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeLock&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeLock&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeLock&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeLock&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeLock&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 passwordMinutesOfInactivityBeforeLock { get; set; }
@@ -1869,6 +1925,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
         public System.String passwordRequiredType { get; set; }
@@ -1885,6 +1942,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 passwordPreviousPasswordBlockCount { get; set; }
@@ -1901,6 +1959,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", HelpMessage = @"The &quot;passwordRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;passwordRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;passwordRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;passwordRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;passwordRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;passwordRequired&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean passwordRequired { get; set; }
@@ -1918,6 +1977,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;osMinimumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;osMinimumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;osMinimumVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;osMinimumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;osMinimumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;osMinimumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String osMinimumVersion { get; set; }
@@ -1935,6 +1995,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;osMaximumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;osMaximumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;osMaximumVersion&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;osMaximumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;osMaximumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;osMaximumVersion&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String osMaximumVersion { get; set; }
@@ -1951,6 +2012,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", HelpMessage = @"The &quot;storageRequireEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;storageRequireEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;storageRequireEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;storageRequireEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;storageRequireEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;storageRequireEncryption&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean storageRequireEncryption { get; set; }
@@ -2110,6 +2172,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;deviceThreatProtectionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;deviceThreatProtectionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;deviceThreatProtectionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;deviceThreatProtectionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceThreatProtectionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean deviceThreatProtectionEnabled { get; set; }
@@ -2127,6 +2190,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"unavailable", @"secured", @"low", @"medium", @"high", @"notSet")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;deviceThreatProtectionRequiredSecurityLevel&quot; property, of type &quot;microsoft.graph.deviceThreatProtectionLevel&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;deviceThreatProtectionRequiredSecurityLevel&quot; property, of type &quot;microsoft.graph.deviceThreatProtectionLevel&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;deviceThreatProtectionRequiredSecurityLevel&quot; property, of type &quot;microsoft.graph.deviceThreatProtectionLevel&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;deviceThreatProtectionRequiredSecurityLevel&quot; property, of type &quot;microsoft.graph.deviceThreatProtectionLevel&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;deviceThreatProtectionRequiredSecurityLevel&quot; property, of type &quot;microsoft.graph.deviceThreatProtectionLevel&quot;.")]
         public System.String deviceThreatProtectionRequiredSecurityLevel { get; set; }
@@ -2272,6 +2336,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;securityBlockJailbrokenDevices&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;securityBlockJailbrokenDevices&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;securityBlockJailbrokenDevices&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;securityBlockJailbrokenDevices&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityBlockJailbrokenDevices { get; set; }
@@ -2288,111 +2353,128 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Boolean managedEmailProfileRequired { get; set; }
 
         /// <summary>
-        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         /// </summary>
         [Selectable]
-        [ParameterSetSelector(@"microsoft.graph.androidCompliancePolicy")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidCompliancePolicy&quot; type.")]
-        public System.Management.Automation.SwitchParameter androidCompliancePolicy { get; set; }
+        [ParameterSetSelector(@"microsoft.graph.androidWorkProfileCompliancePolicy")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.")]
+        public System.Management.Automation.SwitchParameter androidWorkProfileCompliancePolicy { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityPreventInstallAppsFromUnknownSources&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require that devices disallow installation of apps from unknown sources.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;securityPreventInstallAppsFromUnknownSources&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;securityPreventInstallAppsFromUnknownSources&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;securityPreventInstallAppsFromUnknownSources&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityPreventInstallAppsFromUnknownSources { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityDisableUsbDebugging&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Disable USB debugging on Android devices.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;securityDisableUsbDebugging&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;securityDisableUsbDebugging&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;securityDisableUsbDebugging&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityDisableUsbDebugging { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireVerifyApps&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require the Android Verify apps feature is turned on.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;securityRequireVerifyApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;securityRequireVerifyApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;securityRequireVerifyApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityRequireVerifyApps { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;minAndroidSecurityPatchLevel&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Minimum Android security patch level.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;minAndroidSecurityPatchLevel&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;minAndroidSecurityPatchLevel&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;minAndroidSecurityPatchLevel&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String minAndroidSecurityPatchLevel { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireSafetyNetAttestationBasicIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require the device to pass the SafetyNet basic integrity check.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;securityRequireSafetyNetAttestationBasicIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;securityRequireSafetyNetAttestationBasicIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;securityRequireSafetyNetAttestationBasicIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityRequireSafetyNetAttestationBasicIntegrity { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireSafetyNetAttestationCertifiedDevice&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require the device to pass the SafetyNet certified device check.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;securityRequireSafetyNetAttestationCertifiedDevice&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;securityRequireSafetyNetAttestationCertifiedDevice&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;securityRequireSafetyNetAttestationCertifiedDevice&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityRequireSafetyNetAttestationCertifiedDevice { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireGooglePlayServices&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require Google Play Services to be installed and enabled on the device.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;securityRequireGooglePlayServices&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;securityRequireGooglePlayServices&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;securityRequireGooglePlayServices&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityRequireGooglePlayServices { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireUpToDateSecurityProviders&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;securityRequireUpToDateSecurityProviders&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;securityRequireUpToDateSecurityProviders&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;securityRequireUpToDateSecurityProviders&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityRequireUpToDateSecurityProviders { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;securityRequireCompanyPortalAppIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         ///     <para type="description">Require the device to pass the Company Portal client app runtime integrity check.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;securityRequireCompanyPortalAppIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;securityRequireCompanyPortalAppIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;securityRequireCompanyPortalAppIntegrity&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityRequireCompanyPortalAppIntegrity { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [ParameterSetSelector(@"microsoft.graph.androidCompliancePolicy")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidCompliancePolicy&quot; type.")]
+        public System.Management.Automation.SwitchParameter androidCompliancePolicy { get; set; }
 
         internal override System.String GetResourcePath()
         {
@@ -2407,7 +2489,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The device compliance policies.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_DeviceCompliancePolicies", ConfirmImpact = ConfirmImpact.High)]
-    [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
+    [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
     [ResourceIdPropertyName("deviceCompliancePolicyId")]
     public class Remove_DeviceManagement_DeviceCompliancePolicies : DeleteCmdlet
@@ -2434,7 +2516,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action returns a collection of &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot; objects.</para>
     /// </summary>
     [Cmdlet("Invoke", "DeviceManagement_DeviceCompliancePolicies_Assign", ConfirmImpact = ConfirmImpact.High)]
-    [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
+    [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
     [ResourceIdPropertyName("deviceCompliancePolicyId")]
     public class Invoke_DeviceManagement_DeviceCompliancePolicies_Assign : ActionCmdlet
@@ -2470,7 +2552,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     [Cmdlet("Invoke", "DeviceManagement_DeviceCompliancePolicies_ScheduleActionsForRules", ConfirmImpact = ConfirmImpact.High)]
-    [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
+    [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
     [ResourceIdPropertyName("deviceCompliancePolicyId")]
     public class Invoke_DeviceManagement_DeviceCompliancePolicies_ScheduleActionsForRules : ActionCmdlet

@@ -1072,12 +1072,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.managedDevice&quot; type.</para>
         ///     <para type="description">Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only.</para>
         ///     <para type="description">
-        ///          Valid values: &apos;unknown&apos;, &apos;activated&apos;, &apos;deactivated&apos;, &apos;secured&apos;, &apos;lowSeverity&apos;, &apos;mediumSeverity&apos;, &apos;highSeverity&apos;, &apos;unresponsive&apos;
+        ///          Valid values: &apos;unknown&apos;, &apos;activated&apos;, &apos;deactivated&apos;, &apos;secured&apos;, &apos;lowSeverity&apos;, &apos;mediumSeverity&apos;, &apos;highSeverity&apos;, &apos;unresponsive&apos;, &apos;compromised&apos;, &apos;misconfigured&apos;
         ///     </para>
         /// </summary>
         [ODataType("microsoft.graph.managedDevicePartnerReportedHealthState")]
         [Selectable]
-        [ValidateSet(@"unknown", @"activated", @"deactivated", @"secured", @"lowSeverity", @"mediumSeverity", @"highSeverity", @"unresponsive")]
+        [ValidateSet(@"unknown", @"activated", @"deactivated", @"secured", @"lowSeverity", @"mediumSeverity", @"highSeverity", @"unresponsive", @"compromised", @"misconfigured")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedDevice", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;partnerReportedThreatState&quot; property, of type &quot;microsoft.graph.managedDevicePartnerReportedHealthState&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;partnerReportedThreatState&quot; property, of type &quot;microsoft.graph.managedDevicePartnerReportedHealthState&quot;.")]
         public System.String partnerReportedThreatState { get; set; }
@@ -1674,12 +1674,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.managedDevice&quot; type.</para>
         ///     <para type="description">Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only.</para>
         ///     <para type="description">
-        ///          Valid values: &apos;unknown&apos;, &apos;activated&apos;, &apos;deactivated&apos;, &apos;secured&apos;, &apos;lowSeverity&apos;, &apos;mediumSeverity&apos;, &apos;highSeverity&apos;, &apos;unresponsive&apos;
+        ///          Valid values: &apos;unknown&apos;, &apos;activated&apos;, &apos;deactivated&apos;, &apos;secured&apos;, &apos;lowSeverity&apos;, &apos;mediumSeverity&apos;, &apos;highSeverity&apos;, &apos;unresponsive&apos;, &apos;compromised&apos;, &apos;misconfigured&apos;
         ///     </para>
         /// </summary>
         [ODataType("microsoft.graph.managedDevicePartnerReportedHealthState")]
         [Selectable]
-        [ValidateSet(@"unknown", @"activated", @"deactivated", @"secured", @"lowSeverity", @"mediumSeverity", @"highSeverity", @"unresponsive")]
+        [ValidateSet(@"unknown", @"activated", @"deactivated", @"secured", @"lowSeverity", @"mediumSeverity", @"highSeverity", @"unresponsive", @"compromised", @"misconfigured")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedDevice", HelpMessage = @"The &quot;partnerReportedThreatState&quot; property, of type &quot;microsoft.graph.managedDevicePartnerReportedHealthState&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;partnerReportedThreatState&quot; property, of type &quot;microsoft.graph.managedDevicePartnerReportedHealthState&quot;.")]
         public System.String partnerReportedThreatState { get; set; }

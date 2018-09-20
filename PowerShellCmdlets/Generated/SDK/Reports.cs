@@ -1907,4 +1907,76 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             return $"reports/deviceConfigurationDeviceActivity({this.GetFunctionUrlSegment()})";
         }
     }
+
+    /// <summary>
+    ///     <para type="description">GET ~/reports/managedDeviceEnrollmentFailureDetails</para>
+    ///     <para type="description">The function &quot;microsoft.graph.managedDeviceEnrollmentFailureDetails&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
+    ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
+    /// </summary>
+    [Cmdlet("Invoke", "Reports_ManagedDeviceEnrollmentFailureDetails", DefaultParameterSetName = @"Get")]
+    [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
+    public class Invoke_Reports_ManagedDeviceEnrollmentFailureDetails : FunctionReturningEntityCmdlet
+    {
+        /// <summary>
+        ///     <para type="description">The &quot;skip&quot; function parameter of type &quot;Edm.Int32&quot;.</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;skip&quot; function parameter of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 skip { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;top&quot; function parameter of type &quot;Edm.Int32&quot;.</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;top&quot; function parameter of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 top { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;filter&quot; function parameter of type &quot;Edm.String&quot;.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;filter&quot; function parameter of type &quot;Edm.String&quot;.")]
+        public System.String filter { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;skipToken&quot; function parameter of type &quot;Edm.String&quot;.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;skipToken&quot; function parameter of type &quot;Edm.String&quot;.")]
+        public System.String skipToken { get; set; }
+
+        internal override System.String GetResourcePath()
+        {
+            return $"reports/managedDeviceEnrollmentFailureDetails({this.GetFunctionUrlSegment()})";
+        }
+    }
+
+    /// <summary>
+    ///     <para type="description">GET ~/reports/managedDeviceEnrollmentTopFailures</para>
+    ///     <para type="description">The function &quot;microsoft.graph.managedDeviceEnrollmentTopFailures&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
+    ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
+    /// </summary>
+    [Cmdlet("Invoke", "Reports_ManagedDeviceEnrollmentTopFailures", DefaultParameterSetName = @"Get")]
+    [ODataType("microsoft.graph.reportRoot")]
+    [ResourceTypePropertyName("reportODataType")]
+    public class Invoke_Reports_ManagedDeviceEnrollmentTopFailures : FunctionReturningEntityCmdlet
+    {
+        /// <summary>
+        ///     <para type="description">The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
+        public System.String period { get; set; }
+
+        internal override System.String GetResourcePath()
+        {
+            return $"reports/managedDeviceEnrollmentTopFailures({this.GetFunctionUrlSegment()})";
+        }
+    }
 }

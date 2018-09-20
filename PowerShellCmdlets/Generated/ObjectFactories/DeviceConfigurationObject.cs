@@ -43,6 +43,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset lastModifiedDateTime { get; set; }
@@ -77,6 +79,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset createdDateTime { get; set; }
@@ -111,6 +115,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String description { get; set; }
@@ -145,6 +151,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
@@ -179,6 +187,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 version { get; set; }
@@ -214,6 +224,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
         public System.Object[] assignments { get; set; }
@@ -249,6 +261,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
         public System.Object[] deviceStatuses { get; set; }
@@ -284,6 +298,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
         public System.Object[] userStatuses { get; set; }
@@ -318,6 +334,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
         public System.Object deviceStatusOverview { get; set; }
@@ -352,6 +370,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
         public System.Object userStatusOverview { get; set; }
@@ -387,6 +407,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         public System.Object[] deviceSettingStateSummaries { get; set; }
@@ -782,6 +804,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 passwordExpirationDays { get; set; }
 
@@ -796,6 +819,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 passwordMinimumLength { get; set; }
 
@@ -810,6 +834,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeScreenTimeout&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeScreenTimeout&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeScreenTimeout&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeScreenTimeout&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordMinutesOfInactivityBeforeScreenTimeout&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 passwordMinutesOfInactivityBeforeScreenTimeout { get; set; }
 
@@ -837,6 +862,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 passwordPreviousPasswordBlockCount { get; set; }
 
@@ -850,6 +876,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;passwordSignInFailureCountBeforeFactoryReset&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;passwordSignInFailureCountBeforeFactoryReset&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;passwordSignInFailureCountBeforeFactoryReset&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordSignInFailureCountBeforeFactoryReset&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordSignInFailureCountBeforeFactoryReset&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 passwordSignInFailureCountBeforeFactoryReset { get; set; }
 
@@ -868,6 +895,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordRequiredType&quot; property, of type &quot;microsoft.graph.requiredPasswordType&quot;.")]
         public System.String passwordRequiredType { get; set; }
 
@@ -1433,6 +1461,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CustomConfiguration", HelpMessage = @"The &quot;omaSettings&quot; property, of type &quot;microsoft.graph.omaSetting&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;omaSettings&quot; property, of type &quot;microsoft.graph.omaSetting&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;omaSettings&quot; property, of type &quot;microsoft.graph.omaSetting&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;omaSettings&quot; property, of type &quot;microsoft.graph.omaSetting&quot;.")]
         public System.Object[] omaSettings { get; set; }
 
@@ -4943,6 +4972,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String kioskModeAppStoreUrl { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;kioskModeBuiltInAppId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.iosGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">ID for built-in apps to use for kiosk mode. Used when KioskModeManagedAppId and KioskModeAppStoreUrl are not set.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeBuiltInAppId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String kioskModeBuiltInAppId { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;kioskModeRequireAssistiveTouch&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.iosGeneralDeviceConfiguration&quot; type.</para>
         ///     <para type="description">Indicates whether or not to require assistive touch while in kiosk mode.</para>
@@ -5497,6 +5536,317 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Management.Automation.SwitchParameter iosCustomConfiguration { get; set; }
 
         /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [ParameterSetSelector(@"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.")]
+        public System.Management.Automation.SwitchParameter androidWorkProfileGeneralDeviceConfiguration { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;passwordBlockFingerprintUnlock&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Indicates whether or not to block fingerprint unlock.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordBlockFingerprintUnlock&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordBlockFingerprintUnlock&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean passwordBlockFingerprintUnlock { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;passwordBlockTrustAgents&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Indicates whether or not to block Smart Lock and other trust agents.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordBlockTrustAgents&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordBlockTrustAgents&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean passwordBlockTrustAgents { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfileDataSharingType&quot; property, of type &quot;microsoft.graph.androidWorkProfileCrossProfileDataSharingType&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Type of data sharing that is allowed.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;deviceDefault&apos;, &apos;preventAny&apos;, &apos;allowPersonalToWork&apos;, &apos;noRestrictions&apos;
+        ///     </para>
+        /// </summary>
+        [ODataType("microsoft.graph.androidWorkProfileCrossProfileDataSharingType")]
+        [Selectable]
+        [ValidateSet(@"deviceDefault", @"preventAny", @"allowPersonalToWork", @"noRestrictions")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfileDataSharingType&quot; property, of type &quot;microsoft.graph.androidWorkProfileCrossProfileDataSharingType&quot;.")]
+        public System.String workProfileDataSharingType { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfileBlockNotificationsWhileDeviceLocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Indicates whether or not to block notifications while device locked.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfileBlockNotificationsWhileDeviceLocked&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean workProfileBlockNotificationsWhileDeviceLocked { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfileBlockAddingAccounts&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Block users from adding/removing accounts in work profile.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfileBlockAddingAccounts&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean workProfileBlockAddingAccounts { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfileBluetoothEnableContactSharing&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Allow bluetooth devices to access enterprise contacts.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfileBluetoothEnableContactSharing&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean workProfileBluetoothEnableContactSharing { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfileBlockScreenCapture&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Block screen capture in work profile.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfileBlockScreenCapture&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean workProfileBlockScreenCapture { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfileBlockCrossProfileCallerId&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Block display work profile caller ID in personal profile.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfileBlockCrossProfileCallerId&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean workProfileBlockCrossProfileCallerId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfileBlockCamera&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Block work profile camera.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfileBlockCamera&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean workProfileBlockCamera { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfileBlockCrossProfileContactsSearch&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Block work profile contacts availability in personal profile.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfileBlockCrossProfileContactsSearch&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean workProfileBlockCrossProfileContactsSearch { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfileBlockCrossProfileCopyPaste&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Boolean that indicates if the setting disallow cross profile copy/paste is enabled.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfileBlockCrossProfileCopyPaste&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean workProfileBlockCrossProfileCopyPaste { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfileDefaultAppPermissionPolicy&quot; property, of type &quot;microsoft.graph.androidWorkProfileDefaultAppPermissionPolicyType&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Type of password that is required.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;deviceDefault&apos;, &apos;prompt&apos;, &apos;autoGrant&apos;, &apos;autoDeny&apos;
+        ///     </para>
+        /// </summary>
+        [ODataType("microsoft.graph.androidWorkProfileDefaultAppPermissionPolicyType")]
+        [Selectable]
+        [ValidateSet(@"deviceDefault", @"prompt", @"autoGrant", @"autoDeny")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfileDefaultAppPermissionPolicy&quot; property, of type &quot;microsoft.graph.androidWorkProfileDefaultAppPermissionPolicyType&quot;.")]
+        public System.String workProfileDefaultAppPermissionPolicy { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfilePasswordBlockFingerprintUnlock&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Indicates whether or not to block fingerprint unlock for work profile.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfilePasswordBlockFingerprintUnlock&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean workProfilePasswordBlockFingerprintUnlock { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfilePasswordBlockTrustAgents&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Indicates whether or not to block Smart Lock and other trust agents for work profile.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfilePasswordBlockTrustAgents&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean workProfilePasswordBlockTrustAgents { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfilePasswordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Number of days before the work profile password expires. Valid values 1 to 365</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfilePasswordExpirationDays&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 workProfilePasswordExpirationDays { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfilePasswordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Minimum length of work profile password. Valid values 4 to 16</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfilePasswordMinimumLength&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 workProfilePasswordMinimumLength { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfilePasswordMinNumericCharacters&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Minimum # of numeric characters required in work profile password. Valid values 1 to 10</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfilePasswordMinNumericCharacters&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 workProfilePasswordMinNumericCharacters { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfilePasswordMinNonLetterCharacters&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Minimum # of non-letter characters required in work profile password. Valid values 1 to 10</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfilePasswordMinNonLetterCharacters&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 workProfilePasswordMinNonLetterCharacters { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfilePasswordMinLetterCharacters&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Minimum # of letter characters required in work profile password. Valid values 1 to 10</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfilePasswordMinLetterCharacters&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 workProfilePasswordMinLetterCharacters { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfilePasswordMinLowerCaseCharacters&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Minimum # of lower-case characters required in work profile password. Valid values 1 to 10</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfilePasswordMinLowerCaseCharacters&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 workProfilePasswordMinLowerCaseCharacters { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfilePasswordMinUpperCaseCharacters&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Minimum # of upper-case characters required in work profile password. Valid values 1 to 10</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfilePasswordMinUpperCaseCharacters&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 workProfilePasswordMinUpperCaseCharacters { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfilePasswordMinSymbolCharacters&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Minimum # of symbols required in work profile password. Valid values 1 to 10</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfilePasswordMinSymbolCharacters&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 workProfilePasswordMinSymbolCharacters { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfilePasswordMinutesOfInactivityBeforeScreenTimeout&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Minutes of inactivity before the screen times out.</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfilePasswordMinutesOfInactivityBeforeScreenTimeout&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 workProfilePasswordMinutesOfInactivityBeforeScreenTimeout { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfilePasswordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Number of previous work profile passwords to block. Valid values 0 to 24</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfilePasswordPreviousPasswordBlockCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 workProfilePasswordPreviousPasswordBlockCount { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfilePasswordSignInFailureCountBeforeFactoryReset&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Number of sign in failures allowed before work profile is removed and all corporate data deleted. Valid values 4 to 11</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfilePasswordSignInFailureCountBeforeFactoryReset&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 workProfilePasswordSignInFailureCountBeforeFactoryReset { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfilePasswordRequiredType&quot; property, of type &quot;microsoft.graph.androidWorkProfileRequiredPasswordType&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Type of work profile password that is required.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;deviceDefault&apos;, &apos;lowSecurityBiometric&apos;, &apos;required&apos;, &apos;atLeastNumeric&apos;, &apos;numericComplex&apos;, &apos;atLeastAlphabetic&apos;, &apos;atLeastAlphanumeric&apos;, &apos;alphanumericWithSymbols&apos;
+        ///     </para>
+        /// </summary>
+        [ODataType("microsoft.graph.androidWorkProfileRequiredPasswordType")]
+        [Selectable]
+        [ValidateSet(@"deviceDefault", @"lowSecurityBiometric", @"required", @"atLeastNumeric", @"numericComplex", @"atLeastAlphabetic", @"atLeastAlphanumeric", @"alphanumericWithSymbols")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfilePasswordRequiredType&quot; property, of type &quot;microsoft.graph.androidWorkProfileRequiredPasswordType&quot;.")]
+        public System.String workProfilePasswordRequiredType { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;workProfileRequirePassword&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Password is required or not for work profile</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;workProfileRequirePassword&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean workProfileRequirePassword { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;securityRequireVerifyApps&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
+        ///     <para type="description">Require the Android Verify apps feature is turned on.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;securityRequireVerifyApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;securityRequireVerifyApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean securityRequireVerifyApps { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidWorkProfileCustomConfiguration&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [ParameterSetSelector(@"microsoft.graph.androidWorkProfileCustomConfiguration")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidWorkProfileCustomConfiguration&quot; type.")]
+        public System.Management.Automation.SwitchParameter androidWorkProfileCustomConfiguration { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidGeneralDeviceConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -5584,26 +5934,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;kioskModeApps&quot; property, of type &quot;microsoft.graph.appListItem&quot;.")]
         public System.Object[] kioskModeApps { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;passwordBlockFingerprintUnlock&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidGeneralDeviceConfiguration&quot; type.</para>
-        ///     <para type="description">Indicates whether or not to block fingerprint unlock.</para>
-        /// </summary>
-        [ODataType("Edm.Boolean")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordBlockFingerprintUnlock&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean passwordBlockFingerprintUnlock { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;passwordBlockTrustAgents&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidGeneralDeviceConfiguration&quot; type.</para>
-        ///     <para type="description">Indicates whether or not to block Smart Lock and other trust agents.</para>
-        /// </summary>
-        [ODataType("Edm.Boolean")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;passwordBlockTrustAgents&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean passwordBlockTrustAgents { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;powerOffBlocked&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -5741,16 +6071,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;appsHideList&quot; property, of type &quot;microsoft.graph.appListItem&quot;.")]
         public System.Object[] appsHideList { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;securityRequireVerifyApps&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.androidGeneralDeviceConfiguration&quot; type.</para>
-        ///     <para type="description">Require the Android Verify apps feature is turned on.</para>
-        /// </summary>
-        [ODataType("Edm.Boolean")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;securityRequireVerifyApps&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean securityRequireVerifyApps { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidCustomConfiguration&quot; type.</para>

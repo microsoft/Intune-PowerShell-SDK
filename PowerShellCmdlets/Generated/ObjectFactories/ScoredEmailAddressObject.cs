@@ -42,5 +42,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"notSpecified", @"high")]
         [Parameter(ParameterSetName = @"microsoft.graph.scoredEmailAddress", HelpMessage = @"The &quot;selectionLikelihood&quot; property, of type &quot;microsoft.graph.selectionLikelihoodInfo&quot;.")]
         public System.String selectionLikelihood { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;ItemId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.scoredEmailAddress&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.scoredEmailAddress", HelpMessage = @"The &quot;ItemId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String ItemId { get; set; }
     }
 }
