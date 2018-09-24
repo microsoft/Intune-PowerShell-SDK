@@ -26,7 +26,9 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 # Getting started
 ## One-time setup
 1. Download the module from the [Releases](https://github.com/Microsoft/Intune-PowerShell-SDK/releases) tab in the GitHub repository.
-2. The "Release" folder in the zip file contains two folders: "net471" and "netstandard2.0".  If you are using Windows, extract the "net471" folder.  If you are using any other operating system or platform (including CloudShell), extract the "netstandard2.0" folder.  You may rename the extracted folder to whatever you like.
+2. The "Release" folder in the zip file contains two folders: "net471" and "netstandard2.0".
+    - If you are using Windows, extract the "net471" folder.  **You must have .NET 4.7.1 or higher installed**.
+    - If you are using any other operating system or platform (including CloudShell), extract the "netstandard2.0" folder.  You may rename the extracted folder to whatever you like.
 3. The module manifest is the "Microsoft.Graph.Intune.psd1" file inside this folder.  This is the file you would refer to when importing the module (see the next section below).
 
 ## Each time you use the module
@@ -109,6 +111,7 @@ $deviceToLock | Invoke-DeviceManagement_ManagedDevices_RemoteLock
     - Getting service metadata: `Get-MSGraphMetadata`
     - Paging: `Get-MSGraphNextPage` and `Get-MSGraphAllPages`
     - Changing environment settings, e.g. Graph schema version: `Update-MSGraphEnvironment -Schema beta -AppId 00000000-0000-0000-0000-000000000000`
+    - Make arbitrary Graph calls using the `Invoke-MSGraph` cmdlet
 - The PowerShell module can be generated for any valid Graph schema
 
 # Known issues and workarounds
