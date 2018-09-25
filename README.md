@@ -34,12 +34,17 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 ## Each time you use the module
 Import the module:
 ```PowerShell
-Import-Module Microsoft.Graph.Intune.psd1
+Import-Module ./Microsoft.Graph.Intune.psd1
 ```
 To authenticate with Microsoft Graph (this is not required when using CloudShell):
 ```PowerShell
 Connect-MSGraph
 ```
+
+## Feature/Scenario Modules
+The feature/scenario modules are available on GitHub in the [Microsoft/Intune-PowerShell-Management](https://github.com/Microsoft/Intune-PowerShell-Management) repository.
+
+
 ## Discovering available commands
 Get the full list of available cmdlets:
 ```PowerShell
@@ -68,6 +73,7 @@ Get all Intune managed devices:
 ```PowerShell
 Get-DeviceManagement_ManagedDevices
 ```
+
 ## Creating objects
 Create a web application:
 ```PowerShell
