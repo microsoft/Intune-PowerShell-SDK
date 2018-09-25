@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_ManagedAppPolicies_Apps", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedMobileApp")]
     [ResourceTypePropertyName("appODataType")]
-    [ResourceIdPropertyName("appId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_ManagedAppPolicies_Apps : GetOrSearchCmdlet
     {
@@ -44,10 +43,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedMobileApp&quot; object in the &quot;apps&quot; collection.")]
-        public System.String appId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedMobileApp&quot; object in the &quot;apps&quot; collection.")]
+        public System.String managedMobileAppId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mobileAppIdentifier&quot; property, of type &quot;microsoft.graph.mobileAppIdentifier&quot;.</para>
@@ -71,7 +70,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/apps/{appId ?? string.Empty}";
+            return $"deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/apps/{managedMobileAppId ?? string.Empty}";
         }
     }
 
@@ -84,7 +83,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_ManagedAppPolicies_Apps", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedMobileApp")]
     [ODataType("microsoft.graph.managedMobileApp")]
     [ResourceTypePropertyName("appODataType")]
-    [ResourceIdPropertyName("appId")]
     [ResourceReference]
     public class New_DeviceAppManagement_ManagedAppPolicies_Apps : PostCmdlet
     {
@@ -93,7 +91,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String appId { get; set; }
+        [ResourceIdParameter]
+        public System.String managedMobileAppId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;managedAppPolicies&quot; collection.</para>
@@ -141,7 +140,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/apps/{appId}";
+            return $"deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/apps/{managedMobileAppId}";
         }
     }
 
@@ -154,7 +153,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_ManagedAppPolicies_Apps", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedMobileApp")]
     [ODataType("microsoft.graph.managedMobileApp")]
     [ResourceTypePropertyName("appODataType")]
-    [ResourceIdPropertyName("appId")]
     public class Update_DeviceAppManagement_ManagedAppPolicies_Apps : PatchCmdlet
     {
         /// <summary>
@@ -162,10 +160,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedMobileApp&quot; object in the &quot;apps&quot; collection.")]
-        public System.String appId { get; set; }
+        public System.String managedMobileAppId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;managedAppPolicies&quot; collection.</para>
@@ -213,20 +211,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/apps/{appId}";
+            return $"deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/apps/{managedMobileAppId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.managedMobileApp&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/apps/appId</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/apps/managedMobileAppId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.managedMobileApp&quot; object from the &quot;apps&quot; collection.</para>
     ///     <para type="description">List of apps to which the policy is deployed.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_ManagedAppPolicies_Apps", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedMobileApp")]
     [ResourceTypePropertyName("appODataType")]
-    [ResourceIdPropertyName("appId")]
     public class Remove_DeviceAppManagement_ManagedAppPolicies_Apps : DeleteCmdlet
     {
         /// <summary>
@@ -234,10 +231,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedMobileApp&quot; object in the &quot;apps&quot; collection.")]
-        public System.String appId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedMobileApp&quot; object in the &quot;apps&quot; collection.")]
+        public System.String managedMobileAppId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;managedAppPolicies&quot; collection.</para>
@@ -263,7 +260,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/apps/{appId}";
+            return $"deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/apps/{managedMobileAppId}";
         }
     }
 }

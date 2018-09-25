@@ -12,7 +12,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DirectoryObjects", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("directoryObjectODataType")]
-    [ResourceIdPropertyName("directoryObjectId")]
     public class Get_DirectoryObjects : GetOrSearchCmdlet
     {
         /// <summary>
@@ -20,9 +19,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
         public System.String directoryObjectId { get; set; }
 
         /// <summary>
@@ -1137,7 +1136,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DirectoryObjects", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("directoryObjectODataType")]
-    [ResourceIdPropertyName("directoryObjectId")]
     public class New_DirectoryObjects : PostCmdlet
     {
         /// <summary>
@@ -1145,6 +1143,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String directoryObjectId { get; set; }
 
         /// <summary>
@@ -2439,7 +2438,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DirectoryObjects", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("directoryObjectODataType")]
-    [ResourceIdPropertyName("directoryObjectId")]
     public class Update_DirectoryObjects : PatchCmdlet
     {
         /// <summary>
@@ -2447,7 +2445,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
         public System.String directoryObjectId { get; set; }
@@ -3744,7 +3742,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DirectoryObjects", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("directoryObjectODataType")]
-    [ResourceIdPropertyName("directoryObjectId")]
     public class Remove_DirectoryObjects : DeleteCmdlet
     {
         /// <summary>
@@ -3752,9 +3749,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
         public System.String directoryObjectId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -3771,7 +3768,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "DirectoryObjects_GetByIds", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("directoryObjectODataType")]
-    [ResourceIdPropertyName("directoryObjectId")]
     public class Invoke_DirectoryObjects_GetByIds : ActionCmdlet
     {
         /// <summary>
@@ -3798,6 +3794,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String directoryObjectId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -3814,7 +3811,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "DirectoryObjects_CheckMemberGroups", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("directoryObjectODataType")]
-    [ResourceIdPropertyName("directoryObjectId")]
     public class Invoke_DirectoryObjects_CheckMemberGroups : ActionCmdlet
     {
         /// <summary>
@@ -3832,9 +3828,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
         public System.String directoryObjectId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -3851,7 +3847,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "DirectoryObjects_GetMemberGroups", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("directoryObjectODataType")]
-    [ResourceIdPropertyName("directoryObjectId")]
     public class Invoke_DirectoryObjects_GetMemberGroups : ActionCmdlet
     {
         /// <summary>
@@ -3867,9 +3862,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
         public System.String directoryObjectId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -3886,7 +3881,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "DirectoryObjects_GetMemberObjects", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("directoryObjectODataType")]
-    [ResourceIdPropertyName("directoryObjectId")]
     public class Invoke_DirectoryObjects_GetMemberObjects : ActionCmdlet
     {
         /// <summary>
@@ -3902,9 +3896,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
         public System.String directoryObjectId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -3921,7 +3915,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "DirectoryObjects_Restore", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("directoryObjectODataType")]
-    [ResourceIdPropertyName("directoryObjectId")]
     public class Invoke_DirectoryObjects_Restore : ActionCmdlet
     {
         /// <summary>
@@ -3929,9 +3922,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
         public System.String directoryObjectId { get; set; }
 
         internal override System.String GetResourcePath()

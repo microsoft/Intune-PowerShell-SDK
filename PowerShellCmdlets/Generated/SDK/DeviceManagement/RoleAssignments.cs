@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_RoleAssignments", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceAndAppManagementRoleAssignment")]
     [ResourceTypePropertyName("roleAssignmentODataType")]
-    [ResourceIdPropertyName("roleAssignmentId")]
     [ResourceReference]
     public class Get_DeviceManagement_RoleAssignments : GetOrSearchCmdlet
     {
@@ -22,10 +21,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
-        public System.String roleAssignmentId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
+        public System.String deviceAndAppManagementRoleAssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;members&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -78,7 +77,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/roleAssignments/{roleAssignmentId ?? string.Empty}";
+            return $"deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId ?? string.Empty}";
         }
     }
 
@@ -91,7 +90,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_RoleAssignments", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleAssignment")]
     [ODataType("microsoft.graph.deviceAndAppManagementRoleAssignment")]
     [ResourceTypePropertyName("roleAssignmentODataType")]
-    [ResourceIdPropertyName("roleAssignmentId")]
     [ResourceReference]
     public class New_DeviceManagement_RoleAssignments : PostCmdlet
     {
@@ -100,7 +98,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String roleAssignmentId { get; set; }
+        [ResourceIdParameter]
+        public System.String deviceAndAppManagementRoleAssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;members&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -161,7 +160,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/roleAssignments/{roleAssignmentId}";
+            return $"deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}";
         }
     }
 
@@ -174,7 +173,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_RoleAssignments", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleAssignment")]
     [ODataType("microsoft.graph.deviceAndAppManagementRoleAssignment")]
     [ResourceTypePropertyName("roleAssignmentODataType")]
-    [ResourceIdPropertyName("roleAssignmentId")]
     public class Update_DeviceManagement_RoleAssignments : PatchCmdlet
     {
         /// <summary>
@@ -182,10 +180,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
-        public System.String roleAssignmentId { get; set; }
+        public System.String deviceAndAppManagementRoleAssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;members&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -246,20 +244,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/roleAssignments/{roleAssignmentId}";
+            return $"deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/roleAssignments/roleAssignmentId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/roleAssignments/deviceAndAppManagementRoleAssignmentId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; object from the &quot;roleAssignments&quot; collection.</para>
     ///     <para type="description">The Role Assignments.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_RoleAssignments", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceAndAppManagementRoleAssignment")]
     [ResourceTypePropertyName("roleAssignmentODataType")]
-    [ResourceIdPropertyName("roleAssignmentId")]
     public class Remove_DeviceManagement_RoleAssignments : DeleteCmdlet
     {
         /// <summary>
@@ -267,14 +264,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
-        public System.String roleAssignmentId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
+        public System.String deviceAndAppManagementRoleAssignmentId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/roleAssignments/{roleAssignmentId}";
+            return $"deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}";
         }
     }
 }

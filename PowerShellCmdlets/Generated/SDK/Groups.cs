@@ -12,7 +12,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "Groups", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    [ResourceIdPropertyName("groupId")]
     public class Get_Groups : GetOrSearchCmdlet
     {
         /// <summary>
@@ -20,9 +19,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
         public System.String groupId { get; set; }
 
         /// <summary>
@@ -299,7 +298,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "Groups", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.group")]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    [ResourceIdPropertyName("groupId")]
     public class New_Groups : PostCmdlet
     {
         /// <summary>
@@ -307,6 +305,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String groupId { get; set; }
 
         /// <summary>
@@ -622,7 +621,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "Groups", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.group")]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    [ResourceIdPropertyName("groupId")]
     public class Update_Groups : PatchCmdlet
     {
         /// <summary>
@@ -630,7 +628,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
         public System.String groupId { get; set; }
@@ -948,7 +946,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "Groups", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    [ResourceIdPropertyName("groupId")]
     public class Remove_Groups : DeleteCmdlet
     {
         /// <summary>
@@ -956,9 +953,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
         public System.String groupId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -975,7 +972,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "Groups_SubscribeByMail", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    [ResourceIdPropertyName("groupId")]
     public class Invoke_Groups_SubscribeByMail : ActionCmdlet
     {
         /// <summary>
@@ -983,9 +979,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
         public System.String groupId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1002,7 +998,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "Groups_UnsubscribeByMail", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    [ResourceIdPropertyName("groupId")]
     public class Invoke_Groups_UnsubscribeByMail : ActionCmdlet
     {
         /// <summary>
@@ -1010,9 +1005,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
         public System.String groupId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1029,7 +1024,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "Groups_AddFavorite", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    [ResourceIdPropertyName("groupId")]
     public class Invoke_Groups_AddFavorite : ActionCmdlet
     {
         /// <summary>
@@ -1037,9 +1031,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
         public System.String groupId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1056,7 +1050,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "Groups_RemoveFavorite", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    [ResourceIdPropertyName("groupId")]
     public class Invoke_Groups_RemoveFavorite : ActionCmdlet
     {
         /// <summary>
@@ -1064,9 +1057,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
         public System.String groupId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1083,7 +1076,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "Groups_ResetUnseenCount", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    [ResourceIdPropertyName("groupId")]
     public class Invoke_Groups_ResetUnseenCount : ActionCmdlet
     {
         /// <summary>
@@ -1091,9 +1083,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
         public System.String groupId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1110,7 +1102,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "Groups_Renew", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    [ResourceIdPropertyName("groupId")]
     public class Invoke_Groups_Renew : ActionCmdlet
     {
         /// <summary>
@@ -1118,9 +1109,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
         public System.String groupId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -1137,7 +1128,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "Groups_Delta", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    [ResourceIdPropertyName("groupId")]
     public class Invoke_Groups_Delta : FunctionReturningCollectionCmdlet
     {
         /// <summary>
@@ -1145,6 +1135,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String groupId { get; set; }
 
         internal override System.String GetResourcePath()

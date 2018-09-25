@@ -12,7 +12,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DirectoryObjects_Settings", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.groupSetting")]
     [ResourceTypePropertyName("settingODataType")]
-    [ResourceIdPropertyName("settingId")]
     [ResourceReference]
     public class Get_DirectoryObjects_Settings : GetOrSearchCmdlet
     {
@@ -43,10 +42,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.groupSetting&quot; object in the &quot;settings&quot; collection.")]
-        public System.String settingId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.groupSetting&quot; object in the &quot;settings&quot; collection.")]
+        public System.String groupSettingId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -76,7 +75,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/settings/{settingId ?? string.Empty}";
+            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/settings/{groupSettingId ?? string.Empty}";
         }
     }
 
@@ -88,7 +87,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DirectoryObjects_Settings", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.groupSetting")]
     [ODataType("microsoft.graph.groupSetting")]
     [ResourceTypePropertyName("settingODataType")]
-    [ResourceIdPropertyName("settingId")]
     [ResourceReference]
     public class New_DirectoryObjects_Settings : PostCmdlet
     {
@@ -97,7 +95,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String settingId { get; set; }
+        [ResourceIdParameter]
+        public System.String groupSettingId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.</para>
@@ -154,7 +153,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/settings/{settingId}";
+            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/settings/{groupSettingId}";
         }
     }
 
@@ -166,7 +165,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DirectoryObjects_Settings", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.groupSetting")]
     [ODataType("microsoft.graph.groupSetting")]
     [ResourceTypePropertyName("settingODataType")]
-    [ResourceIdPropertyName("settingId")]
     public class Update_DirectoryObjects_Settings : PatchCmdlet
     {
         /// <summary>
@@ -174,10 +172,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.groupSetting&quot; object in the &quot;settings&quot; collection.")]
-        public System.String settingId { get; set; }
+        public System.String groupSettingId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.</para>
@@ -234,19 +232,18 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/settings/{settingId}";
+            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/settings/{groupSettingId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.groupSetting&quot; object.</para>
-    ///     <para type="description">DELETE ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/settings/settingId</para>
+    ///     <para type="description">DELETE ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/settings/groupSettingId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.groupSetting&quot; object from the &quot;settings&quot; collection.</para>
     /// </summary>
     [Cmdlet("Remove", "DirectoryObjects_Settings", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.groupSetting")]
     [ResourceTypePropertyName("settingODataType")]
-    [ResourceIdPropertyName("settingId")]
     public class Remove_DirectoryObjects_Settings : DeleteCmdlet
     {
         /// <summary>
@@ -254,10 +251,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.groupSetting&quot; object in the &quot;settings&quot; collection.")]
-        public System.String settingId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.groupSetting&quot; object in the &quot;settings&quot; collection.")]
+        public System.String groupSettingId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.</para>
@@ -283,7 +280,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/settings/{settingId}";
+            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/settings/{groupSettingId}";
         }
     }
 }

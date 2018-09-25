@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_RoleDefinitions", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition")]
     [ResourceTypePropertyName("roleDefinitionODataType")]
-    [ResourceIdPropertyName("roleDefinitionId")]
     [ResourceReference]
     public class Get_DeviceManagement_RoleDefinitions : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.")]
         public System.String roleDefinitionId { get; set; }
 
         /// <summary>
@@ -91,7 +90,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_RoleDefinitions", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition")]
     [ResourceTypePropertyName("roleDefinitionODataType")]
-    [ResourceIdPropertyName("roleDefinitionId")]
     [ResourceReference]
     public class New_DeviceManagement_RoleDefinitions : PostCmdlet
     {
@@ -100,6 +98,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String roleDefinitionId { get; set; }
 
         /// <summary>
@@ -195,7 +194,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_RoleDefinitions", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition")]
     [ResourceTypePropertyName("roleDefinitionODataType")]
-    [ResourceIdPropertyName("roleDefinitionId")]
     public class Update_DeviceManagement_RoleDefinitions : PatchCmdlet
     {
         /// <summary>
@@ -203,7 +201,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.")]
         public System.String roleDefinitionId { get; set; }
@@ -301,7 +299,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceManagement_RoleDefinitions", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition")]
     [ResourceTypePropertyName("roleDefinitionODataType")]
-    [ResourceIdPropertyName("roleDefinitionId")]
     public class Remove_DeviceManagement_RoleDefinitions : DeleteCmdlet
     {
         /// <summary>
@@ -309,9 +306,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.")]
         public System.String roleDefinitionId { get; set; }
 
         internal override System.String GetResourcePath()

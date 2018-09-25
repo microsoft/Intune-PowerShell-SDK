@@ -6,14 +6,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.mobileAppContentFile&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{contentVersionId}/files</para>
+    ///     <para type="description">GET ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.mobileAppContentFile&quot; objects in the &quot;files&quot; collection.</para>
     ///     <para type="description">The list of files for this app content version.</para>
     /// </summary>
     [Cmdlet("Get", "DeviceAppManagement_MobileApps_ContentVersions_Files", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
-    [ResourceIdPropertyName("fileId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_MobileApps_ContentVersions_Files : GetOrSearchCmdlet
     {
@@ -46,17 +45,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.")]
-        public System.String contentVersionId { get; set; }
+        public System.String mobileAppContentId { get; set; }
 
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.</para>
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.")]
-        public System.String fileId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.")]
+        public System.String mobileAppContentFileId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;azureStorageUri&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -150,20 +149,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{contentVersionId}/files/{fileId ?? string.Empty}";
+            return $"deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId ?? string.Empty}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.mobileAppContentFile&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{contentVersionId}/files</para>
+    ///     <para type="description">POST ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.mobileAppContentFile&quot; object to the &quot;files&quot; collection.</para>
     ///     <para type="description">The list of files for this app content version.</para>
     /// </summary>
     [Cmdlet("New", "DeviceAppManagement_MobileApps_ContentVersions_Files", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.mobileAppContentFile")]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
-    [ResourceIdPropertyName("fileId")]
     [ResourceReference]
     public class New_DeviceAppManagement_MobileApps_ContentVersions_Files : PostCmdlet
     {
@@ -172,7 +170,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String fileId { get; set; }
+        [ResourceIdParameter]
+        public System.String mobileAppContentFileId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -203,7 +202,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.")]
-        public System.String contentVersionId { get; set; }
+        public System.String mobileAppContentId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;azureStorageUri&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -311,20 +310,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{contentVersionId}/files/{fileId}";
+            return $"deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.mobileAppContentFile&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{contentVersionId}/files</para>
+    ///     <para type="description">PATCH ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.</para>
     ///     <para type="description">The list of files for this app content version.</para>
     /// </summary>
     [Cmdlet("Update", "DeviceAppManagement_MobileApps_ContentVersions_Files", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.mobileAppContentFile")]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
-    [ResourceIdPropertyName("fileId")]
     public class Update_DeviceAppManagement_MobileApps_ContentVersions_Files : PatchCmdlet
     {
         /// <summary>
@@ -332,10 +330,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.")]
-        public System.String fileId { get; set; }
+        public System.String mobileAppContentFileId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -366,7 +364,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.")]
-        public System.String contentVersionId { get; set; }
+        public System.String mobileAppContentId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;azureStorageUri&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -474,20 +472,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{contentVersionId}/files/{fileId}";
+            return $"deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.mobileAppContentFile&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{contentVersionId}/files/fileId</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files/mobileAppContentFileId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.mobileAppContentFile&quot; object from the &quot;files&quot; collection.</para>
     ///     <para type="description">The list of files for this app content version.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_MobileApps_ContentVersions_Files", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
-    [ResourceIdPropertyName("fileId")]
     public class Remove_DeviceAppManagement_MobileApps_ContentVersions_Files : DeleteCmdlet
     {
         /// <summary>
@@ -495,10 +492,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.")]
-        public System.String fileId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.")]
+        public System.String mobileAppContentFileId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -529,23 +526,22 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.")]
-        public System.String contentVersionId { get; set; }
+        public System.String mobileAppContentId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{contentVersionId}/files/{fileId}";
+            return $"deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}";
         }
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{contentVersionId}/files/commit</para>
+    ///     <para type="description">POST ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files/commit</para>
     ///     <para type="description">The action &quot;microsoft.graph.commit&quot;, which exists on the type &quot;microsoft.graph.mobileAppContentFile&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     [Cmdlet("Invoke", "DeviceAppManagement_MobileApps_ContentVersions_Files_Commit", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
-    [ResourceIdPropertyName("fileId")]
     public class Invoke_DeviceAppManagement_MobileApps_ContentVersions_Files_Commit : ActionCmdlet
     {
         /// <summary>
@@ -561,10 +557,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.")]
-        public System.String fileId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.")]
+        public System.String mobileAppContentFileId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -595,23 +591,22 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.")]
-        public System.String contentVersionId { get; set; }
+        public System.String mobileAppContentId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{contentVersionId}/files/{fileId}/commit";
+            return $"deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}/commit";
         }
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{contentVersionId}/files/renewUpload</para>
+    ///     <para type="description">POST ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files/renewUpload</para>
     ///     <para type="description">The action &quot;microsoft.graph.renewUpload&quot;, which exists on the type &quot;microsoft.graph.mobileAppContentFile&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     [Cmdlet("Invoke", "DeviceAppManagement_MobileApps_ContentVersions_Files_RenewUpload", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
-    [ResourceIdPropertyName("fileId")]
     public class Invoke_DeviceAppManagement_MobileApps_ContentVersions_Files_RenewUpload : ActionCmdlet
     {
         /// <summary>
@@ -619,10 +614,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.")]
-        public System.String fileId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.")]
+        public System.String mobileAppContentFileId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -653,11 +648,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.")]
-        public System.String contentVersionId { get; set; }
+        public System.String mobileAppContentId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{contentVersionId}/files/{fileId}/renewUpload";
+            return $"deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}/renewUpload";
         }
     }
 }

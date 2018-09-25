@@ -2258,7 +2258,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "Groups_CreatedOnBehalfOfReference", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("createdOnBehalfOfODataType")]
-    [ResourceIdPropertyName("directoryObjectReferenceUrl")]
     public class New_Groups_CreatedOnBehalfOfReference : PutReferenceToEntityCmdlet
     {
         /// <summary>

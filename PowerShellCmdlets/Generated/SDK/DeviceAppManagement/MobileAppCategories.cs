@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_MobileAppCategories", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.mobileAppCategory")]
     [ResourceTypePropertyName("mobileAppCategoryODataType")]
-    [ResourceIdPropertyName("mobileAppCategoryId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_MobileAppCategories : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppCategory&quot; object in the &quot;mobileAppCategories&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppCategory&quot; object in the &quot;mobileAppCategories&quot; collection.")]
         public System.String mobileAppCategoryId { get; set; }
 
         /// <summary>
@@ -62,7 +61,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_MobileAppCategories", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.mobileAppCategory")]
     [ODataType("microsoft.graph.mobileAppCategory")]
     [ResourceTypePropertyName("mobileAppCategoryODataType")]
-    [ResourceIdPropertyName("mobileAppCategoryId")]
     [ResourceReference]
     public class New_DeviceAppManagement_MobileAppCategories : PostCmdlet
     {
@@ -71,6 +69,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String mobileAppCategoryId { get; set; }
 
         /// <summary>
@@ -110,7 +109,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_MobileAppCategories", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.mobileAppCategory")]
     [ODataType("microsoft.graph.mobileAppCategory")]
     [ResourceTypePropertyName("mobileAppCategoryODataType")]
-    [ResourceIdPropertyName("mobileAppCategoryId")]
     public class Update_DeviceAppManagement_MobileAppCategories : PatchCmdlet
     {
         /// <summary>
@@ -118,7 +116,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppCategory&quot; object in the &quot;mobileAppCategories&quot; collection.")]
         public System.String mobileAppCategoryId { get; set; }
@@ -160,7 +158,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceAppManagement_MobileAppCategories", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileAppCategory")]
     [ResourceTypePropertyName("mobileAppCategoryODataType")]
-    [ResourceIdPropertyName("mobileAppCategoryId")]
     public class Remove_DeviceAppManagement_MobileAppCategories : DeleteCmdlet
     {
         /// <summary>
@@ -168,9 +165,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppCategory&quot; object in the &quot;mobileAppCategories&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppCategory&quot; object in the &quot;mobileAppCategories&quot; collection.")]
         public System.String mobileAppCategoryId { get; set; }
 
         internal override System.String GetResourcePath()

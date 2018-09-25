@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_RemoteAssistancePartners", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
     [ResourceTypePropertyName("remoteAssistancePartnerODataType")]
-    [ResourceIdPropertyName("remoteAssistancePartnerId")]
     [ResourceReference]
     public class Get_DeviceManagement_RemoteAssistancePartners : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.")]
         public System.String remoteAssistancePartnerId { get; set; }
 
         /// <summary>
@@ -82,7 +81,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_RemoteAssistancePartners", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.remoteAssistancePartner")]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
     [ResourceTypePropertyName("remoteAssistancePartnerODataType")]
-    [ResourceIdPropertyName("remoteAssistancePartnerId")]
     [ResourceReference]
     public class New_DeviceManagement_RemoteAssistancePartners : PostCmdlet
     {
@@ -91,6 +89,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String remoteAssistancePartnerId { get; set; }
 
         /// <summary>
@@ -156,7 +155,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_RemoteAssistancePartners", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.remoteAssistancePartner")]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
     [ResourceTypePropertyName("remoteAssistancePartnerODataType")]
-    [ResourceIdPropertyName("remoteAssistancePartnerId")]
     public class Update_DeviceManagement_RemoteAssistancePartners : PatchCmdlet
     {
         /// <summary>
@@ -164,7 +162,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.")]
         public System.String remoteAssistancePartnerId { get; set; }
@@ -232,7 +230,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceManagement_RemoteAssistancePartners", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
     [ResourceTypePropertyName("remoteAssistancePartnerODataType")]
-    [ResourceIdPropertyName("remoteAssistancePartnerId")]
     public class Remove_DeviceManagement_RemoteAssistancePartners : DeleteCmdlet
     {
         /// <summary>
@@ -240,9 +237,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.")]
         public System.String remoteAssistancePartnerId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -259,7 +256,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "DeviceManagement_RemoteAssistancePartners_BeginOnboarding", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
     [ResourceTypePropertyName("remoteAssistancePartnerODataType")]
-    [ResourceIdPropertyName("remoteAssistancePartnerId")]
     public class Invoke_DeviceManagement_RemoteAssistancePartners_BeginOnboarding : ActionCmdlet
     {
         /// <summary>
@@ -267,9 +263,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.")]
         public System.String remoteAssistancePartnerId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -286,7 +282,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "DeviceManagement_RemoteAssistancePartners_Disconnect", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
     [ResourceTypePropertyName("remoteAssistancePartnerODataType")]
-    [ResourceIdPropertyName("remoteAssistancePartnerId")]
     public class Invoke_DeviceManagement_RemoteAssistancePartners_Disconnect : ActionCmdlet
     {
         /// <summary>
@@ -294,9 +289,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.")]
         public System.String remoteAssistancePartnerId { get; set; }
 
         internal override System.String GetResourcePath()

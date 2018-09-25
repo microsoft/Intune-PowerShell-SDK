@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_TroubleshootingEvents", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
     [ResourceTypePropertyName("troubleshootingEventODataType")]
-    [ResourceIdPropertyName("troubleshootingEventId")]
     [ResourceReference]
     public class Get_DeviceManagement_TroubleshootingEvents : GetOrSearchCmdlet
     {
@@ -22,10 +21,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;troubleshootingEvents&quot; collection.")]
-        public System.String troubleshootingEventId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;troubleshootingEvents&quot; collection.")]
+        public System.String deviceManagementTroubleshootingEventId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;eventDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -137,7 +136,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/troubleshootingEvents/{troubleshootingEventId ?? string.Empty}";
+            return $"deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId ?? string.Empty}";
         }
     }
 
@@ -150,7 +149,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_TroubleshootingEvents", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
     [ResourceTypePropertyName("troubleshootingEventODataType")]
-    [ResourceIdPropertyName("troubleshootingEventId")]
     [ResourceReference]
     public class New_DeviceManagement_TroubleshootingEvents : PostCmdlet
     {
@@ -159,7 +157,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String troubleshootingEventId { get; set; }
+        [ResourceIdParameter]
+        public System.String deviceManagementTroubleshootingEventId { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; type.</para>
@@ -299,7 +298,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/troubleshootingEvents/{troubleshootingEventId}";
+            return $"deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}";
         }
     }
 
@@ -312,7 +311,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_TroubleshootingEvents", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
     [ResourceTypePropertyName("troubleshootingEventODataType")]
-    [ResourceIdPropertyName("troubleshootingEventId")]
     public class Update_DeviceManagement_TroubleshootingEvents : PatchCmdlet
     {
         /// <summary>
@@ -320,10 +318,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;troubleshootingEvents&quot; collection.")]
-        public System.String troubleshootingEventId { get; set; }
+        public System.String deviceManagementTroubleshootingEventId { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; type.</para>
@@ -463,20 +461,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/troubleshootingEvents/{troubleshootingEventId}";
+            return $"deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/troubleshootingEvents/troubleshootingEventId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/troubleshootingEvents/deviceManagementTroubleshootingEventId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object from the &quot;troubleshootingEvents&quot; collection.</para>
     ///     <para type="description">The list of troubleshooting events for the tenant.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_TroubleshootingEvents", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
     [ResourceTypePropertyName("troubleshootingEventODataType")]
-    [ResourceIdPropertyName("troubleshootingEventId")]
     public class Remove_DeviceManagement_TroubleshootingEvents : DeleteCmdlet
     {
         /// <summary>
@@ -484,14 +481,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;troubleshootingEvents&quot; collection.")]
-        public System.String troubleshootingEventId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;troubleshootingEvents&quot; collection.")]
+        public System.String deviceManagementTroubleshootingEventId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/troubleshootingEvents/{troubleshootingEventId}";
+            return $"deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}";
         }
     }
 }

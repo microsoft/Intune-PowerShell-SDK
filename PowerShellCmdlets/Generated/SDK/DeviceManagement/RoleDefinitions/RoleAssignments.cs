@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_RoleDefinitions_RoleAssignments", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.roleAssignment", "microsoft.graph.deviceAndAppManagementRoleAssignment")]
     [ResourceTypePropertyName("roleAssignmentODataType")]
-    [ResourceIdPropertyName("roleAssignmentId")]
     [ResourceReference]
     public class Get_DeviceManagement_RoleDefinitions_RoleAssignments : GetOrSearchCmdlet
     {
@@ -31,9 +30,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.roleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.roleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
         public System.String roleAssignmentId { get; set; }
 
         /// <summary>
@@ -101,7 +100,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_RoleDefinitions_RoleAssignments", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.roleAssignment", "microsoft.graph.deviceAndAppManagementRoleAssignment")]
     [ResourceTypePropertyName("roleAssignmentODataType")]
-    [ResourceIdPropertyName("roleAssignmentId")]
     [ResourceReference]
     public class New_DeviceManagement_RoleDefinitions_RoleAssignments : PostCmdlet
     {
@@ -110,6 +108,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String roleAssignmentId { get; set; }
 
         /// <summary>
@@ -213,7 +212,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_RoleDefinitions_RoleAssignments", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.roleAssignment", "microsoft.graph.deviceAndAppManagementRoleAssignment")]
     [ResourceTypePropertyName("roleAssignmentODataType")]
-    [ResourceIdPropertyName("roleAssignmentId")]
     public class Update_DeviceManagement_RoleDefinitions_RoleAssignments : PatchCmdlet
     {
         /// <summary>
@@ -221,7 +219,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.roleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
         public System.String roleAssignmentId { get; set; }
@@ -327,7 +325,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceManagement_RoleDefinitions_RoleAssignments", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.roleAssignment", "microsoft.graph.deviceAndAppManagementRoleAssignment")]
     [ResourceTypePropertyName("roleAssignmentODataType")]
-    [ResourceIdPropertyName("roleAssignmentId")]
     public class Remove_DeviceManagement_RoleDefinitions_RoleAssignments : DeleteCmdlet
     {
         /// <summary>
@@ -335,9 +332,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.roleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.roleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
         public System.String roleAssignmentId { get; set; }
 
         /// <summary>

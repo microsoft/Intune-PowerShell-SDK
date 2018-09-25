@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_VppTokens", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.vppToken")]
     [ResourceTypePropertyName("vppTokenODataType")]
-    [ResourceIdPropertyName("vppTokenId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_VppTokens : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.")]
         public System.String vppTokenId { get; set; }
 
         /// <summary>
@@ -152,7 +151,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_VppTokens", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.vppToken")]
     [ODataType("microsoft.graph.vppToken")]
     [ResourceTypePropertyName("vppTokenODataType")]
-    [ResourceIdPropertyName("vppTokenId")]
     [ResourceReference]
     public class New_DeviceAppManagement_VppTokens : PostCmdlet
     {
@@ -161,6 +159,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String vppTokenId { get; set; }
 
         /// <summary>
@@ -311,7 +310,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_VppTokens", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.vppToken")]
     [ODataType("microsoft.graph.vppToken")]
     [ResourceTypePropertyName("vppTokenODataType")]
-    [ResourceIdPropertyName("vppTokenId")]
     public class Update_DeviceAppManagement_VppTokens : PatchCmdlet
     {
         /// <summary>
@@ -319,7 +317,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.")]
         public System.String vppTokenId { get; set; }
@@ -472,7 +470,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceAppManagement_VppTokens", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.vppToken")]
     [ResourceTypePropertyName("vppTokenODataType")]
-    [ResourceIdPropertyName("vppTokenId")]
     public class Remove_DeviceAppManagement_VppTokens : DeleteCmdlet
     {
         /// <summary>
@@ -480,9 +477,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.")]
         public System.String vppTokenId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -499,7 +496,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "DeviceAppManagement_VppTokens_SyncLicenses", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.vppToken")]
     [ResourceTypePropertyName("vppTokenODataType")]
-    [ResourceIdPropertyName("vppTokenId")]
     public class Invoke_DeviceAppManagement_VppTokens_SyncLicenses : ActionCmdlet
     {
         /// <summary>
@@ -507,9 +503,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.")]
         public System.String vppTokenId { get; set; }
 
         internal override System.String GetResourcePath()

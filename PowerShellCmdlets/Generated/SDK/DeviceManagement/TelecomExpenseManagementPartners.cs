@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_TelecomExpenseManagementPartners", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.telecomExpenseManagementPartner")]
     [ResourceTypePropertyName("telecomExpenseManagementPartnerODataType")]
-    [ResourceIdPropertyName("telecomExpenseManagementPartnerId")]
     [ResourceReference]
     public class Get_DeviceManagement_TelecomExpenseManagementPartners : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.")]
         public System.String telecomExpenseManagementPartnerId { get; set; }
 
         /// <summary>
@@ -92,7 +91,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_TelecomExpenseManagementPartners", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.telecomExpenseManagementPartner")]
     [ODataType("microsoft.graph.telecomExpenseManagementPartner")]
     [ResourceTypePropertyName("telecomExpenseManagementPartnerODataType")]
-    [ResourceIdPropertyName("telecomExpenseManagementPartnerId")]
     [ResourceReference]
     public class New_DeviceManagement_TelecomExpenseManagementPartners : PostCmdlet
     {
@@ -101,6 +99,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String telecomExpenseManagementPartnerId { get; set; }
 
         /// <summary>
@@ -173,7 +172,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_TelecomExpenseManagementPartners", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.telecomExpenseManagementPartner")]
     [ODataType("microsoft.graph.telecomExpenseManagementPartner")]
     [ResourceTypePropertyName("telecomExpenseManagementPartnerODataType")]
-    [ResourceIdPropertyName("telecomExpenseManagementPartnerId")]
     public class Update_DeviceManagement_TelecomExpenseManagementPartners : PatchCmdlet
     {
         /// <summary>
@@ -181,7 +179,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.")]
         public System.String telecomExpenseManagementPartnerId { get; set; }
@@ -256,7 +254,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceManagement_TelecomExpenseManagementPartners", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.telecomExpenseManagementPartner")]
     [ResourceTypePropertyName("telecomExpenseManagementPartnerODataType")]
-    [ResourceIdPropertyName("telecomExpenseManagementPartnerId")]
     public class Remove_DeviceManagement_TelecomExpenseManagementPartners : DeleteCmdlet
     {
         /// <summary>
@@ -264,9 +261,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.")]
         public System.String telecomExpenseManagementPartnerId { get; set; }
 
         internal override System.String GetResourcePath()

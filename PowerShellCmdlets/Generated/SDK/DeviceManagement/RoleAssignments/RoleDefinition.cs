@@ -6,7 +6,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;roleDefinition&quot; object.</para>
-    ///     <para type="description">GET ~/deviceManagement/roleAssignments/{roleAssignmentId}/{roleAssignmentODataType}/roleDefinition</para>
+    ///     <para type="description">GET ~/deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}/{roleAssignmentODataType}/roleDefinition</para>
     ///     <para type="description">Retrieves the &quot;roleDefinition&quot; object (which is of type &quot;microsoft.graph.roleDefinition&quot;).</para>
     ///     <para type="description">Role definition this assignment is part of.</para>
     /// </summary>
@@ -22,7 +22,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
-        public System.String roleAssignmentId { get; set; }
+        public System.String deviceAndAppManagementRoleAssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; objects.</para>
@@ -88,13 +88,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/roleAssignments/{roleAssignmentId}/{roleAssignmentODataType}/roleDefinition";
+            return $"deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}/{roleAssignmentODataType}/roleDefinition";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;roleDefinition&quot; object reference.</para>
-    ///     <para type="description">GET ~/deviceManagement/roleAssignments/{roleAssignmentId}/{roleAssignmentODataType}/roleDefinition/$ref</para>
+    ///     <para type="description">GET ~/deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}/{roleAssignmentODataType}/roleDefinition/$ref</para>
     ///     <para type="description">Retrieves the &quot;roleDefinition&quot; object reference (which is of type &quot;microsoft.graph.roleDefinition&quot;).</para>
     ///     <para type="description">Role definition this assignment is part of.</para>
     /// </summary>
@@ -110,7 +110,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
-        public System.String roleAssignmentId { get; set; }
+        public System.String deviceAndAppManagementRoleAssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; objects.</para>
@@ -176,20 +176,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/roleAssignments/{roleAssignmentId}/{roleAssignmentODataType}/roleDefinition/$ref";
+            return $"deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}/{roleAssignmentODataType}/roleDefinition/$ref";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Creates a reference from a &quot;roleAssignment&quot; to a &quot;microsoft.graph.roleDefinition&quot; object.</para>
-    ///     <para type="description">PUT ~/deviceManagement/roleAssignments/{roleAssignmentId}/{roleAssignmentODataType}/roleDefinition/$ref</para>
+    ///     <para type="description">PUT ~/deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}/{roleAssignmentODataType}/roleDefinition/$ref</para>
     ///     <para type="description">Creates a reference from the &quot;roleAssignment&quot; object to a &quot;roleDefinition&quot;.</para>
     ///     <para type="description">Role definition this assignment is part of.</para>
     /// </summary>
     [Cmdlet("New", "DeviceManagement_RoleAssignments_RoleDefinitionReference", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition")]
     [ResourceTypePropertyName("roleDefinitionODataType")]
-    [ResourceIdPropertyName("roleDefinitionReferenceUrl")]
     public class New_DeviceManagement_RoleAssignments_RoleDefinitionReference : PutReferenceToEntityCmdlet
     {
         /// <summary>
@@ -199,7 +198,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
-        public System.String roleAssignmentId { get; set; }
+        public System.String deviceAndAppManagementRoleAssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; objects.</para>
@@ -225,13 +224,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/roleAssignments/{roleAssignmentId}/{roleAssignmentODataType}/roleDefinition/$ref";
+            return $"deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}/{roleAssignmentODataType}/roleDefinition/$ref";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a reference from a &quot;roleAssignment&quot; to a &quot;microsoft.graph.roleDefinition&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/roleAssignments/{roleAssignmentId}/{roleAssignmentODataType}/roleDefinition/$ref</para>
+    ///     <para type="description">DELETE ~/deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}/{roleAssignmentODataType}/roleDefinition/$ref</para>
     ///     <para type="description">Removes a reference from the &quot;roleAssignment&quot; object to a &quot;roleDefinition&quot;.</para>
     ///     <para type="description">Role definition this assignment is part of.</para>
     /// </summary>
@@ -247,7 +246,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; object in the &quot;roleAssignments&quot; collection.")]
-        public System.String roleAssignmentId { get; set; }
+        public System.String deviceAndAppManagementRoleAssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; objects.</para>
@@ -264,7 +263,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/roleAssignments/{roleAssignmentId}/{roleAssignmentODataType}/roleDefinition/$ref";
+            return $"deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}/{roleAssignmentODataType}/roleDefinition/$ref";
         }
     }
 }

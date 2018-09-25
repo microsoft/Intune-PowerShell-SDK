@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_ExchangeConnectors", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceManagementExchangeConnector")]
     [ResourceTypePropertyName("exchangeConnectorODataType")]
-    [ResourceIdPropertyName("exchangeConnectorId")]
     [ResourceReference]
     public class Get_DeviceManagement_ExchangeConnectors : GetOrSearchCmdlet
     {
@@ -22,10 +21,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.")]
-        public System.String exchangeConnectorId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.")]
+        public System.String deviceManagementExchangeConnectorId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -119,7 +118,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/exchangeConnectors/{exchangeConnectorId ?? string.Empty}";
+            return $"deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId ?? string.Empty}";
         }
     }
 
@@ -132,7 +131,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_ExchangeConnectors", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceManagementExchangeConnector")]
     [ODataType("microsoft.graph.deviceManagementExchangeConnector")]
     [ResourceTypePropertyName("exchangeConnectorODataType")]
-    [ResourceIdPropertyName("exchangeConnectorId")]
     [ResourceReference]
     public class New_DeviceManagement_ExchangeConnectors : PostCmdlet
     {
@@ -141,7 +139,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String exchangeConnectorId { get; set; }
+        [ResourceIdParameter]
+        public System.String deviceManagementExchangeConnectorId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -252,7 +251,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/exchangeConnectors/{exchangeConnectorId}";
+            return $"deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}";
         }
     }
 
@@ -265,7 +264,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_ExchangeConnectors", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceManagementExchangeConnector")]
     [ODataType("microsoft.graph.deviceManagementExchangeConnector")]
     [ResourceTypePropertyName("exchangeConnectorODataType")]
-    [ResourceIdPropertyName("exchangeConnectorId")]
     public class Update_DeviceManagement_ExchangeConnectors : PatchCmdlet
     {
         /// <summary>
@@ -273,10 +271,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.")]
-        public System.String exchangeConnectorId { get; set; }
+        public System.String deviceManagementExchangeConnectorId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;lastSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -387,20 +385,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/exchangeConnectors/{exchangeConnectorId}";
+            return $"deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/exchangeConnectors/exchangeConnectorId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/exchangeConnectors/deviceManagementExchangeConnectorId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object from the &quot;exchangeConnectors&quot; collection.</para>
     ///     <para type="description">The list of Exchange Connectors configured by the tenant.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_ExchangeConnectors", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceManagementExchangeConnector")]
     [ResourceTypePropertyName("exchangeConnectorODataType")]
-    [ResourceIdPropertyName("exchangeConnectorId")]
     public class Remove_DeviceManagement_ExchangeConnectors : DeleteCmdlet
     {
         /// <summary>
@@ -408,14 +405,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.")]
-        public System.String exchangeConnectorId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.")]
+        public System.String deviceManagementExchangeConnectorId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/exchangeConnectors/{exchangeConnectorId}";
+            return $"deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}";
         }
     }
 
@@ -427,7 +424,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "DeviceManagement_ExchangeConnectors_Sync", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceManagementExchangeConnector")]
     [ResourceTypePropertyName("exchangeConnectorODataType")]
-    [ResourceIdPropertyName("exchangeConnectorId")]
     public class Invoke_DeviceManagement_ExchangeConnectors_Sync : ActionCmdlet
     {
         /// <summary>
@@ -448,14 +444,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.")]
-        public System.String exchangeConnectorId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.")]
+        public System.String deviceManagementExchangeConnectorId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/exchangeConnectors/{exchangeConnectorId}/sync";
+            return $"deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/sync";
         }
     }
 }

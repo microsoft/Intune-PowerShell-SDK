@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_ResourceOperations", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.resourceOperation")]
     [ResourceTypePropertyName("resourceOperationODataType")]
-    [ResourceIdPropertyName("resourceOperationId")]
     [ResourceReference]
     public class Get_DeviceManagement_ResourceOperations : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.resourceOperation&quot; object in the &quot;resourceOperations&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.resourceOperation&quot; object in the &quot;resourceOperations&quot; collection.")]
         public System.String resourceOperationId { get; set; }
 
         /// <summary>
@@ -72,7 +71,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_ResourceOperations", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.resourceOperation")]
     [ODataType("microsoft.graph.resourceOperation")]
     [ResourceTypePropertyName("resourceOperationODataType")]
-    [ResourceIdPropertyName("resourceOperationId")]
     [ResourceReference]
     public class New_DeviceManagement_ResourceOperations : PostCmdlet
     {
@@ -81,6 +79,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String resourceOperationId { get; set; }
 
         /// <summary>
@@ -131,7 +130,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_ResourceOperations", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.resourceOperation")]
     [ODataType("microsoft.graph.resourceOperation")]
     [ResourceTypePropertyName("resourceOperationODataType")]
-    [ResourceIdPropertyName("resourceOperationId")]
     public class Update_DeviceManagement_ResourceOperations : PatchCmdlet
     {
         /// <summary>
@@ -139,7 +137,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.resourceOperation&quot; object in the &quot;resourceOperations&quot; collection.")]
         public System.String resourceOperationId { get; set; }
@@ -192,7 +190,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceManagement_ResourceOperations", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.resourceOperation")]
     [ResourceTypePropertyName("resourceOperationODataType")]
-    [ResourceIdPropertyName("resourceOperationId")]
     public class Remove_DeviceManagement_ResourceOperations : DeleteCmdlet
     {
         /// <summary>
@@ -200,9 +197,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.resourceOperation&quot; object in the &quot;resourceOperations&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.resourceOperation&quot; object in the &quot;resourceOperations&quot; collection.")]
         public System.String resourceOperationId { get; set; }
 
         internal override System.String GetResourcePath()

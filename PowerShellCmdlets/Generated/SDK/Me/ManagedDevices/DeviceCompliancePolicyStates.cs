@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "Me_ManagedDevices_DeviceCompliancePolicyStates", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceCompliancePolicyState")]
     [ResourceTypePropertyName("deviceCompliancePolicyStateODataType")]
-    [ResourceIdPropertyName("deviceCompliancePolicyStateId")]
     [ResourceReference]
     public class Get_Me_ManagedDevices_DeviceCompliancePolicyStates : GetOrSearchCmdlet
     {
@@ -31,9 +30,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceCompliancePolicyState&quot; object in the &quot;deviceCompliancePolicyStates&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceCompliancePolicyState&quot; object in the &quot;deviceCompliancePolicyStates&quot; collection.")]
         public System.String deviceCompliancePolicyStateId { get; set; }
 
         /// <summary>
@@ -109,7 +108,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "Me_ManagedDevices_DeviceCompliancePolicyStates", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyState")]
     [ODataType("microsoft.graph.deviceCompliancePolicyState")]
     [ResourceTypePropertyName("deviceCompliancePolicyStateODataType")]
-    [ResourceIdPropertyName("deviceCompliancePolicyStateId")]
     [ResourceReference]
     public class New_Me_ManagedDevices_DeviceCompliancePolicyStates : PostCmdlet
     {
@@ -118,6 +116,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String deviceCompliancePolicyStateId { get; set; }
 
         /// <summary>
@@ -218,7 +217,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "Me_ManagedDevices_DeviceCompliancePolicyStates", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyState")]
     [ODataType("microsoft.graph.deviceCompliancePolicyState")]
     [ResourceTypePropertyName("deviceCompliancePolicyStateODataType")]
-    [ResourceIdPropertyName("deviceCompliancePolicyStateId")]
     public class Update_Me_ManagedDevices_DeviceCompliancePolicyStates : PatchCmdlet
     {
         /// <summary>
@@ -226,7 +224,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceCompliancePolicyState&quot; object in the &quot;deviceCompliancePolicyStates&quot; collection.")]
         public System.String deviceCompliancePolicyStateId { get; set; }
@@ -329,7 +327,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "Me_ManagedDevices_DeviceCompliancePolicyStates", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceCompliancePolicyState")]
     [ResourceTypePropertyName("deviceCompliancePolicyStateODataType")]
-    [ResourceIdPropertyName("deviceCompliancePolicyStateId")]
     public class Remove_Me_ManagedDevices_DeviceCompliancePolicyStates : DeleteCmdlet
     {
         /// <summary>
@@ -337,9 +334,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceCompliancePolicyState&quot; object in the &quot;deviceCompliancePolicyStates&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceCompliancePolicyState&quot; object in the &quot;deviceCompliancePolicyStates&quot; collection.")]
         public System.String deviceCompliancePolicyStateId { get; set; }
 
         /// <summary>

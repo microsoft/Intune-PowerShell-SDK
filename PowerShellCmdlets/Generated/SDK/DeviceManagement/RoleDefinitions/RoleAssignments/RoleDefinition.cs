@@ -181,7 +181,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_RoleDefinitions_RoleAssignments_RoleDefinitionReference", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition")]
     [ResourceTypePropertyName("roleDefinitionODataType")]
-    [ResourceIdPropertyName("roleDefinitionReferenceUrl")]
     public class New_DeviceManagement_RoleDefinitions_RoleAssignments_RoleDefinitionReference : PutReferenceToEntityCmdlet
     {
         /// <summary>

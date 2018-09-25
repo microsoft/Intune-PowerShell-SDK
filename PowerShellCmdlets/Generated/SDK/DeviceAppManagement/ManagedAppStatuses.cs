@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_ManagedAppStatuses", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw")]
     [ResourceTypePropertyName("managedAppStatusODataType")]
-    [ResourceIdPropertyName("managedAppStatusId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_ManagedAppStatuses : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppStatus&quot; object in the &quot;managedAppStatuses&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppStatus&quot; object in the &quot;managedAppStatuses&quot; collection.")]
         public System.String managedAppStatusId { get; set; }
 
         /// <summary>
@@ -73,7 +72,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_ManagedAppStatuses", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw")]
     [ResourceTypePropertyName("managedAppStatusODataType")]
-    [ResourceIdPropertyName("managedAppStatusId")]
     [ResourceReference]
     public class New_DeviceAppManagement_ManagedAppStatuses : PostCmdlet
     {
@@ -82,6 +80,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String managedAppStatusId { get; set; }
 
         /// <summary>
@@ -142,7 +141,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_ManagedAppStatuses", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw")]
     [ResourceTypePropertyName("managedAppStatusODataType")]
-    [ResourceIdPropertyName("managedAppStatusId")]
     public class Update_DeviceAppManagement_ManagedAppStatuses : PatchCmdlet
     {
         /// <summary>
@@ -150,7 +148,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppStatus&quot; object in the &quot;managedAppStatuses&quot; collection.")]
         public System.String managedAppStatusId { get; set; }
@@ -213,7 +211,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceAppManagement_ManagedAppStatuses", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw")]
     [ResourceTypePropertyName("managedAppStatusODataType")]
-    [ResourceIdPropertyName("managedAppStatusId")]
     public class Remove_DeviceAppManagement_ManagedAppStatuses : DeleteCmdlet
     {
         /// <summary>
@@ -221,9 +218,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppStatus&quot; object in the &quot;managedAppStatuses&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppStatus&quot; object in the &quot;managedAppStatuses&quot; collection.")]
         public System.String managedAppStatusId { get; set; }
 
         internal override System.String GetResourcePath()

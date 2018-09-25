@@ -12,7 +12,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "Groups_MemberOf", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("memberOfODataType")]
-    [ResourceIdPropertyName("memberOfId")]
     public class Get_Groups_MemberOf : GetOrSearchCmdlet
     {
         /// <summary>
@@ -29,10 +28,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;memberOf&quot; collection.")]
-        public System.String memberOfId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;memberOf&quot; collection.")]
+        public System.String directoryObjectId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deletedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -1134,7 +1133,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"groups/{groupId}/memberOf/{memberOfId ?? string.Empty}";
+            return $"groups/{groupId}/memberOf/{directoryObjectId ?? string.Empty}";
         }
     }
 
@@ -1146,7 +1145,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "Groups_MemberOfReferences", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("memberOfODataType")]
-    [ResourceIdPropertyName("memberOfId")]
     public class Get_Groups_MemberOfReferences : GetOrSearchCmdlet
     {
         /// <summary>
@@ -1163,10 +1161,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;memberOf&quot; collection.")]
-        public System.String memberOfId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;memberOf&quot; collection.")]
+        public System.String directoryObjectId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deletedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -2268,7 +2266,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"groups/{groupId}/memberOf/{memberOfId ?? string.Empty}/$ref";
+            return $"groups/{groupId}/memberOf/{directoryObjectId ?? string.Empty}/$ref";
         }
     }
 
@@ -2280,7 +2278,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "Groups_MemberOfReferences", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("memberOfODataType")]
-    [ResourceIdPropertyName("directoryObjectReferenceUrl")]
     public class New_Groups_MemberOfReferences : PostReferenceToCollectionCmdlet
     {
         /// <summary>
@@ -2288,7 +2285,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String memberOfId { get; set; }
+        [ResourceIdParameter]
+        public System.String directoryObjectId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -2310,7 +2308,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"groups/{groupId}/memberOf/{memberOfId}/$ref";
+            return $"groups/{groupId}/memberOf/{directoryObjectId}/$ref";
         }
 
         internal override System.Object GetContent()
@@ -2321,13 +2319,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a reference from a &quot;group&quot; to a &quot;microsoft.graph.directoryObject&quot; object.</para>
-    ///     <para type="description">DELETE ~/groups/{groupId}/memberOf/memberOfId/$ref</para>
+    ///     <para type="description">DELETE ~/groups/{groupId}/memberOf/directoryObjectId/$ref</para>
     ///     <para type="description">Removes a reference from the specified &quot;group&quot; object to a &quot;memberOf&quot;.</para>
     /// </summary>
     [Cmdlet("Remove", "Groups_MemberOfReferences", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("memberOfODataType")]
-    [ResourceIdPropertyName("memberOfId")]
     public class Remove_Groups_MemberOfReferences : DeleteCmdlet
     {
         /// <summary>
@@ -2335,10 +2332,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;memberOf&quot; collection.")]
-        public System.String memberOfId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;memberOf&quot; collection.")]
+        public System.String directoryObjectId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -2351,7 +2348,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"groups/{groupId}/memberOf/{memberOfId}/$ref";
+            return $"groups/{groupId}/memberOf/{directoryObjectId}/$ref";
         }
     }
 }

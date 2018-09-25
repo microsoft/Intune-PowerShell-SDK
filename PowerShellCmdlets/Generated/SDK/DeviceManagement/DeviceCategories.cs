@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_DeviceCategories", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceCategory")]
     [ResourceTypePropertyName("deviceCategoryODataType")]
-    [ResourceIdPropertyName("deviceCategoryId")]
     [ResourceReference]
     public class Get_DeviceManagement_DeviceCategories : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceCategory&quot; object in the &quot;deviceCategories&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceCategory&quot; object in the &quot;deviceCategories&quot; collection.")]
         public System.String deviceCategoryId { get; set; }
 
         /// <summary>
@@ -62,7 +61,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_DeviceCategories", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCategory")]
     [ODataType("microsoft.graph.deviceCategory")]
     [ResourceTypePropertyName("deviceCategoryODataType")]
-    [ResourceIdPropertyName("deviceCategoryId")]
     [ResourceReference]
     public class New_DeviceManagement_DeviceCategories : PostCmdlet
     {
@@ -71,6 +69,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String deviceCategoryId { get; set; }
 
         /// <summary>
@@ -110,7 +109,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_DeviceCategories", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCategory")]
     [ODataType("microsoft.graph.deviceCategory")]
     [ResourceTypePropertyName("deviceCategoryODataType")]
-    [ResourceIdPropertyName("deviceCategoryId")]
     public class Update_DeviceManagement_DeviceCategories : PatchCmdlet
     {
         /// <summary>
@@ -118,7 +116,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceCategory&quot; object in the &quot;deviceCategories&quot; collection.")]
         public System.String deviceCategoryId { get; set; }
@@ -160,7 +158,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceManagement_DeviceCategories", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceCategory")]
     [ResourceTypePropertyName("deviceCategoryODataType")]
-    [ResourceIdPropertyName("deviceCategoryId")]
     public class Remove_DeviceManagement_DeviceCategories : DeleteCmdlet
     {
         /// <summary>
@@ -168,9 +165,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceCategory&quot; object in the &quot;deviceCategories&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceCategory&quot; object in the &quot;deviceCategories&quot; collection.")]
         public System.String deviceCategoryId { get; set; }
 
         internal override System.String GetResourcePath()

@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_MobileAppConfigurations", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfiguration", "microsoft.graph.iosMobileAppConfiguration")]
     [ResourceTypePropertyName("mobileAppConfigurationODataType")]
-    [ResourceIdPropertyName("mobileAppConfigurationId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_MobileAppConfigurations : GetOrSearchCmdlet
     {
@@ -22,10 +21,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.")]
-        public System.String mobileAppConfigurationId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.")]
+        public System.String managedDeviceMobileAppConfigurationId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;targetedMobileApps&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -161,7 +160,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId ?? string.Empty}";
+            return $"deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId ?? string.Empty}";
         }
     }
 
@@ -174,7 +173,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_MobileAppConfigurations", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfiguration", "microsoft.graph.iosMobileAppConfiguration")]
     [ResourceTypePropertyName("mobileAppConfigurationODataType")]
-    [ResourceIdPropertyName("mobileAppConfigurationId")]
     [ResourceReference]
     public class New_DeviceAppManagement_MobileAppConfigurations : PostCmdlet
     {
@@ -183,7 +181,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String mobileAppConfigurationId { get; set; }
+        [ResourceIdParameter]
+        public System.String managedDeviceMobileAppConfigurationId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;targetedMobileApps&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -355,7 +354,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}";
+            return $"deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}";
         }
     }
 
@@ -368,7 +367,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_MobileAppConfigurations", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfiguration", "microsoft.graph.iosMobileAppConfiguration")]
     [ResourceTypePropertyName("mobileAppConfigurationODataType")]
-    [ResourceIdPropertyName("mobileAppConfigurationId")]
     public class Update_DeviceAppManagement_MobileAppConfigurations : PatchCmdlet
     {
         /// <summary>
@@ -376,10 +374,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.")]
-        public System.String mobileAppConfigurationId { get; set; }
+        public System.String managedDeviceMobileAppConfigurationId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;targetedMobileApps&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -551,20 +549,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}";
+            return $"deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/mobileAppConfigurations/mobileAppConfigurationId</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/mobileAppConfigurations/managedDeviceMobileAppConfigurationId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object from the &quot;mobileAppConfigurations&quot; collection.</para>
     ///     <para type="description">The Managed Device Mobile Application Configurations.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_MobileAppConfigurations", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfiguration", "microsoft.graph.iosMobileAppConfiguration")]
     [ResourceTypePropertyName("mobileAppConfigurationODataType")]
-    [ResourceIdPropertyName("mobileAppConfigurationId")]
     public class Remove_DeviceAppManagement_MobileAppConfigurations : DeleteCmdlet
     {
         /// <summary>
@@ -572,14 +569,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.")]
-        public System.String mobileAppConfigurationId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.")]
+        public System.String managedDeviceMobileAppConfigurationId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}";
+            return $"deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}";
         }
     }
 }

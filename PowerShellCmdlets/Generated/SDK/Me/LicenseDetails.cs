@@ -12,7 +12,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "Me_LicenseDetails", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.licenseDetails")]
     [ResourceTypePropertyName("licenseDetailODataType")]
-    [ResourceIdPropertyName("licenseDetailId")]
     [ResourceReference]
     public class Get_Me_LicenseDetails : GetOrSearchCmdlet
     {
@@ -21,9 +20,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.licenseDetails&quot; object in the &quot;licenseDetails&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.licenseDetails&quot; object in the &quot;licenseDetails&quot; collection.")]
         public System.String licenseDetailId { get; set; }
 
         /// <summary>
@@ -66,7 +65,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "Me_LicenseDetails", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.licenseDetails")]
     [ODataType("microsoft.graph.licenseDetails")]
     [ResourceTypePropertyName("licenseDetailODataType")]
-    [ResourceIdPropertyName("licenseDetailId")]
     [ResourceReference]
     public class New_Me_LicenseDetails : PostCmdlet
     {
@@ -75,6 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String licenseDetailId { get; set; }
 
         /// <summary>
@@ -122,7 +121,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "Me_LicenseDetails", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.licenseDetails")]
     [ODataType("microsoft.graph.licenseDetails")]
     [ResourceTypePropertyName("licenseDetailODataType")]
-    [ResourceIdPropertyName("licenseDetailId")]
     public class Update_Me_LicenseDetails : PatchCmdlet
     {
         /// <summary>
@@ -130,7 +128,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.licenseDetails&quot; object in the &quot;licenseDetails&quot; collection.")]
         public System.String licenseDetailId { get; set; }
@@ -180,7 +178,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "Me_LicenseDetails", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.licenseDetails")]
     [ResourceTypePropertyName("licenseDetailODataType")]
-    [ResourceIdPropertyName("licenseDetailId")]
     public class Remove_Me_LicenseDetails : DeleteCmdlet
     {
         /// <summary>
@@ -188,9 +185,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.licenseDetails&quot; object in the &quot;licenseDetails&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.licenseDetails&quot; object in the &quot;licenseDetails&quot; collection.")]
         public System.String licenseDetailId { get; set; }
 
         internal override System.String GetResourcePath()

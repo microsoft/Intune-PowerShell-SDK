@@ -6,7 +6,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;deploymentSummary&quot; object.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{appliedPolicyId}/{appliedPolicyODataType}/deploymentSummary</para>
+    ///     <para type="description">GET ~/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/{appliedPolicyODataType}/deploymentSummary</para>
     ///     <para type="description">Retrieves the &quot;deploymentSummary&quot; object (which is of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;).</para>
     ///     <para type="description">Navigation property to deployment summary of the configuration.</para>
     /// </summary>
@@ -32,7 +32,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;appliedPolicies&quot; collection.")]
-        public System.String appliedPolicyId { get; set; }
+        public System.String managedAppPolicyId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.managedAppPolicy&quot; objects.</para>
@@ -94,13 +94,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{appliedPolicyId}/{appliedPolicyODataType}/deploymentSummary";
+            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/{appliedPolicyODataType}/deploymentSummary";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{appliedPolicyId}/{appliedPolicyODataType}/deploymentSummary</para>
+    ///     <para type="description">POST ~/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/{appliedPolicyODataType}/deploymentSummary</para>
     ///     <para type="description">Creates the &quot;deploymentSummary&quot; object (which is of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;).</para>
     ///     <para type="description">Navigation property to deployment summary of the configuration.</para>
     /// </summary>
@@ -126,7 +126,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;appliedPolicies&quot; collection.")]
-        public System.String appliedPolicyId { get; set; }
+        public System.String managedAppPolicyId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.managedAppPolicy&quot; objects.</para>
@@ -195,13 +195,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{appliedPolicyId}/{appliedPolicyODataType}/deploymentSummary";
+            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/{appliedPolicyODataType}/deploymentSummary";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{appliedPolicyId}/{appliedPolicyODataType}/deploymentSummary</para>
+    ///     <para type="description">PATCH ~/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/{appliedPolicyODataType}/deploymentSummary</para>
     ///     <para type="description">Updates the &quot;deploymentSummary&quot; object (which is of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;).</para>
     ///     <para type="description">Navigation property to deployment summary of the configuration.</para>
     /// </summary>
@@ -226,7 +226,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;appliedPolicies&quot; collection.")]
-        public System.String appliedPolicyId { get; set; }
+        public System.String managedAppPolicyId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.managedAppPolicy&quot; objects.</para>
@@ -295,13 +295,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{appliedPolicyId}/{appliedPolicyODataType}/deploymentSummary";
+            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/{appliedPolicyODataType}/deploymentSummary";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{appliedPolicyId}/{appliedPolicyODataType}/deploymentSummary</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/{appliedPolicyODataType}/deploymentSummary</para>
     ///     <para type="description">Removes the &quot;deploymentSummary&quot; object (which is of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;).</para>
     ///     <para type="description">Navigation property to deployment summary of the configuration.</para>
     /// </summary>
@@ -326,7 +326,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;appliedPolicies&quot; collection.")]
-        public System.String appliedPolicyId { get; set; }
+        public System.String managedAppPolicyId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.managedAppPolicy&quot; objects.</para>
@@ -343,7 +343,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{appliedPolicyId}/{appliedPolicyODataType}/deploymentSummary";
+            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/{appliedPolicyODataType}/deploymentSummary";
         }
     }
 }

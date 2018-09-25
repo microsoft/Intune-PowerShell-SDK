@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DirectoryObjects_ManagedAppRegistrations", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration")]
     [ResourceTypePropertyName("managedAppRegistrationODataType")]
-    [ResourceIdPropertyName("managedAppRegistrationId")]
     public class Get_DirectoryObjects_ManagedAppRegistrations : GetOrSearchCmdlet
     {
         /// <summary>
@@ -43,9 +42,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.")]
         public System.String managedAppRegistrationId { get; set; }
 
         /// <summary>
@@ -212,7 +211,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DirectoryObjects_ManagedAppRegistrationsReferences", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration")]
     [ResourceTypePropertyName("managedAppRegistrationODataType")]
-    [ResourceIdPropertyName("managedAppRegistrationId")]
     public class Get_DirectoryObjects_ManagedAppRegistrationsReferences : GetOrSearchCmdlet
     {
         /// <summary>
@@ -242,9 +240,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.")]
         public System.String managedAppRegistrationId { get; set; }
 
         /// <summary>
@@ -411,7 +409,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DirectoryObjects_ManagedAppRegistrationsReferences", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration")]
     [ResourceTypePropertyName("managedAppRegistrationODataType")]
-    [ResourceIdPropertyName("managedAppRegistrationReferenceUrl")]
     public class New_DirectoryObjects_ManagedAppRegistrationsReferences : PostReferenceToCollectionCmdlet
     {
         /// <summary>
@@ -419,6 +416,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String managedAppRegistrationId { get; set; }
 
         /// <summary>
@@ -472,7 +470,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DirectoryObjects_ManagedAppRegistrationsReferences", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration")]
     [ResourceTypePropertyName("managedAppRegistrationODataType")]
-    [ResourceIdPropertyName("managedAppRegistrationId")]
     public class Remove_DirectoryObjects_ManagedAppRegistrationsReferences : DeleteCmdlet
     {
         /// <summary>
@@ -480,9 +477,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.")]
         public System.String managedAppRegistrationId { get; set; }
 
         /// <summary>

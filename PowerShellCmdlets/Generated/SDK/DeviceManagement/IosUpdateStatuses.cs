@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_IosUpdateStatuses", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.iosUpdateDeviceStatus")]
     [ResourceTypePropertyName("iosUpdateStatusODataType")]
-    [ResourceIdPropertyName("iosUpdateStatusId")]
     [ResourceReference]
     public class Get_DeviceManagement_IosUpdateStatuses : GetOrSearchCmdlet
     {
@@ -22,10 +21,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.")]
-        public System.String iosUpdateStatusId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.")]
+        public System.String iosUpdateDeviceStatusId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;installStatus&quot; property, of type &quot;microsoft.graph.iosUpdatesInstallStatus&quot;.</para>
@@ -139,7 +138,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/iosUpdateStatuses/{iosUpdateStatusId ?? string.Empty}";
+            return $"deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId ?? string.Empty}";
         }
     }
 
@@ -152,7 +151,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_IosUpdateStatuses", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus")]
     [ODataType("microsoft.graph.iosUpdateDeviceStatus")]
     [ResourceTypePropertyName("iosUpdateStatusODataType")]
-    [ResourceIdPropertyName("iosUpdateStatusId")]
     [ResourceReference]
     public class New_DeviceManagement_IosUpdateStatuses : PostCmdlet
     {
@@ -161,7 +159,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String iosUpdateStatusId { get; set; }
+        [ResourceIdParameter]
+        public System.String iosUpdateDeviceStatusId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;installStatus&quot; property, of type &quot;microsoft.graph.iosUpdatesInstallStatus&quot;.</para>
@@ -294,7 +293,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/iosUpdateStatuses/{iosUpdateStatusId}";
+            return $"deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}";
         }
     }
 
@@ -307,7 +306,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_IosUpdateStatuses", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus")]
     [ODataType("microsoft.graph.iosUpdateDeviceStatus")]
     [ResourceTypePropertyName("iosUpdateStatusODataType")]
-    [ResourceIdPropertyName("iosUpdateStatusId")]
     public class Update_DeviceManagement_IosUpdateStatuses : PatchCmdlet
     {
         /// <summary>
@@ -315,10 +313,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.")]
-        public System.String iosUpdateStatusId { get; set; }
+        public System.String iosUpdateDeviceStatusId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;installStatus&quot; property, of type &quot;microsoft.graph.iosUpdatesInstallStatus&quot;.</para>
@@ -451,20 +449,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/iosUpdateStatuses/{iosUpdateStatusId}";
+            return $"deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/iosUpdateStatuses/iosUpdateStatusId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/iosUpdateStatuses/iosUpdateDeviceStatusId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object from the &quot;iosUpdateStatuses&quot; collection.</para>
     ///     <para type="description">The IOS software update installation statuses for this account.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_IosUpdateStatuses", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.iosUpdateDeviceStatus")]
     [ResourceTypePropertyName("iosUpdateStatusODataType")]
-    [ResourceIdPropertyName("iosUpdateStatusId")]
     public class Remove_DeviceManagement_IosUpdateStatuses : DeleteCmdlet
     {
         /// <summary>
@@ -472,14 +469,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.")]
-        public System.String iosUpdateStatusId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.")]
+        public System.String iosUpdateDeviceStatusId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/iosUpdateStatuses/{iosUpdateStatusId}";
+            return $"deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}";
         }
     }
 }

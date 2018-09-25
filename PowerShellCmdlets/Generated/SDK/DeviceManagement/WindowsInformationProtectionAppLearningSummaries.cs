@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_WindowsInformationProtectionAppLearningSummaries", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLearningSummary")]
     [ResourceTypePropertyName("windowsInformationProtectionAppLearningSummaryODataType")]
-    [ResourceIdPropertyName("windowsInformationProtectionAppLearningSummaryId")]
     [ResourceReference]
     public class Get_DeviceManagement_WindowsInformationProtectionAppLearningSummaries : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLearningSummary&quot; object in the &quot;windowsInformationProtectionAppLearningSummaries&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLearningSummary&quot; object in the &quot;windowsInformationProtectionAppLearningSummaries&quot; collection.")]
         public System.String windowsInformationProtectionAppLearningSummaryId { get; set; }
 
         /// <summary>
@@ -72,7 +71,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_WindowsInformationProtectionAppLearningSummaries", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLearningSummary")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLearningSummary")]
     [ResourceTypePropertyName("windowsInformationProtectionAppLearningSummaryODataType")]
-    [ResourceIdPropertyName("windowsInformationProtectionAppLearningSummaryId")]
     [ResourceReference]
     public class New_DeviceManagement_WindowsInformationProtectionAppLearningSummaries : PostCmdlet
     {
@@ -81,6 +79,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String windowsInformationProtectionAppLearningSummaryId { get; set; }
 
         /// <summary>
@@ -135,7 +134,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_WindowsInformationProtectionAppLearningSummaries", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLearningSummary")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLearningSummary")]
     [ResourceTypePropertyName("windowsInformationProtectionAppLearningSummaryODataType")]
-    [ResourceIdPropertyName("windowsInformationProtectionAppLearningSummaryId")]
     public class Update_DeviceManagement_WindowsInformationProtectionAppLearningSummaries : PatchCmdlet
     {
         /// <summary>
@@ -143,7 +141,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLearningSummary&quot; object in the &quot;windowsInformationProtectionAppLearningSummaries&quot; collection.")]
         public System.String windowsInformationProtectionAppLearningSummaryId { get; set; }
@@ -200,7 +198,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceManagement_WindowsInformationProtectionAppLearningSummaries", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLearningSummary")]
     [ResourceTypePropertyName("windowsInformationProtectionAppLearningSummaryODataType")]
-    [ResourceIdPropertyName("windowsInformationProtectionAppLearningSummaryId")]
     public class Remove_DeviceManagement_WindowsInformationProtectionAppLearningSummaries : DeleteCmdlet
     {
         /// <summary>
@@ -208,9 +205,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLearningSummary&quot; object in the &quot;windowsInformationProtectionAppLearningSummaries&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLearningSummary&quot; object in the &quot;windowsInformationProtectionAppLearningSummaries&quot; collection.")]
         public System.String windowsInformationProtectionAppLearningSummaryId { get; set; }
 
         internal override System.String GetResourcePath()

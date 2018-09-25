@@ -12,7 +12,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DirectoryObjects_InferenceClassification_Overrides", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.inferenceClassificationOverride")]
     [ResourceTypePropertyName("overrideODataType")]
-    [ResourceIdPropertyName("overrideId")]
     [ResourceReference]
     public class Get_DirectoryObjects_InferenceClassification_Overrides : GetOrSearchCmdlet
     {
@@ -43,10 +42,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.inferenceClassificationOverride&quot; object in the &quot;overrides&quot; collection.")]
-        public System.String overrideId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.inferenceClassificationOverride&quot; object in the &quot;overrides&quot; collection.")]
+        public System.String inferenceClassificationOverrideId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;classifyAs&quot; property, of type &quot;microsoft.graph.inferenceClassificationType&quot;.</para>
@@ -68,7 +67,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/inferenceClassification/overrides/{overrideId ?? string.Empty}";
+            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/inferenceClassification/overrides/{inferenceClassificationOverrideId ?? string.Empty}";
         }
     }
 
@@ -80,7 +79,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DirectoryObjects_InferenceClassification_Overrides", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.inferenceClassificationOverride")]
     [ODataType("microsoft.graph.inferenceClassificationOverride")]
     [ResourceTypePropertyName("overrideODataType")]
-    [ResourceIdPropertyName("overrideId")]
     [ResourceReference]
     public class New_DirectoryObjects_InferenceClassification_Overrides : PostCmdlet
     {
@@ -89,7 +87,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String overrideId { get; set; }
+        [ResourceIdParameter]
+        public System.String inferenceClassificationOverrideId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.</para>
@@ -139,7 +138,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/inferenceClassification/overrides/{overrideId}";
+            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/inferenceClassification/overrides/{inferenceClassificationOverrideId}";
         }
     }
 
@@ -151,7 +150,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DirectoryObjects_InferenceClassification_Overrides", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.inferenceClassificationOverride")]
     [ODataType("microsoft.graph.inferenceClassificationOverride")]
     [ResourceTypePropertyName("overrideODataType")]
-    [ResourceIdPropertyName("overrideId")]
     public class Update_DirectoryObjects_InferenceClassification_Overrides : PatchCmdlet
     {
         /// <summary>
@@ -159,10 +157,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.inferenceClassificationOverride&quot; object in the &quot;overrides&quot; collection.")]
-        public System.String overrideId { get; set; }
+        public System.String inferenceClassificationOverrideId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.</para>
@@ -212,19 +210,18 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/inferenceClassification/overrides/{overrideId}";
+            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/inferenceClassification/overrides/{inferenceClassificationOverrideId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.inferenceClassificationOverride&quot; object.</para>
-    ///     <para type="description">DELETE ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/inferenceClassification/overrides/overrideId</para>
+    ///     <para type="description">DELETE ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/inferenceClassification/overrides/inferenceClassificationOverrideId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.inferenceClassificationOverride&quot; object from the &quot;overrides&quot; collection.</para>
     /// </summary>
     [Cmdlet("Remove", "DirectoryObjects_InferenceClassification_Overrides", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.inferenceClassificationOverride")]
     [ResourceTypePropertyName("overrideODataType")]
-    [ResourceIdPropertyName("overrideId")]
     public class Remove_DirectoryObjects_InferenceClassification_Overrides : DeleteCmdlet
     {
         /// <summary>
@@ -232,10 +229,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.inferenceClassificationOverride&quot; object in the &quot;overrides&quot; collection.")]
-        public System.String overrideId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.inferenceClassificationOverride&quot; object in the &quot;overrides&quot; collection.")]
+        public System.String inferenceClassificationOverrideId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.</para>
@@ -261,7 +258,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/inferenceClassification/overrides/{overrideId}";
+            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/inferenceClassification/overrides/{inferenceClassificationOverrideId}";
         }
     }
 }

@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_MdmWindowsInformationProtectionPolicies_ProtectedAppLockerFiles", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("protectedAppLockerFileODataType")]
-    [ResourceIdPropertyName("protectedAppLockerFileId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_MdmWindowsInformationProtectionPolicies_ProtectedAppLockerFiles : GetOrSearchCmdlet
     {
@@ -44,10 +43,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;protectedAppLockerFiles&quot; collection.")]
-        public System.String protectedAppLockerFileId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;protectedAppLockerFiles&quot; collection.")]
+        public System.String windowsInformationProtectionAppLockerFileId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -91,7 +90,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/protectedAppLockerFiles/{protectedAppLockerFileId ?? string.Empty}";
+            return $"deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/protectedAppLockerFiles/{windowsInformationProtectionAppLockerFileId ?? string.Empty}";
         }
     }
 
@@ -104,7 +103,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_MdmWindowsInformationProtectionPolicies_ProtectedAppLockerFiles", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("protectedAppLockerFileODataType")]
-    [ResourceIdPropertyName("protectedAppLockerFileId")]
     [ResourceReference]
     public class New_DeviceAppManagement_MdmWindowsInformationProtectionPolicies_ProtectedAppLockerFiles : PostCmdlet
     {
@@ -113,7 +111,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String protectedAppLockerFileId { get; set; }
+        [ResourceIdParameter]
+        public System.String windowsInformationProtectionAppLockerFileId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot; object in the &quot;mdmWindowsInformationProtectionPolicies&quot; collection.</para>
@@ -184,7 +183,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/protectedAppLockerFiles/{protectedAppLockerFileId}";
+            return $"deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/protectedAppLockerFiles/{windowsInformationProtectionAppLockerFileId}";
         }
     }
 
@@ -197,7 +196,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_MdmWindowsInformationProtectionPolicies_ProtectedAppLockerFiles", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("protectedAppLockerFileODataType")]
-    [ResourceIdPropertyName("protectedAppLockerFileId")]
     public class Update_DeviceAppManagement_MdmWindowsInformationProtectionPolicies_ProtectedAppLockerFiles : PatchCmdlet
     {
         /// <summary>
@@ -205,10 +203,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;protectedAppLockerFiles&quot; collection.")]
-        public System.String protectedAppLockerFileId { get; set; }
+        public System.String windowsInformationProtectionAppLockerFileId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot; object in the &quot;mdmWindowsInformationProtectionPolicies&quot; collection.</para>
@@ -279,20 +277,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/protectedAppLockerFiles/{protectedAppLockerFileId}";
+            return $"deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/protectedAppLockerFiles/{windowsInformationProtectionAppLockerFileId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/protectedAppLockerFiles/protectedAppLockerFileId</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/protectedAppLockerFiles/windowsInformationProtectionAppLockerFileId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object from the &quot;protectedAppLockerFiles&quot; collection.</para>
     ///     <para type="description">Another way to input protected apps through xml files</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_MdmWindowsInformationProtectionPolicies_ProtectedAppLockerFiles", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("protectedAppLockerFileODataType")]
-    [ResourceIdPropertyName("protectedAppLockerFileId")]
     public class Remove_DeviceAppManagement_MdmWindowsInformationProtectionPolicies_ProtectedAppLockerFiles : DeleteCmdlet
     {
         /// <summary>
@@ -300,10 +297,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;protectedAppLockerFiles&quot; collection.")]
-        public System.String protectedAppLockerFileId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;protectedAppLockerFiles&quot; collection.")]
+        public System.String windowsInformationProtectionAppLockerFileId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot; object in the &quot;mdmWindowsInformationProtectionPolicies&quot; collection.</para>
@@ -329,7 +326,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/protectedAppLockerFiles/{protectedAppLockerFileId}";
+            return $"deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/protectedAppLockerFiles/{windowsInformationProtectionAppLockerFileId}";
         }
     }
 }

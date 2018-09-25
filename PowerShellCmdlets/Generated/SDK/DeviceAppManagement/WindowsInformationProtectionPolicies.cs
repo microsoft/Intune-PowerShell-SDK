@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_WindowsInformationProtectionPolicies", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.windowsInformationProtectionPolicy")]
     [ResourceTypePropertyName("windowsInformationProtectionPolicyODataType")]
-    [ResourceIdPropertyName("windowsInformationProtectionPolicyId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_WindowsInformationProtectionPolicies : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object in the &quot;windowsInformationProtectionPolicies&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object in the &quot;windowsInformationProtectionPolicies&quot; collection.")]
         public System.String windowsInformationProtectionPolicyId { get; set; }
 
         /// <summary>
@@ -452,7 +451,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_WindowsInformationProtectionPolicies", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionPolicy")]
     [ODataType("microsoft.graph.windowsInformationProtectionPolicy")]
     [ResourceTypePropertyName("windowsInformationProtectionPolicyODataType")]
-    [ResourceIdPropertyName("windowsInformationProtectionPolicyId")]
     [ResourceReference]
     public class New_DeviceAppManagement_WindowsInformationProtectionPolicies : PostCmdlet
     {
@@ -461,6 +459,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String windowsInformationProtectionPolicyId { get; set; }
 
         /// <summary>
@@ -969,7 +968,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_WindowsInformationProtectionPolicies", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionPolicy")]
     [ODataType("microsoft.graph.windowsInformationProtectionPolicy")]
     [ResourceTypePropertyName("windowsInformationProtectionPolicyODataType")]
-    [ResourceIdPropertyName("windowsInformationProtectionPolicyId")]
     public class Update_DeviceAppManagement_WindowsInformationProtectionPolicies : PatchCmdlet
     {
         /// <summary>
@@ -977,7 +975,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object in the &quot;windowsInformationProtectionPolicies&quot; collection.")]
         public System.String windowsInformationProtectionPolicyId { get; set; }
@@ -1488,7 +1486,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceAppManagement_WindowsInformationProtectionPolicies", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.windowsInformationProtectionPolicy")]
     [ResourceTypePropertyName("windowsInformationProtectionPolicyODataType")]
-    [ResourceIdPropertyName("windowsInformationProtectionPolicyId")]
     public class Remove_DeviceAppManagement_WindowsInformationProtectionPolicies : DeleteCmdlet
     {
         /// <summary>
@@ -1496,9 +1493,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object in the &quot;windowsInformationProtectionPolicies&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object in the &quot;windowsInformationProtectionPolicies&quot; collection.")]
         public System.String windowsInformationProtectionPolicyId { get; set; }
 
         internal override System.String GetResourcePath()

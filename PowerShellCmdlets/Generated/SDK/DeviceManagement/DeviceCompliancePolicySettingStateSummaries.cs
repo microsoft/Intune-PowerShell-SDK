@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_DeviceCompliancePolicySettingStateSummaries", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceCompliancePolicySettingStateSummary")]
     [ResourceTypePropertyName("deviceCompliancePolicySettingStateSummaryODataType")]
-    [ResourceIdPropertyName("deviceCompliancePolicySettingStateSummaryId")]
     [ResourceReference]
     public class Get_DeviceManagement_DeviceCompliancePolicySettingStateSummaries : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object in the &quot;deviceCompliancePolicySettingStateSummaries&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object in the &quot;deviceCompliancePolicySettingStateSummaries&quot; collection.")]
         public System.String deviceCompliancePolicySettingStateSummaryId { get; set; }
 
         /// <summary>
@@ -151,7 +150,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_DeviceCompliancePolicySettingStateSummaries", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicySettingStateSummary")]
     [ODataType("microsoft.graph.deviceCompliancePolicySettingStateSummary")]
     [ResourceTypePropertyName("deviceCompliancePolicySettingStateSummaryODataType")]
-    [ResourceIdPropertyName("deviceCompliancePolicySettingStateSummaryId")]
     [ResourceReference]
     public class New_DeviceManagement_DeviceCompliancePolicySettingStateSummaries : PostCmdlet
     {
@@ -160,6 +158,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String deviceCompliancePolicySettingStateSummaryId { get; set; }
 
         /// <summary>
@@ -302,7 +301,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_DeviceCompliancePolicySettingStateSummaries", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicySettingStateSummary")]
     [ODataType("microsoft.graph.deviceCompliancePolicySettingStateSummary")]
     [ResourceTypePropertyName("deviceCompliancePolicySettingStateSummaryODataType")]
-    [ResourceIdPropertyName("deviceCompliancePolicySettingStateSummaryId")]
     public class Update_DeviceManagement_DeviceCompliancePolicySettingStateSummaries : PatchCmdlet
     {
         /// <summary>
@@ -310,7 +308,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object in the &quot;deviceCompliancePolicySettingStateSummaries&quot; collection.")]
         public System.String deviceCompliancePolicySettingStateSummaryId { get; set; }
@@ -455,7 +453,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceManagement_DeviceCompliancePolicySettingStateSummaries", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceCompliancePolicySettingStateSummary")]
     [ResourceTypePropertyName("deviceCompliancePolicySettingStateSummaryODataType")]
-    [ResourceIdPropertyName("deviceCompliancePolicySettingStateSummaryId")]
     public class Remove_DeviceManagement_DeviceCompliancePolicySettingStateSummaries : DeleteCmdlet
     {
         /// <summary>
@@ -463,9 +460,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object in the &quot;deviceCompliancePolicySettingStateSummaries&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object in the &quot;deviceCompliancePolicySettingStateSummaries&quot; collection.")]
         public System.String deviceCompliancePolicySettingStateSummaryId { get; set; }
 
         internal override System.String GetResourcePath()

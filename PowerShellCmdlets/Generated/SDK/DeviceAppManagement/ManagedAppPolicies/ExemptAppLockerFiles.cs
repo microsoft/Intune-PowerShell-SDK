@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_ManagedAppPolicies_ExemptAppLockerFiles", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("exemptAppLockerFileODataType")]
-    [ResourceIdPropertyName("exemptAppLockerFileId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_ManagedAppPolicies_ExemptAppLockerFiles : GetOrSearchCmdlet
     {
@@ -44,10 +43,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;exemptAppLockerFiles&quot; collection.")]
-        public System.String exemptAppLockerFileId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;exemptAppLockerFiles&quot; collection.")]
+        public System.String windowsInformationProtectionAppLockerFileId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -91,7 +90,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/exemptAppLockerFiles/{exemptAppLockerFileId ?? string.Empty}";
+            return $"deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId ?? string.Empty}";
         }
     }
 
@@ -104,7 +103,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_ManagedAppPolicies_ExemptAppLockerFiles", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("exemptAppLockerFileODataType")]
-    [ResourceIdPropertyName("exemptAppLockerFileId")]
     [ResourceReference]
     public class New_DeviceAppManagement_ManagedAppPolicies_ExemptAppLockerFiles : PostCmdlet
     {
@@ -113,7 +111,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String exemptAppLockerFileId { get; set; }
+        [ResourceIdParameter]
+        public System.String windowsInformationProtectionAppLockerFileId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;managedAppPolicies&quot; collection.</para>
@@ -184,7 +183,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/exemptAppLockerFiles/{exemptAppLockerFileId}";
+            return $"deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId}";
         }
     }
 
@@ -197,7 +196,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_ManagedAppPolicies_ExemptAppLockerFiles", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("exemptAppLockerFileODataType")]
-    [ResourceIdPropertyName("exemptAppLockerFileId")]
     public class Update_DeviceAppManagement_ManagedAppPolicies_ExemptAppLockerFiles : PatchCmdlet
     {
         /// <summary>
@@ -205,10 +203,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;exemptAppLockerFiles&quot; collection.")]
-        public System.String exemptAppLockerFileId { get; set; }
+        public System.String windowsInformationProtectionAppLockerFileId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;managedAppPolicies&quot; collection.</para>
@@ -279,20 +277,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/exemptAppLockerFiles/{exemptAppLockerFileId}";
+            return $"deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/exemptAppLockerFiles/exemptAppLockerFileId</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/exemptAppLockerFiles/windowsInformationProtectionAppLockerFileId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object from the &quot;exemptAppLockerFiles&quot; collection.</para>
     ///     <para type="description">Another way to input exempt apps through xml files</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_ManagedAppPolicies_ExemptAppLockerFiles", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("exemptAppLockerFileODataType")]
-    [ResourceIdPropertyName("exemptAppLockerFileId")]
     public class Remove_DeviceAppManagement_ManagedAppPolicies_ExemptAppLockerFiles : DeleteCmdlet
     {
         /// <summary>
@@ -300,10 +297,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;exemptAppLockerFiles&quot; collection.")]
-        public System.String exemptAppLockerFileId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;exemptAppLockerFiles&quot; collection.")]
+        public System.String windowsInformationProtectionAppLockerFileId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;managedAppPolicies&quot; collection.</para>
@@ -329,7 +326,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/exemptAppLockerFiles/{exemptAppLockerFileId}";
+            return $"deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId}";
         }
     }
 }

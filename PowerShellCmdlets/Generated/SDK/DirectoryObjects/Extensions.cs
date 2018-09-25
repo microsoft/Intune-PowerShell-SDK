@@ -12,7 +12,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DirectoryObjects_Extensions", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.extension", "microsoft.graph.openTypeExtension")]
     [ResourceTypePropertyName("extensionODataType")]
-    [ResourceIdPropertyName("extensionId")]
     [ResourceReference]
     public class Get_DirectoryObjects_Extensions : GetOrSearchCmdlet
     {
@@ -43,9 +42,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.extension&quot; object in the &quot;extensions&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.extension&quot; object in the &quot;extensions&quot; collection.")]
         public System.String extensionId { get; set; }
 
         /// <summary>
@@ -72,7 +71,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DirectoryObjects_Extensions", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.extension", "microsoft.graph.openTypeExtension")]
     [ResourceTypePropertyName("extensionODataType")]
-    [ResourceIdPropertyName("extensionId")]
     [ResourceReference]
     public class New_DirectoryObjects_Extensions : PostCmdlet
     {
@@ -81,6 +79,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String extensionId { get; set; }
 
         /// <summary>
@@ -137,7 +136,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DirectoryObjects_Extensions", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.extension", "microsoft.graph.openTypeExtension")]
     [ResourceTypePropertyName("extensionODataType")]
-    [ResourceIdPropertyName("extensionId")]
     public class Update_DirectoryObjects_Extensions : PatchCmdlet
     {
         /// <summary>
@@ -145,7 +143,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.extension&quot; object in the &quot;extensions&quot; collection.")]
         public System.String extensionId { get; set; }
@@ -204,7 +202,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DirectoryObjects_Extensions", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.extension", "microsoft.graph.openTypeExtension")]
     [ResourceTypePropertyName("extensionODataType")]
-    [ResourceIdPropertyName("extensionId")]
     public class Remove_DirectoryObjects_Extensions : DeleteCmdlet
     {
         /// <summary>
@@ -212,9 +209,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.extension&quot; object in the &quot;extensions&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.extension&quot; object in the &quot;extensions&quot; collection.")]
         public System.String extensionId { get; set; }
 
         /// <summary>

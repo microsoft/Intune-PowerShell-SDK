@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_ManagedEBooks_UserStateSummary", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.userInstallStateSummary")]
     [ResourceTypePropertyName("userStateSummaryODataType")]
-    [ResourceIdPropertyName("userStateSummaryId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_ManagedEBooks_UserStateSummary : GetOrSearchCmdlet
     {
@@ -31,10 +30,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.userInstallStateSummary&quot; object in the &quot;userStateSummary&quot; collection.")]
-        public System.String userStateSummaryId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.userInstallStateSummary&quot; object in the &quot;userStateSummary&quot; collection.")]
+        public System.String userInstallStateSummaryId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -88,7 +87,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userStateSummaryId ?? string.Empty}";
+            return $"deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId ?? string.Empty}";
         }
     }
 
@@ -101,7 +100,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_ManagedEBooks_UserStateSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.userInstallStateSummary")]
     [ODataType("microsoft.graph.userInstallStateSummary")]
     [ResourceTypePropertyName("userStateSummaryODataType")]
-    [ResourceIdPropertyName("userStateSummaryId")]
     [ResourceReference]
     public class New_DeviceAppManagement_ManagedEBooks_UserStateSummary : PostCmdlet
     {
@@ -110,7 +108,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String userStateSummaryId { get; set; }
+        [ResourceIdParameter]
+        public System.String userInstallStateSummaryId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
@@ -179,7 +178,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userStateSummaryId}";
+            return $"deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}";
         }
     }
 
@@ -192,7 +191,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_ManagedEBooks_UserStateSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.userInstallStateSummary")]
     [ODataType("microsoft.graph.userInstallStateSummary")]
     [ResourceTypePropertyName("userStateSummaryODataType")]
-    [ResourceIdPropertyName("userStateSummaryId")]
     public class Update_DeviceAppManagement_ManagedEBooks_UserStateSummary : PatchCmdlet
     {
         /// <summary>
@@ -200,10 +198,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.userInstallStateSummary&quot; object in the &quot;userStateSummary&quot; collection.")]
-        public System.String userStateSummaryId { get; set; }
+        public System.String userInstallStateSummaryId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
@@ -272,20 +270,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userStateSummaryId}";
+            return $"deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.userInstallStateSummary&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/userStateSummaryId</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/userInstallStateSummaryId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.userInstallStateSummary&quot; object from the &quot;userStateSummary&quot; collection.</para>
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_ManagedEBooks_UserStateSummary", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.userInstallStateSummary")]
     [ResourceTypePropertyName("userStateSummaryODataType")]
-    [ResourceIdPropertyName("userStateSummaryId")]
     public class Remove_DeviceAppManagement_ManagedEBooks_UserStateSummary : DeleteCmdlet
     {
         /// <summary>
@@ -293,10 +290,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.userInstallStateSummary&quot; object in the &quot;userStateSummary&quot; collection.")]
-        public System.String userStateSummaryId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.userInstallStateSummary&quot; object in the &quot;userStateSummary&quot; collection.")]
+        public System.String userInstallStateSummaryId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
@@ -309,7 +306,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userStateSummaryId}";
+            return $"deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}";
         }
     }
 }

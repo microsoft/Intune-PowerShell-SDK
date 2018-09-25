@@ -147,7 +147,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_ManagedDeviceOverviewReference", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedDeviceOverview")]
     [ResourceTypePropertyName("managedDeviceOverviewODataType")]
-    [ResourceIdPropertyName("managedDeviceOverviewReferenceUrl")]
     public class New_DeviceManagement_ManagedDeviceOverviewReference : PutReferenceToEntityCmdlet
     {
         /// <summary>

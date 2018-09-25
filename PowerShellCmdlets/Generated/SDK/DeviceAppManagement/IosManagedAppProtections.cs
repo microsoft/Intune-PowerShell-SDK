@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_IosManagedAppProtections", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.iosManagedAppProtection")]
     [ResourceTypePropertyName("iosManagedAppProtectionODataType")]
-    [ResourceIdPropertyName("iosManagedAppProtectionId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_IosManagedAppProtections : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.iosManagedAppProtection&quot; object in the &quot;iosManagedAppProtections&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.iosManagedAppProtection&quot; object in the &quot;iosManagedAppProtections&quot; collection.")]
         public System.String iosManagedAppProtectionId { get; set; }
 
         /// <summary>
@@ -432,7 +431,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_IosManagedAppProtections", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.iosManagedAppProtection")]
     [ODataType("microsoft.graph.iosManagedAppProtection")]
     [ResourceTypePropertyName("iosManagedAppProtectionODataType")]
-    [ResourceIdPropertyName("iosManagedAppProtectionId")]
     [ResourceReference]
     public class New_DeviceAppManagement_IosManagedAppProtections : PostCmdlet
     {
@@ -441,6 +439,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String iosManagedAppProtectionId { get; set; }
 
         /// <summary>
@@ -914,7 +913,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_IosManagedAppProtections", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.iosManagedAppProtection")]
     [ODataType("microsoft.graph.iosManagedAppProtection")]
     [ResourceTypePropertyName("iosManagedAppProtectionODataType")]
-    [ResourceIdPropertyName("iosManagedAppProtectionId")]
     public class Update_DeviceAppManagement_IosManagedAppProtections : PatchCmdlet
     {
         /// <summary>
@@ -922,7 +920,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.iosManagedAppProtection&quot; object in the &quot;iosManagedAppProtections&quot; collection.")]
         public System.String iosManagedAppProtectionId { get; set; }
@@ -1398,7 +1396,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceAppManagement_IosManagedAppProtections", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.iosManagedAppProtection")]
     [ResourceTypePropertyName("iosManagedAppProtectionODataType")]
-    [ResourceIdPropertyName("iosManagedAppProtectionId")]
     public class Remove_DeviceAppManagement_IosManagedAppProtections : DeleteCmdlet
     {
         /// <summary>
@@ -1406,9 +1403,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.iosManagedAppProtection&quot; object in the &quot;iosManagedAppProtections&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.iosManagedAppProtection&quot; object in the &quot;iosManagedAppProtections&quot; collection.")]
         public System.String iosManagedAppProtectionId { get; set; }
 
         internal override System.String GetResourcePath()

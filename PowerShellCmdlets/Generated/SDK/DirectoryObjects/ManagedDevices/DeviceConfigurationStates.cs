@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DirectoryObjects_ManagedDevices_DeviceConfigurationStates", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceConfigurationState")]
     [ResourceTypePropertyName("deviceConfigurationStateODataType")]
-    [ResourceIdPropertyName("deviceConfigurationStateId")]
     [ResourceReference]
     public class Get_DirectoryObjects_ManagedDevices_DeviceConfigurationStates : GetOrSearchCmdlet
     {
@@ -53,9 +52,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceConfigurationState&quot; object in the &quot;deviceConfigurationStates&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceConfigurationState&quot; object in the &quot;deviceConfigurationStates&quot; collection.")]
         public System.String deviceConfigurationStateId { get; set; }
 
         /// <summary>
@@ -131,7 +130,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DirectoryObjects_ManagedDevices_DeviceConfigurationStates", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationState")]
     [ODataType("microsoft.graph.deviceConfigurationState")]
     [ResourceTypePropertyName("deviceConfigurationStateODataType")]
-    [ResourceIdPropertyName("deviceConfigurationStateId")]
     [ResourceReference]
     public class New_DirectoryObjects_ManagedDevices_DeviceConfigurationStates : PostCmdlet
     {
@@ -140,6 +138,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String deviceConfigurationStateId { get; set; }
 
         /// <summary>
@@ -262,7 +261,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DirectoryObjects_ManagedDevices_DeviceConfigurationStates", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationState")]
     [ODataType("microsoft.graph.deviceConfigurationState")]
     [ResourceTypePropertyName("deviceConfigurationStateODataType")]
-    [ResourceIdPropertyName("deviceConfigurationStateId")]
     public class Update_DirectoryObjects_ManagedDevices_DeviceConfigurationStates : PatchCmdlet
     {
         /// <summary>
@@ -270,7 +268,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceConfigurationState&quot; object in the &quot;deviceConfigurationStates&quot; collection.")]
         public System.String deviceConfigurationStateId { get; set; }
@@ -395,7 +393,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DirectoryObjects_ManagedDevices_DeviceConfigurationStates", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceConfigurationState")]
     [ResourceTypePropertyName("deviceConfigurationStateODataType")]
-    [ResourceIdPropertyName("deviceConfigurationStateId")]
     public class Remove_DirectoryObjects_ManagedDevices_DeviceConfigurationStates : DeleteCmdlet
     {
         /// <summary>
@@ -403,9 +400,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceConfigurationState&quot; object in the &quot;deviceConfigurationStates&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceConfigurationState&quot; object in the &quot;deviceConfigurationStates&quot; collection.")]
         public System.String deviceConfigurationStateId { get; set; }
 
         /// <summary>

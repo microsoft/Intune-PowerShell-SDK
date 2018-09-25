@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_MobileApps_Categories", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.mobileAppCategory")]
     [ResourceTypePropertyName("categoryODataType")]
-    [ResourceIdPropertyName("categoryId")]
     public class Get_DeviceAppManagement_MobileApps_Categories : GetOrSearchCmdlet
     {
         /// <summary>
@@ -30,10 +29,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppCategory&quot; object in the &quot;categories&quot; collection.")]
-        public System.String categoryId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppCategory&quot; object in the &quot;categories&quot; collection.")]
+        public System.String mobileAppCategoryId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -57,7 +56,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileApps/{mobileAppId}/categories/{categoryId ?? string.Empty}";
+            return $"deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryId ?? string.Empty}";
         }
     }
 
@@ -70,7 +69,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_MobileApps_CategoriesReferences", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.mobileAppCategory")]
     [ResourceTypePropertyName("categoryODataType")]
-    [ResourceIdPropertyName("categoryId")]
     public class Get_DeviceAppManagement_MobileApps_CategoriesReferences : GetOrSearchCmdlet
     {
         /// <summary>
@@ -87,10 +85,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppCategory&quot; object in the &quot;categories&quot; collection.")]
-        public System.String categoryId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppCategory&quot; object in the &quot;categories&quot; collection.")]
+        public System.String mobileAppCategoryId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -114,7 +112,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileApps/{mobileAppId}/categories/{categoryId ?? string.Empty}/$ref";
+            return $"deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryId ?? string.Empty}/$ref";
         }
     }
 
@@ -127,7 +125,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_MobileApps_CategoriesReferences", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.mobileAppCategory")]
     [ResourceTypePropertyName("categoryODataType")]
-    [ResourceIdPropertyName("mobileAppCategoryReferenceUrl")]
     public class New_DeviceAppManagement_MobileApps_CategoriesReferences : PostReferenceToCollectionCmdlet
     {
         /// <summary>
@@ -135,7 +132,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String categoryId { get; set; }
+        [ResourceIdParameter]
+        public System.String mobileAppCategoryId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -156,7 +154,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileApps/{mobileAppId}/categories/{categoryId}/$ref";
+            return $"deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryId}/$ref";
         }
 
         internal override System.Object GetContent()
@@ -167,14 +165,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a reference from a &quot;mobileApp&quot; to a &quot;microsoft.graph.mobileAppCategory&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/mobileApps/{mobileAppId}/categories/categoryId/$ref</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/mobileApps/{mobileAppId}/categories/mobileAppCategoryId/$ref</para>
     ///     <para type="description">Removes a reference from the specified &quot;mobileApp&quot; object to a &quot;category&quot;.</para>
     ///     <para type="description">The list of categories for this app.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_MobileApps_CategoriesReferences", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileAppCategory")]
     [ResourceTypePropertyName("categoryODataType")]
-    [ResourceIdPropertyName("categoryId")]
     public class Remove_DeviceAppManagement_MobileApps_CategoriesReferences : DeleteCmdlet
     {
         /// <summary>
@@ -182,10 +179,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppCategory&quot; object in the &quot;categories&quot; collection.")]
-        public System.String categoryId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppCategory&quot; object in the &quot;categories&quot; collection.")]
+        public System.String mobileAppCategoryId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -198,7 +195,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileApps/{mobileAppId}/categories/{categoryId}/$ref";
+            return $"deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryId}/$ref";
         }
     }
 }

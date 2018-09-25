@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_TargetedManagedAppConfigurations", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.targetedManagedAppConfiguration")]
     [ResourceTypePropertyName("targetedManagedAppConfigurationODataType")]
-    [ResourceIdPropertyName("targetedManagedAppConfigurationId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_TargetedManagedAppConfigurations : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.targetedManagedAppConfiguration&quot; object in the &quot;targetedManagedAppConfigurations&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.targetedManagedAppConfiguration&quot; object in the &quot;targetedManagedAppConfigurations&quot; collection.")]
         public System.String targetedManagedAppConfigurationId { get; set; }
 
         /// <summary>
@@ -152,7 +151,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_TargetedManagedAppConfigurations", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppConfiguration")]
     [ODataType("microsoft.graph.targetedManagedAppConfiguration")]
     [ResourceTypePropertyName("targetedManagedAppConfigurationODataType")]
-    [ResourceIdPropertyName("targetedManagedAppConfigurationId")]
     [ResourceReference]
     public class New_DeviceAppManagement_TargetedManagedAppConfigurations : PostCmdlet
     {
@@ -161,6 +159,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String targetedManagedAppConfigurationId { get; set; }
 
         /// <summary>
@@ -302,7 +301,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_TargetedManagedAppConfigurations", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppConfiguration")]
     [ODataType("microsoft.graph.targetedManagedAppConfiguration")]
     [ResourceTypePropertyName("targetedManagedAppConfigurationODataType")]
-    [ResourceIdPropertyName("targetedManagedAppConfigurationId")]
     public class Update_DeviceAppManagement_TargetedManagedAppConfigurations : PatchCmdlet
     {
         /// <summary>
@@ -310,7 +308,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.targetedManagedAppConfiguration&quot; object in the &quot;targetedManagedAppConfigurations&quot; collection.")]
         public System.String targetedManagedAppConfigurationId { get; set; }
@@ -454,7 +452,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceAppManagement_TargetedManagedAppConfigurations", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.targetedManagedAppConfiguration")]
     [ResourceTypePropertyName("targetedManagedAppConfigurationODataType")]
-    [ResourceIdPropertyName("targetedManagedAppConfigurationId")]
     public class Remove_DeviceAppManagement_TargetedManagedAppConfigurations : DeleteCmdlet
     {
         /// <summary>
@@ -462,9 +459,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.targetedManagedAppConfiguration&quot; object in the &quot;targetedManagedAppConfigurations&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.targetedManagedAppConfiguration&quot; object in the &quot;targetedManagedAppConfigurations&quot; collection.")]
         public System.String targetedManagedAppConfigurationId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -481,7 +478,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "DeviceAppManagement_TargetedManagedAppConfigurations_Assign", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.targetedManagedAppConfiguration")]
     [ResourceTypePropertyName("targetedManagedAppConfigurationODataType")]
-    [ResourceIdPropertyName("targetedManagedAppConfigurationId")]
     public class Invoke_DeviceAppManagement_TargetedManagedAppConfigurations_Assign : ActionCmdlet
     {
         /// <summary>
@@ -498,9 +494,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.targetedManagedAppConfiguration&quot; object in the &quot;targetedManagedAppConfigurations&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.targetedManagedAppConfiguration&quot; object in the &quot;targetedManagedAppConfigurations&quot; collection.")]
         public System.String targetedManagedAppConfigurationId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -517,7 +513,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "DeviceAppManagement_TargetedManagedAppConfigurations_TargetApps", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.targetedManagedAppConfiguration")]
     [ResourceTypePropertyName("targetedManagedAppConfigurationODataType")]
-    [ResourceIdPropertyName("targetedManagedAppConfigurationId")]
     public class Invoke_DeviceAppManagement_TargetedManagedAppConfigurations_TargetApps : ActionCmdlet
     {
         /// <summary>
@@ -534,9 +529,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.targetedManagedAppConfiguration&quot; object in the &quot;targetedManagedAppConfigurations&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.targetedManagedAppConfiguration&quot; object in the &quot;targetedManagedAppConfigurations&quot; collection.")]
         public System.String targetedManagedAppConfigurationId { get; set; }
 
         internal override System.String GetResourcePath()

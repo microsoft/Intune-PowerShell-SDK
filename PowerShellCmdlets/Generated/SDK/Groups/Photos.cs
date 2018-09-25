@@ -12,7 +12,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "Groups_Photos", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
-    [ResourceIdPropertyName("photoId")]
     [ResourceReference]
     public class Get_Groups_Photos : GetOrSearchCmdlet
     {
@@ -30,10 +29,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.")]
-        public System.String photoId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.")]
+        public System.String profilePhotoId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;height&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -55,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"groups/{groupId}/photos/{photoId ?? string.Empty}";
+            return $"groups/{groupId}/photos/{profilePhotoId ?? string.Empty}";
         }
     }
 
@@ -67,7 +66,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "Groups_PhotosData")]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
-    [ResourceIdPropertyName("photoId")]
     public class Get_Groups_PhotosData : GetStreamCmdlet
     {
         /// <summary>
@@ -75,10 +73,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.")]
-        public System.String photoId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.")]
+        public System.String profilePhotoId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -109,7 +107,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"groups/{groupId}/photos/{photoId}/$value";
+            return $"groups/{groupId}/photos/{profilePhotoId}/$value";
         }
     }
 
@@ -121,7 +119,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "Groups_PhotosData", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
-    [ResourceIdPropertyName("photoId")]
     public class New_Groups_PhotosData : UpdateStreamCmdlet
     {
         /// <summary>
@@ -129,10 +126,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.")]
-        public System.String photoId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.")]
+        public System.String profilePhotoId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -150,7 +147,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"groups/{groupId}/photos/{photoId}/$value";
+            return $"groups/{groupId}/photos/{profilePhotoId}/$value";
         }
     }
 
@@ -162,7 +159,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Set", "Groups_PhotosData", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
-    [ResourceIdPropertyName("photoId")]
     public class Set_Groups_PhotosData : UpdateStreamCmdlet
     {
         /// <summary>
@@ -170,10 +166,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.")]
-        public System.String photoId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.")]
+        public System.String profilePhotoId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -186,19 +182,18 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"groups/{groupId}/photos/{photoId}/$value";
+            return $"groups/{groupId}/photos/{profilePhotoId}/$value";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes the data stream from a &quot;photo&quot; object.</para>
-    ///     <para type="description">DELETE ~/groups/{groupId}/photos/photoId/$value</para>
+    ///     <para type="description">DELETE ~/groups/{groupId}/photos/profilePhotoId/$value</para>
     ///     <para type="description">Removes a reference from a &quot;photo&quot; resource (which is of type &quot;microsoft.graph.profilePhoto&quot;).</para>
     /// </summary>
     [Cmdlet("Remove", "Groups_PhotosData", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
-    [ResourceIdPropertyName("photoId")]
     public class Remove_Groups_PhotosData : DeleteCmdlet
     {
         /// <summary>
@@ -206,10 +201,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.")]
-        public System.String photoId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.")]
+        public System.String profilePhotoId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -222,7 +217,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"groups/{groupId}/photos/{photoId}/$value";
+            return $"groups/{groupId}/photos/{profilePhotoId}/$value";
         }
     }
 }

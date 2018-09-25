@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_ManagedAppRegistrations_IntendedPolicies", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
     [ResourceTypePropertyName("intendedPolicyODataType")]
-    [ResourceIdPropertyName("intendedPolicyId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_ManagedAppRegistrations_IntendedPolicies : GetOrSearchCmdlet
     {
@@ -31,10 +30,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;intendedPolicies&quot; collection.")]
-        public System.String intendedPolicyId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;intendedPolicies&quot; collection.")]
+        public System.String managedAppPolicyId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -902,7 +901,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{intendedPolicyId ?? string.Empty}";
+            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId ?? string.Empty}";
         }
     }
 
@@ -915,7 +914,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_ManagedAppRegistrations_IntendedPolicies", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
     [ResourceTypePropertyName("intendedPolicyODataType")]
-    [ResourceIdPropertyName("intendedPolicyId")]
     [ResourceReference]
     public class New_DeviceAppManagement_ManagedAppRegistrations_IntendedPolicies : PostCmdlet
     {
@@ -924,7 +922,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String intendedPolicyId { get; set; }
+        [ResourceIdParameter]
+        public System.String managedAppPolicyId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.</para>
@@ -2152,7 +2151,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{intendedPolicyId}";
+            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}";
         }
     }
 
@@ -2165,7 +2164,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_ManagedAppRegistrations_IntendedPolicies", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
     [ResourceTypePropertyName("intendedPolicyODataType")]
-    [ResourceIdPropertyName("intendedPolicyId")]
     public class Update_DeviceAppManagement_ManagedAppRegistrations_IntendedPolicies : PatchCmdlet
     {
         /// <summary>
@@ -2173,10 +2171,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;intendedPolicies&quot; collection.")]
-        public System.String intendedPolicyId { get; set; }
+        public System.String managedAppPolicyId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.</para>
@@ -3404,20 +3402,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{intendedPolicyId}";
+            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.managedAppPolicy&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/intendedPolicyId</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/managedAppPolicyId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.managedAppPolicy&quot; object from the &quot;intendedPolicies&quot; collection.</para>
     ///     <para type="description">Zero or more policies admin intended for the app as of now.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_ManagedAppRegistrations_IntendedPolicies", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
     [ResourceTypePropertyName("intendedPolicyODataType")]
-    [ResourceIdPropertyName("intendedPolicyId")]
     public class Remove_DeviceAppManagement_ManagedAppRegistrations_IntendedPolicies : DeleteCmdlet
     {
         /// <summary>
@@ -3425,10 +3422,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;intendedPolicies&quot; collection.")]
-        public System.String intendedPolicyId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;intendedPolicies&quot; collection.")]
+        public System.String managedAppPolicyId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.</para>
@@ -3441,7 +3438,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{intendedPolicyId}";
+            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}";
         }
     }
 
@@ -3453,7 +3450,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "DeviceAppManagement_ManagedAppRegistrations_IntendedPolicies_TargetApps", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
     [ResourceTypePropertyName("intendedPolicyODataType")]
-    [ResourceIdPropertyName("intendedPolicyId")]
     public class Invoke_DeviceAppManagement_ManagedAppRegistrations_IntendedPolicies_TargetApps : ActionCmdlet
     {
         /// <summary>
@@ -3470,10 +3466,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;intendedPolicies&quot; collection.")]
-        public System.String intendedPolicyId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;intendedPolicies&quot; collection.")]
+        public System.String managedAppPolicyId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.</para>
@@ -3486,7 +3482,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{intendedPolicyId}/targetApps";
+            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/targetApps";
         }
     }
 }

@@ -136,7 +136,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <returns>The name of the property that should hold the object's ID.</returns>
         internal string GetResourceIdPropertyName()
         {
-            return this.GetType().GetCustomAttribute<ResourceIdPropertyNameAttribute>()?.PropertyName;
+            return this.GetProperties(false)
+                .Where(prop => prop.GetCustomAttribute<ResourceIdParameterAttribute>() != null)
+                .SingleOrDefault()?
+                .Name;
         }
 
         /// <summary>

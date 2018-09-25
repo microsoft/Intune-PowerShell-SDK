@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_TermsAndConditions", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.termsAndConditions")]
     [ResourceTypePropertyName("termsAndConditionODataType")]
-    [ResourceIdPropertyName("termsAndConditionId")]
     [ResourceReference]
     public class Get_DeviceManagement_TermsAndConditions : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.")]
         public System.String termsAndConditionId { get; set; }
 
         /// <summary>
@@ -142,7 +141,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_TermsAndConditions", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.termsAndConditions")]
     [ODataType("microsoft.graph.termsAndConditions")]
     [ResourceTypePropertyName("termsAndConditionODataType")]
-    [ResourceIdPropertyName("termsAndConditionId")]
     [ResourceReference]
     public class New_DeviceManagement_TermsAndConditions : PostCmdlet
     {
@@ -151,6 +149,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String termsAndConditionId { get; set; }
 
         /// <summary>
@@ -280,7 +279,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_TermsAndConditions", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.termsAndConditions")]
     [ODataType("microsoft.graph.termsAndConditions")]
     [ResourceTypePropertyName("termsAndConditionODataType")]
-    [ResourceIdPropertyName("termsAndConditionId")]
     public class Update_DeviceManagement_TermsAndConditions : PatchCmdlet
     {
         /// <summary>
@@ -288,7 +286,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.")]
         public System.String termsAndConditionId { get; set; }
@@ -420,7 +418,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceManagement_TermsAndConditions", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.termsAndConditions")]
     [ResourceTypePropertyName("termsAndConditionODataType")]
-    [ResourceIdPropertyName("termsAndConditionId")]
     public class Remove_DeviceManagement_TermsAndConditions : DeleteCmdlet
     {
         /// <summary>
@@ -428,9 +425,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.")]
         public System.String termsAndConditionId { get; set; }
 
         internal override System.String GetResourcePath()

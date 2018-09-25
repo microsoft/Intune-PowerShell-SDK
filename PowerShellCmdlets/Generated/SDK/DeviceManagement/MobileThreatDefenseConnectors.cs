@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_MobileThreatDefenseConnectors", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.mobileThreatDefenseConnector")]
     [ResourceTypePropertyName("mobileThreatDefenseConnectorODataType")]
-    [ResourceIdPropertyName("mobileThreatDefenseConnectorId")]
     [ResourceReference]
     public class Get_DeviceManagement_MobileThreatDefenseConnectors : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileThreatDefenseConnector&quot; object in the &quot;mobileThreatDefenseConnectors&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileThreatDefenseConnector&quot; object in the &quot;mobileThreatDefenseConnectors&quot; collection.")]
         public System.String mobileThreatDefenseConnectorId { get; set; }
 
         /// <summary>
@@ -122,7 +121,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_MobileThreatDefenseConnectors", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.mobileThreatDefenseConnector")]
     [ODataType("microsoft.graph.mobileThreatDefenseConnector")]
     [ResourceTypePropertyName("mobileThreatDefenseConnectorODataType")]
-    [ResourceIdPropertyName("mobileThreatDefenseConnectorId")]
     [ResourceReference]
     public class New_DeviceManagement_MobileThreatDefenseConnectors : PostCmdlet
     {
@@ -131,6 +129,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String mobileThreatDefenseConnectorId { get; set; }
 
         /// <summary>
@@ -240,7 +239,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_MobileThreatDefenseConnectors", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.mobileThreatDefenseConnector")]
     [ODataType("microsoft.graph.mobileThreatDefenseConnector")]
     [ResourceTypePropertyName("mobileThreatDefenseConnectorODataType")]
-    [ResourceIdPropertyName("mobileThreatDefenseConnectorId")]
     public class Update_DeviceManagement_MobileThreatDefenseConnectors : PatchCmdlet
     {
         /// <summary>
@@ -248,7 +246,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileThreatDefenseConnector&quot; object in the &quot;mobileThreatDefenseConnectors&quot; collection.")]
         public System.String mobileThreatDefenseConnectorId { get; set; }
@@ -360,7 +358,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceManagement_MobileThreatDefenseConnectors", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileThreatDefenseConnector")]
     [ResourceTypePropertyName("mobileThreatDefenseConnectorODataType")]
-    [ResourceIdPropertyName("mobileThreatDefenseConnectorId")]
     public class Remove_DeviceManagement_MobileThreatDefenseConnectors : DeleteCmdlet
     {
         /// <summary>
@@ -368,9 +365,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileThreatDefenseConnector&quot; object in the &quot;mobileThreatDefenseConnectors&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileThreatDefenseConnector&quot; object in the &quot;mobileThreatDefenseConnectors&quot; collection.")]
         public System.String mobileThreatDefenseConnectorId { get; set; }
 
         internal override System.String GetResourcePath()

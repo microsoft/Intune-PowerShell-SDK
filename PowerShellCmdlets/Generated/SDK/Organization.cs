@@ -12,7 +12,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "Organization", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.organization")]
     [ResourceTypePropertyName("organizationODataType")]
-    [ResourceIdPropertyName("organizationId")]
     public class Get_Organization : GetOrSearchCmdlet
     {
         /// <summary>
@@ -20,9 +19,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.")]
         public System.String organizationId { get; set; }
 
         /// <summary>
@@ -197,7 +196,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "Organization", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.organization")]
     [ODataType("microsoft.graph.organization")]
     [ResourceTypePropertyName("organizationODataType")]
-    [ResourceIdPropertyName("organizationId")]
     public class New_Organization : PostCmdlet
     {
         /// <summary>
@@ -205,6 +203,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String organizationId { get; set; }
 
         /// <summary>
@@ -411,7 +410,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "Organization", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.organization")]
     [ODataType("microsoft.graph.organization")]
     [ResourceTypePropertyName("organizationODataType")]
-    [ResourceIdPropertyName("organizationId")]
     public class Update_Organization : PatchCmdlet
     {
         /// <summary>
@@ -419,7 +417,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.")]
         public System.String organizationId { get; set; }
@@ -628,7 +626,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "Organization", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.organization")]
     [ResourceTypePropertyName("organizationODataType")]
-    [ResourceIdPropertyName("organizationId")]
     public class Remove_Organization : DeleteCmdlet
     {
         /// <summary>
@@ -636,9 +633,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.")]
         public System.String organizationId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -655,7 +652,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "Organization_SetMobileDeviceManagementAuthority", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.organization")]
     [ResourceTypePropertyName("organizationODataType")]
-    [ResourceIdPropertyName("organizationId")]
     public class Invoke_Organization_SetMobileDeviceManagementAuthority : ActionCmdlet
     {
         /// <summary>
@@ -663,9 +659,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.")]
         public System.String organizationId { get; set; }
 
         internal override System.String GetResourcePath()

@@ -12,16 +12,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DirectoryObjects_DirectReports", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("directReportODataType")]
-    [ResourceIdPropertyName("directReportId")]
     public class Get_DirectoryObjects_DirectReports : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
         public System.String directoryObjectId { get; set; }
 
         /// <summary>
@@ -36,16 +35,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.directoryObject&quot; objects.")]
         public System.String directoryObjectODataType { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directReports&quot; collection.</para>
-        /// </summary>
-        [Selectable]
-        [IdParameter]
-        [Alias("id")]
-        [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directReports&quot; collection.")]
-        public System.String directReportId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deletedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -1147,7 +1136,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/directReports/{directReportId ?? string.Empty}";
+            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/directReports/{directoryObjectId ?? string.Empty}";
         }
     }
 
@@ -1159,16 +1148,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DirectoryObjects_DirectReportsReferences", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("directReportODataType")]
-    [ResourceIdPropertyName("directReportId")]
     public class Get_DirectoryObjects_DirectReportsReferences : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.</para>
         /// </summary>
         [Selectable]
-        [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
         public System.String directoryObjectId { get; set; }
 
         /// <summary>
@@ -1183,16 +1171,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required type cast for referencing properties that exist only on certain types of &quot;microsoft.graph.directoryObject&quot; objects.")]
         public System.String directoryObjectODataType { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directReports&quot; collection.</para>
-        /// </summary>
-        [Selectable]
-        [IdParameter]
-        [Alias("id")]
-        [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directReports&quot; collection.")]
-        public System.String directReportId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deletedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -2294,7 +2272,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/directReports/{directReportId ?? string.Empty}/$ref";
+            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/directReports/{directoryObjectId ?? string.Empty}/$ref";
         }
     }
 
@@ -2306,16 +2284,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DirectoryObjects_DirectReportsReferences", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("directReportODataType")]
-    [ResourceIdPropertyName("directoryObjectReferenceUrl")]
     public class New_DirectoryObjects_DirectReportsReferences : PostReferenceToCollectionCmdlet
     {
-        /// <summary>
-        ///     <para type="description">The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directReports&quot; collection.</para>
-        /// </summary>
-        [Selectable]
-        [IdParameter]
-        public System.String directReportId { get; set; }
-
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.</para>
         /// </summary>
@@ -2349,7 +2319,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/directReports/{directReportId}/$ref";
+            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/directReports/{directoryObjectId}/$ref";
         }
 
         internal override System.Object GetContent()
@@ -2360,25 +2330,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a reference from a &quot;directoryObject&quot; to a &quot;microsoft.graph.directoryObject&quot; object.</para>
-    ///     <para type="description">DELETE ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/directReports/directReportId/$ref</para>
+    ///     <para type="description">DELETE ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/directReports/directoryObjectId/$ref</para>
     ///     <para type="description">Removes a reference from the specified &quot;directoryObject&quot; object to a &quot;directReport&quot;.</para>
     /// </summary>
     [Cmdlet("Remove", "DirectoryObjects_DirectReportsReferences", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("directReportODataType")]
-    [ResourceIdPropertyName("directReportId")]
     public class Remove_DirectoryObjects_DirectReportsReferences : DeleteCmdlet
     {
-        /// <summary>
-        ///     <para type="description">The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directReports&quot; collection.</para>
-        /// </summary>
-        [Selectable]
-        [IdParameter]
-        [Alias("id")]
-        [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directReports&quot; collection.")]
-        public System.String directReportId { get; set; }
-
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.</para>
         /// </summary>
@@ -2403,7 +2362,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/directReports/{directReportId}/$ref";
+            return $"directoryObjects/{directoryObjectId}/{directoryObjectODataType}/directReports/{directoryObjectId}/$ref";
         }
     }
 }

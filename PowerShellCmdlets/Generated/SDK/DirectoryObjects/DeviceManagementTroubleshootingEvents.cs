@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DirectoryObjects_DeviceManagementTroubleshootingEvents", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
     [ResourceTypePropertyName("deviceManagementTroubleshootingEventODataType")]
-    [ResourceIdPropertyName("deviceManagementTroubleshootingEventId")]
     [ResourceReference]
     public class Get_DirectoryObjects_DeviceManagementTroubleshootingEvents : GetOrSearchCmdlet
     {
@@ -44,9 +43,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;deviceManagementTroubleshootingEvents&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;deviceManagementTroubleshootingEvents&quot; collection.")]
         public System.String deviceManagementTroubleshootingEventId { get; set; }
 
         /// <summary>
@@ -172,7 +171,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DirectoryObjects_DeviceManagementTroubleshootingEvents", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
     [ResourceTypePropertyName("deviceManagementTroubleshootingEventODataType")]
-    [ResourceIdPropertyName("deviceManagementTroubleshootingEventId")]
     [ResourceReference]
     public class New_DirectoryObjects_DeviceManagementTroubleshootingEvents : PostCmdlet
     {
@@ -181,6 +179,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String deviceManagementTroubleshootingEventId { get; set; }
 
         /// <summary>
@@ -356,7 +355,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DirectoryObjects_DeviceManagementTroubleshootingEvents", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
     [ResourceTypePropertyName("deviceManagementTroubleshootingEventODataType")]
-    [ResourceIdPropertyName("deviceManagementTroubleshootingEventId")]
     public class Update_DirectoryObjects_DeviceManagementTroubleshootingEvents : PatchCmdlet
     {
         /// <summary>
@@ -364,7 +362,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;deviceManagementTroubleshootingEvents&quot; collection.")]
         public System.String deviceManagementTroubleshootingEventId { get; set; }
@@ -542,7 +540,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DirectoryObjects_DeviceManagementTroubleshootingEvents", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
     [ResourceTypePropertyName("deviceManagementTroubleshootingEventODataType")]
-    [ResourceIdPropertyName("deviceManagementTroubleshootingEventId")]
     public class Remove_DirectoryObjects_DeviceManagementTroubleshootingEvents : DeleteCmdlet
     {
         /// <summary>
@@ -550,9 +547,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;deviceManagementTroubleshootingEvents&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;deviceManagementTroubleshootingEvents&quot; collection.")]
         public System.String deviceManagementTroubleshootingEventId { get; set; }
 
         /// <summary>

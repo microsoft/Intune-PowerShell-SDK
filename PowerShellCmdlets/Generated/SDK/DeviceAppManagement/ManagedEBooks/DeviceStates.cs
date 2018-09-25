@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_ManagedEBooks_DeviceStates", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceInstallState")]
     [ResourceTypePropertyName("deviceStateODataType")]
-    [ResourceIdPropertyName("deviceStateId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_ManagedEBooks_DeviceStates : GetOrSearchCmdlet
     {
@@ -31,10 +30,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceInstallState&quot; object in the &quot;deviceStates&quot; collection.")]
-        public System.String deviceStateId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceInstallState&quot; object in the &quot;deviceStates&quot; collection.")]
+        public System.String deviceInstallStateId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -118,7 +117,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceStateId ?? string.Empty}";
+            return $"deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceInstallStateId ?? string.Empty}";
         }
     }
 
@@ -131,7 +130,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_ManagedEBooks_DeviceStates", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceInstallState")]
     [ODataType("microsoft.graph.deviceInstallState")]
     [ResourceTypePropertyName("deviceStateODataType")]
-    [ResourceIdPropertyName("deviceStateId")]
     [ResourceReference]
     public class New_DeviceAppManagement_ManagedEBooks_DeviceStates : PostCmdlet
     {
@@ -140,7 +138,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String deviceStateId { get; set; }
+        [ResourceIdParameter]
+        public System.String deviceInstallStateId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
@@ -245,7 +244,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceStateId}";
+            return $"deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceInstallStateId}";
         }
     }
 
@@ -258,7 +257,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_ManagedEBooks_DeviceStates", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceInstallState")]
     [ODataType("microsoft.graph.deviceInstallState")]
     [ResourceTypePropertyName("deviceStateODataType")]
-    [ResourceIdPropertyName("deviceStateId")]
     public class Update_DeviceAppManagement_ManagedEBooks_DeviceStates : PatchCmdlet
     {
         /// <summary>
@@ -266,10 +264,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceInstallState&quot; object in the &quot;deviceStates&quot; collection.")]
-        public System.String deviceStateId { get; set; }
+        public System.String deviceInstallStateId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
@@ -374,20 +372,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceStateId}";
+            return $"deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceInstallStateId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceInstallState&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/deviceStateId</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/deviceInstallStateId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceInstallState&quot; object from the &quot;deviceStates&quot; collection.</para>
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_ManagedEBooks_DeviceStates", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceInstallState")]
     [ResourceTypePropertyName("deviceStateODataType")]
-    [ResourceIdPropertyName("deviceStateId")]
     public class Remove_DeviceAppManagement_ManagedEBooks_DeviceStates : DeleteCmdlet
     {
         /// <summary>
@@ -395,10 +392,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceInstallState&quot; object in the &quot;deviceStates&quot; collection.")]
-        public System.String deviceStateId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceInstallState&quot; object in the &quot;deviceStates&quot; collection.")]
+        public System.String deviceInstallStateId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
@@ -411,7 +408,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceStateId}";
+            return $"deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceInstallStateId}";
         }
     }
 }

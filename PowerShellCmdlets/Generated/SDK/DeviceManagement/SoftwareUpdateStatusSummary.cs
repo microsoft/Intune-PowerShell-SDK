@@ -347,7 +347,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_SoftwareUpdateStatusSummaryReference", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.softwareUpdateStatusSummary")]
     [ResourceTypePropertyName("softwareUpdateStatusSummaryODataType")]
-    [ResourceIdPropertyName("softwareUpdateStatusSummaryReferenceUrl")]
     public class New_DeviceManagement_SoftwareUpdateStatusSummaryReference : PutReferenceToEntityCmdlet
     {
         /// <summary>

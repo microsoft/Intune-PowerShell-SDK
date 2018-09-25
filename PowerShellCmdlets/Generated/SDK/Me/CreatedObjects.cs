@@ -12,7 +12,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "Me_CreatedObjects", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("createdObjectODataType")]
-    [ResourceIdPropertyName("createdObjectId")]
     public class Get_Me_CreatedObjects : GetOrSearchCmdlet
     {
         /// <summary>
@@ -20,10 +19,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;createdObjects&quot; collection.")]
-        public System.String createdObjectId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;createdObjects&quot; collection.")]
+        public System.String directoryObjectId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deletedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -1125,7 +1124,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"me/createdObjects/{createdObjectId ?? string.Empty}";
+            return $"me/createdObjects/{directoryObjectId ?? string.Empty}";
         }
     }
 
@@ -1137,7 +1136,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "Me_CreatedObjectsReferences", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("createdObjectODataType")]
-    [ResourceIdPropertyName("createdObjectId")]
     public class Get_Me_CreatedObjectsReferences : GetOrSearchCmdlet
     {
         /// <summary>
@@ -1145,10 +1143,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;createdObjects&quot; collection.")]
-        public System.String createdObjectId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;createdObjects&quot; collection.")]
+        public System.String directoryObjectId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deletedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -2250,7 +2248,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"me/createdObjects/{createdObjectId ?? string.Empty}/$ref";
+            return $"me/createdObjects/{directoryObjectId ?? string.Empty}/$ref";
         }
     }
 
@@ -2262,7 +2260,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "Me_CreatedObjectsReferences", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("createdObjectODataType")]
-    [ResourceIdPropertyName("directoryObjectReferenceUrl")]
     public class New_Me_CreatedObjectsReferences : PostReferenceToCollectionCmdlet
     {
         /// <summary>
@@ -2270,7 +2267,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String createdObjectId { get; set; }
+        [ResourceIdParameter]
+        public System.String directoryObjectId { get; set; }
 
         /// <summary>
         ///     <para type="description">The URL which should be used to access a &quot;microsoft.graph.directoryObject&quot; object.</para>
@@ -2283,7 +2281,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"me/createdObjects/{createdObjectId}/$ref";
+            return $"me/createdObjects/{directoryObjectId}/$ref";
         }
 
         internal override System.Object GetContent()
@@ -2294,13 +2292,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a reference from a &quot;me&quot; to a &quot;microsoft.graph.directoryObject&quot; object.</para>
-    ///     <para type="description">DELETE ~/me/createdObjects/createdObjectId/$ref</para>
+    ///     <para type="description">DELETE ~/me/createdObjects/directoryObjectId/$ref</para>
     ///     <para type="description">Removes a reference from the specified &quot;me&quot; object to a &quot;createdObject&quot;.</para>
     /// </summary>
     [Cmdlet("Remove", "Me_CreatedObjectsReferences", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("createdObjectODataType")]
-    [ResourceIdPropertyName("createdObjectId")]
     public class Remove_Me_CreatedObjectsReferences : DeleteCmdlet
     {
         /// <summary>
@@ -2308,14 +2305,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;createdObjects&quot; collection.")]
-        public System.String createdObjectId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;createdObjects&quot; collection.")]
+        public System.String directoryObjectId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"me/createdObjects/{createdObjectId}/$ref";
+            return $"me/createdObjects/{directoryObjectId}/$ref";
         }
     }
 }

@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_TermsAndConditions_AcceptanceStatuses", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.termsAndConditionsAcceptanceStatus")]
     [ResourceTypePropertyName("acceptanceStatusODataType")]
-    [ResourceIdPropertyName("acceptanceStatusId")]
     [ResourceReference]
     public class Get_DeviceManagement_TermsAndConditions_AcceptanceStatuses : GetOrSearchCmdlet
     {
@@ -31,10 +30,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; object in the &quot;acceptanceStatuses&quot; collection.")]
-        public System.String acceptanceStatusId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; object in the &quot;acceptanceStatuses&quot; collection.")]
+        public System.String termsAndConditionsAcceptanceStatusId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -79,7 +78,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses/{acceptanceStatusId ?? string.Empty}";
+            return $"deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId ?? string.Empty}";
         }
     }
 
@@ -92,7 +91,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_TermsAndConditions_AcceptanceStatuses", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.termsAndConditionsAcceptanceStatus")]
     [ODataType("microsoft.graph.termsAndConditionsAcceptanceStatus")]
     [ResourceTypePropertyName("acceptanceStatusODataType")]
-    [ResourceIdPropertyName("acceptanceStatusId")]
     [ResourceReference]
     public class New_DeviceManagement_TermsAndConditions_AcceptanceStatuses : PostCmdlet
     {
@@ -101,7 +99,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String acceptanceStatusId { get; set; }
+        [ResourceIdParameter]
+        public System.String termsAndConditionsAcceptanceStatusId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.</para>
@@ -158,7 +157,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses/{acceptanceStatusId}";
+            return $"deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}";
         }
     }
 
@@ -171,7 +170,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_TermsAndConditions_AcceptanceStatuses", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.termsAndConditionsAcceptanceStatus")]
     [ODataType("microsoft.graph.termsAndConditionsAcceptanceStatus")]
     [ResourceTypePropertyName("acceptanceStatusODataType")]
-    [ResourceIdPropertyName("acceptanceStatusId")]
     public class Update_DeviceManagement_TermsAndConditions_AcceptanceStatuses : PatchCmdlet
     {
         /// <summary>
@@ -179,10 +177,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; object in the &quot;acceptanceStatuses&quot; collection.")]
-        public System.String acceptanceStatusId { get; set; }
+        public System.String termsAndConditionsAcceptanceStatusId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.</para>
@@ -239,20 +237,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses/{acceptanceStatusId}";
+            return $"deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses/acceptanceStatusId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses/termsAndConditionsAcceptanceStatusId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; object from the &quot;acceptanceStatuses&quot; collection.</para>
     ///     <para type="description">The list of acceptance statuses for this T&amp;C policy.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_TermsAndConditions_AcceptanceStatuses", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.termsAndConditionsAcceptanceStatus")]
     [ResourceTypePropertyName("acceptanceStatusODataType")]
-    [ResourceIdPropertyName("acceptanceStatusId")]
     public class Remove_DeviceManagement_TermsAndConditions_AcceptanceStatuses : DeleteCmdlet
     {
         /// <summary>
@@ -260,10 +257,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; object in the &quot;acceptanceStatuses&quot; collection.")]
-        public System.String acceptanceStatusId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; object in the &quot;acceptanceStatuses&quot; collection.")]
+        public System.String termsAndConditionsAcceptanceStatusId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.</para>
@@ -276,7 +273,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses/{acceptanceStatusId}";
+            return $"deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}";
         }
     }
 }

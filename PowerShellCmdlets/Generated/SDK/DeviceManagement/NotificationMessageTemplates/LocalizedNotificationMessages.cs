@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_NotificationMessageTemplates_LocalizedNotificationMessages", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.localizedNotificationMessage")]
     [ResourceTypePropertyName("localizedNotificationMessageODataType")]
-    [ResourceIdPropertyName("localizedNotificationMessageId")]
     [ResourceReference]
     public class Get_DeviceManagement_NotificationMessageTemplates_LocalizedNotificationMessages : GetOrSearchCmdlet
     {
@@ -31,9 +30,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.localizedNotificationMessage&quot; object in the &quot;localizedNotificationMessages&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.localizedNotificationMessage&quot; object in the &quot;localizedNotificationMessages&quot; collection.")]
         public System.String localizedNotificationMessageId { get; set; }
 
         /// <summary>
@@ -101,7 +100,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_NotificationMessageTemplates_LocalizedNotificationMessages", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.localizedNotificationMessage")]
     [ODataType("microsoft.graph.localizedNotificationMessage")]
     [ResourceTypePropertyName("localizedNotificationMessageODataType")]
-    [ResourceIdPropertyName("localizedNotificationMessageId")]
     [ResourceReference]
     public class New_DeviceManagement_NotificationMessageTemplates_LocalizedNotificationMessages : PostCmdlet
     {
@@ -110,6 +108,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String localizedNotificationMessageId { get; set; }
 
         /// <summary>
@@ -191,7 +190,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_NotificationMessageTemplates_LocalizedNotificationMessages", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.localizedNotificationMessage")]
     [ODataType("microsoft.graph.localizedNotificationMessage")]
     [ResourceTypePropertyName("localizedNotificationMessageODataType")]
-    [ResourceIdPropertyName("localizedNotificationMessageId")]
     public class Update_DeviceManagement_NotificationMessageTemplates_LocalizedNotificationMessages : PatchCmdlet
     {
         /// <summary>
@@ -199,7 +197,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.localizedNotificationMessage&quot; object in the &quot;localizedNotificationMessages&quot; collection.")]
         public System.String localizedNotificationMessageId { get; set; }
@@ -283,7 +281,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceManagement_NotificationMessageTemplates_LocalizedNotificationMessages", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.localizedNotificationMessage")]
     [ResourceTypePropertyName("localizedNotificationMessageODataType")]
-    [ResourceIdPropertyName("localizedNotificationMessageId")]
     public class Remove_DeviceManagement_NotificationMessageTemplates_LocalizedNotificationMessages : DeleteCmdlet
     {
         /// <summary>
@@ -291,9 +288,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.localizedNotificationMessage&quot; object in the &quot;localizedNotificationMessages&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.localizedNotificationMessage&quot; object in the &quot;localizedNotificationMessages&quot; collection.")]
         public System.String localizedNotificationMessageId { get; set; }
 
         /// <summary>

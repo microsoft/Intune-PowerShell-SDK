@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_NotificationMessageTemplates", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.notificationMessageTemplate")]
     [ResourceTypePropertyName("notificationMessageTemplateODataType")]
-    [ResourceIdPropertyName("notificationMessageTemplateId")]
     [ResourceReference]
     public class Get_DeviceManagement_NotificationMessageTemplates : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.")]
         public System.String notificationMessageTemplateId { get; set; }
 
         /// <summary>
@@ -92,7 +91,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_NotificationMessageTemplates", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.notificationMessageTemplate")]
     [ODataType("microsoft.graph.notificationMessageTemplate")]
     [ResourceTypePropertyName("notificationMessageTemplateODataType")]
-    [ResourceIdPropertyName("notificationMessageTemplateId")]
     [ResourceReference]
     public class New_DeviceManagement_NotificationMessageTemplates : PostCmdlet
     {
@@ -101,6 +99,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String notificationMessageTemplateId { get; set; }
 
         /// <summary>
@@ -178,7 +177,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_NotificationMessageTemplates", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.notificationMessageTemplate")]
     [ODataType("microsoft.graph.notificationMessageTemplate")]
     [ResourceTypePropertyName("notificationMessageTemplateODataType")]
-    [ResourceIdPropertyName("notificationMessageTemplateId")]
     public class Update_DeviceManagement_NotificationMessageTemplates : PatchCmdlet
     {
         /// <summary>
@@ -186,7 +184,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.")]
         public System.String notificationMessageTemplateId { get; set; }
@@ -266,7 +264,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceManagement_NotificationMessageTemplates", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.notificationMessageTemplate")]
     [ResourceTypePropertyName("notificationMessageTemplateODataType")]
-    [ResourceIdPropertyName("notificationMessageTemplateId")]
     public class Remove_DeviceManagement_NotificationMessageTemplates : DeleteCmdlet
     {
         /// <summary>
@@ -274,9 +271,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.")]
         public System.String notificationMessageTemplateId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -293,7 +290,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "DeviceManagement_NotificationMessageTemplates_SendTestMessage", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.notificationMessageTemplate")]
     [ResourceTypePropertyName("notificationMessageTemplateODataType")]
-    [ResourceIdPropertyName("notificationMessageTemplateId")]
     public class Invoke_DeviceManagement_NotificationMessageTemplates_SendTestMessage : ActionCmdlet
     {
         /// <summary>
@@ -301,9 +297,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.")]
         public System.String notificationMessageTemplateId { get; set; }
 
         internal override System.String GetResourcePath()

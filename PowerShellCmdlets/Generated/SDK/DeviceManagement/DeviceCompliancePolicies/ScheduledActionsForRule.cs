@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_DeviceCompliancePolicies_ScheduledActionsForRule", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceComplianceScheduledActionForRule")]
     [ResourceTypePropertyName("scheduledActionsForRuleODataType")]
-    [ResourceIdPropertyName("scheduledActionsForRuleId")]
     [ResourceReference]
     public class Get_DeviceManagement_DeviceCompliancePolicies_ScheduledActionsForRule : GetOrSearchCmdlet
     {
@@ -31,10 +30,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot; object in the &quot;scheduledActionsForRule&quot; collection.")]
-        public System.String scheduledActionsForRuleId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot; object in the &quot;scheduledActionsForRule&quot; collection.")]
+        public System.String deviceComplianceScheduledActionForRuleId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;ruleName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -58,7 +57,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{scheduledActionsForRuleId ?? string.Empty}";
+            return $"deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId ?? string.Empty}";
         }
     }
 
@@ -71,7 +70,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_DeviceCompliancePolicies_ScheduledActionsForRule", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceComplianceScheduledActionForRule")]
     [ODataType("microsoft.graph.deviceComplianceScheduledActionForRule")]
     [ResourceTypePropertyName("scheduledActionsForRuleODataType")]
-    [ResourceIdPropertyName("scheduledActionsForRuleId")]
     [ResourceReference]
     public class New_DeviceManagement_DeviceCompliancePolicies_ScheduledActionsForRule : PostCmdlet
     {
@@ -80,7 +78,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String scheduledActionsForRuleId { get; set; }
+        [ResourceIdParameter]
+        public System.String deviceComplianceScheduledActionForRuleId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceCompliancePolicy&quot; object in the &quot;deviceCompliancePolicies&quot; collection.</para>
@@ -116,7 +115,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{scheduledActionsForRuleId}";
+            return $"deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}";
         }
     }
 
@@ -129,7 +128,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_DeviceCompliancePolicies_ScheduledActionsForRule", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceComplianceScheduledActionForRule")]
     [ODataType("microsoft.graph.deviceComplianceScheduledActionForRule")]
     [ResourceTypePropertyName("scheduledActionsForRuleODataType")]
-    [ResourceIdPropertyName("scheduledActionsForRuleId")]
     public class Update_DeviceManagement_DeviceCompliancePolicies_ScheduledActionsForRule : PatchCmdlet
     {
         /// <summary>
@@ -137,10 +135,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot; object in the &quot;scheduledActionsForRule&quot; collection.")]
-        public System.String scheduledActionsForRuleId { get; set; }
+        public System.String deviceComplianceScheduledActionForRuleId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceCompliancePolicy&quot; object in the &quot;deviceCompliancePolicies&quot; collection.</para>
@@ -176,20 +174,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{scheduledActionsForRuleId}";
+            return $"deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/scheduledActionsForRuleId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/deviceComplianceScheduledActionForRuleId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot; object from the &quot;scheduledActionsForRule&quot; collection.</para>
     ///     <para type="description">The list of scheduled action for this rule</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_DeviceCompliancePolicies_ScheduledActionsForRule", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceComplianceScheduledActionForRule")]
     [ResourceTypePropertyName("scheduledActionsForRuleODataType")]
-    [ResourceIdPropertyName("scheduledActionsForRuleId")]
     public class Remove_DeviceManagement_DeviceCompliancePolicies_ScheduledActionsForRule : DeleteCmdlet
     {
         /// <summary>
@@ -197,10 +194,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot; object in the &quot;scheduledActionsForRule&quot; collection.")]
-        public System.String scheduledActionsForRuleId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot; object in the &quot;scheduledActionsForRule&quot; collection.")]
+        public System.String deviceComplianceScheduledActionForRuleId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceCompliancePolicy&quot; object in the &quot;deviceCompliancePolicies&quot; collection.</para>
@@ -213,7 +210,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{scheduledActionsForRuleId}";
+            return $"deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}";
         }
     }
 }

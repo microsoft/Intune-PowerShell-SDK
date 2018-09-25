@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_ManagedEBooks", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedEBook", "microsoft.graph.iosVppEBook")]
     [ResourceTypePropertyName("managedEBookODataType")]
-    [ResourceIdPropertyName("managedEBookId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_ManagedEBooks : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.")]
         public System.String managedEBookId { get; set; }
 
         /// <summary>
@@ -260,7 +259,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_ManagedEBooks", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedEBook", "microsoft.graph.iosVppEBook")]
     [ResourceTypePropertyName("managedEBookODataType")]
-    [ResourceIdPropertyName("managedEBookId")]
     [ResourceReference]
     public class New_DeviceAppManagement_ManagedEBooks : PostCmdlet
     {
@@ -269,6 +267,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String managedEBookId { get; set; }
 
         /// <summary>
@@ -542,7 +541,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_ManagedEBooks", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.managedEBook", "microsoft.graph.iosVppEBook")]
     [ResourceTypePropertyName("managedEBookODataType")]
-    [ResourceIdPropertyName("managedEBookId")]
     public class Update_DeviceAppManagement_ManagedEBooks : PatchCmdlet
     {
         /// <summary>
@@ -550,7 +548,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.")]
         public System.String managedEBookId { get; set; }
@@ -826,7 +824,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceAppManagement_ManagedEBooks", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedEBook", "microsoft.graph.iosVppEBook")]
     [ResourceTypePropertyName("managedEBookODataType")]
-    [ResourceIdPropertyName("managedEBookId")]
     public class Remove_DeviceAppManagement_ManagedEBooks : DeleteCmdlet
     {
         /// <summary>
@@ -834,9 +831,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.")]
         public System.String managedEBookId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -853,7 +850,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "DeviceAppManagement_ManagedEBooks_Assign", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedEBook", "microsoft.graph.iosVppEBook")]
     [ResourceTypePropertyName("managedEBookODataType")]
-    [ResourceIdPropertyName("managedEBookId")]
     public class Invoke_DeviceAppManagement_ManagedEBooks_Assign : ActionCmdlet
     {
         /// <summary>
@@ -870,9 +866,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.")]
         public System.String managedEBookId { get; set; }
 
         internal override System.String GetResourcePath()

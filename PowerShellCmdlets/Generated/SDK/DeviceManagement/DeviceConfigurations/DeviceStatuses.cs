@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_DeviceConfigurations_DeviceStatuses", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceConfigurationDeviceStatus")]
     [ResourceTypePropertyName("deviceStatusODataType")]
-    [ResourceIdPropertyName("deviceStatusId")]
     [ResourceReference]
     public class Get_DeviceManagement_DeviceConfigurations_DeviceStatuses : GetOrSearchCmdlet
     {
@@ -31,10 +30,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot; object in the &quot;deviceStatuses&quot; collection.")]
-        public System.String deviceStatusId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot; object in the &quot;deviceStatuses&quot; collection.")]
+        public System.String deviceConfigurationDeviceStatusId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceDisplayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -108,7 +107,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuses/{deviceStatusId ?? string.Empty}";
+            return $"deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuses/{deviceConfigurationDeviceStatusId ?? string.Empty}";
         }
     }
 
@@ -121,7 +120,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_DeviceConfigurations_DeviceStatuses", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationDeviceStatus")]
     [ODataType("microsoft.graph.deviceConfigurationDeviceStatus")]
     [ResourceTypePropertyName("deviceStatusODataType")]
-    [ResourceIdPropertyName("deviceStatusId")]
     [ResourceReference]
     public class New_DeviceManagement_DeviceConfigurations_DeviceStatuses : PostCmdlet
     {
@@ -130,7 +128,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String deviceStatusId { get; set; }
+        [ResourceIdParameter]
+        public System.String deviceConfigurationDeviceStatusId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceConfiguration&quot; object in the &quot;deviceConfigurations&quot; collection.</para>
@@ -224,7 +223,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuses/{deviceStatusId}";
+            return $"deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuses/{deviceConfigurationDeviceStatusId}";
         }
     }
 
@@ -237,7 +236,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_DeviceConfigurations_DeviceStatuses", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationDeviceStatus")]
     [ODataType("microsoft.graph.deviceConfigurationDeviceStatus")]
     [ResourceTypePropertyName("deviceStatusODataType")]
-    [ResourceIdPropertyName("deviceStatusId")]
     public class Update_DeviceManagement_DeviceConfigurations_DeviceStatuses : PatchCmdlet
     {
         /// <summary>
@@ -245,10 +243,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot; object in the &quot;deviceStatuses&quot; collection.")]
-        public System.String deviceStatusId { get; set; }
+        public System.String deviceConfigurationDeviceStatusId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceConfiguration&quot; object in the &quot;deviceConfigurations&quot; collection.</para>
@@ -342,20 +340,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuses/{deviceStatusId}";
+            return $"deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuses/{deviceConfigurationDeviceStatusId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuses/deviceStatusId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuses/deviceConfigurationDeviceStatusId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot; object from the &quot;deviceStatuses&quot; collection.</para>
     ///     <para type="description">Device configuration installation status by device.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_DeviceConfigurations_DeviceStatuses", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceConfigurationDeviceStatus")]
     [ResourceTypePropertyName("deviceStatusODataType")]
-    [ResourceIdPropertyName("deviceStatusId")]
     public class Remove_DeviceManagement_DeviceConfigurations_DeviceStatuses : DeleteCmdlet
     {
         /// <summary>
@@ -363,10 +360,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot; object in the &quot;deviceStatuses&quot; collection.")]
-        public System.String deviceStatusId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot; object in the &quot;deviceStatuses&quot; collection.")]
+        public System.String deviceConfigurationDeviceStatusId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceConfiguration&quot; object in the &quot;deviceConfigurations&quot; collection.</para>
@@ -379,7 +376,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuses/{deviceStatusId}";
+            return $"deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuses/{deviceConfigurationDeviceStatusId}";
         }
     }
 }

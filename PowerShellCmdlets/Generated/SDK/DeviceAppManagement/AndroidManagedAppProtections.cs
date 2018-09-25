@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_AndroidManagedAppProtections", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.androidManagedAppProtection")]
     [ResourceTypePropertyName("androidManagedAppProtectionODataType")]
-    [ResourceIdPropertyName("androidManagedAppProtectionId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_AndroidManagedAppProtections : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.androidManagedAppProtection&quot; object in the &quot;androidManagedAppProtections&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.androidManagedAppProtection&quot; object in the &quot;androidManagedAppProtections&quot; collection.")]
         public System.String androidManagedAppProtectionId { get; set; }
 
         /// <summary>
@@ -452,7 +451,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_AndroidManagedAppProtections", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.androidManagedAppProtection")]
     [ODataType("microsoft.graph.androidManagedAppProtection")]
     [ResourceTypePropertyName("androidManagedAppProtectionODataType")]
-    [ResourceIdPropertyName("androidManagedAppProtectionId")]
     [ResourceReference]
     public class New_DeviceAppManagement_AndroidManagedAppProtections : PostCmdlet
     {
@@ -461,6 +459,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String androidManagedAppProtectionId { get; set; }
 
         /// <summary>
@@ -952,7 +951,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_AndroidManagedAppProtections", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.androidManagedAppProtection")]
     [ODataType("microsoft.graph.androidManagedAppProtection")]
     [ResourceTypePropertyName("androidManagedAppProtectionODataType")]
-    [ResourceIdPropertyName("androidManagedAppProtectionId")]
     public class Update_DeviceAppManagement_AndroidManagedAppProtections : PatchCmdlet
     {
         /// <summary>
@@ -960,7 +958,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.androidManagedAppProtection&quot; object in the &quot;androidManagedAppProtections&quot; collection.")]
         public System.String androidManagedAppProtectionId { get; set; }
@@ -1454,7 +1452,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceAppManagement_AndroidManagedAppProtections", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.androidManagedAppProtection")]
     [ResourceTypePropertyName("androidManagedAppProtectionODataType")]
-    [ResourceIdPropertyName("androidManagedAppProtectionId")]
     public class Remove_DeviceAppManagement_AndroidManagedAppProtections : DeleteCmdlet
     {
         /// <summary>
@@ -1462,9 +1459,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.androidManagedAppProtection&quot; object in the &quot;androidManagedAppProtections&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.androidManagedAppProtection&quot; object in the &quot;androidManagedAppProtections&quot; collection.")]
         public System.String androidManagedAppProtectionId { get; set; }
 
         internal override System.String GetResourcePath()

@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_DeviceManagementPartners", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceManagementPartner")]
     [ResourceTypePropertyName("deviceManagementPartnerODataType")]
-    [ResourceIdPropertyName("deviceManagementPartnerId")]
     [ResourceReference]
     public class Get_DeviceManagement_DeviceManagementPartners : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementPartner&quot; object in the &quot;deviceManagementPartners&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementPartner&quot; object in the &quot;deviceManagementPartners&quot; collection.")]
         public System.String deviceManagementPartnerId { get; set; }
 
         /// <summary>
@@ -122,7 +121,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_DeviceManagementPartners", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceManagementPartner")]
     [ODataType("microsoft.graph.deviceManagementPartner")]
     [ResourceTypePropertyName("deviceManagementPartnerODataType")]
-    [ResourceIdPropertyName("deviceManagementPartnerId")]
     [ResourceReference]
     public class New_DeviceManagement_DeviceManagementPartners : PostCmdlet
     {
@@ -131,6 +129,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String deviceManagementPartnerId { get; set; }
 
         /// <summary>
@@ -244,7 +243,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_DeviceManagementPartners", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceManagementPartner")]
     [ODataType("microsoft.graph.deviceManagementPartner")]
     [ResourceTypePropertyName("deviceManagementPartnerODataType")]
-    [ResourceIdPropertyName("deviceManagementPartnerId")]
     public class Update_DeviceManagement_DeviceManagementPartners : PatchCmdlet
     {
         /// <summary>
@@ -252,7 +250,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementPartner&quot; object in the &quot;deviceManagementPartners&quot; collection.")]
         public System.String deviceManagementPartnerId { get; set; }
@@ -368,7 +366,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceManagement_DeviceManagementPartners", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceManagementPartner")]
     [ResourceTypePropertyName("deviceManagementPartnerODataType")]
-    [ResourceIdPropertyName("deviceManagementPartnerId")]
     public class Remove_DeviceManagement_DeviceManagementPartners : DeleteCmdlet
     {
         /// <summary>
@@ -376,9 +373,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementPartner&quot; object in the &quot;deviceManagementPartners&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.deviceManagementPartner&quot; object in the &quot;deviceManagementPartners&quot; collection.")]
         public System.String deviceManagementPartnerId { get; set; }
 
         internal override System.String GetResourcePath()

@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_DetectedApps", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.detectedApp")]
     [ResourceTypePropertyName("detectedAppODataType")]
-    [ResourceIdPropertyName("detectedAppId")]
     [ResourceReference]
     public class Get_DeviceManagement_DetectedApps : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.")]
         public System.String detectedAppId { get; set; }
 
         /// <summary>
@@ -92,7 +91,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_DetectedApps", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.detectedApp")]
     [ODataType("microsoft.graph.detectedApp")]
     [ResourceTypePropertyName("detectedAppODataType")]
-    [ResourceIdPropertyName("detectedAppId")]
     [ResourceReference]
     public class New_DeviceManagement_DetectedApps : PostCmdlet
     {
@@ -101,6 +99,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String detectedAppId { get; set; }
 
         /// <summary>
@@ -174,7 +173,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_DetectedApps", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.detectedApp")]
     [ODataType("microsoft.graph.detectedApp")]
     [ResourceTypePropertyName("detectedAppODataType")]
-    [ResourceIdPropertyName("detectedAppId")]
     public class Update_DeviceManagement_DetectedApps : PatchCmdlet
     {
         /// <summary>
@@ -182,7 +180,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.")]
         public System.String detectedAppId { get; set; }
@@ -258,7 +256,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceManagement_DetectedApps", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.detectedApp")]
     [ResourceTypePropertyName("detectedAppODataType")]
-    [ResourceIdPropertyName("detectedAppId")]
     public class Remove_DeviceManagement_DetectedApps : DeleteCmdlet
     {
         /// <summary>
@@ -266,9 +263,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.")]
         public System.String detectedAppId { get; set; }
 
         internal override System.String GetResourcePath()

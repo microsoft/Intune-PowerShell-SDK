@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceManagement_DeviceConfigurations_DeviceSettingStateSummaries", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.settingStateDeviceSummary")]
     [ResourceTypePropertyName("deviceSettingStateSummaryODataType")]
-    [ResourceIdPropertyName("deviceSettingStateSummaryId")]
     [ResourceReference]
     public class Get_DeviceManagement_DeviceConfigurations_DeviceSettingStateSummaries : GetOrSearchCmdlet
     {
@@ -31,10 +30,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.settingStateDeviceSummary&quot; object in the &quot;deviceSettingStateSummaries&quot; collection.")]
-        public System.String deviceSettingStateSummaryId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.settingStateDeviceSummary&quot; object in the &quot;deviceSettingStateSummaries&quot; collection.")]
+        public System.String settingStateDeviceSummaryId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;settingName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -128,7 +127,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{deviceSettingStateSummaryId ?? string.Empty}";
+            return $"deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{settingStateDeviceSummaryId ?? string.Empty}";
         }
     }
 
@@ -141,7 +140,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceManagement_DeviceConfigurations_DeviceSettingStateSummaries", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.settingStateDeviceSummary")]
     [ODataType("microsoft.graph.settingStateDeviceSummary")]
     [ResourceTypePropertyName("deviceSettingStateSummaryODataType")]
-    [ResourceIdPropertyName("deviceSettingStateSummaryId")]
     [ResourceReference]
     public class New_DeviceManagement_DeviceConfigurations_DeviceSettingStateSummaries : PostCmdlet
     {
@@ -150,7 +148,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String deviceSettingStateSummaryId { get; set; }
+        [ResourceIdParameter]
+        public System.String settingStateDeviceSummaryId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceConfiguration&quot; object in the &quot;deviceConfigurations&quot; collection.</para>
@@ -262,7 +261,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{deviceSettingStateSummaryId}";
+            return $"deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{settingStateDeviceSummaryId}";
         }
     }
 
@@ -275,7 +274,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceManagement_DeviceConfigurations_DeviceSettingStateSummaries", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.settingStateDeviceSummary")]
     [ODataType("microsoft.graph.settingStateDeviceSummary")]
     [ResourceTypePropertyName("deviceSettingStateSummaryODataType")]
-    [ResourceIdPropertyName("deviceSettingStateSummaryId")]
     public class Update_DeviceManagement_DeviceConfigurations_DeviceSettingStateSummaries : PatchCmdlet
     {
         /// <summary>
@@ -283,10 +281,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.settingStateDeviceSummary&quot; object in the &quot;deviceSettingStateSummaries&quot; collection.")]
-        public System.String deviceSettingStateSummaryId { get; set; }
+        public System.String settingStateDeviceSummaryId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceConfiguration&quot; object in the &quot;deviceConfigurations&quot; collection.</para>
@@ -398,20 +396,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{deviceSettingStateSummaryId}";
+            return $"deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{settingStateDeviceSummaryId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.settingStateDeviceSummary&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/deviceSettingStateSummaryId</para>
+    ///     <para type="description">DELETE ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/settingStateDeviceSummaryId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.settingStateDeviceSummary&quot; object from the &quot;deviceSettingStateSummaries&quot; collection.</para>
     ///     <para type="description">Device Configuration Setting State Device Summary</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceManagement_DeviceConfigurations_DeviceSettingStateSummaries", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.settingStateDeviceSummary")]
     [ResourceTypePropertyName("deviceSettingStateSummaryODataType")]
-    [ResourceIdPropertyName("deviceSettingStateSummaryId")]
     public class Remove_DeviceManagement_DeviceConfigurations_DeviceSettingStateSummaries : DeleteCmdlet
     {
         /// <summary>
@@ -419,10 +416,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.settingStateDeviceSummary&quot; object in the &quot;deviceSettingStateSummaries&quot; collection.")]
-        public System.String deviceSettingStateSummaryId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.settingStateDeviceSummary&quot; object in the &quot;deviceSettingStateSummaries&quot; collection.")]
+        public System.String settingStateDeviceSummaryId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceConfiguration&quot; object in the &quot;deviceConfigurations&quot; collection.</para>
@@ -435,7 +432,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{deviceSettingStateSummaryId}";
+            return $"deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{settingStateDeviceSummaryId}";
         }
     }
 }

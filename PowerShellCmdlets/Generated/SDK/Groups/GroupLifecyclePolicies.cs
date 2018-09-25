@@ -12,7 +12,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "Groups_GroupLifecyclePolicies", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
-    [ResourceIdPropertyName("groupLifecyclePolicyId")]
     [ResourceReference]
     public class Get_Groups_GroupLifecyclePolicies : GetOrSearchCmdlet
     {
@@ -30,9 +29,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.groupLifecyclePolicy&quot; object in the &quot;groupLifecyclePolicies&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.groupLifecyclePolicy&quot; object in the &quot;groupLifecyclePolicies&quot; collection.")]
         public System.String groupLifecyclePolicyId { get; set; }
 
         /// <summary>
@@ -76,7 +75,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "Groups_GroupLifecyclePolicies", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.groupLifecyclePolicy")]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
-    [ResourceIdPropertyName("groupLifecyclePolicyId")]
     [ResourceReference]
     public class New_Groups_GroupLifecyclePolicies : PostCmdlet
     {
@@ -85,6 +83,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String groupLifecyclePolicyId { get; set; }
 
         /// <summary>
@@ -140,7 +139,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "Groups_GroupLifecyclePolicies", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.groupLifecyclePolicy")]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
-    [ResourceIdPropertyName("groupLifecyclePolicyId")]
     public class Update_Groups_GroupLifecyclePolicies : PatchCmdlet
     {
         /// <summary>
@@ -148,7 +146,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.groupLifecyclePolicy&quot; object in the &quot;groupLifecyclePolicies&quot; collection.")]
         public System.String groupLifecyclePolicyId { get; set; }
@@ -206,7 +204,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "Groups_GroupLifecyclePolicies", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
-    [ResourceIdPropertyName("groupLifecyclePolicyId")]
     public class Remove_Groups_GroupLifecyclePolicies : DeleteCmdlet
     {
         /// <summary>
@@ -214,9 +211,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.groupLifecyclePolicy&quot; object in the &quot;groupLifecyclePolicies&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.groupLifecyclePolicy&quot; object in the &quot;groupLifecyclePolicies&quot; collection.")]
         public System.String groupLifecyclePolicyId { get; set; }
 
         /// <summary>
@@ -242,7 +239,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "Groups_GroupLifecyclePolicies_AddGroup", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
-    [ResourceIdPropertyName("groupLifecyclePolicyId")]
     public class Invoke_Groups_GroupLifecyclePolicies_AddGroup : ActionCmdlet
     {
         /// <summary>
@@ -259,9 +255,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.groupLifecyclePolicy&quot; object in the &quot;groupLifecyclePolicies&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.groupLifecyclePolicy&quot; object in the &quot;groupLifecyclePolicies&quot; collection.")]
         public System.String groupLifecyclePolicyId { get; set; }
 
         internal override System.String GetResourcePath()
@@ -278,7 +274,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Invoke", "Groups_GroupLifecyclePolicies_RemoveGroup", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
-    [ResourceIdPropertyName("groupLifecyclePolicyId")]
     public class Invoke_Groups_GroupLifecyclePolicies_RemoveGroup : ActionCmdlet
     {
         /// <summary>
@@ -295,9 +290,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.groupLifecyclePolicy&quot; object in the &quot;groupLifecyclePolicies&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.groupLifecyclePolicy&quot; object in the &quot;groupLifecyclePolicies&quot; collection.")]
         public System.String groupLifecyclePolicyId { get; set; }
 
         internal override System.String GetResourcePath()

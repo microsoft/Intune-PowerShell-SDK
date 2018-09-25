@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_DefaultManagedAppProtections", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.defaultManagedAppProtection")]
     [ResourceTypePropertyName("defaultManagedAppProtectionODataType")]
-    [ResourceIdPropertyName("defaultManagedAppProtectionId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_DefaultManagedAppProtections : GetOrSearchCmdlet
     {
@@ -22,9 +21,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.defaultManagedAppProtection&quot; object in the &quot;defaultManagedAppProtections&quot; collection.")]
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.defaultManagedAppProtection&quot; object in the &quot;defaultManagedAppProtections&quot; collection.")]
         public System.String defaultManagedAppProtectionId { get; set; }
 
         /// <summary>
@@ -471,7 +470,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_DefaultManagedAppProtections", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.defaultManagedAppProtection")]
     [ODataType("microsoft.graph.defaultManagedAppProtection")]
     [ResourceTypePropertyName("defaultManagedAppProtectionODataType")]
-    [ResourceIdPropertyName("defaultManagedAppProtectionId")]
     [ResourceReference]
     public class New_DeviceAppManagement_DefaultManagedAppProtections : PostCmdlet
     {
@@ -480,6 +478,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
+        [ResourceIdParameter]
         public System.String defaultManagedAppProtectionId { get; set; }
 
         /// <summary>
@@ -997,7 +996,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_DefaultManagedAppProtections", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.defaultManagedAppProtection")]
     [ODataType("microsoft.graph.defaultManagedAppProtection")]
     [ResourceTypePropertyName("defaultManagedAppProtectionODataType")]
-    [ResourceIdPropertyName("defaultManagedAppProtectionId")]
     public class Update_DeviceAppManagement_DefaultManagedAppProtections : PatchCmdlet
     {
         /// <summary>
@@ -1005,7 +1003,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.defaultManagedAppProtection&quot; object in the &quot;defaultManagedAppProtections&quot; collection.")]
         public System.String defaultManagedAppProtectionId { get; set; }
@@ -1525,7 +1523,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Remove", "DeviceAppManagement_DefaultManagedAppProtections", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.defaultManagedAppProtection")]
     [ResourceTypePropertyName("defaultManagedAppProtectionODataType")]
-    [ResourceIdPropertyName("defaultManagedAppProtectionId")]
     public class Remove_DeviceAppManagement_DefaultManagedAppProtections : DeleteCmdlet
     {
         /// <summary>
@@ -1533,9 +1530,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.defaultManagedAppProtection&quot; object in the &quot;defaultManagedAppProtections&quot; collection.")]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.defaultManagedAppProtection&quot; object in the &quot;defaultManagedAppProtections&quot; collection.")]
         public System.String defaultManagedAppProtectionId { get; set; }
 
         internal override System.String GetResourcePath()

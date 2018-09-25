@@ -6,7 +6,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;userStatusSummary&quot; object.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}/userStatusSummary</para>
+    ///     <para type="description">GET ~/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatusSummary</para>
     ///     <para type="description">Retrieves the &quot;userStatusSummary&quot; object (which is of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;).</para>
     ///     <para type="description">App configuration user status summary.</para>
     /// </summary>
@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.")]
-        public System.String mobileAppConfigurationId { get; set; }
+        public System.String managedDeviceMobileAppConfigurationId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pendingCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -97,13 +97,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}/userStatusSummary";
+            return $"deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatusSummary";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}/userStatusSummary</para>
+    ///     <para type="description">POST ~/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatusSummary</para>
     ///     <para type="description">Creates the &quot;userStatusSummary&quot; object (which is of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;).</para>
     ///     <para type="description">App configuration user status summary.</para>
     /// </summary>
@@ -120,7 +120,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.")]
-        public System.String mobileAppConfigurationId { get; set; }
+        public System.String managedDeviceMobileAppConfigurationId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pendingCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -201,13 +201,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}/userStatusSummary";
+            return $"deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatusSummary";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}/userStatusSummary</para>
+    ///     <para type="description">PATCH ~/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatusSummary</para>
     ///     <para type="description">Updates the &quot;userStatusSummary&quot; object (which is of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;).</para>
     ///     <para type="description">App configuration user status summary.</para>
     /// </summary>
@@ -223,7 +223,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.")]
-        public System.String mobileAppConfigurationId { get; set; }
+        public System.String managedDeviceMobileAppConfigurationId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;pendingCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -304,13 +304,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}/userStatusSummary";
+            return $"deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatusSummary";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}/userStatusSummary</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatusSummary</para>
     ///     <para type="description">Removes the &quot;userStatusSummary&quot; object (which is of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;).</para>
     ///     <para type="description">App configuration user status summary.</para>
     /// </summary>
@@ -326,11 +326,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.")]
-        public System.String mobileAppConfigurationId { get; set; }
+        public System.String managedDeviceMobileAppConfigurationId { get; set; }
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileAppConfigurations/{mobileAppConfigurationId}/userStatusSummary";
+            return $"deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatusSummary";
         }
     }
 }

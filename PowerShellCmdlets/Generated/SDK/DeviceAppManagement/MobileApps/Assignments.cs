@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_MobileApps_Assignments", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.mobileAppAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    [ResourceIdPropertyName("assignmentId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_MobileApps_Assignments : GetOrSearchCmdlet
     {
@@ -31,10 +30,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppAssignment&quot; object in the &quot;assignments&quot; collection.")]
-        public System.String assignmentId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppAssignment&quot; object in the &quot;assignments&quot; collection.")]
+        public System.String mobileAppAssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;intent&quot; property, of type &quot;microsoft.graph.installIntent&quot;.</para>
@@ -68,7 +67,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileApps/{mobileAppId}/assignments/{assignmentId ?? string.Empty}";
+            return $"deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId ?? string.Empty}";
         }
     }
 
@@ -81,7 +80,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_MobileApps_Assignments", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.mobileAppAssignment")]
     [ODataType("microsoft.graph.mobileAppAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    [ResourceIdPropertyName("assignmentId")]
     [ResourceReference]
     public class New_DeviceAppManagement_MobileApps_Assignments : PostCmdlet
     {
@@ -90,7 +88,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String assignmentId { get; set; }
+        [ResourceIdParameter]
+        public System.String mobileAppAssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -140,7 +139,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileApps/{mobileAppId}/assignments/{assignmentId}";
+            return $"deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}";
         }
     }
 
@@ -153,7 +152,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_MobileApps_Assignments", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.mobileAppAssignment")]
     [ODataType("microsoft.graph.mobileAppAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    [ResourceIdPropertyName("assignmentId")]
     public class Update_DeviceAppManagement_MobileApps_Assignments : PatchCmdlet
     {
         /// <summary>
@@ -161,10 +159,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppAssignment&quot; object in the &quot;assignments&quot; collection.")]
-        public System.String assignmentId { get; set; }
+        public System.String mobileAppAssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -214,20 +212,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileApps/{mobileAppId}/assignments/{assignmentId}";
+            return $"deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.mobileAppAssignment&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/mobileApps/{mobileAppId}/assignments/assignmentId</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/mobileApps/{mobileAppId}/assignments/mobileAppAssignmentId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.mobileAppAssignment&quot; object from the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of group assignments for this mobile app.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_MobileApps_Assignments", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileAppAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    [ResourceIdPropertyName("assignmentId")]
     public class Remove_DeviceAppManagement_MobileApps_Assignments : DeleteCmdlet
     {
         /// <summary>
@@ -235,10 +232,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppAssignment&quot; object in the &quot;assignments&quot; collection.")]
-        public System.String assignmentId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.mobileAppAssignment&quot; object in the &quot;assignments&quot; collection.")]
+        public System.String mobileAppAssignmentId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -251,7 +248,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/mobileApps/{mobileAppId}/assignments/{assignmentId}";
+            return $"deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}";
         }
     }
 }

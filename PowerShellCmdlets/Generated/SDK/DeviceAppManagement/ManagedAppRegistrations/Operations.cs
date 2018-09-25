@@ -13,7 +13,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Get", "DeviceAppManagement_ManagedAppRegistrations_Operations", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedAppOperation")]
     [ResourceTypePropertyName("operationODataType")]
-    [ResourceIdPropertyName("operationId")]
     [ResourceReference]
     public class Get_DeviceAppManagement_ManagedAppRegistrations_Operations : GetOrSearchCmdlet
     {
@@ -31,10 +30,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppOperation&quot; object in the &quot;operations&quot; collection.")]
-        public System.String operationId { get; set; }
+        [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppOperation&quot; object in the &quot;operations&quot; collection.")]
+        public System.String managedAppOperationId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -78,7 +77,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{operationId ?? string.Empty}";
+            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId ?? string.Empty}";
         }
     }
 
@@ -91,7 +90,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("New", "DeviceAppManagement_ManagedAppRegistrations_Operations", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedAppOperation")]
     [ODataType("microsoft.graph.managedAppOperation")]
     [ResourceTypePropertyName("operationODataType")]
-    [ResourceIdPropertyName("operationId")]
     [ResourceReference]
     public class New_DeviceAppManagement_ManagedAppRegistrations_Operations : PostCmdlet
     {
@@ -100,7 +98,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        public System.String operationId { get; set; }
+        [ResourceIdParameter]
+        public System.String managedAppOperationId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.</para>
@@ -157,7 +156,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{operationId}";
+            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}";
         }
     }
 
@@ -170,7 +169,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     [Cmdlet("Update", "DeviceAppManagement_ManagedAppRegistrations_Operations", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedAppOperation")]
     [ODataType("microsoft.graph.managedAppOperation")]
     [ResourceTypePropertyName("operationODataType")]
-    [ResourceIdPropertyName("operationId")]
     public class Update_DeviceAppManagement_ManagedAppRegistrations_Operations : PatchCmdlet
     {
         /// <summary>
@@ -178,10 +176,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppOperation&quot; object in the &quot;operations&quot; collection.")]
-        public System.String operationId { get; set; }
+        public System.String managedAppOperationId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.</para>
@@ -238,20 +236,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{operationId}";
+            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}";
         }
     }
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.managedAppOperation&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/operationId</para>
+    ///     <para type="description">DELETE ~/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/managedAppOperationId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.managedAppOperation&quot; object from the &quot;operations&quot; collection.</para>
     ///     <para type="description">Zero or more long running operations triggered on the app registration.</para>
     /// </summary>
     [Cmdlet("Remove", "DeviceAppManagement_ManagedAppRegistrations_Operations", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedAppOperation")]
     [ResourceTypePropertyName("operationODataType")]
-    [ResourceIdPropertyName("operationId")]
     public class Remove_DeviceAppManagement_ManagedAppRegistrations_Operations : DeleteCmdlet
     {
         /// <summary>
@@ -259,10 +256,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [Selectable]
         [IdParameter]
-        [Alias("id")]
+        [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
-        [Parameter(Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppOperation&quot; object in the &quot;operations&quot; collection.")]
-        public System.String operationId { get; set; }
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.managedAppOperation&quot; object in the &quot;operations&quot; collection.")]
+        public System.String managedAppOperationId { get; set; }
 
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.</para>
@@ -275,7 +272,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{operationId}";
+            return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}";
         }
     }
 }

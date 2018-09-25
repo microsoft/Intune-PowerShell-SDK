@@ -40,8 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
 
             // Get the "id" property
             this._idProperty = cmdletType.GetProperties()
-                .Where(prop => prop.GetCustomAttribute<AliasAttribute>()?.AliasNames?
-                    .Contains(ODataConstants.RequestProperties.Id) == true)
+                .Where(prop => prop.GetCustomAttribute<ResourceIdParameterAttribute>() != null)
                 .FirstOrDefault();
 
             // Get the placeholder properties
