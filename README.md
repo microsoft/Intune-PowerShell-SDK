@@ -73,6 +73,12 @@ Get all Intune managed devices:
 ```PowerShell
 Get-DeviceManagement_ManagedDevices
 ```
+Get a filtered list of applications and select only the "displayName" and "publisher" properties:
+```PowerShell
+# The filter string follows the same rules as specified in the OData v4.0 specification.
+# Filter string construction rules: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/abnf/odata-abnf-construction-rules.txt
+Get-DeviceAppManagement_MobileApps -Select displayName, publisher -Filter "isof('microsoft.graph.webApp')"
+```
 
 ## Creating objects
 Create a web application:
@@ -123,3 +129,5 @@ $deviceToLock | Invoke-DeviceManagement_ManagedDevices_RemoteLock
 # Known issues and workarounds
 - Importing the `MSOnline` cmdlets before importing this `Intune` module will cause errors. Please use the `AzureAD` module instead, as the `MSOnline` module is deprecated.
     - If you absolutely must use the `MSOnline` module, it should be imported AFTER the `Intune` module. Note, however, that this is not officially supported.
+- The file "Microsoft.Intune.PowerShellGraphSDK.dll" may be blocked when a release is first downloaded.  This will stop the assembly from correctly loading (and you will see an error message if you try to import the module).
+    - Right-click on the "Microsoft.Intune.PowerShellGraphSDK.dll" file and open "Properties".  At the bottom of the window, there should be a checkbox that will allow you to unblock the file.

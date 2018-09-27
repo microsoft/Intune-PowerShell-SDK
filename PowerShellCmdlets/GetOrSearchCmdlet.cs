@@ -144,7 +144,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                         throw new PSArgumentOutOfRangeException(nameof(this.OrderBy), param, "Expected the OrderBy parameter to contain property names ending with ' asc' or ' desc'");
                     }
                     this.WriteObject(propertyName);
-                    return $"{this.TypeCastMappings[propertyName]} {postfix}";
+                    bool hasNameMapping = this.PropertyNameMappings.TryGetValue(param, out string mappedName);
+
+                    return $"{(hasNameMapping ? mappedName : param)} {postfix}";
                 });
                 queryOptions.Add(ODataConstants.QueryParameters.OrderBy, string.Join(",", sortable));
             }

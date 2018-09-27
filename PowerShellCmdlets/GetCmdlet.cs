@@ -23,7 +23,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         /// Mapping between parameter names and their type cast.
         /// </summary>
-        protected IDictionary<string, string> TypeCastMappings = new Dictionary<string, string>();
+        protected IDictionary<string, string> PropertyNameMappings = new Dictionary<string, string>();
 
         /// <summary>
         /// The list of $select query option values (i.e. property names).
@@ -53,13 +53,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             foreach (PropertyInfo prop in properties)
             {
                 // Store the mapping between the parameter name and its type cast if necessary
-                this.TypeCastMappings.Add(prop.Name, prop.Name);
                 if (Attribute.IsDefined(prop, typeof(DerivedTypeAttribute)))
                 {
                     DerivedTypeAttribute selectableAttr = prop.GetCustomAttribute<DerivedTypeAttribute>(false);
                     if (!string.IsNullOrWhiteSpace(selectableAttr.FullName))
                     {
-                        this.TypeCastMappings[prop.Name] = $"{selectableAttr.FullName}/{prop.Name}";
+                        this.PropertyNameMappings.Add(prop.Name, $"{selectableAttr.FullName}/{prop.Name}");
                     }
                 }
             }
@@ -67,7 +66,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             // Create the "Select" parameter if required
             IEnumerable<string> selectValidValues = properties
                 .Where(param => Attribute.IsDefined(param, typeof(SelectableAttribute)))
-                .Select(param => param.Name);
+                .Select(param => Attribute.IsDefined(param, typeof(ResourceIdParameterAttribute))
+                    ? ODataConstants.SearchResultProperties.Id
+                    : param.Name);
             if (selectValidValues.Any())
             {
                 var selectParameter = new RuntimeDefinedParameter(
@@ -144,14 +145,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             // Select
             if (this.Select != null && this.Select.Any())
             {
-                IEnumerable<string> selectable = this.Select.Select(param => this.TypeCastMappings[param]);
+                IEnumerable<string> selectable = this.Select.Select(param =>
+                    this.PropertyNameMappings.TryGetValue(param, out string mappedName)
+                        ? mappedName
+                        : param);
                 queryOptions.Add(ODataConstants.QueryParameters.Select, string.Join(",", selectable));
             }
 
             // Expand
             if (Expand != null && Expand.Any())
             {
-                IEnumerable<string> selectable = this.Expand.Select(param => this.TypeCastMappings[param]);
+                IEnumerable<string> selectable = this.Expand.Select(param =>
+                    this.PropertyNameMappings.TryGetValue(param, out string mappedName)
+                        ? mappedName
+                        : param);
                 queryOptions.Add(ODataConstants.QueryParameters.Expand, string.Join(",", this.Expand));
             }
 
