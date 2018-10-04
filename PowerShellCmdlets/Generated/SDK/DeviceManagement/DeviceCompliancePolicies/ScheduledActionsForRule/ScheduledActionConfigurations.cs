@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceComplianceActionItem&quot; objects in the &quot;scheduledActionConfigurations&quot; collection.</para>
     ///     <para type="description">The list of scheduled action configurations for this compliance policy.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceManagement_DeviceCompliancePolicies_ScheduledActionsForRule_ScheduledActionConfigurations", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceComplianceActionItem")]
     [ResourceTypePropertyName("scheduledActionConfigurationODataType")]
@@ -95,6 +96,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceComplianceActionItem&quot; object to the &quot;scheduledActionConfigurations&quot; collection.</para>
     ///     <para type="description">The list of scheduled action configurations for this compliance policy.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceManagement_DeviceCompliancePolicies_ScheduledActionsForRule_ScheduledActionConfigurations", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceComplianceActionItem")]
     [ODataType("microsoft.graph.deviceComplianceActionItem")]
     [ResourceTypePropertyName("scheduledActionConfigurationODataType")]
@@ -188,6 +190,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceComplianceActionItem&quot; object in the &quot;scheduledActionConfigurations&quot; collection.</para>
     ///     <para type="description">The list of scheduled action configurations for this compliance policy.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceManagement_DeviceCompliancePolicies_ScheduledActionsForRule_ScheduledActionConfigurations", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceComplianceActionItem")]
     [ODataType("microsoft.graph.deviceComplianceActionItem")]
     [ResourceTypePropertyName("scheduledActionConfigurationODataType")]
@@ -282,6 +285,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceComplianceActionItem&quot; object from the &quot;scheduledActionConfigurations&quot; collection.</para>
     ///     <para type="description">The list of scheduled action configurations for this compliance policy.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceManagement_DeviceCompliancePolicies_ScheduledActionsForRule_ScheduledActionConfigurations", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceComplianceActionItem")]
     [ResourceTypePropertyName("scheduledActionConfigurationODataType")]

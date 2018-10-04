@@ -9,6 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/registeredDevices</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.directoryObject&quot; objects in the &quot;registeredDevices&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DirectoryObjects_RegisteredDevices", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("registeredDeviceODataType")]
@@ -1145,6 +1146,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/registeredDevices/$ref</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.directoryObject&quot; object references in the &quot;registeredDevices&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DirectoryObjects_RegisteredDevicesReferences", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("registeredDeviceODataType")]
@@ -2281,6 +2283,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">POST ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/registeredDevices/$ref</para>
     ///     <para type="description">Creates a reference from the specified &quot;directoryObject&quot; object to a &quot;registeredDevice&quot;.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DirectoryObjects_RegisteredDevicesReferences", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("registeredDeviceODataType")]
@@ -2333,6 +2336,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">DELETE ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/registeredDevices/directoryObjectId/$ref</para>
     ///     <para type="description">Removes a reference from the specified &quot;directoryObject&quot; object to a &quot;registeredDevice&quot;.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DirectoryObjects_RegisteredDevicesReferences", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("registeredDeviceODataType")]

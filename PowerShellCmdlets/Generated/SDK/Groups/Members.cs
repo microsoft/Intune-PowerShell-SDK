@@ -9,6 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/groups/{groupId}/members</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.directoryObject&quot; objects in the &quot;members&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "Groups_Members", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("memberODataType")]
@@ -1142,6 +1143,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/groups/{groupId}/members/$ref</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.directoryObject&quot; object references in the &quot;members&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "Groups_MembersReferences", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("memberODataType")]
@@ -2275,6 +2277,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">POST ~/groups/{groupId}/members/$ref</para>
     ///     <para type="description">Creates a reference from the specified &quot;group&quot; object to a &quot;member&quot;.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "Groups_MembersReferences", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("memberODataType")]
@@ -2322,6 +2325,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">DELETE ~/groups/{groupId}/members/directoryObjectId/$ref</para>
     ///     <para type="description">Removes a reference from the specified &quot;group&quot; object to a &quot;member&quot;.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "Groups_MembersReferences", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("memberODataType")]

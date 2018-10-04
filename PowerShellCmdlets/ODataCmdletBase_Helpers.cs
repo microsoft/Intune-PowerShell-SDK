@@ -257,7 +257,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 }
 
                 // Hide the properties we have been tracking
-                psObj.SetDefaultProperties(prop => !propertiesToHide.Contains(prop.Name));
+                psObj.SetDefaultDisplayProperties(prop => !propertiesToHide.Contains(prop.Name));
             }
         }
     }

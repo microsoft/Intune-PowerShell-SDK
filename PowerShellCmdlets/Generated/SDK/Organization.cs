@@ -9,6 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/organization</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.organization&quot; objects in the &quot;organization&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "Organization", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.organization")]
     [ResourceTypePropertyName("organizationODataType")]
@@ -193,6 +194,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">POST ~/organization</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.organization&quot; object to the &quot;organization&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "Organization", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.organization")]
     [ODataType("microsoft.graph.organization")]
     [ResourceTypePropertyName("organizationODataType")]
@@ -407,6 +409,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">PATCH ~/organization</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "Organization", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.organization")]
     [ODataType("microsoft.graph.organization")]
     [ResourceTypePropertyName("organizationODataType")]
@@ -623,6 +626,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">DELETE ~/organization/organizationId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.organization&quot; object from the &quot;organization&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "Organization", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.organization")]
     [ResourceTypePropertyName("organizationODataType")]
@@ -649,6 +653,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.setMobileDeviceManagementAuthority&quot;, which exists on the type &quot;microsoft.graph.organization&quot;.</para>
     ///     <para type="description">This action returns a &quot;Edm.Int32&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Organization_SetMobileDeviceManagementAuthority", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.organization")]
     [ResourceTypePropertyName("organizationODataType")]

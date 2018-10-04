@@ -9,6 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/inferenceClassification/overrides</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.inferenceClassificationOverride&quot; objects in the &quot;overrides&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DirectoryObjects_InferenceClassification_Overrides", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.inferenceClassificationOverride")]
     [ResourceTypePropertyName("overrideODataType")]
@@ -76,6 +77,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">POST ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/inferenceClassification/overrides</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.inferenceClassificationOverride&quot; object to the &quot;overrides&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DirectoryObjects_InferenceClassification_Overrides", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.inferenceClassificationOverride")]
     [ODataType("microsoft.graph.inferenceClassificationOverride")]
     [ResourceTypePropertyName("overrideODataType")]
@@ -147,6 +149,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">PATCH ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/inferenceClassification/overrides</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.inferenceClassificationOverride&quot; object in the &quot;overrides&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DirectoryObjects_InferenceClassification_Overrides", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.inferenceClassificationOverride")]
     [ODataType("microsoft.graph.inferenceClassificationOverride")]
     [ResourceTypePropertyName("overrideODataType")]
@@ -219,6 +222,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">DELETE ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/inferenceClassification/overrides/inferenceClassificationOverrideId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.inferenceClassificationOverride&quot; object from the &quot;overrides&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DirectoryObjects_InferenceClassification_Overrides", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.inferenceClassificationOverride")]
     [ResourceTypePropertyName("overrideODataType")]

@@ -9,6 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/inferenceClassification</para>
     ///     <para type="description">Retrieves the &quot;inferenceClassification&quot; object (which is of type &quot;microsoft.graph.inferenceClassification&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DirectoryObjects_InferenceClassification", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.inferenceClassification")]
     [ResourceTypePropertyName("inferenceClassificationODataType")]
@@ -57,6 +58,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">PATCH ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/inferenceClassification</para>
     ///     <para type="description">Updates the &quot;inferenceClassification&quot; object (which is of type &quot;microsoft.graph.inferenceClassification&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DirectoryObjects_InferenceClassification", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.inferenceClassification")]
     [ODataType("microsoft.graph.inferenceClassification")]
     [ResourceTypePropertyName("inferenceClassificationODataType")]

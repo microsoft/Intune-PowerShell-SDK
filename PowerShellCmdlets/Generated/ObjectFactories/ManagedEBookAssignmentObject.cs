@@ -5,8 +5,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     using System.Management.Automation;
 
     /// <summary>
-    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.managedEBookAssignment&quot; (or one of it&apos;s derived types).</para>
-    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.managedEBookAssignment&quot; (or one of it&apos;s derived types).</para>
+    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.managedEBookAssignment&quot; (or one of its derived types).</para>
+    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.managedEBookAssignment&quot; (or one of its derived types).</para>
     ///     <para type="description">Contains properties used to assign a eBook to a group.</para>
     /// </summary>
     [Cmdlet("New", "ManagedEBookAssignmentObject", DefaultParameterSetName = @"microsoft.graph.managedEBookAssignment")]

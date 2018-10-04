@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves the &quot;deviceStatusOverview&quot; object (which is of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;).</para>
     ///     <para type="description">Device Configuration devices status overview</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceManagement_DeviceConfigurations_DeviceStatusOverview", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.deviceConfigurationDeviceOverview")]
     [ResourceTypePropertyName("deviceStatusOverviewODataType")]
@@ -107,6 +108,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates the &quot;deviceStatusOverview&quot; object (which is of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;).</para>
     ///     <para type="description">Device Configuration devices status overview</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceManagement_DeviceConfigurations_DeviceStatusOverview", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationDeviceOverview")]
     [ODataType("microsoft.graph.deviceConfigurationDeviceOverview")]
     [ResourceTypePropertyName("deviceStatusOverviewODataType")]
@@ -211,6 +213,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates the &quot;deviceStatusOverview&quot; object (which is of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;).</para>
     ///     <para type="description">Device Configuration devices status overview</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceManagement_DeviceConfigurations_DeviceStatusOverview", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationDeviceOverview")]
     [ODataType("microsoft.graph.deviceConfigurationDeviceOverview")]
     [ResourceTypePropertyName("deviceStatusOverviewODataType")]
@@ -314,6 +317,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes the &quot;deviceStatusOverview&quot; object (which is of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;).</para>
     ///     <para type="description">Device Configuration devices status overview</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceManagement_DeviceConfigurations_DeviceStatusOverview", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceConfigurationDeviceOverview")]
     [ResourceTypePropertyName("deviceStatusOverviewODataType")]

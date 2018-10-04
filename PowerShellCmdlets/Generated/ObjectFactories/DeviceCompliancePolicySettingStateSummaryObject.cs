@@ -5,8 +5,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     using System.Management.Automation;
 
     /// <summary>
-    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; (or one of it&apos;s derived types).</para>
-    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; (or one of it&apos;s derived types).</para>
+    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; (or one of its derived types).</para>
+    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; (or one of its derived types).</para>
     ///     <para type="description">Device Compilance Policy Setting State summary across the account.</para>
     /// </summary>
     [Cmdlet("New", "DeviceCompliancePolicySettingStateSummaryObject", DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicySettingStateSummary")]

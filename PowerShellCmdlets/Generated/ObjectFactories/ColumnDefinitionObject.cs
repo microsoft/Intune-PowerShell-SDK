@@ -5,8 +5,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     using System.Management.Automation;
 
     /// <summary>
-    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.columnDefinition&quot; (or one of it&apos;s derived types).</para>
-    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.columnDefinition&quot; (or one of it&apos;s derived types).</para>
+    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.columnDefinition&quot; (or one of its derived types).</para>
+    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.columnDefinition&quot; (or one of its derived types).</para>
     /// </summary>
     [Cmdlet("New", "ColumnDefinitionObject", DefaultParameterSetName = @"microsoft.graph.columnDefinition")]
     [ODataType("microsoft.graph.columnDefinition")]

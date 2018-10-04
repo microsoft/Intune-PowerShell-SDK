@@ -9,6 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/me</para>
     ///     <para type="description">Retrieves the &quot;me&quot; object (which is of type &quot;microsoft.graph.user&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "Me", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.user")]
     [ResourceTypePropertyName("meODataType")]
@@ -623,6 +624,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">POST ~/me</para>
     ///     <para type="description">Creates the &quot;me&quot; object (which is of type &quot;microsoft.graph.user&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "Me", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.user")]
     [ODataType("microsoft.graph.user")]
     [ResourceTypePropertyName("meODataType")]
@@ -1336,6 +1338,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">PATCH ~/me</para>
     ///     <para type="description">Updates the &quot;me&quot; object (which is of type &quot;microsoft.graph.user&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "Me", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.user")]
     [ODataType("microsoft.graph.user")]
     [ResourceTypePropertyName("meODataType")]
@@ -2049,6 +2052,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">DELETE ~/me</para>
     ///     <para type="description">Removes the &quot;me&quot; object (which is of type &quot;microsoft.graph.user&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "Me", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.user")]
     [ResourceTypePropertyName("meODataType")]
@@ -2065,6 +2069,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.assignLicense&quot;, which exists on the type &quot;microsoft.graph.user&quot;.</para>
     ///     <para type="description">This action returns a &quot;microsoft.graph.user&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Me_AssignLicense", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.user")]
     [ResourceTypePropertyName("meODataType")]
@@ -2101,6 +2106,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.changePassword&quot;, which exists on the type &quot;microsoft.graph.user&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Me_ChangePassword", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.user")]
     [ResourceTypePropertyName("meODataType")]
@@ -2133,6 +2139,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.sendMail&quot;, which exists on the type &quot;microsoft.graph.user&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Me_SendMail", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.user")]
     [ResourceTypePropertyName("meODataType")]
@@ -2166,6 +2173,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.findMeetingTimes&quot;, which exists on the type &quot;microsoft.graph.user&quot;.</para>
     ///     <para type="description">This action returns a &quot;microsoft.graph.meetingTimeSuggestionsResult&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Me_FindMeetingTimes", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.user")]
     [ResourceTypePropertyName("meODataType")]
@@ -2247,6 +2255,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.getMailTips&quot;, which exists on the type &quot;microsoft.graph.user&quot;.</para>
     ///     <para type="description">This action returns a collection of &quot;microsoft.graph.mailTips&quot; objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Me_GetMailTips", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.user")]
     [ResourceTypePropertyName("meODataType")]
@@ -2285,6 +2294,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.removeAllDevicesFromManagement&quot;, which exists on the type &quot;microsoft.graph.user&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Me_RemoveAllDevicesFromManagement", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.user")]
     [ResourceTypePropertyName("meODataType")]
@@ -2301,6 +2311,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.wipeManagedAppRegistrationsByDeviceTag&quot;, which exists on the type &quot;microsoft.graph.user&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Me_WipeManagedAppRegistrationsByDeviceTag", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.user")]
     [ResourceTypePropertyName("meODataType")]
@@ -2325,6 +2336,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.delta&quot;, which exists on the type &quot;microsoft.graph.user&quot;.</para>
     ///     <para type="description">This function returns a collection of &quot;microsoft.graph.user&quot; objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Me_Delta", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.user")]
     [ResourceTypePropertyName("meODataType")]
@@ -2341,6 +2353,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.reminderView&quot;, which exists on the type &quot;microsoft.graph.user&quot;.</para>
     ///     <para type="description">This function returns a collection of &quot;microsoft.graph.reminder&quot; objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Me_ReminderView", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.user")]
     [ResourceTypePropertyName("meODataType")]
@@ -2374,6 +2387,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getManagedAppDiagnosticStatuses&quot;, which exists on the type &quot;microsoft.graph.user&quot;.</para>
     ///     <para type="description">This function returns a collection of &quot;microsoft.graph.managedAppDiagnosticStatus&quot; objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Me_GetManagedAppDiagnosticStatuses", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.user")]
     [ResourceTypePropertyName("meODataType")]
@@ -2390,6 +2404,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getManagedAppPolicies&quot;, which exists on the type &quot;microsoft.graph.user&quot;.</para>
     ///     <para type="description">This function returns a collection of &quot;microsoft.graph.managedAppPolicy&quot; objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Me_GetManagedAppPolicies", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.user")]
     [ResourceTypePropertyName("meODataType")]

@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedAppOperation&quot; objects in the &quot;operations&quot; collection.</para>
     ///     <para type="description">Zero or more long running operations triggered on the app registration.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceAppManagement_ManagedAppRegistrations_Operations", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedAppOperation")]
     [ResourceTypePropertyName("operationODataType")]
@@ -87,6 +88,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.managedAppOperation&quot; object to the &quot;operations&quot; collection.</para>
     ///     <para type="description">Zero or more long running operations triggered on the app registration.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceAppManagement_ManagedAppRegistrations_Operations", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedAppOperation")]
     [ODataType("microsoft.graph.managedAppOperation")]
     [ResourceTypePropertyName("operationODataType")]
@@ -166,6 +168,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.managedAppOperation&quot; object in the &quot;operations&quot; collection.</para>
     ///     <para type="description">Zero or more long running operations triggered on the app registration.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceAppManagement_ManagedAppRegistrations_Operations", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedAppOperation")]
     [ODataType("microsoft.graph.managedAppOperation")]
     [ResourceTypePropertyName("operationODataType")]
@@ -246,6 +249,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.managedAppOperation&quot; object from the &quot;operations&quot; collection.</para>
     ///     <para type="description">Zero or more long running operations triggered on the app registration.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceAppManagement_ManagedAppRegistrations_Operations", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedAppOperation")]
     [ResourceTypePropertyName("operationODataType")]

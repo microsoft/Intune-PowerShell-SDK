@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves the &quot;installSummary&quot; object (which is of type &quot;microsoft.graph.eBookInstallSummary&quot;).</para>
     ///     <para type="description">Mobile App Install Summary.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceAppManagement_ManagedEBooks_InstallSummary", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.eBookInstallSummary")]
     [ResourceTypePropertyName("installSummaryODataType")]
@@ -97,6 +98,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates the &quot;installSummary&quot; object (which is of type &quot;microsoft.graph.eBookInstallSummary&quot;).</para>
     ///     <para type="description">Mobile App Install Summary.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceAppManagement_ManagedEBooks_InstallSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.eBookInstallSummary")]
     [ODataType("microsoft.graph.eBookInstallSummary")]
     [ResourceTypePropertyName("installSummaryODataType")]
@@ -190,6 +192,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates the &quot;installSummary&quot; object (which is of type &quot;microsoft.graph.eBookInstallSummary&quot;).</para>
     ///     <para type="description">Mobile App Install Summary.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceAppManagement_ManagedEBooks_InstallSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.eBookInstallSummary")]
     [ODataType("microsoft.graph.eBookInstallSummary")]
     [ResourceTypePropertyName("installSummaryODataType")]
@@ -282,6 +285,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes the &quot;installSummary&quot; object (which is of type &quot;microsoft.graph.eBookInstallSummary&quot;).</para>
     ///     <para type="description">Mobile App Install Summary.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceAppManagement_ManagedEBooks_InstallSummary", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.eBookInstallSummary")]
     [ResourceTypePropertyName("installSummaryODataType")]

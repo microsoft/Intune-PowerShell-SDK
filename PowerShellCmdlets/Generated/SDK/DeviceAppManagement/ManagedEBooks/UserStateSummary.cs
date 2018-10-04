@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.userInstallStateSummary&quot; objects in the &quot;userStateSummary&quot; collection.</para>
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceAppManagement_ManagedEBooks_UserStateSummary", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.userInstallStateSummary")]
     [ResourceTypePropertyName("userStateSummaryODataType")]
@@ -97,6 +98,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.userInstallStateSummary&quot; object to the &quot;userStateSummary&quot; collection.</para>
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceAppManagement_ManagedEBooks_UserStateSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.userInstallStateSummary")]
     [ODataType("microsoft.graph.userInstallStateSummary")]
     [ResourceTypePropertyName("userStateSummaryODataType")]
@@ -188,6 +190,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.userInstallStateSummary&quot; object in the &quot;userStateSummary&quot; collection.</para>
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceAppManagement_ManagedEBooks_UserStateSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.userInstallStateSummary")]
     [ODataType("microsoft.graph.userInstallStateSummary")]
     [ResourceTypePropertyName("userStateSummaryODataType")]
@@ -280,6 +283,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.userInstallStateSummary&quot; object from the &quot;userStateSummary&quot; collection.</para>
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceAppManagement_ManagedEBooks_UserStateSummary", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.userInstallStateSummary")]
     [ResourceTypePropertyName("userStateSummaryODataType")]

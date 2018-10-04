@@ -9,6 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/me/licenseDetails</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.licenseDetails&quot; objects in the &quot;licenseDetails&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "Me_LicenseDetails", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.licenseDetails")]
     [ResourceTypePropertyName("licenseDetailODataType")]
@@ -62,6 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">POST ~/me/licenseDetails</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.licenseDetails&quot; object to the &quot;licenseDetails&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "Me_LicenseDetails", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.licenseDetails")]
     [ODataType("microsoft.graph.licenseDetails")]
     [ResourceTypePropertyName("licenseDetailODataType")]
@@ -118,6 +120,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">PATCH ~/me/licenseDetails</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.licenseDetails&quot; object in the &quot;licenseDetails&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "Me_LicenseDetails", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.licenseDetails")]
     [ODataType("microsoft.graph.licenseDetails")]
     [ResourceTypePropertyName("licenseDetailODataType")]
@@ -175,6 +178,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">DELETE ~/me/licenseDetails/licenseDetailId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.licenseDetails&quot; object from the &quot;licenseDetails&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "Me_LicenseDetails", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.licenseDetails")]
     [ResourceTypePropertyName("licenseDetailODataType")]

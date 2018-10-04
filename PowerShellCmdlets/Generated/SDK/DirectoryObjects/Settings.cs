@@ -9,6 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/settings</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.groupSetting&quot; objects in the &quot;settings&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DirectoryObjects_Settings", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.groupSetting")]
     [ResourceTypePropertyName("settingODataType")]
@@ -84,6 +85,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">POST ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/settings</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.groupSetting&quot; object to the &quot;settings&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DirectoryObjects_Settings", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.groupSetting")]
     [ODataType("microsoft.graph.groupSetting")]
     [ResourceTypePropertyName("settingODataType")]
@@ -162,6 +164,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">PATCH ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/settings</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.groupSetting&quot; object in the &quot;settings&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DirectoryObjects_Settings", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.groupSetting")]
     [ODataType("microsoft.graph.groupSetting")]
     [ResourceTypePropertyName("settingODataType")]
@@ -241,6 +244,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">DELETE ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/settings/groupSettingId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.groupSetting&quot; object from the &quot;settings&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DirectoryObjects_Settings", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.groupSetting")]
     [ResourceTypePropertyName("settingODataType")]

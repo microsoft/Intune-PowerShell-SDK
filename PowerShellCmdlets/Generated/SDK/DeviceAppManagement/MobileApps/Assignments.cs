@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.mobileAppAssignment&quot; objects in the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of group assignments for this mobile app.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceAppManagement_MobileApps_Assignments", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.mobileAppAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
@@ -77,6 +78,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.mobileAppAssignment&quot; object to the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of group assignments for this mobile app.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceAppManagement_MobileApps_Assignments", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.mobileAppAssignment")]
     [ODataType("microsoft.graph.mobileAppAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
@@ -149,6 +151,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.mobileAppAssignment&quot; object in the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of group assignments for this mobile app.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceAppManagement_MobileApps_Assignments", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.mobileAppAssignment")]
     [ODataType("microsoft.graph.mobileAppAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
@@ -222,6 +225,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.mobileAppAssignment&quot; object from the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of group assignments for this mobile app.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceAppManagement_MobileApps_Assignments", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileAppAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]

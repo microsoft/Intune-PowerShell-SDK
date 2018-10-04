@@ -5,8 +5,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     using System.Management.Automation;
 
     /// <summary>
-    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot; (or one of it&apos;s derived types).</para>
-    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot; (or one of it&apos;s derived types).</para>
+    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot; (or one of its derived types).</para>
+    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot; (or one of its derived types).</para>
     ///     <para type="description">Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.</para>
     /// </summary>
     [Cmdlet("New", "OnPremisesConditionalAccessSettingsObject", DefaultParameterSetName = @"microsoft.graph.onPremisesConditionalAccessSettings")]

@@ -5,8 +5,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     using System.Management.Automation;
 
     /// <summary>
-    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.deviceCompliancePolicy&quot; (or one of it&apos;s derived types).</para>
-    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceCompliancePolicy&quot; (or one of it&apos;s derived types).</para>
+    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.deviceCompliancePolicy&quot; (or one of its derived types).</para>
+    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceCompliancePolicy&quot; (or one of its derived types).</para>
     ///     <para type="description">This is the base class for Compliance policy. Compliance policies are platform specific and individual per-platform compliance policies inherit from here. </para>
     /// </summary>
     [Cmdlet("New", "DeviceCompliancePolicyObject", DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicy")]

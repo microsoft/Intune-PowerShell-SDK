@@ -5,8 +5,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     using System.Management.Automation;
 
     /// <summary>
-    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.termsAndConditionsAssignment&quot; (or one of it&apos;s derived types).</para>
-    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.termsAndConditionsAssignment&quot; (or one of it&apos;s derived types).</para>
+    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.termsAndConditionsAssignment&quot; (or one of its derived types).</para>
+    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.termsAndConditionsAssignment&quot; (or one of its derived types).</para>
     ///     <para type="description">A termsAndConditionsAssignment entity represents the assignment of a given Terms and Conditions (T&amp;C) policy to a given group. Users in the group will be required to accept the terms in order to have devices enrolled into Intune.</para>
     /// </summary>
     [Cmdlet("New", "TermsAndConditionsAssignmentObject", DefaultParameterSetName = @"microsoft.graph.termsAndConditionsAssignment")]

@@ -5,8 +5,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     using System.Management.Automation;
 
     /// <summary>
-    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; (or one of it&apos;s derived types).</para>
-    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; (or one of it&apos;s derived types).</para>
+    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; (or one of its derived types).</para>
+    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; (or one of its derived types).</para>
     ///     <para type="description">telecomExpenseManagementPartner resources represent the metadata and status of a given TEM service. Once your organization has onboarded with a partner, the partner can be enabled or disabled to switch TEM functionality on or off.</para>
     /// </summary>
     [Cmdlet("New", "TelecomExpenseManagementPartnerObject", DefaultParameterSetName = @"microsoft.graph.telecomExpenseManagementPartner")]

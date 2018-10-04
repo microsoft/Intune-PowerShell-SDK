@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves the &quot;conditionalAccessSettings&quot; object (which is of type &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot;).</para>
     ///     <para type="description">The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceManagement_ConditionalAccessSettings", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.onPremisesConditionalAccessSettings")]
     [ResourceTypePropertyName("conditionalAccessSettingODataType")]
@@ -66,6 +67,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates the &quot;conditionalAccessSettings&quot; object (which is of type &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot;).</para>
     ///     <para type="description">The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceManagement_ConditionalAccessSettings", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.onPremisesConditionalAccessSettings")]
     [ODataType("microsoft.graph.onPremisesConditionalAccessSettings")]
     [ResourceTypePropertyName("conditionalAccessSettingODataType")]
@@ -130,6 +132,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates the &quot;conditionalAccessSettings&quot; object (which is of type &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot;).</para>
     ///     <para type="description">The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceManagement_ConditionalAccessSettings", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.onPremisesConditionalAccessSettings")]
     [ODataType("microsoft.graph.onPremisesConditionalAccessSettings")]
     [ResourceTypePropertyName("conditionalAccessSettingODataType")]
@@ -193,6 +196,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes the &quot;conditionalAccessSettings&quot; object (which is of type &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot;).</para>
     ///     <para type="description">The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceManagement_ConditionalAccessSettings", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.onPremisesConditionalAccessSettings")]
     [ResourceTypePropertyName("conditionalAccessSettingODataType")]

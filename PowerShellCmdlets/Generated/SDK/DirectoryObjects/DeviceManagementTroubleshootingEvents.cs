@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; objects in the &quot;deviceManagementTroubleshootingEvents&quot; collection.</para>
     ///     <para type="description">The list of troubleshooting events for this user.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DirectoryObjects_DeviceManagementTroubleshootingEvents", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
     [ResourceTypePropertyName("deviceManagementTroubleshootingEventODataType")]
@@ -168,6 +169,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object to the &quot;deviceManagementTroubleshootingEvents&quot; collection.</para>
     ///     <para type="description">The list of troubleshooting events for this user.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DirectoryObjects_DeviceManagementTroubleshootingEvents", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
     [ResourceTypePropertyName("deviceManagementTroubleshootingEventODataType")]
@@ -352,6 +354,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;deviceManagementTroubleshootingEvents&quot; collection.</para>
     ///     <para type="description">The list of troubleshooting events for this user.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DirectoryObjects_DeviceManagementTroubleshootingEvents", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
     [ResourceTypePropertyName("deviceManagementTroubleshootingEventODataType")]
@@ -537,6 +540,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object from the &quot;deviceManagementTroubleshootingEvents&quot; collection.</para>
     ///     <para type="description">The list of troubleshooting events for this user.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DirectoryObjects_DeviceManagementTroubleshootingEvents", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
     [ResourceTypePropertyName("deviceManagementTroubleshootingEventODataType")]

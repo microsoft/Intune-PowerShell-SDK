@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves the &quot;userStatusOverview&quot; object (which is of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;).</para>
     ///     <para type="description">Device compliance users status overview</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceManagement_DeviceCompliancePolicies_UserStatusOverview", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.deviceComplianceUserOverview")]
     [ResourceTypePropertyName("userStatusOverviewODataType")]
@@ -107,6 +108,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates the &quot;userStatusOverview&quot; object (which is of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;).</para>
     ///     <para type="description">Device compliance users status overview</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceManagement_DeviceCompliancePolicies_UserStatusOverview", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceComplianceUserOverview")]
     [ODataType("microsoft.graph.deviceComplianceUserOverview")]
     [ResourceTypePropertyName("userStatusOverviewODataType")]
@@ -211,6 +213,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates the &quot;userStatusOverview&quot; object (which is of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;).</para>
     ///     <para type="description">Device compliance users status overview</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceManagement_DeviceCompliancePolicies_UserStatusOverview", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceComplianceUserOverview")]
     [ODataType("microsoft.graph.deviceComplianceUserOverview")]
     [ResourceTypePropertyName("userStatusOverviewODataType")]
@@ -314,6 +317,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes the &quot;userStatusOverview&quot; object (which is of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;).</para>
     ///     <para type="description">Device compliance users status overview</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceManagement_DeviceCompliancePolicies_UserStatusOverview", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceComplianceUserOverview")]
     [ResourceTypePropertyName("userStatusOverviewODataType")]

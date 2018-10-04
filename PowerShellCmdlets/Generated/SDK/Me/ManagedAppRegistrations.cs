@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedAppRegistration&quot; objects in the &quot;managedAppRegistrations&quot; collection.</para>
     ///     <para type="description">Zero or more managed app registrations that belong to the user.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "Me_ManagedAppRegistrations", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration")]
     [ResourceTypePropertyName("managedAppRegistrationODataType")]
@@ -186,6 +187,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedAppRegistration&quot; object references in the &quot;managedAppRegistrations&quot; collection.</para>
     ///     <para type="description">Zero or more managed app registrations that belong to the user.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "Me_ManagedAppRegistrationsReferences", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration")]
     [ResourceTypePropertyName("managedAppRegistrationODataType")]
@@ -362,6 +364,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a reference from the specified &quot;me&quot; object to a &quot;managedAppRegistration&quot;.</para>
     ///     <para type="description">Zero or more managed app registrations that belong to the user.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "Me_ManagedAppRegistrationsReferences", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration")]
     [ResourceTypePropertyName("managedAppRegistrationODataType")]
@@ -401,6 +404,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a reference from the specified &quot;me&quot; object to a &quot;managedAppRegistration&quot;.</para>
     ///     <para type="description">Zero or more managed app registrations that belong to the user.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "Me_ManagedAppRegistrationsReferences", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration")]
     [ResourceTypePropertyName("managedAppRegistrationODataType")]

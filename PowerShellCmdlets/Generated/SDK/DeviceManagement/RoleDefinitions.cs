@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.roleDefinition&quot; objects in the &quot;roleDefinitions&quot; collection.</para>
     ///     <para type="description">The Role Definitions.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceManagement_RoleDefinitions", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition")]
     [ResourceTypePropertyName("roleDefinitionODataType")]
@@ -87,6 +88,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.roleDefinition&quot; object to the &quot;roleDefinitions&quot; collection.</para>
     ///     <para type="description">The Role Definitions.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceManagement_RoleDefinitions", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition")]
     [ResourceTypePropertyName("roleDefinitionODataType")]
@@ -191,6 +193,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.</para>
     ///     <para type="description">The Role Definitions.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceManagement_RoleDefinitions", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition")]
     [ResourceTypePropertyName("roleDefinitionODataType")]
@@ -296,6 +299,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.roleDefinition&quot; object from the &quot;roleDefinitions&quot; collection.</para>
     ///     <para type="description">The Role Definitions.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceManagement_RoleDefinitions", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition")]
     [ResourceTypePropertyName("roleDefinitionODataType")]

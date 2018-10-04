@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceCompliancePolicyState&quot; objects in the &quot;deviceCompliancePolicyStates&quot; collection.</para>
     ///     <para type="description">Device compliance policy states for this device.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "Me_ManagedDevices_DeviceCompliancePolicyStates", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceCompliancePolicyState")]
     [ResourceTypePropertyName("deviceCompliancePolicyStateODataType")]
@@ -105,6 +106,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceCompliancePolicyState&quot; object to the &quot;deviceCompliancePolicyStates&quot; collection.</para>
     ///     <para type="description">Device compliance policy states for this device.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "Me_ManagedDevices_DeviceCompliancePolicyStates", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyState")]
     [ODataType("microsoft.graph.deviceCompliancePolicyState")]
     [ResourceTypePropertyName("deviceCompliancePolicyStateODataType")]
@@ -214,6 +216,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceCompliancePolicyState&quot; object in the &quot;deviceCompliancePolicyStates&quot; collection.</para>
     ///     <para type="description">Device compliance policy states for this device.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "Me_ManagedDevices_DeviceCompliancePolicyStates", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyState")]
     [ODataType("microsoft.graph.deviceCompliancePolicyState")]
     [ResourceTypePropertyName("deviceCompliancePolicyStateODataType")]
@@ -324,6 +327,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceCompliancePolicyState&quot; object from the &quot;deviceCompliancePolicyStates&quot; collection.</para>
     ///     <para type="description">Device compliance policy states for this device.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "Me_ManagedDevices_DeviceCompliancePolicyStates", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceCompliancePolicyState")]
     [ResourceTypePropertyName("deviceCompliancePolicyStateODataType")]

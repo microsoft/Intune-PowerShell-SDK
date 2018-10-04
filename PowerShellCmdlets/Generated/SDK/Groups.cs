@@ -9,6 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/groups</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.group&quot; objects in the &quot;groups&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "Groups", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
@@ -295,6 +296,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">POST ~/groups</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.group&quot; object to the &quot;groups&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "Groups", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.group")]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
@@ -618,6 +620,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">PATCH ~/groups</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "Groups", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.group")]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
@@ -943,6 +946,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">DELETE ~/groups/groupId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.group&quot; object from the &quot;groups&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "Groups", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
@@ -969,6 +973,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.subscribeByMail&quot;, which exists on the type &quot;microsoft.graph.group&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Groups_SubscribeByMail", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
@@ -995,6 +1000,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.unsubscribeByMail&quot;, which exists on the type &quot;microsoft.graph.group&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Groups_UnsubscribeByMail", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
@@ -1021,6 +1027,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.addFavorite&quot;, which exists on the type &quot;microsoft.graph.group&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Groups_AddFavorite", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
@@ -1047,6 +1054,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.removeFavorite&quot;, which exists on the type &quot;microsoft.graph.group&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Groups_RemoveFavorite", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
@@ -1073,6 +1081,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.resetUnseenCount&quot;, which exists on the type &quot;microsoft.graph.group&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Groups_ResetUnseenCount", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
@@ -1099,6 +1108,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.renew&quot;, which exists on the type &quot;microsoft.graph.group&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Groups_Renew", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
@@ -1125,6 +1135,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.delta&quot;, which exists on the type &quot;microsoft.graph.group&quot;.</para>
     ///     <para type="description">This function returns a collection of &quot;microsoft.graph.group&quot; objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Groups_Delta", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]

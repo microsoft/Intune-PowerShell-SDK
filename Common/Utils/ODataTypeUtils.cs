@@ -131,7 +131,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                 }
                 else
                 {
-                    return $"\"{stringValue}\"";
+                    string jsonStringValue = stringValue
+                        .Replace("\\", "\\\\")
+                        .Replace("\"", "\\\"")
+                        .Replace("\n", "\\n")
+                        .Replace("\r", "\\r")
+                        .Replace("\t", "\\t")
+                        .Replace("\f", "\\f")
+                        .Replace("\b", "\\b");
+                    return $"\"{jsonStringValue}\"";
                 }
             }
             else if (value is byte[] bytes) // && oDataTypeFullName == "Edm.Binary"
@@ -250,7 +258,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                     }
                     else if (value is PSObject psObject)
                     {
-                        foreach (PSPropertyInfo prop in psObject.Properties)
+                        foreach (PSPropertyInfo prop in psObject.GetDefaultDisplayProperties())
                         {
                             yield return Tuple.Create(prop.Name, prop.Value);
                         }

@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.iosUpdateDeviceStatus&quot; objects in the &quot;iosUpdateStatuses&quot; collection.</para>
     ///     <para type="description">The IOS software update installation statuses for this account.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceManagement_IosUpdateStatuses", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.iosUpdateDeviceStatus")]
     [ResourceTypePropertyName("iosUpdateStatusODataType")]
@@ -148,6 +149,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object to the &quot;iosUpdateStatuses&quot; collection.</para>
     ///     <para type="description">The IOS software update installation statuses for this account.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceManagement_IosUpdateStatuses", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus")]
     [ODataType("microsoft.graph.iosUpdateDeviceStatus")]
     [ResourceTypePropertyName("iosUpdateStatusODataType")]
@@ -303,6 +305,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.</para>
     ///     <para type="description">The IOS software update installation statuses for this account.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceManagement_IosUpdateStatuses", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus")]
     [ODataType("microsoft.graph.iosUpdateDeviceStatus")]
     [ResourceTypePropertyName("iosUpdateStatusODataType")]
@@ -459,6 +462,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object from the &quot;iosUpdateStatuses&quot; collection.</para>
     ///     <para type="description">The IOS software update installation statuses for this account.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceManagement_IosUpdateStatuses", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.iosUpdateDeviceStatus")]
     [ResourceTypePropertyName("iosUpdateStatusODataType")]

@@ -9,6 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/extensions</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.extension&quot; objects in the &quot;extensions&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DirectoryObjects_Extensions", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.extension", "microsoft.graph.openTypeExtension")]
     [ResourceTypePropertyName("extensionODataType")]
@@ -68,6 +69,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">POST ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/extensions</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.extension&quot; object to the &quot;extensions&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DirectoryObjects_Extensions", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.extension", "microsoft.graph.openTypeExtension")]
     [ResourceTypePropertyName("extensionODataType")]
@@ -133,6 +135,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">PATCH ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/extensions</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.extension&quot; object in the &quot;extensions&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DirectoryObjects_Extensions", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.extension", "microsoft.graph.openTypeExtension")]
     [ResourceTypePropertyName("extensionODataType")]
@@ -199,6 +202,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">DELETE ~/directoryObjects/{directoryObjectId}/{directoryObjectODataType}/extensions/extensionId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.extension&quot; object from the &quot;extensions&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DirectoryObjects_Extensions", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.extension", "microsoft.graph.openTypeExtension")]
     [ResourceTypePropertyName("extensionODataType")]

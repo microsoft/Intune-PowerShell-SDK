@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.termsAndConditionsAssignment&quot; objects in the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of assignments for this T&amp;C policy.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceManagement_TermsAndConditions_Assignments", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.termsAndConditionsAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
@@ -57,6 +58,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.termsAndConditionsAssignment&quot; object to the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of assignments for this T&amp;C policy.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceManagement_TermsAndConditions_Assignments", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.termsAndConditionsAssignment")]
     [ODataType("microsoft.graph.termsAndConditionsAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
@@ -103,6 +105,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.termsAndConditionsAssignment&quot; object in the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of assignments for this T&amp;C policy.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceManagement_TermsAndConditions_Assignments", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.termsAndConditionsAssignment")]
     [ODataType("microsoft.graph.termsAndConditionsAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
@@ -150,6 +153,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.termsAndConditionsAssignment&quot; object from the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of assignments for this T&amp;C policy.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceManagement_TermsAndConditions_Assignments", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.termsAndConditionsAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]

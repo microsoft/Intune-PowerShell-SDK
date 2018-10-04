@@ -9,6 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/groups/{groupId}/photo</para>
     ///     <para type="description">Retrieves the &quot;photo&quot; object (which is of type &quot;microsoft.graph.profilePhoto&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "Groups_Photo", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
@@ -53,6 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">PATCH ~/groups/{groupId}/photo</para>
     ///     <para type="description">Updates the &quot;photo&quot; object (which is of type &quot;microsoft.graph.profilePhoto&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "Groups_Photo", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.profilePhoto")]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
@@ -98,6 +100,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/groups/{groupId}/photo/$value</para>
     ///     <para type="description">Retrieves the data stream from the &quot;photo&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "Groups_PhotoData")]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
@@ -141,6 +144,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">PUT ~/groups/{groupId}/photo/$value</para>
     ///     <para type="description">Sets the data for the &quot;photo&quot; property.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "Groups_PhotoData", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
@@ -171,6 +175,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">PUT ~/groups/{groupId}/photo/$value</para>
     ///     <para type="description">Sets the data for the &quot;photo&quot; property.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Set", "Groups_PhotoData", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
@@ -196,6 +201,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">DELETE ~/groups/{groupId}/photo/$value</para>
     ///     <para type="description">Removes a reference from a &quot;photo&quot; resource (which is of type &quot;microsoft.graph.profilePhoto&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "Groups_PhotoData", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]

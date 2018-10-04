@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedEBook&quot; objects in the &quot;managedEBooks&quot; collection.</para>
     ///     <para type="description">The Managed eBook.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceAppManagement_ManagedEBooks", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedEBook", "microsoft.graph.iosVppEBook")]
     [ResourceTypePropertyName("managedEBookODataType")]
@@ -256,6 +257,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.managedEBook&quot; object to the &quot;managedEBooks&quot; collection.</para>
     ///     <para type="description">The Managed eBook.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceAppManagement_ManagedEBooks", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedEBook", "microsoft.graph.iosVppEBook")]
     [ResourceTypePropertyName("managedEBookODataType")]
@@ -538,6 +540,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
     ///     <para type="description">The Managed eBook.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceAppManagement_ManagedEBooks", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.managedEBook", "microsoft.graph.iosVppEBook")]
     [ResourceTypePropertyName("managedEBookODataType")]
@@ -821,6 +824,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.managedEBook&quot; object from the &quot;managedEBooks&quot; collection.</para>
     ///     <para type="description">The Managed eBook.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceAppManagement_ManagedEBooks", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedEBook", "microsoft.graph.iosVppEBook")]
     [ResourceTypePropertyName("managedEBookODataType")]
@@ -847,6 +851,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.assign&quot;, which exists on the type &quot;microsoft.graph.managedEBook&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DeviceAppManagement_ManagedEBooks_Assign", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedEBook", "microsoft.graph.iosVppEBook")]
     [ResourceTypePropertyName("managedEBookODataType")]

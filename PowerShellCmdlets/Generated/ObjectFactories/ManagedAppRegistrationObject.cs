@@ -5,8 +5,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     using System.Management.Automation;
 
     /// <summary>
-    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.managedAppRegistration&quot; (or one of it&apos;s derived types).</para>
-    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.managedAppRegistration&quot; (or one of it&apos;s derived types).</para>
+    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.managedAppRegistration&quot; (or one of its derived types).</para>
+    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.managedAppRegistration&quot; (or one of its derived types).</para>
     ///     <para type="description">The ManagedAppEntity is the base entity type for all other entity types under app management workflow.</para>
     ///     <para type="description">The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization.</para>
     /// </summary>

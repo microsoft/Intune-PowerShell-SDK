@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus&quot; objects in the &quot;deviceStatuses&quot; collection.</para>
     ///     <para type="description">List of ManagedDeviceMobileAppConfigurationDeviceStatus.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceAppManagement_MobileAppConfigurations_DeviceStatuses", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus")]
     [ResourceTypePropertyName("deviceStatusODataType")]
@@ -117,6 +118,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus&quot; object to the &quot;deviceStatuses&quot; collection.</para>
     ///     <para type="description">List of ManagedDeviceMobileAppConfigurationDeviceStatus.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceAppManagement_MobileAppConfigurations_DeviceStatuses", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus")]
     [ResourceTypePropertyName("deviceStatusODataType")]
@@ -233,6 +235,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus&quot; object in the &quot;deviceStatuses&quot; collection.</para>
     ///     <para type="description">List of ManagedDeviceMobileAppConfigurationDeviceStatus.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceAppManagement_MobileAppConfigurations_DeviceStatuses", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus")]
     [ResourceTypePropertyName("deviceStatusODataType")]
@@ -350,6 +353,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus&quot; object from the &quot;deviceStatuses&quot; collection.</para>
     ///     <para type="description">List of ManagedDeviceMobileAppConfigurationDeviceStatus.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceAppManagement_MobileAppConfigurations_DeviceStatuses", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus")]
     [ResourceTypePropertyName("deviceStatusODataType")]

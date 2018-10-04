@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; objects in the &quot;protectedAppLockerFiles&quot; collection.</para>
     ///     <para type="description">Another way to input protected apps through xml files</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceAppManagement_WindowsInformationProtectionPolicies_ProtectedAppLockerFiles", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("protectedAppLockerFileODataType")]
@@ -100,6 +101,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object to the &quot;protectedAppLockerFiles&quot; collection.</para>
     ///     <para type="description">Another way to input protected apps through xml files</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceAppManagement_WindowsInformationProtectionPolicies_ProtectedAppLockerFiles", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("protectedAppLockerFileODataType")]
@@ -193,6 +195,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;protectedAppLockerFiles&quot; collection.</para>
     ///     <para type="description">Another way to input protected apps through xml files</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceAppManagement_WindowsInformationProtectionPolicies_ProtectedAppLockerFiles", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("protectedAppLockerFileODataType")]
@@ -287,6 +290,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object from the &quot;protectedAppLockerFiles&quot; collection.</para>
     ///     <para type="description">Another way to input protected apps through xml files</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceAppManagement_WindowsInformationProtectionPolicies_ProtectedAppLockerFiles", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("protectedAppLockerFileODataType")]

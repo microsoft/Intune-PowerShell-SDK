@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.mobileAppCategory&quot; objects in the &quot;mobileAppCategories&quot; collection.</para>
     ///     <para type="description">The mobile app categories.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceAppManagement_MobileAppCategories", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.mobileAppCategory")]
     [ResourceTypePropertyName("mobileAppCategoryODataType")]
@@ -58,6 +59,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.mobileAppCategory&quot; object to the &quot;mobileAppCategories&quot; collection.</para>
     ///     <para type="description">The mobile app categories.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceAppManagement_MobileAppCategories", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.mobileAppCategory")]
     [ODataType("microsoft.graph.mobileAppCategory")]
     [ResourceTypePropertyName("mobileAppCategoryODataType")]
@@ -106,6 +108,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.mobileAppCategory&quot; object in the &quot;mobileAppCategories&quot; collection.</para>
     ///     <para type="description">The mobile app categories.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceAppManagement_MobileAppCategories", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.mobileAppCategory")]
     [ODataType("microsoft.graph.mobileAppCategory")]
     [ResourceTypePropertyName("mobileAppCategoryODataType")]
@@ -155,6 +158,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.mobileAppCategory&quot; object from the &quot;mobileAppCategories&quot; collection.</para>
     ///     <para type="description">The mobile app categories.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceAppManagement_MobileAppCategories", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileAppCategory")]
     [ResourceTypePropertyName("mobileAppCategoryODataType")]

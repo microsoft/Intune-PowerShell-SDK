@@ -5,8 +5,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     using System.Management.Automation;
 
     /// <summary>
-    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.managedDevice&quot; (or one of it&apos;s derived types).</para>
-    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.managedDevice&quot; (or one of it&apos;s derived types).</para>
+    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.managedDevice&quot; (or one of its derived types).</para>
+    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.managedDevice&quot; (or one of its derived types).</para>
     ///     <para type="description">Devices that are managed or pre-enrolled through Intune</para>
     /// </summary>
     [Cmdlet("New", "ManagedDeviceObject", DefaultParameterSetName = @"microsoft.graph.managedDevice")]

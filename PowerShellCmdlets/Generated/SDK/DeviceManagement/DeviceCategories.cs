@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceCategory&quot; objects in the &quot;deviceCategories&quot; collection.</para>
     ///     <para type="description">The list of device categories with the tenant.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceManagement_DeviceCategories", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceCategory")]
     [ResourceTypePropertyName("deviceCategoryODataType")]
@@ -58,6 +59,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceCategory&quot; object to the &quot;deviceCategories&quot; collection.</para>
     ///     <para type="description">The list of device categories with the tenant.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceManagement_DeviceCategories", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCategory")]
     [ODataType("microsoft.graph.deviceCategory")]
     [ResourceTypePropertyName("deviceCategoryODataType")]
@@ -106,6 +108,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceCategory&quot; object in the &quot;deviceCategories&quot; collection.</para>
     ///     <para type="description">The list of device categories with the tenant.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceManagement_DeviceCategories", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCategory")]
     [ODataType("microsoft.graph.deviceCategory")]
     [ResourceTypePropertyName("deviceCategoryODataType")]
@@ -155,6 +158,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceCategory&quot; object from the &quot;deviceCategories&quot; collection.</para>
     ///     <para type="description">The list of device categories with the tenant.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceManagement_DeviceCategories", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceCategory")]
     [ResourceTypePropertyName("deviceCategoryODataType")]

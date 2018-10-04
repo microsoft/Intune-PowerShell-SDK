@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedDevice&quot; objects in the &quot;managedDevices&quot; collection.</para>
     ///     <para type="description">The managed devices associated with the user.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DirectoryObjects_ManagedDevices", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -550,6 +551,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.managedDevice&quot; object to the &quot;managedDevices&quot; collection.</para>
     ///     <para type="description">The managed devices associated with the user.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DirectoryObjects_ManagedDevices", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedDevice")]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -1172,6 +1174,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
     ///     <para type="description">The managed devices associated with the user.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DirectoryObjects_ManagedDevices", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedDevice")]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -1795,6 +1798,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.managedDevice&quot; object from the &quot;managedDevices&quot; collection.</para>
     ///     <para type="description">The managed devices associated with the user.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DirectoryObjects_ManagedDevices", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -1843,6 +1847,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.retire&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_Retire", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -1891,6 +1896,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.wipe&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_Wipe", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -1963,6 +1969,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.resetPasscode&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_ResetPasscode", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -2011,6 +2018,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.remoteLock&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_RemoteLock", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -2059,6 +2067,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.requestRemoteAssistance&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_RequestRemoteAssistance", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -2107,6 +2116,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.disableLostMode&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_DisableLostMode", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -2155,6 +2165,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.locateDevice&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_LocateDevice", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -2203,6 +2214,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.bypassActivationLock&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_BypassActivationLock", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -2251,6 +2263,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.rebootNow&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_RebootNow", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -2299,6 +2312,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.shutDown&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_ShutDown", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -2347,6 +2361,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.recoverPasscode&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_RecoverPasscode", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -2395,6 +2410,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.cleanWindowsDevice&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_CleanWindowsDevice", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -2452,6 +2468,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.logoutSharedAppleDeviceActiveUser&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_LogoutSharedAppleDeviceActiveUser", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -2500,6 +2517,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.deleteUserFromSharedAppleDevice&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_DeleteUserFromSharedAppleDevice", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -2556,6 +2574,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.syncDevice&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_SyncDevice", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -2604,6 +2623,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.windowsDefenderScan&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_WindowsDefenderScan", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -2661,6 +2681,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.windowsDefenderUpdateSignatures&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_WindowsDefenderUpdateSignatures", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -2709,6 +2730,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.updateWindowsDeviceAccount&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DirectoryObjects_ManagedDevices_UpdateWindowsDeviceAccount", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]

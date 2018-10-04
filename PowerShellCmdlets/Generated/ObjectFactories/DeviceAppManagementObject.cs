@@ -5,8 +5,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     using System.Management.Automation;
 
     /// <summary>
-    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.deviceAppManagement&quot; (or one of it&apos;s derived types).</para>
-    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceAppManagement&quot; (or one of it&apos;s derived types).</para>
+    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.deviceAppManagement&quot; (or one of its derived types).</para>
+    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.deviceAppManagement&quot; (or one of its derived types).</para>
     ///     <para type="description">Singleton entity that acts as a container for all device app management functionality.</para>
     /// </summary>
     [Cmdlet("New", "DeviceAppManagementObject", DefaultParameterSetName = @"microsoft.graph.deviceAppManagement")]

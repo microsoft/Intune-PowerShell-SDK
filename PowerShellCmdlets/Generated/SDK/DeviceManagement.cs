@@ -9,6 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/deviceManagement</para>
     ///     <para type="description">Retrieves the &quot;deviceManagement&quot; object (which is of type &quot;microsoft.graph.deviceManagement&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceManagement", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
@@ -331,6 +332,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">POST ~/deviceManagement</para>
     ///     <para type="description">Creates the &quot;deviceManagement&quot; object (which is of type &quot;microsoft.graph.deviceManagement&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceManagement", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceManagement")]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
@@ -702,6 +704,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">PATCH ~/deviceManagement</para>
     ///     <para type="description">Updates the &quot;deviceManagement&quot; object (which is of type &quot;microsoft.graph.deviceManagement&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceManagement", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceManagement")]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
@@ -1073,6 +1076,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">DELETE ~/deviceManagement</para>
     ///     <para type="description">Removes the &quot;deviceManagement&quot; object (which is of type &quot;microsoft.graph.deviceManagement&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceManagement", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
@@ -1089,6 +1093,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.verifyWindowsEnrollmentAutoDiscovery&quot;, which exists on the type &quot;microsoft.graph.deviceManagement&quot;.</para>
     ///     <para type="description">This function returns a &quot;Edm.Boolean&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DeviceManagement_VerifyWindowsEnrollmentAutoDiscovery", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
@@ -1113,6 +1118,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getEffectivePermissions&quot;, which exists on the type &quot;microsoft.graph.deviceManagement&quot;.</para>
     ///     <para type="description">This function returns a collection of &quot;microsoft.graph.rolePermission&quot; objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DeviceManagement_GetEffectivePermissions", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]

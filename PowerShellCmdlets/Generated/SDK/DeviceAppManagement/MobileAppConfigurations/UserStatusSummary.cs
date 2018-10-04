@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves the &quot;userStatusSummary&quot; object (which is of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;).</para>
     ///     <para type="description">App configuration user status summary.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceAppManagement_MobileAppConfigurations_UserStatusSummary", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationUserSummary")]
     [ResourceTypePropertyName("userStatusSummaryODataType")]
@@ -107,6 +108,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates the &quot;userStatusSummary&quot; object (which is of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;).</para>
     ///     <para type="description">App configuration user status summary.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceAppManagement_MobileAppConfigurations_UserStatusSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserSummary")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationUserSummary")]
     [ResourceTypePropertyName("userStatusSummaryODataType")]
@@ -211,6 +213,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates the &quot;userStatusSummary&quot; object (which is of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;).</para>
     ///     <para type="description">App configuration user status summary.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceAppManagement_MobileAppConfigurations_UserStatusSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserSummary")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationUserSummary")]
     [ResourceTypePropertyName("userStatusSummaryODataType")]
@@ -314,6 +317,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes the &quot;userStatusSummary&quot; object (which is of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;).</para>
     ///     <para type="description">App configuration user status summary.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceAppManagement_MobileAppConfigurations_UserStatusSummary", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationUserSummary")]
     [ResourceTypePropertyName("userStatusSummaryODataType")]

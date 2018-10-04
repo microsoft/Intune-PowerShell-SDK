@@ -5,8 +5,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     using System.Management.Automation;
 
     /// <summary>
-    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; (or one of it&apos;s derived types).</para>
-    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; (or one of it&apos;s derived types).</para>
+    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; (or one of its derived types).</para>
+    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; (or one of its derived types).</para>
     ///     <para type="description">A termsAndConditionsAcceptanceStatus entity represents the acceptance status of a given Terms and Conditions (T&amp;C) policy by a given user. Users must accept the most up-to-date version of the terms in order to retain access to the Company Portal.</para>
     /// </summary>
     [Cmdlet("New", "TermsAndConditionsAcceptanceStatusObject", DefaultParameterSetName = @"microsoft.graph.termsAndConditionsAcceptanceStatus")]

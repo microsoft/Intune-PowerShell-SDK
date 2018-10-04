@@ -9,6 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/groups/{groupId}/groupLifecyclePolicies</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.groupLifecyclePolicy&quot; objects in the &quot;groupLifecyclePolicies&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "Groups_GroupLifecyclePolicies", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
@@ -72,6 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">POST ~/groups/{groupId}/groupLifecyclePolicies</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.groupLifecyclePolicy&quot; object to the &quot;groupLifecyclePolicies&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "Groups_GroupLifecyclePolicies", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.groupLifecyclePolicy")]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
@@ -136,6 +138,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">PATCH ~/groups/{groupId}/groupLifecyclePolicies</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.groupLifecyclePolicy&quot; object in the &quot;groupLifecyclePolicies&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "Groups_GroupLifecyclePolicies", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.groupLifecyclePolicy")]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
@@ -201,6 +204,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">DELETE ~/groups/{groupId}/groupLifecyclePolicies/groupLifecyclePolicyId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.groupLifecyclePolicy&quot; object from the &quot;groupLifecyclePolicies&quot; collection.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "Groups_GroupLifecyclePolicies", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
@@ -236,6 +240,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.addGroup&quot;, which exists on the type &quot;microsoft.graph.groupLifecyclePolicy&quot;.</para>
     ///     <para type="description">This action returns a &quot;Edm.Boolean&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Groups_GroupLifecyclePolicies_AddGroup", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
@@ -271,6 +276,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.removeGroup&quot;, which exists on the type &quot;microsoft.graph.groupLifecyclePolicy&quot;.</para>
     ///     <para type="description">This action returns a &quot;Edm.Boolean&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Groups_GroupLifecyclePolicies_RemoveGroup", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]

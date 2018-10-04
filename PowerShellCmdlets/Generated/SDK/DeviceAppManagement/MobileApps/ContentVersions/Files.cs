@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.mobileAppContentFile&quot; objects in the &quot;files&quot; collection.</para>
     ///     <para type="description">The list of files for this app content version.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceAppManagement_MobileApps_ContentVersions_Files", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
@@ -159,6 +160,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.mobileAppContentFile&quot; object to the &quot;files&quot; collection.</para>
     ///     <para type="description">The list of files for this app content version.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceAppManagement_MobileApps_ContentVersions_Files", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.mobileAppContentFile")]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
@@ -320,6 +322,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.</para>
     ///     <para type="description">The list of files for this app content version.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceAppManagement_MobileApps_ContentVersions_Files", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.mobileAppContentFile")]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
@@ -482,6 +485,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.mobileAppContentFile&quot; object from the &quot;files&quot; collection.</para>
     ///     <para type="description">The list of files for this app content version.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceAppManagement_MobileApps_ContentVersions_Files", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
@@ -539,6 +543,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.commit&quot;, which exists on the type &quot;microsoft.graph.mobileAppContentFile&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DeviceAppManagement_MobileApps_ContentVersions_Files_Commit", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
@@ -604,6 +609,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The action &quot;microsoft.graph.renewUpload&quot;, which exists on the type &quot;microsoft.graph.mobileAppContentFile&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "DeviceAppManagement_MobileApps_ContentVersions_Files_RenewUpload", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]

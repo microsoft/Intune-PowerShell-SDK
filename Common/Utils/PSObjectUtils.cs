@@ -116,7 +116,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
             }
         }
 
-        internal static void SetDefaultProperties(this PSObject psObject, Func<PSPropertyInfo, bool> filter)
+        internal static void SetDefaultDisplayProperties(this PSObject psObject, Func<PSPropertyInfo, bool> filter)
         {
             if (psObject == null)
             {
@@ -141,6 +141,31 @@ namespace Microsoft.Intune.PowerShellGraphSDK
 
             // Add the "PSStandardMembers" member
             psObject.Members.Add(memberSet);
+        }
+
+        internal static IEnumerable<PSPropertyInfo> GetDefaultDisplayProperties(this PSObject psObject)
+        {
+            if (psObject == null)
+            {
+                throw new ArgumentNullException(nameof(psObject));
+            }
+
+            // Get the PSStandardMembers
+            if (psObject.Members[PSStandardMembers] is PSMemberSet psStandardMembers)
+            {
+                // Get the DefaultDisplayPropertySet
+                if (psStandardMembers.Members[DefaultDisplayPropertySet] is PSPropertySet defaultDisplayPropertySet)
+                {
+                    IEnumerable<string> defaultPropertyNames = defaultDisplayPropertySet.ReferencedPropertyNames;
+                    if (defaultPropertyNames != null && defaultPropertyNames.Any())
+                    {
+                        return psObject.Properties.Where(prop => defaultPropertyNames.Contains(prop.Name));
+                    }
+                }
+            }
+
+            // If we didn't find a list of default display property names, return the full list of properties
+            return psObject.Properties;
         }
     }
 }

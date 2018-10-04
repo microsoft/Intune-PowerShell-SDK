@@ -5,8 +5,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     using System.Management.Automation;
 
     /// <summary>
-    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; (or one of it&apos;s derived types).</para>
-    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; (or one of it&apos;s derived types).</para>
+    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; (or one of its derived types).</para>
+    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; (or one of its derived types).</para>
     ///     <para type="description">An abstract class for Mobile app configuration for enrolled devices.</para>
     /// </summary>
     [Cmdlet("New", "ManagedDeviceMobileAppConfigurationObject", DefaultParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration")]

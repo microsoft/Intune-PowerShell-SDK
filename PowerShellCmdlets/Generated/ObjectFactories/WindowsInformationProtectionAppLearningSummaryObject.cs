@@ -5,8 +5,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     using System.Management.Automation;
 
     /// <summary>
-    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.windowsInformationProtectionAppLearningSummary&quot; (or one of it&apos;s derived types).</para>
-    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.windowsInformationProtectionAppLearningSummary&quot; (or one of it&apos;s derived types).</para>
+    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.windowsInformationProtectionAppLearningSummary&quot; (or one of its derived types).</para>
+    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.windowsInformationProtectionAppLearningSummary&quot; (or one of its derived types).</para>
     ///     <para type="description">Windows Information Protection AppLearning Summary entity.</para>
     /// </summary>
     [Cmdlet("New", "WindowsInformationProtectionAppLearningSummaryObject", DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLearningSummary")]

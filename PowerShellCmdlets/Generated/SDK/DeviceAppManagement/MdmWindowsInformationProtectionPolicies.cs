@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot; objects in the &quot;mdmWindowsInformationProtectionPolicies&quot; collection.</para>
     ///     <para type="description">Windows information protection for apps running on devices which are MDM enrolled.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceAppManagement_MdmWindowsInformationProtectionPolicies", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.mdmWindowsInformationProtectionPolicy")]
     [ResourceTypePropertyName("mdmWindowsInformationProtectionPolicyODataType")]
@@ -328,6 +329,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot; object to the &quot;mdmWindowsInformationProtectionPolicies&quot; collection.</para>
     ///     <para type="description">Windows information protection for apps running on devices which are MDM enrolled.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceAppManagement_MdmWindowsInformationProtectionPolicies", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.mdmWindowsInformationProtectionPolicy")]
     [ODataType("microsoft.graph.mdmWindowsInformationProtectionPolicy")]
     [ResourceTypePropertyName("mdmWindowsInformationProtectionPolicyODataType")]
@@ -701,6 +703,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot; object in the &quot;mdmWindowsInformationProtectionPolicies&quot; collection.</para>
     ///     <para type="description">Windows information protection for apps running on devices which are MDM enrolled.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceAppManagement_MdmWindowsInformationProtectionPolicies", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.mdmWindowsInformationProtectionPolicy")]
     [ODataType("microsoft.graph.mdmWindowsInformationProtectionPolicy")]
     [ResourceTypePropertyName("mdmWindowsInformationProtectionPolicyODataType")]
@@ -1075,6 +1078,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot; object from the &quot;mdmWindowsInformationProtectionPolicies&quot; collection.</para>
     ///     <para type="description">Windows information protection for apps running on devices which are MDM enrolled.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceAppManagement_MdmWindowsInformationProtectionPolicies", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mdmWindowsInformationProtectionPolicy")]
     [ResourceTypePropertyName("mdmWindowsInformationProtectionPolicyODataType")]

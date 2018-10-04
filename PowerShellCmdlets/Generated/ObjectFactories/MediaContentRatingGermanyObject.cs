@@ -5,8 +5,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     using System.Management.Automation;
 
     /// <summary>
-    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.mediaContentRatingGermany&quot; (or one of it&apos;s derived types).</para>
-    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.mediaContentRatingGermany&quot; (or one of it&apos;s derived types).</para>
+    ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.mediaContentRatingGermany&quot; (or one of its derived types).</para>
+    ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.mediaContentRatingGermany&quot; (or one of its derived types).</para>
     /// </summary>
     [Cmdlet("New", "MediaContentRatingGermanyObject", DefaultParameterSetName = @"microsoft.graph.mediaContentRatingGermany")]
     [ODataType("microsoft.graph.mediaContentRatingGermany")]

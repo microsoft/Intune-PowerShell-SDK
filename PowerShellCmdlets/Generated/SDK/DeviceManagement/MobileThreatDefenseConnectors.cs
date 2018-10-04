@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.mobileThreatDefenseConnector&quot; objects in the &quot;mobileThreatDefenseConnectors&quot; collection.</para>
     ///     <para type="description">The list of Mobile threat Defense connectors configured by the tenant.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceManagement_MobileThreatDefenseConnectors", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.mobileThreatDefenseConnector")]
     [ResourceTypePropertyName("mobileThreatDefenseConnectorODataType")]
@@ -118,6 +119,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.mobileThreatDefenseConnector&quot; object to the &quot;mobileThreatDefenseConnectors&quot; collection.</para>
     ///     <para type="description">The list of Mobile threat Defense connectors configured by the tenant.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceManagement_MobileThreatDefenseConnectors", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.mobileThreatDefenseConnector")]
     [ODataType("microsoft.graph.mobileThreatDefenseConnector")]
     [ResourceTypePropertyName("mobileThreatDefenseConnectorODataType")]
@@ -236,6 +238,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.mobileThreatDefenseConnector&quot; object in the &quot;mobileThreatDefenseConnectors&quot; collection.</para>
     ///     <para type="description">The list of Mobile threat Defense connectors configured by the tenant.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceManagement_MobileThreatDefenseConnectors", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.mobileThreatDefenseConnector")]
     [ODataType("microsoft.graph.mobileThreatDefenseConnector")]
     [ResourceTypePropertyName("mobileThreatDefenseConnectorODataType")]
@@ -355,6 +358,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.mobileThreatDefenseConnector&quot; object from the &quot;mobileThreatDefenseConnectors&quot; collection.</para>
     ///     <para type="description">The list of Mobile threat Defense connectors configured by the tenant.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceManagement_MobileThreatDefenseConnectors", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileThreatDefenseConnector")]
     [ResourceTypePropertyName("mobileThreatDefenseConnectorODataType")]

@@ -9,6 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">GET ~/reports</para>
     ///     <para type="description">Retrieves the &quot;reports&quot; object (which is of type &quot;microsoft.graph.reportRoot&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "Reports", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -25,6 +26,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">POST ~/reports</para>
     ///     <para type="description">Creates the &quot;reports&quot; object (which is of type &quot;microsoft.graph.reportRoot&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "Reports", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.reportRoot")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -41,6 +43,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">PATCH ~/reports</para>
     ///     <para type="description">Updates the &quot;reports&quot; object (which is of type &quot;microsoft.graph.reportRoot&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "Reports", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.reportRoot")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -57,6 +60,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">DELETE ~/reports</para>
     ///     <para type="description">Removes the &quot;reports&quot; object (which is of type &quot;microsoft.graph.reportRoot&quot;).</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "Reports", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -73,6 +77,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOffice365ActivationsUserDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOffice365ActivationsUserDetail", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -89,6 +94,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOffice365ActivationCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOffice365ActivationCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -105,6 +111,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOffice365ActivationsUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOffice365ActivationsUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -121,6 +128,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOffice365ActiveUserDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOffice365ActiveUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -155,6 +163,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOffice365ServicesUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOffice365ServicesUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -180,6 +189,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOffice365ActiveUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOffice365ActiveUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -205,6 +215,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOffice365GroupsActivityDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOffice365GroupsActivityDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -239,6 +250,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOffice365GroupsActivityCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOffice365GroupsActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -264,6 +276,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOffice365GroupsActivityGroupCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOffice365GroupsActivityGroupCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -289,6 +302,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOffice365GroupsActivityStorage&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOffice365GroupsActivityStorage", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -314,6 +328,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOffice365GroupsActivityFileCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOffice365GroupsActivityFileCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -339,6 +354,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getEmailActivityUserDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetEmailActivityUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -373,6 +389,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getEmailActivityCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetEmailActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -398,6 +415,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getEmailActivityUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetEmailActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -423,6 +441,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getEmailAppUsageUserDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetEmailAppUsageUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -457,6 +476,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getEmailAppUsageAppsUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetEmailAppUsageAppsUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -482,6 +502,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getEmailAppUsageUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetEmailAppUsageUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -507,6 +528,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getEmailAppUsageVersionsUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetEmailAppUsageVersionsUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -532,6 +554,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getMailboxUsageDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetMailboxUsageDetail", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -557,6 +580,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getMailboxUsageMailboxCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetMailboxUsageMailboxCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -582,6 +606,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getMailboxUsageQuotaStatusMailboxCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetMailboxUsageQuotaStatusMailboxCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -607,6 +632,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getMailboxUsageStorage&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetMailboxUsageStorage", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -632,6 +658,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOneDriveActivityUserDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOneDriveActivityUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -666,6 +693,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOneDriveActivityUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOneDriveActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -691,6 +719,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOneDriveActivityFileCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOneDriveActivityFileCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -716,6 +745,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOneDriveUsageAccountDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOneDriveUsageAccountDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -750,6 +780,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOneDriveUsageAccountCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOneDriveUsageAccountCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -775,6 +806,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOneDriveUsageFileCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOneDriveUsageFileCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -800,6 +832,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getOneDriveUsageStorage&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetOneDriveUsageStorage", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -825,6 +858,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSharePointActivityUserDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSharePointActivityUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -859,6 +893,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSharePointActivityFileCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSharePointActivityFileCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -884,6 +919,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSharePointActivityUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSharePointActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -909,6 +945,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSharePointActivityPages&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSharePointActivityPages", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -934,6 +971,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSharePointSiteUsageDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSharePointSiteUsageDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -968,6 +1006,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSharePointSiteUsageFileCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSharePointSiteUsageFileCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -993,6 +1032,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSharePointSiteUsageSiteCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSharePointSiteUsageSiteCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1018,6 +1058,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSharePointSiteUsageStorage&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSharePointSiteUsageStorage", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1043,6 +1084,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSharePointSiteUsagePages&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSharePointSiteUsagePages", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1068,6 +1110,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSkypeForBusinessActivityUserDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessActivityUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1102,6 +1145,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSkypeForBusinessActivityCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1127,6 +1171,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSkypeForBusinessActivityUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1152,6 +1197,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSkypeForBusinessPeerToPeerActivityCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessPeerToPeerActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1177,6 +1223,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSkypeForBusinessPeerToPeerActivityUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessPeerToPeerActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1202,6 +1249,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSkypeForBusinessPeerToPeerActivityMinuteCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessPeerToPeerActivityMinuteCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1227,6 +1275,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSkypeForBusinessOrganizerActivityCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessOrganizerActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1252,6 +1301,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSkypeForBusinessOrganizerActivityUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessOrganizerActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1277,6 +1327,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSkypeForBusinessOrganizerActivityMinuteCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessOrganizerActivityMinuteCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1302,6 +1353,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSkypeForBusinessParticipantActivityCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessParticipantActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1327,6 +1379,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSkypeForBusinessParticipantActivityUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessParticipantActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1352,6 +1405,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSkypeForBusinessParticipantActivityMinuteCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessParticipantActivityMinuteCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1377,6 +1431,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSkypeForBusinessDeviceUsageUserDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessDeviceUsageUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1411,6 +1466,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSkypeForBusinessDeviceUsageDistributionUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessDeviceUsageDistributionUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1436,6 +1492,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getSkypeForBusinessDeviceUsageUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetSkypeForBusinessDeviceUsageUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1461,6 +1518,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getYammerActivityUserDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetYammerActivityUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1495,6 +1553,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getYammerActivityCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetYammerActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1520,6 +1579,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getYammerActivityUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetYammerActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1545,6 +1605,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getYammerDeviceUsageUserDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetYammerDeviceUsageUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1579,6 +1640,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getYammerDeviceUsageDistributionUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetYammerDeviceUsageDistributionUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1604,6 +1666,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getYammerDeviceUsageUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetYammerDeviceUsageUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1629,6 +1692,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getYammerGroupsActivityDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetYammerGroupsActivityDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1663,6 +1727,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getYammerGroupsActivityGroupCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetYammerGroupsActivityGroupCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1688,6 +1753,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getYammerGroupsActivityCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetYammerGroupsActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1713,6 +1779,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getTeamsUserActivityUserDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetTeamsUserActivityUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1747,6 +1814,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getTeamsUserActivityCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetTeamsUserActivityCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1772,6 +1840,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getTeamsUserActivityUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetTeamsUserActivityUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1797,6 +1866,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getTeamsDeviceUsageUserDetail&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetTeamsDeviceUsageUserDetail", DefaultParameterSetName = @"Overload_1")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1831,6 +1901,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getTeamsDeviceUsageUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetTeamsDeviceUsageUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1856,6 +1927,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.getTeamsDeviceUsageDistributionUserCounts&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_GetTeamsDeviceUsageDistributionUserCounts", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1881,6 +1953,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.deviceConfigurationUserActivity&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_DeviceConfigurationUserActivity", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1897,6 +1970,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.deviceConfigurationDeviceActivity&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_DeviceConfigurationDeviceActivity", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1913,6 +1987,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.managedDeviceEnrollmentFailureDetails&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_ManagedDeviceEnrollmentFailureDetails", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]
@@ -1961,6 +2036,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The function &quot;microsoft.graph.managedDeviceEnrollmentTopFailures&quot;, which exists on the type &quot;microsoft.graph.reportRoot&quot;.</para>
     ///     <para type="description">This function returns a &quot;microsoft.graph.report&quot; object.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "Reports_ManagedDeviceEnrollmentTopFailures", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.reportRoot")]
     [ResourceTypePropertyName("reportODataType")]

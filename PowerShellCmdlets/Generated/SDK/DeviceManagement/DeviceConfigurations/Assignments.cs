@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceConfigurationAssignment&quot; objects in the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of assignments for the device configuration profile.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceManagement_DeviceConfigurations_Assignments", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceConfigurationAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
@@ -57,6 +58,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceConfigurationAssignment&quot; object to the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of assignments for the device configuration profile.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceManagement_DeviceConfigurations_Assignments", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationAssignment")]
     [ODataType("microsoft.graph.deviceConfigurationAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
@@ -103,6 +105,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceConfigurationAssignment&quot; object in the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of assignments for the device configuration profile.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceManagement_DeviceConfigurations_Assignments", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationAssignment")]
     [ODataType("microsoft.graph.deviceConfigurationAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
@@ -150,6 +153,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceConfigurationAssignment&quot; object from the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of assignments for the device configuration profile.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceManagement_DeviceConfigurations_Assignments", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceConfigurationAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]

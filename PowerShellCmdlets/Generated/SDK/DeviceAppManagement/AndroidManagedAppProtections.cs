@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.androidManagedAppProtection&quot; objects in the &quot;androidManagedAppProtections&quot; collection.</para>
     ///     <para type="description">Android managed app policies.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceAppManagement_AndroidManagedAppProtections", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.androidManagedAppProtection")]
     [ResourceTypePropertyName("androidManagedAppProtectionODataType")]
@@ -448,6 +449,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.androidManagedAppProtection&quot; object to the &quot;androidManagedAppProtections&quot; collection.</para>
     ///     <para type="description">Android managed app policies.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceAppManagement_AndroidManagedAppProtections", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.androidManagedAppProtection")]
     [ODataType("microsoft.graph.androidManagedAppProtection")]
     [ResourceTypePropertyName("androidManagedAppProtectionODataType")]
@@ -948,6 +950,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.androidManagedAppProtection&quot; object in the &quot;androidManagedAppProtections&quot; collection.</para>
     ///     <para type="description">Android managed app policies.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceAppManagement_AndroidManagedAppProtections", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.androidManagedAppProtection")]
     [ODataType("microsoft.graph.androidManagedAppProtection")]
     [ResourceTypePropertyName("androidManagedAppProtectionODataType")]
@@ -1449,6 +1452,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.androidManagedAppProtection&quot; object from the &quot;androidManagedAppProtections&quot; collection.</para>
     ///     <para type="description">Android managed app policies.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceAppManagement_AndroidManagedAppProtections", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.androidManagedAppProtection")]
     [ResourceTypePropertyName("androidManagedAppProtectionODataType")]

@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedDevice&quot; objects in the &quot;managedDevices&quot; collection.</para>
     ///     <para type="description">The devices that have the discovered application installed</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceManagement_DetectedApps_ManagedDevices", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -536,6 +537,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedDevice&quot; object references in the &quot;managedDevices&quot; collection.</para>
     ///     <para type="description">The devices that have the discovered application installed</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceManagement_DetectedApps_ManagedDevicesReferences", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -1062,6 +1064,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a reference from the specified &quot;detectedApp&quot; object to a &quot;managedDevice&quot;.</para>
     ///     <para type="description">The devices that have the discovered application installed</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceManagement_DetectedApps_ManagedDevicesReferences", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
@@ -1109,6 +1112,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a reference from the specified &quot;detectedApp&quot; object to a &quot;managedDevice&quot;.</para>
     ///     <para type="description">The devices that have the discovered application installed</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceManagement_DetectedApps_ManagedDevicesReferences", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]

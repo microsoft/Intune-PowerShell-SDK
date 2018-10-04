@@ -10,6 +10,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceInstallState&quot; objects in the &quot;deviceStates&quot; collection.</para>
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "DeviceAppManagement_ManagedEBooks_DeviceStates", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceInstallState")]
     [ResourceTypePropertyName("deviceStateODataType")]
@@ -127,6 +128,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceInstallState&quot; object to the &quot;deviceStates&quot; collection.</para>
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "DeviceAppManagement_ManagedEBooks_DeviceStates", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceInstallState")]
     [ODataType("microsoft.graph.deviceInstallState")]
     [ResourceTypePropertyName("deviceStateODataType")]
@@ -254,6 +256,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceInstallState&quot; object in the &quot;deviceStates&quot; collection.</para>
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "DeviceAppManagement_ManagedEBooks_DeviceStates", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceInstallState")]
     [ODataType("microsoft.graph.deviceInstallState")]
     [ResourceTypePropertyName("deviceStateODataType")]
@@ -382,6 +385,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceInstallState&quot; object from the &quot;deviceStates&quot; collection.</para>
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "DeviceAppManagement_ManagedEBooks_DeviceStates", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceInstallState")]
     [ResourceTypePropertyName("deviceStateODataType")]
