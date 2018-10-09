@@ -18,6 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.alert")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.security", HelpMessage = @"The &quot;alerts&quot; property, of type &quot;microsoft.graph.alert&quot;.")]
         public System.Object[] alerts { get; set; }

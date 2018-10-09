@@ -139,6 +139,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
@@ -148,6 +149,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -174,6 +176,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -200,6 +203,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -226,6 +230,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
@@ -235,6 +240,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -261,6 +267,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -287,6 +294,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -313,6 +321,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -339,6 +348,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -365,6 +375,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
@@ -374,6 +385,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -400,6 +412,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -426,6 +439,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -452,6 +466,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
@@ -461,6 +476,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -487,6 +503,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -513,6 +530,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -539,6 +557,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -565,6 +584,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -591,6 +611,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -617,6 +638,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -643,6 +665,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -669,6 +692,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
@@ -678,6 +702,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -704,6 +729,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -730,6 +756,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -756,6 +783,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
@@ -765,6 +793,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -791,6 +820,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -817,6 +847,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -843,6 +874,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -869,6 +901,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
@@ -878,6 +911,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -904,6 +938,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -930,6 +965,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -956,6 +992,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -982,6 +1019,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
@@ -991,6 +1029,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1017,6 +1056,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1043,6 +1083,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1069,6 +1110,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1095,6 +1137,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1121,6 +1164,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
@@ -1130,6 +1174,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1156,6 +1201,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1182,6 +1228,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1208,6 +1255,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1234,6 +1282,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1260,6 +1309,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1286,6 +1336,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1312,6 +1363,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1338,6 +1390,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1364,6 +1417,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1390,6 +1444,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1416,6 +1471,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1442,6 +1498,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
@@ -1451,6 +1508,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1477,6 +1535,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1503,6 +1562,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1529,6 +1589,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
@@ -1538,6 +1599,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1564,6 +1626,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1590,6 +1653,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1616,6 +1680,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
@@ -1625,6 +1690,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1651,6 +1717,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1677,6 +1744,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1703,6 +1771,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
@@ -1712,6 +1781,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1738,6 +1808,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1764,6 +1835,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1790,6 +1862,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
@@ -1799,6 +1872,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1825,6 +1899,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1851,6 +1926,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1877,6 +1953,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Date")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;date&quot; function parameter of type &quot;Edm.Date&quot;.")]
         public System.DateTimeOffset date { get; set; }
@@ -1886,6 +1963,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(ParameterSetName = @"Overload_2", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1912,6 +1990,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1938,6 +2017,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [ValidateNotNull]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
@@ -1998,6 +2078,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;skip&quot; function parameter of type &quot;Edm.Int32&quot;.")]
         public System.Int32 skip { get; set; }
 
@@ -2006,6 +2087,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;top&quot; function parameter of type &quot;Edm.Int32&quot;.")]
         public System.Int32 top { get; set; }
 
@@ -2014,6 +2096,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;filter&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String filter { get; set; }
 
@@ -2022,6 +2105,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;skipToken&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String skipToken { get; set; }
 
@@ -2047,6 +2131,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"Overload_1", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;period&quot; function parameter of type &quot;Edm.String&quot;.")]
         public System.String period { get; set; }
 

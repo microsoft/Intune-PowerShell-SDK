@@ -21,6 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
@@ -33,6 +34,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     </para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ValidateSet(@"microsoft.graph.directoryObject", @"microsoft.graph.administrativeUnit", @"microsoft.graph.groupSettingTemplate", @"microsoft.graph.user", @"microsoft.graph.organization", @"microsoft.graph.contract", @"microsoft.graph.group", @"microsoft.graph.directoryRoleTemplate", @"microsoft.graph.directoryRole", @"microsoft.graph.device")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
@@ -43,6 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;deviceManagementTroubleshootingEvents&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
@@ -180,6 +183,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;deviceManagementTroubleshootingEvents&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ResourceIdParameter]
         public System.String deviceManagementTroubleshootingEventId { get; set; }
@@ -188,6 +192,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
@@ -200,6 +205,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     </para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ValidateSet(@"microsoft.graph.directoryObject", @"microsoft.graph.administrativeUnit", @"microsoft.graph.groupSettingTemplate", @"microsoft.graph.user", @"microsoft.graph.organization", @"microsoft.graph.contract", @"microsoft.graph.group", @"microsoft.graph.directoryRoleTemplate", @"microsoft.graph.directoryRole", @"microsoft.graph.device")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
@@ -210,6 +216,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceManagementTroubleshootingEvent")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementTroubleshootingEvent", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceManagementTroubleshootingEvent { get; set; }
@@ -242,6 +249,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.enrollmentTroubleshootingEvent&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.enrollmentTroubleshootingEvent")]
         [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.enrollmentTroubleshootingEvent&quot; type.")]
         public System.Management.Automation.SwitchParameter enrollmentTroubleshootingEvent { get; set; }
@@ -364,6 +372,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;deviceManagementTroubleshootingEvents&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
@@ -374,6 +383,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
@@ -386,6 +396,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     </para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ValidateSet(@"microsoft.graph.directoryObject", @"microsoft.graph.administrativeUnit", @"microsoft.graph.groupSettingTemplate", @"microsoft.graph.user", @"microsoft.graph.organization", @"microsoft.graph.contract", @"microsoft.graph.group", @"microsoft.graph.directoryRoleTemplate", @"microsoft.graph.directoryRole", @"microsoft.graph.device")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
@@ -396,6 +407,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceManagementTroubleshootingEvent")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementTroubleshootingEvent", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceManagementTroubleshootingEvent { get; set; }
@@ -428,6 +440,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.enrollmentTroubleshootingEvent&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.enrollmentTroubleshootingEvent")]
         [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.enrollmentTroubleshootingEvent&quot; type.")]
         public System.Management.Automation.SwitchParameter enrollmentTroubleshootingEvent { get; set; }
@@ -550,6 +563,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;deviceManagementTroubleshootingEvents&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
@@ -560,6 +574,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.directoryObject&quot; object in the &quot;directoryObjects&quot; collection.")]
@@ -572,6 +587,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     </para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ValidateSet(@"microsoft.graph.directoryObject", @"microsoft.graph.administrativeUnit", @"microsoft.graph.groupSettingTemplate", @"microsoft.graph.user", @"microsoft.graph.organization", @"microsoft.graph.contract", @"microsoft.graph.group", @"microsoft.graph.directoryRoleTemplate", @"microsoft.graph.directoryRole", @"microsoft.graph.device")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]

@@ -117,6 +117,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookRangeView")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeView", HelpMessage = @"The &quot;rows&quot; property, of type &quot;microsoft.graph.workbookRangeView&quot;.")]
         public System.Object[] rows { get; set; }

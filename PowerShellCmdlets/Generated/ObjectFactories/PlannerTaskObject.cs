@@ -202,6 +202,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.plannerTaskDetails")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", HelpMessage = @"The &quot;details&quot; property, of type &quot;microsoft.graph.plannerTaskDetails&quot;.")]
         public System.Object details { get; set; }
 
@@ -211,6 +212,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.plannerAssignedToTaskBoardTaskFormat")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", HelpMessage = @"The &quot;assignedToTaskBoardFormat&quot; property, of type &quot;microsoft.graph.plannerAssignedToTaskBoardTaskFormat&quot;.")]
         public System.Object assignedToTaskBoardFormat { get; set; }
 
@@ -220,6 +222,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.plannerProgressTaskBoardTaskFormat")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", HelpMessage = @"The &quot;progressTaskBoardFormat&quot; property, of type &quot;microsoft.graph.plannerProgressTaskBoardTaskFormat&quot;.")]
         public System.Object progressTaskBoardFormat { get; set; }
 
@@ -229,6 +232,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.plannerBucketTaskBoardTaskFormat")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", HelpMessage = @"The &quot;bucketTaskBoardFormat&quot; property, of type &quot;microsoft.graph.plannerBucketTaskBoardTaskFormat&quot;.")]
         public System.Object bucketTaskBoardFormat { get; set; }
     }

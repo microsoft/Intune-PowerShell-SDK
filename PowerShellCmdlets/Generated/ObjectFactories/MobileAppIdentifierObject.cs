@@ -16,6 +16,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosMobileAppIdentifier&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosMobileAppIdentifier")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppIdentifier", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosMobileAppIdentifier&quot; type.")]
         public System.Management.Automation.SwitchParameter iosMobileAppIdentifier { get; set; }
@@ -34,6 +35,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidMobileAppIdentifier&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.androidMobileAppIdentifier")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidMobileAppIdentifier", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidMobileAppIdentifier&quot; type.")]
         public System.Management.Automation.SwitchParameter androidMobileAppIdentifier { get; set; }

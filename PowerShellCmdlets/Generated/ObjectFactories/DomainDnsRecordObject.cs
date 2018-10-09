@@ -16,6 +16,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsRecord&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.domainDnsRecord")]
         [Parameter(ParameterSetName = @"microsoft.graph.domainDnsRecord", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsRecord&quot; type.")]
         public System.Management.Automation.SwitchParameter domainDnsRecord { get; set; }
@@ -94,6 +95,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsUnavailableRecord&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.domainDnsUnavailableRecord")]
         [Parameter(ParameterSetName = @"microsoft.graph.domainDnsUnavailableRecord", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsUnavailableRecord&quot; type.")]
         public System.Management.Automation.SwitchParameter domainDnsUnavailableRecord { get; set; }
@@ -111,6 +113,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsTxtRecord&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.domainDnsTxtRecord")]
         [Parameter(ParameterSetName = @"microsoft.graph.domainDnsTxtRecord", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsTxtRecord&quot; type.")]
         public System.Management.Automation.SwitchParameter domainDnsTxtRecord { get; set; }
@@ -128,6 +131,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsSrvRecord&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.domainDnsSrvRecord")]
         [Parameter(ParameterSetName = @"microsoft.graph.domainDnsSrvRecord", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsSrvRecord&quot; type.")]
         public System.Management.Automation.SwitchParameter domainDnsSrvRecord { get; set; }
@@ -190,6 +194,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsMxRecord&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.domainDnsMxRecord")]
         [Parameter(ParameterSetName = @"microsoft.graph.domainDnsMxRecord", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsMxRecord&quot; type.")]
         public System.Management.Automation.SwitchParameter domainDnsMxRecord { get; set; }
@@ -216,6 +221,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsCnameRecord&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.domainDnsCnameRecord")]
         [Parameter(ParameterSetName = @"microsoft.graph.domainDnsCnameRecord", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsCnameRecord&quot; type.")]
         public System.Management.Automation.SwitchParameter domainDnsCnameRecord { get; set; }

@@ -16,6 +16,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.location&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.location")]
         [Parameter(ParameterSetName = @"microsoft.graph.location", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.location&quot; type.")]
         public System.Management.Automation.SwitchParameter location { get; set; }
@@ -112,6 +113,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.locationConstraintItem&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.locationConstraintItem")]
         [Parameter(ParameterSetName = @"microsoft.graph.locationConstraintItem", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.locationConstraintItem&quot; type.")]
         public System.Management.Automation.SwitchParameter locationConstraintItem { get; set; }

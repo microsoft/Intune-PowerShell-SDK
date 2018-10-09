@@ -16,6 +16,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.standardTimeZoneOffset&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.standardTimeZoneOffset")]
         [Parameter(ParameterSetName = @"microsoft.graph.standardTimeZoneOffset", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.standardTimeZoneOffset&quot; type.")]
         public System.Management.Automation.SwitchParameter standardTimeZoneOffset { get; set; }
@@ -78,6 +79,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.daylightTimeZoneOffset&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.daylightTimeZoneOffset")]
         [Parameter(ParameterSetName = @"microsoft.graph.daylightTimeZoneOffset", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.daylightTimeZoneOffset&quot; type.")]
         public System.Management.Automation.SwitchParameter daylightTimeZoneOffset { get; set; }

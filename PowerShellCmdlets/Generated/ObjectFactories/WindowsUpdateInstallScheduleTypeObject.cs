@@ -16,6 +16,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateActiveHoursInstall&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsUpdateActiveHoursInstall")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateActiveHoursInstall", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateActiveHoursInstall&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsUpdateActiveHoursInstall { get; set; }
@@ -44,6 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateScheduledInstall&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsUpdateScheduledInstall")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateScheduledInstall", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateScheduledInstall&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsUpdateScheduledInstall { get; set; }

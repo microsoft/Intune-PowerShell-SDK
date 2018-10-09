@@ -21,6 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.")]
@@ -33,6 +34,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     </para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ValidateSet(@"microsoft.graph.mobileApp", @"microsoft.graph.iosStoreApp", @"microsoft.graph.iosVppApp", @"microsoft.graph.androidStoreApp", @"microsoft.graph.webApp", @"microsoft.graph.microsoftStoreForBusinessApp", @"microsoft.graph.mobileLobApp", @"microsoft.graph.iosLobApp", @"microsoft.graph.androidLobApp", @"microsoft.graph.windowsUniversalAppX", @"microsoft.graph.windowsMobileMSI", @"microsoft.graph.managedApp", @"microsoft.graph.managedMobileLobApp", @"microsoft.graph.managedIOSLobApp", @"microsoft.graph.managedAndroidLobApp", @"microsoft.graph.managedIOSStoreApp", @"microsoft.graph.managedAndroidStoreApp", @"microsoft.graph.macOSOfficeSuiteApp")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
@@ -43,6 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.")]
@@ -52,6 +55,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
@@ -171,6 +175,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ResourceIdParameter]
         public System.String mobileAppContentFileId { get; set; }
@@ -179,6 +184,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.")]
@@ -191,6 +197,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     </para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ValidateSet(@"microsoft.graph.mobileApp", @"microsoft.graph.iosStoreApp", @"microsoft.graph.iosVppApp", @"microsoft.graph.androidStoreApp", @"microsoft.graph.webApp", @"microsoft.graph.microsoftStoreForBusinessApp", @"microsoft.graph.mobileLobApp", @"microsoft.graph.iosLobApp", @"microsoft.graph.androidLobApp", @"microsoft.graph.windowsUniversalAppX", @"microsoft.graph.windowsMobileMSI", @"microsoft.graph.managedApp", @"microsoft.graph.managedMobileLobApp", @"microsoft.graph.managedIOSLobApp", @"microsoft.graph.managedAndroidLobApp", @"microsoft.graph.managedIOSStoreApp", @"microsoft.graph.managedAndroidStoreApp", @"microsoft.graph.macOSOfficeSuiteApp")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
@@ -201,6 +208,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.")]
@@ -332,6 +340,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
@@ -342,6 +351,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.")]
@@ -354,6 +364,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     </para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ValidateSet(@"microsoft.graph.mobileApp", @"microsoft.graph.iosStoreApp", @"microsoft.graph.iosVppApp", @"microsoft.graph.androidStoreApp", @"microsoft.graph.webApp", @"microsoft.graph.microsoftStoreForBusinessApp", @"microsoft.graph.mobileLobApp", @"microsoft.graph.iosLobApp", @"microsoft.graph.androidLobApp", @"microsoft.graph.windowsUniversalAppX", @"microsoft.graph.windowsMobileMSI", @"microsoft.graph.managedApp", @"microsoft.graph.managedMobileLobApp", @"microsoft.graph.managedIOSLobApp", @"microsoft.graph.managedAndroidLobApp", @"microsoft.graph.managedIOSStoreApp", @"microsoft.graph.managedAndroidStoreApp", @"microsoft.graph.macOSOfficeSuiteApp")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
@@ -364,6 +375,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.")]
@@ -495,6 +507,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
@@ -505,6 +518,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.")]
@@ -517,6 +531,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     </para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ValidateSet(@"microsoft.graph.mobileApp", @"microsoft.graph.iosStoreApp", @"microsoft.graph.iosVppApp", @"microsoft.graph.androidStoreApp", @"microsoft.graph.webApp", @"microsoft.graph.microsoftStoreForBusinessApp", @"microsoft.graph.mobileLobApp", @"microsoft.graph.iosLobApp", @"microsoft.graph.androidLobApp", @"microsoft.graph.windowsUniversalAppX", @"microsoft.graph.windowsMobileMSI", @"microsoft.graph.managedApp", @"microsoft.graph.managedMobileLobApp", @"microsoft.graph.managedIOSLobApp", @"microsoft.graph.managedAndroidLobApp", @"microsoft.graph.managedIOSStoreApp", @"microsoft.graph.managedAndroidStoreApp", @"microsoft.graph.macOSOfficeSuiteApp")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
@@ -527,6 +542,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.")]
@@ -554,6 +570,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.fileEncryptionInfo")]
         [Selectable]
+        [Expandable]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;fileEncryptionInfo&quot; action parameter of type &quot;microsoft.graph.fileEncryptionInfo&quot;.")]
         public System.Object fileEncryptionInfo { get; set; }
 
@@ -561,6 +578,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
@@ -571,6 +589,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.")]
@@ -583,6 +602,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     </para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ValidateSet(@"microsoft.graph.mobileApp", @"microsoft.graph.iosStoreApp", @"microsoft.graph.iosVppApp", @"microsoft.graph.androidStoreApp", @"microsoft.graph.webApp", @"microsoft.graph.microsoftStoreForBusinessApp", @"microsoft.graph.mobileLobApp", @"microsoft.graph.iosLobApp", @"microsoft.graph.androidLobApp", @"microsoft.graph.windowsUniversalAppX", @"microsoft.graph.windowsMobileMSI", @"microsoft.graph.managedApp", @"microsoft.graph.managedMobileLobApp", @"microsoft.graph.managedIOSLobApp", @"microsoft.graph.managedAndroidLobApp", @"microsoft.graph.managedIOSStoreApp", @"microsoft.graph.managedAndroidStoreApp", @"microsoft.graph.macOSOfficeSuiteApp")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
@@ -593,6 +613,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.")]
@@ -619,6 +640,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
@@ -629,6 +651,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.")]
@@ -641,6 +664,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     </para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ValidateSet(@"microsoft.graph.mobileApp", @"microsoft.graph.iosStoreApp", @"microsoft.graph.iosVppApp", @"microsoft.graph.androidStoreApp", @"microsoft.graph.webApp", @"microsoft.graph.microsoftStoreForBusinessApp", @"microsoft.graph.mobileLobApp", @"microsoft.graph.iosLobApp", @"microsoft.graph.androidLobApp", @"microsoft.graph.windowsUniversalAppX", @"microsoft.graph.windowsMobileMSI", @"microsoft.graph.managedApp", @"microsoft.graph.managedMobileLobApp", @"microsoft.graph.managedIOSLobApp", @"microsoft.graph.managedAndroidLobApp", @"microsoft.graph.managedIOSStoreApp", @"microsoft.graph.managedAndroidStoreApp", @"microsoft.graph.macOSOfficeSuiteApp")]
         [TypeCastParameter]
         [ValidateNotNullOrEmpty]
@@ -651,6 +675,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"A required ID for referencing a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.")]

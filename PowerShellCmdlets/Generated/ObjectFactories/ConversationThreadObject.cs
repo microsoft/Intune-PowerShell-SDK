@@ -93,6 +93,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.post")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.conversationThread", HelpMessage = @"The &quot;posts&quot; property, of type &quot;microsoft.graph.post&quot;.")]
         public System.Object[] posts { get; set; }

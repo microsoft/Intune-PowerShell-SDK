@@ -139,6 +139,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.activityHistoryItem")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;historyItems&quot; property, of type &quot;microsoft.graph.activityHistoryItem&quot;.")]
         public System.Object[] historyItems { get; set; }

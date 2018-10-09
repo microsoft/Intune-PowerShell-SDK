@@ -16,6 +16,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.allDevicesAssignmentTarget&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.allDevicesAssignmentTarget")]
         [Parameter(ParameterSetName = @"microsoft.graph.allDevicesAssignmentTarget", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.allDevicesAssignmentTarget&quot; type.")]
         public System.Management.Automation.SwitchParameter allDevicesAssignmentTarget { get; set; }
@@ -24,6 +25,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.groupAssignmentTarget&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.groupAssignmentTarget")]
         [Parameter(ParameterSetName = @"microsoft.graph.groupAssignmentTarget", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.groupAssignmentTarget&quot; type.")]
         public System.Management.Automation.SwitchParameter groupAssignmentTarget { get; set; }
@@ -43,6 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.exclusionGroupAssignmentTarget&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.exclusionGroupAssignmentTarget")]
         [Parameter(ParameterSetName = @"microsoft.graph.exclusionGroupAssignmentTarget", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.exclusionGroupAssignmentTarget&quot; type.")]
         public System.Management.Automation.SwitchParameter exclusionGroupAssignmentTarget { get; set; }
@@ -51,6 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.allLicensedUsersAssignmentTarget&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.allLicensedUsersAssignmentTarget")]
         [Parameter(ParameterSetName = @"microsoft.graph.allLicensedUsersAssignmentTarget", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.allLicensedUsersAssignmentTarget&quot; type.")]
         public System.Management.Automation.SwitchParameter allLicensedUsersAssignmentTarget { get; set; }

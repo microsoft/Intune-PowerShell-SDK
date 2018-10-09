@@ -100,6 +100,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.domainDnsRecord", "microsoft.graph.domainDnsUnavailableRecord", "microsoft.graph.domainDnsTxtRecord", "microsoft.graph.domainDnsSrvRecord", "microsoft.graph.domainDnsMxRecord", "microsoft.graph.domainDnsCnameRecord")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;serviceConfigurationRecords&quot; property, of type &quot;microsoft.graph.domainDnsRecord&quot;.")]
         public System.Object[] serviceConfigurationRecords { get; set; }
@@ -110,6 +111,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.domainDnsRecord", "microsoft.graph.domainDnsUnavailableRecord", "microsoft.graph.domainDnsTxtRecord", "microsoft.graph.domainDnsSrvRecord", "microsoft.graph.domainDnsMxRecord", "microsoft.graph.domainDnsCnameRecord")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;verificationDnsRecords&quot; property, of type &quot;microsoft.graph.domainDnsRecord&quot;.")]
         public System.Object[] verificationDnsRecords { get; set; }
@@ -120,6 +122,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;domainNameReferences&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         public System.Object[] domainNameReferences { get; set; }

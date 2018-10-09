@@ -18,6 +18,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.trending")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.officeGraphInsights", HelpMessage = @"The &quot;trending&quot; property, of type &quot;microsoft.graph.trending&quot;.")]
         public System.Object[] trending { get; set; }
@@ -28,6 +29,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.sharedInsight")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.officeGraphInsights", HelpMessage = @"The &quot;shared&quot; property, of type &quot;microsoft.graph.sharedInsight&quot;.")]
         public System.Object[] shared { get; set; }
@@ -38,6 +40,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.usedInsight")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.officeGraphInsights", HelpMessage = @"The &quot;used&quot; property, of type &quot;microsoft.graph.usedInsight&quot;.")]
         public System.Object[] used { get; set; }

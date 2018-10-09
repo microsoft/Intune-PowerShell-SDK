@@ -76,6 +76,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionDesktopApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsInformationProtectionDesktopApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionDesktopApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionDesktopApp&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsInformationProtectionDesktopApp { get; set; }
@@ -114,6 +115,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsInformationProtectionStoreApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsInformationProtectionStoreApp { get; set; }

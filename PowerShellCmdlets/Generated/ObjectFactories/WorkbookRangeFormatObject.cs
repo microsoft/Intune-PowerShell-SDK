@@ -63,6 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookRangeBorder")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFormat", HelpMessage = @"The &quot;borders&quot; property, of type &quot;microsoft.graph.workbookRangeBorder&quot;.")]
         public System.Object[] borders { get; set; }
@@ -73,6 +74,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookRangeFill")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFormat", HelpMessage = @"The &quot;fill&quot; property, of type &quot;microsoft.graph.workbookRangeFill&quot;.")]
         public System.Object fill { get; set; }
 
@@ -82,6 +84,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookRangeFont")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFormat", HelpMessage = @"The &quot;font&quot; property, of type &quot;microsoft.graph.workbookRangeFont&quot;.")]
         public System.Object font { get; set; }
 
@@ -91,6 +94,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookFormatProtection")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFormat", HelpMessage = @"The &quot;protection&quot; property, of type &quot;microsoft.graph.workbookFormatProtection&quot;.")]
         public System.Object protection { get; set; }
     }

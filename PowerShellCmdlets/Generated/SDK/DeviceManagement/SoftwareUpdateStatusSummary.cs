@@ -356,6 +356,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The URL which should be used to access a &quot;microsoft.graph.softwareUpdateStatusSummary&quot; object.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The URL which should be used to access a &quot;microsoft.graph.softwareUpdateStatusSummary&quot; object.")]
         public System.String softwareUpdateStatusSummaryReferenceUrl { get; set; }

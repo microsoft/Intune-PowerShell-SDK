@@ -16,6 +16,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceActionResult&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceActionResult")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceActionResult&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceActionResult { get; set; }
@@ -88,6 +89,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.resetPasscodeActionResult&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.resetPasscodeActionResult")]
         [Parameter(ParameterSetName = @"microsoft.graph.resetPasscodeActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.resetPasscodeActionResult&quot; type.")]
         public System.Management.Automation.SwitchParameter resetPasscodeActionResult { get; set; }
@@ -106,6 +108,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.remoteLockActionResult&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.remoteLockActionResult")]
         [Parameter(ParameterSetName = @"microsoft.graph.remoteLockActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.remoteLockActionResult&quot; type.")]
         public System.Management.Automation.SwitchParameter remoteLockActionResult { get; set; }
@@ -124,6 +127,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.locateDeviceActionResult&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.locateDeviceActionResult")]
         [Parameter(ParameterSetName = @"microsoft.graph.locateDeviceActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.locateDeviceActionResult&quot; type.")]
         public System.Management.Automation.SwitchParameter locateDeviceActionResult { get; set; }
@@ -142,6 +146,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deleteUserFromSharedAppleDeviceActionResult&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deleteUserFromSharedAppleDeviceActionResult")]
         [Parameter(ParameterSetName = @"microsoft.graph.deleteUserFromSharedAppleDeviceActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deleteUserFromSharedAppleDeviceActionResult&quot; type.")]
         public System.Management.Automation.SwitchParameter deleteUserFromSharedAppleDeviceActionResult { get; set; }
@@ -160,6 +165,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderScanActionResult&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsDefenderScanActionResult")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderScanActionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderScanActionResult&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsDefenderScanActionResult { get; set; }

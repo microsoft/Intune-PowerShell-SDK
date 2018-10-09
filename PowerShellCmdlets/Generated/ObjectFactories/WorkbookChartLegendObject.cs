@@ -45,6 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartLegendFormat")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartLegend", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartLegendFormat&quot;.")]
         public System.Object format { get; set; }
     }

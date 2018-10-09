@@ -76,6 +76,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.referenceAttachment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.referenceAttachment")]
         [Parameter(ParameterSetName = @"microsoft.graph.referenceAttachment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.referenceAttachment&quot; type.")]
         public System.Management.Automation.SwitchParameter referenceAttachment { get; set; }
@@ -84,6 +85,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.itemAttachment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.itemAttachment")]
         [Parameter(ParameterSetName = @"microsoft.graph.itemAttachment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.itemAttachment&quot; type.")]
         public System.Management.Automation.SwitchParameter itemAttachment { get; set; }
@@ -94,6 +96,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.outlookItem", "microsoft.graph.post", "microsoft.graph.contact", "microsoft.graph.message", "microsoft.graph.eventMessage", "microsoft.graph.event")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.itemAttachment", HelpMessage = @"The &quot;item&quot; property, of type &quot;microsoft.graph.outlookItem&quot;.")]
         public System.Object item { get; set; }
 
@@ -101,6 +104,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.fileAttachment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.fileAttachment")]
         [Parameter(ParameterSetName = @"microsoft.graph.fileAttachment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.fileAttachment&quot; type.")]
         public System.Management.Automation.SwitchParameter fileAttachment { get; set; }

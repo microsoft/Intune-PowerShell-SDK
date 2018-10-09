@@ -27,6 +27,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartGridlinesFormat")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartGridlines", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartGridlinesFormat&quot;.")]
         public System.Object format { get; set; }
     }

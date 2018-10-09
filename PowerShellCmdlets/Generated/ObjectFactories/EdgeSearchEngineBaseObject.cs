@@ -16,6 +16,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.edgeSearchEngine&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.edgeSearchEngine")]
         [Parameter(ParameterSetName = @"microsoft.graph.edgeSearchEngine", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.edgeSearchEngine&quot; type.")]
         public System.Management.Automation.SwitchParameter edgeSearchEngine { get; set; }
@@ -38,6 +39,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.edgeSearchEngineCustom&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.edgeSearchEngineCustom")]
         [Parameter(ParameterSetName = @"microsoft.graph.edgeSearchEngineCustom", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.edgeSearchEngineCustom&quot; type.")]
         public System.Management.Automation.SwitchParameter edgeSearchEngineCustom { get; set; }

@@ -16,6 +16,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.microsoftStoreForBusinessAppAssignmentSettings&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.microsoftStoreForBusinessAppAssignmentSettings")]
         [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessAppAssignmentSettings", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.microsoftStoreForBusinessAppAssignmentSettings&quot; type.")]
         public System.Management.Automation.SwitchParameter microsoftStoreForBusinessAppAssignmentSettings { get; set; }
@@ -34,6 +35,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppAppAssignmentSettings&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosVppAppAssignmentSettings")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosVppAppAssignmentSettings", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppAppAssignmentSettings&quot; type.")]
         public System.Management.Automation.SwitchParameter iosVppAppAssignmentSettings { get; set; }
@@ -64,6 +66,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosStoreAppAssignmentSettings&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosStoreAppAssignmentSettings")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosStoreAppAssignmentSettings", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosStoreAppAssignmentSettings&quot; type.")]
         public System.Management.Automation.SwitchParameter iosStoreAppAssignmentSettings { get; set; }
@@ -72,6 +75,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosLobAppAssignmentSettings&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosLobAppAssignmentSettings")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosLobAppAssignmentSettings", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosLobAppAssignmentSettings&quot; type.")]
         public System.Management.Automation.SwitchParameter iosLobAppAssignmentSettings { get; set; }

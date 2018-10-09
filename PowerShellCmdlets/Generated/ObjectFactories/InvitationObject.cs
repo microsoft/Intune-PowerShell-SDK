@@ -90,6 +90,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.user")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.invitation", HelpMessage = @"The &quot;invitedUser&quot; property, of type &quot;microsoft.graph.user&quot;.")]
         public System.Object invitedUser { get; set; }
     }

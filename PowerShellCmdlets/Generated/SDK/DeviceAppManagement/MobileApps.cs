@@ -21,6 +21,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
@@ -629,6 +630,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ResourceIdParameter]
         public System.String mobileAppId { get; set; }
@@ -1008,6 +1010,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mobileAppCategory")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
@@ -1037,6 +1040,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mobileAppAssignment")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
@@ -1063,6 +1067,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosStoreApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter iosStoreApp { get; set; }
@@ -1135,6 +1140,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosVppApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppApp&quot; type.")]
         public System.Management.Automation.SwitchParameter iosVppApp { get; set; }
@@ -1226,6 +1232,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.androidStoreApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter androidStoreApp { get; set; }
@@ -1248,6 +1255,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.webApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.webApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.webApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.webApp&quot; type.")]
         public System.Management.Automation.SwitchParameter webApp { get; set; }
@@ -1278,6 +1286,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.microsoftStoreForBusinessApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.microsoftStoreForBusinessApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.microsoftStoreForBusinessApp&quot; type.")]
         public System.Management.Automation.SwitchParameter microsoftStoreForBusinessApp { get; set; }
@@ -1380,6 +1389,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mobileAppContent")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
@@ -1396,6 +1406,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosLobApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter iosLobApp { get; set; }
@@ -1440,6 +1451,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.androidLobApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter androidLobApp { get; set; }
@@ -1472,6 +1484,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUniversalAppX&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsUniversalAppX")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUniversalAppX&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsUniversalAppX { get; set; }
@@ -1565,6 +1578,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsMobileMSI&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsMobileMSI")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsMobileMSI&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsMobileMSI { get; set; }
@@ -1653,6 +1667,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedIOSLobApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedIOSLobApp { get; set; }
@@ -1661,6 +1676,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedAndroidLobApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedAndroidLobApp { get; set; }
@@ -1669,6 +1685,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedIOSStoreApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedIOSStoreApp { get; set; }
@@ -1677,6 +1694,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedAndroidStoreApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedAndroidStoreApp { get; set; }
@@ -1685,6 +1703,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSOfficeSuiteApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.macOSOfficeSuiteApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSOfficeSuiteApp&quot; type.")]
         public System.Management.Automation.SwitchParameter macOSOfficeSuiteApp { get; set; }
@@ -1711,6 +1730,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
@@ -2092,6 +2112,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mobileAppCategory")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
@@ -2121,6 +2142,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mobileAppAssignment")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
@@ -2147,6 +2169,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosStoreApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter iosStoreApp { get; set; }
@@ -2219,6 +2242,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosVppApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppApp&quot; type.")]
         public System.Management.Automation.SwitchParameter iosVppApp { get; set; }
@@ -2310,6 +2334,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.androidStoreApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter androidStoreApp { get; set; }
@@ -2332,6 +2357,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.webApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.webApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.webApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.webApp&quot; type.")]
         public System.Management.Automation.SwitchParameter webApp { get; set; }
@@ -2362,6 +2388,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.microsoftStoreForBusinessApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.microsoftStoreForBusinessApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.microsoftStoreForBusinessApp&quot; type.")]
         public System.Management.Automation.SwitchParameter microsoftStoreForBusinessApp { get; set; }
@@ -2464,6 +2491,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mobileAppContent")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
@@ -2480,6 +2508,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosLobApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter iosLobApp { get; set; }
@@ -2524,6 +2553,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.androidLobApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter androidLobApp { get; set; }
@@ -2556,6 +2586,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUniversalAppX&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsUniversalAppX")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUniversalAppX&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsUniversalAppX { get; set; }
@@ -2649,6 +2680,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsMobileMSI&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsMobileMSI")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsMobileMSI&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsMobileMSI { get; set; }
@@ -2737,6 +2769,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedIOSLobApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedIOSLobApp { get; set; }
@@ -2745,6 +2778,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedAndroidLobApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedAndroidLobApp { get; set; }
@@ -2753,6 +2787,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedIOSStoreApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedIOSStoreApp { get; set; }
@@ -2761,6 +2796,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedAndroidStoreApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedAndroidStoreApp { get; set; }
@@ -2769,6 +2805,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSOfficeSuiteApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.macOSOfficeSuiteApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSOfficeSuiteApp&quot; type.")]
         public System.Management.Automation.SwitchParameter macOSOfficeSuiteApp { get; set; }
@@ -2795,6 +2832,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ResourceIdParameter]
         [ValidateNotNullOrEmpty]
@@ -2823,6 +2861,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mobileAppAssignment")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;mobileAppAssignments&quot; action parameter of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
         public System.Object[] mobileAppAssignments { get; set; }
@@ -2831,6 +2870,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [IdParameter]
         [ResourceIdParameter]
         [ValidateNotNullOrEmpty]

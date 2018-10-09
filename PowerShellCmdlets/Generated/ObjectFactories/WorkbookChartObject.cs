@@ -63,6 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartAxes")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", HelpMessage = @"The &quot;axes&quot; property, of type &quot;microsoft.graph.workbookChartAxes&quot;.")]
         public System.Object axes { get; set; }
 
@@ -72,6 +73,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartDataLabels")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", HelpMessage = @"The &quot;dataLabels&quot; property, of type &quot;microsoft.graph.workbookChartDataLabels&quot;.")]
         public System.Object dataLabels { get; set; }
 
@@ -81,6 +83,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartAreaFormat")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartAreaFormat&quot;.")]
         public System.Object format { get; set; }
 
@@ -90,6 +93,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartLegend")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", HelpMessage = @"The &quot;legend&quot; property, of type &quot;microsoft.graph.workbookChartLegend&quot;.")]
         public System.Object legend { get; set; }
 
@@ -99,6 +103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartSeries")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", HelpMessage = @"The &quot;series&quot; property, of type &quot;microsoft.graph.workbookChartSeries&quot;.")]
         public System.Object[] series { get; set; }
@@ -109,6 +114,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartTitle")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", HelpMessage = @"The &quot;title&quot; property, of type &quot;microsoft.graph.workbookChartTitle&quot;.")]
         public System.Object title { get; set; }
 
@@ -118,6 +124,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookWorksheet")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", HelpMessage = @"The &quot;worksheet&quot; property, of type &quot;microsoft.graph.workbookWorksheet&quot;.")]
         public System.Object worksheet { get; set; }
     }

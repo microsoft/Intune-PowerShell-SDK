@@ -103,6 +103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.educationSchool")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;schools&quot; property, of type &quot;microsoft.graph.educationSchool&quot;.")]
         public System.Object[] schools { get; set; }
@@ -113,6 +114,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.educationUser")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;members&quot; property, of type &quot;microsoft.graph.educationUser&quot;.")]
         public System.Object[] members { get; set; }
@@ -123,6 +125,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.educationUser")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;teachers&quot; property, of type &quot;microsoft.graph.educationUser&quot;.")]
         public System.Object[] teachers { get; set; }
@@ -133,6 +136,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.group")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;group&quot; property, of type &quot;microsoft.graph.group&quot;.")]
         public System.Object group { get; set; }
     }

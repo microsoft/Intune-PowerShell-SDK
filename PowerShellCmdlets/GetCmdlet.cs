@@ -37,7 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// 
         /// This value is declared as a dynamic parameter so that values can be validated per cmdlet.
         /// </summary>
-        public string[] Expand = null;
+        private string[] Expand = null;
 
         #region Setup
 
@@ -153,7 +153,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             }
 
             // Expand
-            if (Expand != null && Expand.Any())
+            if (this.Expand != null && this.Expand.Any())
             {
                 IEnumerable<string> selectable = this.Expand.Select(param =>
                     this.PropertyNameMappings.TryGetValue(param, out string mappedName)

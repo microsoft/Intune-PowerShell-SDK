@@ -63,7 +63,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                 throw new ArgumentNullException(nameof(referencePathGenerator));
             }
 
-            Cache.Add(cmdletNoun, referencePathGenerator);
+            Cache[cmdletNoun] = referencePathGenerator;
         }
 
         internal static bool TryGetFromCache(string cmdletNoun, out ReferencePathGenerator referencePathGenerator)

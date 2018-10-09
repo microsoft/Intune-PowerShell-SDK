@@ -94,6 +94,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.userActivity")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.activityHistoryItem", HelpMessage = @"The &quot;activity&quot; property, of type &quot;microsoft.graph.userActivity&quot;.")]
         public System.Object activity { get; set; }
     }

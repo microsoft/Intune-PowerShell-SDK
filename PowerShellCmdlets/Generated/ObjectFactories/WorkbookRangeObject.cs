@@ -171,6 +171,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookRangeFormat")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRange", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookRangeFormat&quot;.")]
         public System.Object format { get; set; }
 
@@ -180,6 +181,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookRangeSort")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRange", HelpMessage = @"The &quot;sort&quot; property, of type &quot;microsoft.graph.workbookRangeSort&quot;.")]
         public System.Object sort { get; set; }
 
@@ -189,6 +191,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookWorksheet")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRange", HelpMessage = @"The &quot;worksheet&quot; property, of type &quot;microsoft.graph.workbookWorksheet&quot;.")]
         public System.Object worksheet { get; set; }
     }

@@ -49,6 +49,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.listItemVersion&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.listItemVersion")]
         [Parameter(ParameterSetName = @"microsoft.graph.listItemVersion", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.listItemVersion&quot; type.")]
         public System.Management.Automation.SwitchParameter listItemVersion { get; set; }
@@ -59,6 +60,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.fieldValueSet")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.listItemVersion", HelpMessage = @"The &quot;fields&quot; property, of type &quot;microsoft.graph.fieldValueSet&quot;.")]
         public System.Object fields { get; set; }
 
@@ -66,6 +68,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.driveItemVersion&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.driveItemVersion")]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItemVersion", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.driveItemVersion&quot; type.")]
         public System.Management.Automation.SwitchParameter driveItemVersion { get; set; }

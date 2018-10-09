@@ -54,6 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartAxisFormat")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxis", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartAxisFormat&quot;.")]
         public System.Object format { get; set; }
 
@@ -63,6 +64,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartGridlines")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxis", HelpMessage = @"The &quot;majorGridlines&quot; property, of type &quot;microsoft.graph.workbookChartGridlines&quot;.")]
         public System.Object majorGridlines { get; set; }
 
@@ -72,6 +74,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartGridlines")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxis", HelpMessage = @"The &quot;minorGridlines&quot; property, of type &quot;microsoft.graph.workbookChartGridlines&quot;.")]
         public System.Object minorGridlines { get; set; }
 
@@ -81,6 +84,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartAxisTitle")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxis", HelpMessage = @"The &quot;title&quot; property, of type &quot;microsoft.graph.workbookChartAxisTitle&quot;.")]
         public System.Object title { get; set; }
     }

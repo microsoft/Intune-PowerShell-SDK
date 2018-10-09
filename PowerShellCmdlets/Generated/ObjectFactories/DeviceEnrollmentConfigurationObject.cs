@@ -91,6 +91,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.enrollmentConfigurationAssignment")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
@@ -102,6 +103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceEnrollmentWindowsHelloForBusinessConfiguration { get; set; }
@@ -238,6 +240,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceEnrollmentPlatformRestrictionsConfiguration { get; set; }
@@ -291,6 +294,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentLimitConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceEnrollmentLimitConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentLimitConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentLimitConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceEnrollmentLimitConfiguration { get; set; }

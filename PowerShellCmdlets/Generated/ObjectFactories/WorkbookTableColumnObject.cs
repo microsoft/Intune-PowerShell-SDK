@@ -45,6 +45,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookFilter")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookTableColumn", HelpMessage = @"The &quot;filter&quot; property, of type &quot;microsoft.graph.workbookFilter&quot;.")]
         public System.Object filter { get; set; }
     }

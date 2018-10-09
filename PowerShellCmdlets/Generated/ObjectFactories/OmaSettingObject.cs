@@ -67,6 +67,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.omaSettingBase64&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.omaSettingBase64")]
         [Parameter(ParameterSetName = @"microsoft.graph.omaSettingBase64", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.omaSettingBase64&quot; type.")]
         public System.Management.Automation.SwitchParameter omaSettingBase64 { get; set; }
@@ -101,6 +102,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.omaSettingBoolean&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.omaSettingBoolean")]
         [Parameter(ParameterSetName = @"microsoft.graph.omaSettingBoolean", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.omaSettingBoolean&quot; type.")]
         public System.Management.Automation.SwitchParameter omaSettingBoolean { get; set; }
@@ -109,6 +111,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.omaSettingStringXml&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.omaSettingStringXml")]
         [Parameter(ParameterSetName = @"microsoft.graph.omaSettingStringXml", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.omaSettingStringXml&quot; type.")]
         public System.Management.Automation.SwitchParameter omaSettingStringXml { get; set; }
@@ -117,6 +120,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.omaSettingDateTime&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.omaSettingDateTime")]
         [Parameter(ParameterSetName = @"microsoft.graph.omaSettingDateTime", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.omaSettingDateTime&quot; type.")]
         public System.Management.Automation.SwitchParameter omaSettingDateTime { get; set; }
@@ -125,6 +129,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.omaSettingString&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.omaSettingString")]
         [Parameter(ParameterSetName = @"microsoft.graph.omaSettingString", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.omaSettingString&quot; type.")]
         public System.Management.Automation.SwitchParameter omaSettingString { get; set; }
@@ -133,6 +138,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.omaSettingFloatingPoint&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.omaSettingFloatingPoint")]
         [Parameter(ParameterSetName = @"microsoft.graph.omaSettingFloatingPoint", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.omaSettingFloatingPoint&quot; type.")]
         public System.Management.Automation.SwitchParameter omaSettingFloatingPoint { get; set; }
@@ -141,6 +147,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.omaSettingInteger&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.omaSettingInteger")]
         [Parameter(ParameterSetName = @"microsoft.graph.omaSettingInteger", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.omaSettingInteger&quot; type.")]
         public System.Management.Automation.SwitchParameter omaSettingInteger { get; set; }

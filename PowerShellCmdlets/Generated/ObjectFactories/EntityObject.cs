@@ -16,6 +16,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.usedInsight&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.usedInsight")]
         [Parameter(ParameterSetName = @"microsoft.graph.usedInsight", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.usedInsight&quot; type.")]
         public System.Management.Automation.SwitchParameter usedInsight { get; set; }
@@ -50,6 +51,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.usedInsight&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.usedInsight", HelpMessage = @"The &quot;resource&quot; property, of type &quot;microsoft.graph.entity&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedInsight", HelpMessage = @"The &quot;resource&quot; property, of type &quot;microsoft.graph.entity&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.trending", HelpMessage = @"The &quot;resource&quot; property, of type &quot;microsoft.graph.entity&quot;.")]
@@ -60,6 +62,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.sharedInsight&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.sharedInsight")]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedInsight", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.sharedInsight&quot; type.")]
         public System.Management.Automation.SwitchParameter sharedInsight { get; set; }
@@ -89,6 +92,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.entity", "microsoft.graph.usedInsight", "microsoft.graph.sharedInsight", "microsoft.graph.trending", "microsoft.graph.alert", "microsoft.graph.security", "microsoft.graph.activityHistoryItem", "microsoft.graph.userInstallStateSummary", "microsoft.graph.deviceInstallState", "microsoft.graph.eBookInstallSummary", "microsoft.graph.managedEBookAssignment", "microsoft.graph.iosVppEBookAssignment", "microsoft.graph.localizedNotificationMessage", "microsoft.graph.windowsInformationProtectionAppLockerFile", "microsoft.graph.managedAppPolicyDeploymentSummary", "microsoft.graph.managedAppOperation", "microsoft.graph.targetedManagedAppPolicyAssignment", "microsoft.graph.managedMobileApp", "microsoft.graph.enrollmentConfigurationAssignment", "microsoft.graph.deviceComplianceSettingState", "microsoft.graph.deviceComplianceActionItem", "microsoft.graph.deviceComplianceUserOverview", "microsoft.graph.deviceComplianceDeviceOverview", "microsoft.graph.deviceComplianceUserStatus", "microsoft.graph.deviceComplianceDeviceStatus", "microsoft.graph.deviceComplianceScheduledActionForRule", "microsoft.graph.deviceCompliancePolicyAssignment", "microsoft.graph.settingStateDeviceSummary", "microsoft.graph.deviceConfigurationUserOverview", "microsoft.graph.deviceConfigurationDeviceOverview", "microsoft.graph.deviceConfigurationUserStatus", "microsoft.graph.deviceConfigurationDeviceStatus", "microsoft.graph.deviceConfigurationAssignment", "microsoft.graph.deviceCompliancePolicyState", "microsoft.graph.deviceConfigurationState", "microsoft.graph.termsAndConditionsAcceptanceStatus", "microsoft.graph.termsAndConditionsAssignment", "microsoft.graph.windowsInformationProtectionNetworkLearningSummary", "microsoft.graph.windowsInformationProtectionAppLearningSummary", "microsoft.graph.remoteAssistancePartner", "microsoft.graph.telecomExpenseManagementPartner", "microsoft.graph.resourceOperation", "microsoft.graph.roleAssignment", "microsoft.graph.deviceAndAppManagementRoleAssignment", "microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition", "microsoft.graph.notificationMessageTemplate", "microsoft.graph.deviceManagementPartner", "microsoft.graph.mobileThreatDefenseConnector", "microsoft.graph.onPremisesConditionalAccessSettings", "microsoft.graph.deviceEnrollmentConfiguration", "microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", "microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", "microsoft.graph.deviceEnrollmentLimitConfiguration", "microsoft.graph.deviceManagementExchangeConnector", "microsoft.graph.deviceCategory", "microsoft.graph.iosUpdateDeviceStatus", "microsoft.graph.deviceConfigurationDeviceStateSummary", "microsoft.graph.deviceCompliancePolicySettingStateSummary", "microsoft.graph.deviceCompliancePolicyDeviceStateSummary", "microsoft.graph.softwareUpdateStatusSummary", "microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy", "microsoft.graph.deviceConfiguration", "microsoft.graph.windows10TeamGeneralConfiguration", "microsoft.graph.windowsPhone81GeneralConfiguration", "microsoft.graph.windows81GeneralConfiguration", "microsoft.graph.windowsUpdateForBusinessConfiguration", "microsoft.graph.windowsPhone81CustomConfiguration", "microsoft.graph.windows10SecureAssessmentConfiguration", "microsoft.graph.sharedPCConfiguration", "microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", "microsoft.graph.windows10CustomConfiguration", "microsoft.graph.windows10GeneralConfiguration", "microsoft.graph.windows10EndpointProtectionConfiguration", "microsoft.graph.editionUpgradeConfiguration", "microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", "microsoft.graph.appleDeviceFeaturesConfigurationBase", "microsoft.graph.macOSDeviceFeaturesConfiguration", "microsoft.graph.iosDeviceFeaturesConfiguration", "microsoft.graph.macOSGeneralDeviceConfiguration", "microsoft.graph.macOSCustomConfiguration", "microsoft.graph.iosUpdateConfiguration", "microsoft.graph.iosGeneralDeviceConfiguration", "microsoft.graph.iosCustomConfiguration", "microsoft.graph.iosCertificateProfile", "microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", "microsoft.graph.androidWorkProfileCustomConfiguration", "microsoft.graph.androidGeneralDeviceConfiguration", "microsoft.graph.androidCustomConfiguration", "microsoft.graph.detectedApp", "microsoft.graph.managedDeviceOverview", "microsoft.graph.applePushNotificationCertificate", "microsoft.graph.termsAndConditions", "microsoft.graph.deviceManagement", "microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", "microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary", "microsoft.graph.managedDeviceMobileAppConfigurationAssignment", "microsoft.graph.managedDeviceMobileAppConfigurationUserStatus", "microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus", "microsoft.graph.mobileAppContent", "microsoft.graph.mobileAppContentFile", "microsoft.graph.mobileAppAssignment", "microsoft.graph.managedEBook", "microsoft.graph.iosVppEBook", "microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw", "microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection", "microsoft.graph.vppToken", "microsoft.graph.managedDeviceMobileAppConfiguration", "microsoft.graph.iosMobileAppConfiguration", "microsoft.graph.mobileAppCategory", "microsoft.graph.mobileApp", "microsoft.graph.iosStoreApp", "microsoft.graph.iosVppApp", "microsoft.graph.androidStoreApp", "microsoft.graph.webApp", "microsoft.graph.microsoftStoreForBusinessApp", "microsoft.graph.mobileLobApp", "microsoft.graph.iosLobApp", "microsoft.graph.androidLobApp", "microsoft.graph.windowsUniversalAppX", "microsoft.graph.windowsMobileMSI", "microsoft.graph.managedApp", "microsoft.graph.managedMobileLobApp", "microsoft.graph.managedIOSLobApp", "microsoft.graph.managedAndroidLobApp", "microsoft.graph.managedIOSStoreApp", "microsoft.graph.managedAndroidStoreApp", "microsoft.graph.macOSOfficeSuiteApp", "microsoft.graph.deviceAppManagement", "microsoft.graph.educationUser", "microsoft.graph.educationOrganization", "microsoft.graph.educationSchool", "microsoft.graph.educationClass", "microsoft.graph.educationRoot", "microsoft.graph.reportRoot", "microsoft.graph.operation", "microsoft.graph.onenoteOperation", "microsoft.graph.onenoteEntityBaseModel", "microsoft.graph.onenoteResource", "microsoft.graph.onenoteEntitySchemaObjectModel", "microsoft.graph.onenotePage", "microsoft.graph.onenoteEntityHierarchyModel", "microsoft.graph.sectionGroup", "microsoft.graph.onenoteSection", "microsoft.graph.notebook", "microsoft.graph.plannerPlanDetails", "microsoft.graph.plannerBucketTaskBoardTaskFormat", "microsoft.graph.plannerProgressTaskBoardTaskFormat", "microsoft.graph.plannerAssignedToTaskBoardTaskFormat", "microsoft.graph.plannerTaskDetails", "microsoft.graph.plannerBucket", "microsoft.graph.planner", "microsoft.graph.plannerPlan", "microsoft.graph.plannerTask", "microsoft.graph.invitation", "microsoft.graph.subscription", "microsoft.graph.workbookWorksheetProtection", "microsoft.graph.workbookTableSort", "microsoft.graph.workbookTableRow", "microsoft.graph.workbookTableColumn", "microsoft.graph.workbookRangeView", "microsoft.graph.workbookRangeFont", "microsoft.graph.workbookRangeFill", "microsoft.graph.workbookRangeBorder", "microsoft.graph.workbookRangeSort", "microsoft.graph.workbookRangeFormat", "microsoft.graph.workbookRange", "microsoft.graph.workbookPivotTable", "microsoft.graph.workbookFunctionResult", "microsoft.graph.workbookFormatProtection", "microsoft.graph.workbookFilter", "microsoft.graph.workbookChartTitleFormat", "microsoft.graph.workbookChartSeriesFormat", "microsoft.graph.workbookChartPointFormat", "microsoft.graph.workbookChartPoint", "microsoft.graph.workbookChartLegendFormat", "microsoft.graph.workbookChartGridlinesFormat", "microsoft.graph.workbookChartDataLabelFormat", "microsoft.graph.workbookChartAxisTitleFormat", "microsoft.graph.workbookChartLineFormat", "microsoft.graph.workbookChartAxisTitle", "microsoft.graph.workbookChartGridlines", "microsoft.graph.workbookChartAxisFormat", "microsoft.graph.workbookChartAxis", "microsoft.graph.workbookChartFont", "microsoft.graph.workbookChartFill", "microsoft.graph.workbookChartTitle", "microsoft.graph.workbookChartSeries", "microsoft.graph.workbookChartLegend", "microsoft.graph.workbookChartAreaFormat", "microsoft.graph.workbookChartDataLabels", "microsoft.graph.workbookChartAxes", "microsoft.graph.workbookChart", "microsoft.graph.workbookFunctions", "microsoft.graph.workbookWorksheet", "microsoft.graph.workbookTable", "microsoft.graph.workbookNamedItem", "microsoft.graph.workbookApplication", "microsoft.graph.fieldValueSet", "microsoft.graph.workbook", "microsoft.graph.thumbnailSet", "microsoft.graph.permission", "microsoft.graph.contentType", "microsoft.graph.columnLink", "microsoft.graph.columnDefinition", "microsoft.graph.baseItemVersion", "microsoft.graph.listItemVersion", "microsoft.graph.driveItemVersion", "microsoft.graph.inferenceClassificationOverride", "microsoft.graph.multiValueLegacyExtendedProperty", "microsoft.graph.singleValueLegacyExtendedProperty", "microsoft.graph.messageRule", "microsoft.graph.outlookCategory", "microsoft.graph.attachment", "microsoft.graph.referenceAttachment", "microsoft.graph.itemAttachment", "microsoft.graph.fileAttachment", "microsoft.graph.schemaExtension", "microsoft.graph.userSettings", "microsoft.graph.officeGraphInsights", "microsoft.graph.userActivity", "microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent", "microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration", "microsoft.graph.managedDevice", "microsoft.graph.plannerUser", "microsoft.graph.inferenceClassification", "microsoft.graph.contactFolder", "microsoft.graph.person", "microsoft.graph.calendarGroup", "microsoft.graph.mailFolder", "microsoft.graph.outlookUser", "microsoft.graph.subscribedSku", "microsoft.graph.groupLifecyclePolicy", "microsoft.graph.onenote", "microsoft.graph.plannerGroup", "microsoft.graph.baseItem", "microsoft.graph.sharedDriveItem", "microsoft.graph.listItem", "microsoft.graph.list", "microsoft.graph.driveItem", "microsoft.graph.site", "microsoft.graph.drive", "microsoft.graph.profilePhoto", "microsoft.graph.conversation", "microsoft.graph.outlookItem", "microsoft.graph.post", "microsoft.graph.contact", "microsoft.graph.message", "microsoft.graph.eventMessage", "microsoft.graph.event", "microsoft.graph.calendar", "microsoft.graph.conversationThread", "microsoft.graph.groupSetting", "microsoft.graph.licenseDetails", "microsoft.graph.domainDnsRecord", "microsoft.graph.domainDnsUnavailableRecord", "microsoft.graph.domainDnsTxtRecord", "microsoft.graph.domainDnsSrvRecord", "microsoft.graph.domainDnsMxRecord", "microsoft.graph.domainDnsCnameRecord", "microsoft.graph.domain", "microsoft.graph.extension", "microsoft.graph.openTypeExtension", "microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device", "microsoft.graph.directory")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedInsight", HelpMessage = @"The &quot;lastSharedMethod&quot; property, of type &quot;microsoft.graph.entity&quot;.")]
         public System.Object lastSharedMethod { get; set; }
 
@@ -96,6 +100,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.trending&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.trending")]
         [Parameter(ParameterSetName = @"microsoft.graph.trending", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.trending&quot; type.")]
         [Parameter(ParameterSetName = @"microsoft.graph.officeGraphInsights", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.trending&quot; type.")]
@@ -232,6 +237,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.alert&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.alert")]
         [Parameter(ParameterSetName = @"microsoft.graph.alert", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.alert&quot; type.")]
         public System.Management.Automation.SwitchParameter alert { get; set; }
@@ -709,6 +715,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.alert&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.onenotePage", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
@@ -762,6 +769,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.security&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.security")]
         [Parameter(ParameterSetName = @"microsoft.graph.security", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.security&quot; type.")]
         public System.Management.Automation.SwitchParameter security { get; set; }
@@ -772,6 +780,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.alert")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.security", HelpMessage = @"The &quot;alerts&quot; property, of type &quot;microsoft.graph.alert&quot;.")]
         public System.Object[] alerts { get; set; }
@@ -780,6 +789,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.activityHistoryItem&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.activityHistoryItem")]
         [Parameter(ParameterSetName = @"microsoft.graph.activityHistoryItem", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.activityHistoryItem&quot; type.")]
         public System.Management.Automation.SwitchParameter activityHistoryItem { get; set; }
@@ -842,6 +852,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.userActivity")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.activityHistoryItem", HelpMessage = @"The &quot;activity&quot; property, of type &quot;microsoft.graph.userActivity&quot;.")]
         public System.Object activity { get; set; }
 
@@ -849,6 +860,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.userInstallStateSummary&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.userInstallStateSummary")]
         [Parameter(ParameterSetName = @"microsoft.graph.userInstallStateSummary", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.userInstallStateSummary&quot; type.")]
         public System.Management.Automation.SwitchParameter userInstallStateSummary { get; set; }
@@ -909,6 +921,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceInstallState")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.userInstallStateSummary", HelpMessage = @"The &quot;deviceStates&quot; property, of type &quot;microsoft.graph.deviceInstallState&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;deviceStates&quot; property, of type &quot;microsoft.graph.deviceInstallState&quot;.")]
@@ -919,6 +932,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceInstallState&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceInstallState")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceInstallState", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceInstallState&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceInstallState { get; set; }
@@ -1019,6 +1033,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.eBookInstallSummary&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.eBookInstallSummary")]
         [Parameter(ParameterSetName = @"microsoft.graph.eBookInstallSummary", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.eBookInstallSummary&quot; type.")]
         public System.Management.Automation.SwitchParameter eBookInstallSummary { get; set; }
@@ -1057,6 +1072,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedEBookAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedEBookAssignment")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedEBookAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedEBookAssignment&quot; type.")]
         public System.Management.Automation.SwitchParameter managedEBookAssignment { get; set; }
@@ -1098,6 +1114,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppEBookAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosVppEBookAssignment")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBookAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppEBookAssignment&quot; type.")]
         public System.Management.Automation.SwitchParameter iosVppEBookAssignment { get; set; }
@@ -1106,6 +1123,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.localizedNotificationMessage&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.localizedNotificationMessage")]
         [Parameter(ParameterSetName = @"microsoft.graph.localizedNotificationMessage", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.localizedNotificationMessage&quot; type.")]
         public System.Management.Automation.SwitchParameter localizedNotificationMessage { get; set; }
@@ -1160,6 +1178,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsInformationProtectionAppLockerFile")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsInformationProtectionAppLockerFile { get; set; }
@@ -1397,6 +1416,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedAppPolicyDeploymentSummary")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedAppPolicyDeploymentSummary", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot; type.")]
         public System.Management.Automation.SwitchParameter managedAppPolicyDeploymentSummary { get; set; }
@@ -1433,6 +1453,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAppOperation&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedAppOperation")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedAppOperation", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAppOperation&quot; type.")]
         public System.Management.Automation.SwitchParameter managedAppOperation { get; set; }
@@ -1458,6 +1479,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.targetedManagedAppPolicyAssignment")]
         [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppPolicyAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; type.")]
         public System.Management.Automation.SwitchParameter targetedManagedAppPolicyAssignment { get; set; }
@@ -1466,6 +1488,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedMobileApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedMobileApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedMobileApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedMobileApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedMobileApp { get; set; }
@@ -1484,6 +1507,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.enrollmentConfigurationAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.enrollmentConfigurationAssignment")]
         [Parameter(ParameterSetName = @"microsoft.graph.enrollmentConfigurationAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.enrollmentConfigurationAssignment&quot; type.")]
         public System.Management.Automation.SwitchParameter enrollmentConfigurationAssignment { get; set; }
@@ -1492,6 +1516,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceComplianceSettingState&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceComplianceSettingState")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceSettingState", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceComplianceSettingState&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceComplianceSettingState { get; set; }
@@ -1599,6 +1624,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceComplianceActionItem&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceComplianceActionItem")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceActionItem", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceComplianceActionItem&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceComplianceActionItem { get; set; }
@@ -1652,6 +1678,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceComplianceUserOverview&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceComplianceUserOverview")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceUserOverview", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceComplianceUserOverview&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceComplianceUserOverview { get; set; }
@@ -1765,6 +1792,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceComplianceDeviceOverview&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceComplianceDeviceOverview")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceDeviceOverview", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceComplianceDeviceOverview&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceComplianceDeviceOverview { get; set; }
@@ -1773,6 +1801,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceComplianceUserStatus&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceComplianceUserStatus")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceUserStatus", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceComplianceUserStatus&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceComplianceUserStatus { get; set; }
@@ -1823,6 +1852,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceComplianceDeviceStatus&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceComplianceDeviceStatus")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceDeviceStatus", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceComplianceDeviceStatus&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceComplianceDeviceStatus { get; set; }
@@ -1844,6 +1874,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceComplianceScheduledActionForRule")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceScheduledActionForRule", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceComplianceScheduledActionForRule { get; set; }
@@ -1865,6 +1896,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceComplianceActionItem")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceScheduledActionForRule", HelpMessage = @"The &quot;scheduledActionConfigurations&quot; property, of type &quot;microsoft.graph.deviceComplianceActionItem&quot;.")]
         public System.Object[] scheduledActionConfigurations { get; set; }
@@ -1873,6 +1905,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceCompliancePolicyAssignment")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceCompliancePolicyAssignment { get; set; }
@@ -1881,6 +1914,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.settingStateDeviceSummary&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.settingStateDeviceSummary")]
         [Parameter(ParameterSetName = @"microsoft.graph.settingStateDeviceSummary", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.settingStateDeviceSummary&quot; type.")]
         public System.Management.Automation.SwitchParameter settingStateDeviceSummary { get; set; }
@@ -1997,6 +2031,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceConfigurationUserOverview&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceConfigurationUserOverview")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationUserOverview", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceConfigurationUserOverview&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceConfigurationUserOverview { get; set; }
@@ -2005,6 +2040,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceConfigurationDeviceOverview")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationDeviceOverview", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceConfigurationDeviceOverview { get; set; }
@@ -2013,6 +2049,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceConfigurationUserStatus&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceConfigurationUserStatus")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationUserStatus", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceConfigurationUserStatus&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceConfigurationUserStatus { get; set; }
@@ -2021,6 +2058,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceConfigurationDeviceStatus")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationDeviceStatus", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceConfigurationDeviceStatus { get; set; }
@@ -2029,6 +2067,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceConfigurationAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceConfigurationAssignment")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceConfigurationAssignment&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceConfigurationAssignment { get; set; }
@@ -2037,6 +2076,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceCompliancePolicyState&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceCompliancePolicyState")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceCompliancePolicyState&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceCompliancePolicyState { get; set; }
@@ -2083,6 +2123,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceConfigurationState&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceConfigurationState")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationState", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceConfigurationState&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceConfigurationState { get; set; }
@@ -2091,6 +2132,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.termsAndConditionsAcceptanceStatus")]
         [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditionsAcceptanceStatus", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; type.")]
         public System.Management.Automation.SwitchParameter termsAndConditionsAcceptanceStatus { get; set; }
@@ -2121,6 +2163,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">Navigation link to the terms and conditions that are assigned.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.termsAndConditions")]
         [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditionsAcceptanceStatus", HelpMessage = @"The &quot;termsAndConditions&quot; property, of type &quot;microsoft.graph.termsAndConditions&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;termsAndConditions&quot; property, of type &quot;microsoft.graph.termsAndConditions&quot;.")]
@@ -2131,6 +2174,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.termsAndConditionsAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.termsAndConditionsAssignment")]
         [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditionsAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.termsAndConditionsAssignment&quot; type.")]
         public System.Management.Automation.SwitchParameter termsAndConditionsAssignment { get; set; }
@@ -2139,6 +2183,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsInformationProtectionNetworkLearningSummary")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionNetworkLearningSummary", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsInformationProtectionNetworkLearningSummary { get; set; }
@@ -2170,6 +2215,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionAppLearningSummary&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsInformationProtectionAppLearningSummary")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLearningSummary", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionAppLearningSummary&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsInformationProtectionAppLearningSummary { get; set; }
@@ -2202,6 +2248,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.remoteAssistancePartner&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.remoteAssistancePartner")]
         [Parameter(ParameterSetName = @"microsoft.graph.remoteAssistancePartner", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.remoteAssistancePartner&quot; type.")]
         public System.Management.Automation.SwitchParameter remoteAssistancePartner { get; set; }
@@ -2245,6 +2292,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.telecomExpenseManagementPartner&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.telecomExpenseManagementPartner")]
         [Parameter(ParameterSetName = @"microsoft.graph.telecomExpenseManagementPartner", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.telecomExpenseManagementPartner&quot; type.")]
         public System.Management.Automation.SwitchParameter telecomExpenseManagementPartner { get; set; }
@@ -2275,6 +2323,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.resourceOperation&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.resourceOperation")]
         [Parameter(ParameterSetName = @"microsoft.graph.resourceOperation", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.resourceOperation&quot; type.")]
         public System.Management.Automation.SwitchParameter resourceOperation { get; set; }
@@ -2303,6 +2352,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.roleAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.roleAssignment")]
         [Parameter(ParameterSetName = @"microsoft.graph.roleAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.roleAssignment&quot; type.")]
         public System.Management.Automation.SwitchParameter roleAssignment { get; set; }
@@ -2325,6 +2375,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">Role definition this assignment is part of.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.roleDefinition")]
         [Parameter(ParameterSetName = @"microsoft.graph.roleAssignment", HelpMessage = @"The &quot;roleDefinition&quot; property, of type &quot;microsoft.graph.roleDefinition&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleAssignment", HelpMessage = @"The &quot;roleDefinition&quot; property, of type &quot;microsoft.graph.roleDefinition&quot;.")]
@@ -2335,6 +2386,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceAndAppManagementRoleAssignment")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceAndAppManagementRoleAssignment { get; set; }
@@ -2345,6 +2397,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The list of ids of role member security groups. These are IDs from Azure Active Directory.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleAssignment", HelpMessage = @"The &quot;members&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;members&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;members&quot; property, of type &quot;Edm.String&quot;.")]
@@ -2381,6 +2434,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceAndAppManagementRoleAssignment")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
@@ -2391,6 +2445,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceAndAppManagementRoleDefinition&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceAndAppManagementRoleDefinition")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceAndAppManagementRoleDefinition&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceAndAppManagementRoleDefinition { get; set; }
@@ -2399,6 +2454,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.notificationMessageTemplate&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.notificationMessageTemplate")]
         [Parameter(ParameterSetName = @"microsoft.graph.notificationMessageTemplate", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.notificationMessageTemplate&quot; type.")]
         public System.Management.Automation.SwitchParameter notificationMessageTemplate { get; set; }
@@ -2434,6 +2490,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.localizedNotificationMessage")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.notificationMessageTemplate", HelpMessage = @"The &quot;localizedNotificationMessages&quot; property, of type &quot;microsoft.graph.localizedNotificationMessage&quot;.")]
         public System.Object[] localizedNotificationMessages { get; set; }
@@ -2442,6 +2499,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceManagementPartner&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceManagementPartner")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementPartner", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceManagementPartner&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceManagementPartner { get; set; }
@@ -2530,6 +2588,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mobileThreatDefenseConnector&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.mobileThreatDefenseConnector")]
         [Parameter(ParameterSetName = @"microsoft.graph.mobileThreatDefenseConnector", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mobileThreatDefenseConnector&quot; type.")]
         public System.Management.Automation.SwitchParameter mobileThreatDefenseConnector { get; set; }
@@ -2598,6 +2657,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.onPremisesConditionalAccessSettings")]
         [Parameter(ParameterSetName = @"microsoft.graph.onPremisesConditionalAccessSettings", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot; type.")]
         public System.Management.Automation.SwitchParameter onPremisesConditionalAccessSettings { get; set; }
@@ -2653,6 +2713,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The list of group assignments for the device configuration profile.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
@@ -2730,6 +2791,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceEnrollmentWindowsHelloForBusinessConfiguration { get; set; }
@@ -2854,6 +2916,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceEnrollmentPlatformRestrictionsConfiguration { get; set; }
@@ -2907,6 +2970,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentLimitConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceEnrollmentLimitConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentLimitConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceEnrollmentLimitConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceEnrollmentLimitConfiguration { get; set; }
@@ -2924,6 +2988,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceManagementExchangeConnector&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceManagementExchangeConnector")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementExchangeConnector", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceManagementExchangeConnector&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceManagementExchangeConnector { get; set; }
@@ -2996,6 +3061,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceCategory&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceCategory")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceCategory", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceCategory&quot; type.")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedDevice", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceCategory&quot; type.")]
@@ -3005,6 +3071,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosUpdateDeviceStatus&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosUpdateDeviceStatus")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosUpdateDeviceStatus&quot; type.")]
         public System.Management.Automation.SwitchParameter iosUpdateDeviceStatus { get; set; }
@@ -3027,6 +3094,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceConfigurationDeviceStateSummary&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceConfigurationDeviceStateSummary")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationDeviceStateSummary", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceConfigurationDeviceStateSummary&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceConfigurationDeviceStateSummary { get; set; }
@@ -3035,6 +3103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceCompliancePolicySettingStateSummary")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicySettingStateSummary", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceCompliancePolicySettingStateSummary { get; set; }
@@ -3045,6 +3114,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceComplianceSettingState")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicySettingStateSummary", HelpMessage = @"The &quot;deviceComplianceSettingStates&quot; property, of type &quot;microsoft.graph.deviceComplianceSettingState&quot;.")]
         public System.Object[] deviceComplianceSettingStates { get; set; }
@@ -3053,6 +3123,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceCompliancePolicyDeviceStateSummary&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceCompliancePolicyDeviceStateSummary")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyDeviceStateSummary", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceCompliancePolicyDeviceStateSummary&quot; type.")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceCompliancePolicyDeviceStateSummary&quot; type.")]
@@ -3082,6 +3153,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.softwareUpdateStatusSummary&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.softwareUpdateStatusSummary")]
         [Parameter(ParameterSetName = @"microsoft.graph.softwareUpdateStatusSummary", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.softwareUpdateStatusSummary&quot; type.")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.softwareUpdateStatusSummary&quot; type.")]
@@ -3164,6 +3236,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceComplianceScheduledActionForRule")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicy", HelpMessage = @"The &quot;scheduledActionsForRule&quot; property, of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CompliancePolicy", HelpMessage = @"The &quot;scheduledActionsForRule&quot; property, of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
@@ -3183,6 +3256,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicy", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CompliancePolicy", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
@@ -3231,6 +3305,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationUserStatus")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicy", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CompliancePolicy", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
@@ -3279,6 +3354,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceConfigurationDeviceOverview")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicy", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CompliancePolicy", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows81CompliancePolicy", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
@@ -3324,6 +3400,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceConfigurationUserOverview")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicy", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CompliancePolicy", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows81CompliancePolicy", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
@@ -3369,6 +3446,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.settingStateDeviceSummary")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicy", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CompliancePolicy", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
@@ -3412,6 +3490,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsPhone81CompliancePolicy&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsPhone81CompliancePolicy")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CompliancePolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsPhone81CompliancePolicy&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsPhone81CompliancePolicy { get; set; }
@@ -3635,6 +3714,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows81CompliancePolicy&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windows81CompliancePolicy")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows81CompliancePolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows81CompliancePolicy&quot; type.")]
         public System.Management.Automation.SwitchParameter windows81CompliancePolicy { get; set; }
@@ -3643,6 +3723,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10MobileCompliancePolicy&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windows10MobileCompliancePolicy")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10MobileCompliancePolicy&quot; type.")]
         public System.Management.Automation.SwitchParameter windows10MobileCompliancePolicy { get; set; }
@@ -3705,6 +3786,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10CompliancePolicy&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windows10CompliancePolicy")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10CompliancePolicy&quot; type.")]
         public System.Management.Automation.SwitchParameter windows10CompliancePolicy { get; set; }
@@ -3753,6 +3835,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSCompliancePolicy&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.macOSCompliancePolicy")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSCompliancePolicy&quot; type.")]
         public System.Management.Automation.SwitchParameter macOSCompliancePolicy { get; set; }
@@ -3831,6 +3914,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosCompliancePolicy&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosCompliancePolicy")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosCompliancePolicy&quot; type.")]
         public System.Management.Automation.SwitchParameter iosCompliancePolicy { get; set; }
@@ -3953,6 +4037,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.androidWorkProfileCompliancePolicy")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidWorkProfileCompliancePolicy&quot; type.")]
         public System.Management.Automation.SwitchParameter androidWorkProfileCompliancePolicy { get; set; }
@@ -4062,6 +4147,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidCompliancePolicy&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.androidCompliancePolicy")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidCompliancePolicy&quot; type.")]
         public System.Management.Automation.SwitchParameter androidCompliancePolicy { get; set; }
@@ -4070,6 +4156,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10TeamGeneralConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windows10TeamGeneralConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10TeamGeneralConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10TeamGeneralConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter windows10TeamGeneralConfiguration { get; set; }
@@ -4286,6 +4373,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsPhone81GeneralConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsPhone81GeneralConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81GeneralConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsPhone81GeneralConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsPhone81GeneralConfiguration { get; set; }
@@ -4549,6 +4637,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows81GeneralConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windows81GeneralConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows81GeneralConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows81GeneralConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter windows81GeneralConfiguration { get; set; }
@@ -4836,6 +4925,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateForBusinessConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsUpdateForBusinessConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateForBusinessConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUpdateForBusinessConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsUpdateForBusinessConfiguration { get; set; }
@@ -4990,6 +5080,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsPhone81CustomConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsPhone81CustomConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CustomConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsPhone81CustomConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsPhone81CustomConfiguration { get; set; }
@@ -5012,6 +5103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10SecureAssessmentConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windows10SecureAssessmentConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10SecureAssessmentConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10SecureAssessmentConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter windows10SecureAssessmentConfiguration { get; set; }
@@ -5070,6 +5162,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.sharedPCConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.sharedPCConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.sharedPCConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter sharedPCConfiguration { get; set; }
@@ -5192,6 +5285,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10EnterpriseModernAppManagementConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10EnterpriseModernAppManagementConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter windows10EnterpriseModernAppManagementConfiguration { get; set; }
@@ -5210,6 +5304,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10CustomConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windows10CustomConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10CustomConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter windows10CustomConfiguration { get; set; }
@@ -5218,6 +5313,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windows10GeneralConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter windows10GeneralConfiguration { get; set; }
@@ -7119,6 +7215,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10EndpointProtectionConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windows10EndpointProtectionConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10EndpointProtectionConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter windows10EndpointProtectionConfiguration { get; set; }
@@ -7515,6 +7612,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.editionUpgradeConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter editionUpgradeConfiguration { get; set; }
@@ -7573,6 +7671,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsDefenderAdvancedThreatProtectionConfiguration { get; set; }
@@ -7601,6 +7700,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSDeviceFeaturesConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.macOSDeviceFeaturesConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSDeviceFeaturesConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter macOSDeviceFeaturesConfiguration { get; set; }
@@ -7609,6 +7709,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosDeviceFeaturesConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosDeviceFeaturesConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosDeviceFeaturesConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter iosDeviceFeaturesConfiguration { get; set; }
@@ -7670,6 +7771,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSGeneralDeviceConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.macOSGeneralDeviceConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSGeneralDeviceConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSGeneralDeviceConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter macOSGeneralDeviceConfiguration { get; set; }
@@ -7690,6 +7792,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSCustomConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.macOSCustomConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSCustomConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSCustomConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter macOSCustomConfiguration { get; set; }
@@ -7732,6 +7835,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosUpdateConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosUpdateConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosUpdateConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosUpdateConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter iosUpdateConfiguration { get; set; }
@@ -7785,6 +7889,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosGeneralDeviceConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosGeneralDeviceConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosGeneralDeviceConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter iosGeneralDeviceConfiguration { get; set; }
@@ -8972,6 +9077,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosCustomConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosCustomConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosCustomConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter iosCustomConfiguration { get; set; }
@@ -8980,6 +9086,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter androidWorkProfileGeneralDeviceConfiguration { get; set; }
@@ -9272,6 +9379,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidWorkProfileCustomConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.androidWorkProfileCustomConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidWorkProfileCustomConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter androidWorkProfileCustomConfiguration { get; set; }
@@ -9280,6 +9388,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidGeneralDeviceConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.androidGeneralDeviceConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidGeneralDeviceConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter androidGeneralDeviceConfiguration { get; set; }
@@ -9506,6 +9615,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidCustomConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.androidCustomConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidCustomConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter androidCustomConfiguration { get; set; }
@@ -9514,6 +9624,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.detectedApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.detectedApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.detectedApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.detectedApp&quot; type.")]
         public System.Management.Automation.SwitchParameter detectedApp { get; set; }
@@ -9535,6 +9646,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedDevice")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.detectedApp", HelpMessage = @"The &quot;managedDevices&quot; property, of type &quot;microsoft.graph.managedDevice&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;managedDevices&quot; property, of type &quot;microsoft.graph.managedDevice&quot;.")]
@@ -9545,6 +9657,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceOverview&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedDeviceOverview")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceOverview", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceOverview&quot; type.")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceOverview&quot; type.")]
@@ -9604,6 +9717,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.applePushNotificationCertificate&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.applePushNotificationCertificate")]
         [Parameter(ParameterSetName = @"microsoft.graph.applePushNotificationCertificate", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.applePushNotificationCertificate&quot; type.")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.applePushNotificationCertificate&quot; type.")]
@@ -9665,6 +9779,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.termsAndConditionsAcceptanceStatus")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;acceptanceStatuses&quot; property, of type &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot;.")]
         public System.Object[] acceptanceStatuses { get; set; }
@@ -9673,6 +9788,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceManagement&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceManagement")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceManagement&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceManagement { get; set; }
@@ -9697,6 +9813,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">Account level settings.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;settings&quot; property, of type &quot;microsoft.graph.deviceManagementSettings&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.mobileAppAssignment", HelpMessage = @"The &quot;settings&quot; property, of type &quot;microsoft.graph.deviceManagementSettings&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;settings&quot; property, of type &quot;microsoft.graph.deviceManagementSettings&quot;.")]
@@ -9720,6 +9837,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.detectedApp")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;detectedApps&quot; property, of type &quot;microsoft.graph.detectedApp&quot;.")]
         public System.Object[] detectedApps { get; set; }
@@ -9731,6 +9849,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceConfiguration", "microsoft.graph.windows10TeamGeneralConfiguration", "microsoft.graph.windowsPhone81GeneralConfiguration", "microsoft.graph.windows81GeneralConfiguration", "microsoft.graph.windowsUpdateForBusinessConfiguration", "microsoft.graph.windowsPhone81CustomConfiguration", "microsoft.graph.windows10SecureAssessmentConfiguration", "microsoft.graph.sharedPCConfiguration", "microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", "microsoft.graph.windows10CustomConfiguration", "microsoft.graph.windows10GeneralConfiguration", "microsoft.graph.windows10EndpointProtectionConfiguration", "microsoft.graph.editionUpgradeConfiguration", "microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", "microsoft.graph.appleDeviceFeaturesConfigurationBase", "microsoft.graph.macOSDeviceFeaturesConfiguration", "microsoft.graph.iosDeviceFeaturesConfiguration", "microsoft.graph.macOSGeneralDeviceConfiguration", "microsoft.graph.macOSCustomConfiguration", "microsoft.graph.iosUpdateConfiguration", "microsoft.graph.iosGeneralDeviceConfiguration", "microsoft.graph.iosCustomConfiguration", "microsoft.graph.iosCertificateProfile", "microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", "microsoft.graph.androidWorkProfileCustomConfiguration", "microsoft.graph.androidGeneralDeviceConfiguration", "microsoft.graph.androidCustomConfiguration")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;deviceConfigurations&quot; property, of type &quot;microsoft.graph.deviceConfiguration&quot;.")]
         public System.Object[] deviceConfigurations { get; set; }
@@ -9742,6 +9861,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;deviceCompliancePolicies&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicy&quot;.")]
         public System.Object[] deviceCompliancePolicies { get; set; }
@@ -9753,6 +9873,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceCompliancePolicySettingStateSummary")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;deviceCompliancePolicySettingStateSummaries&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot;.")]
         public System.Object[] deviceCompliancePolicySettingStateSummaries { get; set; }
@@ -9764,6 +9885,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceConfigurationDeviceStateSummary")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;deviceConfigurationDeviceStateSummaries&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStateSummary&quot;.")]
         public System.Object deviceConfigurationDeviceStateSummaries { get; set; }
 
@@ -9774,6 +9896,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.iosUpdateDeviceStatus")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;iosUpdateStatuses&quot; property, of type &quot;microsoft.graph.iosUpdateDeviceStatus&quot;.")]
         public System.Object[] iosUpdateStatuses { get; set; }
@@ -9785,6 +9908,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceCategory")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;deviceCategories&quot; property, of type &quot;microsoft.graph.deviceCategory&quot;.")]
         public System.Object[] deviceCategories { get; set; }
@@ -9796,6 +9920,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceManagementExchangeConnector")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;exchangeConnectors&quot; property, of type &quot;microsoft.graph.deviceManagementExchangeConnector&quot;.")]
         public System.Object[] exchangeConnectors { get; set; }
@@ -9807,6 +9932,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceEnrollmentConfiguration", "microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", "microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", "microsoft.graph.deviceEnrollmentLimitConfiguration")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;deviceEnrollmentConfigurations&quot; property, of type &quot;microsoft.graph.deviceEnrollmentConfiguration&quot;.")]
         public System.Object[] deviceEnrollmentConfigurations { get; set; }
@@ -9818,6 +9944,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.onPremisesConditionalAccessSettings")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;conditionalAccessSettings&quot; property, of type &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot;.")]
         public System.Object conditionalAccessSettings { get; set; }
 
@@ -9828,6 +9955,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mobileThreatDefenseConnector")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;mobileThreatDefenseConnectors&quot; property, of type &quot;microsoft.graph.mobileThreatDefenseConnector&quot;.")]
         public System.Object[] mobileThreatDefenseConnectors { get; set; }
@@ -9839,6 +9967,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceManagementPartner")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;deviceManagementPartners&quot; property, of type &quot;microsoft.graph.deviceManagementPartner&quot;.")]
         public System.Object[] deviceManagementPartners { get; set; }
@@ -9850,6 +9979,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.notificationMessageTemplate")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;notificationMessageTemplates&quot; property, of type &quot;microsoft.graph.notificationMessageTemplate&quot;.")]
         public System.Object[] notificationMessageTemplates { get; set; }
@@ -9861,6 +9991,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;roleDefinitions&quot; property, of type &quot;microsoft.graph.roleDefinition&quot;.")]
         public System.Object[] roleDefinitions { get; set; }
@@ -9872,6 +10003,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.resourceOperation")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;resourceOperations&quot; property, of type &quot;microsoft.graph.resourceOperation&quot;.")]
         public System.Object[] resourceOperations { get; set; }
@@ -9883,6 +10015,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.telecomExpenseManagementPartner")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;telecomExpenseManagementPartners&quot; property, of type &quot;microsoft.graph.telecomExpenseManagementPartner&quot;.")]
         public System.Object[] telecomExpenseManagementPartners { get; set; }
@@ -9894,6 +10027,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.remoteAssistancePartner")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;remoteAssistancePartners&quot; property, of type &quot;microsoft.graph.remoteAssistancePartner&quot;.")]
         public System.Object[] remoteAssistancePartners { get; set; }
@@ -9905,6 +10039,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.windowsInformationProtectionAppLearningSummary")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;windowsInformationProtectionAppLearningSummaries&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLearningSummary&quot;.")]
         public System.Object[] windowsInformationProtectionAppLearningSummaries { get; set; }
@@ -9916,6 +10051,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.windowsInformationProtectionNetworkLearningSummary")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;windowsInformationProtectionNetworkLearningSummaries&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot;.")]
         public System.Object[] windowsInformationProtectionNetworkLearningSummaries { get; set; }
@@ -9927,6 +10063,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;troubleshootingEvents&quot; property, of type &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot;.")]
         public System.Object[] troubleshootingEvents { get; set; }
@@ -9935,6 +10072,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedDeviceMobileAppConfigurationUserSummary")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot; type.")]
         public System.Management.Automation.SwitchParameter managedDeviceMobileAppConfigurationUserSummary { get; set; }
@@ -9943,6 +10081,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot; type.")]
         public System.Management.Automation.SwitchParameter managedDeviceMobileAppConfigurationDeviceSummary { get; set; }
@@ -9951,6 +10090,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedDeviceMobileAppConfigurationAssignment")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; type.")]
         public System.Management.Automation.SwitchParameter managedDeviceMobileAppConfigurationAssignment { get; set; }
@@ -9959,6 +10099,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserStatus&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedDeviceMobileAppConfigurationUserStatus")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserStatus", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserStatus&quot; type.")]
         public System.Management.Automation.SwitchParameter managedDeviceMobileAppConfigurationUserStatus { get; set; }
@@ -9967,6 +10108,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus&quot; type.")]
         public System.Management.Automation.SwitchParameter managedDeviceMobileAppConfigurationDeviceStatus { get; set; }
@@ -9975,6 +10117,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mobileAppContent&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.mobileAppContent")]
         [Parameter(ParameterSetName = @"microsoft.graph.mobileAppContent", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mobileAppContent&quot; type.")]
         public System.Management.Automation.SwitchParameter mobileAppContent { get; set; }
@@ -9986,6 +10129,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mobileAppContentFile")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.mobileAppContent", HelpMessage = @"The &quot;files&quot; property, of type &quot;microsoft.graph.mobileAppContentFile&quot;.")]
         public System.Object[] files { get; set; }
@@ -9994,6 +10138,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mobileAppContentFile&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.mobileAppContentFile")]
         [Parameter(ParameterSetName = @"microsoft.graph.mobileAppContentFile", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mobileAppContentFile&quot; type.")]
         public System.Management.Automation.SwitchParameter mobileAppContentFile { get; set; }
@@ -10128,6 +10273,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mobileAppAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.mobileAppAssignment")]
         [Parameter(ParameterSetName = @"microsoft.graph.mobileAppAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mobileAppAssignment&quot; type.")]
         public System.Management.Automation.SwitchParameter mobileAppAssignment { get; set; }
@@ -10262,6 +10408,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.eBookInstallSummary")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;installSummary&quot; property, of type &quot;microsoft.graph.eBookInstallSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;installSummary&quot; property, of type &quot;microsoft.graph.eBookInstallSummary&quot;.")]
         public System.Object installSummary { get; set; }
@@ -10273,6 +10420,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.userInstallStateSummary")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;userStateSummary&quot; property, of type &quot;microsoft.graph.userInstallStateSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;userStateSummary&quot; property, of type &quot;microsoft.graph.userInstallStateSummary&quot;.")]
@@ -10282,6 +10430,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppEBook&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosVppEBook")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppEBook&quot; type.")]
         public System.Management.Automation.SwitchParameter iosVppEBook { get; set; }
@@ -10376,6 +10525,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAppStatusRaw&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedAppStatusRaw")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatusRaw", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAppStatusRaw&quot; type.")]
         public System.Management.Automation.SwitchParameter managedAppStatusRaw { get; set; }
@@ -10682,6 +10832,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtection", HelpMessage = @"The &quot;protectedAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;protectedAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.")]
@@ -10695,6 +10846,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtection", HelpMessage = @"The &quot;exemptAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;exemptAppLockerFiles&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot;.")]
@@ -10705,6 +10857,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsInformationProtectionPolicy")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionPolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsInformationProtectionPolicy { get; set; }
@@ -10835,6 +10988,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.mdmWindowsInformationProtectionPolicy")]
         [Parameter(ParameterSetName = @"microsoft.graph.mdmWindowsInformationProtectionPolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot; type.")]
         public System.Management.Automation.SwitchParameter mdmWindowsInformationProtectionPolicy { get; set; }
@@ -10856,6 +11010,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.targetedManagedAppConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.targetedManagedAppConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.targetedManagedAppConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter targetedManagedAppConfiguration { get; set; }
@@ -10880,6 +11035,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedMobileApp")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppConfiguration", HelpMessage = @"The &quot;apps&quot; property, of type &quot;microsoft.graph.managedMobileApp&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;apps&quot; property, of type &quot;microsoft.graph.managedMobileApp&quot;.")]
@@ -10894,6 +11050,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedAppPolicyDeploymentSummary")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppConfiguration", HelpMessage = @"The &quot;deploymentSummary&quot; property, of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;deploymentSummary&quot; property, of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppProtection", HelpMessage = @"The &quot;deploymentSummary&quot; property, of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;.")]
@@ -11289,6 +11446,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.defaultManagedAppProtection&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.defaultManagedAppProtection")]
         [Parameter(ParameterSetName = @"microsoft.graph.defaultManagedAppProtection", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.defaultManagedAppProtection&quot; type.")]
         public System.Management.Automation.SwitchParameter defaultManagedAppProtection { get; set; }
@@ -11378,6 +11536,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidManagedAppProtection&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.androidManagedAppProtection")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppProtection", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidManagedAppProtection&quot; type.")]
         public System.Management.Automation.SwitchParameter androidManagedAppProtection { get; set; }
@@ -11386,6 +11545,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosManagedAppProtection&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosManagedAppProtection")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppProtection", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosManagedAppProtection&quot; type.")]
         public System.Management.Automation.SwitchParameter iosManagedAppProtection { get; set; }
@@ -11394,6 +11554,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.vppToken&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.vppToken")]
         [Parameter(ParameterSetName = @"microsoft.graph.vppToken", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.vppToken&quot; type.")]
         public System.Management.Automation.SwitchParameter vppToken { get; set; }
@@ -11486,6 +11647,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;deviceStatusSummary&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;deviceStatusSummary&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot;.")]
         public System.Object deviceStatusSummary { get; set; }
@@ -11497,6 +11659,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationUserSummary")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;userStatusSummary&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;userStatusSummary&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot;.")]
         public System.Object userStatusSummary { get; set; }
@@ -11505,6 +11668,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosMobileAppConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosMobileAppConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosMobileAppConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter iosMobileAppConfiguration { get; set; }
@@ -11524,6 +11688,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mobileAppCategory&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.mobileAppCategory")]
         [Parameter(ParameterSetName = @"microsoft.graph.mobileAppCategory", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mobileAppCategory&quot; type.")]
         public System.Management.Automation.SwitchParameter mobileAppCategory { get; set; }
@@ -11704,6 +11869,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The list of categories for this app.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;categories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
@@ -11734,6 +11900,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosStoreApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter iosStoreApp { get; set; }
@@ -11802,6 +11969,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosVppApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosVppApp&quot; type.")]
         public System.Management.Automation.SwitchParameter iosVppApp { get; set; }
@@ -11850,6 +12018,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.androidStoreApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter androidStoreApp { get; set; }
@@ -11871,6 +12040,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.webApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.webApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.webApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.webApp&quot; type.")]
         public System.Management.Automation.SwitchParameter webApp { get; set; }
@@ -11899,6 +12069,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.microsoftStoreForBusinessApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.microsoftStoreForBusinessApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.microsoftStoreForBusinessApp&quot; type.")]
         public System.Management.Automation.SwitchParameter microsoftStoreForBusinessApp { get; set; }
@@ -11954,6 +12125,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mobileAppContent")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;contentVersions&quot; property, of type &quot;microsoft.graph.mobileAppContent&quot;.")]
@@ -11969,6 +12141,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosLobApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter iosLobApp { get; set; }
@@ -11999,6 +12172,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.androidLobApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter androidLobApp { get; set; }
@@ -12029,6 +12203,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUniversalAppX&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsUniversalAppX")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsUniversalAppX&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsUniversalAppX { get; set; }
@@ -12115,6 +12290,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsMobileMSI&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.windowsMobileMSI")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsMobileMSI&quot; type.")]
         public System.Management.Automation.SwitchParameter windowsMobileMSI { get; set; }
@@ -12182,6 +12358,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedIOSLobApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedIOSLobApp { get; set; }
@@ -12190,6 +12367,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidLobApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedAndroidLobApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidLobApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedAndroidLobApp { get; set; }
@@ -12198,6 +12376,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedIOSStoreApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedIOSStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedIOSStoreApp { get; set; }
@@ -12206,6 +12385,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidStoreApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedAndroidStoreApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAndroidStoreApp&quot; type.")]
         public System.Management.Automation.SwitchParameter managedAndroidStoreApp { get; set; }
@@ -12214,6 +12394,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSOfficeSuiteApp&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.macOSOfficeSuiteApp")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSOfficeSuiteApp&quot; type.")]
         public System.Management.Automation.SwitchParameter macOSOfficeSuiteApp { get; set; }
@@ -12222,6 +12403,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceAppManagement&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceAppManagement")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAppManagement", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceAppManagement&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceAppManagement { get; set; }
@@ -12273,6 +12455,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mobileApp", "microsoft.graph.iosStoreApp", "microsoft.graph.iosVppApp", "microsoft.graph.androidStoreApp", "microsoft.graph.webApp", "microsoft.graph.microsoftStoreForBusinessApp", "microsoft.graph.mobileLobApp", "microsoft.graph.iosLobApp", "microsoft.graph.androidLobApp", "microsoft.graph.windowsUniversalAppX", "microsoft.graph.windowsMobileMSI", "microsoft.graph.managedApp", "microsoft.graph.managedMobileLobApp", "microsoft.graph.managedIOSLobApp", "microsoft.graph.managedAndroidLobApp", "microsoft.graph.managedIOSStoreApp", "microsoft.graph.managedAndroidStoreApp", "microsoft.graph.macOSOfficeSuiteApp")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;mobileApps&quot; property, of type &quot;microsoft.graph.mobileApp&quot;.")]
         public System.Object[] mobileApps { get; set; }
@@ -12284,6 +12467,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mobileAppCategory")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;mobileAppCategories&quot; property, of type &quot;microsoft.graph.mobileAppCategory&quot;.")]
         public System.Object[] mobileAppCategories { get; set; }
@@ -12295,6 +12479,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedDeviceMobileAppConfiguration", "microsoft.graph.iosMobileAppConfiguration")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;mobileAppConfigurations&quot; property, of type &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot;.")]
         public System.Object[] mobileAppConfigurations { get; set; }
@@ -12306,6 +12491,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.vppToken")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;vppTokens&quot; property, of type &quot;microsoft.graph.vppToken&quot;.")]
         public System.Object[] vppTokens { get; set; }
@@ -12317,6 +12503,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;managedAppPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
         public System.Object[] managedAppPolicies { get; set; }
@@ -12328,6 +12515,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.iosManagedAppProtection")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;iosManagedAppProtections&quot; property, of type &quot;microsoft.graph.iosManagedAppProtection&quot;.")]
         public System.Object[] iosManagedAppProtections { get; set; }
@@ -12339,6 +12527,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.androidManagedAppProtection")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;androidManagedAppProtections&quot; property, of type &quot;microsoft.graph.androidManagedAppProtection&quot;.")]
         public System.Object[] androidManagedAppProtections { get; set; }
@@ -12350,6 +12539,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.defaultManagedAppProtection")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;defaultManagedAppProtections&quot; property, of type &quot;microsoft.graph.defaultManagedAppProtection&quot;.")]
         public System.Object[] defaultManagedAppProtections { get; set; }
@@ -12361,6 +12551,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.targetedManagedAppConfiguration")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;targetedManagedAppConfigurations&quot; property, of type &quot;microsoft.graph.targetedManagedAppConfiguration&quot;.")]
         public System.Object[] targetedManagedAppConfigurations { get; set; }
@@ -12372,6 +12563,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mdmWindowsInformationProtectionPolicy")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;mdmWindowsInformationProtectionPolicies&quot; property, of type &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot;.")]
         public System.Object[] mdmWindowsInformationProtectionPolicies { get; set; }
@@ -12383,6 +12575,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.windowsInformationProtectionPolicy")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;windowsInformationProtectionPolicies&quot; property, of type &quot;microsoft.graph.windowsInformationProtectionPolicy&quot;.")]
         public System.Object[] windowsInformationProtectionPolicies { get; set; }
@@ -12394,6 +12587,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;managedAppRegistrations&quot; property, of type &quot;microsoft.graph.managedAppRegistration&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;managedAppRegistrations&quot; property, of type &quot;microsoft.graph.managedAppRegistration&quot;.")]
@@ -12406,6 +12600,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;managedAppStatuses&quot; property, of type &quot;microsoft.graph.managedAppStatus&quot;.")]
         public System.Object[] managedAppStatuses { get; set; }
@@ -12417,6 +12612,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedEBook", "microsoft.graph.iosVppEBook")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;managedEBooks&quot; property, of type &quot;microsoft.graph.managedEBook&quot;.")]
         public System.Object[] managedEBooks { get; set; }
@@ -12425,6 +12621,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.educationUser&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.educationUser")]
         [Parameter(ParameterSetName = @"microsoft.graph.educationUser", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.educationUser&quot; type.")]
         public System.Management.Automation.SwitchParameter educationUser { get; set; }
@@ -12751,6 +12948,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.educationUser&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.educationUser", HelpMessage = @"The &quot;schools&quot; property, of type &quot;microsoft.graph.educationSchool&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;schools&quot; property, of type &quot;microsoft.graph.educationSchool&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.educationRoot", HelpMessage = @"The &quot;schools&quot; property, of type &quot;microsoft.graph.educationSchool&quot;.")]
@@ -12763,6 +12961,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.educationClass")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.educationUser", HelpMessage = @"The &quot;classes&quot; property, of type &quot;microsoft.graph.educationClass&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.educationSchool", HelpMessage = @"The &quot;classes&quot; property, of type &quot;microsoft.graph.educationClass&quot;.")]
@@ -12774,6 +12973,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.educationUser&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.user")]
         [Parameter(ParameterSetName = @"microsoft.graph.educationUser", HelpMessage = @"The &quot;user&quot; property, of type &quot;microsoft.graph.user&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;user&quot; property, of type &quot;microsoft.graph.user&quot;.")]
@@ -12783,6 +12983,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.educationSchool&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.educationSchool")]
         [Parameter(ParameterSetName = @"microsoft.graph.educationSchool", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.educationSchool&quot; type.")]
         public System.Management.Automation.SwitchParameter educationSchool { get; set; }
@@ -12884,6 +13085,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.educationUser")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.educationSchool", HelpMessage = @"The &quot;users&quot; property, of type &quot;microsoft.graph.educationUser&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.educationRoot", HelpMessage = @"The &quot;users&quot; property, of type &quot;microsoft.graph.educationUser&quot;.")]
@@ -12893,6 +13095,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.educationClass&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.educationClass")]
         [Parameter(ParameterSetName = @"microsoft.graph.educationClass", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.educationClass&quot; type.")]
         public System.Management.Automation.SwitchParameter educationClass { get; set; }
@@ -12930,6 +13133,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.educationUser")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;teachers&quot; property, of type &quot;microsoft.graph.educationUser&quot;.")]
         public System.Object[] teachers { get; set; }
@@ -12939,6 +13143,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.educationClass&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.group")]
         [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;group&quot; property, of type &quot;microsoft.graph.group&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;group&quot; property, of type &quot;microsoft.graph.group&quot;.")]
@@ -12949,6 +13154,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.educationRoot&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.educationRoot")]
         [Parameter(ParameterSetName = @"microsoft.graph.educationRoot", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.educationRoot&quot; type.")]
         public System.Management.Automation.SwitchParameter educationRoot { get; set; }
@@ -12959,6 +13165,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.educationUser")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.educationRoot", HelpMessage = @"The &quot;me&quot; property, of type &quot;microsoft.graph.educationUser&quot;.")]
         public System.Object me { get; set; }
 
@@ -12966,6 +13173,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.reportRoot&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.reportRoot")]
         [Parameter(ParameterSetName = @"microsoft.graph.reportRoot", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.reportRoot&quot; type.")]
         public System.Management.Automation.SwitchParameter reportRoot { get; set; }
@@ -12974,6 +13182,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.operation&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.operation")]
         [Parameter(ParameterSetName = @"microsoft.graph.operation", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.operation&quot; type.")]
         public System.Management.Automation.SwitchParameter operation { get; set; }
@@ -12992,6 +13201,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenoteOperation&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.onenoteOperation")]
         [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenoteOperation&quot; type.")]
         public System.Management.Automation.SwitchParameter onenoteOperation { get; set; }
@@ -13052,6 +13262,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenoteResource&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.onenoteResource")]
         [Parameter(ParameterSetName = @"microsoft.graph.onenoteResource", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenoteResource&quot; type.")]
         public System.Management.Automation.SwitchParameter onenoteResource { get; set; }
@@ -13071,6 +13282,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenotePage&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.onenotePage")]
         [Parameter(ParameterSetName = @"microsoft.graph.onenotePage", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenotePage&quot; type.")]
         public System.Management.Automation.SwitchParameter onenotePage { get; set; }
@@ -13129,6 +13341,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.onenoteSection")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.onenotePage", HelpMessage = @"The &quot;parentSection&quot; property, of type &quot;microsoft.graph.onenoteSection&quot;.")]
         public System.Object parentSection { get; set; }
 
@@ -13138,6 +13351,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.notebook")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.onenotePage", HelpMessage = @"The &quot;parentNotebook&quot; property, of type &quot;microsoft.graph.notebook&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.sectionGroup", HelpMessage = @"The &quot;parentNotebook&quot; property, of type &quot;microsoft.graph.notebook&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.onenoteSection", HelpMessage = @"The &quot;parentNotebook&quot; property, of type &quot;microsoft.graph.notebook&quot;.")]
@@ -13169,6 +13383,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.sectionGroup&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.sectionGroup")]
         [Parameter(ParameterSetName = @"microsoft.graph.sectionGroup", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.sectionGroup&quot; type.")]
         public System.Management.Automation.SwitchParameter sectionGroup { get; set; }
@@ -13199,6 +13414,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.sectionGroup")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.sectionGroup", HelpMessage = @"The &quot;parentSectionGroup&quot; property, of type &quot;microsoft.graph.sectionGroup&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.onenoteSection", HelpMessage = @"The &quot;parentSectionGroup&quot; property, of type &quot;microsoft.graph.sectionGroup&quot;.")]
         public System.Object parentSectionGroup { get; set; }
@@ -13209,6 +13425,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.onenoteSection")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.sectionGroup", HelpMessage = @"The &quot;sections&quot; property, of type &quot;microsoft.graph.onenoteSection&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.notebook", HelpMessage = @"The &quot;sections&quot; property, of type &quot;microsoft.graph.onenoteSection&quot;.")]
@@ -13221,6 +13438,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.sectionGroup")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.sectionGroup", HelpMessage = @"The &quot;sectionGroups&quot; property, of type &quot;microsoft.graph.sectionGroup&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.notebook", HelpMessage = @"The &quot;sectionGroups&quot; property, of type &quot;microsoft.graph.sectionGroup&quot;.")]
@@ -13231,6 +13449,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenoteSection&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.onenoteSection")]
         [Parameter(ParameterSetName = @"microsoft.graph.onenoteSection", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenoteSection&quot; type.")]
         public System.Management.Automation.SwitchParameter onenoteSection { get; set; }
@@ -13250,6 +13469,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.onenotePage")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.onenoteSection", HelpMessage = @"The &quot;pages&quot; property, of type &quot;microsoft.graph.onenotePage&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.onenote", HelpMessage = @"The &quot;pages&quot; property, of type &quot;microsoft.graph.onenotePage&quot;.")]
@@ -13259,6 +13479,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.notebook&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.notebook")]
         [Parameter(ParameterSetName = @"microsoft.graph.notebook", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.notebook&quot; type.")]
         public System.Management.Automation.SwitchParameter notebook { get; set; }
@@ -13289,6 +13510,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerPlanDetails&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.plannerPlanDetails")]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerPlanDetails", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerPlanDetails&quot; type.")]
         public System.Management.Automation.SwitchParameter plannerPlanDetails { get; set; }
@@ -13315,6 +13537,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerBucketTaskBoardTaskFormat&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.plannerBucketTaskBoardTaskFormat")]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerBucketTaskBoardTaskFormat", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerBucketTaskBoardTaskFormat&quot; type.")]
         public System.Management.Automation.SwitchParameter plannerBucketTaskBoardTaskFormat { get; set; }
@@ -13335,6 +13558,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerProgressTaskBoardTaskFormat&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.plannerProgressTaskBoardTaskFormat")]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerProgressTaskBoardTaskFormat", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerProgressTaskBoardTaskFormat&quot; type.")]
         public System.Management.Automation.SwitchParameter plannerProgressTaskBoardTaskFormat { get; set; }
@@ -13343,6 +13567,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerAssignedToTaskBoardTaskFormat&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.plannerAssignedToTaskBoardTaskFormat")]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerAssignedToTaskBoardTaskFormat", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerAssignedToTaskBoardTaskFormat&quot; type.")]
         public System.Management.Automation.SwitchParameter plannerAssignedToTaskBoardTaskFormat { get; set; }
@@ -13369,6 +13594,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerTaskDetails&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.plannerTaskDetails")]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerTaskDetails", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerTaskDetails&quot; type.")]
         public System.Management.Automation.SwitchParameter plannerTaskDetails { get; set; }
@@ -13409,6 +13635,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerBucket&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.plannerBucket")]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerBucket", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerBucket&quot; type.")]
         public System.Management.Automation.SwitchParameter plannerBucket { get; set; }
@@ -13429,6 +13656,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.plannerTask")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerBucket", HelpMessage = @"The &quot;tasks&quot; property, of type &quot;microsoft.graph.plannerTask&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.planner", HelpMessage = @"The &quot;tasks&quot; property, of type &quot;microsoft.graph.plannerTask&quot;.")]
@@ -13440,6 +13668,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.planner&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.planner")]
         [Parameter(ParameterSetName = @"microsoft.graph.planner", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.planner&quot; type.")]
         public System.Management.Automation.SwitchParameter planner { get; set; }
@@ -13450,6 +13679,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.plannerPlan")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.planner", HelpMessage = @"The &quot;plans&quot; property, of type &quot;microsoft.graph.plannerPlan&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerUser", HelpMessage = @"The &quot;plans&quot; property, of type &quot;microsoft.graph.plannerPlan&quot;.")]
@@ -13462,6 +13692,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.plannerBucket")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.planner", HelpMessage = @"The &quot;buckets&quot; property, of type &quot;microsoft.graph.plannerBucket&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerPlan", HelpMessage = @"The &quot;buckets&quot; property, of type &quot;microsoft.graph.plannerBucket&quot;.")]
@@ -13471,6 +13702,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerPlan&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.plannerPlan")]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerPlan", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerPlan&quot; type.")]
         public System.Management.Automation.SwitchParameter plannerPlan { get; set; }
@@ -13481,6 +13713,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.plannerTaskDetails")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerPlan", HelpMessage = @"The &quot;details&quot; property, of type &quot;microsoft.graph.plannerPlanDetails&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", HelpMessage = @"The &quot;details&quot; property, of type &quot;microsoft.graph.plannerPlanDetails&quot;.")]
         public System.Object details { get; set; }
@@ -13489,6 +13722,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerTask&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.plannerTask")]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerTask&quot; type.")]
         public System.Management.Automation.SwitchParameter plannerTask { get; set; }
@@ -13608,6 +13842,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.plannerAssignedToTaskBoardTaskFormat")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", HelpMessage = @"The &quot;assignedToTaskBoardFormat&quot; property, of type &quot;microsoft.graph.plannerAssignedToTaskBoardTaskFormat&quot;.")]
         public System.Object assignedToTaskBoardFormat { get; set; }
 
@@ -13617,6 +13852,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.plannerProgressTaskBoardTaskFormat")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", HelpMessage = @"The &quot;progressTaskBoardFormat&quot; property, of type &quot;microsoft.graph.plannerProgressTaskBoardTaskFormat&quot;.")]
         public System.Object progressTaskBoardFormat { get; set; }
 
@@ -13626,6 +13862,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.plannerBucketTaskBoardTaskFormat")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", HelpMessage = @"The &quot;bucketTaskBoardFormat&quot; property, of type &quot;microsoft.graph.plannerBucketTaskBoardTaskFormat&quot;.")]
         public System.Object bucketTaskBoardFormat { get; set; }
 
@@ -13633,6 +13870,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.invitation&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.invitation")]
         [Parameter(ParameterSetName = @"microsoft.graph.invitation", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.invitation&quot; type.")]
         [Parameter(ParameterSetName = @"microsoft.graph.permission", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.invitation&quot; type.")]
@@ -13707,6 +13945,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.user")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.invitation", HelpMessage = @"The &quot;invitedUser&quot; property, of type &quot;microsoft.graph.user&quot;.")]
         public System.Object invitedUser { get; set; }
 
@@ -13714,6 +13953,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.subscription&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.subscription")]
         [Parameter(ParameterSetName = @"microsoft.graph.subscription", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.subscription&quot; type.")]
         public System.Management.Automation.SwitchParameter subscription { get; set; }
@@ -13767,6 +14007,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookWorksheetProtection&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookWorksheetProtection")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookWorksheetProtection", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookWorksheetProtection&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookWorksheetProtection { get; set; }
@@ -13793,6 +14034,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookTableSort&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookTableSort")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookTableSort", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookTableSort&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookTableSort { get; set; }
@@ -13802,6 +14044,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.workbookTableSort&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookTableSort", HelpMessage = @"The &quot;fields&quot; property, of type &quot;microsoft.graph.workbookSortField&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.listItemVersion", HelpMessage = @"The &quot;fields&quot; property, of type &quot;microsoft.graph.workbookSortField&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;fields&quot; property, of type &quot;microsoft.graph.workbookSortField&quot;.")]
@@ -13829,6 +14072,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookTableRow&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookTableRow")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookTableRow", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookTableRow&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookTableRow { get; set; }
@@ -13861,6 +14105,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookTableColumn&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookTableColumn")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookTableColumn", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookTableColumn&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookTableColumn { get; set; }
@@ -13871,6 +14116,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookFilter")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookTableColumn", HelpMessage = @"The &quot;filter&quot; property, of type &quot;microsoft.graph.workbookFilter&quot;.")]
         public System.Object filter { get; set; }
 
@@ -13878,6 +14124,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookRangeView&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookRangeView")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeView", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookRangeView&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookRangeView { get; set; }
@@ -13980,6 +14227,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookTableRow")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeView", HelpMessage = @"The &quot;rows&quot; property, of type &quot;microsoft.graph.workbookRangeView&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookTable", HelpMessage = @"The &quot;rows&quot; property, of type &quot;microsoft.graph.workbookRangeView&quot;.")]
@@ -13989,6 +14237,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookRangeFont&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookRangeFont")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFont", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookRangeFont&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookRangeFont { get; set; }
@@ -14042,6 +14291,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookRangeFill&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookRangeFill")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFill", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookRangeFill&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookRangeFill { get; set; }
@@ -14050,6 +14300,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookRangeBorder&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookRangeBorder")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeBorder", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookRangeBorder&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookRangeBorder { get; set; }
@@ -14077,6 +14328,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookRangeSort&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookRangeSort")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeSort", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookRangeSort&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookRangeSort { get; set; }
@@ -14085,6 +14337,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookRangeFormat&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookRangeFormat")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFormat", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookRangeFormat&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookRangeFormat { get; set; }
@@ -14140,6 +14393,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookRangeBorder")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFormat", HelpMessage = @"The &quot;borders&quot; property, of type &quot;microsoft.graph.workbookRangeBorder&quot;.")]
         public System.Object[] borders { get; set; }
@@ -14150,6 +14404,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartFill")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFormat", HelpMessage = @"The &quot;fill&quot; property, of type &quot;microsoft.graph.workbookRangeFill&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartTitleFormat", HelpMessage = @"The &quot;fill&quot; property, of type &quot;microsoft.graph.workbookRangeFill&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartSeriesFormat", HelpMessage = @"The &quot;fill&quot; property, of type &quot;microsoft.graph.workbookRangeFill&quot;.")]
@@ -14165,6 +14420,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartFont")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFormat", HelpMessage = @"The &quot;font&quot; property, of type &quot;microsoft.graph.workbookRangeFont&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartTitleFormat", HelpMessage = @"The &quot;font&quot; property, of type &quot;microsoft.graph.workbookRangeFont&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartLegendFormat", HelpMessage = @"The &quot;font&quot; property, of type &quot;microsoft.graph.workbookRangeFont&quot;.")]
@@ -14180,6 +14436,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookWorksheetProtection")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFormat", HelpMessage = @"The &quot;protection&quot; property, of type &quot;microsoft.graph.workbookFormatProtection&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookWorksheet", HelpMessage = @"The &quot;protection&quot; property, of type &quot;microsoft.graph.workbookFormatProtection&quot;.")]
         public System.Object protection { get; set; }
@@ -14188,6 +14445,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookRange&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookRange")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRange", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookRange&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookRange { get; set; }
@@ -14263,6 +14521,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartAreaFormat")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRange", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookRangeFormat&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartPoint", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookRangeFormat&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxisTitle", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookRangeFormat&quot;.")]
@@ -14281,6 +14540,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookTableSort")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRange", HelpMessage = @"The &quot;sort&quot; property, of type &quot;microsoft.graph.workbookRangeSort&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookTable", HelpMessage = @"The &quot;sort&quot; property, of type &quot;microsoft.graph.workbookRangeSort&quot;.")]
         public System.Object sort { get; set; }
@@ -14291,6 +14551,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookWorksheet")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookRange", HelpMessage = @"The &quot;worksheet&quot; property, of type &quot;microsoft.graph.workbookWorksheet&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookPivotTable", HelpMessage = @"The &quot;worksheet&quot; property, of type &quot;microsoft.graph.workbookWorksheet&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", HelpMessage = @"The &quot;worksheet&quot; property, of type &quot;microsoft.graph.workbookWorksheet&quot;.")]
@@ -14302,6 +14563,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookPivotTable&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookPivotTable")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookPivotTable", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookPivotTable&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookPivotTable { get; set; }
@@ -14310,6 +14572,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookFunctionResult&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookFunctionResult")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookFunctionResult", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookFunctionResult&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookFunctionResult { get; set; }
@@ -14330,6 +14593,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookFormatProtection&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookFormatProtection")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookFormatProtection", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookFormatProtection&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookFormatProtection { get; set; }
@@ -14356,6 +14620,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookFilter&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookFilter")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookFilter", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookFilter&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookFilter { get; set; }
@@ -14373,6 +14638,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartTitleFormat&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartTitleFormat")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartTitleFormat", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartTitleFormat&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartTitleFormat { get; set; }
@@ -14381,6 +14647,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartSeriesFormat&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartSeriesFormat")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartSeriesFormat", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartSeriesFormat&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartSeriesFormat { get; set; }
@@ -14391,6 +14658,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartLineFormat")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartSeriesFormat", HelpMessage = @"The &quot;line&quot; property, of type &quot;microsoft.graph.workbookChartLineFormat&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartGridlinesFormat", HelpMessage = @"The &quot;line&quot; property, of type &quot;microsoft.graph.workbookChartLineFormat&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxisFormat", HelpMessage = @"The &quot;line&quot; property, of type &quot;microsoft.graph.workbookChartLineFormat&quot;.")]
@@ -14400,6 +14668,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartPointFormat&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartPointFormat")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartPointFormat", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartPointFormat&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartPointFormat { get; set; }
@@ -14408,6 +14677,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartPoint&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartPoint")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartPoint", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartPoint&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartPoint { get; set; }
@@ -14416,6 +14686,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartLegendFormat&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartLegendFormat")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartLegendFormat", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartLegendFormat&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartLegendFormat { get; set; }
@@ -14424,6 +14695,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartGridlinesFormat&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartGridlinesFormat")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartGridlinesFormat", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartGridlinesFormat&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartGridlinesFormat { get; set; }
@@ -14432,6 +14704,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartDataLabelFormat&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartDataLabelFormat")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartDataLabelFormat", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartDataLabelFormat&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartDataLabelFormat { get; set; }
@@ -14440,6 +14713,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartAxisTitleFormat&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartAxisTitleFormat")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxisTitleFormat", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartAxisTitleFormat&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartAxisTitleFormat { get; set; }
@@ -14448,6 +14722,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartLineFormat&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartLineFormat")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartLineFormat", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartLineFormat&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartLineFormat { get; set; }
@@ -14456,6 +14731,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartAxisTitle&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartAxisTitle")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxisTitle", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartAxisTitle&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartAxisTitle { get; set; }
@@ -14477,6 +14753,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartGridlines&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartGridlines")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartGridlines", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartGridlines&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartGridlines { get; set; }
@@ -14485,6 +14762,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartAxisFormat&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartAxisFormat")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxisFormat", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartAxisFormat&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartAxisFormat { get; set; }
@@ -14493,6 +14771,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartAxis&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartAxis")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxis", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartAxis&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartAxis { get; set; }
@@ -14539,6 +14818,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartGridlines")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxis", HelpMessage = @"The &quot;majorGridlines&quot; property, of type &quot;microsoft.graph.workbookChartGridlines&quot;.")]
         public System.Object majorGridlines { get; set; }
 
@@ -14548,6 +14828,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartGridlines")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxis", HelpMessage = @"The &quot;minorGridlines&quot; property, of type &quot;microsoft.graph.workbookChartGridlines&quot;.")]
         public System.Object minorGridlines { get; set; }
 
@@ -14555,6 +14836,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartFont&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartFont")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartFont", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartFont&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartFont { get; set; }
@@ -14563,6 +14845,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartFill&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartFill")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartFill", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartFill&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartFill { get; set; }
@@ -14571,6 +14854,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartTitle&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartTitle")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartTitle", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartTitle&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartTitle { get; set; }
@@ -14589,6 +14873,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartSeries&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartSeries")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartSeries", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartSeries&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartSeries { get; set; }
@@ -14599,6 +14884,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartPoint")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartSeries", HelpMessage = @"The &quot;points&quot; property, of type &quot;microsoft.graph.workbookChartPoint&quot;.")]
         public System.Object[] points { get; set; }
@@ -14607,6 +14893,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartLegend&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartLegend")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartLegend", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartLegend&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartLegend { get; set; }
@@ -14625,6 +14912,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartAreaFormat&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartAreaFormat")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAreaFormat", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartAreaFormat&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartAreaFormat { get; set; }
@@ -14633,6 +14921,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartDataLabels&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartDataLabels")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartDataLabels", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartDataLabels&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartDataLabels { get; set; }
@@ -14704,6 +14993,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartAxes&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChartAxes")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxes", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartAxes&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChartAxes { get; set; }
@@ -14714,6 +15004,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartAxis")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxes", HelpMessage = @"The &quot;categoryAxis&quot; property, of type &quot;microsoft.graph.workbookChartAxis&quot;.")]
         public System.Object categoryAxis { get; set; }
 
@@ -14723,6 +15014,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartAxis")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxes", HelpMessage = @"The &quot;seriesAxis&quot; property, of type &quot;microsoft.graph.workbookChartAxis&quot;.")]
         public System.Object seriesAxis { get; set; }
 
@@ -14732,6 +15024,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartAxis")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxes", HelpMessage = @"The &quot;valueAxis&quot; property, of type &quot;microsoft.graph.workbookChartAxis&quot;.")]
         public System.Object valueAxis { get; set; }
 
@@ -14739,6 +15032,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChart&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookChart")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChart&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookChart { get; set; }
@@ -14785,6 +15079,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartAxes")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", HelpMessage = @"The &quot;axes&quot; property, of type &quot;microsoft.graph.workbookChartAxes&quot;.")]
         public System.Object axes { get; set; }
 
@@ -14794,6 +15089,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartDataLabels")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", HelpMessage = @"The &quot;dataLabels&quot; property, of type &quot;microsoft.graph.workbookChartDataLabels&quot;.")]
         public System.Object dataLabels { get; set; }
 
@@ -14803,6 +15099,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartLegend")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", HelpMessage = @"The &quot;legend&quot; property, of type &quot;microsoft.graph.workbookChartLegend&quot;.")]
         public System.Object legend { get; set; }
 
@@ -14812,6 +15109,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartSeries")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", HelpMessage = @"The &quot;series&quot; property, of type &quot;microsoft.graph.workbookChartSeries&quot;.")]
         public System.Object[] series { get; set; }
@@ -14820,6 +15118,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookFunctions&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookFunctions")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookFunctions", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookFunctions&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookFunctions { get; set; }
@@ -14828,6 +15127,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookWorksheet&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookWorksheet")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookWorksheet", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookWorksheet&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookWorksheet { get; set; }
@@ -14848,6 +15148,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChart")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookWorksheet", HelpMessage = @"The &quot;charts&quot; property, of type &quot;microsoft.graph.workbookChart&quot;.")]
         public System.Object[] charts { get; set; }
@@ -14858,6 +15159,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookNamedItem")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookWorksheet", HelpMessage = @"The &quot;names&quot; property, of type &quot;microsoft.graph.workbookNamedItem&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbook", HelpMessage = @"The &quot;names&quot; property, of type &quot;microsoft.graph.workbookNamedItem&quot;.")]
@@ -14869,6 +15171,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookPivotTable")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookWorksheet", HelpMessage = @"The &quot;pivotTables&quot; property, of type &quot;microsoft.graph.workbookPivotTable&quot;.")]
         public System.Object[] pivotTables { get; set; }
@@ -14879,6 +15182,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookTable")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookWorksheet", HelpMessage = @"The &quot;tables&quot; property, of type &quot;microsoft.graph.workbookTable&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbook", HelpMessage = @"The &quot;tables&quot; property, of type &quot;microsoft.graph.workbookTable&quot;.")]
@@ -14888,6 +15192,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookTable&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookTable")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookTable", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookTable&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookTable { get; set; }
@@ -14961,6 +15266,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.columnDefinition")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookTable", HelpMessage = @"The &quot;columns&quot; property, of type &quot;microsoft.graph.workbookTableColumn&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;columns&quot; property, of type &quot;microsoft.graph.workbookTableColumn&quot;.")]
@@ -14971,6 +15277,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookNamedItem&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookNamedItem")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookNamedItem", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookNamedItem&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookNamedItem { get; set; }
@@ -15007,6 +15314,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookApplication&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbookApplication")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookApplication", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookApplication&quot; type.")]
         public System.Management.Automation.SwitchParameter workbookApplication { get; set; }
@@ -15024,6 +15332,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.fieldValueSet&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.fieldValueSet")]
         [Parameter(ParameterSetName = @"microsoft.graph.fieldValueSet", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.fieldValueSet&quot; type.")]
         public System.Management.Automation.SwitchParameter fieldValueSet { get; set; }
@@ -15032,6 +15341,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbook&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.workbook")]
         [Parameter(ParameterSetName = @"microsoft.graph.workbook", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbook&quot; type.")]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbook&quot; type.")]
@@ -15043,6 +15353,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookApplication")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbook", HelpMessage = @"The &quot;application&quot; property, of type &quot;microsoft.graph.workbookApplication&quot;.")]
         public System.Object application { get; set; }
 
@@ -15052,6 +15363,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookWorksheet")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.workbook", HelpMessage = @"The &quot;worksheets&quot; property, of type &quot;microsoft.graph.workbookWorksheet&quot;.")]
         public System.Object[] worksheets { get; set; }
@@ -15062,6 +15374,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookFunctions")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbook", HelpMessage = @"The &quot;functions&quot; property, of type &quot;microsoft.graph.workbookFunctions&quot;.")]
         public System.Object functions { get; set; }
 
@@ -15069,6 +15382,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.thumbnailSet&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.thumbnailSet")]
         [Parameter(ParameterSetName = @"microsoft.graph.thumbnailSet", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.thumbnailSet&quot; type.")]
         public System.Management.Automation.SwitchParameter thumbnailSet { get; set; }
@@ -15113,6 +15427,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.permission&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.permission")]
         [Parameter(ParameterSetName = @"microsoft.graph.permission", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.permission&quot; type.")]
         public System.Management.Automation.SwitchParameter permission { get; set; }
@@ -15168,6 +15483,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contentType&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.contentType")]
         [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contentType&quot; type.")]
         [Parameter(ParameterSetName = @"microsoft.graph.attachment", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contentType&quot; type.")]
@@ -15211,6 +15527,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.columnLink")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;columnLinks&quot; property, of type &quot;microsoft.graph.columnLink&quot;.")]
         public System.Object[] columnLinks { get; set; }
@@ -15219,6 +15536,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.columnLink&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.columnLink")]
         [Parameter(ParameterSetName = @"microsoft.graph.columnLink", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.columnLink&quot; type.")]
         public System.Management.Automation.SwitchParameter columnLink { get; set; }
@@ -15227,6 +15545,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.columnDefinition&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.columnDefinition")]
         [Parameter(ParameterSetName = @"microsoft.graph.columnDefinition", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.columnDefinition&quot; type.")]
         public System.Management.Automation.SwitchParameter columnDefinition { get; set; }
@@ -15364,6 +15683,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.listItemVersion&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.listItemVersion")]
         [Parameter(ParameterSetName = @"microsoft.graph.listItemVersion", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.listItemVersion&quot; type.")]
         public System.Management.Automation.SwitchParameter listItemVersion { get; set; }
@@ -15372,6 +15692,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.driveItemVersion&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.driveItemVersion")]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItemVersion", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.driveItemVersion&quot; type.")]
         public System.Management.Automation.SwitchParameter driveItemVersion { get; set; }
@@ -15380,6 +15701,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.inferenceClassificationOverride&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.inferenceClassificationOverride")]
         [Parameter(ParameterSetName = @"microsoft.graph.inferenceClassificationOverride", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.inferenceClassificationOverride&quot; type.")]
         public System.Management.Automation.SwitchParameter inferenceClassificationOverride { get; set; }
@@ -15410,6 +15732,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.multiValueLegacyExtendedProperty")]
         [Parameter(ParameterSetName = @"microsoft.graph.multiValueLegacyExtendedProperty", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot; type.")]
         public System.Management.Automation.SwitchParameter multiValueLegacyExtendedProperty { get; set; }
@@ -15418,6 +15741,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.singleValueLegacyExtendedProperty")]
         [Parameter(ParameterSetName = @"microsoft.graph.singleValueLegacyExtendedProperty", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot; type.")]
         public System.Management.Automation.SwitchParameter singleValueLegacyExtendedProperty { get; set; }
@@ -15426,6 +15750,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.messageRule&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.messageRule")]
         [Parameter(ParameterSetName = @"microsoft.graph.messageRule", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.messageRule&quot; type.")]
         public System.Management.Automation.SwitchParameter messageRule { get; set; }
@@ -15497,6 +15822,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.outlookCategory&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.outlookCategory")]
         [Parameter(ParameterSetName = @"microsoft.graph.outlookCategory", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.outlookCategory&quot; type.")]
         public System.Management.Automation.SwitchParameter outlookCategory { get; set; }
@@ -15517,6 +15843,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.referenceAttachment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.referenceAttachment")]
         [Parameter(ParameterSetName = @"microsoft.graph.referenceAttachment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.referenceAttachment&quot; type.")]
         public System.Management.Automation.SwitchParameter referenceAttachment { get; set; }
@@ -15525,6 +15852,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.itemAttachment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.itemAttachment")]
         [Parameter(ParameterSetName = @"microsoft.graph.itemAttachment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.itemAttachment&quot; type.")]
         public System.Management.Automation.SwitchParameter itemAttachment { get; set; }
@@ -15535,6 +15863,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.outlookItem", "microsoft.graph.post", "microsoft.graph.contact", "microsoft.graph.message", "microsoft.graph.eventMessage", "microsoft.graph.event")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.itemAttachment", HelpMessage = @"The &quot;item&quot; property, of type &quot;microsoft.graph.outlookItem&quot;.")]
         public System.Object item { get; set; }
 
@@ -15542,6 +15871,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.fileAttachment&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.fileAttachment")]
         [Parameter(ParameterSetName = @"microsoft.graph.fileAttachment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.fileAttachment&quot; type.")]
         public System.Management.Automation.SwitchParameter fileAttachment { get; set; }
@@ -15578,6 +15908,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.schemaExtension&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.schemaExtension")]
         [Parameter(ParameterSetName = @"microsoft.graph.schemaExtension", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.schemaExtension&quot; type.")]
         public System.Management.Automation.SwitchParameter schemaExtension { get; set; }
@@ -15606,6 +15937,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.userSettings&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.userSettings")]
         [Parameter(ParameterSetName = @"microsoft.graph.userSettings", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.userSettings&quot; type.")]
         public System.Management.Automation.SwitchParameter userSettings { get; set; }
@@ -15632,6 +15964,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.officeGraphInsights&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.officeGraphInsights")]
         [Parameter(ParameterSetName = @"microsoft.graph.officeGraphInsights", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.officeGraphInsights&quot; type.")]
         public System.Management.Automation.SwitchParameter officeGraphInsights { get; set; }
@@ -15641,6 +15974,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.officeGraphInsights&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.officeGraphInsights", HelpMessage = @"The &quot;shared&quot; property, of type &quot;microsoft.graph.sharedInsight&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;shared&quot; property, of type &quot;microsoft.graph.sharedInsight&quot;.")]
         public System.Object shared { get; set; }
@@ -15651,6 +15985,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.usedInsight")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.officeGraphInsights", HelpMessage = @"The &quot;used&quot; property, of type &quot;microsoft.graph.usedInsight&quot;.")]
         public System.Object[] used { get; set; }
@@ -15659,6 +15994,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.userActivity&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.userActivity")]
         [Parameter(ParameterSetName = @"microsoft.graph.userActivity", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.userActivity&quot; type.")]
         public System.Management.Automation.SwitchParameter userActivity { get; set; }
@@ -15732,6 +16068,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.activityHistoryItem")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;historyItems&quot; property, of type &quot;microsoft.graph.activityHistoryItem&quot;.")]
         public System.Object[] historyItems { get; set; }
@@ -15740,6 +16077,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.deviceManagementTroubleshootingEvent")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementTroubleshootingEvent", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceManagementTroubleshootingEvent { get; set; }
@@ -15759,6 +16097,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.enrollmentTroubleshootingEvent&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.enrollmentTroubleshootingEvent")]
         [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.enrollmentTroubleshootingEvent&quot; type.")]
         public System.Management.Automation.SwitchParameter enrollmentTroubleshootingEvent { get; set; }
@@ -15919,6 +16258,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
@@ -15932,6 +16272,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
@@ -15945,6 +16286,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.onenoteOperation")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
@@ -15956,6 +16298,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidManagedAppRegistration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.androidManagedAppRegistration")]
         [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidManagedAppRegistration&quot; type.")]
         public System.Management.Automation.SwitchParameter androidManagedAppRegistration { get; set; }
@@ -15964,6 +16307,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosManagedAppRegistration&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iosManagedAppRegistration")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iosManagedAppRegistration&quot; type.")]
         public System.Management.Automation.SwitchParameter iosManagedAppRegistration { get; set; }
@@ -15972,6 +16316,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDevice&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.managedDevice")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedDevice", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDevice&quot; type.")]
         public System.Management.Automation.SwitchParameter managedDevice { get; set; }
@@ -16396,6 +16741,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceConfigurationState")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.managedDevice", HelpMessage = @"The &quot;deviceConfigurationStates&quot; property, of type &quot;microsoft.graph.deviceConfigurationState&quot;.")]
         public System.Object[] deviceConfigurationStates { get; set; }
@@ -16407,6 +16753,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceCompliancePolicyState")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.managedDevice", HelpMessage = @"The &quot;deviceCompliancePolicyStates&quot; property, of type &quot;microsoft.graph.deviceCompliancePolicyState&quot;.")]
         public System.Object[] deviceCompliancePolicyStates { get; set; }
@@ -16415,6 +16762,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerUser&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.plannerUser")]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerUser", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerUser&quot; type.")]
         public System.Management.Automation.SwitchParameter plannerUser { get; set; }
@@ -16423,6 +16771,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.inferenceClassification&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.inferenceClassification")]
         [Parameter(ParameterSetName = @"microsoft.graph.inferenceClassification", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.inferenceClassification&quot; type.")]
         [Parameter(ParameterSetName = @"microsoft.graph.message", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.inferenceClassification&quot; type.")]
@@ -16436,6 +16785,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.inferenceClassificationOverride")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.inferenceClassification", HelpMessage = @"The &quot;overrides&quot; property, of type &quot;microsoft.graph.inferenceClassificationOverride&quot;.")]
         public System.Object[] overrides { get; set; }
@@ -16444,6 +16794,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contactFolder&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.contactFolder")]
         [Parameter(ParameterSetName = @"microsoft.graph.contactFolder", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contactFolder&quot; type.")]
         public System.Management.Automation.SwitchParameter contactFolder { get; set; }
@@ -16467,6 +16818,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.contact")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.contactFolder", HelpMessage = @"The &quot;contacts&quot; property, of type &quot;microsoft.graph.contact&quot;.")]
         public System.Object[] contacts { get; set; }
@@ -16477,6 +16829,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.mailFolder")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.contactFolder", HelpMessage = @"The &quot;childFolders&quot; property, of type &quot;microsoft.graph.contactFolder&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", HelpMessage = @"The &quot;childFolders&quot; property, of type &quot;microsoft.graph.contactFolder&quot;.")]
@@ -16488,6 +16841,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.singleValueLegacyExtendedProperty")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.contactFolder", HelpMessage = @"The &quot;singleValueExtendedProperties&quot; property, of type &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", HelpMessage = @"The &quot;singleValueExtendedProperties&quot; property, of type &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot;.")]
@@ -16505,6 +16859,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.multiValueLegacyExtendedProperty")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.contactFolder", HelpMessage = @"The &quot;multiValueExtendedProperties&quot; property, of type &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", HelpMessage = @"The &quot;multiValueExtendedProperties&quot; property, of type &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot;.")]
@@ -16520,6 +16875,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.person&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.person")]
         [Parameter(ParameterSetName = @"microsoft.graph.person", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.person&quot; type.")]
         public System.Management.Automation.SwitchParameter person { get; set; }
@@ -16655,6 +17011,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.calendarGroup&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.calendarGroup")]
         [Parameter(ParameterSetName = @"microsoft.graph.calendarGroup", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.calendarGroup&quot; type.")]
         public System.Management.Automation.SwitchParameter calendarGroup { get; set; }
@@ -16690,6 +17047,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.calendar")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.calendarGroup", HelpMessage = @"The &quot;calendars&quot; property, of type &quot;microsoft.graph.calendar&quot;.")]
         public System.Object[] calendars { get; set; }
@@ -16698,6 +17056,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mailFolder&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.mailFolder")]
         [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mailFolder&quot; type.")]
         public System.Management.Automation.SwitchParameter mailFolder { get; set; }
@@ -16735,6 +17094,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.message", "microsoft.graph.eventMessage")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", HelpMessage = @"The &quot;messages&quot; property, of type &quot;microsoft.graph.message&quot;.")]
         public System.Object[] messages { get; set; }
@@ -16745,6 +17105,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.messageRule")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", HelpMessage = @"The &quot;messageRules&quot; property, of type &quot;microsoft.graph.messageRule&quot;.")]
         public System.Object[] messageRules { get; set; }
@@ -16753,6 +17114,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.outlookUser&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.outlookUser")]
         [Parameter(ParameterSetName = @"microsoft.graph.outlookUser", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.outlookUser&quot; type.")]
         public System.Management.Automation.SwitchParameter outlookUser { get; set; }
@@ -16763,6 +17125,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.outlookCategory")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.outlookUser", HelpMessage = @"The &quot;masterCategories&quot; property, of type &quot;microsoft.graph.outlookCategory&quot;.")]
         public System.Object[] masterCategories { get; set; }
@@ -16771,6 +17134,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.subscribedSku&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.subscribedSku")]
         [Parameter(ParameterSetName = @"microsoft.graph.subscribedSku", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.subscribedSku&quot; type.")]
         public System.Management.Automation.SwitchParameter subscribedSku { get; set; }
@@ -16846,6 +17210,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.groupLifecyclePolicy&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.groupLifecyclePolicy")]
         [Parameter(ParameterSetName = @"microsoft.graph.groupLifecyclePolicy", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.groupLifecyclePolicy&quot; type.")]
         public System.Management.Automation.SwitchParameter groupLifecyclePolicy { get; set; }
@@ -16881,6 +17246,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenote&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.onenote")]
         [Parameter(ParameterSetName = @"microsoft.graph.onenote", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenote&quot; type.")]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenote&quot; type.")]
@@ -16892,6 +17258,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.notebook")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.onenote", HelpMessage = @"The &quot;notebooks&quot; property, of type &quot;microsoft.graph.notebook&quot;.")]
         public System.Object[] notebooks { get; set; }
@@ -16902,6 +17269,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.onenoteResource")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.onenote", HelpMessage = @"The &quot;resources&quot; property, of type &quot;microsoft.graph.onenoteResource&quot;.")]
         public System.Object[] resources { get; set; }
@@ -16910,6 +17278,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerGroup&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.plannerGroup")]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerGroup", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerGroup&quot; type.")]
         public System.Management.Automation.SwitchParameter plannerGroup { get; set; }
@@ -16965,6 +17334,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.user")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.baseItem", HelpMessage = @"The &quot;createdByUser&quot; property, of type &quot;microsoft.graph.user&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;createdByUser&quot; property, of type &quot;microsoft.graph.user&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;createdByUser&quot; property, of type &quot;microsoft.graph.user&quot;.")]
@@ -16980,6 +17350,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.user")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.baseItem", HelpMessage = @"The &quot;lastModifiedByUser&quot; property, of type &quot;microsoft.graph.user&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;lastModifiedByUser&quot; property, of type &quot;microsoft.graph.user&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;lastModifiedByUser&quot; property, of type &quot;microsoft.graph.user&quot;.")]
@@ -16993,6 +17364,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.sharedDriveItem&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.sharedDriveItem")]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.sharedDriveItem&quot; type.")]
         public System.Management.Automation.SwitchParameter sharedDriveItem { get; set; }
@@ -17002,6 +17374,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.sharedDriveItem&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.driveItem")]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;driveItem&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;driveItem&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
@@ -17014,6 +17387,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.driveItem")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;items&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;items&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
@@ -17027,6 +17401,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.list")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;list&quot; property, of type &quot;microsoft.graph.list&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;list&quot; property, of type &quot;microsoft.graph.list&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.drive", HelpMessage = @"The &quot;list&quot; property, of type &quot;microsoft.graph.list&quot;.")]
@@ -17037,6 +17412,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.sharedDriveItem&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.listItem")]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;listItem&quot; property, of type &quot;microsoft.graph.listItem&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;listItem&quot; property, of type &quot;microsoft.graph.listItem&quot;.")]
@@ -17049,6 +17425,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.driveItem")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;root&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;root&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;root&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
@@ -17060,6 +17437,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.sharedDriveItem&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.site")]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;site&quot; property, of type &quot;microsoft.graph.site&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;site&quot; property, of type &quot;microsoft.graph.site&quot;.")]
@@ -17084,6 +17462,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.driveItemVersion")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;versions&quot; property, of type &quot;microsoft.graph.listItemVersion&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;versions&quot; property, of type &quot;microsoft.graph.listItemVersion&quot;.")]
@@ -17105,6 +17484,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.contentType")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;contentTypes&quot; property, of type &quot;microsoft.graph.contentType&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;contentTypes&quot; property, of type &quot;microsoft.graph.contentType&quot;.")]
@@ -17115,6 +17495,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.list&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.drive")]
         [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;drive&quot; property, of type &quot;microsoft.graph.drive&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;drive&quot; property, of type &quot;microsoft.graph.drive&quot;.")]
@@ -17256,6 +17637,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.driveItem&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;children&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.contact", HelpMessage = @"The &quot;children&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
         public System.Object children { get; set; }
@@ -17266,6 +17648,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.permission")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;permissions&quot; property, of type &quot;microsoft.graph.permission&quot;.")]
         public System.Object[] permissions { get; set; }
@@ -17276,6 +17659,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.thumbnailSet")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;thumbnails&quot; property, of type &quot;microsoft.graph.thumbnailSet&quot;.")]
         public System.Object[] thumbnails { get; set; }
@@ -17295,6 +17679,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.drive")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;drives&quot; property, of type &quot;microsoft.graph.drive&quot;.")]
         public System.Object[] drives { get; set; }
@@ -17305,6 +17690,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.list")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;lists&quot; property, of type &quot;microsoft.graph.list&quot;.")]
         public System.Object[] lists { get; set; }
@@ -17315,6 +17701,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.site")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;sites&quot; property, of type &quot;microsoft.graph.site&quot;.")]
         public System.Object[] sites { get; set; }
@@ -17343,6 +17730,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.driveItem")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.drive", HelpMessage = @"The &quot;special&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
         public System.Object[] special { get; set; }
@@ -17351,6 +17739,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.profilePhoto&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.profilePhoto")]
         [Parameter(ParameterSetName = @"microsoft.graph.profilePhoto", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.profilePhoto&quot; type.")]
         public System.Management.Automation.SwitchParameter profilePhoto { get; set; }
@@ -17359,6 +17748,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.conversation&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.conversation")]
         [Parameter(ParameterSetName = @"microsoft.graph.conversation", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.conversation&quot; type.")]
         public System.Management.Automation.SwitchParameter conversation { get; set; }
@@ -17424,6 +17814,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.conversationThread")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.conversation", HelpMessage = @"The &quot;threads&quot; property, of type &quot;microsoft.graph.conversationThread&quot;.")]
         public System.Object[] threads { get; set; }
@@ -17432,6 +17823,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.post&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.post")]
         [Parameter(ParameterSetName = @"microsoft.graph.post", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.post&quot; type.")]
         public System.Management.Automation.SwitchParameter post { get; set; }
@@ -17508,6 +17900,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.extension", "microsoft.graph.openTypeExtension")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.post", HelpMessage = @"The &quot;extensions&quot; property, of type &quot;microsoft.graph.extension&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.contact", HelpMessage = @"The &quot;extensions&quot; property, of type &quot;microsoft.graph.extension&quot;.")]
@@ -17523,6 +17916,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.post")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.post", HelpMessage = @"The &quot;inReplyTo&quot; property, of type &quot;microsoft.graph.post&quot;.")]
         public System.Object inReplyTo { get; set; }
 
@@ -17532,6 +17926,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.attachment", "microsoft.graph.referenceAttachment", "microsoft.graph.itemAttachment", "microsoft.graph.fileAttachment")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.post", HelpMessage = @"The &quot;attachments&quot; property, of type &quot;microsoft.graph.attachment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.message", HelpMessage = @"The &quot;attachments&quot; property, of type &quot;microsoft.graph.attachment&quot;.")]
@@ -17543,6 +17938,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contact&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.contact")]
         [Parameter(ParameterSetName = @"microsoft.graph.contact", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contact&quot; type.")]
         public System.Management.Automation.SwitchParameter contact { get; set; }
@@ -17654,6 +18050,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.contact&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.contact", HelpMessage = @"The &quot;manager&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;manager&quot; property, of type &quot;Edm.String&quot;.")]
         public System.Object manager { get; set; }
@@ -17717,6 +18114,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.message&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.message")]
         [Parameter(ParameterSetName = @"microsoft.graph.message", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.message&quot; type.")]
         public System.Management.Automation.SwitchParameter message { get; set; }
@@ -17899,6 +18297,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.eventMessage&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.eventMessage")]
         [Parameter(ParameterSetName = @"microsoft.graph.eventMessage", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.eventMessage&quot; type.")]
         public System.Management.Automation.SwitchParameter eventMessage { get; set; }
@@ -17921,6 +18320,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.eventMessage&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.event")]
         [Parameter(ParameterSetName = @"microsoft.graph.eventMessage", HelpMessage = @"The &quot;event&quot; property, of type &quot;microsoft.graph.event&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.event", HelpMessage = @"The &quot;event&quot; property, of type &quot;microsoft.graph.event&quot;.")]
@@ -18130,6 +18530,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.event&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.calendar")]
         [Parameter(ParameterSetName = @"microsoft.graph.event", HelpMessage = @"The &quot;calendar&quot; property, of type &quot;microsoft.graph.calendar&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.calendar", HelpMessage = @"The &quot;calendar&quot; property, of type &quot;microsoft.graph.calendar&quot;.")]
@@ -18141,6 +18542,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.event")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.event", HelpMessage = @"The &quot;instances&quot; property, of type &quot;microsoft.graph.event&quot;.")]
         public System.Object[] instances { get; set; }
@@ -18178,6 +18580,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.event")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.calendar", HelpMessage = @"The &quot;events&quot; property, of type &quot;microsoft.graph.event&quot;.")]
         public System.Object[] events { get; set; }
@@ -18188,6 +18591,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.event")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.calendar", HelpMessage = @"The &quot;calendarView&quot; property, of type &quot;microsoft.graph.event&quot;.")]
         public System.Object[] calendarView { get; set; }
@@ -18196,6 +18600,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.conversationThread&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.conversationThread")]
         [Parameter(ParameterSetName = @"microsoft.graph.conversationThread", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.conversationThread&quot; type.")]
         public System.Management.Automation.SwitchParameter conversationThread { get; set; }
@@ -18215,6 +18620,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.post")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.conversationThread", HelpMessage = @"The &quot;posts&quot; property, of type &quot;microsoft.graph.post&quot;.")]
         public System.Object[] posts { get; set; }
@@ -18223,6 +18629,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.groupSetting&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.groupSetting")]
         [Parameter(ParameterSetName = @"microsoft.graph.groupSetting", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.groupSetting&quot; type.")]
         public System.Management.Automation.SwitchParameter groupSetting { get; set; }
@@ -18240,6 +18647,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.licenseDetails&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.licenseDetails")]
         [Parameter(ParameterSetName = @"microsoft.graph.licenseDetails", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.licenseDetails&quot; type.")]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.licenseDetails&quot; type.")]
@@ -18249,6 +18657,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsRecord&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.domainDnsRecord")]
         [Parameter(ParameterSetName = @"microsoft.graph.domainDnsRecord", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsRecord&quot; type.")]
         public System.Management.Automation.SwitchParameter domainDnsRecord { get; set; }
@@ -18327,6 +18736,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsUnavailableRecord&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.domainDnsUnavailableRecord")]
         [Parameter(ParameterSetName = @"microsoft.graph.domainDnsUnavailableRecord", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsUnavailableRecord&quot; type.")]
         public System.Management.Automation.SwitchParameter domainDnsUnavailableRecord { get; set; }
@@ -18335,6 +18745,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsTxtRecord&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.domainDnsTxtRecord")]
         [Parameter(ParameterSetName = @"microsoft.graph.domainDnsTxtRecord", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsTxtRecord&quot; type.")]
         public System.Management.Automation.SwitchParameter domainDnsTxtRecord { get; set; }
@@ -18343,6 +18754,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsSrvRecord&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.domainDnsSrvRecord")]
         [Parameter(ParameterSetName = @"microsoft.graph.domainDnsSrvRecord", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsSrvRecord&quot; type.")]
         public System.Management.Automation.SwitchParameter domainDnsSrvRecord { get; set; }
@@ -18387,6 +18799,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsMxRecord&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.domainDnsMxRecord")]
         [Parameter(ParameterSetName = @"microsoft.graph.domainDnsMxRecord", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsMxRecord&quot; type.")]
         public System.Management.Automation.SwitchParameter domainDnsMxRecord { get; set; }
@@ -18413,6 +18826,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsCnameRecord&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.domainDnsCnameRecord")]
         [Parameter(ParameterSetName = @"microsoft.graph.domainDnsCnameRecord", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsCnameRecord&quot; type.")]
         public System.Management.Automation.SwitchParameter domainDnsCnameRecord { get; set; }
@@ -18430,6 +18844,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domain&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.domain")]
         [Parameter(ParameterSetName = @"microsoft.graph.domain", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domain&quot; type.")]
         public System.Management.Automation.SwitchParameter domain { get; set; }
@@ -18504,6 +18919,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.domainDnsRecord", "microsoft.graph.domainDnsUnavailableRecord", "microsoft.graph.domainDnsTxtRecord", "microsoft.graph.domainDnsSrvRecord", "microsoft.graph.domainDnsMxRecord", "microsoft.graph.domainDnsCnameRecord")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;serviceConfigurationRecords&quot; property, of type &quot;microsoft.graph.domainDnsRecord&quot;.")]
         public System.Object[] serviceConfigurationRecords { get; set; }
@@ -18514,6 +18930,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.domainDnsRecord", "microsoft.graph.domainDnsUnavailableRecord", "microsoft.graph.domainDnsTxtRecord", "microsoft.graph.domainDnsSrvRecord", "microsoft.graph.domainDnsMxRecord", "microsoft.graph.domainDnsCnameRecord")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;verificationDnsRecords&quot; property, of type &quot;microsoft.graph.domainDnsRecord&quot;.")]
         public System.Object[] verificationDnsRecords { get; set; }
@@ -18524,6 +18941,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;domainNameReferences&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         public System.Object[] domainNameReferences { get; set; }
@@ -18532,6 +18950,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.openTypeExtension&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.openTypeExtension")]
         [Parameter(ParameterSetName = @"microsoft.graph.openTypeExtension", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.openTypeExtension&quot; type.")]
         public System.Management.Automation.SwitchParameter openTypeExtension { get; set; }
@@ -18549,6 +18968,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.directoryObject&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.directoryObject")]
         [Parameter(ParameterSetName = @"microsoft.graph.directoryObject", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.directoryObject&quot; type.")]
         public System.Management.Automation.SwitchParameter directoryObject { get; set; }
@@ -18575,6 +18995,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.administrativeUnit&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.administrativeUnit")]
         [Parameter(ParameterSetName = @"microsoft.graph.administrativeUnit", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.administrativeUnit&quot; type.")]
         public System.Management.Automation.SwitchParameter administrativeUnit { get; set; }
@@ -18583,6 +19004,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.groupSettingTemplate&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.groupSettingTemplate")]
         [Parameter(ParameterSetName = @"microsoft.graph.groupSettingTemplate", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.groupSettingTemplate&quot; type.")]
         public System.Management.Automation.SwitchParameter groupSettingTemplate { get; set; }
@@ -18855,6 +19277,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;ownedDevices&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         public System.Object[] ownedDevices { get; set; }
@@ -18865,6 +19288,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;registeredDevices&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         public System.Object[] registeredDevices { get; set; }
@@ -18875,6 +19299,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;directReports&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         public System.Object[] directReports { get; set; }
@@ -18885,6 +19310,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;memberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;memberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
@@ -18896,6 +19322,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;createdObjects&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         public System.Object[] createdObjects { get; set; }
@@ -18906,6 +19333,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;ownedObjects&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         public System.Object[] ownedObjects { get; set; }
@@ -18916,6 +19344,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.profilePhoto")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;photos&quot; property, of type &quot;microsoft.graph.profilePhoto&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;photos&quot; property, of type &quot;microsoft.graph.profilePhoto&quot;.")]
@@ -18928,6 +19357,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;deviceManagementTroubleshootingEvents&quot; property, of type &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot;.")]
         public System.Object[] deviceManagementTroubleshootingEvents { get; set; }
@@ -18936,6 +19366,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.organization&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.organization")]
         [Parameter(ParameterSetName = @"microsoft.graph.organization", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.organization&quot; type.")]
         public System.Management.Automation.SwitchParameter organization { get; set; }
@@ -19025,6 +19456,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contract&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.contract")]
         [Parameter(ParameterSetName = @"microsoft.graph.contract", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contract&quot; type.")]
         public System.Management.Automation.SwitchParameter contract { get; set; }
@@ -19144,6 +19576,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;createdOnBehalfOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         public System.Object createdOnBehalfOf { get; set; }
 
@@ -19153,6 +19586,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;owners&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         public System.Object[] owners { get; set; }
@@ -19163,6 +19597,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.groupLifecyclePolicy")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;groupLifecyclePolicies&quot; property, of type &quot;microsoft.graph.groupLifecyclePolicy&quot;.")]
         public System.Object[] groupLifecyclePolicies { get; set; }
@@ -19171,6 +19606,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.directoryRoleTemplate&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.directoryRoleTemplate")]
         [Parameter(ParameterSetName = @"microsoft.graph.directoryRoleTemplate", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.directoryRoleTemplate&quot; type.")]
         public System.Management.Automation.SwitchParameter directoryRoleTemplate { get; set; }
@@ -19179,6 +19615,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.directoryRole&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.directoryRole")]
         [Parameter(ParameterSetName = @"microsoft.graph.directoryRole", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.directoryRole&quot; type.")]
         public System.Management.Automation.SwitchParameter directoryRole { get; set; }
@@ -19196,6 +19633,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.device&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.device")]
         [Parameter(ParameterSetName = @"microsoft.graph.device", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.device&quot; type.")]
         public System.Management.Automation.SwitchParameter device { get; set; }
@@ -19289,6 +19727,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;registeredOwners&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         public System.Object[] registeredOwners { get; set; }
@@ -19299,6 +19738,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;registeredUsers&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         public System.Object[] registeredUsers { get; set; }
@@ -19307,6 +19747,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.directory&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.directory")]
         [Parameter(ParameterSetName = @"microsoft.graph.directory", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.directory&quot; type.")]
         public System.Management.Automation.SwitchParameter directory { get; set; }
@@ -19317,6 +19758,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.directory", HelpMessage = @"The &quot;deletedItems&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         public System.Object[] deletedItems { get; set; }

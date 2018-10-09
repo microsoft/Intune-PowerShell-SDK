@@ -36,6 +36,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartAxisTitleFormat")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxisTitle", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartAxisTitleFormat&quot;.")]
         public System.Object format { get; set; }
     }

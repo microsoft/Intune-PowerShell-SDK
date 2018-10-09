@@ -153,6 +153,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.user")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.baseItem", HelpMessage = @"The &quot;createdByUser&quot; property, of type &quot;microsoft.graph.user&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;createdByUser&quot; property, of type &quot;microsoft.graph.user&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;createdByUser&quot; property, of type &quot;microsoft.graph.user&quot;.")]
@@ -168,6 +169,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.user")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.baseItem", HelpMessage = @"The &quot;lastModifiedByUser&quot; property, of type &quot;microsoft.graph.user&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;lastModifiedByUser&quot; property, of type &quot;microsoft.graph.user&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;lastModifiedByUser&quot; property, of type &quot;microsoft.graph.user&quot;.")]
@@ -181,6 +183,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.sharedDriveItem&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.sharedDriveItem")]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.sharedDriveItem&quot; type.")]
         public System.Management.Automation.SwitchParameter sharedDriveItem { get; set; }
@@ -200,6 +203,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.sharedDriveItem&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.driveItem")]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;driveItem&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;driveItem&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
@@ -212,6 +216,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.driveItem")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;items&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;items&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
@@ -225,6 +230,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.list")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;list&quot; property, of type &quot;microsoft.graph.list&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;list&quot; property, of type &quot;microsoft.graph.list&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.drive", HelpMessage = @"The &quot;list&quot; property, of type &quot;microsoft.graph.list&quot;.")]
@@ -235,6 +241,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.sharedDriveItem&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.listItem")]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;listItem&quot; property, of type &quot;microsoft.graph.listItem&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;listItem&quot; property, of type &quot;microsoft.graph.listItem&quot;.")]
@@ -247,6 +254,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.driveItem")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;root&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;root&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;root&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
@@ -258,6 +266,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.sharedDriveItem&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.site")]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;site&quot; property, of type &quot;microsoft.graph.site&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;site&quot; property, of type &quot;microsoft.graph.site&quot;.")]
@@ -291,6 +300,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.fieldValueSet")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;fields&quot; property, of type &quot;microsoft.graph.fieldValueSet&quot;.")]
         public System.Object fields { get; set; }
 
@@ -300,6 +310,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.driveItemVersion")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;versions&quot; property, of type &quot;microsoft.graph.listItemVersion&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;versions&quot; property, of type &quot;microsoft.graph.listItemVersion&quot;.")]
@@ -331,6 +342,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.columnDefinition")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;columns&quot; property, of type &quot;microsoft.graph.columnDefinition&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;columns&quot; property, of type &quot;microsoft.graph.columnDefinition&quot;.")]
@@ -342,6 +354,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.contentType")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;contentTypes&quot; property, of type &quot;microsoft.graph.contentType&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;contentTypes&quot; property, of type &quot;microsoft.graph.contentType&quot;.")]
@@ -352,6 +365,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.list&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.drive")]
         [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;drive&quot; property, of type &quot;microsoft.graph.drive&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;drive&quot; property, of type &quot;microsoft.graph.drive&quot;.")]
@@ -535,6 +549,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.driveItem")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;children&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
         public System.Object[] children { get; set; }
@@ -545,6 +560,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.permission")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;permissions&quot; property, of type &quot;microsoft.graph.permission&quot;.")]
         public System.Object[] permissions { get; set; }
@@ -555,6 +571,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.thumbnailSet")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;thumbnails&quot; property, of type &quot;microsoft.graph.thumbnailSet&quot;.")]
         public System.Object[] thumbnails { get; set; }
@@ -565,6 +582,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbook")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;workbook&quot; property, of type &quot;microsoft.graph.workbook&quot;.")]
         public System.Object workbook { get; set; }
 
@@ -583,6 +601,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.drive")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;drives&quot; property, of type &quot;microsoft.graph.drive&quot;.")]
         public System.Object[] drives { get; set; }
@@ -593,6 +612,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.list")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;lists&quot; property, of type &quot;microsoft.graph.list&quot;.")]
         public System.Object[] lists { get; set; }
@@ -603,6 +623,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.site")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;sites&quot; property, of type &quot;microsoft.graph.site&quot;.")]
         public System.Object[] sites { get; set; }
@@ -613,6 +634,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.onenote")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;onenote&quot; property, of type &quot;microsoft.graph.onenote&quot;.")]
         public System.Object onenote { get; set; }
 
@@ -640,6 +662,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.driveItem")]
         [Selectable]
+        [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.drive", HelpMessage = @"The &quot;special&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
         public System.Object[] special { get; set; }

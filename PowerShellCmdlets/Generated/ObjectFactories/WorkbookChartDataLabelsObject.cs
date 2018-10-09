@@ -90,6 +90,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         [ODataType("microsoft.graph.workbookChartDataLabelFormat")]
         [Selectable]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookChartDataLabels", HelpMessage = @"The &quot;format&quot; property, of type &quot;microsoft.graph.workbookChartDataLabelFormat&quot;.")]
         public System.Object format { get; set; }
     }

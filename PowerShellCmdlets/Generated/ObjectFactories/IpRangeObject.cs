@@ -16,6 +16,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iPv4Range&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iPv4Range")]
         [Parameter(ParameterSetName = @"microsoft.graph.iPv4Range", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iPv4Range&quot; type.")]
         public System.Management.Automation.SwitchParameter iPv4Range { get; set; }
@@ -46,6 +47,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iPv6Range&quot; type.</para>
         /// </summary>
         [Selectable]
+        [Expandable]
         [ParameterSetSelector(@"microsoft.graph.iPv6Range")]
         [Parameter(ParameterSetName = @"microsoft.graph.iPv6Range", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.iPv6Range&quot; type.")]
         public System.Management.Automation.SwitchParameter iPv6Range { get; set; }
