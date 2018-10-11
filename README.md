@@ -4,6 +4,7 @@
 - [Getting started](#getting-started)
     - [One-time setup](#one-time-setup)
     - [Each time you use the module](#each-time-you-use-the-module)
+    - [Scenario Modules](#scenario-modules)
     - [Discovering available commands](#discovering-available-commands)
 - [Example usage](#example-usage)
     - [Retrieving objects](#retrieving-objects)
@@ -41,8 +42,8 @@ To authenticate with Microsoft Graph (this is not required when using CloudShell
 Connect-MSGraph
 ```
 
-## Feature/Scenario Modules
-The feature/scenario modules are available on GitHub in the [Microsoft/Intune-PowerShell-Management](https://github.com/Microsoft/Intune-PowerShell-Management) repository.
+## Scenario Modules
+The scenario modules are available on GitHub in the [Microsoft/Intune-PowerShell-Management](https://github.com/Microsoft/Intune-PowerShell-Management) repository.
 
 
 ## Discovering available commands

@@ -1427,4 +1427,80 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             return $"deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}";
         }
     }
+
+    /// <summary>
+    ///     <para type="description">POST ~/deviceAppManagement/iosManagedAppProtections/assign</para>
+    ///     <para type="description">The action &quot;microsoft.graph.assign&quot;, which exists on the type &quot;microsoft.graph.iosManagedAppProtection&quot;.</para>
+    ///     <para type="description">This action does not return any objects.</para>
+    /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
+    [Cmdlet("Invoke", "DeviceAppManagement_IosManagedAppProtections_Assign", ConfirmImpact = ConfirmImpact.High)]
+    [ODataType("microsoft.graph.iosManagedAppProtection")]
+    [ResourceTypePropertyName("iosManagedAppProtectionODataType")]
+    public class Invoke_DeviceAppManagement_IosManagedAppProtections_Assign : ActionCmdlet
+    {
+        /// <summary>
+        ///     <para type="description">The &quot;assignments&quot; action parameter of type &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot;.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.targetedManagedAppPolicyAssignment")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; action parameter of type &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot;.")]
+        public System.Object[] assignments { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The ID for a &quot;microsoft.graph.iosManagedAppProtection&quot; object in the &quot;iosManagedAppProtections&quot; collection.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [IdParameter]
+        [ResourceIdParameter]
+        [ValidateNotNullOrEmpty]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.iosManagedAppProtection&quot; object in the &quot;iosManagedAppProtections&quot; collection.")]
+        public System.String iosManagedAppProtectionId { get; set; }
+
+        internal override System.String GetResourcePath()
+        {
+            return $"deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/assign";
+        }
+    }
+
+    /// <summary>
+    ///     <para type="description">POST ~/deviceAppManagement/iosManagedAppProtections/targetApps</para>
+    ///     <para type="description">The action &quot;microsoft.graph.targetApps&quot;, which exists on the type &quot;microsoft.graph.iosManagedAppProtection&quot;.</para>
+    ///     <para type="description">This action does not return any objects.</para>
+    /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
+    [Cmdlet("Invoke", "DeviceAppManagement_IosManagedAppProtections_TargetApps", ConfirmImpact = ConfirmImpact.High)]
+    [ODataType("microsoft.graph.iosManagedAppProtection")]
+    [ResourceTypePropertyName("iosManagedAppProtectionODataType")]
+    public class Invoke_DeviceAppManagement_IosManagedAppProtections_TargetApps : ActionCmdlet
+    {
+        /// <summary>
+        ///     <para type="description">The &quot;apps&quot; action parameter of type &quot;microsoft.graph.managedMobileApp&quot;.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.managedMobileApp")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;apps&quot; action parameter of type &quot;microsoft.graph.managedMobileApp&quot;.")]
+        public System.Object[] apps { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The ID for a &quot;microsoft.graph.iosManagedAppProtection&quot; object in the &quot;iosManagedAppProtections&quot; collection.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [IdParameter]
+        [ResourceIdParameter]
+        [ValidateNotNullOrEmpty]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.iosManagedAppProtection&quot; object in the &quot;iosManagedAppProtections&quot; collection.")]
+        public System.String iosManagedAppProtectionId { get; set; }
+
+        internal override System.String GetResourcePath()
+        {
+            return $"deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/targetApps";
+        }
+    }
 }

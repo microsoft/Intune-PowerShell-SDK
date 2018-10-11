@@ -679,4 +679,192 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             return $"organization/{organizationId}/setMobileDeviceManagementAuthority";
         }
     }
+
+    /// <summary>
+    ///     <para type="description">POST ~/organization/getByIds</para>
+    ///     <para type="description">The action &quot;microsoft.graph.getByIds&quot;, which exists on the type &quot;microsoft.graph.organization&quot;.</para>
+    ///     <para type="description">This action returns a collection of &quot;microsoft.graph.directoryObject&quot; objects.</para>
+    /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
+    [Cmdlet("Invoke", "Organization_GetByIds", ConfirmImpact = ConfirmImpact.High)]
+    [ODataType("microsoft.graph.organization")]
+    [ResourceTypePropertyName("organizationODataType")]
+    public class Invoke_Organization_GetByIds : ActionCmdlet
+    {
+        /// <summary>
+        ///     <para type="description">The &quot;ids&quot; action parameter of type &quot;Edm.String&quot;.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Expandable]
+        [ValidateNotNull]
+        [AllowEmptyCollection]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;ids&quot; action parameter of type &quot;Edm.String&quot;.")]
+        public System.String[] ids { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;types&quot; action parameter of type &quot;Edm.String&quot;.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;types&quot; action parameter of type &quot;Edm.String&quot;.")]
+        public System.String[] types { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The ID for a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [IdParameter]
+        [ResourceIdParameter]
+        public System.String organizationId { get; set; }
+
+        internal override System.String GetResourcePath()
+        {
+            return $"organization/{organizationId}/getByIds";
+        }
+    }
+
+    /// <summary>
+    ///     <para type="description">POST ~/organization/checkMemberGroups</para>
+    ///     <para type="description">The action &quot;microsoft.graph.checkMemberGroups&quot;, which exists on the type &quot;microsoft.graph.organization&quot;.</para>
+    ///     <para type="description">This action returns a collection of &quot;Edm.String&quot; objects.</para>
+    /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
+    [Cmdlet("Invoke", "Organization_CheckMemberGroups", ConfirmImpact = ConfirmImpact.High)]
+    [ODataType("microsoft.graph.organization")]
+    [ResourceTypePropertyName("organizationODataType")]
+    public class Invoke_Organization_CheckMemberGroups : ActionCmdlet
+    {
+        /// <summary>
+        ///     <para type="description">The &quot;groupIds&quot; action parameter of type &quot;Edm.String&quot;.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Expandable]
+        [ValidateNotNull]
+        [AllowEmptyCollection]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;groupIds&quot; action parameter of type &quot;Edm.String&quot;.")]
+        public System.String[] groupIds { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The ID for a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [IdParameter]
+        [ResourceIdParameter]
+        [ValidateNotNullOrEmpty]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.")]
+        public System.String organizationId { get; set; }
+
+        internal override System.String GetResourcePath()
+        {
+            return $"organization/{organizationId}/checkMemberGroups";
+        }
+    }
+
+    /// <summary>
+    ///     <para type="description">POST ~/organization/getMemberGroups</para>
+    ///     <para type="description">The action &quot;microsoft.graph.getMemberGroups&quot;, which exists on the type &quot;microsoft.graph.organization&quot;.</para>
+    ///     <para type="description">This action returns a collection of &quot;Edm.String&quot; objects.</para>
+    /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
+    [Cmdlet("Invoke", "Organization_GetMemberGroups", ConfirmImpact = ConfirmImpact.High)]
+    [ODataType("microsoft.graph.organization")]
+    [ResourceTypePropertyName("organizationODataType")]
+    public class Invoke_Organization_GetMemberGroups : ActionCmdlet
+    {
+        /// <summary>
+        ///     <para type="description">The &quot;securityEnabledOnly&quot; action parameter of type &quot;Edm.Boolean&quot;.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Expandable]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityEnabledOnly&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean securityEnabledOnly { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The ID for a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [IdParameter]
+        [ResourceIdParameter]
+        [ValidateNotNullOrEmpty]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.")]
+        public System.String organizationId { get; set; }
+
+        internal override System.String GetResourcePath()
+        {
+            return $"organization/{organizationId}/getMemberGroups";
+        }
+    }
+
+    /// <summary>
+    ///     <para type="description">POST ~/organization/getMemberObjects</para>
+    ///     <para type="description">The action &quot;microsoft.graph.getMemberObjects&quot;, which exists on the type &quot;microsoft.graph.organization&quot;.</para>
+    ///     <para type="description">This action returns a collection of &quot;Edm.String&quot; objects.</para>
+    /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
+    [Cmdlet("Invoke", "Organization_GetMemberObjects", ConfirmImpact = ConfirmImpact.High)]
+    [ODataType("microsoft.graph.organization")]
+    [ResourceTypePropertyName("organizationODataType")]
+    public class Invoke_Organization_GetMemberObjects : ActionCmdlet
+    {
+        /// <summary>
+        ///     <para type="description">The &quot;securityEnabledOnly&quot; action parameter of type &quot;Edm.Boolean&quot;.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Expandable]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityEnabledOnly&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean securityEnabledOnly { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The ID for a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [IdParameter]
+        [ResourceIdParameter]
+        [ValidateNotNullOrEmpty]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.")]
+        public System.String organizationId { get; set; }
+
+        internal override System.String GetResourcePath()
+        {
+            return $"organization/{organizationId}/getMemberObjects";
+        }
+    }
+
+    /// <summary>
+    ///     <para type="description">POST ~/organization/restore</para>
+    ///     <para type="description">The action &quot;microsoft.graph.restore&quot;, which exists on the type &quot;microsoft.graph.organization&quot;.</para>
+    ///     <para type="description">This action returns a &quot;microsoft.graph.directoryObject&quot; object.</para>
+    /// </summary>
+    /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
+    [Cmdlet("Invoke", "Organization_Restore", ConfirmImpact = ConfirmImpact.High)]
+    [ODataType("microsoft.graph.organization")]
+    [ResourceTypePropertyName("organizationODataType")]
+    public class Invoke_Organization_Restore : ActionCmdlet
+    {
+        /// <summary>
+        ///     <para type="description">The ID for a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [IdParameter]
+        [ResourceIdParameter]
+        [ValidateNotNullOrEmpty]
+        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.organization&quot; object in the &quot;organization&quot; collection.")]
+        public System.String organizationId { get; set; }
+
+        internal override System.String GetResourcePath()
+        {
+            return $"organization/{organizationId}/restore";
+        }
+    }
 }
