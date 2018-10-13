@@ -117,6 +117,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 case ParameterSetForceNonInteractive:
                     authResult = AuthUtils.Auth(Microsoft.IdentityModel.Clients.ActiveDirectory.PromptBehavior.Never);
                     break;
+                case ParameterSetAdminConsent:
+                    authResult = AuthUtils.GrantAdminConsent();
+                    break;
                 default:
                     authResult = AuthUtils.Auth();
                     break;
@@ -127,7 +130,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 {
                     this.WriteWarning(deviceCodeMessage);
                 },
-                useAdminConsentFlow: this.ParameterSetName == ParameterSetAdminConsent
+                useAdminConsentFlow: this.AdminConsent
             );
 #endif
 
