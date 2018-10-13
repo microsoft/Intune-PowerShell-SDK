@@ -3,6 +3,7 @@
 - [Intune-PowerShell-SDK](#intune-powershell-sdk)
 - [Getting started](#getting-started)
     - [One-time setup](#one-time-setup)
+    - [Before this module is used in your organization](#before-this-module-is-used-in-your-organization)
     - [Each time you use the module](#each-time-you-use-the-module)
     - [Scenario Modules](#scenario-modules)
     - [Discovering available commands](#discovering-available-commands)
@@ -31,6 +32,12 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
     - If you are using Windows, extract the "net471" folder.  **You must have .NET 4.7.1 or higher installed**.
     - If you are using any other operating system or platform (including CloudShell), extract the "netstandard2.0" folder.  You may rename the extracted folder to whatever you like.
 3. The module manifest is the "Microsoft.Graph.Intune.psd1" file inside this folder.  This is the file you would refer to when importing the module (see the next section below).
+
+## Before this module is used in your organization
+An admin user must provide consent for this app to be used in their organization.  This can be done with the following command:
+```PowerShell
+Connect-MSGraph -AdminConsent
+```
 
 ## Each time you use the module
 Import the module:
