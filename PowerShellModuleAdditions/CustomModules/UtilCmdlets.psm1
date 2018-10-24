@@ -30,36 +30,48 @@ function Get-MSGraphAllPages {
         [PSObject]$SearchResult
     )
 
-    if ($PSCmdlet.ParameterSetName -eq 'SearchResult') {
-        # Set the current page to the search result provided
-        $page = $SearchResult
+    begin {}
 
-        # Extract the NextLink
-        $currentNextLink = $page.'@odata.nextLink'
+    process {
+        if ($PSCmdlet.ParameterSetName -eq 'SearchResult') {
+            # Set the current page to the search result provided
+            $page = $SearchResult
 
-        # Output the items in the first page
-        $values = $page.value
-        if ($values) {
-            $values | Write-Output
+            # Extract the NextLink
+            $currentNextLink = $page.'@odata.nextLink'
+
+            # We know this is a wrapper object if it has an "@odata.context" property
+            if (Get-Member -InputObject $page -Name '@odata.context' -Membertype Properties) {
+                $values = $page.value
+            } else {
+                $values = $page
+            }
+
+            # Output the values
+            if ($values) {
+                $values | Write-Output
+            }
+        }
+
+        while (-Not ([string]::IsNullOrWhiteSpace($currentNextLink)))
+        {
+            # Make the call to get the next page
+            try {
+                $page = Get-MSGraphNextPage -NextLink $currentNextLink
+            } catch {
+                throw
+            }
+
+            # Extract the NextLink
+            $currentNextLink = $page.'@odata.nextLink'
+
+            # Output the items in the page
+            $values = $page.value
+            if ($values) {
+                $values | Write-Output
+            }
         }
     }
 
-    while (-Not ([string]::IsNullOrWhiteSpace($currentNextLink)))
-    {
-        # Make the call to get the next page
-        try {
-            $page = Get-MSGraphNextPage -NextLink $currentNextLink
-        } catch {
-            throw
-        }
-
-        # Extract the NextLink
-        $currentNextLink = $page.'@odata.nextLink'
-
-        # Output the items in the page
-        $values = $page.value
-        if ($values) {
-            $values | Write-Output
-        }
-    }
+    end {}
 }
