@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of device enrollment configurations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_DeviceEnrollmentConfigurations", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneDeviceEnrollmentConfiguration", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceEnrollmentConfiguration", "microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", "microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", "microsoft.graph.deviceEnrollmentLimitConfiguration")]
     [ResourceTypePropertyName("deviceEnrollmentConfigurationODataType")]
     [ResourceReference]
-    public class Get_DeviceManagement_DeviceEnrollmentConfigurations : GetOrSearchCmdlet
+    public class Get_IntuneDeviceEnrollmentConfiguration : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object in the &quot;deviceEnrollmentConfigurations&quot; collection.</para>
@@ -285,11 +285,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of device enrollment configurations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement_DeviceEnrollmentConfigurations", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "IntuneDeviceEnrollmentConfiguration", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.deviceEnrollmentConfiguration", "microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", "microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", "microsoft.graph.deviceEnrollmentLimitConfiguration")]
     [ResourceTypePropertyName("deviceEnrollmentConfigurationODataType")]
     [ResourceReference]
-    public class New_DeviceManagement_DeviceEnrollmentConfigurations : PostCmdlet
+    public class New_IntuneDeviceEnrollmentConfiguration : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object in the &quot;deviceEnrollmentConfigurations&quot; collection.</para>
@@ -634,10 +634,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of device enrollment configurations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceManagement_DeviceEnrollmentConfigurations", ConfirmImpact = ConfirmImpact.Medium)]
+    [Cmdlet("Update", "IntuneDeviceEnrollmentConfiguration", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.deviceEnrollmentConfiguration", "microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", "microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", "microsoft.graph.deviceEnrollmentLimitConfiguration")]
     [ResourceTypePropertyName("deviceEnrollmentConfigurationODataType")]
-    public class Update_DeviceManagement_DeviceEnrollmentConfigurations : PatchCmdlet
+    public class Update_IntuneDeviceEnrollmentConfiguration : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object in the &quot;deviceEnrollmentConfigurations&quot; collection.</para>
@@ -984,10 +984,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of device enrollment configurations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement_DeviceEnrollmentConfigurations", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneDeviceEnrollmentConfiguration", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceEnrollmentConfiguration", "microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", "microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", "microsoft.graph.deviceEnrollmentLimitConfiguration")]
     [ResourceTypePropertyName("deviceEnrollmentConfigurationODataType")]
-    public class Remove_DeviceManagement_DeviceEnrollmentConfigurations : DeleteCmdlet
+    public class Remove_IntuneDeviceEnrollmentConfiguration : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object in the &quot;deviceEnrollmentConfigurations&quot; collection.</para>
@@ -1012,10 +1012,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "DeviceManagement_DeviceEnrollmentConfigurations_SetPriority", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "IntuneDeviceEnrollmentConfigurationSetPriority", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceEnrollmentConfiguration", "microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", "microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", "microsoft.graph.deviceEnrollmentLimitConfiguration")]
     [ResourceTypePropertyName("deviceEnrollmentConfigurationODataType")]
-    public class Invoke_DeviceManagement_DeviceEnrollmentConfigurations_SetPriority : ActionCmdlet
+    public class Invoke_IntuneDeviceEnrollmentConfigurationSetPriority : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;priority&quot; action parameter of type &quot;Edm.Int32&quot;.</para>
@@ -1050,10 +1050,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "DeviceManagement_DeviceEnrollmentConfigurations_Assign", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "IntuneDeviceEnrollmentConfigurationAssign", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceEnrollmentConfiguration", "microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", "microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", "microsoft.graph.deviceEnrollmentLimitConfiguration")]
     [ResourceTypePropertyName("deviceEnrollmentConfigurationODataType")]
-    public class Invoke_DeviceManagement_DeviceEnrollmentConfigurations_Assign : ActionCmdlet
+    public class Invoke_IntuneDeviceEnrollmentConfigurationAssign : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;enrollmentConfigurationAssignments&quot; action parameter of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.</para>

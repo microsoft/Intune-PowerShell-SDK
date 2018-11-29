@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Compliance Setting State Device Summary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_DeviceCompliancePolicies_DeviceSettingStateSummaries", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneDeviceCompliancePolicyDeviceSettingStateSummary", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.settingStateDeviceSummary")]
     [ResourceTypePropertyName("deviceSettingStateSummaryODataType")]
     [ResourceReference]
-    public class Get_DeviceManagement_DeviceCompliancePolicies_DeviceSettingStateSummaries : GetOrSearchCmdlet
+    public class Get_IntuneDeviceCompliancePolicyDeviceSettingStateSummary : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceCompliancePolicy&quot; object in the &quot;deviceCompliancePolicies&quot; collection.</para>
@@ -141,11 +141,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Compliance Setting State Device Summary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement_DeviceCompliancePolicies_DeviceSettingStateSummaries", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.settingStateDeviceSummary")]
+    [Cmdlet("New", "IntuneDeviceCompliancePolicyDeviceSettingStateSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.settingStateDeviceSummary")]
     [ODataType("microsoft.graph.settingStateDeviceSummary")]
     [ResourceTypePropertyName("deviceSettingStateSummaryODataType")]
     [ResourceReference]
-    public class New_DeviceManagement_DeviceCompliancePolicies_DeviceSettingStateSummaries : PostCmdlet
+    public class New_IntuneDeviceCompliancePolicyDeviceSettingStateSummary : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.settingStateDeviceSummary&quot; object in the &quot;deviceSettingStateSummaries&quot; collection.</para>
@@ -278,10 +278,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Compliance Setting State Device Summary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceManagement_DeviceCompliancePolicies_DeviceSettingStateSummaries", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.settingStateDeviceSummary")]
+    [Cmdlet("Update", "IntuneDeviceCompliancePolicyDeviceSettingStateSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.settingStateDeviceSummary")]
     [ODataType("microsoft.graph.settingStateDeviceSummary")]
     [ResourceTypePropertyName("deviceSettingStateSummaryODataType")]
-    public class Update_DeviceManagement_DeviceCompliancePolicies_DeviceSettingStateSummaries : PatchCmdlet
+    public class Update_IntuneDeviceCompliancePolicyDeviceSettingStateSummary : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.settingStateDeviceSummary&quot; object in the &quot;deviceSettingStateSummaries&quot; collection.</para>
@@ -416,10 +416,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Compliance Setting State Device Summary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement_DeviceCompliancePolicies_DeviceSettingStateSummaries", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneDeviceCompliancePolicyDeviceSettingStateSummary", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.settingStateDeviceSummary")]
     [ResourceTypePropertyName("deviceSettingStateSummaryODataType")]
-    public class Remove_DeviceManagement_DeviceCompliancePolicies_DeviceSettingStateSummaries : DeleteCmdlet
+    public class Remove_IntuneDeviceCompliancePolicyDeviceSettingStateSummary : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.settingStateDeviceSummary&quot; object in the &quot;deviceSettingStateSummaries&quot; collection.</para>

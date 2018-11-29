@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The remote assist partners.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_RemoteAssistancePartners", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneRemoteAssistancePartner", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
     [ResourceTypePropertyName("remoteAssistancePartnerODataType")]
     [ResourceReference]
-    public class Get_DeviceManagement_RemoteAssistancePartners : GetOrSearchCmdlet
+    public class Get_IntuneRemoteAssistancePartner : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.</para>
@@ -81,11 +81,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The remote assist partners.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement_RemoteAssistancePartners", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.remoteAssistancePartner")]
+    [Cmdlet("New", "IntuneRemoteAssistancePartner", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.remoteAssistancePartner")]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
     [ResourceTypePropertyName("remoteAssistancePartnerODataType")]
     [ResourceReference]
-    public class New_DeviceManagement_RemoteAssistancePartners : PostCmdlet
+    public class New_IntuneRemoteAssistancePartner : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.</para>
@@ -157,10 +157,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The remote assist partners.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceManagement_RemoteAssistancePartners", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.remoteAssistancePartner")]
+    [Cmdlet("Update", "IntuneRemoteAssistancePartner", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.remoteAssistancePartner")]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
     [ResourceTypePropertyName("remoteAssistancePartnerODataType")]
-    public class Update_DeviceManagement_RemoteAssistancePartners : PatchCmdlet
+    public class Update_IntuneRemoteAssistancePartner : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.</para>
@@ -234,10 +234,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The remote assist partners.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement_RemoteAssistancePartners", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneRemoteAssistancePartner", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
     [ResourceTypePropertyName("remoteAssistancePartnerODataType")]
-    public class Remove_DeviceManagement_RemoteAssistancePartners : DeleteCmdlet
+    public class Remove_IntuneRemoteAssistancePartner : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.</para>
@@ -262,10 +262,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "DeviceManagement_RemoteAssistancePartners_BeginOnboarding", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "IntuneRemoteAssistancePartnerBeginOnboarding", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
     [ResourceTypePropertyName("remoteAssistancePartnerODataType")]
-    public class Invoke_DeviceManagement_RemoteAssistancePartners_BeginOnboarding : ActionCmdlet
+    public class Invoke_IntuneRemoteAssistancePartnerBeginOnboarding : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.</para>
@@ -290,10 +290,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "DeviceManagement_RemoteAssistancePartners_Disconnect", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "IntuneRemoteAssistancePartnerDisconnect", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.remoteAssistancePartner")]
     [ResourceTypePropertyName("remoteAssistancePartnerODataType")]
-    public class Invoke_DeviceManagement_RemoteAssistancePartners_Disconnect : ActionCmdlet
+    public class Invoke_IntuneRemoteAssistancePartnerDisconnect : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.</para>

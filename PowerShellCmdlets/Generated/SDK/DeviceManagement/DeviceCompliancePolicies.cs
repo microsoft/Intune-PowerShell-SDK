@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The device compliance policies.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_DeviceCompliancePolicies", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneDeviceCompliancePolicy", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
     [ResourceReference]
-    public class Get_DeviceManagement_DeviceCompliancePolicies : GetOrSearchCmdlet
+    public class Get_IntuneDeviceCompliancePolicy : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceCompliancePolicy&quot; object in the &quot;deviceCompliancePolicies&quot; collection.</para>
@@ -658,11 +658,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The device compliance policies.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement_DeviceCompliancePolicies", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "IntuneDeviceCompliancePolicy", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
     [ResourceReference]
-    public class New_DeviceManagement_DeviceCompliancePolicies : PostCmdlet
+    public class New_IntuneDeviceCompliancePolicy : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceCompliancePolicy&quot; object in the &quot;deviceCompliancePolicies&quot; collection.</para>
@@ -1590,10 +1590,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The device compliance policies.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceManagement_DeviceCompliancePolicies", ConfirmImpact = ConfirmImpact.Medium)]
+    [Cmdlet("Update", "IntuneDeviceCompliancePolicy", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
-    public class Update_DeviceManagement_DeviceCompliancePolicies : PatchCmdlet
+    public class Update_IntuneDeviceCompliancePolicy : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceCompliancePolicy&quot; object in the &quot;deviceCompliancePolicies&quot; collection.</para>
@@ -2523,10 +2523,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The device compliance policies.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement_DeviceCompliancePolicies", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneDeviceCompliancePolicy", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
-    public class Remove_DeviceManagement_DeviceCompliancePolicies : DeleteCmdlet
+    public class Remove_IntuneDeviceCompliancePolicy : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceCompliancePolicy&quot; object in the &quot;deviceCompliancePolicies&quot; collection.</para>
@@ -2551,10 +2551,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action returns a collection of &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot; objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "DeviceManagement_DeviceCompliancePolicies_Assign", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "IntuneDeviceCompliancePolicyAssign", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
-    public class Invoke_DeviceManagement_DeviceCompliancePolicies_Assign : ActionCmdlet
+    public class Invoke_IntuneDeviceCompliancePolicyAssign : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;assignments&quot; action parameter of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.</para>
@@ -2589,10 +2589,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "DeviceManagement_DeviceCompliancePolicies_ScheduleActionsForRules", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "IntuneDeviceCompliancePolicyScheduleActionsForRules", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
-    public class Invoke_DeviceManagement_DeviceCompliancePolicies_ScheduleActionsForRules : ActionCmdlet
+    public class Invoke_IntuneDeviceCompliancePolicyScheduleActionsForRules : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;deviceComplianceScheduledActionForRules&quot; action parameter of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.</para>

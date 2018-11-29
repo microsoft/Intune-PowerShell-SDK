@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of detected apps associated with a device.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_DetectedApps", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneDetectedApp", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.detectedApp")]
     [ResourceTypePropertyName("detectedAppODataType")]
     [ResourceReference]
-    public class Get_DeviceManagement_DetectedApps : GetOrSearchCmdlet
+    public class Get_IntuneDetectedApp : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.</para>
@@ -91,11 +91,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of detected apps associated with a device.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement_DetectedApps", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.detectedApp")]
+    [Cmdlet("New", "IntuneDetectedApp", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.detectedApp")]
     [ODataType("microsoft.graph.detectedApp")]
     [ResourceTypePropertyName("detectedAppODataType")]
     [ResourceReference]
-    public class New_DeviceManagement_DetectedApps : PostCmdlet
+    public class New_IntuneDetectedApp : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.</para>
@@ -176,10 +176,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of detected apps associated with a device.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceManagement_DetectedApps", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.detectedApp")]
+    [Cmdlet("Update", "IntuneDetectedApp", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.detectedApp")]
     [ODataType("microsoft.graph.detectedApp")]
     [ResourceTypePropertyName("detectedAppODataType")]
-    public class Update_DeviceManagement_DetectedApps : PatchCmdlet
+    public class Update_IntuneDetectedApp : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.</para>
@@ -262,10 +262,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of detected apps associated with a device.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement_DetectedApps", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneDetectedApp", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.detectedApp")]
     [ResourceTypePropertyName("detectedAppODataType")]
-    public class Remove_DeviceManagement_DetectedApps : DeleteCmdlet
+    public class Remove_IntuneDetectedApp : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.</para>

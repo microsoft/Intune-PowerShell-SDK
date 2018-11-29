@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Device configuration installation status by user.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_DeviceConfigurations_UserStatuses", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneDeviceConfigurationPolicyUserStatus", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceConfigurationUserStatus")]
     [ResourceTypePropertyName("userStatusODataType")]
     [ResourceReference]
-    public class Get_DeviceManagement_DeviceConfigurations_UserStatuses : GetOrSearchCmdlet
+    public class Get_IntuneDeviceConfigurationPolicyUserStatus : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceConfiguration&quot; object in the &quot;deviceConfigurations&quot; collection.</para>
@@ -101,11 +101,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Device configuration installation status by user.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement_DeviceConfigurations_UserStatuses", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationUserStatus")]
+    [Cmdlet("New", "IntuneDeviceConfigurationPolicyUserStatus", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationUserStatus")]
     [ODataType("microsoft.graph.deviceConfigurationUserStatus")]
     [ResourceTypePropertyName("userStatusODataType")]
     [ResourceReference]
-    public class New_DeviceManagement_DeviceConfigurations_UserStatuses : PostCmdlet
+    public class New_IntuneDeviceConfigurationPolicyUserStatus : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceConfigurationUserStatus&quot; object in the &quot;userStatuses&quot; collection.</para>
@@ -198,10 +198,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Device configuration installation status by user.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceManagement_DeviceConfigurations_UserStatuses", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationUserStatus")]
+    [Cmdlet("Update", "IntuneDeviceConfigurationPolicyUserStatus", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationUserStatus")]
     [ODataType("microsoft.graph.deviceConfigurationUserStatus")]
     [ResourceTypePropertyName("userStatusODataType")]
-    public class Update_DeviceManagement_DeviceConfigurations_UserStatuses : PatchCmdlet
+    public class Update_IntuneDeviceConfigurationPolicyUserStatus : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceConfigurationUserStatus&quot; object in the &quot;userStatuses&quot; collection.</para>
@@ -296,10 +296,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Device configuration installation status by user.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement_DeviceConfigurations_UserStatuses", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneDeviceConfigurationPolicyUserStatus", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceConfigurationUserStatus")]
     [ResourceTypePropertyName("userStatusODataType")]
-    public class Remove_DeviceManagement_DeviceConfigurations_UserStatuses : DeleteCmdlet
+    public class Remove_IntuneDeviceConfigurationPolicyUserStatus : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceConfigurationUserStatus&quot; object in the &quot;userStatuses&quot; collection.</para>

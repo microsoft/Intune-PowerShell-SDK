@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Apple push notification certificate.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_ApplePushNotificationCertificate", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "IntuneApplePushNotificationCertificate", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.applePushNotificationCertificate")]
     [ResourceTypePropertyName("applePushNotificationCertificateODataType")]
     [ResourceReference]
-    public class Get_DeviceManagement_ApplePushNotificationCertificate : GetCmdlet
+    public class Get_IntuneApplePushNotificationCertificate : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;appleIdentifier&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -79,11 +79,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Apple push notification certificate.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement_ApplePushNotificationCertificate", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.applePushNotificationCertificate")]
+    [Cmdlet("New", "IntuneApplePushNotificationCertificate", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.applePushNotificationCertificate")]
     [ODataType("microsoft.graph.applePushNotificationCertificate")]
     [ResourceTypePropertyName("applePushNotificationCertificateODataType")]
     [ResourceReference]
-    public class New_DeviceManagement_ApplePushNotificationCertificate : PostCmdlet
+    public class New_IntuneApplePushNotificationCertificate : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;appleIdentifier&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -152,10 +152,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Apple push notification certificate.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceManagement_ApplePushNotificationCertificate", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.applePushNotificationCertificate")]
+    [Cmdlet("Update", "IntuneApplePushNotificationCertificate", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.applePushNotificationCertificate")]
     [ODataType("microsoft.graph.applePushNotificationCertificate")]
     [ResourceTypePropertyName("applePushNotificationCertificateODataType")]
-    public class Update_DeviceManagement_ApplePushNotificationCertificate : PatchCmdlet
+    public class Update_IntuneApplePushNotificationCertificate : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;appleIdentifier&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -224,10 +224,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Apple push notification certificate.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement_ApplePushNotificationCertificate", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneApplePushNotificationCertificate", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.applePushNotificationCertificate")]
     [ResourceTypePropertyName("applePushNotificationCertificateODataType")]
-    public class Remove_DeviceManagement_ApplePushNotificationCertificate : DeleteCmdlet
+    public class Remove_IntuneApplePushNotificationCertificate : DeleteCmdlet
     {
         internal override System.String GetResourcePath()
         {
@@ -241,10 +241,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This function returns a &quot;Edm.String&quot; object.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "DeviceManagement_ApplePushNotificationCertificate_DownloadApplePushNotificationCertificateSigningRequest", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Invoke", "IntuneDownloadApplePushNotificationCertificateSigningRequest", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.applePushNotificationCertificate")]
     [ResourceTypePropertyName("applePushNotificationCertificateODataType")]
-    public class Invoke_DeviceManagement_ApplePushNotificationCertificate_DownloadApplePushNotificationCertificateSigningRequest : FunctionReturningEntityCmdlet
+    public class Invoke_IntuneDownloadApplePushNotificationCertificateSigningRequest : FunctionReturningEntityCmdlet
     {
         internal override System.String GetResourcePath()
         {

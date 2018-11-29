@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The windows information protection network learning summaries.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_WindowsInformationProtectionNetworkLearningSummaries", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneWindowsInformationProtectionNetworkLearningSummary", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.windowsInformationProtectionNetworkLearningSummary")]
     [ResourceTypePropertyName("windowsInformationProtectionNetworkLearningSummaryODataType")]
     [ResourceReference]
-    public class Get_DeviceManagement_WindowsInformationProtectionNetworkLearningSummaries : GetOrSearchCmdlet
+    public class Get_IntuneWindowsInformationProtectionNetworkLearningSummary : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot; object in the &quot;windowsInformationProtectionNetworkLearningSummaries&quot; collection.</para>
@@ -61,11 +61,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The windows information protection network learning summaries.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement_WindowsInformationProtectionNetworkLearningSummaries", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionNetworkLearningSummary")]
+    [Cmdlet("New", "IntuneWindowsInformationProtectionNetworkLearningSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionNetworkLearningSummary")]
     [ODataType("microsoft.graph.windowsInformationProtectionNetworkLearningSummary")]
     [ResourceTypePropertyName("windowsInformationProtectionNetworkLearningSummaryODataType")]
     [ResourceReference]
-    public class New_DeviceManagement_WindowsInformationProtectionNetworkLearningSummaries : PostCmdlet
+    public class New_IntuneWindowsInformationProtectionNetworkLearningSummary : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot; object in the &quot;windowsInformationProtectionNetworkLearningSummaries&quot; collection.</para>
@@ -111,10 +111,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The windows information protection network learning summaries.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceManagement_WindowsInformationProtectionNetworkLearningSummaries", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionNetworkLearningSummary")]
+    [Cmdlet("Update", "IntuneWindowsInformationProtectionNetworkLearningSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionNetworkLearningSummary")]
     [ODataType("microsoft.graph.windowsInformationProtectionNetworkLearningSummary")]
     [ResourceTypePropertyName("windowsInformationProtectionNetworkLearningSummaryODataType")]
-    public class Update_DeviceManagement_WindowsInformationProtectionNetworkLearningSummaries : PatchCmdlet
+    public class Update_IntuneWindowsInformationProtectionNetworkLearningSummary : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot; object in the &quot;windowsInformationProtectionNetworkLearningSummaries&quot; collection.</para>
@@ -162,10 +162,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The windows information protection network learning summaries.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement_WindowsInformationProtectionNetworkLearningSummaries", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneWindowsInformationProtectionNetworkLearningSummary", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.windowsInformationProtectionNetworkLearningSummary")]
     [ResourceTypePropertyName("windowsInformationProtectionNetworkLearningSummaryODataType")]
-    public class Remove_DeviceManagement_WindowsInformationProtectionNetworkLearningSummaries : DeleteCmdlet
+    public class Remove_IntuneWindowsInformationProtectionNetworkLearningSummary : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.windowsInformationProtectionNetworkLearningSummary&quot; object in the &quot;windowsInformationProtectionNetworkLearningSummaries&quot; collection.</para>

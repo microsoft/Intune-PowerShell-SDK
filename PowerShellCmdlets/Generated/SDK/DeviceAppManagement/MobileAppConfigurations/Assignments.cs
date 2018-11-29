@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of group assignemenets for app configration.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceAppManagement_MobileAppConfigurations_Assignments", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneMobileAppConfigurationPolicyAssignment", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
     [ResourceReference]
-    public class Get_DeviceAppManagement_MobileAppConfigurations_Assignments : GetOrSearchCmdlet
+    public class Get_IntuneMobileAppConfigurationPolicyAssignment : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.</para>
@@ -61,11 +61,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of group assignemenets for app configration.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceAppManagement_MobileAppConfigurations_Assignments", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationAssignment")]
+    [Cmdlet("New", "IntuneMobileAppConfigurationPolicyAssignment", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationAssignment")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
     [ResourceReference]
-    public class New_DeviceAppManagement_MobileAppConfigurations_Assignments : PostCmdlet
+    public class New_IntuneMobileAppConfigurationPolicyAssignment : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; object in the &quot;assignments&quot; collection.</para>
@@ -110,10 +110,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of group assignemenets for app configration.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceAppManagement_MobileAppConfigurations_Assignments", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationAssignment")]
+    [Cmdlet("Update", "IntuneMobileAppConfigurationPolicyAssignment", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationAssignment")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    public class Update_DeviceAppManagement_MobileAppConfigurations_Assignments : PatchCmdlet
+    public class Update_IntuneMobileAppConfigurationPolicyAssignment : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; object in the &quot;assignments&quot; collection.</para>
@@ -160,10 +160,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of group assignemenets for app configration.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceAppManagement_MobileAppConfigurations_Assignments", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneMobileAppConfigurationPolicyAssignment", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    public class Remove_DeviceAppManagement_MobileAppConfigurations_Assignments : DeleteCmdlet
+    public class Remove_IntuneMobileAppConfigurationPolicyAssignment : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; object in the &quot;assignments&quot; collection.</para>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
     <edmx:DataServices>
         <Schema Namespace="microsoft.graph" xmlns="http://docs.oasis-open.org/odata/ns/edm">
@@ -1922,9 +1922,6 @@
                 <Property Name="userId" Type="Edm.String" />
                 <Property Name="appIdentifier" Type="microsoft.graph.mobileAppIdentifier" />
                 <Property Name="version" Type="Edm.String" />
-                <NavigationProperty Name="appliedPolicies" Type="Collection(microsoft.graph.managedAppPolicy)" ContainsTarget="true" />
-                <NavigationProperty Name="intendedPolicies" Type="Collection(microsoft.graph.managedAppPolicy)" ContainsTarget="true" />
-                <NavigationProperty Name="operations" Type="Collection(microsoft.graph.managedAppOperation)" ContainsTarget="true" />
             </EntityType>
             <EntityType Name="deviceManagementTroubleshootingEvent" BaseType="microsoft.graph.entity">
                 <Property Name="eventDateTime" Type="Edm.DateTimeOffset" Nullable="false" />
@@ -3972,14 +3969,12 @@
                 <Property Name="displayName" Type="Edm.String" />
                 <Property Name="description" Type="Edm.String" />
                 <Property Name="rolePermissions" Type="Collection(microsoft.graph.rolePermission)" />
-                <Property Name="isBuiltIn" Type="Edm.Boolean" Nullable="false" />
-                <NavigationProperty Name="roleAssignments" Type="Collection(microsoft.graph.roleAssignment)" ContainsTarget="true" />
+                <Property Name="isBuiltIn" Type="Edm.Boolean" Nullable="false" />                
             </EntityType>
             <EntityType Name="roleAssignment" BaseType="microsoft.graph.entity">
                 <Property Name="displayName" Type="Edm.String" />
                 <Property Name="description" Type="Edm.String" />
-                <Property Name="resourceScopes" Type="Collection(Edm.String)" />
-                <NavigationProperty Name="roleDefinition" Type="microsoft.graph.roleDefinition" />
+                <Property Name="resourceScopes" Type="Collection(Edm.String)" />                
             </EntityType>
             <EntityType Name="deviceAndAppManagementRoleAssignment" BaseType="microsoft.graph.roleAssignment">
                 <Property Name="members" Type="Collection(Edm.String)" />
@@ -9362,17 +9357,7 @@
             <Term Name="downloadUrl" Type="Edm.String" AppliesTo="microsoft.graph.driveItem" />
             <Term Name="sourceUrl" Type="Edm.String" AppliesTo="microsoft.graph.driveItem" />
             <EntityContainer Name="GraphService">
-                <EntitySet Name="directoryObjects" EntityType="microsoft.graph.directoryObject" />
-                <EntitySet Name="groups" EntityType="microsoft.graph.group" />
-                <EntitySet Name="organization" EntityType="microsoft.graph.organization" />
-                <Singleton Name="me" Type="microsoft.graph.user">
-                    <NavigationPropertyBinding Path="manager" Target="directoryObjects" />
-                    <NavigationPropertyBinding Path="directReports" Target="directoryObjects" />
-                    <NavigationPropertyBinding Path="memberOf" Target="directoryObjects" />
-                    <NavigationPropertyBinding Path="createdObjects" Target="directoryObjects" />
-                    <NavigationPropertyBinding Path="ownedObjects" Target="directoryObjects" />
-                </Singleton>
-                <Singleton Name="reports" Type="microsoft.graph.reportRoot" />
+                <EntitySet Name="groups" EntityType="microsoft.graph.group" />              
                 <Singleton Name="deviceAppManagement" Type="microsoft.graph.deviceAppManagement" />
                 <Singleton Name="deviceManagement" Type="microsoft.graph.deviceManagement" />
             </EntityContainer>
@@ -10675,7 +10660,7 @@
             <Annotations Target="microsoft.graph.managedAppStatus">
                 <Annotation Term="Org.OData.Core.V1.Description" String="Represents app protection and configuration status for the organization." />
             </Annotations>
-            <Annotations Target="microsoft.graph.deviceAppManagement/managedAppStatuses">
+            <Annotations Target="microsoft.graph.deviceAppManagement/managedAppStatus">
                 <Annotation Term="Org.OData.Core.V1.Description" String="The managed app statuses." />
             </Annotations>
             <Annotations Target="microsoft.graph.managedEBook">

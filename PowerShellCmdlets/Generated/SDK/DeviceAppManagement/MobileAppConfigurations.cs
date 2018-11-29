@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The Managed Device Mobile Application Configurations.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceAppManagement_MobileAppConfigurations", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneMobileAppConfigurationPolicy", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfiguration", "microsoft.graph.iosMobileAppConfiguration")]
     [ResourceTypePropertyName("mobileAppConfigurationODataType")]
     [ResourceReference]
-    public class Get_DeviceAppManagement_MobileAppConfigurations : GetOrSearchCmdlet
+    public class Get_IntuneMobileAppConfigurationPolicy : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.</para>
@@ -173,11 +173,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The Managed Device Mobile Application Configurations.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceAppManagement_MobileAppConfigurations", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "IntuneMobileAppConfigurationPolicy", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfiguration", "microsoft.graph.iosMobileAppConfiguration")]
     [ResourceTypePropertyName("mobileAppConfigurationODataType")]
     [ResourceReference]
-    public class New_DeviceAppManagement_MobileAppConfigurations : PostCmdlet
+    public class New_IntuneMobileAppConfigurationPolicy : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.</para>
@@ -375,10 +375,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The Managed Device Mobile Application Configurations.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceAppManagement_MobileAppConfigurations", ConfirmImpact = ConfirmImpact.Medium)]
+    [Cmdlet("Update", "IntuneMobileAppConfigurationPolicy", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfiguration", "microsoft.graph.iosMobileAppConfiguration")]
     [ResourceTypePropertyName("mobileAppConfigurationODataType")]
-    public class Update_DeviceAppManagement_MobileAppConfigurations : PatchCmdlet
+    public class Update_IntuneMobileAppConfigurationPolicy : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.</para>
@@ -578,10 +578,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The Managed Device Mobile Application Configurations.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceAppManagement_MobileAppConfigurations", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneMobileAppConfigurationPolicy", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfiguration", "microsoft.graph.iosMobileAppConfiguration")]
     [ResourceTypePropertyName("mobileAppConfigurationODataType")]
-    public class Remove_DeviceAppManagement_MobileAppConfigurations : DeleteCmdlet
+    public class Remove_IntuneMobileAppConfigurationPolicy : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.</para>

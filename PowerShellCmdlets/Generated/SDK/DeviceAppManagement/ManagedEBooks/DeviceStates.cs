@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceAppManagement_ManagedEBooks_DeviceStates", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneManagedEBookDeviceState", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceInstallState")]
     [ResourceTypePropertyName("deviceStateODataType")]
     [ResourceReference]
-    public class Get_DeviceAppManagement_ManagedEBooks_DeviceStates : GetOrSearchCmdlet
+    public class Get_IntuneManagedEBookDeviceState : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
@@ -131,11 +131,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceAppManagement_ManagedEBooks_DeviceStates", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceInstallState")]
+    [Cmdlet("New", "IntuneManagedEBookDeviceState", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceInstallState")]
     [ODataType("microsoft.graph.deviceInstallState")]
     [ResourceTypePropertyName("deviceStateODataType")]
     [ResourceReference]
-    public class New_DeviceAppManagement_ManagedEBooks_DeviceStates : PostCmdlet
+    public class New_IntuneManagedEBookDeviceState : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceInstallState&quot; object in the &quot;deviceStates&quot; collection.</para>
@@ -261,10 +261,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceAppManagement_ManagedEBooks_DeviceStates", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceInstallState")]
+    [Cmdlet("Update", "IntuneManagedEBookDeviceState", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceInstallState")]
     [ODataType("microsoft.graph.deviceInstallState")]
     [ResourceTypePropertyName("deviceStateODataType")]
-    public class Update_DeviceAppManagement_ManagedEBooks_DeviceStates : PatchCmdlet
+    public class Update_IntuneManagedEBookDeviceState : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceInstallState&quot; object in the &quot;deviceStates&quot; collection.</para>
@@ -392,10 +392,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceAppManagement_ManagedEBooks_DeviceStates", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneManagedEBookDeviceState", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceInstallState")]
     [ResourceTypePropertyName("deviceStateODataType")]
-    public class Remove_DeviceAppManagement_ManagedEBooks_DeviceStates : DeleteCmdlet
+    public class Remove_IntuneManagedEBookDeviceState : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceInstallState&quot; object in the &quot;deviceStates&quot; collection.</para>

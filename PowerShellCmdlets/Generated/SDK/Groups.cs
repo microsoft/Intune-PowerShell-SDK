@@ -994,10 +994,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "Groups_SubscribeByMail", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "GroupSubscribeByMail", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_Groups_SubscribeByMail : ActionCmdlet
+    public class Invoke_GroupSubscribeByMail : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1022,10 +1022,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "Groups_UnsubscribeByMail", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "GroupUnsubscribeByMail", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_Groups_UnsubscribeByMail : ActionCmdlet
+    public class Invoke_GroupUnsubscribeByMail : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1050,10 +1050,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "Groups_AddFavorite", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "GroupAddFavorite", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_Groups_AddFavorite : ActionCmdlet
+    public class Invoke_GroupAddFavorite : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1078,10 +1078,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "Groups_RemoveFavorite", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "GroupRemoveFavorite", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_Groups_RemoveFavorite : ActionCmdlet
+    public class Invoke_GroupRemoveFavorite : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1106,10 +1106,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "Groups_ResetUnseenCount", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "GroupResetUnseenCount", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_Groups_ResetUnseenCount : ActionCmdlet
+    public class Invoke_GroupResetUnseenCount : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1134,10 +1134,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "Groups_Renew", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "GroupRenew", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_Groups_Renew : ActionCmdlet
+    public class Invoke_GroupRenew : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1162,10 +1162,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This function returns a collection of &quot;microsoft.graph.group&quot; objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "Groups_Delta", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Invoke", "GroupDelta", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_Groups_Delta : FunctionReturningCollectionCmdlet
+    public class Invoke_GroupDelta : FunctionReturningCollectionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1188,10 +1188,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action returns a collection of &quot;microsoft.graph.directoryObject&quot; objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "Groups_GetByIds", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "GroupGetByIds", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_Groups_GetByIds : ActionCmdlet
+    public class Invoke_GroupGetByIds : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;ids&quot; action parameter of type &quot;Edm.String&quot;.</para>
@@ -1235,10 +1235,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action returns a collection of &quot;Edm.String&quot; objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "Groups_CheckMemberGroups", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "GroupCheckMemberGroup", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_Groups_CheckMemberGroups : ActionCmdlet
+    public class Invoke_GroupCheckMemberGroup : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;groupIds&quot; action parameter of type &quot;Edm.String&quot;.</para>
@@ -1274,10 +1274,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action returns a collection of &quot;Edm.String&quot; objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "Groups_GetMemberGroups", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "GroupGetMemberGroup", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_Groups_GetMemberGroups : ActionCmdlet
+    public class Invoke_GroupGetMemberGroup : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;securityEnabledOnly&quot; action parameter of type &quot;Edm.Boolean&quot;.</para>
@@ -1311,10 +1311,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action returns a collection of &quot;Edm.String&quot; objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "Groups_GetMemberObjects", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "GroupGetMemberObject", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_Groups_GetMemberObjects : ActionCmdlet
+    public class Invoke_GroupGetMemberObject : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;securityEnabledOnly&quot; action parameter of type &quot;Edm.Boolean&quot;.</para>
@@ -1348,10 +1348,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action returns a &quot;microsoft.graph.directoryObject&quot; object.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "Groups_Restore", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "GroupRestore", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_Groups_Restore : ActionCmdlet
+    public class Invoke_GroupRestore : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>

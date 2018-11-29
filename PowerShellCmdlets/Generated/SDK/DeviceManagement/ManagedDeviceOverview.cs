@@ -11,10 +11,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Device overview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_ManagedDeviceOverview", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "IntuneManagedDeviceOverview", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.managedDeviceOverview")]
     [ResourceTypePropertyName("managedDeviceOverviewODataType")]
-    public class Get_DeviceManagement_ManagedDeviceOverview : GetCmdlet
+    public class Get_IntuneManagedDeviceOverview : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;enrolledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -79,10 +79,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Device overview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_ManagedDeviceOverviewReference", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "IntuneManagedDeviceOverviewReference", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.managedDeviceOverview")]
     [ResourceTypePropertyName("managedDeviceOverviewODataType")]
-    public class Get_DeviceManagement_ManagedDeviceOverviewReference : GetCmdlet
+    public class Get_IntuneManagedDeviceOverviewReference : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;enrolledDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -147,10 +147,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Device overview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement_ManagedDeviceOverviewReference", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "IntuneManagedDeviceOverviewReference", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedDeviceOverview")]
     [ResourceTypePropertyName("managedDeviceOverviewODataType")]
-    public class New_DeviceManagement_ManagedDeviceOverviewReference : PutReferenceToEntityCmdlet
+    public class New_IntuneManagedDeviceOverviewReference : PutReferenceToEntityCmdlet
     {
         /// <summary>
         ///     <para type="description">The URL which should be used to access a &quot;microsoft.graph.managedDeviceOverview&quot; object.</para>
@@ -174,10 +174,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Device overview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement_ManagedDeviceOverviewReference", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneManagedDeviceOverviewReference", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDeviceOverview")]
     [ResourceTypePropertyName("managedDeviceOverviewODataType")]
-    public class Remove_DeviceManagement_ManagedDeviceOverviewReference : DeleteCmdlet
+    public class Remove_IntuneManagedDeviceOverviewReference : DeleteCmdlet
     {
         internal override System.String GetResourcePath()
         {

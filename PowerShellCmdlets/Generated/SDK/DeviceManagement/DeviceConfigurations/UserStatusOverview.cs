@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Device Configuration users status overview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_DeviceConfigurations_UserStatusOverview", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "IntuneDeviceConfigurationPolicyUserStatusOverview", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.deviceConfigurationUserOverview")]
     [ResourceTypePropertyName("userStatusOverviewODataType")]
     [ResourceReference]
-    public class Get_DeviceManagement_DeviceConfigurations_UserStatusOverview : GetCmdlet
+    public class Get_IntuneDeviceConfigurationPolicyUserStatusOverview : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceConfiguration&quot; object in the &quot;deviceConfigurations&quot; collection.</para>
@@ -110,11 +110,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Device Configuration users status overview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement_DeviceConfigurations_UserStatusOverview", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationUserOverview")]
+    [Cmdlet("New", "IntuneDeviceConfigurationPolicyUserStatusOverview", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationUserOverview")]
     [ODataType("microsoft.graph.deviceConfigurationUserOverview")]
     [ResourceTypePropertyName("userStatusOverviewODataType")]
     [ResourceReference]
-    public class New_DeviceManagement_DeviceConfigurations_UserStatusOverview : PostCmdlet
+    public class New_IntuneDeviceConfigurationPolicyUserStatusOverview : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceConfiguration&quot; object in the &quot;deviceConfigurations&quot; collection.</para>
@@ -216,10 +216,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Device Configuration users status overview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceManagement_DeviceConfigurations_UserStatusOverview", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationUserOverview")]
+    [Cmdlet("Update", "IntuneDeviceConfigurationPolicyUserStatusOverview", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationUserOverview")]
     [ODataType("microsoft.graph.deviceConfigurationUserOverview")]
     [ResourceTypePropertyName("userStatusOverviewODataType")]
-    public class Update_DeviceManagement_DeviceConfigurations_UserStatusOverview : PatchCmdlet
+    public class Update_IntuneDeviceConfigurationPolicyUserStatusOverview : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceConfiguration&quot; object in the &quot;deviceConfigurations&quot; collection.</para>
@@ -321,10 +321,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Device Configuration users status overview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement_DeviceConfigurations_UserStatusOverview", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneDeviceConfigurationPolicyUserStatusOverview", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceConfigurationUserOverview")]
     [ResourceTypePropertyName("userStatusOverviewODataType")]
-    public class Remove_DeviceManagement_DeviceConfigurations_UserStatusOverview : DeleteCmdlet
+    public class Remove_IntuneDeviceConfigurationPolicyUserStatusOverview : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceConfiguration&quot; object in the &quot;deviceConfigurations&quot; collection.</para>

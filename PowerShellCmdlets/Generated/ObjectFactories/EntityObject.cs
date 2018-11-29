@@ -2370,19 +2370,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String[] resourceScopes { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;roleDefinition&quot; property, of type &quot;microsoft.graph.roleDefinition&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.roleAssignment&quot; type.</para>
-        ///     <para type="description">Role definition this assignment is part of.</para>
-        /// </summary>
-        [Selectable]
-        [Expandable]
-        [ParameterSetSelector(@"microsoft.graph.roleDefinition")]
-        [Parameter(ParameterSetName = @"microsoft.graph.roleAssignment", HelpMessage = @"The &quot;roleDefinition&quot; property, of type &quot;microsoft.graph.roleDefinition&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleAssignment", HelpMessage = @"The &quot;roleDefinition&quot; property, of type &quot;microsoft.graph.roleDefinition&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;roleDefinition&quot; property, of type &quot;microsoft.graph.roleDefinition&quot;.")]
-        public System.Object roleDefinition { get; set; }
-
-        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -2403,6 +2390,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;members&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.directoryRole", HelpMessage = @"The &quot;members&quot; property, of type &quot;Edm.String&quot;.")]
         public System.Object members { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.roleDefinition&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.roleDefinition")]
+        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.roleDefinition&quot; type.")]
+        public System.Management.Automation.SwitchParameter roleDefinition { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;rolePermissions&quot; property, of type &quot;microsoft.graph.rolePermission&quot;.</para>
@@ -2426,20 +2422,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;isBuiltIn&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", HelpMessage = @"The &quot;isBuiltIn&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isBuiltIn { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.roleDefinition&quot; type.</para>
-        ///     <para type="description">List of Role assignments for this role definition.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.deviceAndAppManagementRoleAssignment")]
-        [Selectable]
-        [Expandable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
-        public System.Object[] roleAssignments { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceAndAppManagementRoleDefinition&quot; type.</para>
@@ -9997,6 +9979,18 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object[] roleDefinitions { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.deviceManagement&quot; type.</para>
+        ///     <para type="description">The Role Assignments.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.deviceAndAppManagementRoleAssignment")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot;.")]
+        public System.Object[] roleAssignments { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;resourceOperations&quot; property, of type &quot;microsoft.graph.resourceOperation&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.deviceManagement&quot; type.</para>
         ///     <para type="description">The Resource Operations.</para>
@@ -12596,7 +12590,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;managedAppStatuses&quot; property, of type &quot;microsoft.graph.managedAppStatus&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.deviceAppManagement&quot; type.</para>
-        ///     <para type="description">The managed app statuses.</para>
         /// </summary>
         [ODataType("microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw")]
         [Selectable]
@@ -16252,49 +16245,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object appIdentifier { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.managedAppRegistration&quot; type.</para>
-        ///     <para type="description">Zero or more policys already applied on the registered app when it last synchronized with managment service.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
-        [Selectable]
-        [Expandable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
-        public System.Object[] appliedPolicies { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.managedAppRegistration&quot; type.</para>
-        ///     <para type="description">Zero or more policies admin intended for the app as of now.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
-        [Selectable]
-        [Expandable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
-        public System.Object[] intendedPolicies { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.managedAppRegistration&quot; type.</para>
-        ///     <para type="description">Zero or more long running operations triggered on the app registration.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.onenoteOperation")]
-        [Selectable]
-        [Expandable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.onenote", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
-        public System.Object[] operations { get; set; }
-
-        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidManagedAppRegistration&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -17273,6 +17223,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.onenote", HelpMessage = @"The &quot;resources&quot; property, of type &quot;microsoft.graph.onenoteResource&quot;.")]
         public System.Object[] resources { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;operations&quot; property, of type &quot;microsoft.graph.onenoteOperation&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.onenote&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.onenoteOperation")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenote", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.onenoteOperation&quot;.")]
+        public System.Object[] operations { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerGroup&quot; type.</para>

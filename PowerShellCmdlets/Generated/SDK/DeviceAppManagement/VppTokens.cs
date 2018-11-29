@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">List of Vpp tokens for this organization.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceAppManagement_VppTokens", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneVppToken", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.vppToken")]
     [ResourceTypePropertyName("vppTokenODataType")]
     [ResourceReference]
-    public class Get_DeviceAppManagement_VppTokens : GetOrSearchCmdlet
+    public class Get_IntuneVppToken : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.</para>
@@ -151,11 +151,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">List of Vpp tokens for this organization.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceAppManagement_VppTokens", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.vppToken")]
+    [Cmdlet("New", "IntuneVppToken", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.vppToken")]
     [ODataType("microsoft.graph.vppToken")]
     [ResourceTypePropertyName("vppTokenODataType")]
     [ResourceReference]
-    public class New_DeviceAppManagement_VppTokens : PostCmdlet
+    public class New_IntuneVppToken : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.</para>
@@ -312,10 +312,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">List of Vpp tokens for this organization.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceAppManagement_VppTokens", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.vppToken")]
+    [Cmdlet("Update", "IntuneVppToken", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.vppToken")]
     [ODataType("microsoft.graph.vppToken")]
     [ResourceTypePropertyName("vppTokenODataType")]
-    public class Update_DeviceAppManagement_VppTokens : PatchCmdlet
+    public class Update_IntuneVppToken : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.</para>
@@ -474,10 +474,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">List of Vpp tokens for this organization.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceAppManagement_VppTokens", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneVppToken", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.vppToken")]
     [ResourceTypePropertyName("vppTokenODataType")]
-    public class Remove_DeviceAppManagement_VppTokens : DeleteCmdlet
+    public class Remove_IntuneVppToken : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.</para>
@@ -502,10 +502,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action returns a &quot;microsoft.graph.vppToken&quot; object.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "DeviceAppManagement_VppTokens_SyncLicenses", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "IntuneVppTokenSyncLicense", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.vppToken")]
     [ResourceTypePropertyName("vppTokenODataType")]
-    public class Invoke_DeviceAppManagement_VppTokens_SyncLicenses : ActionCmdlet
+    public class Invoke_IntuneVppTokenSyncLicense : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.</para>
