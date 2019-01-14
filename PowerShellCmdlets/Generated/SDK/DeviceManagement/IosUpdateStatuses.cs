@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The IOS software update installation statuses for this account.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_IosUpdateStatuses", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneIosUpdateStatus", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.iosUpdateDeviceStatus")]
     [ResourceTypePropertyName("iosUpdateStatusODataType")]
     [ResourceReference]
-    public class Get_DeviceManagement_IosUpdateStatuses : GetOrSearchCmdlet
+    public class Get_IntuneIosUpdateStatus : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.</para>
@@ -151,11 +151,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The IOS software update installation statuses for this account.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement_IosUpdateStatuses", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus")]
+    [Cmdlet("New", "IntuneIosUpdateStatus", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus")]
     [ODataType("microsoft.graph.iosUpdateDeviceStatus")]
     [ResourceTypePropertyName("iosUpdateStatusODataType")]
     [ResourceReference]
-    public class New_DeviceManagement_IosUpdateStatuses : PostCmdlet
+    public class New_IntuneIosUpdateStatus : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.</para>
@@ -308,10 +308,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The IOS software update installation statuses for this account.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceManagement_IosUpdateStatuses", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus")]
+    [Cmdlet("Update", "IntuneIosUpdateStatus", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus")]
     [ODataType("microsoft.graph.iosUpdateDeviceStatus")]
     [ResourceTypePropertyName("iosUpdateStatusODataType")]
-    public class Update_DeviceManagement_IosUpdateStatuses : PatchCmdlet
+    public class Update_IntuneIosUpdateStatus : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.</para>
@@ -466,10 +466,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The IOS software update installation statuses for this account.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement_IosUpdateStatuses", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneIosUpdateStatus", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.iosUpdateDeviceStatus")]
     [ResourceTypePropertyName("iosUpdateStatusODataType")]
-    public class Remove_DeviceManagement_IosUpdateStatuses : DeleteCmdlet
+    public class Remove_IntuneIosUpdateStatus : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.</para>

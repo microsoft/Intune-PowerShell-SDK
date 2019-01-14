@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Default managed app policies.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceAppManagement_DefaultManagedAppProtections", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneAppProtectionPolicyDefault", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.defaultManagedAppProtection")]
     [ResourceTypePropertyName("defaultManagedAppProtectionODataType")]
     [ResourceReference]
-    public class Get_DeviceAppManagement_DefaultManagedAppProtections : GetOrSearchCmdlet
+    public class Get_IntuneAppProtectionPolicyDefault : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.defaultManagedAppProtection&quot; object in the &quot;defaultManagedAppProtections&quot; collection.</para>
@@ -470,11 +470,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Default managed app policies.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceAppManagement_DefaultManagedAppProtections", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.defaultManagedAppProtection")]
+    [Cmdlet("New", "IntuneAppProtectionPolicyDefault", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.defaultManagedAppProtection")]
     [ODataType("microsoft.graph.defaultManagedAppProtection")]
     [ResourceTypePropertyName("defaultManagedAppProtectionODataType")]
     [ResourceReference]
-    public class New_DeviceAppManagement_DefaultManagedAppProtections : PostCmdlet
+    public class New_IntuneAppProtectionPolicyDefault : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.defaultManagedAppProtection&quot; object in the &quot;defaultManagedAppProtections&quot; collection.</para>
@@ -1000,10 +1000,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Default managed app policies.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceAppManagement_DefaultManagedAppProtections", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.defaultManagedAppProtection")]
+    [Cmdlet("Update", "IntuneAppProtectionPolicyDefault", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.defaultManagedAppProtection")]
     [ODataType("microsoft.graph.defaultManagedAppProtection")]
     [ResourceTypePropertyName("defaultManagedAppProtectionODataType")]
-    public class Update_DeviceAppManagement_DefaultManagedAppProtections : PatchCmdlet
+    public class Update_IntuneAppProtectionPolicyDefault : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.defaultManagedAppProtection&quot; object in the &quot;defaultManagedAppProtections&quot; collection.</para>
@@ -1531,10 +1531,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Default managed app policies.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceAppManagement_DefaultManagedAppProtections", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneAppProtectionPolicyDefault", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.defaultManagedAppProtection")]
     [ResourceTypePropertyName("defaultManagedAppProtectionODataType")]
-    public class Remove_DeviceAppManagement_DefaultManagedAppProtections : DeleteCmdlet
+    public class Remove_IntuneAppProtectionPolicyDefault : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.defaultManagedAppProtection&quot; object in the &quot;defaultManagedAppProtections&quot; collection.</para>
@@ -1559,10 +1559,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "DeviceAppManagement_DefaultManagedAppProtections_TargetApps", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "IntuneAppProtectionPolicyDefaultTargetApp", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.defaultManagedAppProtection")]
     [ResourceTypePropertyName("defaultManagedAppProtectionODataType")]
-    public class Invoke_DeviceAppManagement_DefaultManagedAppProtections_TargetApps : ActionCmdlet
+    public class Invoke_IntuneAppProtectionPolicyDefaultTargetApp : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;apps&quot; action parameter of type &quot;microsoft.graph.managedMobileApp&quot;.</para>

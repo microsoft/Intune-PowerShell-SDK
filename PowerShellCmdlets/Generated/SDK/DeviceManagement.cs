@@ -10,10 +10,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves the &quot;deviceManagement&quot; object (which is of type &quot;microsoft.graph.deviceManagement&quot;).</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "IntuneDeviceManagement", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
-    public class Get_DeviceManagement : GetCmdlet
+    public class Get_IntuneDeviceManagement : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;subscriptionState&quot; property, of type &quot;microsoft.graph.deviceManagementSubscriptionState&quot;.</para>
@@ -333,10 +333,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates the &quot;deviceManagement&quot; object (which is of type &quot;microsoft.graph.deviceManagement&quot;).</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceManagement")]
+    [Cmdlet("New", "IntuneDeviceManagement", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceManagement")]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
-    public class New_DeviceManagement : PostCmdlet
+    public class New_IntuneDeviceManagement : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;subscriptionState&quot; property, of type &quot;microsoft.graph.deviceManagementSubscriptionState&quot;.</para>
@@ -732,10 +732,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Updates the &quot;deviceManagement&quot; object (which is of type &quot;microsoft.graph.deviceManagement&quot;).</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceManagement", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceManagement")]
+    [Cmdlet("Update", "IntuneDeviceManagement", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceManagement")]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
-    public class Update_DeviceManagement : PatchCmdlet
+    public class Update_IntuneDeviceManagement : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;subscriptionState&quot; property, of type &quot;microsoft.graph.deviceManagementSubscriptionState&quot;.</para>
@@ -1131,10 +1131,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes the &quot;deviceManagement&quot; object (which is of type &quot;microsoft.graph.deviceManagement&quot;).</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneDeviceManagement", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
-    public class Remove_DeviceManagement : DeleteCmdlet
+    public class Remove_IntuneDeviceManagement : DeleteCmdlet
     {
         internal override System.String GetResourcePath()
         {
@@ -1148,10 +1148,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This function returns a &quot;Edm.Boolean&quot; object.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "DeviceManagement_VerifyWindowsEnrollmentAutoDiscovery", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Invoke", "IntuneVerifyWindowsEnrollmentAutoDiscovery", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
-    public class Invoke_DeviceManagement_VerifyWindowsEnrollmentAutoDiscovery : FunctionReturningEntityCmdlet
+    public class Invoke_IntuneVerifyWindowsEnrollmentAutoDiscovery : FunctionReturningEntityCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;domainName&quot; function parameter of type &quot;Edm.String&quot;.</para>
@@ -1174,10 +1174,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This function returns a collection of &quot;microsoft.graph.rolePermission&quot; objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "DeviceManagement_GetEffectivePermissions", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Invoke", "IntuneGetEffectivePermission", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
-    public class Invoke_DeviceManagement_GetEffectivePermissions : FunctionReturningCollectionCmdlet
+    public class Invoke_IntuneGetEffectivePermission : FunctionReturningCollectionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;scope&quot; function parameter of type &quot;Edm.String&quot;.</para>

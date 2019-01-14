@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Device configuration states for this device.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_ManagedDevices_DeviceConfigurationStates", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneManagedDeviceDeviceConfigurationState", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceConfigurationState")]
     [ResourceTypePropertyName("deviceConfigurationStateODataType")]
     [ResourceReference]
-    public class Get_DeviceManagement_ManagedDevices_DeviceConfigurationStates : GetOrSearchCmdlet
+    public class Get_IntuneManagedDeviceDeviceConfigurationState : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -109,11 +109,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Device configuration states for this device.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement_ManagedDevices_DeviceConfigurationStates", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationState")]
+    [Cmdlet("New", "IntuneManagedDeviceDeviceConfigurationState", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationState")]
     [ODataType("microsoft.graph.deviceConfigurationState")]
     [ResourceTypePropertyName("deviceConfigurationStateODataType")]
     [ResourceReference]
-    public class New_DeviceManagement_ManagedDevices_DeviceConfigurationStates : PostCmdlet
+    public class New_IntuneManagedDeviceDeviceConfigurationState : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceConfigurationState&quot; object in the &quot;deviceConfigurationStates&quot; collection.</para>
@@ -221,10 +221,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Device configuration states for this device.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceManagement_ManagedDevices_DeviceConfigurationStates", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationState")]
+    [Cmdlet("Update", "IntuneManagedDeviceDeviceConfigurationState", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationState")]
     [ODataType("microsoft.graph.deviceConfigurationState")]
     [ResourceTypePropertyName("deviceConfigurationStateODataType")]
-    public class Update_DeviceManagement_ManagedDevices_DeviceConfigurationStates : PatchCmdlet
+    public class Update_IntuneManagedDeviceDeviceConfigurationState : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceConfigurationState&quot; object in the &quot;deviceConfigurationStates&quot; collection.</para>
@@ -334,10 +334,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Device configuration states for this device.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement_ManagedDevices_DeviceConfigurationStates", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneManagedDeviceDeviceConfigurationState", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceConfigurationState")]
     [ResourceTypePropertyName("deviceConfigurationStateODataType")]
-    public class Remove_DeviceManagement_ManagedDevices_DeviceConfigurationStates : DeleteCmdlet
+    public class Remove_IntuneManagedDeviceDeviceConfigurationState : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceConfigurationState&quot; object in the &quot;deviceConfigurationStates&quot; collection.</para>

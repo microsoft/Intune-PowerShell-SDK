@@ -4,8 +4,7 @@
 - [Getting started](#getting-started)
     - [One-time setup](#one-time-setup)
     - [Before this module is used in your organization](#before-this-module-is-used-in-your-organization)
-    - [Each time you use the module](#each-time-you-use-the-module)
-    - [Scenario Modules](#scenario-modules)
+    - [Each time you use the module](#each-time-you-use-the-module)    
     - [Discovering available commands](#discovering-available-commands)
 - [Example usage](#example-usage)
     - [Retrieving objects](#retrieving-objects)
@@ -48,10 +47,13 @@ To authenticate with Microsoft Graph (this is not required when using CloudShell
 ```PowerShell
 Connect-MSGraph
 ```
-
-## Scenario Modules
-The scenario modules are available on GitHub in the [Microsoft/Intune-PowerShell-Management](https://github.com/Microsoft/Intune-PowerShell-Management) repository.
-
+To authenticate with Microsoft Graph using [System.Management.Automation.PSCredential]
+```PowerShell
+$adminUPN=Read-Host -Prompt "Enter UPN"
+$adminPwd=Read-Host -AsSecureString -Prompt "Enter password for $adminUPN"
+$creds = New-Object System.Management.Automation.PSCredential ($AdminUPN, $adminPwd)
+$connection = Connect-MSGraph -PSCredential $creds
+```
 
 ## Discovering available commands
 Get the full list of available cmdlets:
@@ -71,50 +73,50 @@ Show-Command <cmdlet name>
 ## Retrieving objects
 Get all Intune applications:
 ```PowerShell
-Get-DeviceAppManagement_MobileApps
+Get-IntuneMobileApp
 ```
 Get all Intune device configurations:
 ```PowerShell
-Get-DeviceManagement_DeviceConfigurations
+Get-IntuneDeviceConfigurationPolicy
 ```
 Get all Intune managed devices:
 ```PowerShell
-Get-DeviceManagement_ManagedDevices
+Get-IntuneManagedDevice
 ```
 Get a filtered list of applications and select only the "displayName" and "publisher" properties:
 ```PowerShell
 # The filter string follows the same rules as specified in the OData v4.0 specification.
 # Filter string construction rules: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/abnf/odata-abnf-construction-rules.txt
-Get-DeviceAppManagement_MobileApps -Select displayName, publisher -Filter "isof('microsoft.graph.webApp')"
+Get-IntuneMobileApp -Select displayName, publisher -Filter "isof('microsoft.graph.webApp')"
 ```
 
 ## Creating objects
 Create a web application:
 ```PowerShell
-$bingWebApp = New-DeviceAppManagement_MobileApps -webApp -displayName 'Bing' -publisher 'Microsoft Corporation' -AppUrl 'https://www.bing.com'
+$bingWebApp = New-IntuneMobileApp -webApp -displayName 'Bing' -publisher 'Microsoft Corporation' -AppUrl 'https://www.bing.com'
 ```
 
 ## Modifying objects
 Update the web application that we created in the '[Creating objects](#creating-objects)' section:
 ```PowerShell
-$bingWebApp | Update-DeviceAppmanagement_MobileApps -webApp -displayName 'Bing Search'
+$bingWebApp | Update-IntuneMobileApp -webApp -displayName 'Bing Search'
 ```
 
 ## Deleting objects
 Delete the web application that we created in the '[Creating objects](#creating-objects)' section:
 ```PowerShell
-$bingWebApp | Remove-DeviceAppmanagement_MobileApps
+$bingWebApp | Remove-IntuneMobileApp
 ```
 
 ## Calling functions and actions
 Lock a managed device:
 ```PowerShell
 # Get a device to lock
-$allDevices = Get-DeviceManagement_ManagedDevices
+$allDevices = Get-IntuneManagedDevice
 $deviceToLock = $allDevices[0]
 
 # Lock this device
-$deviceToLock | Invoke-DeviceManagement_ManagedDevices_RemoteLock
+$deviceToLock | Invoke-IntuneManagedDeviceRemoteLock
 ```
 
 # Notable features

@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Mobile App Install Summary.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceAppManagement_ManagedEBooks_InstallSummary", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "IntuneManagedEBookInstallSummary", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.eBookInstallSummary")]
     [ResourceTypePropertyName("installSummaryODataType")]
     [ResourceReference]
-    public class Get_DeviceAppManagement_ManagedEBooks_InstallSummary : GetCmdlet
+    public class Get_IntuneManagedEBookInstallSummary : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
@@ -100,11 +100,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Mobile App Install Summary.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceAppManagement_ManagedEBooks_InstallSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.eBookInstallSummary")]
+    [Cmdlet("New", "IntuneManagedEBookInstallSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.eBookInstallSummary")]
     [ODataType("microsoft.graph.eBookInstallSummary")]
     [ResourceTypePropertyName("installSummaryODataType")]
     [ResourceReference]
-    public class New_DeviceAppManagement_ManagedEBooks_InstallSummary : PostCmdlet
+    public class New_IntuneManagedEBookInstallSummary : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
@@ -195,10 +195,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Mobile App Install Summary.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceAppManagement_ManagedEBooks_InstallSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.eBookInstallSummary")]
+    [Cmdlet("Update", "IntuneManagedEBookInstallSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.eBookInstallSummary")]
     [ODataType("microsoft.graph.eBookInstallSummary")]
     [ResourceTypePropertyName("installSummaryODataType")]
-    public class Update_DeviceAppManagement_ManagedEBooks_InstallSummary : PatchCmdlet
+    public class Update_IntuneManagedEBookInstallSummary : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
@@ -289,10 +289,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Mobile App Install Summary.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceAppManagement_ManagedEBooks_InstallSummary", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneManagedEBookInstallSummary", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.eBookInstallSummary")]
     [ResourceTypePropertyName("installSummaryODataType")]
-    public class Remove_DeviceAppManagement_ManagedEBooks_InstallSummary : DeleteCmdlet
+    public class Remove_IntuneManagedEBookInstallSummary : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>

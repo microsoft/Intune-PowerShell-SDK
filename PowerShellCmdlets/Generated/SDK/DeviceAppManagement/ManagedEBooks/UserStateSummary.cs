@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceAppManagement_ManagedEBooks_UserStateSummary", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneManagedEBookUserStateSummary", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.userInstallStateSummary")]
     [ResourceTypePropertyName("userStateSummaryODataType")]
     [ResourceReference]
-    public class Get_DeviceAppManagement_ManagedEBooks_UserStateSummary : GetOrSearchCmdlet
+    public class Get_IntuneManagedEBookUserStateSummary : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
@@ -101,11 +101,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceAppManagement_ManagedEBooks_UserStateSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.userInstallStateSummary")]
+    [Cmdlet("New", "IntuneManagedEBookUserStateSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.userInstallStateSummary")]
     [ODataType("microsoft.graph.userInstallStateSummary")]
     [ResourceTypePropertyName("userStateSummaryODataType")]
     [ResourceReference]
-    public class New_DeviceAppManagement_ManagedEBooks_UserStateSummary : PostCmdlet
+    public class New_IntuneManagedEBookUserStateSummary : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.userInstallStateSummary&quot; object in the &quot;userStateSummary&quot; collection.</para>
@@ -196,10 +196,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceAppManagement_ManagedEBooks_UserStateSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.userInstallStateSummary")]
+    [Cmdlet("Update", "IntuneManagedEBookUserStateSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.userInstallStateSummary")]
     [ODataType("microsoft.graph.userInstallStateSummary")]
     [ResourceTypePropertyName("userStateSummaryODataType")]
-    public class Update_DeviceAppManagement_ManagedEBooks_UserStateSummary : PatchCmdlet
+    public class Update_IntuneManagedEBookUserStateSummary : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.userInstallStateSummary&quot; object in the &quot;userStateSummary&quot; collection.</para>
@@ -292,10 +292,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of installation states for this eBook.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceAppManagement_ManagedEBooks_UserStateSummary", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneManagedEBookUserStateSummary", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.userInstallStateSummary")]
     [ResourceTypePropertyName("userStateSummaryODataType")]
-    public class Remove_DeviceAppManagement_ManagedEBooks_UserStateSummary : DeleteCmdlet
+    public class Remove_IntuneManagedEBookUserStateSummary : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.userInstallStateSummary&quot; object in the &quot;userStateSummary&quot; collection.</para>

@@ -11,10 +11,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The software update status summary.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_SoftwareUpdateStatusSummary", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "IntuneSoftwareUpdateStatusSummary", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.softwareUpdateStatusSummary")]
     [ResourceTypePropertyName("softwareUpdateStatusSummaryODataType")]
-    public class Get_DeviceManagement_SoftwareUpdateStatusSummary : GetCmdlet
+    public class Get_IntuneSoftwareUpdateStatusSummary : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -179,10 +179,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The software update status summary.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_SoftwareUpdateStatusSummaryReference", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "IntuneSoftwareUpdateStatusSummaryReference", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.softwareUpdateStatusSummary")]
     [ResourceTypePropertyName("softwareUpdateStatusSummaryODataType")]
-    public class Get_DeviceManagement_SoftwareUpdateStatusSummaryReference : GetCmdlet
+    public class Get_IntuneSoftwareUpdateStatusSummaryReference : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -347,10 +347,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The software update status summary.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement_SoftwareUpdateStatusSummaryReference", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "IntuneSoftwareUpdateStatusSummaryReference", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.softwareUpdateStatusSummary")]
     [ResourceTypePropertyName("softwareUpdateStatusSummaryODataType")]
-    public class New_DeviceManagement_SoftwareUpdateStatusSummaryReference : PutReferenceToEntityCmdlet
+    public class New_IntuneSoftwareUpdateStatusSummaryReference : PutReferenceToEntityCmdlet
     {
         /// <summary>
         ///     <para type="description">The URL which should be used to access a &quot;microsoft.graph.softwareUpdateStatusSummary&quot; object.</para>
@@ -374,10 +374,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The software update status summary.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement_SoftwareUpdateStatusSummaryReference", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneSoftwareUpdateStatusSummaryReference", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.softwareUpdateStatusSummary")]
     [ResourceTypePropertyName("softwareUpdateStatusSummaryODataType")]
-    public class Remove_DeviceManagement_SoftwareUpdateStatusSummaryReference : DeleteCmdlet
+    public class Remove_IntuneSoftwareUpdateStatusSummaryReference : DeleteCmdlet
     {
         internal override System.String GetResourcePath()
         {

@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Navigation property to list of inclusion and exclusion groups to which the policy is deployed.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceAppManagement_TargetedManagedAppConfigurations_Assignments", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneAppConfigurationPolicyTargetedAssignment", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
     [ResourceReference]
-    public class Get_DeviceAppManagement_TargetedManagedAppConfigurations_Assignments : GetOrSearchCmdlet
+    public class Get_IntuneAppConfigurationPolicyTargetedAssignment : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.targetedManagedAppConfiguration&quot; object in the &quot;targetedManagedAppConfigurations&quot; collection.</para>
@@ -61,11 +61,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Navigation property to list of inclusion and exclusion groups to which the policy is deployed.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceAppManagement_TargetedManagedAppConfigurations_Assignments", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppPolicyAssignment")]
+    [Cmdlet("New", "IntuneAppConfigurationPolicyTargetedAssignment", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ODataType("microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
     [ResourceReference]
-    public class New_DeviceAppManagement_TargetedManagedAppConfigurations_Assignments : PostCmdlet
+    public class New_IntuneAppConfigurationPolicyTargetedAssignment : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; object in the &quot;assignments&quot; collection.</para>
@@ -110,10 +110,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Navigation property to list of inclusion and exclusion groups to which the policy is deployed.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceAppManagement_TargetedManagedAppConfigurations_Assignments", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppPolicyAssignment")]
+    [Cmdlet("Update", "IntuneAppConfigurationPolicyTargetedAssignment", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ODataType("microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    public class Update_DeviceAppManagement_TargetedManagedAppConfigurations_Assignments : PatchCmdlet
+    public class Update_IntuneAppConfigurationPolicyTargetedAssignment : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; object in the &quot;assignments&quot; collection.</para>
@@ -160,10 +160,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Navigation property to list of inclusion and exclusion groups to which the policy is deployed.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceAppManagement_TargetedManagedAppConfigurations_Assignments", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneAppConfigurationPolicyTargetedAssignment", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    public class Remove_DeviceAppManagement_TargetedManagedAppConfigurations_Assignments : DeleteCmdlet
+    public class Remove_IntuneAppConfigurationPolicyTargetedAssignment : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; object in the &quot;assignments&quot; collection.</para>

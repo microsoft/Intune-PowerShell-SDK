@@ -8,14 +8,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.managedAppStatus&quot; objects.</para>
     ///     <para type="description">GET ~/deviceAppManagement/managedAppStatuses</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedAppStatus&quot; objects in the &quot;managedAppStatuses&quot; collection.</para>
-    ///     <para type="description">The managed app statuses.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceAppManagement_ManagedAppStatuses", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneManagedAppStatus", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw")]
     [ResourceTypePropertyName("managedAppStatusODataType")]
     [ResourceReference]
-    public class Get_DeviceAppManagement_ManagedAppStatuses : GetOrSearchCmdlet
+    public class Get_IntuneManagedAppStatus : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedAppStatus&quot; object in the &quot;managedAppStatuses&quot; collection.</para>
@@ -69,14 +68,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.managedAppStatus&quot; object.</para>
     ///     <para type="description">POST ~/deviceAppManagement/managedAppStatuses</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.managedAppStatus&quot; object to the &quot;managedAppStatuses&quot; collection.</para>
-    ///     <para type="description">The managed app statuses.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceAppManagement_ManagedAppStatuses", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "IntuneManagedAppStatus", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw")]
     [ResourceTypePropertyName("managedAppStatusODataType")]
     [ResourceReference]
-    public class New_DeviceAppManagement_ManagedAppStatuses : PostCmdlet
+    public class New_IntuneManagedAppStatus : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedAppStatus&quot; object in the &quot;managedAppStatuses&quot; collection.</para>
@@ -141,13 +139,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.managedAppStatus&quot;.</para>
     ///     <para type="description">PATCH ~/deviceAppManagement/managedAppStatuses</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.managedAppStatus&quot; object in the &quot;managedAppStatuses&quot; collection.</para>
-    ///     <para type="description">The managed app statuses.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceAppManagement_ManagedAppStatuses", ConfirmImpact = ConfirmImpact.Medium)]
+    [Cmdlet("Update", "IntuneManagedAppStatus", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw")]
     [ResourceTypePropertyName("managedAppStatusODataType")]
-    public class Update_DeviceAppManagement_ManagedAppStatuses : PatchCmdlet
+    public class Update_IntuneManagedAppStatus : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedAppStatus&quot; object in the &quot;managedAppStatuses&quot; collection.</para>
@@ -214,13 +211,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.managedAppStatus&quot; object.</para>
     ///     <para type="description">DELETE ~/deviceAppManagement/managedAppStatuses/managedAppStatusId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.managedAppStatus&quot; object from the &quot;managedAppStatuses&quot; collection.</para>
-    ///     <para type="description">The managed app statuses.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceAppManagement_ManagedAppStatuses", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneManagedAppStatus", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw")]
     [ResourceTypePropertyName("managedAppStatusODataType")]
-    public class Remove_DeviceAppManagement_ManagedAppStatuses : DeleteCmdlet
+    public class Remove_IntuneManagedAppStatus : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedAppStatus&quot; object in the &quot;managedAppStatuses&quot; collection.</para>

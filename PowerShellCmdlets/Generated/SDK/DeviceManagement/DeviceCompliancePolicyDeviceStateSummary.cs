@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The device compliance state summary for this account.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_DeviceCompliancePolicyDeviceStateSummary", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "IntuneDeviceCompliancePolicyDeviceStateSummary", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.deviceCompliancePolicyDeviceStateSummary")]
     [ResourceTypePropertyName("deviceCompliancePolicyDeviceStateSummaryODataType")]
     [ResourceReference]
-    public class Get_DeviceManagement_DeviceCompliancePolicyDeviceStateSummary : GetCmdlet
+    public class Get_IntuneDeviceCompliancePolicyDeviceStateSummary : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;inGracePeriodCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -120,11 +120,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The device compliance state summary for this account.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement_DeviceCompliancePolicyDeviceStateSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyDeviceStateSummary")]
+    [Cmdlet("New", "IntuneDeviceCompliancePolicyDeviceStateSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyDeviceStateSummary")]
     [ODataType("microsoft.graph.deviceCompliancePolicyDeviceStateSummary")]
     [ResourceTypePropertyName("deviceCompliancePolicyDeviceStateSummaryODataType")]
     [ResourceReference]
-    public class New_DeviceManagement_DeviceCompliancePolicyDeviceStateSummary : PostCmdlet
+    public class New_IntuneDeviceCompliancePolicyDeviceStateSummary : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;inGracePeriodCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -238,10 +238,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The device compliance state summary for this account.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceManagement_DeviceCompliancePolicyDeviceStateSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyDeviceStateSummary")]
+    [Cmdlet("Update", "IntuneDeviceCompliancePolicyDeviceStateSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyDeviceStateSummary")]
     [ODataType("microsoft.graph.deviceCompliancePolicyDeviceStateSummary")]
     [ResourceTypePropertyName("deviceCompliancePolicyDeviceStateSummaryODataType")]
-    public class Update_DeviceManagement_DeviceCompliancePolicyDeviceStateSummary : PatchCmdlet
+    public class Update_IntuneDeviceCompliancePolicyDeviceStateSummary : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;inGracePeriodCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -355,10 +355,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The device compliance state summary for this account.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement_DeviceCompliancePolicyDeviceStateSummary", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneDeviceCompliancePolicyDeviceStateSummary", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceCompliancePolicyDeviceStateSummary")]
     [ResourceTypePropertyName("deviceCompliancePolicyDeviceStateSummaryODataType")]
-    public class Remove_DeviceManagement_DeviceCompliancePolicyDeviceStateSummary : DeleteCmdlet
+    public class Remove_IntuneDeviceCompliancePolicyDeviceStateSummary : DeleteCmdlet
     {
         internal override System.String GetResourcePath()
         {

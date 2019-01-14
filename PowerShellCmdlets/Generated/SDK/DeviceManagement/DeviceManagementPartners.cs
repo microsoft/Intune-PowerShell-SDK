@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of Device Management Partners configured by the tenant.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_DeviceManagementPartners", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneDeviceManagementPartner", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceManagementPartner")]
     [ResourceTypePropertyName("deviceManagementPartnerODataType")]
     [ResourceReference]
-    public class Get_DeviceManagement_DeviceManagementPartners : GetOrSearchCmdlet
+    public class Get_IntuneDeviceManagementPartner : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementPartner&quot; object in the &quot;deviceManagementPartners&quot; collection.</para>
@@ -121,11 +121,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of Device Management Partners configured by the tenant.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement_DeviceManagementPartners", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceManagementPartner")]
+    [Cmdlet("New", "IntuneDeviceManagementPartner", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceManagementPartner")]
     [ODataType("microsoft.graph.deviceManagementPartner")]
     [ResourceTypePropertyName("deviceManagementPartnerODataType")]
     [ResourceReference]
-    public class New_DeviceManagement_DeviceManagementPartners : PostCmdlet
+    public class New_IntuneDeviceManagementPartner : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementPartner&quot; object in the &quot;deviceManagementPartners&quot; collection.</para>
@@ -245,10 +245,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of Device Management Partners configured by the tenant.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceManagement_DeviceManagementPartners", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceManagementPartner")]
+    [Cmdlet("Update", "IntuneDeviceManagementPartner", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceManagementPartner")]
     [ODataType("microsoft.graph.deviceManagementPartner")]
     [ResourceTypePropertyName("deviceManagementPartnerODataType")]
-    public class Update_DeviceManagement_DeviceManagementPartners : PatchCmdlet
+    public class Update_IntuneDeviceManagementPartner : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementPartner&quot; object in the &quot;deviceManagementPartners&quot; collection.</para>
@@ -370,10 +370,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The list of Device Management Partners configured by the tenant.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement_DeviceManagementPartners", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneDeviceManagementPartner", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceManagementPartner")]
     [ResourceTypePropertyName("deviceManagementPartnerODataType")]
-    public class Remove_DeviceManagement_DeviceManagementPartners : DeleteCmdlet
+    public class Remove_IntuneDeviceManagementPartner : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementPartner&quot; object in the &quot;deviceManagementPartners&quot; collection.</para>

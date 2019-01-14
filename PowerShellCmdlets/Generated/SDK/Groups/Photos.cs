@@ -10,11 +10,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves &quot;microsoft.graph.profilePhoto&quot; objects in the &quot;photos&quot; collection.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "Groups_Photos", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "GroupPhotos", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
     [ResourceReference]
-    public class Get_Groups_Photos : GetOrSearchCmdlet
+    public class Get_GroupPhotos : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -67,10 +67,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves the data streams from the &quot;photos&quot; collection.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "Groups_PhotosData")]
+    [Cmdlet("Get", "GroupPhotosData")]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
-    public class Get_Groups_PhotosData : GetStreamCmdlet
+    public class Get_GroupPhotosData : GetStreamCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.</para>
@@ -123,10 +123,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Sets the data for the &quot;photo&quot; property.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "Groups_PhotosData", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "GroupPhotosData", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
-    public class New_Groups_PhotosData : UpdateStreamCmdlet
+    public class New_GroupPhotosData : UpdateStreamCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.</para>
@@ -166,10 +166,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Sets the data for the &quot;photo&quot; property.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Set", "Groups_PhotosData", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("Set", "GroupPhotosData", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
-    public class Set_Groups_PhotosData : UpdateStreamCmdlet
+    public class Set_GroupPhotosData : UpdateStreamCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.</para>
@@ -204,10 +204,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a reference from a &quot;photo&quot; resource (which is of type &quot;microsoft.graph.profilePhoto&quot;).</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "Groups_PhotosData", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "GroupPhotosData", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
-    public class Remove_Groups_PhotosData : DeleteCmdlet
+    public class Remove_GroupPhotosData : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.</para>

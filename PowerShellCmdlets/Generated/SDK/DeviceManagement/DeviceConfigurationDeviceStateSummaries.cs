@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The device configuration device state summary for this account.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceManagement_DeviceConfigurationDeviceStateSummaries", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "IntuneDeviceConfigurationDeviceStateSummary", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.deviceConfigurationDeviceStateSummary")]
     [ResourceTypePropertyName("deviceConfigurationDeviceStateSummaryODataType")]
     [ResourceReference]
-    public class Get_DeviceManagement_DeviceConfigurationDeviceStateSummaries : GetCmdlet
+    public class Get_IntuneDeviceConfigurationDeviceStateSummary : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;unknownDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -100,11 +100,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The device configuration device state summary for this account.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceManagement_DeviceConfigurationDeviceStateSummaries", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationDeviceStateSummary")]
+    [Cmdlet("New", "IntuneDeviceConfigurationDeviceStateSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationDeviceStateSummary")]
     [ODataType("microsoft.graph.deviceConfigurationDeviceStateSummary")]
     [ResourceTypePropertyName("deviceConfigurationDeviceStateSummaryODataType")]
     [ResourceReference]
-    public class New_DeviceManagement_DeviceConfigurationDeviceStateSummaries : PostCmdlet
+    public class New_IntuneDeviceConfigurationDeviceStateSummary : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;unknownDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -196,10 +196,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The device configuration device state summary for this account.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceManagement_DeviceConfigurationDeviceStateSummaries", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationDeviceStateSummary")]
+    [Cmdlet("Update", "IntuneDeviceConfigurationDeviceStateSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationDeviceStateSummary")]
     [ODataType("microsoft.graph.deviceConfigurationDeviceStateSummary")]
     [ResourceTypePropertyName("deviceConfigurationDeviceStateSummaryODataType")]
-    public class Update_DeviceManagement_DeviceConfigurationDeviceStateSummaries : PatchCmdlet
+    public class Update_IntuneDeviceConfigurationDeviceStateSummary : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;unknownDeviceCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -291,10 +291,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">The device configuration device state summary for this account.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceManagement_DeviceConfigurationDeviceStateSummaries", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneDeviceConfigurationDeviceStateSummary", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceConfigurationDeviceStateSummary")]
     [ResourceTypePropertyName("deviceConfigurationDeviceStateSummaryODataType")]
-    public class Remove_DeviceManagement_DeviceConfigurationDeviceStateSummaries : DeleteCmdlet
+    public class Remove_IntuneDeviceConfigurationDeviceStateSummary : DeleteCmdlet
     {
         internal override System.String GetResourcePath()
         {

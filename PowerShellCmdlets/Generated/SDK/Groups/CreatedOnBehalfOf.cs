@@ -10,10 +10,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves the &quot;createdOnBehalfOf&quot; object (which is of type &quot;microsoft.graph.directoryObject&quot;).</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "Groups_CreatedOnBehalfOf", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "GroupCreatedOnBehalfOf", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("createdOnBehalfOfODataType")]
-    public class Get_Groups_CreatedOnBehalfOf : GetCmdlet
+    public class Get_GroupCreatedOnBehalfOf : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1135,10 +1135,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Retrieves the &quot;createdOnBehalfOf&quot; object reference (which is of type &quot;microsoft.graph.directoryObject&quot;).</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "Groups_CreatedOnBehalfOfReference", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "GroupCreatedOnBehalfOfReference", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("createdOnBehalfOfODataType")]
-    public class Get_Groups_CreatedOnBehalfOfReference : GetCmdlet
+    public class Get_GroupCreatedOnBehalfOfReference : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -2260,10 +2260,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Creates a reference from the &quot;group&quot; object to a &quot;createdOnBehalfOf&quot;.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "Groups_CreatedOnBehalfOfReference", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "GroupCreatedOnBehalfOfReference", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("createdOnBehalfOfODataType")]
-    public class New_Groups_CreatedOnBehalfOfReference : PutReferenceToEntityCmdlet
+    public class New_GroupCreatedOnBehalfOfReference : PutReferenceToEntityCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -2297,10 +2297,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Removes a reference from the &quot;group&quot; object to a &quot;createdOnBehalfOf&quot;.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "Groups_CreatedOnBehalfOfReference", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "GroupCreatedOnBehalfOfReference", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("createdOnBehalfOfODataType")]
-    public class Remove_Groups_CreatedOnBehalfOfReference : DeleteCmdlet
+    public class Remove_GroupCreatedOnBehalfOfReference : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>

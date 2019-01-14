@@ -11,11 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">iOS managed app policies.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "DeviceAppManagement_IosManagedAppProtections", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "IntuneAppProtectionPolicyIos", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.iosManagedAppProtection")]
     [ResourceTypePropertyName("iosManagedAppProtectionODataType")]
     [ResourceReference]
-    public class Get_DeviceAppManagement_IosManagedAppProtections : GetOrSearchCmdlet
+    public class Get_IntuneAppProtectionPolicyIos : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.iosManagedAppProtection&quot; object in the &quot;iosManagedAppProtections&quot; collection.</para>
@@ -431,11 +431,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">iOS managed app policies.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "DeviceAppManagement_IosManagedAppProtections", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.iosManagedAppProtection")]
+    [Cmdlet("New", "IntuneAppProtectionPolicyIos", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.iosManagedAppProtection")]
     [ODataType("microsoft.graph.iosManagedAppProtection")]
     [ResourceTypePropertyName("iosManagedAppProtectionODataType")]
     [ResourceReference]
-    public class New_DeviceAppManagement_IosManagedAppProtections : PostCmdlet
+    public class New_IntuneAppProtectionPolicyIos : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.iosManagedAppProtection&quot; object in the &quot;iosManagedAppProtections&quot; collection.</para>
@@ -918,10 +918,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">iOS managed app policies.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "DeviceAppManagement_IosManagedAppProtections", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.iosManagedAppProtection")]
+    [Cmdlet("Update", "IntuneAppProtectionPolicyIos", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.iosManagedAppProtection")]
     [ODataType("microsoft.graph.iosManagedAppProtection")]
     [ResourceTypePropertyName("iosManagedAppProtectionODataType")]
-    public class Update_DeviceAppManagement_IosManagedAppProtections : PatchCmdlet
+    public class Update_IntuneAppProtectionPolicyIos : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.iosManagedAppProtection&quot; object in the &quot;iosManagedAppProtections&quot; collection.</para>
@@ -1406,10 +1406,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">iOS managed app policies.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "DeviceAppManagement_IosManagedAppProtections", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "IntuneAppProtectionPolicyIos", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.iosManagedAppProtection")]
     [ResourceTypePropertyName("iosManagedAppProtectionODataType")]
-    public class Remove_DeviceAppManagement_IosManagedAppProtections : DeleteCmdlet
+    public class Remove_IntuneAppProtectionPolicyIos : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.iosManagedAppProtection&quot; object in the &quot;iosManagedAppProtections&quot; collection.</para>
@@ -1434,10 +1434,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "DeviceAppManagement_IosManagedAppProtections_Assign", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "IntuneAppProtectionPolicyIosAssign", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.iosManagedAppProtection")]
     [ResourceTypePropertyName("iosManagedAppProtectionODataType")]
-    public class Invoke_DeviceAppManagement_IosManagedAppProtections_Assign : ActionCmdlet
+    public class Invoke_IntuneAppProtectionPolicyIosAssign : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;assignments&quot; action parameter of type &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot;.</para>
@@ -1472,10 +1472,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">This action does not return any objects.</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "DeviceAppManagement_IosManagedAppProtections_TargetApps", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "IntuneAppProtectionPolicyIosTargetApp", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.iosManagedAppProtection")]
     [ResourceTypePropertyName("iosManagedAppProtectionODataType")]
-    public class Invoke_DeviceAppManagement_IosManagedAppProtections_TargetApps : ActionCmdlet
+    public class Invoke_IntuneAppProtectionPolicyIosTargetApp : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;apps&quot; action parameter of type &quot;microsoft.graph.managedMobileApp&quot;.</para>
