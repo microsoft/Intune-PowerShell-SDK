@@ -6,14 +6,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.directoryObject&quot; objects.</para>
-    ///     <para type="description">GET ~/groups/{groupId}/owners</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.directoryObject&quot; objects in the &quot;owners&quot; collection.</para>
+    ///     <para type="description">Graph call: GET ~/groups/{groupId}/owners</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "GroupOwners", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "AADGroupOwner", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("ownerODataType")]
-    public class Get_GroupOwners : GetOrSearchCmdlet
+    public class Get_AADGroupOwner : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1142,14 +1142,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.directoryObject&quot; object references.</para>
-    ///     <para type="description">GET ~/groups/{groupId}/owners/$ref</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.directoryObject&quot; object references in the &quot;owners&quot; collection.</para>
+    ///     <para type="description">Graph call: GET ~/groups/{groupId}/owners/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "GroupOwnersReferences", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "AADGroupOwnerReferenceSet", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("ownerODataType")]
-    public class Get_GroupOwnersReferences : GetOrSearchCmdlet
+    public class Get_AADGroupOwnerReferenceSet : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -2278,14 +2278,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a reference from a &quot;group&quot; to a &quot;microsoft.graph.directoryObject&quot; object.</para>
-    ///     <para type="description">POST ~/groups/{groupId}/owners/$ref</para>
     ///     <para type="description">Creates a reference from the specified &quot;group&quot; object to a &quot;owner&quot;.</para>
+    ///     <para type="description">Graph Call: POST ~/groups/{groupId}/owners/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "GroupOwnersReferences", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "AADGroupOwnerReferenceSet", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("ownerODataType")]
-    public class New_GroupOwnersReferences : PostReferenceToCollectionCmdlet
+    public class New_AADGroupOwnerReferenceSet : PostReferenceToCollectionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;owners&quot; collection.</para>
@@ -2329,14 +2329,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a reference from a &quot;group&quot; to a &quot;microsoft.graph.directoryObject&quot; object.</para>
-    ///     <para type="description">DELETE ~/groups/{groupId}/owners/directoryObjectId/$ref</para>
     ///     <para type="description">Removes a reference from the specified &quot;group&quot; object to a &quot;owner&quot;.</para>
+    ///     <para type="description">Graph Call: DELETE ~/groups/{groupId}/owners/directoryObjectId/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "GroupOwnersReferences", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "AADGroupOwnerReferenceSet", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("ownerODataType")]
-    public class Remove_GroupOwnersReferences : DeleteCmdlet
+    public class Remove_AADGroupOwnerReferenceSet : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;owners&quot; collection.</para>

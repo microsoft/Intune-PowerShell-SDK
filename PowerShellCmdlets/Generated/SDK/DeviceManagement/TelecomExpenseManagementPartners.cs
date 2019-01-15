@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.telecomExpenseManagementPartner&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/telecomExpenseManagementPartners</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.telecomExpenseManagementPartner&quot; objects in the &quot;telecomExpenseManagementPartners&quot; collection.</para>
     ///     <para type="description">The telecom expense management partners.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/telecomExpenseManagementPartners</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneTelecomExpenseManagementPartner", DefaultParameterSetName = @"Search")]
@@ -86,9 +86,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/telecomExpenseManagementPartners</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object to the &quot;telecomExpenseManagementPartners&quot; collection.</para>
     ///     <para type="description">The telecom expense management partners.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/telecomExpenseManagementPartners</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneTelecomExpenseManagementPartner", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.telecomExpenseManagementPartner")]
@@ -169,9 +169,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.telecomExpenseManagementPartner&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/telecomExpenseManagementPartners</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.</para>
     ///     <para type="description">The telecom expense management partners.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/telecomExpenseManagementPartners</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneTelecomExpenseManagementPartner", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.telecomExpenseManagementPartner")]
@@ -253,9 +253,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/telecomExpenseManagementPartners/telecomExpenseManagementPartnerId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object from the &quot;telecomExpenseManagementPartners&quot; collection.</para>
     ///     <para type="description">The telecom expense management partners.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/telecomExpenseManagementPartners/telecomExpenseManagementPartnerId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneTelecomExpenseManagementPartner", ConfirmImpact = ConfirmImpact.High)]

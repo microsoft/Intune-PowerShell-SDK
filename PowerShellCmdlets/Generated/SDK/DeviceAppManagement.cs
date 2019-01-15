@@ -6,8 +6,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;deviceAppManagement&quot; object.</para>
-    ///     <para type="description">GET ~/deviceAppManagement</para>
     ///     <para type="description">Retrieves the &quot;deviceAppManagement&quot; object (which is of type &quot;microsoft.graph.deviceAppManagement&quot;).</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneDeviceAppManagement", DefaultParameterSetName = @"Get")]
@@ -202,8 +202,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceAppManagement&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement</para>
     ///     <para type="description">Creates the &quot;deviceAppManagement&quot; object (which is of type &quot;microsoft.graph.deviceAppManagement&quot;).</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneDeviceAppManagement", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceAppManagement")]
@@ -444,8 +444,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceAppManagement&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement</para>
     ///     <para type="description">Updates the &quot;deviceAppManagement&quot; object (which is of type &quot;microsoft.graph.deviceAppManagement&quot;).</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneDeviceAppManagement", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceAppManagement")]
@@ -686,8 +686,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceAppManagement&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement</para>
     ///     <para type="description">Removes the &quot;deviceAppManagement&quot; object (which is of type &quot;microsoft.graph.deviceAppManagement&quot;).</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneDeviceAppManagement", ConfirmImpact = ConfirmImpact.High)]
@@ -702,9 +702,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceAppManagement/syncMicrosoftStoreForBusinessApps</para>
     ///     <para type="description">The action &quot;microsoft.graph.syncMicrosoftStoreForBusinessApps&quot;, which exists on the type &quot;microsoft.graph.deviceAppManagement&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceAppManagement/syncMicrosoftStoreForBusinessApps</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneSyncMicrosoftStoreForBusinessApp", ConfirmImpact = ConfirmImpact.High)]

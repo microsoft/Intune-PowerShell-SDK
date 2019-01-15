@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.targetedManagedAppConfiguration&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/targetedManagedAppConfigurations</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.targetedManagedAppConfiguration&quot; objects in the &quot;targetedManagedAppConfigurations&quot; collection.</para>
     ///     <para type="description">Targeted managed app configurations.</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement/targetedManagedAppConfigurations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneAppConfigurationPolicyTargeted", DefaultParameterSetName = @"Search")]
@@ -146,9 +146,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.targetedManagedAppConfiguration&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/targetedManagedAppConfigurations</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.targetedManagedAppConfiguration&quot; object to the &quot;targetedManagedAppConfigurations&quot; collection.</para>
     ///     <para type="description">Targeted managed app configurations.</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement/targetedManagedAppConfigurations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneAppConfigurationPolicyTargeted", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppConfiguration")]
@@ -301,9 +301,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.targetedManagedAppConfiguration&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/targetedManagedAppConfigurations</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.targetedManagedAppConfiguration&quot; object in the &quot;targetedManagedAppConfigurations&quot; collection.</para>
     ///     <para type="description">Targeted managed app configurations.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/targetedManagedAppConfigurations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneAppConfigurationPolicyTargeted", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppConfiguration")]
@@ -457,9 +457,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.targetedManagedAppConfiguration&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/targetedManagedAppConfigurations/targetedManagedAppConfigurationId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.targetedManagedAppConfiguration&quot; object from the &quot;targetedManagedAppConfigurations&quot; collection.</para>
     ///     <para type="description">Targeted managed app configurations.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/targetedManagedAppConfigurations/targetedManagedAppConfigurationId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneAppConfigurationPolicyTargeted", ConfirmImpact = ConfirmImpact.High)]
@@ -485,9 +485,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceAppManagement/targetedManagedAppConfigurations/assign</para>
     ///     <para type="description">The action &quot;microsoft.graph.assign&quot;, which exists on the type &quot;microsoft.graph.targetedManagedAppConfiguration&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceAppManagement/targetedManagedAppConfigurations/assign</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneAppConfigurationPolicyTargetedAssign", ConfirmImpact = ConfirmImpact.High)]
@@ -523,9 +523,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceAppManagement/targetedManagedAppConfigurations/targetApps</para>
     ///     <para type="description">The action &quot;microsoft.graph.targetApps&quot;, which exists on the type &quot;microsoft.graph.targetedManagedAppConfiguration&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceAppManagement/targetedManagedAppConfigurations/targetApps</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneAppConfigurationPolicyTargetedTargetedApp", ConfirmImpact = ConfirmImpact.High)]

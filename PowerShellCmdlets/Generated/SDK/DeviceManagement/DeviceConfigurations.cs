@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.deviceConfiguration&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/deviceConfigurations</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceConfiguration&quot; objects in the &quot;deviceConfigurations&quot; collection.</para>
     ///     <para type="description">The device configurations.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/deviceConfigurations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneDeviceConfigurationPolicy", DefaultParameterSetName = @"Search")]
@@ -5789,9 +5789,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceConfiguration&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/deviceConfigurations</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceConfiguration&quot; object to the &quot;deviceConfigurations&quot; collection.</para>
     ///     <para type="description">The device configurations.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/deviceConfigurations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneDeviceConfigurationPolicy", ConfirmImpact = ConfirmImpact.Low)]
@@ -12438,9 +12438,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceConfiguration&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/deviceConfigurations</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceConfiguration&quot; object in the &quot;deviceConfigurations&quot; collection.</para>
     ///     <para type="description">The device configurations.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/deviceConfigurations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneDeviceConfigurationPolicy", ConfirmImpact = ConfirmImpact.Medium)]
@@ -19088,9 +19088,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceConfiguration&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceConfigurations/deviceConfigurationId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceConfiguration&quot; object from the &quot;deviceConfigurations&quot; collection.</para>
     ///     <para type="description">The device configurations.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/deviceConfigurations/deviceConfigurationId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneDeviceConfigurationPolicy", ConfirmImpact = ConfirmImpact.High)]
@@ -19116,9 +19116,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/deviceConfigurations/assign</para>
     ///     <para type="description">The action &quot;microsoft.graph.assign&quot;, which exists on the type &quot;microsoft.graph.deviceConfiguration&quot;.</para>
     ///     <para type="description">This action returns a collection of &quot;microsoft.graph.deviceConfigurationAssignment&quot; objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/deviceConfigurations/assign</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneDeviceConfigurationPolicyAssign", ConfirmImpact = ConfirmImpact.High)]

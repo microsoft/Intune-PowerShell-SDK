@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;deviceConfigurationDeviceStateSummaries&quot; object.</para>
-    ///     <para type="description">GET ~/deviceManagement/deviceConfigurationDeviceStateSummaries</para>
     ///     <para type="description">Retrieves the &quot;deviceConfigurationDeviceStateSummaries&quot; object (which is of type &quot;microsoft.graph.deviceConfigurationDeviceStateSummary&quot;).</para>
     ///     <para type="description">The device configuration device state summary for this account.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/deviceConfigurationDeviceStateSummaries</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneDeviceConfigurationDeviceStateSummary", DefaultParameterSetName = @"Get")]
@@ -95,9 +95,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceConfigurationDeviceStateSummary&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/deviceConfigurationDeviceStateSummaries</para>
     ///     <para type="description">Creates the &quot;deviceConfigurationDeviceStateSummaries&quot; object (which is of type &quot;microsoft.graph.deviceConfigurationDeviceStateSummary&quot;).</para>
     ///     <para type="description">The device configuration device state summary for this account.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/deviceConfigurationDeviceStateSummaries</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneDeviceConfigurationDeviceStateSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationDeviceStateSummary")]
@@ -191,9 +191,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceConfigurationDeviceStateSummary&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/deviceConfigurationDeviceStateSummaries</para>
     ///     <para type="description">Updates the &quot;deviceConfigurationDeviceStateSummaries&quot; object (which is of type &quot;microsoft.graph.deviceConfigurationDeviceStateSummary&quot;).</para>
     ///     <para type="description">The device configuration device state summary for this account.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/deviceConfigurationDeviceStateSummaries</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneDeviceConfigurationDeviceStateSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationDeviceStateSummary")]
@@ -286,9 +286,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceConfigurationDeviceStateSummary&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceConfigurationDeviceStateSummaries</para>
     ///     <para type="description">Removes the &quot;deviceConfigurationDeviceStateSummaries&quot; object (which is of type &quot;microsoft.graph.deviceConfigurationDeviceStateSummary&quot;).</para>
     ///     <para type="description">The device configuration device state summary for this account.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/deviceConfigurationDeviceStateSummaries</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneDeviceConfigurationDeviceStateSummary", ConfirmImpact = ConfirmImpact.High)]

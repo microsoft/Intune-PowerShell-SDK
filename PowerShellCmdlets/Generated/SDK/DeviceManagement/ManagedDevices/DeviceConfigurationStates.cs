@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.deviceConfigurationState&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/managedDevices/{managedDeviceId}/deviceConfigurationStates</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceConfigurationState&quot; objects in the &quot;deviceConfigurationStates&quot; collection.</para>
     ///     <para type="description">Device configuration states for this device.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/managedDevices/{managedDeviceId}/deviceConfigurationStates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneManagedDeviceDeviceConfigurationState", DefaultParameterSetName = @"Search")]
@@ -104,9 +104,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceConfigurationState&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/{managedDeviceId}/deviceConfigurationStates</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceConfigurationState&quot; object to the &quot;deviceConfigurationStates&quot; collection.</para>
     ///     <para type="description">Device configuration states for this device.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/managedDevices/{managedDeviceId}/deviceConfigurationStates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneManagedDeviceDeviceConfigurationState", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationState")]
@@ -216,9 +216,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceConfigurationState&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/managedDevices/{managedDeviceId}/deviceConfigurationStates</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceConfigurationState&quot; object in the &quot;deviceConfigurationStates&quot; collection.</para>
     ///     <para type="description">Device configuration states for this device.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/managedDevices/{managedDeviceId}/deviceConfigurationStates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneManagedDeviceDeviceConfigurationState", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationState")]
@@ -329,9 +329,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceConfigurationState&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/managedDevices/{managedDeviceId}/deviceConfigurationStates/deviceConfigurationStateId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceConfigurationState&quot; object from the &quot;deviceConfigurationStates&quot; collection.</para>
     ///     <para type="description">Device configuration states for this device.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/managedDevices/{managedDeviceId}/deviceConfigurationStates/deviceConfigurationStateId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneManagedDeviceDeviceConfigurationState", ConfirmImpact = ConfirmImpact.High)]

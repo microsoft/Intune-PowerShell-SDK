@@ -5,7 +5,7 @@ $appToUpload = New-MobileAppObject `
     -iosLobApp `
     -displayName 'Test' `
     -description 'This is a test iOS LOB app' `
-    -publisher 'Rohit Ramu' `
+    -publisher 'IT Professional' `
     -bundleId '' `
     -applicableDeviceType (New-IosDeviceTypeObject -iPad $true -iPhoneAndIPod $true) `
     -minimumSupportedOperatingSystem (New-IosMinimumOperatingSystemObject -v9_0 $true) `

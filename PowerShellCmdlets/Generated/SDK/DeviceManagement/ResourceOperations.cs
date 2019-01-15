@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.resourceOperation&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/resourceOperations</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.resourceOperation&quot; objects in the &quot;resourceOperations&quot; collection.</para>
     ///     <para type="description">The Resource Operations.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/resourceOperations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneResourceOperation", DefaultParameterSetName = @"Search")]
@@ -66,9 +66,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.resourceOperation&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/resourceOperations</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.resourceOperation&quot; object to the &quot;resourceOperations&quot; collection.</para>
     ///     <para type="description">The Resource Operations.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/resourceOperations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneResourceOperation", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.resourceOperation")]
@@ -127,9 +127,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.resourceOperation&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/resourceOperations</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.resourceOperation&quot; object in the &quot;resourceOperations&quot; collection.</para>
     ///     <para type="description">The Resource Operations.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/resourceOperations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneResourceOperation", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.resourceOperation")]
@@ -189,9 +189,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.resourceOperation&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/resourceOperations/resourceOperationId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.resourceOperation&quot; object from the &quot;resourceOperations&quot; collection.</para>
     ///     <para type="description">The Resource Operations.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/resourceOperations/resourceOperationId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneResourceOperation", ConfirmImpact = ConfirmImpact.High)]

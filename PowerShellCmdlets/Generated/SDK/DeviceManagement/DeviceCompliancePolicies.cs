@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.deviceCompliancePolicy&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/deviceCompliancePolicies</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceCompliancePolicy&quot; objects in the &quot;deviceCompliancePolicies&quot; collection.</para>
     ///     <para type="description">The device compliance policies.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/deviceCompliancePolicies</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneDeviceCompliancePolicy", DefaultParameterSetName = @"Search")]
@@ -653,9 +653,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceCompliancePolicy&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/deviceCompliancePolicies</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceCompliancePolicy&quot; object to the &quot;deviceCompliancePolicies&quot; collection.</para>
     ///     <para type="description">The device compliance policies.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/deviceCompliancePolicies</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneDeviceCompliancePolicy", ConfirmImpact = ConfirmImpact.Low)]
@@ -1585,9 +1585,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceCompliancePolicy&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/deviceCompliancePolicies</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceCompliancePolicy&quot; object in the &quot;deviceCompliancePolicies&quot; collection.</para>
     ///     <para type="description">The device compliance policies.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/deviceCompliancePolicies</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneDeviceCompliancePolicy", ConfirmImpact = ConfirmImpact.Medium)]
@@ -2518,9 +2518,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceCompliancePolicy&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceCompliancePolicies/deviceCompliancePolicyId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceCompliancePolicy&quot; object from the &quot;deviceCompliancePolicies&quot; collection.</para>
     ///     <para type="description">The device compliance policies.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/deviceCompliancePolicies/deviceCompliancePolicyId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneDeviceCompliancePolicy", ConfirmImpact = ConfirmImpact.High)]
@@ -2546,9 +2546,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/deviceCompliancePolicies/assign</para>
     ///     <para type="description">The action &quot;microsoft.graph.assign&quot;, which exists on the type &quot;microsoft.graph.deviceCompliancePolicy&quot;.</para>
     ///     <para type="description">This action returns a collection of &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot; objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/deviceCompliancePolicies/assign</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneDeviceCompliancePolicyAssign", ConfirmImpact = ConfirmImpact.High)]
@@ -2584,9 +2584,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/deviceCompliancePolicies/scheduleActionsForRules</para>
     ///     <para type="description">The action &quot;microsoft.graph.scheduleActionsForRules&quot;, which exists on the type &quot;microsoft.graph.deviceCompliancePolicy&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/deviceCompliancePolicies/scheduleActionsForRules</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneDeviceCompliancePolicyScheduleActionsForRules", ConfirmImpact = ConfirmImpact.High)]

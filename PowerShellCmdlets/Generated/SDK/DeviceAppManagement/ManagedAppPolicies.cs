@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.managedAppPolicy&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/managedAppPolicies</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedAppPolicy&quot; objects in the &quot;managedAppPolicies&quot; collection.</para>
     ///     <para type="description">Managed app policies.</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement/managedAppPolicies</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneAppProtectionPolicy", DefaultParameterSetName = @"Search")]
@@ -900,9 +900,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.managedAppPolicy&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/managedAppPolicies</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.managedAppPolicy&quot; object to the &quot;managedAppPolicies&quot; collection.</para>
     ///     <para type="description">Managed app policies.</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement/managedAppPolicies</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneAppProtectionPolicy", ConfirmImpact = ConfirmImpact.Low)]
@@ -2154,9 +2154,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.managedAppPolicy&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/managedAppPolicies</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;managedAppPolicies&quot; collection.</para>
     ///     <para type="description">Managed app policies.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/managedAppPolicies</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneAppProtectionPolicy", ConfirmImpact = ConfirmImpact.Medium)]
@@ -3409,9 +3409,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.managedAppPolicy&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/managedAppPolicies/managedAppPolicyId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.managedAppPolicy&quot; object from the &quot;managedAppPolicies&quot; collection.</para>
     ///     <para type="description">Managed app policies.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/managedAppPolicies/managedAppPolicyId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneAppProtectionPolicy", ConfirmImpact = ConfirmImpact.High)]
@@ -3437,9 +3437,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceAppManagement/managedAppPolicies/targetApps</para>
     ///     <para type="description">The action &quot;microsoft.graph.targetApps&quot;, which exists on the type &quot;microsoft.graph.managedAppPolicy&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceAppManagement/managedAppPolicies/targetApps</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneAppProtectionPolicyTargetApp", ConfirmImpact = ConfirmImpact.High)]

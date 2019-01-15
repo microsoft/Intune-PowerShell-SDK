@@ -6,8 +6,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;deviceManagement&quot; object.</para>
-    ///     <para type="description">GET ~/deviceManagement</para>
     ///     <para type="description">Retrieves the &quot;deviceManagement&quot; object (which is of type &quot;microsoft.graph.deviceManagement&quot;).</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneDeviceManagement", DefaultParameterSetName = @"Get")]
@@ -329,8 +329,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceManagement&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement</para>
     ///     <para type="description">Creates the &quot;deviceManagement&quot; object (which is of type &quot;microsoft.graph.deviceManagement&quot;).</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneDeviceManagement", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceManagement")]
@@ -728,8 +728,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceManagement&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement</para>
     ///     <para type="description">Updates the &quot;deviceManagement&quot; object (which is of type &quot;microsoft.graph.deviceManagement&quot;).</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneDeviceManagement", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceManagement")]
@@ -1127,8 +1127,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceManagement&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement</para>
     ///     <para type="description">Removes the &quot;deviceManagement&quot; object (which is of type &quot;microsoft.graph.deviceManagement&quot;).</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneDeviceManagement", ConfirmImpact = ConfirmImpact.High)]
@@ -1143,9 +1143,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">GET ~/deviceManagement/verifyWindowsEnrollmentAutoDiscovery</para>
     ///     <para type="description">The function &quot;microsoft.graph.verifyWindowsEnrollmentAutoDiscovery&quot;, which exists on the type &quot;microsoft.graph.deviceManagement&quot;.</para>
     ///     <para type="description">This function returns a &quot;Edm.Boolean&quot; object.</para>
+    ///     <para type="description">Graph Call: GET ~/deviceManagement/verifyWindowsEnrollmentAutoDiscovery</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneVerifyWindowsEnrollmentAutoDiscovery", DefaultParameterSetName = @"Get")]
@@ -1169,9 +1169,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">GET ~/deviceManagement/getEffectivePermissions</para>
     ///     <para type="description">The function &quot;microsoft.graph.getEffectivePermissions&quot;, which exists on the type &quot;microsoft.graph.deviceManagement&quot;.</para>
     ///     <para type="description">This function returns a collection of &quot;microsoft.graph.rolePermission&quot; objects.</para>
+    ///     <para type="description">Graph Call: GET ~/deviceManagement/getEffectivePermissions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneGetEffectivePermission", DefaultParameterSetName = @"Search")]

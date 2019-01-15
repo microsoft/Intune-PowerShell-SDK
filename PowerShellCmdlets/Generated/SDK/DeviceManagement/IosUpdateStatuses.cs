@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.iosUpdateDeviceStatus&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/iosUpdateStatuses</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.iosUpdateDeviceStatus&quot; objects in the &quot;iosUpdateStatuses&quot; collection.</para>
     ///     <para type="description">The IOS software update installation statuses for this account.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/iosUpdateStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneIosUpdateStatus", DefaultParameterSetName = @"Search")]
@@ -146,9 +146,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/iosUpdateStatuses</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object to the &quot;iosUpdateStatuses&quot; collection.</para>
     ///     <para type="description">The IOS software update installation statuses for this account.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/iosUpdateStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneIosUpdateStatus", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus")]
@@ -303,9 +303,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.iosUpdateDeviceStatus&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/iosUpdateStatuses</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object in the &quot;iosUpdateStatuses&quot; collection.</para>
     ///     <para type="description">The IOS software update installation statuses for this account.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/iosUpdateStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneIosUpdateStatus", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus")]
@@ -461,9 +461,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/iosUpdateStatuses/iosUpdateDeviceStatusId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.iosUpdateDeviceStatus&quot; object from the &quot;iosUpdateStatuses&quot; collection.</para>
     ///     <para type="description">The IOS software update installation statuses for this account.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/iosUpdateStatuses/iosUpdateDeviceStatusId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneIosUpdateStatus", ConfirmImpact = ConfirmImpact.High)]

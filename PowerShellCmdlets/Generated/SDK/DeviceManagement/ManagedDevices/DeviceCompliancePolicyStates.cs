@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.deviceCompliancePolicyState&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCompliancePolicyStates</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceCompliancePolicyState&quot; objects in the &quot;deviceCompliancePolicyStates&quot; collection.</para>
     ///     <para type="description">Device compliance policy states for this device.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCompliancePolicyStates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneManagedDeviceDeviceCompliancePolicyState", DefaultParameterSetName = @"Search")]
@@ -104,9 +104,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceCompliancePolicyState&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCompliancePolicyStates</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceCompliancePolicyState&quot; object to the &quot;deviceCompliancePolicyStates&quot; collection.</para>
     ///     <para type="description">Device compliance policy states for this device.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCompliancePolicyStates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneManagedDeviceDeviceCompliancePolicyState", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyState")]
@@ -216,9 +216,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceCompliancePolicyState&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCompliancePolicyStates</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceCompliancePolicyState&quot; object in the &quot;deviceCompliancePolicyStates&quot; collection.</para>
     ///     <para type="description">Device compliance policy states for this device.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCompliancePolicyStates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneManagedDeviceDeviceCompliancePolicyState", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyState")]
@@ -329,9 +329,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceCompliancePolicyState&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCompliancePolicyStates/deviceCompliancePolicyStateId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceCompliancePolicyState&quot; object from the &quot;deviceCompliancePolicyStates&quot; collection.</para>
     ///     <para type="description">Device compliance policy states for this device.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCompliancePolicyStates/deviceCompliancePolicyStateId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneManagedDeviceDeviceCompliancePolicyState", ConfirmImpact = ConfirmImpact.High)]

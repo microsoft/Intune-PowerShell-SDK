@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.mobileAppCategory&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/mobileAppCategories</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.mobileAppCategory&quot; objects in the &quot;mobileAppCategories&quot; collection.</para>
     ///     <para type="description">The mobile app categories.</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement/mobileAppCategories</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneMobileAppCategory", DefaultParameterSetName = @"Search")]
@@ -56,9 +56,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.mobileAppCategory&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/mobileAppCategories</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.mobileAppCategory&quot; object to the &quot;mobileAppCategories&quot; collection.</para>
     ///     <para type="description">The mobile app categories.</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement/mobileAppCategories</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneMobileAppCategory", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.mobileAppCategory")]
@@ -106,9 +106,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.mobileAppCategory&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/mobileAppCategories</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.mobileAppCategory&quot; object in the &quot;mobileAppCategories&quot; collection.</para>
     ///     <para type="description">The mobile app categories.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/mobileAppCategories</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneMobileAppCategory", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.mobileAppCategory")]
@@ -157,9 +157,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.mobileAppCategory&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/mobileAppCategories/mobileAppCategoryId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.mobileAppCategory&quot; object from the &quot;mobileAppCategories&quot; collection.</para>
     ///     <para type="description">The mobile app categories.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/mobileAppCategories/mobileAppCategoryId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneMobileAppCategory", ConfirmImpact = ConfirmImpact.High)]

@@ -28,14 +28,20 @@ foreach ($sdkCmdlet in $sdkCmdlets)
     $sdkCmdletHelp = (Get-Help $sdkCmdlet)
     $sdkCmdletInfo = new-object PSObject
     $sdkCmdletInfo | add-member -membertype NoteProperty -name "Name" -value $sdkCmdletHelp.Name
+    $sdkCmdletInfo | add-member -membertype NoteProperty -name "Name-Length" -value $sdkCmdletHelp.Name.Length
     $sdkCmdletInfo | add-member -membertype NoteProperty -name "Synopsis" -value $sdkCmdletHelp.Synopsis    
     if ($sdkCmdletHelp.Description)
-    {        
-        $sdkCmdletInfo | add-member -membertype NoteProperty -name "Graph-route" -value $sdkCmdletHelp.Description[0].Text.replace("`n","").replace("`r","") 
+    {     
+        $description = ""
+        foreach($descriptionLine in $sdkCmdletHelp.Description)
+        {
+            $description += $descriptionLine.Text.replace("`n"," ").replace("`r"," ")
+        }
+        $sdkCmdletInfo | add-member -membertype NoteProperty -name "Description" -value $description
     }
     else
     {
-        $sdkCmdletInfo | add-member -membertype NoteProperty -name "Graph-route" -value ""
+        $sdkCmdletInfo | add-member -membertype NoteProperty -name "Description" -value ""
     }    
     $sdkCmdletsList+=$sdkCmdletInfo
 }

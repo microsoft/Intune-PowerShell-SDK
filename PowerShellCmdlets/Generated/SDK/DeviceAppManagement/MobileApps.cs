@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.mobileApp&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/mobileApps</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.mobileApp&quot; objects in the &quot;mobileApps&quot; collection.</para>
     ///     <para type="description">The mobile apps.</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement/mobileApps</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneMobileApp", DefaultParameterSetName = @"Search")]
@@ -615,9 +615,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.mobileApp&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/mobileApps</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.mobileApp&quot; object to the &quot;mobileApps&quot; collection.</para>
     ///     <para type="description">The mobile apps.</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement/mobileApps</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneMobileApp", ConfirmImpact = ConfirmImpact.Low)]
@@ -1716,9 +1716,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.mobileApp&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/mobileApps</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
     ///     <para type="description">The mobile apps.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/mobileApps</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneMobileApp", ConfirmImpact = ConfirmImpact.Medium)]
@@ -2818,9 +2818,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.mobileApp&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/mobileApps/mobileAppId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.mobileApp&quot; object from the &quot;mobileApps&quot; collection.</para>
     ///     <para type="description">The mobile apps.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/mobileApps/mobileAppId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneMobileApp", ConfirmImpact = ConfirmImpact.High)]
@@ -2846,9 +2846,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceAppManagement/mobileApps/assign</para>
     ///     <para type="description">The action &quot;microsoft.graph.assign&quot;, which exists on the type &quot;microsoft.graph.mobileApp&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceAppManagement/mobileApps/assign</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneMobileAppAssign", ConfirmImpact = ConfirmImpact.High)]

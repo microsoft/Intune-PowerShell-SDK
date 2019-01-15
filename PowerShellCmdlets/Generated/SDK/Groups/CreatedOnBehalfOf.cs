@@ -6,14 +6,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;createdOnBehalfOf&quot; object.</para>
-    ///     <para type="description">GET ~/groups/{groupId}/createdOnBehalfOf</para>
     ///     <para type="description">Retrieves the &quot;createdOnBehalfOf&quot; object (which is of type &quot;microsoft.graph.directoryObject&quot;).</para>
+    ///     <para type="description">Graph call: GET ~/groups/{groupId}/createdOnBehalfOf</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "GroupCreatedOnBehalfOf", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "AADGroupCreatedOnBehalfOf", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("createdOnBehalfOfODataType")]
-    public class Get_GroupCreatedOnBehalfOf : GetCmdlet
+    public class Get_AADGroupCreatedOnBehalfOf : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1131,14 +1131,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;createdOnBehalfOf&quot; object reference.</para>
-    ///     <para type="description">GET ~/groups/{groupId}/createdOnBehalfOf/$ref</para>
     ///     <para type="description">Retrieves the &quot;createdOnBehalfOf&quot; object reference (which is of type &quot;microsoft.graph.directoryObject&quot;).</para>
+    ///     <para type="description">Graph call: GET ~/groups/{groupId}/createdOnBehalfOf/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "GroupCreatedOnBehalfOfReference", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "AADGroupCreatedOnBehalfOfReference", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("createdOnBehalfOfODataType")]
-    public class Get_GroupCreatedOnBehalfOfReference : GetCmdlet
+    public class Get_AADGroupCreatedOnBehalfOfReference : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -2256,14 +2256,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a reference from a &quot;group&quot; to a &quot;microsoft.graph.directoryObject&quot; object.</para>
-    ///     <para type="description">PUT ~/groups/{groupId}/createdOnBehalfOf/$ref</para>
     ///     <para type="description">Creates a reference from the &quot;group&quot; object to a &quot;createdOnBehalfOf&quot;.</para>
+    ///     <para type="description">Graph Call: PUT ~/groups/{groupId}/createdOnBehalfOf/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "GroupCreatedOnBehalfOfReference", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "AADGroupCreatedOnBehalfOfReference", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("createdOnBehalfOfODataType")]
-    public class New_GroupCreatedOnBehalfOfReference : PutReferenceToEntityCmdlet
+    public class New_AADGroupCreatedOnBehalfOfReference : PutReferenceToEntityCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -2293,14 +2293,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a reference from a &quot;group&quot; to a &quot;microsoft.graph.directoryObject&quot; object.</para>
-    ///     <para type="description">DELETE ~/groups/{groupId}/createdOnBehalfOf/$ref</para>
     ///     <para type="description">Removes a reference from the &quot;group&quot; object to a &quot;createdOnBehalfOf&quot;.</para>
+    ///     <para type="description">Graph Call: DELETE ~/groups/{groupId}/createdOnBehalfOf/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "GroupCreatedOnBehalfOfReference", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "AADGroupCreatedOnBehalfOfReference", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("createdOnBehalfOfODataType")]
-    public class Remove_GroupCreatedOnBehalfOfReference : DeleteCmdlet
+    public class Remove_AADGroupCreatedOnBehalfOfReference : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>

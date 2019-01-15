@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.deviceConfigurationUserStatus&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceConfigurationUserStatus&quot; objects in the &quot;userStatuses&quot; collection.</para>
     ///     <para type="description">Device configuration installation status by user.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneDeviceConfigurationPolicyUserStatus", DefaultParameterSetName = @"Search")]
@@ -96,9 +96,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceConfigurationUserStatus&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceConfigurationUserStatus&quot; object to the &quot;userStatuses&quot; collection.</para>
     ///     <para type="description">Device configuration installation status by user.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneDeviceConfigurationPolicyUserStatus", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationUserStatus")]
@@ -193,9 +193,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceConfigurationUserStatus&quot; object in the &quot;userStatuses&quot; collection.</para>
     ///     <para type="description">Device configuration installation status by user.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneDeviceConfigurationPolicyUserStatus", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationUserStatus")]
@@ -291,9 +291,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceConfigurationUserStatus&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses/deviceConfigurationUserStatusId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceConfigurationUserStatus&quot; object from the &quot;userStatuses&quot; collection.</para>
     ///     <para type="description">Device configuration installation status by user.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses/deviceConfigurationUserStatusId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneDeviceConfigurationPolicyUserStatus", ConfirmImpact = ConfirmImpact.High)]

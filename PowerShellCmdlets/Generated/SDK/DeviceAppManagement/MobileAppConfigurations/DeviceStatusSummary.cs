@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;deviceStatusSummary&quot; object.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatusSummary</para>
     ///     <para type="description">Retrieves the &quot;deviceStatusSummary&quot; object (which is of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot;).</para>
     ///     <para type="description">App configuration device status summary.</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatusSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneMobileAppConfigurationPolicyDeviceStatusSummary", DefaultParameterSetName = @"Get")]
@@ -105,9 +105,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatusSummary</para>
     ///     <para type="description">Creates the &quot;deviceStatusSummary&quot; object (which is of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot;).</para>
     ///     <para type="description">App configuration device status summary.</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatusSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneMobileAppConfigurationPolicyDeviceStatusSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary")]
@@ -211,9 +211,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatusSummary</para>
     ///     <para type="description">Updates the &quot;deviceStatusSummary&quot; object (which is of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot;).</para>
     ///     <para type="description">App configuration device status summary.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatusSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneMobileAppConfigurationPolicyDeviceStatusSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary")]
@@ -316,9 +316,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatusSummary</para>
     ///     <para type="description">Removes the &quot;deviceStatusSummary&quot; object (which is of type &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot;).</para>
     ///     <para type="description">App configuration device status summary.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatusSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneMobileAppConfigurationPolicyDeviceStatusSummary", ConfirmImpact = ConfirmImpact.High)]

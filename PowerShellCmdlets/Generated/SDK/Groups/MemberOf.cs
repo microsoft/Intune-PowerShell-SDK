@@ -6,14 +6,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.directoryObject&quot; objects.</para>
-    ///     <para type="description">GET ~/groups/{groupId}/memberOf</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.directoryObject&quot; objects in the &quot;memberOf&quot; collection.</para>
+    ///     <para type="description">Graph call: GET ~/groups/{groupId}/memberOf</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "GroupMemberOf", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "AADGroupMemberOf", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("memberOfODataType")]
-    public class Get_GroupMemberOf : GetOrSearchCmdlet
+    public class Get_AADGroupMemberOf : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1142,14 +1142,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.directoryObject&quot; object references.</para>
-    ///     <para type="description">GET ~/groups/{groupId}/memberOf/$ref</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.directoryObject&quot; object references in the &quot;memberOf&quot; collection.</para>
+    ///     <para type="description">Graph call: GET ~/groups/{groupId}/memberOf/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "GroupMemberOfReferences", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "AADGroupMemberOfReferenceSet", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("memberOfODataType")]
-    public class Get_GroupMemberOfReferences : GetOrSearchCmdlet
+    public class Get_AADGroupMemberOfReferenceSet : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -2278,14 +2278,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a reference from a &quot;group&quot; to a &quot;microsoft.graph.directoryObject&quot; object.</para>
-    ///     <para type="description">POST ~/groups/{groupId}/memberOf/$ref</para>
     ///     <para type="description">Creates a reference from the specified &quot;group&quot; object to a &quot;memberOf&quot;.</para>
+    ///     <para type="description">Graph Call: POST ~/groups/{groupId}/memberOf/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "GroupMemberOfReferences", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "AADGroupMemberOfReferenceSet", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("memberOfODataType")]
-    public class New_GroupMemberOfReferences : PostReferenceToCollectionCmdlet
+    public class New_AADGroupMemberOfReferenceSet : PostReferenceToCollectionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;memberOf&quot; collection.</para>
@@ -2329,14 +2329,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a reference from a &quot;group&quot; to a &quot;microsoft.graph.directoryObject&quot; object.</para>
-    ///     <para type="description">DELETE ~/groups/{groupId}/memberOf/directoryObjectId/$ref</para>
     ///     <para type="description">Removes a reference from the specified &quot;group&quot; object to a &quot;memberOf&quot;.</para>
+    ///     <para type="description">Graph Call: DELETE ~/groups/{groupId}/memberOf/directoryObjectId/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "GroupMemberOfReferences", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "AADGroupMemberOfReferenceSet", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
     [ResourceTypePropertyName("memberOfODataType")]
-    public class Remove_GroupMemberOfReferences : DeleteCmdlet
+    public class Remove_AADGroupMemberOfReferenceSet : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.directoryObject&quot; object in the &quot;memberOf&quot; collection.</para>

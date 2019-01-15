@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/troubleshootingEvents</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; objects in the &quot;troubleshootingEvents&quot; collection.</para>
     ///     <para type="description">The list of troubleshooting events for the tenant.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/troubleshootingEvents</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneTroubleshootingEvent", DefaultParameterSetName = @"Search")]
@@ -144,9 +144,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/troubleshootingEvents</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object to the &quot;troubleshootingEvents&quot; collection.</para>
     ///     <para type="description">The list of troubleshooting events for the tenant.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/troubleshootingEvents</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneTroubleshootingEvent", ConfirmImpact = ConfirmImpact.Low)]
@@ -310,9 +310,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/troubleshootingEvents</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;troubleshootingEvents&quot; collection.</para>
     ///     <para type="description">The list of troubleshooting events for the tenant.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/troubleshootingEvents</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneTroubleshootingEvent", ConfirmImpact = ConfirmImpact.Medium)]
@@ -477,9 +477,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/troubleshootingEvents/deviceManagementTroubleshootingEventId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object from the &quot;troubleshootingEvents&quot; collection.</para>
     ///     <para type="description">The list of troubleshooting events for the tenant.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/troubleshootingEvents/deviceManagementTroubleshootingEventId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneTroubleshootingEvent", ConfirmImpact = ConfirmImpact.High)]

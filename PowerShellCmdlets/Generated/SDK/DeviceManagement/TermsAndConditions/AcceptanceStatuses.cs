@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; objects in the &quot;acceptanceStatuses&quot; collection.</para>
     ///     <para type="description">The list of acceptance statuses for this T&amp;C policy.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneTermsAndConditionsAcceptanceStatus", DefaultParameterSetName = @"Search")]
@@ -87,9 +87,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; object to the &quot;acceptanceStatuses&quot; collection.</para>
     ///     <para type="description">The list of acceptance statuses for this T&amp;C policy.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneTermsAndConditionsAcceptanceStatus", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.termsAndConditionsAcceptanceStatus")]
@@ -170,9 +170,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; object in the &quot;acceptanceStatuses&quot; collection.</para>
     ///     <para type="description">The list of acceptance statuses for this T&amp;C policy.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneTermsAndConditionsAcceptanceStatus", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.termsAndConditionsAcceptanceStatus")]
@@ -254,9 +254,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses/termsAndConditionsAcceptanceStatusId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; object from the &quot;acceptanceStatuses&quot; collection.</para>
     ///     <para type="description">The list of acceptance statuses for this T&amp;C policy.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses/termsAndConditionsAcceptanceStatusId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneTermsAndConditionsAcceptanceStatus", ConfirmImpact = ConfirmImpact.High)]

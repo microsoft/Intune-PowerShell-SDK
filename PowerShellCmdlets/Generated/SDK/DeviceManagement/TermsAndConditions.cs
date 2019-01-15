@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.termsAndConditions&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/termsAndConditions</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.termsAndConditions&quot; objects in the &quot;termsAndConditions&quot; collection.</para>
     ///     <para type="description">The terms and conditions associated with device management of the company.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/termsAndConditions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneTermsAndConditions", DefaultParameterSetName = @"Search")]
@@ -136,9 +136,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.termsAndConditions&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/termsAndConditions</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.termsAndConditions&quot; object to the &quot;termsAndConditions&quot; collection.</para>
     ///     <para type="description">The terms and conditions associated with device management of the company.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/termsAndConditions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneTermsAndConditions", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.termsAndConditions")]
@@ -278,9 +278,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.termsAndConditions&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/termsAndConditions</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.</para>
     ///     <para type="description">The terms and conditions associated with device management of the company.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/termsAndConditions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneTermsAndConditions", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.termsAndConditions")]
@@ -421,9 +421,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.termsAndConditions&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/termsAndConditions/termsAndConditionId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.termsAndConditions&quot; object from the &quot;termsAndConditions&quot; collection.</para>
     ///     <para type="description">The terms and conditions associated with device management of the company.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/termsAndConditions/termsAndConditionId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneTermsAndConditions", ConfirmImpact = ConfirmImpact.High)]

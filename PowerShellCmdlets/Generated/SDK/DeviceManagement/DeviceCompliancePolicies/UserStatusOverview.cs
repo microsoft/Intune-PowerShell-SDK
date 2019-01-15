@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;userStatusOverview&quot; object.</para>
-    ///     <para type="description">GET ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatusOverview</para>
     ///     <para type="description">Retrieves the &quot;userStatusOverview&quot; object (which is of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;).</para>
     ///     <para type="description">Device compliance users status overview</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatusOverview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneDeviceCompliancePolicyUserStatusOverview", DefaultParameterSetName = @"Get")]
@@ -105,9 +105,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceComplianceUserOverview&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatusOverview</para>
     ///     <para type="description">Creates the &quot;userStatusOverview&quot; object (which is of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;).</para>
     ///     <para type="description">Device compliance users status overview</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatusOverview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneDeviceCompliancePolicyUserStatusOverview", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceComplianceUserOverview")]
@@ -211,9 +211,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceComplianceUserOverview&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatusOverview</para>
     ///     <para type="description">Updates the &quot;userStatusOverview&quot; object (which is of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;).</para>
     ///     <para type="description">Device compliance users status overview</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatusOverview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneDeviceCompliancePolicyUserStatusOverview", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceComplianceUserOverview")]
@@ -316,9 +316,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceComplianceUserOverview&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatusOverview</para>
     ///     <para type="description">Removes the &quot;userStatusOverview&quot; object (which is of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;).</para>
     ///     <para type="description">Device compliance users status overview</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatusOverview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneDeviceCompliancePolicyUserStatusOverview", ConfirmImpact = ConfirmImpact.High)]

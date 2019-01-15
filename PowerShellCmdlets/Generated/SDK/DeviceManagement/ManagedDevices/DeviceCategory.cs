@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;deviceCategory&quot; object.</para>
-    ///     <para type="description">GET ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCategory</para>
     ///     <para type="description">Retrieves the &quot;deviceCategory&quot; object (which is of type &quot;microsoft.graph.deviceCategory&quot;).</para>
     ///     <para type="description">Device category</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCategory</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneManagedDeviceDeviceCategory", DefaultParameterSetName = @"Get")]
@@ -55,9 +55,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceCategory&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCategory</para>
     ///     <para type="description">Creates the &quot;deviceCategory&quot; object (which is of type &quot;microsoft.graph.deviceCategory&quot;).</para>
     ///     <para type="description">Device category</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCategory</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneManagedDeviceDeviceCategory", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCategory")]
@@ -106,9 +106,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceCategory&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCategory</para>
     ///     <para type="description">Updates the &quot;deviceCategory&quot; object (which is of type &quot;microsoft.graph.deviceCategory&quot;).</para>
     ///     <para type="description">Device category</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCategory</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneManagedDeviceDeviceCategory", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCategory")]
@@ -156,9 +156,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceCategory&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCategory</para>
     ///     <para type="description">Removes the &quot;deviceCategory&quot; object (which is of type &quot;microsoft.graph.deviceCategory&quot;).</para>
     ///     <para type="description">Device category</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCategory</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneManagedDeviceDeviceCategory", ConfirmImpact = ConfirmImpact.High)]

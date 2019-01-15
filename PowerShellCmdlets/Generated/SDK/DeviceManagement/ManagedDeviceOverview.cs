@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;managedDeviceOverview&quot; object.</para>
-    ///     <para type="description">GET ~/deviceManagement/managedDeviceOverview</para>
     ///     <para type="description">Retrieves the &quot;managedDeviceOverview&quot; object (which is of type &quot;microsoft.graph.managedDeviceOverview&quot;).</para>
     ///     <para type="description">Device overview</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/managedDeviceOverview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneManagedDeviceOverview", DefaultParameterSetName = @"Get")]
@@ -74,9 +74,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;managedDeviceOverview&quot; object reference.</para>
-    ///     <para type="description">GET ~/deviceManagement/managedDeviceOverview/$ref</para>
     ///     <para type="description">Retrieves the &quot;managedDeviceOverview&quot; object reference (which is of type &quot;microsoft.graph.managedDeviceOverview&quot;).</para>
     ///     <para type="description">Device overview</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/managedDeviceOverview/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneManagedDeviceOverviewReference", DefaultParameterSetName = @"Get")]
@@ -142,9 +142,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a reference from a &quot;deviceManagement&quot; to a &quot;microsoft.graph.managedDeviceOverview&quot; object.</para>
-    ///     <para type="description">PUT ~/deviceManagement/managedDeviceOverview/$ref</para>
     ///     <para type="description">Creates a reference from the &quot;deviceManagement&quot; object to a &quot;managedDeviceOverview&quot;.</para>
     ///     <para type="description">Device overview</para>
+    ///     <para type="description">Graph Call: PUT ~/deviceManagement/managedDeviceOverview/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneManagedDeviceOverviewReference", ConfirmImpact = ConfirmImpact.Low)]
@@ -169,9 +169,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a reference from a &quot;deviceManagement&quot; to a &quot;microsoft.graph.managedDeviceOverview&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/managedDeviceOverview/$ref</para>
     ///     <para type="description">Removes a reference from the &quot;deviceManagement&quot; object to a &quot;managedDeviceOverview&quot;.</para>
     ///     <para type="description">Device overview</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/managedDeviceOverview/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneManagedDeviceOverviewReference", ConfirmImpact = ConfirmImpact.High)]

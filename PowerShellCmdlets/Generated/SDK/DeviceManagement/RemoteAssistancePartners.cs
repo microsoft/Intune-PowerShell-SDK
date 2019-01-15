@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.remoteAssistancePartner&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/remoteAssistancePartners</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.remoteAssistancePartner&quot; objects in the &quot;remoteAssistancePartners&quot; collection.</para>
     ///     <para type="description">The remote assist partners.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/remoteAssistancePartners</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneRemoteAssistancePartner", DefaultParameterSetName = @"Search")]
@@ -76,9 +76,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.remoteAssistancePartner&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/remoteAssistancePartners</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.remoteAssistancePartner&quot; object to the &quot;remoteAssistancePartners&quot; collection.</para>
     ///     <para type="description">The remote assist partners.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/remoteAssistancePartners</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneRemoteAssistancePartner", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.remoteAssistancePartner")]
@@ -152,9 +152,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.remoteAssistancePartner&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/remoteAssistancePartners</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.remoteAssistancePartner&quot; object in the &quot;remoteAssistancePartners&quot; collection.</para>
     ///     <para type="description">The remote assist partners.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/remoteAssistancePartners</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneRemoteAssistancePartner", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.remoteAssistancePartner")]
@@ -229,9 +229,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.remoteAssistancePartner&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/remoteAssistancePartners/remoteAssistancePartnerId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.remoteAssistancePartner&quot; object from the &quot;remoteAssistancePartners&quot; collection.</para>
     ///     <para type="description">The remote assist partners.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/remoteAssistancePartners/remoteAssistancePartnerId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneRemoteAssistancePartner", ConfirmImpact = ConfirmImpact.High)]
@@ -257,9 +257,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/remoteAssistancePartners/beginOnboarding</para>
     ///     <para type="description">The action &quot;microsoft.graph.beginOnboarding&quot;, which exists on the type &quot;microsoft.graph.remoteAssistancePartner&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/remoteAssistancePartners/beginOnboarding</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneRemoteAssistancePartnerBeginOnboarding", ConfirmImpact = ConfirmImpact.High)]
@@ -285,9 +285,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/remoteAssistancePartners/disconnect</para>
     ///     <para type="description">The action &quot;microsoft.graph.disconnect&quot;, which exists on the type &quot;microsoft.graph.remoteAssistancePartner&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/remoteAssistancePartners/disconnect</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneRemoteAssistancePartnerDisconnect", ConfirmImpact = ConfirmImpact.High)]

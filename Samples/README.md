@@ -103,7 +103,7 @@ $createdApps = 'https://www.bing.com', 'https://developer.microsoft.com/graph', 
     New-IntuneMobileApp `
         -webApp `
         -displayName $_ `
-        -publisher 'Rohit' `
+        -publisher 'IT Professional' `
         -appUrl $_ `
         -useManagedBrowser $false `
 }
