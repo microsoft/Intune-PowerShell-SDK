@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.notificationMessageTemplate&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/notificationMessageTemplates</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.notificationMessageTemplate&quot; objects in the &quot;notificationMessageTemplates&quot; collection.</para>
     ///     <para type="description">The Notification Message Templates.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/notificationMessageTemplates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneNotificationMessageTemplate", DefaultParameterSetName = @"Search")]
@@ -86,9 +86,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.notificationMessageTemplate&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/notificationMessageTemplates</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.notificationMessageTemplate&quot; object to the &quot;notificationMessageTemplates&quot; collection.</para>
     ///     <para type="description">The Notification Message Templates.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/notificationMessageTemplates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneNotificationMessageTemplate", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.notificationMessageTemplate")]
@@ -175,9 +175,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.notificationMessageTemplate&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/notificationMessageTemplates</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.</para>
     ///     <para type="description">The Notification Message Templates.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/notificationMessageTemplates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneNotificationMessageTemplate", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.notificationMessageTemplate")]
@@ -265,9 +265,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.notificationMessageTemplate&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/notificationMessageTemplates/notificationMessageTemplateId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.notificationMessageTemplate&quot; object from the &quot;notificationMessageTemplates&quot; collection.</para>
     ///     <para type="description">The Notification Message Templates.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/notificationMessageTemplates/notificationMessageTemplateId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneNotificationMessageTemplate", ConfirmImpact = ConfirmImpact.High)]
@@ -293,9 +293,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/notificationMessageTemplates/sendTestMessage</para>
     ///     <para type="description">The action &quot;microsoft.graph.sendTestMessage&quot;, which exists on the type &quot;microsoft.graph.notificationMessageTemplate&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/notificationMessageTemplates/sendTestMessage</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneSendTestMessage", ConfirmImpact = ConfirmImpact.High)]

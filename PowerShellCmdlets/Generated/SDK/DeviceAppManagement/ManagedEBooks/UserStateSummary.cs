@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.userInstallStateSummary&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.userInstallStateSummary&quot; objects in the &quot;userStateSummary&quot; collection.</para>
     ///     <para type="description">The list of installation states for this eBook.</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneManagedEBookUserStateSummary", DefaultParameterSetName = @"Search")]
@@ -96,9 +96,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.userInstallStateSummary&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.userInstallStateSummary&quot; object to the &quot;userStateSummary&quot; collection.</para>
     ///     <para type="description">The list of installation states for this eBook.</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneManagedEBookUserStateSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.userInstallStateSummary")]
@@ -191,9 +191,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.userInstallStateSummary&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.userInstallStateSummary&quot; object in the &quot;userStateSummary&quot; collection.</para>
     ///     <para type="description">The list of installation states for this eBook.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneManagedEBookUserStateSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.userInstallStateSummary")]
@@ -287,9 +287,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.userInstallStateSummary&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/userInstallStateSummaryId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.userInstallStateSummary&quot; object from the &quot;userStateSummary&quot; collection.</para>
     ///     <para type="description">The list of installation states for this eBook.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/userInstallStateSummaryId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneManagedEBookUserStateSummary", ConfirmImpact = ConfirmImpact.High)]

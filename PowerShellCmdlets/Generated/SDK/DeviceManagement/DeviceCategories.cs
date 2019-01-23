@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.deviceCategory&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/deviceCategories</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceCategory&quot; objects in the &quot;deviceCategories&quot; collection.</para>
     ///     <para type="description">The list of device categories with the tenant.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/deviceCategories</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneDeviceCategory", DefaultParameterSetName = @"Search")]
@@ -56,9 +56,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceCategory&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/deviceCategories</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceCategory&quot; object to the &quot;deviceCategories&quot; collection.</para>
     ///     <para type="description">The list of device categories with the tenant.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/deviceCategories</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneDeviceCategory", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCategory")]
@@ -106,9 +106,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceCategory&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/deviceCategories</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceCategory&quot; object in the &quot;deviceCategories&quot; collection.</para>
     ///     <para type="description">The list of device categories with the tenant.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/deviceCategories</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneDeviceCategory", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCategory")]
@@ -157,9 +157,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceCategory&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceCategories/deviceCategoryId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceCategory&quot; object from the &quot;deviceCategories&quot; collection.</para>
     ///     <para type="description">The list of device categories with the tenant.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/deviceCategories/deviceCategoryId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneDeviceCategory", ConfirmImpact = ConfirmImpact.High)]

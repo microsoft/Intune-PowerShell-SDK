@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;deploymentSummary&quot; object.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/deploymentSummary</para>
     ///     <para type="description">Retrieves the &quot;deploymentSummary&quot; object (which is of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;).</para>
     ///     <para type="description">Navigation property to deployment summary of the configuration.</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/deploymentSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneAppProtectionPolicyDefaultDeploymentSummary", DefaultParameterSetName = @"Get")]
@@ -80,9 +80,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/deploymentSummary</para>
     ///     <para type="description">Creates the &quot;deploymentSummary&quot; object (which is of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;).</para>
     ///     <para type="description">Navigation property to deployment summary of the configuration.</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/deploymentSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneAppProtectionPolicyDefaultDeploymentSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedAppPolicyDeploymentSummary")]
@@ -161,9 +161,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/deploymentSummary</para>
     ///     <para type="description">Updates the &quot;deploymentSummary&quot; object (which is of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;).</para>
     ///     <para type="description">Navigation property to deployment summary of the configuration.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/deploymentSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneAppProtectionPolicyDefaultDeploymentSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedAppPolicyDeploymentSummary")]
@@ -241,9 +241,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/deploymentSummary</para>
     ///     <para type="description">Removes the &quot;deploymentSummary&quot; object (which is of type &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot;).</para>
     ///     <para type="description">Navigation property to deployment summary of the configuration.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/deploymentSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneAppProtectionPolicyDefaultDeploymentSummary", ConfirmImpact = ConfirmImpact.High)]

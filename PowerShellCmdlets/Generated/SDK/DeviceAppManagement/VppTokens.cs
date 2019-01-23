@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.vppToken&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/vppTokens</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.vppToken&quot; objects in the &quot;vppTokens&quot; collection.</para>
     ///     <para type="description">List of Vpp tokens for this organization.</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement/vppTokens</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneVppToken", DefaultParameterSetName = @"Search")]
@@ -146,9 +146,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.vppToken&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/vppTokens</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.vppToken&quot; object to the &quot;vppTokens&quot; collection.</para>
     ///     <para type="description">List of Vpp tokens for this organization.</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement/vppTokens</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneVppToken", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.vppToken")]
@@ -307,9 +307,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.vppToken&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/vppTokens</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.vppToken&quot; object in the &quot;vppTokens&quot; collection.</para>
     ///     <para type="description">List of Vpp tokens for this organization.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/vppTokens</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneVppToken", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.vppToken")]
@@ -469,9 +469,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.vppToken&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/vppTokens/vppTokenId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.vppToken&quot; object from the &quot;vppTokens&quot; collection.</para>
     ///     <para type="description">List of Vpp tokens for this organization.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/vppTokens/vppTokenId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneVppToken", ConfirmImpact = ConfirmImpact.High)]
@@ -497,9 +497,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceAppManagement/vppTokens/syncLicenses</para>
     ///     <para type="description">The action &quot;microsoft.graph.syncLicenses&quot;, which exists on the type &quot;microsoft.graph.vppToken&quot;.</para>
     ///     <para type="description">This action returns a &quot;microsoft.graph.vppToken&quot; object.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceAppManagement/vppTokens/syncLicenses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneVppTokenSyncLicense", ConfirmImpact = ConfirmImpact.High)]

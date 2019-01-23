@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.deviceComplianceUserStatus&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatuses</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceComplianceUserStatus&quot; objects in the &quot;userStatuses&quot; collection.</para>
     ///     <para type="description">List of DeviceComplianceUserStatus.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneDeviceCompliancePolicyUserStatus", DefaultParameterSetName = @"Search")]
@@ -96,9 +96,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceComplianceUserStatus&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatuses</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceComplianceUserStatus&quot; object to the &quot;userStatuses&quot; collection.</para>
     ///     <para type="description">List of DeviceComplianceUserStatus.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneDeviceCompliancePolicyUserStatus", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceComplianceUserStatus")]
@@ -193,9 +193,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceComplianceUserStatus&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatuses</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceComplianceUserStatus&quot; object in the &quot;userStatuses&quot; collection.</para>
     ///     <para type="description">List of DeviceComplianceUserStatus.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneDeviceCompliancePolicyUserStatus", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceComplianceUserStatus")]
@@ -291,9 +291,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceComplianceUserStatus&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatuses/deviceComplianceUserStatusId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceComplianceUserStatus&quot; object from the &quot;userStatuses&quot; collection.</para>
     ///     <para type="description">List of DeviceComplianceUserStatus.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatuses/deviceComplianceUserStatusId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneDeviceCompliancePolicyUserStatus", ConfirmImpact = ConfirmImpact.High)]

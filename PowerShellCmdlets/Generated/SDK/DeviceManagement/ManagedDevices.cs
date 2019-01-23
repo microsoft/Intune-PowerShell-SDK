@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.managedDevice&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/managedDevices</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedDevice&quot; objects in the &quot;managedDevices&quot; collection.</para>
     ///     <para type="description">The list of managed devices.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/managedDevices</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneManagedDevice", DefaultParameterSetName = @"Search")]
@@ -526,9 +526,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.managedDevice&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.managedDevice&quot; object to the &quot;managedDevices&quot; collection.</para>
     ///     <para type="description">The list of managed devices.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/managedDevices</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneManagedDevice", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedDevice")]
@@ -1131,9 +1131,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.managedDevice&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/managedDevices</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
     ///     <para type="description">The list of managed devices.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/managedDevices</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneManagedDevice", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedDevice")]
@@ -1737,9 +1737,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.managedDevice&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/managedDevices/managedDeviceId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.managedDevice&quot; object from the &quot;managedDevices&quot; collection.</para>
     ///     <para type="description">The list of managed devices.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/managedDevices/managedDeviceId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneManagedDevice", ConfirmImpact = ConfirmImpact.High)]
@@ -1765,9 +1765,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/retire</para>
     ///     <para type="description">The action &quot;microsoft.graph.retire&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/retire</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneManagedDeviceRetire", ConfirmImpact = ConfirmImpact.High)]
@@ -1793,9 +1793,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/wipe</para>
     ///     <para type="description">The action &quot;microsoft.graph.wipe&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/wipe</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneManagedDeviceWipeDevice", ConfirmImpact = ConfirmImpact.High)]
@@ -1848,9 +1848,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/resetPasscode</para>
     ///     <para type="description">The action &quot;microsoft.graph.resetPasscode&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/resetPasscode</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneManagedDeviceResetPasscode", ConfirmImpact = ConfirmImpact.High)]
@@ -1876,9 +1876,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/remoteLock</para>
     ///     <para type="description">The action &quot;microsoft.graph.remoteLock&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/remoteLock</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneManagedDeviceRemoteLock", ConfirmImpact = ConfirmImpact.High)]
@@ -1904,9 +1904,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/requestRemoteAssistance</para>
     ///     <para type="description">The action &quot;microsoft.graph.requestRemoteAssistance&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/requestRemoteAssistance</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneMangedDeviceRequestRemoteAssistance", ConfirmImpact = ConfirmImpact.High)]
@@ -1932,9 +1932,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/disableLostMode</para>
     ///     <para type="description">The action &quot;microsoft.graph.disableLostMode&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/disableLostMode</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneManagedDeviceDisableLostMode", ConfirmImpact = ConfirmImpact.High)]
@@ -1960,9 +1960,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/locateDevice</para>
     ///     <para type="description">The action &quot;microsoft.graph.locateDevice&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/locateDevice</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneManagedDeviceLocateDevice", ConfirmImpact = ConfirmImpact.High)]
@@ -1988,9 +1988,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/bypassActivationLock</para>
     ///     <para type="description">The action &quot;microsoft.graph.bypassActivationLock&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/bypassActivationLock</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneManagedDeviceBypassActivationLock", ConfirmImpact = ConfirmImpact.High)]
@@ -2016,9 +2016,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/rebootNow</para>
     ///     <para type="description">The action &quot;microsoft.graph.rebootNow&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/rebootNow</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneManagedDeviceRebootNow", ConfirmImpact = ConfirmImpact.High)]
@@ -2044,9 +2044,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/shutDown</para>
     ///     <para type="description">The action &quot;microsoft.graph.shutDown&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/shutDown</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneManagedDeviceShutDownDevice", ConfirmImpact = ConfirmImpact.High)]
@@ -2072,9 +2072,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/recoverPasscode</para>
     ///     <para type="description">The action &quot;microsoft.graph.recoverPasscode&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/recoverPasscode</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneManagedDeviceRecoverPasscode", ConfirmImpact = ConfirmImpact.High)]
@@ -2100,9 +2100,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/cleanWindowsDevice</para>
     ///     <para type="description">The action &quot;microsoft.graph.cleanWindowsDevice&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/cleanWindowsDevice</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneManagedDeviceCleanWindowsDevice", ConfirmImpact = ConfirmImpact.High)]
@@ -2138,9 +2138,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/logoutSharedAppleDeviceActiveUser</para>
     ///     <para type="description">The action &quot;microsoft.graph.logoutSharedAppleDeviceActiveUser&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/logoutSharedAppleDeviceActiveUser</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneLogoutSharedAppleDeviceActiveUser", ConfirmImpact = ConfirmImpact.High)]
@@ -2166,9 +2166,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/deleteUserFromSharedAppleDevice</para>
     ///     <para type="description">The action &quot;microsoft.graph.deleteUserFromSharedAppleDevice&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/deleteUserFromSharedAppleDevice</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneManagedDeviceDeleteUserFromSharedAppleDevice", ConfirmImpact = ConfirmImpact.High)]
@@ -2203,9 +2203,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/syncDevice</para>
     ///     <para type="description">The action &quot;microsoft.graph.syncDevice&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/syncDevice</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneManagedDeviceSyncDevice", ConfirmImpact = ConfirmImpact.High)]
@@ -2231,9 +2231,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/windowsDefenderScan</para>
     ///     <para type="description">The action &quot;microsoft.graph.windowsDefenderScan&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/windowsDefenderScan</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneManagedDeviceWindowsDefenderScan", ConfirmImpact = ConfirmImpact.High)]
@@ -2269,9 +2269,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/windowsDefenderUpdateSignatures</para>
     ///     <para type="description">The action &quot;microsoft.graph.windowsDefenderUpdateSignatures&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/windowsDefenderUpdateSignatures</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneManagedDeviceWindowsDefenderUpdateSignature", ConfirmImpact = ConfirmImpact.High)]
@@ -2297,9 +2297,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/managedDevices/updateWindowsDeviceAccount</para>
     ///     <para type="description">The action &quot;microsoft.graph.updateWindowsDeviceAccount&quot;, which exists on the type &quot;microsoft.graph.managedDevice&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/updateWindowsDeviceAccount</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneManagedDeviceUpdateWindowsDeviceAccount", ConfirmImpact = ConfirmImpact.High)]

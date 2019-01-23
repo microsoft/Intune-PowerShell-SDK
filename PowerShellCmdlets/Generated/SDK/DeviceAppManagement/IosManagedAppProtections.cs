@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.iosManagedAppProtection&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/iosManagedAppProtections</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.iosManagedAppProtection&quot; objects in the &quot;iosManagedAppProtections&quot; collection.</para>
     ///     <para type="description">iOS managed app policies.</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement/iosManagedAppProtections</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneAppProtectionPolicyIos", DefaultParameterSetName = @"Search")]
@@ -426,9 +426,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.iosManagedAppProtection&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/iosManagedAppProtections</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.iosManagedAppProtection&quot; object to the &quot;iosManagedAppProtections&quot; collection.</para>
     ///     <para type="description">iOS managed app policies.</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement/iosManagedAppProtections</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneAppProtectionPolicyIos", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.iosManagedAppProtection")]
@@ -913,9 +913,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.iosManagedAppProtection&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/iosManagedAppProtections</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.iosManagedAppProtection&quot; object in the &quot;iosManagedAppProtections&quot; collection.</para>
     ///     <para type="description">iOS managed app policies.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/iosManagedAppProtections</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneAppProtectionPolicyIos", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.iosManagedAppProtection")]
@@ -1401,9 +1401,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.iosManagedAppProtection&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/iosManagedAppProtections/iosManagedAppProtectionId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.iosManagedAppProtection&quot; object from the &quot;iosManagedAppProtections&quot; collection.</para>
     ///     <para type="description">iOS managed app policies.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/iosManagedAppProtections/iosManagedAppProtectionId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneAppProtectionPolicyIos", ConfirmImpact = ConfirmImpact.High)]
@@ -1429,9 +1429,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceAppManagement/iosManagedAppProtections/assign</para>
     ///     <para type="description">The action &quot;microsoft.graph.assign&quot;, which exists on the type &quot;microsoft.graph.iosManagedAppProtection&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceAppManagement/iosManagedAppProtections/assign</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneAppProtectionPolicyIosAssign", ConfirmImpact = ConfirmImpact.High)]
@@ -1467,9 +1467,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceAppManagement/iosManagedAppProtections/targetApps</para>
     ///     <para type="description">The action &quot;microsoft.graph.targetApps&quot;, which exists on the type &quot;microsoft.graph.iosManagedAppProtection&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceAppManagement/iosManagedAppProtections/targetApps</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneAppProtectionPolicyIosTargetApp", ConfirmImpact = ConfirmImpact.High)]

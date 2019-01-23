@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;conditionalAccessSettings&quot; object.</para>
-    ///     <para type="description">GET ~/deviceManagement/conditionalAccessSettings</para>
     ///     <para type="description">Retrieves the &quot;conditionalAccessSettings&quot; object (which is of type &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot;).</para>
     ///     <para type="description">The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/conditionalAccessSettings</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneConditionalAccessSetting", DefaultParameterSetName = @"Get")]
@@ -63,9 +63,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/conditionalAccessSettings</para>
     ///     <para type="description">Creates the &quot;conditionalAccessSettings&quot; object (which is of type &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot;).</para>
     ///     <para type="description">The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/conditionalAccessSettings</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneConditionalAccessSetting", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.onPremisesConditionalAccessSettings")]
@@ -128,9 +128,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/conditionalAccessSettings</para>
     ///     <para type="description">Updates the &quot;conditionalAccessSettings&quot; object (which is of type &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot;).</para>
     ///     <para type="description">The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/conditionalAccessSettings</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneConditionalAccessSetting", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.onPremisesConditionalAccessSettings")]
@@ -192,9 +192,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/conditionalAccessSettings</para>
     ///     <para type="description">Removes the &quot;conditionalAccessSettings&quot; object (which is of type &quot;microsoft.graph.onPremisesConditionalAccessSettings&quot;).</para>
     ///     <para type="description">The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/conditionalAccessSettings</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneConditionalAccessSetting", ConfirmImpact = ConfirmImpact.High)]

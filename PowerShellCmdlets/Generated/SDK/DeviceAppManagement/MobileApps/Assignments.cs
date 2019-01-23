@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.mobileAppAssignment&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/mobileApps/{mobileAppId}/assignments</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.mobileAppAssignment&quot; objects in the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of group assignments for this mobile app.</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement/mobileApps/{mobileAppId}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneMobileAppAssignment", DefaultParameterSetName = @"Search")]
@@ -76,9 +76,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.mobileAppAssignment&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/mobileApps/{mobileAppId}/assignments</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.mobileAppAssignment&quot; object to the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of group assignments for this mobile app.</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement/mobileApps/{mobileAppId}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneMobileAppAssignment", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.mobileAppAssignment")]
@@ -151,9 +151,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.mobileAppAssignment&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/mobileApps/{mobileAppId}/assignments</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.mobileAppAssignment&quot; object in the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of group assignments for this mobile app.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/mobileApps/{mobileAppId}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneMobileAppAssignment", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.mobileAppAssignment")]
@@ -227,9 +227,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.mobileAppAssignment&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/mobileApps/{mobileAppId}/assignments/mobileAppAssignmentId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.mobileAppAssignment&quot; object from the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of group assignments for this mobile app.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/mobileApps/{mobileAppId}/assignments/mobileAppAssignmentId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneMobileAppAssignment", ConfirmImpact = ConfirmImpact.High)]

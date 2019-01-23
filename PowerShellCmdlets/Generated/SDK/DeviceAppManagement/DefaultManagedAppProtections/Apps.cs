@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.managedMobileApp&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedMobileApp&quot; objects in the &quot;apps&quot; collection.</para>
     ///     <para type="description">List of apps to which the policy is deployed.</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneAppProtectionPolicyDefaultApp", DefaultParameterSetName = @"Search")]
@@ -66,9 +66,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.managedMobileApp&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.managedMobileApp&quot; object to the &quot;apps&quot; collection.</para>
     ///     <para type="description">List of apps to which the policy is deployed.</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneAppProtectionPolicyDefaultApp", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedMobileApp")]
@@ -126,9 +126,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.managedMobileApp&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.managedMobileApp&quot; object in the &quot;apps&quot; collection.</para>
     ///     <para type="description">List of apps to which the policy is deployed.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneAppProtectionPolicyDefaultApp", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedMobileApp")]
@@ -187,9 +187,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.managedMobileApp&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps/managedMobileAppId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.managedMobileApp&quot; object from the &quot;apps&quot; collection.</para>
     ///     <para type="description">List of apps to which the policy is deployed.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps/managedMobileAppId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneAppProtectionPolicyDefaultApp", ConfirmImpact = ConfirmImpact.High)]

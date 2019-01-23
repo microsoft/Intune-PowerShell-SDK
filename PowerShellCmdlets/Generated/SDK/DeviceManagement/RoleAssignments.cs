@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/roleAssignments</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; objects in the &quot;roleAssignments&quot; collection.</para>
     ///     <para type="description">The Role Assignments.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/roleAssignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneRoleAssignment", DefaultParameterSetName = @"Search")]
@@ -74,9 +74,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/roleAssignments</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; object to the &quot;roleAssignments&quot; collection.</para>
     ///     <para type="description">The Role Assignments.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/roleAssignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneRoleAssignment", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleAssignment")]
@@ -148,9 +148,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/roleAssignments</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; object in the &quot;roleAssignments&quot; collection.</para>
     ///     <para type="description">The Role Assignments.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/roleAssignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneRoleAssignment", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleAssignment")]
@@ -223,9 +223,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/roleAssignments/deviceAndAppManagementRoleAssignmentId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; object from the &quot;roleAssignments&quot; collection.</para>
     ///     <para type="description">The Role Assignments.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/roleAssignments/deviceAndAppManagementRoleAssignmentId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneRoleAssignment", ConfirmImpact = ConfirmImpact.High)]

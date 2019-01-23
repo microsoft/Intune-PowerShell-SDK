@@ -6,15 +6,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.groupSetting&quot; objects.</para>
-    ///     <para type="description">GET ~/groups/{groupId}/settings</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.groupSetting&quot; objects in the &quot;settings&quot; collection.</para>
+    ///     <para type="description">Graph call: GET ~/groups/{groupId}/settings</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "GroupSettings", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "AADGroupSetting", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.groupSetting")]
     [ResourceTypePropertyName("settingODataType")]
     [ResourceReference]
-    public class Get_GroupSettings : GetOrSearchCmdlet
+    public class Get_AADGroupSetting : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -71,15 +71,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.groupSetting&quot; object.</para>
-    ///     <para type="description">POST ~/groups/{groupId}/settings</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.groupSetting&quot; object to the &quot;settings&quot; collection.</para>
+    ///     <para type="description">Graph call: POST ~/groups/{groupId}/settings</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "GroupSettings", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.groupSetting")]
+    [Cmdlet("New", "AADGroupSetting", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.groupSetting")]
     [ODataType("microsoft.graph.groupSetting")]
     [ResourceTypePropertyName("settingODataType")]
     [ResourceReference]
-    public class New_GroupSettings : PostCmdlet
+    public class New_AADGroupSetting : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.groupSetting&quot; object in the &quot;settings&quot; collection.</para>
@@ -139,14 +139,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.groupSetting&quot;.</para>
-    ///     <para type="description">PATCH ~/groups/{groupId}/settings</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.groupSetting&quot; object in the &quot;settings&quot; collection.</para>
+    ///     <para type="description">Graph Call: PATCH ~/groups/{groupId}/settings</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "GroupSettings", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.groupSetting")]
+    [Cmdlet("Update", "AADGroupSetting", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.groupSetting")]
     [ODataType("microsoft.graph.groupSetting")]
     [ResourceTypePropertyName("settingODataType")]
-    public class Update_GroupSettings : PatchCmdlet
+    public class Update_AADGroupSetting : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.groupSetting&quot; object in the &quot;settings&quot; collection.</para>
@@ -208,14 +208,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.groupSetting&quot; object.</para>
-    ///     <para type="description">DELETE ~/groups/{groupId}/settings/groupSettingId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.groupSetting&quot; object from the &quot;settings&quot; collection.</para>
+    ///     <para type="description">Graph Call: DELETE ~/groups/{groupId}/settings/groupSettingId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "GroupSettings", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "AADGroupSetting", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.groupSetting")]
     [ResourceTypePropertyName("settingODataType")]
-    public class Remove_GroupSettings : DeleteCmdlet
+    public class Remove_AADGroupSetting : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.groupSetting&quot; object in the &quot;settings&quot; collection.</para>

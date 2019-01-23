@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.roleDefinition&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/roleDefinitions</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.roleDefinition&quot; objects in the &quot;roleDefinitions&quot; collection.</para>
     ///     <para type="description">The Role Definitions.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/roleDefinitions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneRoleDefinition", DefaultParameterSetName = @"Search")]
@@ -75,9 +75,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.roleDefinition&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/roleDefinitions</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.roleDefinition&quot; object to the &quot;roleDefinitions&quot; collection.</para>
     ///     <para type="description">The Role Definitions.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/roleDefinitions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneRoleDefinition", ConfirmImpact = ConfirmImpact.Low)]
@@ -170,9 +170,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.roleDefinition&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/roleDefinitions</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.</para>
     ///     <para type="description">The Role Definitions.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/roleDefinitions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneRoleDefinition", ConfirmImpact = ConfirmImpact.Medium)]
@@ -266,9 +266,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.roleDefinition&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/roleDefinitions/roleDefinitionId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.roleDefinition&quot; object from the &quot;roleDefinitions&quot; collection.</para>
     ///     <para type="description">The Role Definitions.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/roleDefinitions/roleDefinitionId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneRoleDefinition", ConfirmImpact = ConfirmImpact.High)]

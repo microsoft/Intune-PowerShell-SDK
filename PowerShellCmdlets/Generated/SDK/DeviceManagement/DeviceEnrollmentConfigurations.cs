@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/deviceEnrollmentConfigurations</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; objects in the &quot;deviceEnrollmentConfigurations&quot; collection.</para>
     ///     <para type="description">The list of device enrollment configurations</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/deviceEnrollmentConfigurations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneDeviceEnrollmentConfiguration", DefaultParameterSetName = @"Search")]
@@ -280,9 +280,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/deviceEnrollmentConfigurations</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object to the &quot;deviceEnrollmentConfigurations&quot; collection.</para>
     ///     <para type="description">The list of device enrollment configurations</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/deviceEnrollmentConfigurations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneDeviceEnrollmentConfiguration", ConfirmImpact = ConfirmImpact.Low)]
@@ -629,9 +629,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/deviceEnrollmentConfigurations</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object in the &quot;deviceEnrollmentConfigurations&quot; collection.</para>
     ///     <para type="description">The list of device enrollment configurations</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/deviceEnrollmentConfigurations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneDeviceEnrollmentConfiguration", ConfirmImpact = ConfirmImpact.Medium)]
@@ -979,9 +979,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceEnrollmentConfigurations/deviceEnrollmentConfigurationId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceEnrollmentConfiguration&quot; object from the &quot;deviceEnrollmentConfigurations&quot; collection.</para>
     ///     <para type="description">The list of device enrollment configurations</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/deviceEnrollmentConfigurations/deviceEnrollmentConfigurationId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneDeviceEnrollmentConfiguration", ConfirmImpact = ConfirmImpact.High)]
@@ -1007,9 +1007,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/deviceEnrollmentConfigurations/setPriority</para>
     ///     <para type="description">The action &quot;microsoft.graph.setPriority&quot;, which exists on the type &quot;microsoft.graph.deviceEnrollmentConfiguration&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/deviceEnrollmentConfigurations/setPriority</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneDeviceEnrollmentConfigurationSetPriority", ConfirmImpact = ConfirmImpact.High)]
@@ -1045,9 +1045,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/deviceEnrollmentConfigurations/assign</para>
     ///     <para type="description">The action &quot;microsoft.graph.assign&quot;, which exists on the type &quot;microsoft.graph.deviceEnrollmentConfiguration&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/deviceEnrollmentConfigurations/assign</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneDeviceEnrollmentConfigurationAssign", ConfirmImpact = ConfirmImpact.High)]

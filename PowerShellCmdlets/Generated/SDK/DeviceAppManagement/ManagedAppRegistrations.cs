@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.managedAppRegistration&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/managedAppRegistrations</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedAppRegistration&quot; objects in the &quot;managedAppRegistrations&quot; collection.</para>
     ///     <para type="description">The managed app registrations.</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement/managedAppRegistrations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneManagedAppRegistration", DefaultParameterSetName = @"Search")]
@@ -155,9 +155,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.managedAppRegistration&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/managedAppRegistrations</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.managedAppRegistration&quot; object to the &quot;managedAppRegistrations&quot; collection.</para>
     ///     <para type="description">The managed app registrations.</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement/managedAppRegistrations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneManagedAppRegistration", ConfirmImpact = ConfirmImpact.Low)]
@@ -362,9 +362,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.managedAppRegistration&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/managedAppRegistrations</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.</para>
     ///     <para type="description">The managed app registrations.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/managedAppRegistrations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneManagedAppRegistration", ConfirmImpact = ConfirmImpact.Medium)]
@@ -570,9 +570,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.managedAppRegistration&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/managedAppRegistrations/managedAppRegistrationId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.managedAppRegistration&quot; object from the &quot;managedAppRegistrations&quot; collection.</para>
     ///     <para type="description">The managed app registrations.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/managedAppRegistrations/managedAppRegistrationId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneManagedAppRegistration", ConfirmImpact = ConfirmImpact.High)]
@@ -598,9 +598,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">GET ~/deviceAppManagement/managedAppRegistrations/getUserIdsWithFlaggedAppRegistration</para>
     ///     <para type="description">The function &quot;microsoft.graph.getUserIdsWithFlaggedAppRegistration&quot;, which exists on the type &quot;microsoft.graph.managedAppRegistration&quot;.</para>
     ///     <para type="description">This function returns a collection of &quot;Edm.String&quot; objects.</para>
+    ///     <para type="description">Graph Call: GET ~/deviceAppManagement/managedAppRegistrations/getUserIdsWithFlaggedAppRegistration</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneGetUserIdsWithFlaggedAppRegistration", DefaultParameterSetName = @"Search")]

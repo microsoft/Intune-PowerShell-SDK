@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;deviceStatusOverview&quot; object.</para>
-    ///     <para type="description">GET ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatusOverview</para>
     ///     <para type="description">Retrieves the &quot;deviceStatusOverview&quot; object (which is of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;).</para>
     ///     <para type="description">Device Configuration devices status overview</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatusOverview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneDeviceConfigurationPolicyDeviceStatusOverview", DefaultParameterSetName = @"Get")]
@@ -105,9 +105,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatusOverview</para>
     ///     <para type="description">Creates the &quot;deviceStatusOverview&quot; object (which is of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;).</para>
     ///     <para type="description">Device Configuration devices status overview</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatusOverview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneDeviceConfigurationPolicyDeviceStatusOverview", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationDeviceOverview")]
@@ -211,9 +211,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatusOverview</para>
     ///     <para type="description">Updates the &quot;deviceStatusOverview&quot; object (which is of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;).</para>
     ///     <para type="description">Device Configuration devices status overview</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatusOverview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneDeviceConfigurationPolicyDeviceStatusOverview", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationDeviceOverview")]
@@ -316,9 +316,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatusOverview</para>
     ///     <para type="description">Removes the &quot;deviceStatusOverview&quot; object (which is of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;).</para>
     ///     <para type="description">Device Configuration devices status overview</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatusOverview</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneDeviceConfigurationPolicyDeviceStatusOverview", ConfirmImpact = ConfirmImpact.High)]

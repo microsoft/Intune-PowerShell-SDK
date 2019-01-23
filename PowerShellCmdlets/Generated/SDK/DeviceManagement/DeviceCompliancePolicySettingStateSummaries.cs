@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/deviceCompliancePolicySettingStateSummaries</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; objects in the &quot;deviceCompliancePolicySettingStateSummaries&quot; collection.</para>
     ///     <para type="description">The summary states of compliance policy settings for this account.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/deviceCompliancePolicySettingStateSummaries</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneDeviceCompliancePolicySettingSummary", DefaultParameterSetName = @"Search")]
@@ -145,9 +145,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/deviceCompliancePolicySettingStateSummaries</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object to the &quot;deviceCompliancePolicySettingStateSummaries&quot; collection.</para>
     ///     <para type="description">The summary states of compliance policy settings for this account.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/deviceCompliancePolicySettingStateSummaries</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneDeviceCompliancePolicySettingSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicySettingStateSummary")]
@@ -299,9 +299,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/deviceCompliancePolicySettingStateSummaries</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object in the &quot;deviceCompliancePolicySettingStateSummaries&quot; collection.</para>
     ///     <para type="description">The summary states of compliance policy settings for this account.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/deviceCompliancePolicySettingStateSummaries</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneDeviceCompliancePolicySettingSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicySettingStateSummary")]
@@ -454,9 +454,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceCompliancePolicySettingStateSummaries/deviceCompliancePolicySettingStateSummaryId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object from the &quot;deviceCompliancePolicySettingStateSummaries&quot; collection.</para>
     ///     <para type="description">The summary states of compliance policy settings for this account.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/deviceCompliancePolicySettingStateSummaries/deviceCompliancePolicySettingStateSummaryId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneDeviceCompliancePolicySettingSummary", ConfirmImpact = ConfirmImpact.High)]

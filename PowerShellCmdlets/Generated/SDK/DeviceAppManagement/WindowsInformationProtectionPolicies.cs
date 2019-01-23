@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/windowsInformationProtectionPolicies</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; objects in the &quot;windowsInformationProtectionPolicies&quot; collection.</para>
     ///     <para type="description">Windows information protection for apps running on devices which are not MDM enrolled.</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement/windowsInformationProtectionPolicies</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneWindowsInformationProtectionPolicy", DefaultParameterSetName = @"Search")]
@@ -446,9 +446,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/windowsInformationProtectionPolicies</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object to the &quot;windowsInformationProtectionPolicies&quot; collection.</para>
     ///     <para type="description">Windows information protection for apps running on devices which are not MDM enrolled.</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement/windowsInformationProtectionPolicies</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneWindowsInformationProtectionPolicy", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionPolicy")]
@@ -968,9 +968,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/windowsInformationProtectionPolicies</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object in the &quot;windowsInformationProtectionPolicies&quot; collection.</para>
     ///     <para type="description">Windows information protection for apps running on devices which are not MDM enrolled.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/windowsInformationProtectionPolicies</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneWindowsInformationProtectionPolicy", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionPolicy")]
@@ -1491,9 +1491,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/windowsInformationProtectionPolicies/windowsInformationProtectionPolicyId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.windowsInformationProtectionPolicy&quot; object from the &quot;windowsInformationProtectionPolicies&quot; collection.</para>
     ///     <para type="description">Windows information protection for apps running on devices which are not MDM enrolled.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/windowsInformationProtectionPolicies/windowsInformationProtectionPolicyId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneWindowsInformationProtectionPolicy", ConfirmImpact = ConfirmImpact.High)]
@@ -1519,9 +1519,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceAppManagement/windowsInformationProtectionPolicies/assign</para>
     ///     <para type="description">The action &quot;microsoft.graph.assign&quot;, which exists on the type &quot;microsoft.graph.windowsInformationProtectionPolicy&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceAppManagement/windowsInformationProtectionPolicies/assign</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneWindowsInformationProtectionPolicyAssign", ConfirmImpact = ConfirmImpact.High)]
@@ -1557,9 +1557,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceAppManagement/windowsInformationProtectionPolicies/targetApps</para>
     ///     <para type="description">The action &quot;microsoft.graph.targetApps&quot;, which exists on the type &quot;microsoft.graph.windowsInformationProtectionPolicy&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceAppManagement/windowsInformationProtectionPolicies/targetApps</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneWindowsInformationProtectionPolicyTargetApp", ConfirmImpact = ConfirmImpact.High)]

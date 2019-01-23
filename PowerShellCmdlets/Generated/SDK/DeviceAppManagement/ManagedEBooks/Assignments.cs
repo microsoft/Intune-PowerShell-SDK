@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.managedEBookAssignment&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/managedEBooks/{managedEBookId}/assignments</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.managedEBookAssignment&quot; objects in the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of assignments for this eBook.</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement/managedEBooks/{managedEBookId}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneManagedEBookAssignment", DefaultParameterSetName = @"Search")]
@@ -66,9 +66,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.managedEBookAssignment&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/managedEBooks/{managedEBookId}/assignments</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.managedEBookAssignment&quot; object to the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of assignments for this eBook.</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement/managedEBooks/{managedEBookId}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneManagedEBookAssignment", ConfirmImpact = ConfirmImpact.Low)]
@@ -150,9 +150,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.managedEBookAssignment&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/managedEBooks/{managedEBookId}/assignments</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.managedEBookAssignment&quot; object in the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of assignments for this eBook.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/managedEBooks/{managedEBookId}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneManagedEBookAssignment", ConfirmImpact = ConfirmImpact.Medium)]
@@ -235,9 +235,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.managedEBookAssignment&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/managedEBooks/{managedEBookId}/assignments/managedEBookAssignmentId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.managedEBookAssignment&quot; object from the &quot;assignments&quot; collection.</para>
     ///     <para type="description">The list of assignments for this eBook.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/managedEBooks/{managedEBookId}/assignments/managedEBookAssignmentId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneManagedEBookAssignment", ConfirmImpact = ConfirmImpact.High)]

@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.mobileAppContent&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.mobileAppContent&quot; objects in the &quot;contentVersions&quot; collection.</para>
     ///     <para type="description">The list of content versions for this app.</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneMobileAppContentVersion", DefaultParameterSetName = @"Search")]
@@ -70,9 +70,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.mobileAppContent&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.mobileAppContent&quot; object to the &quot;contentVersions&quot; collection.</para>
     ///     <para type="description">The list of content versions for this app.</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneMobileAppContentVersion", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.mobileAppContent")]
@@ -135,9 +135,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.mobileAppContent&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.mobileAppContent&quot; object in the &quot;contentVersions&quot; collection.</para>
     ///     <para type="description">The list of content versions for this app.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneMobileAppContentVersion", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.mobileAppContent")]
@@ -201,9 +201,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.mobileAppContent&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/mobileAppContentId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.mobileAppContent&quot; object from the &quot;contentVersions&quot; collection.</para>
     ///     <para type="description">The list of content versions for this app.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/mobileAppContentId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneMobileAppContentVersion", ConfirmImpact = ConfirmImpact.High)]

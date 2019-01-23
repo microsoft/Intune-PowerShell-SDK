@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.deviceManagementExchangeConnector&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceManagement/exchangeConnectors</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.deviceManagementExchangeConnector&quot; objects in the &quot;exchangeConnectors&quot; collection.</para>
     ///     <para type="description">The list of Exchange Connectors configured by the tenant.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/exchangeConnectors</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneExchangeConnector", DefaultParameterSetName = @"Search")]
@@ -126,9 +126,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/exchangeConnectors</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object to the &quot;exchangeConnectors&quot; collection.</para>
     ///     <para type="description">The list of Exchange Connectors configured by the tenant.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/exchangeConnectors</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneExchangeConnector", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceManagementExchangeConnector")]
@@ -261,9 +261,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceManagementExchangeConnector&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/exchangeConnectors</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.</para>
     ///     <para type="description">The list of Exchange Connectors configured by the tenant.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/exchangeConnectors</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneExchangeConnector", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceManagementExchangeConnector")]
@@ -397,9 +397,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/exchangeConnectors/deviceManagementExchangeConnectorId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object from the &quot;exchangeConnectors&quot; collection.</para>
     ///     <para type="description">The list of Exchange Connectors configured by the tenant.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/exchangeConnectors/deviceManagementExchangeConnectorId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneExchangeConnector", ConfirmImpact = ConfirmImpact.High)]
@@ -425,9 +425,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">POST ~/deviceManagement/exchangeConnectors/sync</para>
     ///     <para type="description">The action &quot;microsoft.graph.sync&quot;, which exists on the type &quot;microsoft.graph.deviceManagementExchangeConnector&quot;.</para>
     ///     <para type="description">This action does not return any objects.</para>
+    ///     <para type="description">Graph Call: POST ~/deviceManagement/exchangeConnectors/sync</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneExchangeConnectorSync", ConfirmImpact = ConfirmImpact.High)]

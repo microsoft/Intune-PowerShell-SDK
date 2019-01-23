@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;deviceCompliancePolicyDeviceStateSummary&quot; object.</para>
-    ///     <para type="description">GET ~/deviceManagement/deviceCompliancePolicyDeviceStateSummary</para>
     ///     <para type="description">Retrieves the &quot;deviceCompliancePolicyDeviceStateSummary&quot; object (which is of type &quot;microsoft.graph.deviceCompliancePolicyDeviceStateSummary&quot;).</para>
     ///     <para type="description">The device compliance state summary for this account.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/deviceCompliancePolicyDeviceStateSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneDeviceCompliancePolicyDeviceStateSummary", DefaultParameterSetName = @"Get")]
@@ -115,9 +115,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.deviceCompliancePolicyDeviceStateSummary&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/deviceCompliancePolicyDeviceStateSummary</para>
     ///     <para type="description">Creates the &quot;deviceCompliancePolicyDeviceStateSummary&quot; object (which is of type &quot;microsoft.graph.deviceCompliancePolicyDeviceStateSummary&quot;).</para>
     ///     <para type="description">The device compliance state summary for this account.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/deviceCompliancePolicyDeviceStateSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneDeviceCompliancePolicyDeviceStateSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyDeviceStateSummary")]
@@ -233,9 +233,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.deviceCompliancePolicyDeviceStateSummary&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/deviceCompliancePolicyDeviceStateSummary</para>
     ///     <para type="description">Updates the &quot;deviceCompliancePolicyDeviceStateSummary&quot; object (which is of type &quot;microsoft.graph.deviceCompliancePolicyDeviceStateSummary&quot;).</para>
     ///     <para type="description">The device compliance state summary for this account.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/deviceCompliancePolicyDeviceStateSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneDeviceCompliancePolicyDeviceStateSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyDeviceStateSummary")]
@@ -350,9 +350,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.deviceCompliancePolicyDeviceStateSummary&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/deviceCompliancePolicyDeviceStateSummary</para>
     ///     <para type="description">Removes the &quot;deviceCompliancePolicyDeviceStateSummary&quot; object (which is of type &quot;microsoft.graph.deviceCompliancePolicyDeviceStateSummary&quot;).</para>
     ///     <para type="description">The device compliance state summary for this account.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/deviceCompliancePolicyDeviceStateSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneDeviceCompliancePolicyDeviceStateSummary", ConfirmImpact = ConfirmImpact.High)]

@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves the &quot;applePushNotificationCertificate&quot; object.</para>
-    ///     <para type="description">GET ~/deviceManagement/applePushNotificationCertificate</para>
     ///     <para type="description">Retrieves the &quot;applePushNotificationCertificate&quot; object (which is of type &quot;microsoft.graph.applePushNotificationCertificate&quot;).</para>
     ///     <para type="description">Apple push notification certificate.</para>
+    ///     <para type="description">Graph call: GET ~/deviceManagement/applePushNotificationCertificate</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneApplePushNotificationCertificate", DefaultParameterSetName = @"Get")]
@@ -74,9 +74,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.applePushNotificationCertificate&quot; object.</para>
-    ///     <para type="description">POST ~/deviceManagement/applePushNotificationCertificate</para>
     ///     <para type="description">Creates the &quot;applePushNotificationCertificate&quot; object (which is of type &quot;microsoft.graph.applePushNotificationCertificate&quot;).</para>
     ///     <para type="description">Apple push notification certificate.</para>
+    ///     <para type="description">Graph call: POST ~/deviceManagement/applePushNotificationCertificate</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneApplePushNotificationCertificate", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.applePushNotificationCertificate")]
@@ -147,9 +147,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.applePushNotificationCertificate&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceManagement/applePushNotificationCertificate</para>
     ///     <para type="description">Updates the &quot;applePushNotificationCertificate&quot; object (which is of type &quot;microsoft.graph.applePushNotificationCertificate&quot;).</para>
     ///     <para type="description">Apple push notification certificate.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceManagement/applePushNotificationCertificate</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneApplePushNotificationCertificate", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.applePushNotificationCertificate")]
@@ -219,9 +219,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.applePushNotificationCertificate&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceManagement/applePushNotificationCertificate</para>
     ///     <para type="description">Removes the &quot;applePushNotificationCertificate&quot; object (which is of type &quot;microsoft.graph.applePushNotificationCertificate&quot;).</para>
     ///     <para type="description">Apple push notification certificate.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceManagement/applePushNotificationCertificate</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneApplePushNotificationCertificate", ConfirmImpact = ConfirmImpact.High)]
@@ -236,9 +236,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     }
 
     /// <summary>
-    ///     <para type="description">GET ~/deviceManagement/applePushNotificationCertificate/downloadApplePushNotificationCertificateSigningRequest</para>
     ///     <para type="description">The function &quot;microsoft.graph.downloadApplePushNotificationCertificateSigningRequest&quot;, which exists on the type &quot;microsoft.graph.applePushNotificationCertificate&quot;.</para>
     ///     <para type="description">This function returns a &quot;Edm.String&quot; object.</para>
+    ///     <para type="description">Graph Call: GET ~/deviceManagement/applePushNotificationCertificate/downloadApplePushNotificationCertificateSigningRequest</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Invoke", "IntuneDownloadApplePushNotificationCertificateSigningRequest", DefaultParameterSetName = @"Get")]

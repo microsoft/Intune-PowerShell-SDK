@@ -6,9 +6,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Retrieves &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; objects.</para>
-    ///     <para type="description">GET ~/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/{iosManagedAppProtectionODataType}/assignments</para>
     ///     <para type="description">Retrieves &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; objects in the &quot;assignments&quot; collection.</para>
     ///     <para type="description">Navigation property to list of inclusion and exclusion groups to which the policy is deployed.</para>
+    ///     <para type="description">Graph call: GET ~/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/{iosManagedAppProtectionODataType}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Get", "IntuneAppProtectionPolicyIosAssignment", DefaultParameterSetName = @"Search")]
@@ -70,9 +70,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Creates a &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; object.</para>
-    ///     <para type="description">POST ~/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/{iosManagedAppProtectionODataType}/assignments</para>
     ///     <para type="description">Adds a &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; object to the &quot;assignments&quot; collection.</para>
     ///     <para type="description">Navigation property to list of inclusion and exclusion groups to which the policy is deployed.</para>
+    ///     <para type="description">Graph call: POST ~/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/{iosManagedAppProtectionODataType}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("New", "IntuneAppProtectionPolicyIosAssignment", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppPolicyAssignment")]
@@ -133,9 +133,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Updates a &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot;.</para>
-    ///     <para type="description">PATCH ~/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/{iosManagedAppProtectionODataType}/assignments</para>
     ///     <para type="description">Updates a &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; object in the &quot;assignments&quot; collection.</para>
     ///     <para type="description">Navigation property to list of inclusion and exclusion groups to which the policy is deployed.</para>
+    ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/{iosManagedAppProtectionODataType}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Update", "IntuneAppProtectionPolicyIosAssignment", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppPolicyAssignment")]
@@ -197,9 +197,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
     /// <summary>
     ///     <para type="synopsis">Removes a &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; object.</para>
-    ///     <para type="description">DELETE ~/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/{iosManagedAppProtectionODataType}/assignments/targetedManagedAppPolicyAssignmentId</para>
     ///     <para type="description">Removes a &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; object from the &quot;assignments&quot; collection.</para>
     ///     <para type="description">Navigation property to list of inclusion and exclusion groups to which the policy is deployed.</para>
+    ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/{iosManagedAppProtectionODataType}/assignments/targetedManagedAppPolicyAssignmentId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
     [Cmdlet("Remove", "IntuneAppProtectionPolicyIosAssignment", ConfirmImpact = ConfirmImpact.High)]
