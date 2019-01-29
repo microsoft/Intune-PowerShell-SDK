@@ -80,11 +80,11 @@ $generateManifestArgs = @{
     # START PrivateData.PSData
         # Tags applied to this module. These help with module discovery in online galleries.
         Tags = @(
-            'Microsoft',
-            'Microsoft Graph',
+            'Microsoft',            
             'Graph',
-            'Microsoft Intune',
-            'Intune'
+            'Intune',
+            'PowerShell',
+            'SDK'
         )
 
         # Flag to indicate whether the module requires explicit user acceptance
@@ -122,7 +122,7 @@ $generateManifestArgs = @{
     CompanyName = 'Microsoft Corporation'
 
     # Copyright statement for this module
-    Copyright = '(c) 2018 Microsoft. All rights reserved.'
+    Copyright = '(c) 2019 Microsoft. All rights reserved.'
 
     # Description of the functionality provided by this module
     Description = 'PowerShell SDK for Microsoft Intune Graph API'
