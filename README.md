@@ -2,7 +2,8 @@
 - [Table of Contents](#table-of-contents)
 - [Intune-PowerShell-SDK](#intune-powershell-sdk)
 - [Getting started](#getting-started)
-    - [One-time setup](#one-time-setup)
+    - [One-time setup (PowerShell Gallery)](#one-time-setup-powershell-gallery)
+    - [One-time setup (GitHub)](#one-time-setup-github)
     - [Before this module is used in your organization](#before-this-module-is-used-in-your-organization)
     - [Each time you use the module](#each-time-you-use-the-module)    
     - [Discovering available commands](#discovering-available-commands)
@@ -25,23 +26,26 @@ When you submit a pull request, a CLA-bot will automatically determine whether y
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 # Getting started
-## One-time setup
+## One-time setup (PowerShell Gallery)
+1. Install the Microsoft.Graph.Intune module from: https://www.powershellgallery.com/packages/Microsoft.Graph.Intune
+```PowerShell
+Install-Module -Name Microsoft.Graph.Intune
+```
+## One-time setup (GitHub)
 1. Download the module from the [Releases](https://github.com/Microsoft/Intune-PowerShell-SDK/releases) tab in the GitHub repository.
 2. The "drop\outputs\build\Release\net471" folder in the zip file contains the module.
     - If you are using Windows, extract the "net471" folder.  **You must have .NET 4.7.1 or higher installed**.    
-3. The module manifest is the "Microsoft.Graph.Intune.psd1" file inside this folder.  This is the file you would refer to when importing the module (see the next section below).
-
+3. The module manifest is the "Microsoft.Graph.Intune.psd1" file inside this folder.  This is the file you would refer to when importing the module.
+4. Import the module:
+```PowerShell
+Import-Module $sdkDir/Microsoft.Graph.Intune.psd1
+```
 ## Before this module is used in your organization
 An admin user must provide consent for this app to be used in their organization.  This can be done with the following command:
 ```PowerShell
 Connect-MSGraph -AdminConsent
 ```
-
 ## Each time you use the module
-Import the module:
-```PowerShell
-Import-Module ./Microsoft.Graph.Intune.psd1
-```
 To authenticate with Microsoft Graph (this is not required when using CloudShell):
 ```PowerShell
 Connect-MSGraph
@@ -138,5 +142,9 @@ $deviceToLock | Invoke-IntuneManagedDeviceRemoteLock
 # Known issues and workarounds
 - Importing the `MSOnline` cmdlets before importing this `Intune` module will cause errors. Please use the `AzureAD` module instead, as the `MSOnline` module is deprecated.
     - If you absolutely must use the `MSOnline` module, it should be imported AFTER the `Intune` module. Note, however, that this is not officially supported.
-- The file "Microsoft.Intune.PowerShellGraphSDK.dll" may be blocked when a release is first downloaded.  This will stop the assembly from correctly loading (and you will see an error message if you try to import the module).
-    - Right-click on the "Microsoft.Intune.PowerShellGraphSDK.dll" file and open "Properties".  At the bottom of the window, there should be a checkbox that will allow you to unblock the file.
+- If downloaded from Github, the file "Microsoft.Intune.PowerShellGraphSDK.dll" may be blocked when a release is first downloaded.  This will stop the assembly from correctly loading (and you will see an error message if you try to import the module).
+```PowerShell
+Dir -Recurse $sdkDir | Unblock-File
+```
+- The SDK is built out of Microsoft Graph v1.0 release, some functionality available in the Intune Administration UI is built using the Microsoft Graph beta release.
+    - Workaround is to use Invoke-RestMethod for such functionality. For more details see: https://github.com/Microsoft/Intune-PowerShell-SDK/issues/14 
