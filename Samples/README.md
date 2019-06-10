@@ -14,6 +14,8 @@
     - [Paging](#paging)
     - [Getting Extended Debug information](#getting-extended-debug-information)
 - [Scenario Samples](#scenario-samples)
+    - [Set Intune as MDM Authority](#set-intune-as-mdm-authority)
+    - [Create group](#create-group)
     - [Publish iOS LOB Application](#publish-ios-lob-application)
     - [Create Compliance Policies and Assign it to an AAD Group](#create-compliance-policies-and-assign-it-to-an-AAD-Group)
         - [Create an iOS Compliance Policy](#create-an-iOS-compliance-policy)
@@ -212,6 +214,28 @@ Date                      : Wed, 28 Nov 2018 21:44:55 GMT
 ```
 
 # Scenario Samples
+## Set Intune as MDM Authority
+```PowerShell
+#Checks if Intune already is th MDM Authority
+
+$mdmAuth = (Invoke-MSGraphRequest -Url "https://graph.microsoft.com/v1.0/organization('$OrgId')?`$select=mobiledevicemanagementauthority" -HttpMethod Get -ErrorAction Stop).mobileDeviceManagementAuthority
+
+#If not already set, sets Intune as MDM Authority
+if($mdmAuth -notlike "intune")
+{
+    Write-Progress -Activity "Setter Intune som MDM Authority" -Status "..."
+    $OrgID = (Invoke-MSGraphRequest -Url "https://graph.microsoft.com/v1.0/organization" -HttpMethod Get -ErrorAction Stop).value.id
+    Invoke-MSGraphRequest -Url "https://graph.microsoft.com/v1.0/organization/$OrgID/setMobileDeviceManagementAuthority" -HttpMethod Post -ErrorAction Stop
+}
+```
+## Create group
+```PowerShell
+New-AADGroup -description "This is a new group" `
+    -displayName "Group01" `
+    -mailEnabled $false -mailNickname "Group01" `
+    -securityEnabled $true
+```
+
 ## Upload iOS LOB Application
 Load the Apps scenario module
 ```PowerShell
