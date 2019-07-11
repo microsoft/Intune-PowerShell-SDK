@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/troubleshootingEvents</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneTroubleshootingEvent", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_TroubleshootingEvents", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
     [ResourceTypePropertyName("troubleshootingEventODataType")]
     [ResourceReference]
-    public class Get_IntuneTroubleshootingEvent : GetOrSearchCmdlet
+    [Alias("Get-IntuneTroubleshootingEvent")]
+    public class Get_DeviceManagement_TroubleshootingEvents : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;troubleshootingEvents&quot; collection.</para>
@@ -149,11 +150,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/troubleshootingEvents</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneTroubleshootingEvent", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "DeviceManagement_TroubleshootingEvents", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
     [ResourceTypePropertyName("troubleshootingEventODataType")]
     [ResourceReference]
-    public class New_IntuneTroubleshootingEvent : PostCmdlet
+    [Alias("New-IntuneTroubleshootingEvent")]
+    public class New_DeviceManagement_TroubleshootingEvents : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;troubleshootingEvents&quot; collection.</para>
@@ -315,10 +317,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/troubleshootingEvents</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneTroubleshootingEvent", ConfirmImpact = ConfirmImpact.Medium)]
+    [Cmdlet("Update", "DeviceManagement_TroubleshootingEvents", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
     [ResourceTypePropertyName("troubleshootingEventODataType")]
-    public class Update_IntuneTroubleshootingEvent : PatchCmdlet
+    [Alias("Update-IntuneTroubleshootingEvent")]
+    public class Update_DeviceManagement_TroubleshootingEvents : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;troubleshootingEvents&quot; collection.</para>
@@ -482,10 +485,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/troubleshootingEvents/deviceManagementTroubleshootingEventId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneTroubleshootingEvent", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_TroubleshootingEvents", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
     [ResourceTypePropertyName("troubleshootingEventODataType")]
-    public class Remove_IntuneTroubleshootingEvent : DeleteCmdlet
+    [Alias("Remove-IntuneTroubleshootingEvent")]
+    public class Remove_DeviceManagement_TroubleshootingEvents : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; object in the &quot;troubleshootingEvents&quot; collection.</para>

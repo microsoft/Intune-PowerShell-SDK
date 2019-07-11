@@ -31,6 +31,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Boolean highlightLastColumn { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;legacyId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.workbookTable&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookTable", HelpMessage = @"The &quot;legacyId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String legacyId { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;name&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.workbookTable&quot; type.</para>
         /// </summary>

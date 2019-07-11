@@ -10,10 +10,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/groups</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "AADGroup", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "Groups", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Get_AADGroup : GetOrSearchCmdlet
+    [Alias("Get-AADGroup")]
+    public class Get_Groups : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -25,6 +26,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateNotNullOrEmpty]
         [Parameter(ParameterSetName = @"Get", Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
         public System.String groupId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;assignedLicenses&quot; property, of type &quot;microsoft.graph.assignedLicense&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.assignedLicense")]
+        [Selectable]
+        public System.Object[] assignedLicenses { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;classification&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -63,12 +72,30 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String displayName { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;hasMembersWithLicenseErrors&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Sortable]
+        public System.Boolean hasMembersWithLicenseErrors { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;groupTypes&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
         public System.String[] groupTypes { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;licenseProcessingState&quot; property, of type &quot;microsoft.graph.licenseProcessingState&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.licenseProcessingState")]
+        [Selectable]
+        [Sortable]
+        public System.Object licenseProcessingState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mail&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -131,6 +158,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Sortable]
         public System.Boolean onPremisesSyncEnabled { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;preferredDataLocation&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Sortable]
+        public System.String preferredDataLocation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;proxyAddresses&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -204,10 +240,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Int32 unseenCount { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;isArchived&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Sortable]
+        public System.Boolean isArchived { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;members&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         public System.Object[] members { get; set; }
@@ -216,16 +261,43 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;memberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         public System.Object[] memberOf { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;membersWithLicenseErrors&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
+        [Selectable]
+        [Expandable]
+        public System.Object[] membersWithLicenseErrors { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;transitiveMembers&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
+        [Selectable]
+        [Expandable]
+        public System.Object[] transitiveMembers { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;transitiveMemberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
+        [Selectable]
+        [Expandable]
+        public System.Object[] transitiveMemberOf { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;createdOnBehalfOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [Sortable]
@@ -235,7 +307,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;owners&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         public System.Object[] owners { get; set; }
@@ -298,10 +370,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/groups</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "AADGroup", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.group")]
+    [Cmdlet("New", "Groups", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.group")]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class New_AADGroup : PostCmdlet
+    [Alias("New-AADGroup")]
+    public class New_Groups : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -311,6 +384,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [IdParameter]
         [ResourceIdParameter]
         public System.String groupId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;assignedLicenses&quot; property, of type &quot;microsoft.graph.assignedLicense&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.assignedLicense")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignedLicenses&quot; property, of type &quot;microsoft.graph.assignedLicense&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignedLicenses&quot; property, of type &quot;microsoft.graph.assignedLicense&quot;.")]
+        public System.Object[] assignedLicenses { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;classification&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -353,6 +437,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String displayName { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;hasMembersWithLicenseErrors&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;hasMembersWithLicenseErrors&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;hasMembersWithLicenseErrors&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean hasMembersWithLicenseErrors { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;groupTypes&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
@@ -362,6 +456,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.group", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;groupTypes&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;groupTypes&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] groupTypes { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;licenseProcessingState&quot; property, of type &quot;microsoft.graph.licenseProcessingState&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.licenseProcessingState")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;licenseProcessingState&quot; property, of type &quot;microsoft.graph.licenseProcessingState&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;licenseProcessingState&quot; property, of type &quot;microsoft.graph.licenseProcessingState&quot;.")]
+        public System.Object licenseProcessingState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mail&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -433,6 +537,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.group", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;onPremisesSyncEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;onPremisesSyncEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean onPremisesSyncEnabled { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;preferredDataLocation&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;preferredDataLocation&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;preferredDataLocation&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String preferredDataLocation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;proxyAddresses&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -516,10 +630,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Int32 unseenCount { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;isArchived&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;isArchived&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;isArchived&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean isArchived { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;members&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -531,7 +655,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;memberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -540,10 +664,46 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object[] memberOf { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;membersWithLicenseErrors&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;membersWithLicenseErrors&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;membersWithLicenseErrors&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        public System.Object[] membersWithLicenseErrors { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;transitiveMembers&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;transitiveMembers&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;transitiveMembers&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        public System.Object[] transitiveMembers { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;transitiveMemberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;transitiveMemberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;transitiveMemberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        public System.Object[] transitiveMemberOf { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;createdOnBehalfOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.group", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;createdOnBehalfOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
@@ -554,7 +714,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;owners&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -631,10 +791,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/groups</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "AADGroup", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.group")]
+    [Cmdlet("Update", "Groups", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.group")]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Update_AADGroup : PatchCmdlet
+    [Alias("Update-AADGroup")]
+    public class Update_Groups : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -646,6 +807,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateNotNullOrEmpty]
         [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.")]
         public System.String groupId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;assignedLicenses&quot; property, of type &quot;microsoft.graph.assignedLicense&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.assignedLicense")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;assignedLicenses&quot; property, of type &quot;microsoft.graph.assignedLicense&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;assignedLicenses&quot; property, of type &quot;microsoft.graph.assignedLicense&quot;.")]
+        public System.Object[] assignedLicenses { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;classification&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -688,6 +860,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String displayName { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;hasMembersWithLicenseErrors&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;hasMembersWithLicenseErrors&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;hasMembersWithLicenseErrors&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean hasMembersWithLicenseErrors { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;groupTypes&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
@@ -697,6 +879,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;groupTypes&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;groupTypes&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] groupTypes { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;licenseProcessingState&quot; property, of type &quot;microsoft.graph.licenseProcessingState&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.licenseProcessingState")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;licenseProcessingState&quot; property, of type &quot;microsoft.graph.licenseProcessingState&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;licenseProcessingState&quot; property, of type &quot;microsoft.graph.licenseProcessingState&quot;.")]
+        public System.Object licenseProcessingState { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mail&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -768,6 +960,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;onPremisesSyncEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;onPremisesSyncEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean onPremisesSyncEnabled { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;preferredDataLocation&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;preferredDataLocation&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;preferredDataLocation&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String preferredDataLocation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;proxyAddresses&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -851,10 +1053,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Int32 unseenCount { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;isArchived&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;isArchived&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;isArchived&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean isArchived { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;members&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -866,7 +1078,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;memberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -875,10 +1087,46 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object[] memberOf { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;membersWithLicenseErrors&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;membersWithLicenseErrors&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;membersWithLicenseErrors&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        public System.Object[] membersWithLicenseErrors { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;transitiveMembers&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;transitiveMembers&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;transitiveMembers&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        public System.Object[] transitiveMembers { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;transitiveMemberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;transitiveMemberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;transitiveMemberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        public System.Object[] transitiveMemberOf { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;createdOnBehalfOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;createdOnBehalfOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
@@ -889,7 +1137,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;owners&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -966,10 +1214,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/groups/groupId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "AADGroup", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "Groups", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Remove_AADGroup : DeleteCmdlet
+    [Alias("Remove-AADGroup")]
+    public class Remove_Groups : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -994,10 +1243,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/groups/subscribeByMail</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "AADGroupSubscribeByMail", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "Groups_SubscribeByMail", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_AADGroupSubscribeByMail : ActionCmdlet
+    [Alias("Invoke-AADGroupSubscribeByMail")]
+    public class Invoke_Groups_SubscribeByMail : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1022,10 +1272,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/groups/unsubscribeByMail</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "AADGroupUnsubscribeByMail", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "Groups_UnsubscribeByMail", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_AADGroupUnsubscribeByMail : ActionCmdlet
+    [Alias("Invoke-AADGroupUnsubscribeByMail")]
+    public class Invoke_Groups_UnsubscribeByMail : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1050,10 +1301,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/groups/addFavorite</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "AADGroupAddFavorite", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "Groups_AddFavorite", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_AADGroupAddFavorite : ActionCmdlet
+    [Alias("Invoke-AADGroupAddFavorite")]
+    public class Invoke_Groups_AddFavorite : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1078,10 +1330,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/groups/removeFavorite</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "AADGroupRemoveFavorite", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "Groups_RemoveFavorite", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_AADGroupRemoveFavorite : ActionCmdlet
+    [Alias("Invoke-AADGroupRemoveFavorite")]
+    public class Invoke_Groups_RemoveFavorite : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1106,10 +1359,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/groups/resetUnseenCount</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "AADGroupResetUnseenCount", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "Groups_ResetUnseenCount", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_AADGroupResetUnseenCount : ActionCmdlet
+    [Alias("Invoke-AADGroupResetUnseenCount")]
+    public class Invoke_Groups_ResetUnseenCount : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1134,10 +1388,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/groups/renew</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "AADGroupRenew", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "Groups_Renew", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_AADGroupRenew : ActionCmdlet
+    [Alias("Invoke-AADGroupRenew")]
+    public class Invoke_Groups_Renew : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1162,10 +1417,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: GET ~/groups/delta</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "AADGroupDelta", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Invoke", "Groups_Delta", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_AADGroupDelta : FunctionReturningCollectionCmdlet
+    [Alias("Invoke-AADGroupDelta")]
+    public class Invoke_Groups_Delta : FunctionReturningCollectionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -1188,10 +1444,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/groups/getByIds</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "AADGroupGetById", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "Groups_GetByIds", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_AADGroupGetById : ActionCmdlet
+    [Alias("Invoke-AADGroupGetById")]
+    public class Invoke_Groups_GetByIds : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;ids&quot; action parameter of type &quot;Edm.String&quot;.</para>
@@ -1201,7 +1458,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Expandable]
         [ValidateNotNull]
         [AllowEmptyCollection]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;ids&quot; action parameter of type &quot;Edm.String&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;ids&quot; action parameter of type &quot;Edm.String&quot;.")]
         public System.String[] ids { get; set; }
 
         /// <summary>
@@ -1211,7 +1468,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;types&quot; action parameter of type &quot;Edm.String&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;types&quot; action parameter of type &quot;Edm.String&quot;.")]
         public System.String[] types { get; set; }
 
         /// <summary>
@@ -1235,10 +1492,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/groups/checkMemberGroups</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "AADGroupCheckMemberGroup", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "Groups_CheckMemberGroups", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_AADGroupCheckMemberGroup : ActionCmdlet
+    [Alias("Invoke-AADGroupCheckMemberGroup")]
+    public class Invoke_Groups_CheckMemberGroups : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;groupIds&quot; action parameter of type &quot;Edm.String&quot;.</para>
@@ -1248,7 +1506,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Expandable]
         [ValidateNotNull]
         [AllowEmptyCollection]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;groupIds&quot; action parameter of type &quot;Edm.String&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;groupIds&quot; action parameter of type &quot;Edm.String&quot;.")]
         public System.String[] groupIds { get; set; }
 
         /// <summary>
@@ -1274,10 +1532,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/groups/getMemberGroups</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "AADGroupGetMemberGroup", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "Groups_GetMemberGroups", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_AADGroupGetMemberGroup : ActionCmdlet
+    [Alias("Invoke-AADGroupGetMemberGroup")]
+    public class Invoke_Groups_GetMemberGroups : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;securityEnabledOnly&quot; action parameter of type &quot;Edm.Boolean&quot;.</para>
@@ -1285,7 +1544,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Expandable]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityEnabledOnly&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityEnabledOnly&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityEnabledOnly { get; set; }
 
         /// <summary>
@@ -1311,10 +1570,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/groups/getMemberObjects</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "AADGroupGetMemberObject", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "Groups_GetMemberObjects", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_AADGroupGetMemberObject : ActionCmdlet
+    [Alias("Invoke-AADGroupGetMemberObject")]
+    public class Invoke_Groups_GetMemberObjects : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;securityEnabledOnly&quot; action parameter of type &quot;Edm.Boolean&quot;.</para>
@@ -1322,7 +1582,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Expandable]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityEnabledOnly&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;securityEnabledOnly&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean securityEnabledOnly { get; set; }
 
         /// <summary>
@@ -1348,10 +1608,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/groups/restore</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "AADGroupRestore", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "Groups_Restore", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.group")]
     [ResourceTypePropertyName("groupODataType")]
-    public class Invoke_AADGroupRestore : ActionCmdlet
+    [Alias("Invoke-AADGroupRestore")]
+    public class Invoke_Groups_Restore : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>

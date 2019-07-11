@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/deviceCategories</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneDeviceCategory", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_DeviceCategories", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceCategory")]
     [ResourceTypePropertyName("deviceCategoryODataType")]
     [ResourceReference]
-    public class Get_IntuneDeviceCategory : GetOrSearchCmdlet
+    [Alias("Get-IntuneDeviceCategory")]
+    public class Get_DeviceManagement_DeviceCategories : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceCategory&quot; object in the &quot;deviceCategories&quot; collection.</para>
@@ -61,11 +62,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/deviceCategories</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneDeviceCategory", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCategory")]
+    [Cmdlet("New", "DeviceManagement_DeviceCategories", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCategory")]
     [ODataType("microsoft.graph.deviceCategory")]
     [ResourceTypePropertyName("deviceCategoryODataType")]
     [ResourceReference]
-    public class New_IntuneDeviceCategory : PostCmdlet
+    [Alias("New-IntuneDeviceCategory")]
+    public class New_DeviceManagement_DeviceCategories : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceCategory&quot; object in the &quot;deviceCategories&quot; collection.</para>
@@ -111,10 +113,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/deviceCategories</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneDeviceCategory", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCategory")]
+    [Cmdlet("Update", "DeviceManagement_DeviceCategories", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCategory")]
     [ODataType("microsoft.graph.deviceCategory")]
     [ResourceTypePropertyName("deviceCategoryODataType")]
-    public class Update_IntuneDeviceCategory : PatchCmdlet
+    [Alias("Update-IntuneDeviceCategory")]
+    public class Update_DeviceManagement_DeviceCategories : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceCategory&quot; object in the &quot;deviceCategories&quot; collection.</para>
@@ -162,10 +165,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/deviceCategories/deviceCategoryId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneDeviceCategory", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_DeviceCategories", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceCategory")]
     [ResourceTypePropertyName("deviceCategoryODataType")]
-    public class Remove_IntuneDeviceCategory : DeleteCmdlet
+    [Alias("Remove-IntuneDeviceCategory")]
+    public class Remove_DeviceManagement_DeviceCategories : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceCategory&quot; object in the &quot;deviceCategories&quot; collection.</para>

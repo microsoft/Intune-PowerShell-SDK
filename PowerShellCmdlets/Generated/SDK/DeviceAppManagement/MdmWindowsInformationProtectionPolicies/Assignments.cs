@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneMdmWindowsInformationProtectionPolicyAssignment", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceAppManagement_MdmWindowsInformationProtectionPolicies_Assignments", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
     [ResourceReference]
-    public class Get_IntuneMdmWindowsInformationProtectionPolicyAssignment : GetOrSearchCmdlet
+    [Alias("Get-IntuneMdmWindowsInformationProtectionPolicyAssignment")]
+    public class Get_DeviceAppManagement_MdmWindowsInformationProtectionPolicies_Assignments : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot; object in the &quot;mdmWindowsInformationProtectionPolicies&quot; collection.</para>
@@ -75,11 +76,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneMdmWindowsInformationProtectionPolicyAssignment", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppPolicyAssignment")]
+    [Cmdlet("New", "DeviceAppManagement_MdmWindowsInformationProtectionPolicies_Assignments", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ODataType("microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
     [ResourceReference]
-    public class New_IntuneMdmWindowsInformationProtectionPolicyAssignment : PostCmdlet
+    [Alias("New-IntuneMdmWindowsInformationProtectionPolicyAssignment")]
+    public class New_DeviceAppManagement_MdmWindowsInformationProtectionPolicies_Assignments : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; object in the &quot;assignments&quot; collection.</para>
@@ -138,10 +140,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneMdmWindowsInformationProtectionPolicyAssignment", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppPolicyAssignment")]
+    [Cmdlet("Update", "DeviceAppManagement_MdmWindowsInformationProtectionPolicies_Assignments", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ODataType("microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    public class Update_IntuneMdmWindowsInformationProtectionPolicyAssignment : PatchCmdlet
+    [Alias("Update-IntuneMdmWindowsInformationProtectionPolicyAssignment")]
+    public class Update_DeviceAppManagement_MdmWindowsInformationProtectionPolicies_Assignments : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; object in the &quot;assignments&quot; collection.</para>
@@ -202,10 +205,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/assignments/targetedManagedAppPolicyAssignmentId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneMdmWindowsInformationProtectionPolicyAssignment", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceAppManagement_MdmWindowsInformationProtectionPolicies_Assignments", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    public class Remove_IntuneMdmWindowsInformationProtectionPolicyAssignment : DeleteCmdlet
+    [Alias("Remove-IntuneMdmWindowsInformationProtectionPolicyAssignment")]
+    public class Remove_DeviceAppManagement_MdmWindowsInformationProtectionPolicies_Assignments : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; object in the &quot;assignments&quot; collection.</para>

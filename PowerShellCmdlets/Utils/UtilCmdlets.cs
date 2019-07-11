@@ -7,6 +7,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     using System.Management.Automation;
     using System.Net.Http;
     using System.Net.Http.Headers;
+    using System.Linq;
 
     /// <summary>
     /// <para type="description">Authenticates with Graph.</para>
@@ -32,11 +33,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         private const string ParameterSetAdminConsent = "AdminConsent";
 
+        /// <summary>
+        /// Parameter set for triggering app-only authentication.
+        /// </summary>
+        private const string ParameterSetAppOnly = "AppOnly";
+
 #if NETFRAMEWORK
 
         private const string ParameterSetForceInteractive = "ForceInteractive";
         private const string ParameterSetForceNonInteractive = "ForceNonInteractive";
-        private const string ParameterSetPSCredential = "PSCredential";
+        private const string ParameterSetPSCredential = "Credential";
         private const string ParameterSetCertificate = "Certificate";
 
         /// <summary>
@@ -58,17 +64,28 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public SwitchParameter ForceNonInteractive { get; set; }
 
         /// <summary>
-        /// <para type="description">The PSCredential object to use when specifying the username and password while authenticating.</para>
+        /// <para type="description">
+        /// The PSCredential object to use when specifying the username and password while authenticating.
+        /// </para>
         /// </summary>
+        [Alias("PSCredential")]
         [Parameter(ParameterSetName = ParameterSetPSCredential, Mandatory = true)]
         [ValidateNotNull]
-        public PSCredential PSCredential { get; set; }
+        public PSCredential Credential { get; set; }
 
         //[Parameter(ParameterSetName = ParameterSetCertificate, Mandatory = true)]
         //[ValidateNotNull]
         //public IClientAssertionCertificate Cert { get; set; }
 
 #endif
+
+        /// <summary>
+        /// <para type="description">
+        /// If the client secret is set, app-only authentication will be performed using the client ID specified by the AppId environment parameter.
+        /// </para>
+        /// </summary>
+        [Parameter(ParameterSetName = ParameterSetAppOnly)]
+        public string ClientSecret { get; set; }
 
         /// <summary>
         /// <para type="description">
@@ -80,7 +97,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public SwitchParameter AdminConsent { get; set; }
 
         /// <summary>
-        /// <para type="description">If the Quet flag is set, this cmdlet will suppress output upon successfully logging in.</para>
+        /// <para type="description">
+        /// If the '-Quiet' flag is set, this cmdlet will suppress output upon successfully logging in.
+        /// </para>
         /// </summary>
         [Parameter]
         public SwitchParameter Quiet { get; set; }
@@ -88,7 +107,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         /// <para type="description">
         /// If the PassThru flag is set, this cmdlet will return the access token that was obtained.
-        /// This flag is ignored if the '-Quet' flag is set.
+        /// This flag is ignored if the '-Quiet' flag is set.
         /// </para>
         /// </summary>
         [Parameter]
@@ -101,38 +120,47 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         {
             // Auth
             SdkAuthResult authResult;
-#if NETFRAMEWORK
-            switch (this.ParameterSetName)
+            if (this.ParameterSetName == ParameterSetAppOnly)
             {
-                case ParameterSetPSCredential:
-                    System.Net.NetworkCredential networkCreds = this.PSCredential.GetNetworkCredential();
-                    authResult = AuthUtils.AuthWithCredentials(networkCreds.UserName, networkCreds.Password);
-                    break;
-                case ParameterSetCertificate:
-                    // TODO: Implement Certificate auth
-                    throw new PSNotImplementedException();
-                case ParameterSetForceInteractive:
-                    authResult = AuthUtils.Auth(Microsoft.IdentityModel.Clients.ActiveDirectory.PromptBehavior.SelectAccount);
-                    break;
-                case ParameterSetForceNonInteractive:
-                    authResult = AuthUtils.Auth(Microsoft.IdentityModel.Clients.ActiveDirectory.PromptBehavior.Never);
-                    break;
-                case ParameterSetAdminConsent:
-                    authResult = AuthUtils.GrantAdminConsent();
-                    break;
-                default:
-                    authResult = AuthUtils.Auth();
-                    break;
+                // App-only auth
+                authResult = AuthUtils.AuthWithClientCredentials(this.ClientSecret);
             }
-#else
-            authResult = AuthUtils.AuthWithDeviceCode(
-                displayDeviceCodeMessageToUser: (deviceCodeMessage) =>
+            else
+            {
+                // User auth
+#if NETFRAMEWORK
+                switch (this.ParameterSetName)
                 {
-                    this.WriteWarning(deviceCodeMessage);
-                },
-                useAdminConsentFlow: this.AdminConsent
-            );
+                    case ParameterSetPSCredential:
+                        System.Net.NetworkCredential networkCreds = this.Credential.GetNetworkCredential();
+                        authResult = AuthUtils.AuthWithUserCredentials(networkCreds.UserName, networkCreds.Password);
+                        break;
+                    case ParameterSetCertificate:
+                        // TODO: Implement Certificate auth
+                        throw new PSNotImplementedException();
+                    case ParameterSetForceInteractive:
+                        authResult = AuthUtils.Auth(Microsoft.IdentityModel.Clients.ActiveDirectory.PromptBehavior.SelectAccount);
+                        break;
+                    case ParameterSetForceNonInteractive:
+                        authResult = AuthUtils.Auth(Microsoft.IdentityModel.Clients.ActiveDirectory.PromptBehavior.Never);
+                        break;
+                    case ParameterSetAdminConsent:
+                        authResult = AuthUtils.GrantAdminConsent();
+                        break;
+                    default:
+                        authResult = AuthUtils.Auth();
+                        break;
+                }
+#else
+                authResult = AuthUtils.AuthWithDeviceCode(
+                    displayDeviceCodeMessageToUser: (deviceCodeMessage) =>
+                    {
+                        this.WriteWarning(deviceCodeMessage);
+                    },
+                    useAdminConsentFlow: this.AdminConsent
+                );
 #endif
+            }
 
             // Decide what to return
             if (!this.Quiet)
@@ -211,6 +239,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public string AppId { get; set; }
 
         /// <summary>
+        /// <para type="description">The Redirect URL to use when authenticating.</para>
+        /// </summary>
+        [Parameter]
+        [ValidateNotNullOrEmpty]
+        public string RedirectLink { get; set; }
+
+        /// <summary>
         /// <para type="description">The AAD endpoint to call when authenticating.</para>
         /// </summary>
         [Parameter]
@@ -257,6 +292,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             if (!string.IsNullOrEmpty(this.AppId))
             {
                 AuthUtils.CurrentEnvironmentParameters.AppId = this.AppId;
+                modified = true;
+            }
+
+            // Redirect Link
+            if (!string.IsNullOrEmpty(this.RedirectLink))
+            {
+                AuthUtils.CurrentEnvironmentParameters.RedirectLink = this.RedirectLink;
                 modified = true;
             }
 
@@ -434,6 +476,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateType(typeof(string), typeof(PSObject), typeof(Hashtable), typeof(HttpContent))]
         public object Content { get; set; }
 
+        /// <summary>
+        /// Tracks the custom content type if one is provided by the user.
+        /// </summary>
+        private string customContentType = null;
+
         internal override string GetHttpMethod()
         {
             return this.HttpMethod;
@@ -510,8 +557,26 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                     }
                 }
 
+                // Add each header to the "headers" object
                 foreach (KeyValuePair<string, IEnumerable<string>> entry in headerPairs)
                 {
+                    // Don't allow Content-Type in the regular headers (C# limitation - Content-Type must be in the HttpContent object)
+                    if (entry.Key.Equals("Content-Type", System.StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        if (entry.Value.Any())
+                        {
+                            customContentType = entry.Value.SingleOrDefault();
+
+                            // If the custom content type is null, then more than 1 content-type was provided
+                            if (customContentType == default(string))
+                            {
+                                throw new PSArgumentException($"Only 1 'Content-Type' header may be sent in a request - there were {entry.Value.Count()} 'Content-Type' headers provided");
+                            }
+
+                            continue;
+                        }
+                    }
+
                     headers.Add(entry.Key, entry.Value);
                 }
             }
@@ -541,7 +606,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
             // String
             if (content is string contentString)
             {
-                return new StringContent(contentString);
+                // Use the custom content type if any
+                if (string.IsNullOrWhiteSpace(customContentType))
+                {
+                    return new StringContent(contentString, System.Text.Encoding.UTF8, customContentType);
+                }
+                else
+                {
+                    return new StringContent(contentString);
+                }
             }
 
             // Hashtable or PSObject
@@ -551,7 +624,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 string contentJson = JsonUtils.WriteJson(content);
 
                 // Return the string as HttpContent
-                return new StringContent(contentJson);
+                return new StringContent(contentJson, System.Text.Encoding.UTF8, "application/json");
             }
 
             // We should have returned before here

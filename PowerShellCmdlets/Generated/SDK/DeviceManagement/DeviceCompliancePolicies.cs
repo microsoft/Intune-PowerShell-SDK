@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/deviceCompliancePolicies</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneDeviceCompliancePolicy", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_DeviceCompliancePolicies", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
     [ResourceReference]
-    public class Get_IntuneDeviceCompliancePolicy : GetOrSearchCmdlet
+    [Alias("Get-IntuneDeviceCompliancePolicy")]
+    public class Get_DeviceManagement_DeviceCompliancePolicies : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceCompliancePolicy&quot; object in the &quot;deviceCompliancePolicies&quot; collection.</para>
@@ -384,7 +385,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;deviceThreatProtectionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.macOSCompliancePolicy&quot; type.</para>
-        ///     <para type="description">Require that devices have enabled device threat protection .</para>
+        ///     <para type="description">Require that devices have enabled device threat protection.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
@@ -658,11 +659,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/deviceCompliancePolicies</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneDeviceCompliancePolicy", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "DeviceManagement_DeviceCompliancePolicies", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
     [ResourceReference]
-    public class New_IntuneDeviceCompliancePolicy : PostCmdlet
+    [Alias("New-IntuneDeviceCompliancePolicy")]
+    public class New_DeviceManagement_DeviceCompliancePolicies : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceCompliancePolicy&quot; object in the &quot;deviceCompliancePolicies&quot; collection.</para>
@@ -1264,7 +1266,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;deviceThreatProtectionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.macOSCompliancePolicy&quot; type.</para>
-        ///     <para type="description">Require that devices have enabled device threat protection .</para>
+        ///     <para type="description">Require that devices have enabled device threat protection.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
@@ -1590,10 +1592,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/deviceCompliancePolicies</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneDeviceCompliancePolicy", ConfirmImpact = ConfirmImpact.Medium)]
+    [Cmdlet("Update", "DeviceManagement_DeviceCompliancePolicies", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
-    public class Update_IntuneDeviceCompliancePolicy : PatchCmdlet
+    [Alias("Update-IntuneDeviceCompliancePolicy")]
+    public class Update_DeviceManagement_DeviceCompliancePolicies : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceCompliancePolicy&quot; object in the &quot;deviceCompliancePolicies&quot; collection.</para>
@@ -2197,7 +2200,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;deviceThreatProtectionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.macOSCompliancePolicy&quot; type.</para>
-        ///     <para type="description">Require that devices have enabled device threat protection .</para>
+        ///     <para type="description">Require that devices have enabled device threat protection.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
@@ -2523,10 +2526,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/deviceCompliancePolicies/deviceCompliancePolicyId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneDeviceCompliancePolicy", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_DeviceCompliancePolicies", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
-    public class Remove_IntuneDeviceCompliancePolicy : DeleteCmdlet
+    [Alias("Remove-IntuneDeviceCompliancePolicy")]
+    public class Remove_DeviceManagement_DeviceCompliancePolicies : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceCompliancePolicy&quot; object in the &quot;deviceCompliancePolicies&quot; collection.</para>
@@ -2551,10 +2555,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/deviceCompliancePolicies/assign</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneDeviceCompliancePolicyAssign", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_DeviceCompliancePolicies_Assign", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
-    public class Invoke_IntuneDeviceCompliancePolicyAssign : ActionCmdlet
+    [Alias("Invoke-IntuneDeviceCompliancePolicyAssign")]
+    public class Invoke_DeviceManagement_DeviceCompliancePolicies_Assign : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;assignments&quot; action parameter of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.</para>
@@ -2563,7 +2568,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; action parameter of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; action parameter of type &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot;.")]
         public System.Object[] assignments { get; set; }
 
         /// <summary>
@@ -2589,10 +2594,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/deviceCompliancePolicies/scheduleActionsForRules</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneDeviceCompliancePolicyScheduleActionsForRules", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_DeviceCompliancePolicies_ScheduleActionsForRules", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy")]
     [ResourceTypePropertyName("deviceCompliancePolicyODataType")]
-    public class Invoke_IntuneDeviceCompliancePolicyScheduleActionsForRules : ActionCmdlet
+    [Alias("Invoke-IntuneDeviceCompliancePolicyScheduleActionsForRules")]
+    public class Invoke_DeviceManagement_DeviceCompliancePolicies_ScheduleActionsForRules : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;deviceComplianceScheduledActionForRules&quot; action parameter of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.</para>
@@ -2601,7 +2607,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceComplianceScheduledActionForRules&quot; action parameter of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;deviceComplianceScheduledActionForRules&quot; action parameter of type &quot;microsoft.graph.deviceComplianceScheduledActionForRule&quot;.")]
         public System.Object[] deviceComplianceScheduledActionForRules { get; set; }
 
         /// <summary>

@@ -11,10 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/softwareUpdateStatusSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneSoftwareUpdateStatusSummary", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "DeviceManagement_SoftwareUpdateStatusSummary", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.softwareUpdateStatusSummary")]
     [ResourceTypePropertyName("softwareUpdateStatusSummaryODataType")]
-    public class Get_IntuneSoftwareUpdateStatusSummary : GetCmdlet
+    [Alias("Get-IntuneSoftwareUpdateStatusSummary")]
+    public class Get_DeviceManagement_SoftwareUpdateStatusSummary : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -179,10 +180,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/softwareUpdateStatusSummary/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneSoftwareUpdateStatusSummaryReference", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "DeviceManagement_SoftwareUpdateStatusSummaryReference", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.softwareUpdateStatusSummary")]
     [ResourceTypePropertyName("softwareUpdateStatusSummaryODataType")]
-    public class Get_IntuneSoftwareUpdateStatusSummaryReference : GetCmdlet
+    [Alias("Get-IntuneSoftwareUpdateStatusSummaryReference")]
+    public class Get_DeviceManagement_SoftwareUpdateStatusSummaryReference : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -347,10 +349,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PUT ~/deviceManagement/softwareUpdateStatusSummary/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneSoftwareUpdateStatusSummaryReference", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "DeviceManagement_SoftwareUpdateStatusSummaryReference", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.softwareUpdateStatusSummary")]
     [ResourceTypePropertyName("softwareUpdateStatusSummaryODataType")]
-    public class New_IntuneSoftwareUpdateStatusSummaryReference : PutReferenceToEntityCmdlet
+    [Alias("New-IntuneSoftwareUpdateStatusSummaryReference")]
+    public class New_DeviceManagement_SoftwareUpdateStatusSummaryReference : PutReferenceToEntityCmdlet
     {
         /// <summary>
         ///     <para type="description">The URL which should be used to access a &quot;microsoft.graph.softwareUpdateStatusSummary&quot; object.</para>
@@ -374,10 +377,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/softwareUpdateStatusSummary/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneSoftwareUpdateStatusSummaryReference", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_SoftwareUpdateStatusSummaryReference", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.softwareUpdateStatusSummary")]
     [ResourceTypePropertyName("softwareUpdateStatusSummaryODataType")]
-    public class Remove_IntuneSoftwareUpdateStatusSummaryReference : DeleteCmdlet
+    [Alias("Remove-IntuneSoftwareUpdateStatusSummaryReference")]
+    public class Remove_DeviceManagement_SoftwareUpdateStatusSummaryReference : DeleteCmdlet
     {
         internal override System.String GetResourcePath()
         {

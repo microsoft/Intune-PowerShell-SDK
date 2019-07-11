@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceAppManagement/managedEBooks/{managedEBookId}/installSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneManagedEBookInstallSummary", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "DeviceAppManagement_ManagedEBooks_InstallSummary", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.eBookInstallSummary")]
     [ResourceTypePropertyName("installSummaryODataType")]
     [ResourceReference]
-    public class Get_IntuneManagedEBookInstallSummary : GetCmdlet
+    [Alias("Get-IntuneManagedEBookInstallSummary")]
+    public class Get_DeviceAppManagement_ManagedEBooks_InstallSummary : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
@@ -100,11 +101,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceAppManagement/managedEBooks/{managedEBookId}/installSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneManagedEBookInstallSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.eBookInstallSummary")]
+    [Cmdlet("New", "DeviceAppManagement_ManagedEBooks_InstallSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.eBookInstallSummary")]
     [ODataType("microsoft.graph.eBookInstallSummary")]
     [ResourceTypePropertyName("installSummaryODataType")]
     [ResourceReference]
-    public class New_IntuneManagedEBookInstallSummary : PostCmdlet
+    [Alias("New-IntuneManagedEBookInstallSummary")]
+    public class New_DeviceAppManagement_ManagedEBooks_InstallSummary : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
@@ -195,10 +197,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/managedEBooks/{managedEBookId}/installSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneManagedEBookInstallSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.eBookInstallSummary")]
+    [Cmdlet("Update", "DeviceAppManagement_ManagedEBooks_InstallSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.eBookInstallSummary")]
     [ODataType("microsoft.graph.eBookInstallSummary")]
     [ResourceTypePropertyName("installSummaryODataType")]
-    public class Update_IntuneManagedEBookInstallSummary : PatchCmdlet
+    [Alias("Update-IntuneManagedEBookInstallSummary")]
+    public class Update_DeviceAppManagement_ManagedEBooks_InstallSummary : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
@@ -289,10 +292,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/managedEBooks/{managedEBookId}/installSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneManagedEBookInstallSummary", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceAppManagement_ManagedEBooks_InstallSummary", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.eBookInstallSummary")]
     [ResourceTypePropertyName("installSummaryODataType")]
-    public class Remove_IntuneManagedEBookInstallSummary : DeleteCmdlet
+    [Alias("Remove-IntuneManagedEBookInstallSummary")]
+    public class Remove_DeviceAppManagement_ManagedEBooks_InstallSummary : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>

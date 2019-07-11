@@ -54,7 +54,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
         /// <param name="upn">The username (e.g. admin@example.com)</param>
         /// <param name="password">The password</param>
         /// <returns>The authentication result.</returns>
-        internal static SdkAuthResult AuthWithCredentials(string upn, string password)
+        internal static SdkAuthResult AuthWithUserCredentials(string upn, string password)
         {
             // Get the environment parameters
             EnvironmentParameters environmentParameters = AuthUtils.CurrentEnvironmentParameters;

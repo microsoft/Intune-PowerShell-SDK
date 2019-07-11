@@ -80,31 +80,33 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <exception cref="PSArgumentException">If neither the ODataType property nor any of the type switches are set.</exception>
         private string GetODataType()
         {
-            // Get the attribute which specifies the valid types
-            ODataTypeAttribute cmdletTypeAttribute = this.GetODataTypeAttribute();
-
             // Check if the ODataType parameter was set to a valid value
             string userProvidedODataType = this.ODataType?.TrimStart('#');
-            bool isODataTypeSetToValidValue =
-                // Make sure the ODataType parameter is not null or empty
-                !string.IsNullOrWhiteSpace(userProvidedODataType) &&
-                // Make sure that this cmdlet has a set of known valid OData types
-                cmdletTypeAttribute != null && (
-                    // Validate the given type against the set of known valid OData types
-                    cmdletTypeAttribute.TypeFullName == userProvidedODataType ||
-                    cmdletTypeAttribute.SubTypeFullNames.Contains(userProvidedODataType)
-                );
 
-            // If ODataType was not set to a valid value, pick the appropriate value based on the parameter set selector that was set
-            if (!isODataTypeSetToValidValue)
+            // Get the list of parameter set selector properties
+            IEnumerable<PropertyInfo> typeSelectorPropertyInfos = this.GetParameterSetSelectorProperties();
+
+            // If the user provided a valid value, use it
+            if (!string.IsNullOrWhiteSpace(userProvidedODataType) && this.IsKnownODataType(userProvidedODataType))
             {
-                // Try to get the switch parameter which represents the OData type
-                IEnumerable<PropertyInfo> typeSelectorPropertyInfos = this.GetParameterSetSelectorProperties();
+                // If ODataType was set, make sure that no parameter set selector was set
+                if (typeSelectorPropertyInfos.Any())
+                {
+                    IEnumerable<string> typeSelectorPropertyNames = typeSelectorPropertyInfos.Select(t => t.Name);
+                    throw new PSArgumentException($"Type switches cannot be used if the '{nameof(this.ODataType)}' parameter is set - type switches used: {string.Join(",", typeSelectorPropertyNames)}");
+                }
 
+                // Set the result to the value of the ODataType parameter
+                return userProvidedODataType;
+            }
+            else // If ODataType was not set to a valid value, pick the appropriate value based on the parameter set selector that was set
+            {
                 // If no parameter set selector was set, try to use the cmdlet's OData type name (this may be the case for cmdlets which only deal with 1 OData type)
                 if (!typeSelectorPropertyInfos.Any())
                 {
-                    return $"#{cmdletTypeAttribute.TypeFullName}";
+                    // There are no type selectors, meaning there are no concrete subtypes (i.e. it is safe to use the type defined on the cmdlet)
+                    // NOTE: Do NOT use the ODataType Attribute's "SubTypeFullNames" to determine this, because that list also includes abstract subtypes
+                    return $"#{this.GetODataTypeAttribute().TypeFullName}";
                 }
                 else
                 {
@@ -118,22 +120,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                     // Get the ParameterSetSelector attribute
                     ParameterSetSelectorAttribute typeSelectorSwitchAttribute = typeSelectorPropertyInfo
                         .GetCustomAttributes<ParameterSetSelectorAttribute>()
-                        .SingleOrDefault();
+                        // We should never have a type selector that does not have a type selector switch attribute, so crash if this ever happens
+                        .Single();
 
                     // Get the OData type name from the "ParameterSetSelector" attribute (parameter set name is the OData type name)
                     return $"#{typeSelectorSwitchAttribute.ParameterSetName}";
                 }
-            }
-            else
-            {
-                // If ODataType was set, make sure that no parameter set selector was set
-                if (this.GetParameterSetSelectorProperties().Any())
-                {
-                    throw new PSArgumentException($"Type switches cannot be used if the '{nameof(this.ODataType)}' parameter is set");
-                }
-
-                // Set the result to the value of the ODataType parameter
-                return userProvidedODataType;
             }
         }
 

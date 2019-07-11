@@ -30,10 +30,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
@@ -66,10 +66,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
@@ -102,10 +102,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
@@ -138,10 +138,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
@@ -174,10 +174,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.Int32&quot;.")]
@@ -212,10 +212,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.deviceConfigurationAssignment&quot;.")]
@@ -250,10 +250,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceStatus&quot;.")]
@@ -288,10 +288,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserStatus&quot;.")]
@@ -325,10 +325,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationDeviceOverview&quot;.")]
@@ -362,10 +362,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceConfigurationUserOverview&quot;.")]
@@ -400,10 +400,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
@@ -1695,6 +1695,92 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ParameterSetSelector(@"microsoft.graph.windows10CustomConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10CustomConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter windows10CustomConfiguration { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.editionUpgradeConfiguration")]
+        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.")]
+        public System.Management.Automation.SwitchParameter editionUpgradeConfiguration { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;licenseType&quot; property, of type &quot;microsoft.graph.editionUpgradeLicenseType&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
+        ///     <para type="description">Edition Upgrade License Type.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;productKey&apos;, &apos;licenseFile&apos;
+        ///     </para>
+        /// </summary>
+        [ODataType("microsoft.graph.editionUpgradeLicenseType")]
+        [Selectable]
+        [ValidateSet(@"productKey", @"licenseFile")]
+        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;licenseType&quot; property, of type &quot;microsoft.graph.editionUpgradeLicenseType&quot;.")]
+        public System.String licenseType { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;targetEdition&quot; property, of type &quot;microsoft.graph.windows10EditionType&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
+        ///     <para type="description">Edition Upgrade Target Edition.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;windows10Enterprise&apos;, &apos;windows10EnterpriseN&apos;, &apos;windows10Education&apos;, &apos;windows10EducationN&apos;, &apos;windows10MobileEnterprise&apos;, &apos;windows10HolographicEnterprise&apos;, &apos;windows10Professional&apos;, &apos;windows10ProfessionalN&apos;, &apos;windows10ProfessionalEducation&apos;, &apos;windows10ProfessionalEducationN&apos;, &apos;windows10ProfessionalWorkstation&apos;, &apos;windows10ProfessionalWorkstationN&apos;
+        ///     </para>
+        /// </summary>
+        [ODataType("microsoft.graph.windows10EditionType")]
+        [Selectable]
+        [ValidateSet(@"windows10Enterprise", @"windows10EnterpriseN", @"windows10Education", @"windows10EducationN", @"windows10MobileEnterprise", @"windows10HolographicEnterprise", @"windows10Professional", @"windows10ProfessionalN", @"windows10ProfessionalEducation", @"windows10ProfessionalEducationN", @"windows10ProfessionalWorkstation", @"windows10ProfessionalWorkstationN")]
+        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;targetEdition&quot; property, of type &quot;microsoft.graph.windows10EditionType&quot;.")]
+        public System.String targetEdition { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;license&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
+        ///     <para type="description">Edition Upgrade License File Content.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;license&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String license { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
+        ///     <para type="description">Edition Upgrade Product Key.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String productKey { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.")]
+        public System.Management.Automation.SwitchParameter windowsDefenderAdvancedThreatProtectionConfiguration { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;allowSampleSharing&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.</para>
+        ///     <para type="description">Windows Defender AdvancedThreatProtection &quot;Allow Sample Sharing&quot; Rule</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;allowSampleSharing&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean allowSampleSharing { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;enableExpeditedTelemetryReporting&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.</para>
+        ///     <para type="description">Expedite Windows Defender Advanced Threat Protection telemetry reporting frequency.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;enableExpeditedTelemetryReporting&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean enableExpeditedTelemetryReporting { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.</para>
@@ -3172,7 +3258,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockSearchSuggestions&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.</para>
-        ///     <para type="description">Indicates whether or not to Block the user from using the search suggestions in the address bar.</para>
+        ///     <para type="description">Indicates whether or not to block the user from using the search suggestions in the address bar.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
@@ -3182,12 +3268,22 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockSendingIntranetTrafficToInternetExplorer&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.</para>
-        ///     <para type="description">Indicates whether or not to Block the user from sending Intranet traffic to Internet Explorer from Edge.</para>
+        ///     <para type="description">Indicates whether or not to switch the intranet traffic from Edge to Internet Explorer. Note: the name of this property is misleading; the property is obsolete, use EdgeSendIntranetTrafficToInternetExplorer instead.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlockSendingIntranetTrafficToInternetExplorer&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean edgeBlockSendingIntranetTrafficToInternetExplorer { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;edgeSendIntranetTrafficToInternetExplorer&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.</para>
+        ///     <para type="description">Indicates whether or not to switch the intranet traffic from Edge to Internet Explorer.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeSendIntranetTrafficToInternetExplorer&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean edgeSendIntranetTrafficToInternetExplorer { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeRequireSmartScreen&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -3599,6 +3695,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Boolean logonBlockFastUserSwitching { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;tenantLockdownRequireNetworkDuringOutOfBoxExperience&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.</para>
+        ///     <para type="description">Whether the device is required to connect to the network.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;tenantLockdownRequireNetworkDuringOutOfBoxExperience&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean tenantLockdownRequireNetworkDuringOutOfBoxExperience { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10EndpointProtectionConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -3994,92 +4100,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;bitLockerRemovableDrivePolicy&quot; property, of type &quot;microsoft.graph.bitLockerRemovableDrivePolicy&quot;.")]
         public System.Object bitLockerRemovableDrivePolicy { get; set; }
-
-        /// <summary>
-        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
-        /// </summary>
-        [Selectable]
-        [Expandable]
-        [ParameterSetSelector(@"microsoft.graph.editionUpgradeConfiguration")]
-        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter editionUpgradeConfiguration { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;licenseType&quot; property, of type &quot;microsoft.graph.editionUpgradeLicenseType&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
-        ///     <para type="description">Edition Upgrade License Type.</para>
-        ///     <para type="description">
-        ///          Valid values: &apos;productKey&apos;, &apos;licenseFile&apos;
-        ///     </para>
-        /// </summary>
-        [ODataType("microsoft.graph.editionUpgradeLicenseType")]
-        [Selectable]
-        [ValidateSet(@"productKey", @"licenseFile")]
-        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;licenseType&quot; property, of type &quot;microsoft.graph.editionUpgradeLicenseType&quot;.")]
-        public System.String licenseType { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;targetEdition&quot; property, of type &quot;microsoft.graph.windows10EditionType&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
-        ///     <para type="description">Edition Upgrade Target Edition.</para>
-        ///     <para type="description">
-        ///          Valid values: &apos;windows10Enterprise&apos;, &apos;windows10EnterpriseN&apos;, &apos;windows10Education&apos;, &apos;windows10EducationN&apos;, &apos;windows10MobileEnterprise&apos;, &apos;windows10HolographicEnterprise&apos;, &apos;windows10Professional&apos;, &apos;windows10ProfessionalN&apos;, &apos;windows10ProfessionalEducation&apos;, &apos;windows10ProfessionalEducationN&apos;, &apos;windows10ProfessionalWorkstation&apos;, &apos;windows10ProfessionalWorkstationN&apos;
-        ///     </para>
-        /// </summary>
-        [ODataType("microsoft.graph.windows10EditionType")]
-        [Selectable]
-        [ValidateSet(@"windows10Enterprise", @"windows10EnterpriseN", @"windows10Education", @"windows10EducationN", @"windows10MobileEnterprise", @"windows10HolographicEnterprise", @"windows10Professional", @"windows10ProfessionalN", @"windows10ProfessionalEducation", @"windows10ProfessionalEducationN", @"windows10ProfessionalWorkstation", @"windows10ProfessionalWorkstationN")]
-        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;targetEdition&quot; property, of type &quot;microsoft.graph.windows10EditionType&quot;.")]
-        public System.String targetEdition { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;license&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
-        ///     <para type="description">Edition Upgrade License File Content.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;license&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String license { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
-        ///     <para type="description">Edition Upgrade Product Key.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String productKey { get; set; }
-
-        /// <summary>
-        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.</para>
-        /// </summary>
-        [Selectable]
-        [Expandable]
-        [ParameterSetSelector(@"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter windowsDefenderAdvancedThreatProtectionConfiguration { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;allowSampleSharing&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.</para>
-        ///     <para type="description">Windows Defender AdvancedThreatProtection &quot;Allow Sample Sharing&quot; Rule</para>
-        /// </summary>
-        [ODataType("Edm.Boolean")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;allowSampleSharing&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean allowSampleSharing { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;enableExpeditedTelemetryReporting&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.</para>
-        ///     <para type="description">Expedite Windows Defender Advanced Threat Protection telemetry reporting frequency.</para>
-        /// </summary>
-        [ODataType("Edm.Boolean")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;enableExpeditedTelemetryReporting&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean enableExpeditedTelemetryReporting { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSDeviceFeaturesConfiguration&quot; type.</para>
@@ -5823,7 +5843,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;workProfilePasswordSignInFailureCountBeforeFactoryReset&quot; property, of type &quot;Edm.Int32&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
-        ///     <para type="description">Number of sign in failures allowed before work profile is removed and all corporate data deleted. Valid values 4 to 11</para>
+        ///     <para type="description">Number of sign in failures allowed before work profile is removed and all corporate data deleted. Valid values 1 to 16</para>
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]

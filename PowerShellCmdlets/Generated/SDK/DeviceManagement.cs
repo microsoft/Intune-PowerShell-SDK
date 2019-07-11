@@ -10,10 +10,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneDeviceManagement", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "DeviceManagement", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
-    public class Get_IntuneDeviceManagement : GetCmdlet
+    [Alias("Get-IntuneDeviceManagement")]
+    public class Get_DeviceManagement : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;subscriptionState&quot; property, of type &quot;microsoft.graph.deviceManagementSubscriptionState&quot;.</para>
@@ -102,7 +103,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.deviceManagement&quot; type.</para>
         ///     <para type="description">The device configurations.</para>
         /// </summary>
-        [ODataType("microsoft.graph.deviceConfiguration", "microsoft.graph.windows10TeamGeneralConfiguration", "microsoft.graph.windowsPhone81GeneralConfiguration", "microsoft.graph.windows81GeneralConfiguration", "microsoft.graph.windowsUpdateForBusinessConfiguration", "microsoft.graph.windowsPhone81CustomConfiguration", "microsoft.graph.windows10SecureAssessmentConfiguration", "microsoft.graph.sharedPCConfiguration", "microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", "microsoft.graph.windows10CustomConfiguration", "microsoft.graph.windows10GeneralConfiguration", "microsoft.graph.windows10EndpointProtectionConfiguration", "microsoft.graph.editionUpgradeConfiguration", "microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", "microsoft.graph.appleDeviceFeaturesConfigurationBase", "microsoft.graph.macOSDeviceFeaturesConfiguration", "microsoft.graph.iosDeviceFeaturesConfiguration", "microsoft.graph.macOSGeneralDeviceConfiguration", "microsoft.graph.macOSCustomConfiguration", "microsoft.graph.iosUpdateConfiguration", "microsoft.graph.iosGeneralDeviceConfiguration", "microsoft.graph.iosCustomConfiguration", "microsoft.graph.iosCertificateProfile", "microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", "microsoft.graph.androidWorkProfileCustomConfiguration", "microsoft.graph.androidGeneralDeviceConfiguration", "microsoft.graph.androidCustomConfiguration")]
+        [ODataType("microsoft.graph.deviceConfiguration", "microsoft.graph.windows10TeamGeneralConfiguration", "microsoft.graph.windowsPhone81GeneralConfiguration", "microsoft.graph.windows81GeneralConfiguration", "microsoft.graph.windowsUpdateForBusinessConfiguration", "microsoft.graph.windowsPhone81CustomConfiguration", "microsoft.graph.windows10SecureAssessmentConfiguration", "microsoft.graph.sharedPCConfiguration", "microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", "microsoft.graph.windows10CustomConfiguration", "microsoft.graph.editionUpgradeConfiguration", "microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", "microsoft.graph.windows10GeneralConfiguration", "microsoft.graph.windows10EndpointProtectionConfiguration", "microsoft.graph.appleDeviceFeaturesConfigurationBase", "microsoft.graph.macOSDeviceFeaturesConfiguration", "microsoft.graph.iosDeviceFeaturesConfiguration", "microsoft.graph.macOSGeneralDeviceConfiguration", "microsoft.graph.macOSCustomConfiguration", "microsoft.graph.iosUpdateConfiguration", "microsoft.graph.iosGeneralDeviceConfiguration", "microsoft.graph.iosCustomConfiguration", "microsoft.graph.iosCertificateProfile", "microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", "microsoft.graph.androidWorkProfileCustomConfiguration", "microsoft.graph.androidGeneralDeviceConfiguration", "microsoft.graph.androidCustomConfiguration")]
         [Selectable]
         [Expandable]
         public System.Object[] deviceConfigurations { get; set; }
@@ -333,10 +334,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneDeviceManagement", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceManagement")]
+    [Cmdlet("New", "DeviceManagement", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceManagement")]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
-    public class New_IntuneDeviceManagement : PostCmdlet
+    [Alias("New-IntuneDeviceManagement")]
+    public class New_DeviceManagement : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;subscriptionState&quot; property, of type &quot;microsoft.graph.deviceManagementSubscriptionState&quot;.</para>
@@ -443,7 +445,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.deviceManagement&quot; type.</para>
         ///     <para type="description">The device configurations.</para>
         /// </summary>
-        [ODataType("microsoft.graph.deviceConfiguration", "microsoft.graph.windows10TeamGeneralConfiguration", "microsoft.graph.windowsPhone81GeneralConfiguration", "microsoft.graph.windows81GeneralConfiguration", "microsoft.graph.windowsUpdateForBusinessConfiguration", "microsoft.graph.windowsPhone81CustomConfiguration", "microsoft.graph.windows10SecureAssessmentConfiguration", "microsoft.graph.sharedPCConfiguration", "microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", "microsoft.graph.windows10CustomConfiguration", "microsoft.graph.windows10GeneralConfiguration", "microsoft.graph.windows10EndpointProtectionConfiguration", "microsoft.graph.editionUpgradeConfiguration", "microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", "microsoft.graph.appleDeviceFeaturesConfigurationBase", "microsoft.graph.macOSDeviceFeaturesConfiguration", "microsoft.graph.iosDeviceFeaturesConfiguration", "microsoft.graph.macOSGeneralDeviceConfiguration", "microsoft.graph.macOSCustomConfiguration", "microsoft.graph.iosUpdateConfiguration", "microsoft.graph.iosGeneralDeviceConfiguration", "microsoft.graph.iosCustomConfiguration", "microsoft.graph.iosCertificateProfile", "microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", "microsoft.graph.androidWorkProfileCustomConfiguration", "microsoft.graph.androidGeneralDeviceConfiguration", "microsoft.graph.androidCustomConfiguration")]
+        [ODataType("microsoft.graph.deviceConfiguration", "microsoft.graph.windows10TeamGeneralConfiguration", "microsoft.graph.windowsPhone81GeneralConfiguration", "microsoft.graph.windows81GeneralConfiguration", "microsoft.graph.windowsUpdateForBusinessConfiguration", "microsoft.graph.windowsPhone81CustomConfiguration", "microsoft.graph.windows10SecureAssessmentConfiguration", "microsoft.graph.sharedPCConfiguration", "microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", "microsoft.graph.windows10CustomConfiguration", "microsoft.graph.editionUpgradeConfiguration", "microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", "microsoft.graph.windows10GeneralConfiguration", "microsoft.graph.windows10EndpointProtectionConfiguration", "microsoft.graph.appleDeviceFeaturesConfigurationBase", "microsoft.graph.macOSDeviceFeaturesConfiguration", "microsoft.graph.iosDeviceFeaturesConfiguration", "microsoft.graph.macOSGeneralDeviceConfiguration", "microsoft.graph.macOSCustomConfiguration", "microsoft.graph.iosUpdateConfiguration", "microsoft.graph.iosGeneralDeviceConfiguration", "microsoft.graph.iosCustomConfiguration", "microsoft.graph.iosCertificateProfile", "microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", "microsoft.graph.androidWorkProfileCustomConfiguration", "microsoft.graph.androidGeneralDeviceConfiguration", "microsoft.graph.androidCustomConfiguration")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -732,10 +734,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneDeviceManagement", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceManagement")]
+    [Cmdlet("Update", "DeviceManagement", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceManagement")]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
-    public class Update_IntuneDeviceManagement : PatchCmdlet
+    [Alias("Update-IntuneDeviceManagement")]
+    public class Update_DeviceManagement : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;subscriptionState&quot; property, of type &quot;microsoft.graph.deviceManagementSubscriptionState&quot;.</para>
@@ -842,7 +845,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.deviceManagement&quot; type.</para>
         ///     <para type="description">The device configurations.</para>
         /// </summary>
-        [ODataType("microsoft.graph.deviceConfiguration", "microsoft.graph.windows10TeamGeneralConfiguration", "microsoft.graph.windowsPhone81GeneralConfiguration", "microsoft.graph.windows81GeneralConfiguration", "microsoft.graph.windowsUpdateForBusinessConfiguration", "microsoft.graph.windowsPhone81CustomConfiguration", "microsoft.graph.windows10SecureAssessmentConfiguration", "microsoft.graph.sharedPCConfiguration", "microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", "microsoft.graph.windows10CustomConfiguration", "microsoft.graph.windows10GeneralConfiguration", "microsoft.graph.windows10EndpointProtectionConfiguration", "microsoft.graph.editionUpgradeConfiguration", "microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", "microsoft.graph.appleDeviceFeaturesConfigurationBase", "microsoft.graph.macOSDeviceFeaturesConfiguration", "microsoft.graph.iosDeviceFeaturesConfiguration", "microsoft.graph.macOSGeneralDeviceConfiguration", "microsoft.graph.macOSCustomConfiguration", "microsoft.graph.iosUpdateConfiguration", "microsoft.graph.iosGeneralDeviceConfiguration", "microsoft.graph.iosCustomConfiguration", "microsoft.graph.iosCertificateProfile", "microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", "microsoft.graph.androidWorkProfileCustomConfiguration", "microsoft.graph.androidGeneralDeviceConfiguration", "microsoft.graph.androidCustomConfiguration")]
+        [ODataType("microsoft.graph.deviceConfiguration", "microsoft.graph.windows10TeamGeneralConfiguration", "microsoft.graph.windowsPhone81GeneralConfiguration", "microsoft.graph.windows81GeneralConfiguration", "microsoft.graph.windowsUpdateForBusinessConfiguration", "microsoft.graph.windowsPhone81CustomConfiguration", "microsoft.graph.windows10SecureAssessmentConfiguration", "microsoft.graph.sharedPCConfiguration", "microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", "microsoft.graph.windows10CustomConfiguration", "microsoft.graph.editionUpgradeConfiguration", "microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", "microsoft.graph.windows10GeneralConfiguration", "microsoft.graph.windows10EndpointProtectionConfiguration", "microsoft.graph.appleDeviceFeaturesConfigurationBase", "microsoft.graph.macOSDeviceFeaturesConfiguration", "microsoft.graph.iosDeviceFeaturesConfiguration", "microsoft.graph.macOSGeneralDeviceConfiguration", "microsoft.graph.macOSCustomConfiguration", "microsoft.graph.iosUpdateConfiguration", "microsoft.graph.iosGeneralDeviceConfiguration", "microsoft.graph.iosCustomConfiguration", "microsoft.graph.iosCertificateProfile", "microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", "microsoft.graph.androidWorkProfileCustomConfiguration", "microsoft.graph.androidGeneralDeviceConfiguration", "microsoft.graph.androidCustomConfiguration")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -1131,10 +1134,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneDeviceManagement", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
-    public class Remove_IntuneDeviceManagement : DeleteCmdlet
+    [Alias("Remove-IntuneDeviceManagement")]
+    public class Remove_DeviceManagement : DeleteCmdlet
     {
         internal override System.String GetResourcePath()
         {
@@ -1148,10 +1152,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: GET ~/deviceManagement/verifyWindowsEnrollmentAutoDiscovery</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneVerifyWindowsEnrollmentAutoDiscovery", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Invoke", "DeviceManagement_VerifyWindowsEnrollmentAutoDiscovery", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
-    public class Invoke_IntuneVerifyWindowsEnrollmentAutoDiscovery : FunctionReturningEntityCmdlet
+    [Alias("Invoke-IntuneVerifyWindowsEnrollmentAutoDiscovery")]
+    public class Invoke_DeviceManagement_VerifyWindowsEnrollmentAutoDiscovery : FunctionReturningEntityCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;domainName&quot; function parameter of type &quot;Edm.String&quot;.</para>
@@ -1174,10 +1179,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: GET ~/deviceManagement/getEffectivePermissions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneGetEffectivePermission", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Invoke", "DeviceManagement_GetEffectivePermissions", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceManagement")]
     [ResourceTypePropertyName("deviceManagementODataType")]
-    public class Invoke_IntuneGetEffectivePermission : FunctionReturningCollectionCmdlet
+    [Alias("Invoke-IntuneGetEffectivePermission")]
+    public class Invoke_DeviceManagement_GetEffectivePermissions : FunctionReturningCollectionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;scope&quot; function parameter of type &quot;Edm.String&quot;.</para>

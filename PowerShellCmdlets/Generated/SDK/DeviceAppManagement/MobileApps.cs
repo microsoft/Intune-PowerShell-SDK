@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceAppManagement/mobileApps</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneMobileApp", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceAppManagement_MobileApps", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.mobileApp", "microsoft.graph.iosStoreApp", "microsoft.graph.iosVppApp", "microsoft.graph.androidStoreApp", "microsoft.graph.webApp", "microsoft.graph.microsoftStoreForBusinessApp", "microsoft.graph.mobileLobApp", "microsoft.graph.iosLobApp", "microsoft.graph.androidLobApp", "microsoft.graph.windowsUniversalAppX", "microsoft.graph.windowsMobileMSI", "microsoft.graph.managedApp", "microsoft.graph.managedMobileLobApp", "microsoft.graph.managedIOSLobApp", "microsoft.graph.managedAndroidLobApp", "microsoft.graph.managedIOSStoreApp", "microsoft.graph.managedAndroidStoreApp", "microsoft.graph.macOSOfficeSuiteApp")]
     [ResourceTypePropertyName("mobileAppODataType")]
     [ResourceReference]
-    public class Get_IntuneMobileApp : GetOrSearchCmdlet
+    [Alias("Get-IntuneMobileApp")]
+    public class Get_DeviceAppManagement_MobileApps : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -620,11 +621,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceAppManagement/mobileApps</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneMobileApp", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "DeviceAppManagement_MobileApps", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.mobileApp", "microsoft.graph.iosStoreApp", "microsoft.graph.iosVppApp", "microsoft.graph.androidStoreApp", "microsoft.graph.webApp", "microsoft.graph.microsoftStoreForBusinessApp", "microsoft.graph.mobileLobApp", "microsoft.graph.iosLobApp", "microsoft.graph.androidLobApp", "microsoft.graph.windowsUniversalAppX", "microsoft.graph.windowsMobileMSI", "microsoft.graph.managedApp", "microsoft.graph.managedMobileLobApp", "microsoft.graph.managedIOSLobApp", "microsoft.graph.managedAndroidLobApp", "microsoft.graph.managedIOSStoreApp", "microsoft.graph.managedAndroidStoreApp", "microsoft.graph.macOSOfficeSuiteApp")]
     [ResourceTypePropertyName("mobileAppODataType")]
     [ResourceReference]
-    public class New_IntuneMobileApp : PostCmdlet
+    [Alias("New-IntuneMobileApp")]
+    public class New_DeviceAppManagement_MobileApps : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -1721,10 +1723,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/mobileApps</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneMobileApp", ConfirmImpact = ConfirmImpact.Medium)]
+    [Cmdlet("Update", "DeviceAppManagement_MobileApps", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.mobileApp", "microsoft.graph.iosStoreApp", "microsoft.graph.iosVppApp", "microsoft.graph.androidStoreApp", "microsoft.graph.webApp", "microsoft.graph.microsoftStoreForBusinessApp", "microsoft.graph.mobileLobApp", "microsoft.graph.iosLobApp", "microsoft.graph.androidLobApp", "microsoft.graph.windowsUniversalAppX", "microsoft.graph.windowsMobileMSI", "microsoft.graph.managedApp", "microsoft.graph.managedMobileLobApp", "microsoft.graph.managedIOSLobApp", "microsoft.graph.managedAndroidLobApp", "microsoft.graph.managedIOSStoreApp", "microsoft.graph.managedAndroidStoreApp", "microsoft.graph.macOSOfficeSuiteApp")]
     [ResourceTypePropertyName("mobileAppODataType")]
-    public class Update_IntuneMobileApp : PatchCmdlet
+    [Alias("Update-IntuneMobileApp")]
+    public class Update_DeviceAppManagement_MobileApps : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -2823,10 +2826,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/mobileApps/mobileAppId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneMobileApp", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceAppManagement_MobileApps", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileApp", "microsoft.graph.iosStoreApp", "microsoft.graph.iosVppApp", "microsoft.graph.androidStoreApp", "microsoft.graph.webApp", "microsoft.graph.microsoftStoreForBusinessApp", "microsoft.graph.mobileLobApp", "microsoft.graph.iosLobApp", "microsoft.graph.androidLobApp", "microsoft.graph.windowsUniversalAppX", "microsoft.graph.windowsMobileMSI", "microsoft.graph.managedApp", "microsoft.graph.managedMobileLobApp", "microsoft.graph.managedIOSLobApp", "microsoft.graph.managedAndroidLobApp", "microsoft.graph.managedIOSStoreApp", "microsoft.graph.managedAndroidStoreApp", "microsoft.graph.macOSOfficeSuiteApp")]
     [ResourceTypePropertyName("mobileAppODataType")]
-    public class Remove_IntuneMobileApp : DeleteCmdlet
+    [Alias("Remove-IntuneMobileApp")]
+    public class Remove_DeviceAppManagement_MobileApps : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -2851,10 +2855,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceAppManagement/mobileApps/assign</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneMobileAppAssign", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceAppManagement_MobileApps_Assign", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileApp", "microsoft.graph.iosStoreApp", "microsoft.graph.iosVppApp", "microsoft.graph.androidStoreApp", "microsoft.graph.webApp", "microsoft.graph.microsoftStoreForBusinessApp", "microsoft.graph.mobileLobApp", "microsoft.graph.iosLobApp", "microsoft.graph.androidLobApp", "microsoft.graph.windowsUniversalAppX", "microsoft.graph.windowsMobileMSI", "microsoft.graph.managedApp", "microsoft.graph.managedMobileLobApp", "microsoft.graph.managedIOSLobApp", "microsoft.graph.managedAndroidLobApp", "microsoft.graph.managedIOSStoreApp", "microsoft.graph.managedAndroidStoreApp", "microsoft.graph.macOSOfficeSuiteApp")]
     [ResourceTypePropertyName("mobileAppODataType")]
-    public class Invoke_IntuneMobileAppAssign : ActionCmdlet
+    [Alias("Invoke-IntuneMobileAppAssign")]
+    public class Invoke_DeviceAppManagement_MobileApps_Assign : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;mobileAppAssignments&quot; action parameter of type &quot;microsoft.graph.mobileAppAssignment&quot;.</para>
@@ -2863,7 +2868,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;mobileAppAssignments&quot; action parameter of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;mobileAppAssignments&quot; action parameter of type &quot;microsoft.graph.mobileAppAssignment&quot;.")]
         public System.Object[] mobileAppAssignments { get; set; }
 
         /// <summary>

@@ -68,6 +68,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Boolean isBuiltIn { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.roleDefinition&quot; type.</para>
+        ///     <para type="description">List of Role assignments for this role definition.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.roleAssignment", "microsoft.graph.deviceAndAppManagementRoleAssignment")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
+        public System.Object[] roleAssignments { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceAndAppManagementRoleDefinition&quot; type.</para>
         /// </summary>
         [Selectable]

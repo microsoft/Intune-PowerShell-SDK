@@ -10,11 +10,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/groups/{groupId}/groupLifecyclePolicies</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "AADGroupGroupLifecyclePolicy", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "Groups_GroupLifecyclePolicies", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
     [ResourceReference]
-    public class Get_AADGroupGroupLifecyclePolicy : GetOrSearchCmdlet
+    [Alias("Get-AADGroupGroupLifecyclePolicy")]
+    public class Get_Groups_GroupLifecyclePolicies : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -76,11 +77,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/groups/{groupId}/groupLifecyclePolicies</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "AADGroupGroupLifecyclePolicy", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.groupLifecyclePolicy")]
+    [Cmdlet("New", "Groups_GroupLifecyclePolicies", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.groupLifecyclePolicy")]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
     [ResourceReference]
-    public class New_AADGroupGroupLifecyclePolicy : PostCmdlet
+    [Alias("New-AADGroupGroupLifecyclePolicy")]
+    public class New_Groups_GroupLifecyclePolicies : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.groupLifecyclePolicy&quot; object in the &quot;groupLifecyclePolicies&quot; collection.</para>
@@ -143,10 +145,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/groups/{groupId}/groupLifecyclePolicies</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "AADGroupGroupLifecyclePolicy", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.groupLifecyclePolicy")]
+    [Cmdlet("Update", "Groups_GroupLifecyclePolicies", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.groupLifecyclePolicy")]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
-    public class Update_AADGroupGroupLifecyclePolicy : PatchCmdlet
+    [Alias("Update-AADGroupGroupLifecyclePolicy")]
+    public class Update_Groups_GroupLifecyclePolicies : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.groupLifecyclePolicy&quot; object in the &quot;groupLifecyclePolicies&quot; collection.</para>
@@ -211,10 +214,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/groups/{groupId}/groupLifecyclePolicies/groupLifecyclePolicyId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "AADGroupGroupLifecyclePolicy", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "Groups_GroupLifecyclePolicies", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
-    public class Remove_AADGroupGroupLifecyclePolicy : DeleteCmdlet
+    [Alias("Remove-AADGroupGroupLifecyclePolicy")]
+    public class Remove_Groups_GroupLifecyclePolicies : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.groupLifecyclePolicy&quot; object in the &quot;groupLifecyclePolicies&quot; collection.</para>
@@ -249,10 +253,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/groups/{groupId}/groupLifecyclePolicies/addGroup</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "AADGroupGroupLifecyclePolicyAddGroup", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "Groups_GroupLifecyclePolicies_AddGroup", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
-    public class Invoke_AADGroupGroupLifecyclePolicyAddGroup : ActionCmdlet
+    [Alias("Invoke-AADGroupGroupLifecyclePolicyAddGroup")]
+    public class Invoke_Groups_GroupLifecyclePolicies_AddGroup : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -287,10 +292,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/groups/{groupId}/groupLifecyclePolicies/removeGroup</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "AADGroupGroupLifecyclePolicyRemoveGroup", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "Groups_GroupLifecyclePolicies_RemoveGroup", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.groupLifecyclePolicy")]
     [ResourceTypePropertyName("groupLifecyclePolicyODataType")]
-    public class Invoke_AADGroupGroupLifecyclePolicyRemoveGroup : ActionCmdlet
+    [Alias("Invoke-AADGroupGroupLifecyclePolicyRemoveGroup")]
+    public class Invoke_Groups_GroupLifecyclePolicies_RemoveGroup : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>

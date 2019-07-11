@@ -76,6 +76,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Boolean isVerified { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;passwordNotificationWindowInDays&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.domain&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;passwordNotificationWindowInDays&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 passwordNotificationWindowInDays { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;passwordValidityPeriodInDays&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.domain&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;passwordValidityPeriodInDays&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 passwordValidityPeriodInDays { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;supportedServices&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.domain&quot; type.</para>
         /// </summary>
@@ -120,7 +138,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;domainNameReferences&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.domain&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]

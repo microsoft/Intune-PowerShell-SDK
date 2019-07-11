@@ -25,9 +25,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK
         {
             this.AccessTokenType = accessTokenType ?? throw new ArgumentNullException(nameof(accessTokenType));
             this.AccessToken = accessToken ?? throw new ArgumentNullException(nameof(accessToken));
+            this.UserUniqueId = userId;
             this.AuthenticationHeaderValue = new AuthenticationHeaderValue(accessTokenType, accessToken);
             this.PSUserDisplayableInformation = psUserDisplayableInformation;
-            this.UserUniqueId = userId ?? throw new ArgumentNullException(nameof(userId));
             this.ExpiresOn = expiresOn;
         }
     }

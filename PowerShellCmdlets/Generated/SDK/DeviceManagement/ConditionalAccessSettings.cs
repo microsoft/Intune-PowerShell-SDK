@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/conditionalAccessSettings</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneConditionalAccessSetting", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "DeviceManagement_ConditionalAccessSettings", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.onPremisesConditionalAccessSettings")]
     [ResourceTypePropertyName("conditionalAccessSettingODataType")]
     [ResourceReference]
-    public class Get_IntuneConditionalAccessSetting : GetCmdlet
+    [Alias("Get-IntuneConditionalAccessSetting")]
+    public class Get_DeviceManagement_ConditionalAccessSettings : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -68,11 +69,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/conditionalAccessSettings</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneConditionalAccessSetting", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.onPremisesConditionalAccessSettings")]
+    [Cmdlet("New", "DeviceManagement_ConditionalAccessSettings", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.onPremisesConditionalAccessSettings")]
     [ODataType("microsoft.graph.onPremisesConditionalAccessSettings")]
     [ResourceTypePropertyName("conditionalAccessSettingODataType")]
     [ResourceReference]
-    public class New_IntuneConditionalAccessSetting : PostCmdlet
+    [Alias("New-IntuneConditionalAccessSetting")]
+    public class New_DeviceManagement_ConditionalAccessSettings : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -133,10 +135,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/conditionalAccessSettings</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneConditionalAccessSetting", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.onPremisesConditionalAccessSettings")]
+    [Cmdlet("Update", "DeviceManagement_ConditionalAccessSettings", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.onPremisesConditionalAccessSettings")]
     [ODataType("microsoft.graph.onPremisesConditionalAccessSettings")]
     [ResourceTypePropertyName("conditionalAccessSettingODataType")]
-    public class Update_IntuneConditionalAccessSetting : PatchCmdlet
+    [Alias("Update-IntuneConditionalAccessSetting")]
+    public class Update_DeviceManagement_ConditionalAccessSettings : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;enabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -197,10 +200,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/conditionalAccessSettings</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneConditionalAccessSetting", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_ConditionalAccessSettings", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.onPremisesConditionalAccessSettings")]
     [ResourceTypePropertyName("conditionalAccessSettingODataType")]
-    public class Remove_IntuneConditionalAccessSetting : DeleteCmdlet
+    [Alias("Remove-IntuneConditionalAccessSetting")]
+    public class Remove_DeviceManagement_ConditionalAccessSettings : DeleteCmdlet
     {
         internal override System.String GetResourcePath()
         {

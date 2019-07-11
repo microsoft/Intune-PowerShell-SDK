@@ -1,4 +1,4 @@
-Import-Module $env:testDir\LobApps\UploadLobApp.psm1
+Import-Module (Join-Path -Path $PSScriptRoot -ChildPath 'UploadLobApp.psm1')
 
 # Create the object that contains information about the app
 $appToUpload = New-MobileAppObject `
@@ -12,9 +12,9 @@ $appToUpload = New-MobileAppObject `
     -fileName 'test.ipa' `
     -buildNumber 'v1' -versionNumber 'v1' -expirationDateTime ((Get-Date).AddDays(90))
 
-$filePath = "$env:testDir\LobApps\test.ipa"
 # Upload the app file with the app information
-# !! Replace 'test.ipa' with the path to your *.ipa file !!
+# !! Set $filePath to the path to your *.ipa file !!
+$filePath = Join-Path -Path $PSScriptRoot -ChildPath 'test.ipa'
 $createdApp = New-LobApp `
     -filePath $filePath `
     -mobileApp $appToUpload

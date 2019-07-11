@@ -24,7 +24,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;lowerAddress&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.iPv4Range&quot; type.</para>
-        ///     <para type="description">Lower IP Address</para>
+        ///     <para type="description">Lower address.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]
@@ -35,7 +35,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;upperAddress&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.iPv4Range&quot; type.</para>
-        ///     <para type="description">Upper IP Address</para>
+        ///     <para type="description">Upper address.</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]

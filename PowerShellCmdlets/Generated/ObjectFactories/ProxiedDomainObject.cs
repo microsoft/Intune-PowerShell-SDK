@@ -25,7 +25,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;proxy&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.proxiedDomain&quot; type.</para>
-        ///     <para type="description">Proxy IP</para>
+        ///     <para type="description">Proxy IP or FQDN</para>
         /// </summary>
         [ODataType("Edm.String")]
         [Selectable]

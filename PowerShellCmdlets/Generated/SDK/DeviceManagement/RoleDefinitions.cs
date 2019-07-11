@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/roleDefinitions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneRoleDefinition", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_RoleDefinitions", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition")]
     [ResourceTypePropertyName("roleDefinitionODataType")]
     [ResourceReference]
-    public class Get_IntuneRoleDefinition : GetOrSearchCmdlet
+    [Alias("Get-IntuneRoleDefinition")]
+    public class Get_DeviceManagement_RoleDefinitions : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.</para>
@@ -67,6 +68,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Sortable]
         public System.Boolean isBuiltIn { get; set; }
 
+        /// <summary>
+        ///     <para type="description">The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.roleDefinition&quot; type.</para>
+        ///     <para type="description">List of Role assignments for this role definition.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.roleAssignment", "microsoft.graph.deviceAndAppManagementRoleAssignment")]
+        [Selectable]
+        [Expandable]
+        public System.Object[] roleAssignments { get; set; }
+
         internal override System.String GetResourcePath()
         {
             return $"deviceManagement/roleDefinitions/{roleDefinitionId ?? string.Empty}";
@@ -80,11 +91,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/roleDefinitions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneRoleDefinition", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "DeviceManagement_RoleDefinitions", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition")]
     [ResourceTypePropertyName("roleDefinitionODataType")]
     [ResourceReference]
-    public class New_IntuneRoleDefinition : PostCmdlet
+    [Alias("New-IntuneRoleDefinition")]
+    public class New_DeviceManagement_RoleDefinitions : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.</para>
@@ -154,6 +166,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Boolean isBuiltIn { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.roleDefinition&quot; type.</para>
+        ///     <para type="description">List of Role assignments for this role definition.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.roleAssignment", "microsoft.graph.deviceAndAppManagementRoleAssignment")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
+        public System.Object[] roleAssignments { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceAndAppManagementRoleDefinition&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -175,10 +201,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/roleDefinitions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneRoleDefinition", ConfirmImpact = ConfirmImpact.Medium)]
+    [Cmdlet("Update", "DeviceManagement_RoleDefinitions", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition")]
     [ResourceTypePropertyName("roleDefinitionODataType")]
-    public class Update_IntuneRoleDefinition : PatchCmdlet
+    [Alias("Update-IntuneRoleDefinition")]
+    public class Update_DeviceManagement_RoleDefinitions : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.</para>
@@ -250,6 +277,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Boolean isBuiltIn { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.roleDefinition&quot; type.</para>
+        ///     <para type="description">List of Role assignments for this role definition.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.roleAssignment", "microsoft.graph.deviceAndAppManagementRoleAssignment")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
+        public System.Object[] roleAssignments { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceAndAppManagementRoleDefinition&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -271,10 +312,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/roleDefinitions/roleDefinitionId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneRoleDefinition", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_RoleDefinitions", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition")]
     [ResourceTypePropertyName("roleDefinitionODataType")]
-    public class Remove_IntuneRoleDefinition : DeleteCmdlet
+    [Alias("Remove-IntuneRoleDefinition")]
+    public class Remove_DeviceManagement_RoleDefinitions : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.roleDefinition&quot; object in the &quot;roleDefinitions&quot; collection.</para>

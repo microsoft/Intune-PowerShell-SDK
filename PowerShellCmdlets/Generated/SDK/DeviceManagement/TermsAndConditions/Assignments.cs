@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/termsAndConditions/{termsAndConditionId}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneTermsAndConditionsAssignment", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_TermsAndConditions_Assignments", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.termsAndConditionsAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
     [ResourceReference]
-    public class Get_IntuneTermsAndConditionsAssignment : GetOrSearchCmdlet
+    [Alias("Get-IntuneTermsAndConditionsAssignment")]
+    public class Get_DeviceManagement_TermsAndConditions_Assignments : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.</para>
@@ -61,11 +62,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/termsAndConditions/{termsAndConditionId}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneTermsAndConditionsAssignment", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.termsAndConditionsAssignment")]
+    [Cmdlet("New", "DeviceManagement_TermsAndConditions_Assignments", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.termsAndConditionsAssignment")]
     [ODataType("microsoft.graph.termsAndConditionsAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
     [ResourceReference]
-    public class New_IntuneTermsAndConditionsAssignment : PostCmdlet
+    [Alias("New-IntuneTermsAndConditionsAssignment")]
+    public class New_DeviceManagement_TermsAndConditions_Assignments : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.termsAndConditionsAssignment&quot; object in the &quot;assignments&quot; collection.</para>
@@ -110,10 +112,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/termsAndConditions/{termsAndConditionId}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneTermsAndConditionsAssignment", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.termsAndConditionsAssignment")]
+    [Cmdlet("Update", "DeviceManagement_TermsAndConditions_Assignments", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.termsAndConditionsAssignment")]
     [ODataType("microsoft.graph.termsAndConditionsAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    public class Update_IntuneTermsAndConditionsAssignment : PatchCmdlet
+    [Alias("Update-IntuneTermsAndConditionsAssignment")]
+    public class Update_DeviceManagement_TermsAndConditions_Assignments : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.termsAndConditionsAssignment&quot; object in the &quot;assignments&quot; collection.</para>
@@ -160,10 +163,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/termsAndConditions/{termsAndConditionId}/assignments/termsAndConditionsAssignmentId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneTermsAndConditionsAssignment", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_TermsAndConditions_Assignments", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.termsAndConditionsAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    public class Remove_IntuneTermsAndConditionsAssignment : DeleteCmdlet
+    [Alias("Remove-IntuneTermsAndConditionsAssignment")]
+    public class Remove_DeviceManagement_TermsAndConditions_Assignments : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.termsAndConditionsAssignment&quot; object in the &quot;assignments&quot; collection.</para>

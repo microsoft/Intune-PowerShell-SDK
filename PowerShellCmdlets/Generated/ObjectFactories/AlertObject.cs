@@ -156,6 +156,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object[] fileStates { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;historyStates&quot; property, of type &quot;microsoft.graph.alertHistoryState&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.alert&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.alertHistoryState")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;historyStates&quot; property, of type &quot;microsoft.graph.alertHistoryState&quot;.")]
+        public System.Object[] historyStates { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;hostStates&quot; property, of type &quot;microsoft.graph.hostSecurityState&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.alert&quot; type.</para>
         /// </summary>

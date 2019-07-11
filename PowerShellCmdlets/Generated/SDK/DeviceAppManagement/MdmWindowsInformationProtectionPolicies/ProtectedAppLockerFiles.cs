@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/protectedAppLockerFiles</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneMdmWindowsInformationProtectionPolicyProtectedAppLockerFile", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceAppManagement_MdmWindowsInformationProtectionPolicies_ProtectedAppLockerFiles", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("protectedAppLockerFileODataType")]
     [ResourceReference]
-    public class Get_IntuneMdmWindowsInformationProtectionPolicyProtectedAppLockerFile : GetOrSearchCmdlet
+    [Alias("Get-IntuneMdmWindowsInformationProtectionPolicyProtectedAppLockerFile")]
+    public class Get_DeviceAppManagement_MdmWindowsInformationProtectionPolicies_ProtectedAppLockerFiles : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mdmWindowsInformationProtectionPolicy&quot; object in the &quot;mdmWindowsInformationProtectionPolicies&quot; collection.</para>
@@ -105,11 +106,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/protectedAppLockerFiles</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneMdmWindowsInformationProtectionPolicyProtectedAppLockerFile", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile")]
+    [Cmdlet("New", "DeviceAppManagement_MdmWindowsInformationProtectionPolicies_ProtectedAppLockerFiles", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("protectedAppLockerFileODataType")]
     [ResourceReference]
-    public class New_IntuneMdmWindowsInformationProtectionPolicyProtectedAppLockerFile : PostCmdlet
+    [Alias("New-IntuneMdmWindowsInformationProtectionPolicyProtectedAppLockerFile")]
+    public class New_DeviceAppManagement_MdmWindowsInformationProtectionPolicies_ProtectedAppLockerFiles : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;protectedAppLockerFiles&quot; collection.</para>
@@ -202,10 +204,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/protectedAppLockerFiles</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneMdmWindowsInformationProtectionPolicyProtectedAppLockerFile", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile")]
+    [Cmdlet("Update", "DeviceAppManagement_MdmWindowsInformationProtectionPolicies_ProtectedAppLockerFiles", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("protectedAppLockerFileODataType")]
-    public class Update_IntuneMdmWindowsInformationProtectionPolicyProtectedAppLockerFile : PatchCmdlet
+    [Alias("Update-IntuneMdmWindowsInformationProtectionPolicyProtectedAppLockerFile")]
+    public class Update_DeviceAppManagement_MdmWindowsInformationProtectionPolicies_ProtectedAppLockerFiles : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;protectedAppLockerFiles&quot; collection.</para>
@@ -300,10 +303,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/{mdmWindowsInformationProtectionPolicyODataType}/protectedAppLockerFiles/windowsInformationProtectionAppLockerFileId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneMdmWindowsInformationProtectionPolicyProtectedAppLockerFile", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceAppManagement_MdmWindowsInformationProtectionPolicies_ProtectedAppLockerFiles", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("protectedAppLockerFileODataType")]
-    public class Remove_IntuneMdmWindowsInformationProtectionPolicyProtectedAppLockerFile : DeleteCmdlet
+    [Alias("Remove-IntuneMdmWindowsInformationProtectionPolicyProtectedAppLockerFile")]
+    public class Remove_DeviceAppManagement_MdmWindowsInformationProtectionPolicies_ProtectedAppLockerFiles : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;protectedAppLockerFiles&quot; collection.</para>

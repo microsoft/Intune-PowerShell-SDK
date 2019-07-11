@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneMobileAppConfigurationPolicyUserStatus", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceAppManagement_MobileAppConfigurations_UserStatuses", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationUserStatus")]
     [ResourceTypePropertyName("userStatusODataType")]
     [ResourceReference]
-    public class Get_IntuneMobileAppConfigurationPolicyUserStatus : GetOrSearchCmdlet
+    [Alias("Get-IntuneMobileAppConfigurationPolicyUserStatus")]
+    public class Get_DeviceAppManagement_MobileAppConfigurations_UserStatuses : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedDeviceMobileAppConfiguration&quot; object in the &quot;mobileAppConfigurations&quot; collection.</para>
@@ -101,11 +102,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneMobileAppConfigurationPolicyUserStatus", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserStatus")]
+    [Cmdlet("New", "DeviceAppManagement_MobileAppConfigurations_UserStatuses", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserStatus")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationUserStatus")]
     [ResourceTypePropertyName("userStatusODataType")]
     [ResourceReference]
-    public class New_IntuneMobileAppConfigurationPolicyUserStatus : PostCmdlet
+    [Alias("New-IntuneMobileAppConfigurationPolicyUserStatus")]
+    public class New_DeviceAppManagement_MobileAppConfigurations_UserStatuses : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserStatus&quot; object in the &quot;userStatuses&quot; collection.</para>
@@ -198,10 +200,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneMobileAppConfigurationPolicyUserStatus", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserStatus")]
+    [Cmdlet("Update", "DeviceAppManagement_MobileAppConfigurations_UserStatuses", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserStatus")]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationUserStatus")]
     [ResourceTypePropertyName("userStatusODataType")]
-    public class Update_IntuneMobileAppConfigurationPolicyUserStatus : PatchCmdlet
+    [Alias("Update-IntuneMobileAppConfigurationPolicyUserStatus")]
+    public class Update_DeviceAppManagement_MobileAppConfigurations_UserStatuses : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserStatus&quot; object in the &quot;userStatuses&quot; collection.</para>
@@ -296,10 +299,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatuses/managedDeviceMobileAppConfigurationUserStatusId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneMobileAppConfigurationPolicyUserStatus", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceAppManagement_MobileAppConfigurations_UserStatuses", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDeviceMobileAppConfigurationUserStatus")]
     [ResourceTypePropertyName("userStatusODataType")]
-    public class Remove_IntuneMobileAppConfigurationPolicyUserStatus : DeleteCmdlet
+    [Alias("Remove-IntuneMobileAppConfigurationPolicyUserStatus")]
+    public class Remove_DeviceAppManagement_MobileAppConfigurations_UserStatuses : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserStatus&quot; object in the &quot;userStatuses&quot; collection.</para>

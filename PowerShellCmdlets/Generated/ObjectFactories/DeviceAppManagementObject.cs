@@ -200,6 +200,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;managedAppStatuses&quot; property, of type &quot;microsoft.graph.managedAppStatus&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.deviceAppManagement&quot; type.</para>
+        ///     <para type="description">The managed app statuses.</para>
         /// </summary>
         [ODataType("microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw")]
         [Selectable]

@@ -51,5 +51,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.iosMinimumOperatingSystem", HelpMessage = @"The &quot;v11_0&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean v11_0 { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;v12_0&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.iosMinimumOperatingSystem&quot; type.</para>
+        ///     <para type="description">Version 12.0 or later.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMinimumOperatingSystem", HelpMessage = @"The &quot;v12_0&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean v12_0 { get; set; }
     }
 }

@@ -11,10 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceAppManagement/mobileApps/{mobileAppId}/categories</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneMobileAppCategorySet", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceAppManagement_MobileApps_Categories", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.mobileAppCategory")]
     [ResourceTypePropertyName("categoryODataType")]
-    public class Get_IntuneMobileAppCategorySet : GetOrSearchCmdlet
+    [Alias("Get-IntuneMobileAppCategorySet")]
+    public class Get_DeviceAppManagement_MobileApps_Categories : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -70,10 +71,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceAppManagement/mobileApps/{mobileAppId}/categories/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneMobileAppCategorySetReferenceSet", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceAppManagement_MobileApps_CategoriesReferences", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.mobileAppCategory")]
     [ResourceTypePropertyName("categoryODataType")]
-    public class Get_IntuneMobileAppCategorySetReferenceSet : GetOrSearchCmdlet
+    [Alias("Get-IntuneMobileAppCategorySetReferenceSet")]
+    public class Get_DeviceAppManagement_MobileApps_CategoriesReferences : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -129,10 +131,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceAppManagement/mobileApps/{mobileAppId}/categories/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneMobileAppCategorySetReferenceSet", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "DeviceAppManagement_MobileApps_CategoriesReferences", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.mobileAppCategory")]
     [ResourceTypePropertyName("categoryODataType")]
-    public class New_IntuneMobileAppCategorySetReferenceSet : PostReferenceToCollectionCmdlet
+    [Alias("New-IntuneMobileAppCategorySetReferenceSet")]
+    public class New_DeviceAppManagement_MobileApps_CategoriesReferences : PostReferenceToCollectionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileAppCategory&quot; object in the &quot;categories&quot; collection.</para>
@@ -180,10 +183,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/mobileApps/{mobileAppId}/categories/mobileAppCategoryId/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneMobileAppCategorySetReferenceSet", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceAppManagement_MobileApps_CategoriesReferences", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileAppCategory")]
     [ResourceTypePropertyName("categoryODataType")]
-    public class Remove_IntuneMobileAppCategorySetReferenceSet : DeleteCmdlet
+    [Alias("Remove-IntuneMobileAppCategorySetReferenceSet")]
+    public class Remove_DeviceAppManagement_MobileApps_CategoriesReferences : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileAppCategory&quot; object in the &quot;categories&quot; collection.</para>

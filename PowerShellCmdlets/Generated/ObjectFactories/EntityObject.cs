@@ -13,6 +13,1246 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class New_EntityObject : ObjectFactoryCmdletBase
     {
         /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.auditLogRoot&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.auditLogRoot")]
+        [Parameter(ParameterSetName = @"microsoft.graph.auditLogRoot", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.auditLogRoot&quot; type.")]
+        public System.Management.Automation.SwitchParameter auditLogRoot { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;signIns&quot; property, of type &quot;microsoft.graph.signIn&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.auditLogRoot&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.signIn", "microsoft.graph.restrictedSignIn")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.auditLogRoot", HelpMessage = @"The &quot;signIns&quot; property, of type &quot;microsoft.graph.signIn&quot;.")]
+        public System.Object[] signIns { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;directoryAudits&quot; property, of type &quot;microsoft.graph.directoryAudit&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.auditLogRoot&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.directoryAudit")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.auditLogRoot", HelpMessage = @"The &quot;directoryAudits&quot; property, of type &quot;microsoft.graph.directoryAudit&quot;.")]
+        public System.Object[] directoryAudits { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;restrictedSignIns&quot; property, of type &quot;microsoft.graph.restrictedSignIn&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.auditLogRoot&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.restrictedSignIn")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.auditLogRoot", HelpMessage = @"The &quot;restrictedSignIns&quot; property, of type &quot;microsoft.graph.restrictedSignIn&quot;.")]
+        public System.Object[] restrictedSignIns { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.signIn")]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.signIn&quot; type.")]
+        public System.Management.Automation.SwitchParameter signIn { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.DateTimeOffset")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsAsyncOperation", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScore", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.activityHistoryItem", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows81CompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10SecureAssessmentConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSCustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosUpdateConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileAppContentFile", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppPolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mdmWindowsInformationProtectionPolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppProtection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppProtection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppProtection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppProtection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.operation", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteEntitySchemaObjectModel", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenotePage", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteEntityHierarchyModel", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.sectionGroup", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteSection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.notebook", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerPlan", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.baseItem", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.drive", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.outlookItem", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.post", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contact", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.message", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.eventMessage", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.event", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.organization", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        public System.DateTimeOffset createdDateTime { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceUserStatus", HelpMessage = @"The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationUserStatus", HelpMessage = @"The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditionsAcceptanceStatus", HelpMessage = @"The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserStatus", HelpMessage = @"The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDevice", HelpMessage = @"The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String userDisplayName { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceUserStatus", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceDeviceStatus", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationUserStatus", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationDeviceStatus", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserStatus", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationUser", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDevice", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.person", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String userPrincipalName { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;userId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.dataPolicyOperation", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDevice", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String userId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;appId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;appId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;appId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String appId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;appDisplayName&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;appDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;appDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;appDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String appDisplayName { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;ipAddress&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;ipAddress&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;ipAddress&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String ipAddress { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.dataPolicyOperation", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsAsyncOperation", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.activityHistoryItem", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceUserStatus", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceDeviceStatus", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationUserStatus", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationDeviceStatus", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserStatus", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.operation", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.invitation", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.schemaExtension", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.signInStatus&quot;.")]
+        public System.Object status { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;clientAppUsed&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;clientAppUsed&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;clientAppUsed&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String clientAppUsed { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;deviceDetail&quot; property, of type &quot;microsoft.graph.deviceDetail&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.deviceDetail")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;deviceDetail&quot; property, of type &quot;microsoft.graph.deviceDetail&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;deviceDetail&quot; property, of type &quot;microsoft.graph.deviceDetail&quot;.")]
+        public System.Object deviceDetail { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;location&quot; property, of type &quot;microsoft.graph.signInLocation&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.location", "microsoft.graph.locationConstraintItem")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;location&quot; property, of type &quot;microsoft.graph.signInLocation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;location&quot; property, of type &quot;microsoft.graph.signInLocation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;location&quot; property, of type &quot;microsoft.graph.signInLocation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.event", HelpMessage = @"The &quot;location&quot; property, of type &quot;microsoft.graph.signInLocation&quot;.")]
+        public System.Object location { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;correlationId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;correlationId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;correlationId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryAudit", HelpMessage = @"The &quot;correlationId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementTroubleshootingEvent", HelpMessage = @"The &quot;correlationId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", HelpMessage = @"The &quot;correlationId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String correlationId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;conditionalAccessStatus&quot; property, of type &quot;microsoft.graph.conditionalAccessStatus&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;success&apos;, &apos;failure&apos;, &apos;notApplied&apos;, &apos;unknownFutureValue&apos;
+        ///     </para>
+        /// </summary>
+        [ODataType("microsoft.graph.conditionalAccessStatus")]
+        [Selectable]
+        [ValidateSet(@"success", @"failure", @"notApplied", @"unknownFutureValue")]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;conditionalAccessStatus&quot; property, of type &quot;microsoft.graph.conditionalAccessStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;conditionalAccessStatus&quot; property, of type &quot;microsoft.graph.conditionalAccessStatus&quot;.")]
+        public System.String conditionalAccessStatus { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;appliedConditionalAccessPolicies&quot; property, of type &quot;microsoft.graph.appliedConditionalAccessPolicy&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.appliedConditionalAccessPolicy")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;appliedConditionalAccessPolicies&quot; property, of type &quot;microsoft.graph.appliedConditionalAccessPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;appliedConditionalAccessPolicies&quot; property, of type &quot;microsoft.graph.appliedConditionalAccessPolicy&quot;.")]
+        public System.Object[] appliedConditionalAccessPolicies { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;isInteractive&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;isInteractive&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;isInteractive&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean isInteractive { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;riskDetail&quot; property, of type &quot;microsoft.graph.riskDetail&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;none&apos;, &apos;adminGeneratedTemporaryPassword&apos;, &apos;userPerformedSecuredPasswordChange&apos;, &apos;userPerformedSecuredPasswordReset&apos;, &apos;adminConfirmedSigninSafe&apos;, &apos;aiConfirmedSigninSafe&apos;, &apos;userPassedMFADrivenByRiskBasedPolicy&apos;, &apos;adminDismissedAllRiskForUser&apos;, &apos;adminConfirmedSigninCompromised&apos;, &apos;hidden&apos;, &apos;adminConfirmedUserCompromised&apos;, &apos;unknownFutureValue&apos;
+        ///     </para>
+        /// </summary>
+        [ODataType("microsoft.graph.riskDetail")]
+        [Selectable]
+        [ValidateSet(@"none", @"adminGeneratedTemporaryPassword", @"userPerformedSecuredPasswordChange", @"userPerformedSecuredPasswordReset", @"adminConfirmedSigninSafe", @"aiConfirmedSigninSafe", @"userPassedMFADrivenByRiskBasedPolicy", @"adminDismissedAllRiskForUser", @"adminConfirmedSigninCompromised", @"hidden", @"adminConfirmedUserCompromised", @"unknownFutureValue")]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;riskDetail&quot; property, of type &quot;microsoft.graph.riskDetail&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;riskDetail&quot; property, of type &quot;microsoft.graph.riskDetail&quot;.")]
+        public System.String riskDetail { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;riskLevelAggregated&quot; property, of type &quot;microsoft.graph.riskLevel&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;low&apos;, &apos;medium&apos;, &apos;high&apos;, &apos;hidden&apos;, &apos;none&apos;, &apos;unknownFutureValue&apos;
+        ///     </para>
+        /// </summary>
+        [ODataType("microsoft.graph.riskLevel")]
+        [Selectable]
+        [ValidateSet(@"low", @"medium", @"high", @"hidden", @"none", @"unknownFutureValue")]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;riskLevelAggregated&quot; property, of type &quot;microsoft.graph.riskLevel&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;riskLevelAggregated&quot; property, of type &quot;microsoft.graph.riskLevel&quot;.")]
+        public System.String riskLevelAggregated { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;riskLevelDuringSignIn&quot; property, of type &quot;microsoft.graph.riskLevel&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;low&apos;, &apos;medium&apos;, &apos;high&apos;, &apos;hidden&apos;, &apos;none&apos;, &apos;unknownFutureValue&apos;
+        ///     </para>
+        /// </summary>
+        [ODataType("microsoft.graph.riskLevel")]
+        [Selectable]
+        [ValidateSet(@"low", @"medium", @"high", @"hidden", @"none", @"unknownFutureValue")]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;riskLevelDuringSignIn&quot; property, of type &quot;microsoft.graph.riskLevel&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;riskLevelDuringSignIn&quot; property, of type &quot;microsoft.graph.riskLevel&quot;.")]
+        public System.String riskLevelDuringSignIn { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;riskState&quot; property, of type &quot;microsoft.graph.riskState&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;none&apos;, &apos;confirmedSafe&apos;, &apos;remediated&apos;, &apos;dismissed&apos;, &apos;atRisk&apos;, &apos;confirmedCompromised&apos;, &apos;unknownFutureValue&apos;
+        ///     </para>
+        /// </summary>
+        [ODataType("microsoft.graph.riskState")]
+        [Selectable]
+        [ValidateSet(@"none", @"confirmedSafe", @"remediated", @"dismissed", @"atRisk", @"confirmedCompromised", @"unknownFutureValue")]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;riskState&quot; property, of type &quot;microsoft.graph.riskState&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;riskState&quot; property, of type &quot;microsoft.graph.riskState&quot;.")]
+        public System.String riskState { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;riskEventTypes&quot; property, of type &quot;microsoft.graph.riskEventType&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;unlikelyTravel&apos;, &apos;anonymizedIPAddress&apos;, &apos;maliciousIPAddress&apos;, &apos;unfamiliarFeatures&apos;, &apos;malwareInfectedIPAddress&apos;, &apos;suspiciousIPAddress&apos;, &apos;leakedCredentials&apos;, &apos;investigationsThreatIntelligence&apos;, &apos;generic&apos;, &apos;adminConfirmedUserCompromised&apos;, &apos;mcasImpossibleTravel&apos;, &apos;mcasSuspiciousInboxManipulationRules&apos;, &apos;investigationsThreatIntelligenceSigninLinked&apos;, &apos;maliciousIPAddressValidCredentialsBlockedIP&apos;, &apos;unknownFutureValue&apos;
+        ///     </para>
+        /// </summary>
+        [ODataType("microsoft.graph.riskEventType")]
+        [Selectable]
+        [ValidateSet(@"unlikelyTravel", @"anonymizedIPAddress", @"maliciousIPAddress", @"unfamiliarFeatures", @"malwareInfectedIPAddress", @"suspiciousIPAddress", @"leakedCredentials", @"investigationsThreatIntelligence", @"generic", @"adminConfirmedUserCompromised", @"mcasImpossibleTravel", @"mcasSuspiciousInboxManipulationRules", @"investigationsThreatIntelligenceSigninLinked", @"maliciousIPAddressValidCredentialsBlockedIP", @"unknownFutureValue")]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;riskEventTypes&quot; property, of type &quot;microsoft.graph.riskEventType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;riskEventTypes&quot; property, of type &quot;microsoft.graph.riskEventType&quot;.")]
+        public System.String[] riskEventTypes { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;resourceDisplayName&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;resourceDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;resourceDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String resourceDisplayName { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;resourceId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.signIn&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.signIn", HelpMessage = @"The &quot;resourceId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;resourceId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;resourceId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String resourceId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.restrictedSignIn&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.restrictedSignIn")]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.restrictedSignIn&quot; type.")]
+        public System.Management.Automation.SwitchParameter restrictedSignIn { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;targetTenantId&quot; property, of type &quot;Edm.Guid&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.restrictedSignIn&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Guid")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.restrictedSignIn", HelpMessage = @"The &quot;targetTenantId&quot; property, of type &quot;Edm.Guid&quot;.")]
+        public System.Guid targetTenantId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.directoryAudit&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.directoryAudit")]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryAudit", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.directoryAudit&quot; type.")]
+        public System.Management.Automation.SwitchParameter directoryAudit { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;category&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.directoryAudit&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryAudit", HelpMessage = @"The &quot;category&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;category&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String category { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;result&quot; property, of type &quot;microsoft.graph.operationResult&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.directoryAudit&quot; type.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;success&apos;, &apos;failure&apos;, &apos;timeout&apos;, &apos;unknownFutureValue&apos;
+        ///     </para>
+        /// </summary>
+        [ODataType("microsoft.graph.operationResult")]
+        [Selectable]
+        [ValidateSet(@"success", @"failure", @"timeout", @"unknownFutureValue")]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryAudit", HelpMessage = @"The &quot;result&quot; property, of type &quot;microsoft.graph.operationResult&quot;.")]
+        public System.String result { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;resultReason&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.directoryAudit&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryAudit", HelpMessage = @"The &quot;resultReason&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String resultReason { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;activityDisplayName&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.directoryAudit&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryAudit", HelpMessage = @"The &quot;activityDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String activityDisplayName { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;activityDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.directoryAudit&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.DateTimeOffset")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryAudit", HelpMessage = @"The &quot;activityDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemActivity", HelpMessage = @"The &quot;activityDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        public System.DateTimeOffset activityDateTime { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;loggedByService&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.directoryAudit&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryAudit", HelpMessage = @"The &quot;loggedByService&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String loggedByService { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;operationType&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.directoryAudit&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.teamsAsyncOperationType")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryAudit", HelpMessage = @"The &quot;operationType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsAsyncOperation", HelpMessage = @"The &quot;operationType&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String operationType { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;initiatedBy&quot; property, of type &quot;microsoft.graph.auditActivityInitiator&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.directoryAudit&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.auditActivityInitiator")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryAudit", HelpMessage = @"The &quot;initiatedBy&quot; property, of type &quot;microsoft.graph.auditActivityInitiator&quot;.")]
+        public System.Object initiatedBy { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;targetResources&quot; property, of type &quot;microsoft.graph.targetResource&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.directoryAudit&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.targetResource")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryAudit", HelpMessage = @"The &quot;targetResources&quot; property, of type &quot;microsoft.graph.targetResource&quot;.")]
+        public System.Object[] targetResources { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;additionalDetails&quot; property, of type &quot;microsoft.graph.keyValue&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.directoryAudit&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.keyValue")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryAudit", HelpMessage = @"The &quot;additionalDetails&quot; property, of type &quot;microsoft.graph.keyValue&quot;.")]
+        public System.Object[] additionalDetails { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.identityProvider&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.identityProvider")]
+        [Parameter(ParameterSetName = @"microsoft.graph.identityProvider", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.identityProvider&quot; type.")]
+        public System.Management.Automation.SwitchParameter identityProvider { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;type&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.identityProvider&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.eventType")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.identityProvider", HelpMessage = @"The &quot;type&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookNamedItem", HelpMessage = @"The &quot;type&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.event", HelpMessage = @"The &quot;type&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String type { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;name&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.identityProvider&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.identityProvider", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileAppContentFile", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerBucket", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookTableColumn", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookPivotTable", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartFont", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartSeries", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookWorksheet", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookTable", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookNamedItem", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.columnLink", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.columnDefinition", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.attachment", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.referenceAttachment", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemAttachment", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.fileAttachment", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.calendarGroup", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.baseItem", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.drive", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.calendar", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String name { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;clientId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.identityProvider&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.identityProvider", HelpMessage = @"The &quot;clientId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String clientId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;clientSecret&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.identityProvider&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.identityProvider", HelpMessage = @"The &quot;clientSecret&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String clientSecret { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.dataPolicyOperation&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.dataPolicyOperation")]
+        [Parameter(ParameterSetName = @"microsoft.graph.dataPolicyOperation", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.dataPolicyOperation&quot; type.")]
+        public System.Management.Automation.SwitchParameter dataPolicyOperation { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;completedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.dataPolicyOperation&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.DateTimeOffset")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.dataPolicyOperation", HelpMessage = @"The &quot;completedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", HelpMessage = @"The &quot;completedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        public System.DateTimeOffset completedDateTime { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;storageLocation&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.dataPolicyOperation&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.dataPolicyOperation", HelpMessage = @"The &quot;storageLocation&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String storageLocation { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;submittedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.dataPolicyOperation&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.DateTimeOffset")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.dataPolicyOperation", HelpMessage = @"The &quot;submittedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        public System.DateTimeOffset submittedDateTime { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;progress&quot; property, of type &quot;Edm.Double&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.dataPolicyOperation&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Double")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.dataPolicyOperation", HelpMessage = @"The &quot;progress&quot; property, of type &quot;Edm.Double&quot;.")]
+        public System.Double progress { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.teamsTab&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.teamsTab")]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsTab", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.teamsTab&quot; type.")]
+        public System.Management.Automation.SwitchParameter teamsTab { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.teamsTab&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsTab", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsAppDefinition", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.channel", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppPolicyDeploymentSummary", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppOperation", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationState", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.remoteAssistancePartner", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.roleAssignment", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleAssignment", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.notificationMessageTemplate", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceCategory", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.softwareUpdateStatusSummary", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows81CompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10SecureAssessmentConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSCustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosUpdateConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.detectedApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatus", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatusRaw", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppPolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mdmWindowsInformationProtectionPolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppProtection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppProtection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppProtection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppProtection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileAppCategory", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationUser", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationOrganization", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationSchool", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteEntityHierarchyModel", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.sectionGroup", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteSection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.notebook", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.columnDefinition", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.messageRule", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.outlookCategory", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contactFolder", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.person", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mailSearchFolder", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contact", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.groupSetting", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.groupSettingTemplate", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.organization", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contract", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryRoleTemplate", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryRole", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryObjectPartnerReference", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String displayName { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.teamsTab&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsTab", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.channel", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.team", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.baseItem", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.drive", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String webUrl { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;configuration&quot; property, of type &quot;microsoft.graph.teamsTabConfiguration&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.teamsTab&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.teamsTabConfiguration")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsTab", HelpMessage = @"The &quot;configuration&quot; property, of type &quot;microsoft.graph.teamsTabConfiguration&quot;.")]
+        public System.Object configuration { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;teamsApp&quot; property, of type &quot;microsoft.graph.teamsApp&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.teamsTab&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.teamsApp")]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsTab", HelpMessage = @"The &quot;teamsApp&quot; property, of type &quot;microsoft.graph.teamsApp&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsAppInstallation", HelpMessage = @"The &quot;teamsApp&quot; property, of type &quot;microsoft.graph.teamsApp&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsApp", HelpMessage = @"The &quot;teamsApp&quot; property, of type &quot;microsoft.graph.teamsApp&quot;.")]
+        public System.Object teamsApp { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.teamsAppDefinition&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.teamsAppDefinition")]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsAppDefinition", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.teamsAppDefinition&quot; type.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsAppInstallation", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.teamsAppDefinition&quot; type.")]
+        public System.Object teamsAppDefinition { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;teamsAppId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.teamsAppDefinition&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsAppDefinition", HelpMessage = @"The &quot;teamsAppId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String teamsAppId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.teamsAppDefinition&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsAppDefinition", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppPolicyDeploymentSummary", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppOperation", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationState", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows81CompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10SecureAssessmentConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSCustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosUpdateConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.detectedApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatus", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatusRaw", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppPolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mdmWindowsInformationProtectionPolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppProtection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppProtection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppProtection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppProtection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.Object version { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.teamsAsyncOperation&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.teamsAsyncOperation")]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsAsyncOperation", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.teamsAsyncOperation&quot; type.")]
+        public System.Management.Automation.SwitchParameter teamsAsyncOperation { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;lastActionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.teamsAsyncOperation&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.DateTimeOffset")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsAsyncOperation", HelpMessage = @"The &quot;lastActionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.operation", HelpMessage = @"The &quot;lastActionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;lastActionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        public System.DateTimeOffset lastActionDateTime { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;attemptsCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.teamsAsyncOperation&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsAsyncOperation", HelpMessage = @"The &quot;attemptsCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 attemptsCount { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;targetResourceId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.teamsAsyncOperation&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsAsyncOperation", HelpMessage = @"The &quot;targetResourceId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String targetResourceId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;targetResourceLocation&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.teamsAsyncOperation&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsAsyncOperation", HelpMessage = @"The &quot;targetResourceLocation&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String targetResourceLocation { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;error&quot; property, of type &quot;microsoft.graph.operationError&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.teamsAsyncOperation&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsAsyncOperation", HelpMessage = @"The &quot;error&quot; property, of type &quot;microsoft.graph.operationError&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;error&quot; property, of type &quot;microsoft.graph.operationError&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookFunctionResult", HelpMessage = @"The &quot;error&quot; property, of type &quot;microsoft.graph.operationError&quot;.")]
+        public System.Object error { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.teamsAppInstallation&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.teamsAppInstallation")]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsAppInstallation", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.teamsAppInstallation&quot; type.")]
+        public System.Management.Automation.SwitchParameter teamsAppInstallation { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.channel&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.channel")]
+        [Parameter(ParameterSetName = @"microsoft.graph.channel", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.channel&quot; type.")]
+        public System.Management.Automation.SwitchParameter channel { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.channel&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.channel", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.resourceOperation", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.roleAssignment", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleAssignment", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceCategory", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows81CompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10SecureAssessmentConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSCustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosUpdateConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppPolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mdmWindowsInformationProtectionPolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppProtection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppProtection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppProtection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppProtection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationOrganization", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationSchool", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerTaskDetails", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.columnDefinition", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.schemaExtension", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.baseItem", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.drive", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domainDnsUnavailableRecord", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.groupSettingTemplate", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryRoleTemplate", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryRole", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryObjectPartnerReference", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String description { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;email&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.channel&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.channel", HelpMessage = @"The &quot;email&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String email { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;tabs&quot; property, of type &quot;microsoft.graph.teamsTab&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.channel&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.teamsTab")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.channel", HelpMessage = @"The &quot;tabs&quot; property, of type &quot;microsoft.graph.teamsTab&quot;.")]
+        public System.Object[] tabs { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;externalId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.teamsApp&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsApp", HelpMessage = @"The &quot;externalId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationSchool", HelpMessage = @"The &quot;externalId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;externalId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String externalId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;distributionMethod&quot; property, of type &quot;microsoft.graph.teamsAppDistributionMethod&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.teamsApp&quot; type.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;store&apos;, &apos;organization&apos;, &apos;sideloaded&apos;, &apos;unknownFutureValue&apos;
+        ///     </para>
+        /// </summary>
+        [ODataType("microsoft.graph.teamsAppDistributionMethod")]
+        [Selectable]
+        [ValidateSet(@"store", @"organization", @"sideloaded", @"unknownFutureValue")]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsApp", HelpMessage = @"The &quot;distributionMethod&quot; property, of type &quot;microsoft.graph.teamsAppDistributionMethod&quot;.")]
+        public System.String distributionMethod { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;appDefinitions&quot; property, of type &quot;microsoft.graph.teamsAppDefinition&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.teamsApp&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.teamsAppDefinition")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.teamsApp", HelpMessage = @"The &quot;appDefinitions&quot; property, of type &quot;microsoft.graph.teamsAppDefinition&quot;.")]
+        public System.Object[] appDefinitions { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.appCatalogs&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.appCatalogs")]
+        [Parameter(ParameterSetName = @"microsoft.graph.appCatalogs", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.appCatalogs&quot; type.")]
+        public System.Management.Automation.SwitchParameter appCatalogs { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;teamsApps&quot; property, of type &quot;microsoft.graph.teamsApp&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.appCatalogs&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.teamsApp")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.appCatalogs", HelpMessage = @"The &quot;teamsApps&quot; property, of type &quot;microsoft.graph.teamsApp&quot;.")]
+        public System.Object[] teamsApps { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.usedInsight&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -90,7 +1330,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;lastSharedMethod&quot; property, of type &quot;microsoft.graph.entity&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.sharedInsight&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.entity", "microsoft.graph.usedInsight", "microsoft.graph.sharedInsight", "microsoft.graph.trending", "microsoft.graph.alert", "microsoft.graph.security", "microsoft.graph.activityHistoryItem", "microsoft.graph.userInstallStateSummary", "microsoft.graph.deviceInstallState", "microsoft.graph.eBookInstallSummary", "microsoft.graph.managedEBookAssignment", "microsoft.graph.iosVppEBookAssignment", "microsoft.graph.localizedNotificationMessage", "microsoft.graph.windowsInformationProtectionAppLockerFile", "microsoft.graph.managedAppPolicyDeploymentSummary", "microsoft.graph.managedAppOperation", "microsoft.graph.targetedManagedAppPolicyAssignment", "microsoft.graph.managedMobileApp", "microsoft.graph.enrollmentConfigurationAssignment", "microsoft.graph.deviceComplianceSettingState", "microsoft.graph.deviceComplianceActionItem", "microsoft.graph.deviceComplianceUserOverview", "microsoft.graph.deviceComplianceDeviceOverview", "microsoft.graph.deviceComplianceUserStatus", "microsoft.graph.deviceComplianceDeviceStatus", "microsoft.graph.deviceComplianceScheduledActionForRule", "microsoft.graph.deviceCompliancePolicyAssignment", "microsoft.graph.settingStateDeviceSummary", "microsoft.graph.deviceConfigurationUserOverview", "microsoft.graph.deviceConfigurationDeviceOverview", "microsoft.graph.deviceConfigurationUserStatus", "microsoft.graph.deviceConfigurationDeviceStatus", "microsoft.graph.deviceConfigurationAssignment", "microsoft.graph.deviceCompliancePolicyState", "microsoft.graph.deviceConfigurationState", "microsoft.graph.termsAndConditionsAcceptanceStatus", "microsoft.graph.termsAndConditionsAssignment", "microsoft.graph.windowsInformationProtectionNetworkLearningSummary", "microsoft.graph.windowsInformationProtectionAppLearningSummary", "microsoft.graph.remoteAssistancePartner", "microsoft.graph.telecomExpenseManagementPartner", "microsoft.graph.resourceOperation", "microsoft.graph.roleAssignment", "microsoft.graph.deviceAndAppManagementRoleAssignment", "microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition", "microsoft.graph.notificationMessageTemplate", "microsoft.graph.deviceManagementPartner", "microsoft.graph.mobileThreatDefenseConnector", "microsoft.graph.onPremisesConditionalAccessSettings", "microsoft.graph.deviceEnrollmentConfiguration", "microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", "microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", "microsoft.graph.deviceEnrollmentLimitConfiguration", "microsoft.graph.deviceManagementExchangeConnector", "microsoft.graph.deviceCategory", "microsoft.graph.iosUpdateDeviceStatus", "microsoft.graph.deviceConfigurationDeviceStateSummary", "microsoft.graph.deviceCompliancePolicySettingStateSummary", "microsoft.graph.deviceCompliancePolicyDeviceStateSummary", "microsoft.graph.softwareUpdateStatusSummary", "microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy", "microsoft.graph.deviceConfiguration", "microsoft.graph.windows10TeamGeneralConfiguration", "microsoft.graph.windowsPhone81GeneralConfiguration", "microsoft.graph.windows81GeneralConfiguration", "microsoft.graph.windowsUpdateForBusinessConfiguration", "microsoft.graph.windowsPhone81CustomConfiguration", "microsoft.graph.windows10SecureAssessmentConfiguration", "microsoft.graph.sharedPCConfiguration", "microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", "microsoft.graph.windows10CustomConfiguration", "microsoft.graph.windows10GeneralConfiguration", "microsoft.graph.windows10EndpointProtectionConfiguration", "microsoft.graph.editionUpgradeConfiguration", "microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", "microsoft.graph.appleDeviceFeaturesConfigurationBase", "microsoft.graph.macOSDeviceFeaturesConfiguration", "microsoft.graph.iosDeviceFeaturesConfiguration", "microsoft.graph.macOSGeneralDeviceConfiguration", "microsoft.graph.macOSCustomConfiguration", "microsoft.graph.iosUpdateConfiguration", "microsoft.graph.iosGeneralDeviceConfiguration", "microsoft.graph.iosCustomConfiguration", "microsoft.graph.iosCertificateProfile", "microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", "microsoft.graph.androidWorkProfileCustomConfiguration", "microsoft.graph.androidGeneralDeviceConfiguration", "microsoft.graph.androidCustomConfiguration", "microsoft.graph.detectedApp", "microsoft.graph.managedDeviceOverview", "microsoft.graph.applePushNotificationCertificate", "microsoft.graph.termsAndConditions", "microsoft.graph.deviceManagement", "microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", "microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary", "microsoft.graph.managedDeviceMobileAppConfigurationAssignment", "microsoft.graph.managedDeviceMobileAppConfigurationUserStatus", "microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus", "microsoft.graph.mobileAppContent", "microsoft.graph.mobileAppContentFile", "microsoft.graph.mobileAppAssignment", "microsoft.graph.managedEBook", "microsoft.graph.iosVppEBook", "microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw", "microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection", "microsoft.graph.vppToken", "microsoft.graph.managedDeviceMobileAppConfiguration", "microsoft.graph.iosMobileAppConfiguration", "microsoft.graph.mobileAppCategory", "microsoft.graph.mobileApp", "microsoft.graph.iosStoreApp", "microsoft.graph.iosVppApp", "microsoft.graph.androidStoreApp", "microsoft.graph.webApp", "microsoft.graph.microsoftStoreForBusinessApp", "microsoft.graph.mobileLobApp", "microsoft.graph.iosLobApp", "microsoft.graph.androidLobApp", "microsoft.graph.windowsUniversalAppX", "microsoft.graph.windowsMobileMSI", "microsoft.graph.managedApp", "microsoft.graph.managedMobileLobApp", "microsoft.graph.managedIOSLobApp", "microsoft.graph.managedAndroidLobApp", "microsoft.graph.managedIOSStoreApp", "microsoft.graph.managedAndroidStoreApp", "microsoft.graph.macOSOfficeSuiteApp", "microsoft.graph.deviceAppManagement", "microsoft.graph.educationUser", "microsoft.graph.educationOrganization", "microsoft.graph.educationSchool", "microsoft.graph.educationClass", "microsoft.graph.educationRoot", "microsoft.graph.reportRoot", "microsoft.graph.operation", "microsoft.graph.onenoteOperation", "microsoft.graph.onenoteEntityBaseModel", "microsoft.graph.onenoteResource", "microsoft.graph.onenoteEntitySchemaObjectModel", "microsoft.graph.onenotePage", "microsoft.graph.onenoteEntityHierarchyModel", "microsoft.graph.sectionGroup", "microsoft.graph.onenoteSection", "microsoft.graph.notebook", "microsoft.graph.plannerPlanDetails", "microsoft.graph.plannerBucketTaskBoardTaskFormat", "microsoft.graph.plannerProgressTaskBoardTaskFormat", "microsoft.graph.plannerAssignedToTaskBoardTaskFormat", "microsoft.graph.plannerTaskDetails", "microsoft.graph.plannerBucket", "microsoft.graph.planner", "microsoft.graph.plannerPlan", "microsoft.graph.plannerTask", "microsoft.graph.invitation", "microsoft.graph.subscription", "microsoft.graph.workbookWorksheetProtection", "microsoft.graph.workbookTableSort", "microsoft.graph.workbookTableRow", "microsoft.graph.workbookTableColumn", "microsoft.graph.workbookRangeView", "microsoft.graph.workbookRangeFont", "microsoft.graph.workbookRangeFill", "microsoft.graph.workbookRangeBorder", "microsoft.graph.workbookRangeSort", "microsoft.graph.workbookRangeFormat", "microsoft.graph.workbookRange", "microsoft.graph.workbookPivotTable", "microsoft.graph.workbookFunctionResult", "microsoft.graph.workbookFormatProtection", "microsoft.graph.workbookFilter", "microsoft.graph.workbookChartTitleFormat", "microsoft.graph.workbookChartSeriesFormat", "microsoft.graph.workbookChartPointFormat", "microsoft.graph.workbookChartPoint", "microsoft.graph.workbookChartLegendFormat", "microsoft.graph.workbookChartGridlinesFormat", "microsoft.graph.workbookChartDataLabelFormat", "microsoft.graph.workbookChartAxisTitleFormat", "microsoft.graph.workbookChartLineFormat", "microsoft.graph.workbookChartAxisTitle", "microsoft.graph.workbookChartGridlines", "microsoft.graph.workbookChartAxisFormat", "microsoft.graph.workbookChartAxis", "microsoft.graph.workbookChartFont", "microsoft.graph.workbookChartFill", "microsoft.graph.workbookChartTitle", "microsoft.graph.workbookChartSeries", "microsoft.graph.workbookChartLegend", "microsoft.graph.workbookChartAreaFormat", "microsoft.graph.workbookChartDataLabels", "microsoft.graph.workbookChartAxes", "microsoft.graph.workbookChart", "microsoft.graph.workbookFunctions", "microsoft.graph.workbookWorksheet", "microsoft.graph.workbookTable", "microsoft.graph.workbookNamedItem", "microsoft.graph.workbookApplication", "microsoft.graph.fieldValueSet", "microsoft.graph.workbook", "microsoft.graph.thumbnailSet", "microsoft.graph.permission", "microsoft.graph.contentType", "microsoft.graph.columnLink", "microsoft.graph.columnDefinition", "microsoft.graph.baseItemVersion", "microsoft.graph.listItemVersion", "microsoft.graph.driveItemVersion", "microsoft.graph.inferenceClassificationOverride", "microsoft.graph.multiValueLegacyExtendedProperty", "microsoft.graph.singleValueLegacyExtendedProperty", "microsoft.graph.messageRule", "microsoft.graph.outlookCategory", "microsoft.graph.attachment", "microsoft.graph.referenceAttachment", "microsoft.graph.itemAttachment", "microsoft.graph.fileAttachment", "microsoft.graph.schemaExtension", "microsoft.graph.userSettings", "microsoft.graph.officeGraphInsights", "microsoft.graph.userActivity", "microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent", "microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration", "microsoft.graph.managedDevice", "microsoft.graph.plannerUser", "microsoft.graph.inferenceClassification", "microsoft.graph.contactFolder", "microsoft.graph.person", "microsoft.graph.calendarGroup", "microsoft.graph.mailFolder", "microsoft.graph.outlookUser", "microsoft.graph.subscribedSku", "microsoft.graph.groupLifecyclePolicy", "microsoft.graph.onenote", "microsoft.graph.plannerGroup", "microsoft.graph.baseItem", "microsoft.graph.sharedDriveItem", "microsoft.graph.listItem", "microsoft.graph.list", "microsoft.graph.driveItem", "microsoft.graph.site", "microsoft.graph.drive", "microsoft.graph.profilePhoto", "microsoft.graph.conversation", "microsoft.graph.outlookItem", "microsoft.graph.post", "microsoft.graph.contact", "microsoft.graph.message", "microsoft.graph.eventMessage", "microsoft.graph.event", "microsoft.graph.calendar", "microsoft.graph.conversationThread", "microsoft.graph.groupSetting", "microsoft.graph.licenseDetails", "microsoft.graph.domainDnsRecord", "microsoft.graph.domainDnsUnavailableRecord", "microsoft.graph.domainDnsTxtRecord", "microsoft.graph.domainDnsSrvRecord", "microsoft.graph.domainDnsMxRecord", "microsoft.graph.domainDnsCnameRecord", "microsoft.graph.domain", "microsoft.graph.extension", "microsoft.graph.openTypeExtension", "microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device", "microsoft.graph.directory")]
+        [ODataType("microsoft.graph.entity", "microsoft.graph.auditLogRoot", "microsoft.graph.signIn", "microsoft.graph.restrictedSignIn", "microsoft.graph.directoryAudit", "microsoft.graph.identityProvider", "microsoft.graph.dataPolicyOperation", "microsoft.graph.teamsTab", "microsoft.graph.teamsAppDefinition", "microsoft.graph.teamsAsyncOperation", "microsoft.graph.teamsAppInstallation", "microsoft.graph.channel", "microsoft.graph.teamsApp", "microsoft.graph.appCatalogs", "microsoft.graph.usedInsight", "microsoft.graph.sharedInsight", "microsoft.graph.trending", "microsoft.graph.secureScore", "microsoft.graph.secureScoreControlProfile", "microsoft.graph.alert", "microsoft.graph.security", "microsoft.graph.activityHistoryItem", "microsoft.graph.userInstallStateSummary", "microsoft.graph.deviceInstallState", "microsoft.graph.eBookInstallSummary", "microsoft.graph.managedEBookAssignment", "microsoft.graph.iosVppEBookAssignment", "microsoft.graph.localizedNotificationMessage", "microsoft.graph.windowsInformationProtectionAppLockerFile", "microsoft.graph.managedAppPolicyDeploymentSummary", "microsoft.graph.managedAppOperation", "microsoft.graph.targetedManagedAppPolicyAssignment", "microsoft.graph.managedMobileApp", "microsoft.graph.enrollmentConfigurationAssignment", "microsoft.graph.deviceComplianceSettingState", "microsoft.graph.deviceComplianceActionItem", "microsoft.graph.deviceComplianceUserOverview", "microsoft.graph.deviceComplianceDeviceOverview", "microsoft.graph.deviceComplianceUserStatus", "microsoft.graph.deviceComplianceDeviceStatus", "microsoft.graph.deviceComplianceScheduledActionForRule", "microsoft.graph.deviceCompliancePolicyAssignment", "microsoft.graph.settingStateDeviceSummary", "microsoft.graph.deviceConfigurationUserOverview", "microsoft.graph.deviceConfigurationDeviceOverview", "microsoft.graph.deviceConfigurationUserStatus", "microsoft.graph.deviceConfigurationDeviceStatus", "microsoft.graph.deviceConfigurationAssignment", "microsoft.graph.deviceCompliancePolicyState", "microsoft.graph.deviceConfigurationState", "microsoft.graph.termsAndConditionsAcceptanceStatus", "microsoft.graph.termsAndConditionsAssignment", "microsoft.graph.windowsInformationProtectionNetworkLearningSummary", "microsoft.graph.windowsInformationProtectionAppLearningSummary", "microsoft.graph.remoteAssistancePartner", "microsoft.graph.telecomExpenseManagementPartner", "microsoft.graph.resourceOperation", "microsoft.graph.roleAssignment", "microsoft.graph.deviceAndAppManagementRoleAssignment", "microsoft.graph.roleDefinition", "microsoft.graph.deviceAndAppManagementRoleDefinition", "microsoft.graph.notificationMessageTemplate", "microsoft.graph.deviceManagementPartner", "microsoft.graph.mobileThreatDefenseConnector", "microsoft.graph.onPremisesConditionalAccessSettings", "microsoft.graph.deviceEnrollmentConfiguration", "microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", "microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", "microsoft.graph.deviceEnrollmentLimitConfiguration", "microsoft.graph.deviceManagementExchangeConnector", "microsoft.graph.deviceCategory", "microsoft.graph.iosUpdateDeviceStatus", "microsoft.graph.deviceConfigurationDeviceStateSummary", "microsoft.graph.deviceCompliancePolicySettingStateSummary", "microsoft.graph.deviceCompliancePolicyDeviceStateSummary", "microsoft.graph.softwareUpdateStatusSummary", "microsoft.graph.deviceCompliancePolicy", "microsoft.graph.windowsPhone81CompliancePolicy", "microsoft.graph.windows81CompliancePolicy", "microsoft.graph.windows10MobileCompliancePolicy", "microsoft.graph.windows10CompliancePolicy", "microsoft.graph.macOSCompliancePolicy", "microsoft.graph.iosCompliancePolicy", "microsoft.graph.androidWorkProfileCompliancePolicy", "microsoft.graph.androidCompliancePolicy", "microsoft.graph.deviceConfiguration", "microsoft.graph.windows10TeamGeneralConfiguration", "microsoft.graph.windowsPhone81GeneralConfiguration", "microsoft.graph.windows81GeneralConfiguration", "microsoft.graph.windowsUpdateForBusinessConfiguration", "microsoft.graph.windowsPhone81CustomConfiguration", "microsoft.graph.windows10SecureAssessmentConfiguration", "microsoft.graph.sharedPCConfiguration", "microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", "microsoft.graph.windows10CustomConfiguration", "microsoft.graph.editionUpgradeConfiguration", "microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", "microsoft.graph.windows10GeneralConfiguration", "microsoft.graph.windows10EndpointProtectionConfiguration", "microsoft.graph.appleDeviceFeaturesConfigurationBase", "microsoft.graph.macOSDeviceFeaturesConfiguration", "microsoft.graph.iosDeviceFeaturesConfiguration", "microsoft.graph.macOSGeneralDeviceConfiguration", "microsoft.graph.macOSCustomConfiguration", "microsoft.graph.iosUpdateConfiguration", "microsoft.graph.iosGeneralDeviceConfiguration", "microsoft.graph.iosCustomConfiguration", "microsoft.graph.iosCertificateProfile", "microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", "microsoft.graph.androidWorkProfileCustomConfiguration", "microsoft.graph.androidGeneralDeviceConfiguration", "microsoft.graph.androidCustomConfiguration", "microsoft.graph.detectedApp", "microsoft.graph.managedDeviceOverview", "microsoft.graph.applePushNotificationCertificate", "microsoft.graph.termsAndConditions", "microsoft.graph.deviceManagement", "microsoft.graph.mobileAppContent", "microsoft.graph.managedDeviceMobileAppConfigurationUserSummary", "microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary", "microsoft.graph.managedDeviceMobileAppConfigurationUserStatus", "microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus", "microsoft.graph.managedDeviceMobileAppConfigurationAssignment", "microsoft.graph.mobileAppContentFile", "microsoft.graph.mobileAppAssignment", "microsoft.graph.managedEBook", "microsoft.graph.iosVppEBook", "microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw", "microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection", "microsoft.graph.vppToken", "microsoft.graph.managedDeviceMobileAppConfiguration", "microsoft.graph.iosMobileAppConfiguration", "microsoft.graph.mobileAppCategory", "microsoft.graph.mobileApp", "microsoft.graph.iosStoreApp", "microsoft.graph.iosVppApp", "microsoft.graph.androidStoreApp", "microsoft.graph.webApp", "microsoft.graph.microsoftStoreForBusinessApp", "microsoft.graph.mobileLobApp", "microsoft.graph.iosLobApp", "microsoft.graph.androidLobApp", "microsoft.graph.windowsUniversalAppX", "microsoft.graph.windowsMobileMSI", "microsoft.graph.managedApp", "microsoft.graph.managedMobileLobApp", "microsoft.graph.managedIOSLobApp", "microsoft.graph.managedAndroidLobApp", "microsoft.graph.managedIOSStoreApp", "microsoft.graph.managedAndroidStoreApp", "microsoft.graph.macOSOfficeSuiteApp", "microsoft.graph.deviceAppManagement", "microsoft.graph.educationUser", "microsoft.graph.educationOrganization", "microsoft.graph.educationSchool", "microsoft.graph.educationClass", "microsoft.graph.educationRoot", "microsoft.graph.reportRoot", "microsoft.graph.operation", "microsoft.graph.onenoteOperation", "microsoft.graph.onenoteEntityBaseModel", "microsoft.graph.onenoteResource", "microsoft.graph.onenoteEntitySchemaObjectModel", "microsoft.graph.onenotePage", "microsoft.graph.onenoteEntityHierarchyModel", "microsoft.graph.sectionGroup", "microsoft.graph.onenoteSection", "microsoft.graph.notebook", "microsoft.graph.plannerPlanDetails", "microsoft.graph.plannerBucketTaskBoardTaskFormat", "microsoft.graph.plannerProgressTaskBoardTaskFormat", "microsoft.graph.plannerAssignedToTaskBoardTaskFormat", "microsoft.graph.plannerTaskDetails", "microsoft.graph.plannerBucket", "microsoft.graph.planner", "microsoft.graph.plannerPlan", "microsoft.graph.plannerTask", "microsoft.graph.invitation", "microsoft.graph.workbookWorksheetProtection", "microsoft.graph.workbookTableSort", "microsoft.graph.workbookTableRow", "microsoft.graph.workbookTableColumn", "microsoft.graph.workbookRangeView", "microsoft.graph.workbookRangeFont", "microsoft.graph.workbookRangeFill", "microsoft.graph.workbookRangeBorder", "microsoft.graph.workbookRangeSort", "microsoft.graph.workbookRangeFormat", "microsoft.graph.workbookRange", "microsoft.graph.workbookPivotTable", "microsoft.graph.workbookFunctionResult", "microsoft.graph.workbookFormatProtection", "microsoft.graph.workbookFilter", "microsoft.graph.workbookCommentReply", "microsoft.graph.workbookChartTitleFormat", "microsoft.graph.workbookChartSeriesFormat", "microsoft.graph.workbookChartPointFormat", "microsoft.graph.workbookChartPoint", "microsoft.graph.workbookChartLegendFormat", "microsoft.graph.workbookChartGridlinesFormat", "microsoft.graph.workbookChartDataLabelFormat", "microsoft.graph.workbookChartAxisTitleFormat", "microsoft.graph.workbookChartLineFormat", "microsoft.graph.workbookChartAxisTitle", "microsoft.graph.workbookChartGridlines", "microsoft.graph.workbookChartAxisFormat", "microsoft.graph.workbookChartAxis", "microsoft.graph.workbookChartFont", "microsoft.graph.workbookChartFill", "microsoft.graph.workbookChartTitle", "microsoft.graph.workbookChartSeries", "microsoft.graph.workbookChartLegend", "microsoft.graph.workbookChartAreaFormat", "microsoft.graph.workbookChartDataLabels", "microsoft.graph.workbookChartAxes", "microsoft.graph.workbookChart", "microsoft.graph.workbookFunctions", "microsoft.graph.workbookComment", "microsoft.graph.workbookWorksheet", "microsoft.graph.workbookTable", "microsoft.graph.workbookNamedItem", "microsoft.graph.workbookApplication", "microsoft.graph.itemActivityStat", "microsoft.graph.itemActivity", "microsoft.graph.fieldValueSet", "microsoft.graph.workbook", "microsoft.graph.thumbnailSet", "microsoft.graph.subscription", "microsoft.graph.permission", "microsoft.graph.itemAnalytics", "microsoft.graph.contentType", "microsoft.graph.columnLink", "microsoft.graph.columnDefinition", "microsoft.graph.baseItemVersion", "microsoft.graph.listItemVersion", "microsoft.graph.driveItemVersion", "microsoft.graph.inferenceClassificationOverride", "microsoft.graph.multiValueLegacyExtendedProperty", "microsoft.graph.singleValueLegacyExtendedProperty", "microsoft.graph.messageRule", "microsoft.graph.outlookCategory", "microsoft.graph.attachment", "microsoft.graph.referenceAttachment", "microsoft.graph.itemAttachment", "microsoft.graph.fileAttachment", "microsoft.graph.schemaExtension", "microsoft.graph.userSettings", "microsoft.graph.officeGraphInsights", "microsoft.graph.userActivity", "microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent", "microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration", "microsoft.graph.managedDevice", "microsoft.graph.plannerUser", "microsoft.graph.inferenceClassification", "microsoft.graph.contactFolder", "microsoft.graph.person", "microsoft.graph.calendarGroup", "microsoft.graph.mailFolder", "microsoft.graph.mailSearchFolder", "microsoft.graph.outlookUser", "microsoft.graph.subscribedSku", "microsoft.graph.team", "microsoft.graph.groupLifecyclePolicy", "microsoft.graph.onenote", "microsoft.graph.plannerGroup", "microsoft.graph.baseItem", "microsoft.graph.sharedDriveItem", "microsoft.graph.listItem", "microsoft.graph.list", "microsoft.graph.driveItem", "microsoft.graph.site", "microsoft.graph.drive", "microsoft.graph.profilePhoto", "microsoft.graph.conversation", "microsoft.graph.outlookItem", "microsoft.graph.post", "microsoft.graph.contact", "microsoft.graph.message", "microsoft.graph.eventMessage", "microsoft.graph.event", "microsoft.graph.calendar", "microsoft.graph.conversationThread", "microsoft.graph.groupSetting", "microsoft.graph.licenseDetails", "microsoft.graph.domainDnsRecord", "microsoft.graph.domainDnsUnavailableRecord", "microsoft.graph.domainDnsTxtRecord", "microsoft.graph.domainDnsSrvRecord", "microsoft.graph.domainDnsMxRecord", "microsoft.graph.domainDnsCnameRecord", "microsoft.graph.domain", "microsoft.graph.extension", "microsoft.graph.openTypeExtension", "microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device", "microsoft.graph.directory")]
         [Selectable]
         [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedInsight", HelpMessage = @"The &quot;lastSharedMethod&quot; property, of type &quot;microsoft.graph.entity&quot;.")]
@@ -123,6 +1363,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.trending", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.activityHistoryItem", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.localizedNotificationMessage", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
@@ -151,10 +1392,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;lastModifiedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
@@ -234,6 +1475,261 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.DateTimeOffset lastModifiedDateTime { get; set; }
 
         /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.secureScore&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.secureScore")]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScore", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.secureScore&quot; type.")]
+        public System.Management.Automation.SwitchParameter secureScore { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;activeUserCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScore&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScore", HelpMessage = @"The &quot;activeUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 activeUserCount { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;averageComparativeScores&quot; property, of type &quot;microsoft.graph.averageComparativeScore&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScore&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.averageComparativeScore")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScore", HelpMessage = @"The &quot;averageComparativeScores&quot; property, of type &quot;microsoft.graph.averageComparativeScore&quot;.")]
+        public System.Object[] averageComparativeScores { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;azureTenantId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScore&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScore", HelpMessage = @"The &quot;azureTenantId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;azureTenantId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;azureTenantId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String azureTenantId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;controlScores&quot; property, of type &quot;microsoft.graph.controlScore&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScore&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.controlScore")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScore", HelpMessage = @"The &quot;controlScores&quot; property, of type &quot;microsoft.graph.controlScore&quot;.")]
+        public System.Object[] controlScores { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;currentScore&quot; property, of type &quot;Edm.Double&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScore&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Double")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScore", HelpMessage = @"The &quot;currentScore&quot; property, of type &quot;Edm.Double&quot;.")]
+        public System.Double currentScore { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;enabledServices&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScore&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScore", HelpMessage = @"The &quot;enabledServices&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String[] enabledServices { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;licensedUserCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScore&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScore", HelpMessage = @"The &quot;licensedUserCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 licensedUserCount { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;maxScore&quot; property, of type &quot;Edm.Double&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScore&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Double")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScore", HelpMessage = @"The &quot;maxScore&quot; property, of type &quot;Edm.Double&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;maxScore&quot; property, of type &quot;Edm.Double&quot;.")]
+        public System.Double maxScore { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;vendorInformation&quot; property, of type &quot;microsoft.graph.securityVendorInformation&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScore&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.securityVendorInformation")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScore", HelpMessage = @"The &quot;vendorInformation&quot; property, of type &quot;microsoft.graph.securityVendorInformation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;vendorInformation&quot; property, of type &quot;microsoft.graph.securityVendorInformation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;vendorInformation&quot; property, of type &quot;microsoft.graph.securityVendorInformation&quot;.")]
+        public System.Object vendorInformation { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.secureScoreControlProfile&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.secureScoreControlProfile")]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.secureScoreControlProfile&quot; type.")]
+        public System.Management.Automation.SwitchParameter secureScoreControlProfile { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;actionType&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScoreControlProfile&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.deviceComplianceActionType")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;actionType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceActionItem", HelpMessage = @"The &quot;actionType&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String actionType { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;actionUrl&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScoreControlProfile&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;actionUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String actionUrl { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;complianceInformation&quot; property, of type &quot;microsoft.graph.complianceInformation&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScoreControlProfile&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.complianceInformation")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;complianceInformation&quot; property, of type &quot;microsoft.graph.complianceInformation&quot;.")]
+        public System.Object[] complianceInformation { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;controlCategory&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScoreControlProfile&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;controlCategory&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String controlCategory { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;controlStateUpdates&quot; property, of type &quot;microsoft.graph.secureScoreControlStateUpdate&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScoreControlProfile&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.secureScoreControlStateUpdate")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;controlStateUpdates&quot; property, of type &quot;microsoft.graph.secureScoreControlStateUpdate&quot;.")]
+        public System.Object[] controlStateUpdates { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;deprecated&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScoreControlProfile&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;deprecated&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean deprecated { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;implementationCost&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScoreControlProfile&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;implementationCost&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String implementationCost { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;rank&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScoreControlProfile&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;rank&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 rank { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;remediation&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScoreControlProfile&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;remediation&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String remediation { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;remediationImpact&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScoreControlProfile&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;remediationImpact&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String remediationImpact { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;service&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScoreControlProfile&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;service&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.domainDnsSrvRecord", HelpMessage = @"The &quot;service&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String service { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;threats&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScoreControlProfile&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;threats&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String[] threats { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;tier&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScoreControlProfile&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;tier&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String tier { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;title&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScoreControlProfile&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenotePage", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerPlan", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxis", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contact", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.Object title { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;userImpact&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.secureScoreControlProfile&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.secureScoreControlProfile", HelpMessage = @"The &quot;userImpact&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String userImpact { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.alert&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -270,24 +1766,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String azureSubscriptionId { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;azureTenantId&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.alert&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;azureTenantId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String azureTenantId { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;category&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.alert&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;category&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String category { get; set; }
-
-        /// <summary>
         ///     <para type="description">The &quot;closedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.alert&quot; type.</para>
         /// </summary>
@@ -310,11 +1788,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;comments&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.alert&quot; type.</para>
         /// </summary>
-        [ODataType("Edm.String")]
         [Selectable]
-        [AllowEmptyCollection]
+        [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;comments&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String[] comments { get; set; }
+        [Parameter(ParameterSetName = @"microsoft.graph.workbook", HelpMessage = @"The &quot;comments&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.Object comments { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;confidence&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -324,227 +1802,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;confidence&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 confidence { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.alert&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.DateTimeOffset")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.activityHistoryItem", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows81CompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10SecureAssessmentConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSCustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosUpdateConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.mobileAppContentFile", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppPolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.mdmWindowsInformationProtectionPolicy", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppProtection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppProtection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppProtection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppProtection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.operation", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.onenoteEntitySchemaObjectModel", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.onenotePage", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.onenoteEntityHierarchyModel", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.sectionGroup", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.onenoteSection", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.notebook", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.plannerPlan", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.baseItem", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.drive", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.outlookItem", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.post", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.contact", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.message", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.eventMessage", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.event", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset createdDateTime { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;description&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.alert&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.resourceOperation", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.roleAssignment", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleAssignment", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceCategory", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows81CompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10SecureAssessmentConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSCustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosUpdateConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppPolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.mdmWindowsInformationProtectionPolicy", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppProtection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppProtection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppProtection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppProtection", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.educationOrganization", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.educationSchool", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.plannerTaskDetails", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.columnDefinition", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.schemaExtension", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.baseItem", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.drive", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.domainDnsUnavailableRecord", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.groupSettingTemplate", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.directoryRoleTemplate", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.directoryRole", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String description { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;detectionIds&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -589,6 +1846,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;fileStates&quot; property, of type &quot;microsoft.graph.fileSecurityState&quot;.")]
         public System.Object[] fileStates { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;historyStates&quot; property, of type &quot;microsoft.graph.alertHistoryState&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.alert&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.alertHistoryState")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;historyStates&quot; property, of type &quot;microsoft.graph.alertHistoryState&quot;.")]
+        public System.Object[] historyStates { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;hostStates&quot; property, of type &quot;microsoft.graph.hostSecurityState&quot;.</para>
@@ -674,33 +1941,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String[] sourceMaterials { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;status&quot; property, of type &quot;microsoft.graph.alertStatus&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.alert&quot; type.</para>
-        ///     <para type="description">
-        ///          Valid values: &apos;unknown&apos;, &apos;newAlert&apos;, &apos;inProgress&apos;, &apos;resolved&apos;, &apos;dismissed&apos;, &apos;unknownFutureValue&apos;
-        ///     </para>
-        /// </summary>
-        [ODataType("microsoft.graph.status")]
-        [Selectable]
-        [ValidateSet(@"unknown", @"newAlert", @"inProgress", @"resolved", @"dismissed", @"unknownFutureValue")]
-        [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.alertStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.activityHistoryItem", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.alertStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceUserStatus", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.alertStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceDeviceStatus", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.alertStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationUserStatus", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.alertStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationDeviceStatus", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.alertStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.alertStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.alertStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserStatus", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.alertStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.alertStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.operation", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.alertStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.alertStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.invitation", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.alertStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.schemaExtension", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.alertStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;status&quot; property, of type &quot;microsoft.graph.alertStatus&quot;.")]
-        public System.String status { get; set; }
-
-        /// <summary>
         ///     <para type="description">The &quot;tags&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.alert&quot; type.</para>
         /// </summary>
@@ -709,22 +1949,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;tags&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] tags { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;title&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.alert&quot; type.</para>
-        /// </summary>
-        [Selectable]
-        [Expandable]
-        [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.onenotePage", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.plannerPlan", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartAxis", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.contact", HelpMessage = @"The &quot;title&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.Object title { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;triggers&quot; property, of type &quot;microsoft.graph.alertTrigger&quot;.</para>
@@ -745,15 +1969,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;userStates&quot; property, of type &quot;microsoft.graph.userSecurityState&quot;.")]
         public System.Object[] userStates { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;vendorInformation&quot; property, of type &quot;microsoft.graph.securityVendorInformation&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.alert&quot; type.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.securityVendorInformation")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.alert", HelpMessage = @"The &quot;vendorInformation&quot; property, of type &quot;microsoft.graph.securityVendorInformation&quot;.")]
-        public System.Object vendorInformation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;vulnerabilityStates&quot; property, of type &quot;microsoft.graph.vulnerabilityState&quot;.</para>
@@ -784,6 +1999,28 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.security", HelpMessage = @"The &quot;alerts&quot; property, of type &quot;microsoft.graph.alert&quot;.")]
         public System.Object[] alerts { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;secureScoreControlProfiles&quot; property, of type &quot;microsoft.graph.secureScoreControlProfile&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.security&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.secureScoreControlProfile")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.security", HelpMessage = @"The &quot;secureScoreControlProfiles&quot; property, of type &quot;microsoft.graph.secureScoreControlProfile&quot;.")]
+        public System.Object[] secureScoreControlProfiles { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;secureScores&quot; property, of type &quot;microsoft.graph.secureScore&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.security&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.secureScore")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.security", HelpMessage = @"The &quot;secureScores&quot; property, of type &quot;microsoft.graph.secureScore&quot;.")]
+        public System.Object[] secureScores { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.activityHistoryItem&quot; type.</para>
@@ -1184,134 +2421,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Management.Automation.SwitchParameter windowsInformationProtectionAppLockerFile { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; type.</para>
-        ///     <para type="description">The friendly name</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppPolicyDeploymentSummary", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppOperation", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationState", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.remoteAssistancePartner", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.telecomExpenseManagementPartner", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.roleAssignment", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleAssignment", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.notificationMessageTemplate", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementPartner", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceCategory", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.softwareUpdateStatusSummary", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows81CompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10SecureAssessmentConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSCustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosUpdateConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.detectedApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedEBook", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppEBook", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatus", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatusRaw", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppPolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.mdmWindowsInformationProtectionPolicy", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppProtection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppProtection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppProtection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppProtection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.mobileAppCategory", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.mobileApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosVppApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.webApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.mobileLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsUniversalAppX", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsMobileMSI", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSOfficeSuiteApp", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.educationUser", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.educationOrganization", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.educationSchool", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.onenoteEntityHierarchyModel", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.sectionGroup", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.onenoteSection", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.notebook", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.columnDefinition", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.messageRule", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.outlookCategory", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.contactFolder", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.person", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.contact", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.groupSetting", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.groupSettingTemplate", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.organization", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.contract", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.directoryRoleTemplate", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.directoryRole", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String displayName { get; set; }
-
-        /// <summary>
         ///     <para type="description">The &quot;fileHash&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; type.</para>
         ///     <para type="description">SHA256 hash of the file</para>
@@ -1330,87 +2439,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile", HelpMessage = @"The &quot;file&quot; property, of type &quot;Edm.Binary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;file&quot; property, of type &quot;Edm.Binary&quot;.")]
         public System.Object file { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;version&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; type.</para>
-        ///     <para type="description">Version of the entity.</para>
-        /// </summary>
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppPolicyDeploymentSummary", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppOperation", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicyState", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationState", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceEnrollmentLimitConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementExchangeConnector", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceCompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows81CompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10MobileCompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10CompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSCompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosCompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidCompliancePolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10TeamGeneralConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81GeneralConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows81GeneralConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsUpdateForBusinessConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsPhone81CustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10SecureAssessmentConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSGeneralDeviceConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.macOSCustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosUpdateConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosGeneralDeviceConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosCustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosCertificateProfile", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidWorkProfileCustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidGeneralDeviceConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidCustomConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.detectedApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditions", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatus", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatusRaw", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppPolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsInformationProtectionPolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.mdmWindowsInformationProtectionPolicy", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppProtection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.defaultManagedAppProtection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.targetedManagedAppProtection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppProtection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppProtection", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosMobileAppConfiguration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedMobileLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidLobApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedIOSStoreApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAndroidStoreApp", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;version&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.Object version { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedAppPolicyDeploymentSummary&quot; type.</para>
@@ -1545,22 +2573,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String settingName { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;userId&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.deviceComplianceSettingState&quot; type.</para>
-        ///     <para type="description">The user Id that is being reported</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDevice", HelpMessage = @"The &quot;userId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String userId { get; set; }
-
-        /// <summary>
         ///     <para type="description">The &quot;userEmail&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.deviceComplianceSettingState&quot; type.</para>
         ///     <para type="description">The User email address that is being reported</para>
@@ -1569,27 +2581,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;userEmail&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String userEmail { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.deviceComplianceSettingState&quot; type.</para>
-        ///     <para type="description">The User PrincipalName that is being reported</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceSettingState", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceUserStatus", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceDeviceStatus", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationUserStatus", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationDeviceStatus", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.iosUpdateDeviceStatus", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserStatus", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.educationUser", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDevice", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.person", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;userPrincipalName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String userPrincipalName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceModel&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1638,20 +2629,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceActionItem", HelpMessage = @"The &quot;gracePeriodHours&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 gracePeriodHours { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;actionType&quot; property, of type &quot;microsoft.graph.deviceComplianceActionType&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.deviceComplianceActionItem&quot; type.</para>
-        ///     <para type="description">What action to take</para>
-        ///     <para type="description">
-        ///          Valid values: &apos;noAction&apos;, &apos;notification&apos;, &apos;block&apos;, &apos;retire&apos;, &apos;wipe&apos;, &apos;removeResourceAccessProfiles&apos;, &apos;pushNotification&apos;
-        ///     </para>
-        /// </summary>
-        [ODataType("microsoft.graph.deviceComplianceActionType")]
-        [Selectable]
-        [ValidateSet(@"noAction", @"notification", @"block", @"retire", @"wipe", @"removeResourceAccessProfiles", @"pushNotification")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceActionItem", HelpMessage = @"The &quot;actionType&quot; property, of type &quot;microsoft.graph.deviceComplianceActionType&quot;.")]
-        public System.String actionType { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;notificationTemplateId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1805,20 +2782,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ParameterSetSelector(@"microsoft.graph.deviceComplianceUserStatus")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceUserStatus", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceComplianceUserStatus&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceComplianceUserStatus { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.deviceComplianceUserStatus&quot; type.</para>
-        ///     <para type="description">User name of the DevicePolicyStatus.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceComplianceUserStatus", HelpMessage = @"The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceConfigurationUserStatus", HelpMessage = @"The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.termsAndConditionsAcceptanceStatus", HelpMessage = @"The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationUserStatus", HelpMessage = @"The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDevice", HelpMessage = @"The &quot;userDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String userDisplayName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;devicesCount&quot; property, of type &quot;Edm.Int32&quot;.</para>
@@ -2370,6 +3333,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String[] resourceScopes { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;roleDefinition&quot; property, of type &quot;microsoft.graph.roleDefinition&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.roleAssignment&quot; type.</para>
+        ///     <para type="description">Role definition this assignment is part of.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.roleDefinition")]
+        [Parameter(ParameterSetName = @"microsoft.graph.roleAssignment", HelpMessage = @"The &quot;roleDefinition&quot; property, of type &quot;microsoft.graph.roleDefinition&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleAssignment", HelpMessage = @"The &quot;roleDefinition&quot; property, of type &quot;microsoft.graph.roleDefinition&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;roleDefinition&quot; property, of type &quot;microsoft.graph.roleDefinition&quot;.")]
+        public System.Object roleDefinition { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -2390,15 +3366,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;members&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.directoryRole", HelpMessage = @"The &quot;members&quot; property, of type &quot;Edm.String&quot;.")]
         public System.Object members { get; set; }
-
-        /// <summary>
-        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.roleDefinition&quot; type.</para>
-        /// </summary>
-        [Selectable]
-        [Expandable]
-        [ParameterSetSelector(@"microsoft.graph.roleDefinition")]
-        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.roleDefinition&quot; type.")]
-        public System.Management.Automation.SwitchParameter roleDefinition { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;rolePermissions&quot; property, of type &quot;microsoft.graph.rolePermission&quot;.</para>
@@ -2422,6 +3389,20 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;isBuiltIn&quot; property, of type &quot;Edm.Boolean&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", HelpMessage = @"The &quot;isBuiltIn&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isBuiltIn { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.roleDefinition&quot; type.</para>
+        ///     <para type="description">List of Role assignments for this role definition.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.deviceAndAppManagementRoleAssignment")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.roleDefinition", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceAndAppManagementRoleDefinition", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.roleAssignment&quot;.")]
+        public System.Object[] roleAssignments { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceAndAppManagementRoleDefinition&quot; type.</para>
@@ -2719,10 +3700,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;assignments&quot; property, of type &quot;microsoft.graph.enrollmentConfigurationAssignment&quot;.")]
@@ -3259,10 +4240,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;deviceStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceStatus&quot;.")]
@@ -3308,10 +4289,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;userStatuses&quot; property, of type &quot;microsoft.graph.deviceComplianceUserStatus&quot;.")]
@@ -3356,10 +4337,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;deviceStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceDeviceOverview&quot;.")]
@@ -3402,10 +4383,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;userStatusOverview&quot; property, of type &quot;microsoft.graph.deviceComplianceUserOverview&quot;.")]
@@ -3449,10 +4430,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.sharedPCConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.appleDeviceFeaturesConfigurationBase", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.macOSDeviceFeaturesConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosDeviceFeaturesConfiguration", HelpMessage = @"The &quot;deviceSettingStateSummaries&quot; property, of type &quot;microsoft.graph.settingStateDeviceSummary&quot;.")]
@@ -3835,7 +4816,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;deviceThreatProtectionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.macOSCompliancePolicy&quot; type.</para>
-        ///     <para type="description">Require that devices have enabled device threat protection .</para>
+        ///     <para type="description">Require that devices have enabled device threat protection.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
@@ -5290,6 +6271,94 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ParameterSetSelector(@"microsoft.graph.windows10CustomConfiguration")]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10CustomConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10CustomConfiguration&quot; type.")]
         public System.Management.Automation.SwitchParameter windows10CustomConfiguration { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.editionUpgradeConfiguration")]
+        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.")]
+        public System.Management.Automation.SwitchParameter editionUpgradeConfiguration { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;licenseType&quot; property, of type &quot;microsoft.graph.editionUpgradeLicenseType&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
+        ///     <para type="description">Edition Upgrade License Type.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;productKey&apos;, &apos;licenseFile&apos;
+        ///     </para>
+        /// </summary>
+        [ODataType("microsoft.graph.microsoftStoreForBusinessLicenseType")]
+        [Selectable]
+        [ValidateSet(@"productKey", @"licenseFile")]
+        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;licenseType&quot; property, of type &quot;microsoft.graph.editionUpgradeLicenseType&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;licenseType&quot; property, of type &quot;microsoft.graph.editionUpgradeLicenseType&quot;.")]
+        public System.String licenseType { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;targetEdition&quot; property, of type &quot;microsoft.graph.windows10EditionType&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
+        ///     <para type="description">Edition Upgrade Target Edition.</para>
+        ///     <para type="description">
+        ///          Valid values: &apos;windows10Enterprise&apos;, &apos;windows10EnterpriseN&apos;, &apos;windows10Education&apos;, &apos;windows10EducationN&apos;, &apos;windows10MobileEnterprise&apos;, &apos;windows10HolographicEnterprise&apos;, &apos;windows10Professional&apos;, &apos;windows10ProfessionalN&apos;, &apos;windows10ProfessionalEducation&apos;, &apos;windows10ProfessionalEducationN&apos;, &apos;windows10ProfessionalWorkstation&apos;, &apos;windows10ProfessionalWorkstationN&apos;
+        ///     </para>
+        /// </summary>
+        [ODataType("microsoft.graph.windows10EditionType")]
+        [Selectable]
+        [ValidateSet(@"windows10Enterprise", @"windows10EnterpriseN", @"windows10Education", @"windows10EducationN", @"windows10MobileEnterprise", @"windows10HolographicEnterprise", @"windows10Professional", @"windows10ProfessionalN", @"windows10ProfessionalEducation", @"windows10ProfessionalEducationN", @"windows10ProfessionalWorkstation", @"windows10ProfessionalWorkstationN")]
+        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;targetEdition&quot; property, of type &quot;microsoft.graph.windows10EditionType&quot;.")]
+        public System.String targetEdition { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;license&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
+        ///     <para type="description">Edition Upgrade License File Content.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;license&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String license { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
+        ///     <para type="description">Edition Upgrade Product Key.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String productKey { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration")]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.")]
+        public System.Management.Automation.SwitchParameter windowsDefenderAdvancedThreatProtectionConfiguration { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;allowSampleSharing&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.</para>
+        ///     <para type="description">Windows Defender AdvancedThreatProtection &quot;Allow Sample Sharing&quot; Rule</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;allowSampleSharing&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean allowSampleSharing { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;enableExpeditedTelemetryReporting&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.</para>
+        ///     <para type="description">Expedite Windows Defender Advanced Threat Protection telemetry reporting frequency.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;enableExpeditedTelemetryReporting&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean enableExpeditedTelemetryReporting { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.</para>
@@ -6767,7 +7836,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockSearchSuggestions&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.</para>
-        ///     <para type="description">Indicates whether or not to Block the user from using the search suggestions in the address bar.</para>
+        ///     <para type="description">Indicates whether or not to block the user from using the search suggestions in the address bar.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
@@ -6777,12 +7846,22 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;edgeBlockSendingIntranetTrafficToInternetExplorer&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.</para>
-        ///     <para type="description">Indicates whether or not to Block the user from sending Intranet traffic to Internet Explorer from Edge.</para>
+        ///     <para type="description">Indicates whether or not to switch the intranet traffic from Edge to Internet Explorer. Note: the name of this property is misleading; the property is obsolete, use EdgeSendIntranetTrafficToInternetExplorer instead.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeBlockSendingIntranetTrafficToInternetExplorer&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean edgeBlockSendingIntranetTrafficToInternetExplorer { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;edgeSendIntranetTrafficToInternetExplorer&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.</para>
+        ///     <para type="description">Indicates whether or not to switch the intranet traffic from Edge to Internet Explorer.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;edgeSendIntranetTrafficToInternetExplorer&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean edgeSendIntranetTrafficToInternetExplorer { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;edgeRequireSmartScreen&quot; property, of type &quot;Edm.Boolean&quot;.</para>
@@ -7194,6 +8273,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Boolean logonBlockFastUserSwitching { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;tenantLockdownRequireNetworkDuringOutOfBoxExperience&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.windows10GeneralConfiguration&quot; type.</para>
+        ///     <para type="description">Whether the device is required to connect to the network.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.windows10GeneralConfiguration", HelpMessage = @"The &quot;tenantLockdownRequireNetworkDuringOutOfBoxExperience&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean tenantLockdownRequireNetworkDuringOutOfBoxExperience { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windows10EndpointProtectionConfiguration&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -7589,94 +8678,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.windows10EndpointProtectionConfiguration", HelpMessage = @"The &quot;bitLockerRemovableDrivePolicy&quot; property, of type &quot;microsoft.graph.bitLockerRemovableDrivePolicy&quot;.")]
         public System.Object bitLockerRemovableDrivePolicy { get; set; }
-
-        /// <summary>
-        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
-        /// </summary>
-        [Selectable]
-        [Expandable]
-        [ParameterSetSelector(@"microsoft.graph.editionUpgradeConfiguration")]
-        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter editionUpgradeConfiguration { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;licenseType&quot; property, of type &quot;microsoft.graph.editionUpgradeLicenseType&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
-        ///     <para type="description">Edition Upgrade License Type.</para>
-        ///     <para type="description">
-        ///          Valid values: &apos;productKey&apos;, &apos;licenseFile&apos;
-        ///     </para>
-        /// </summary>
-        [ODataType("microsoft.graph.microsoftStoreForBusinessLicenseType")]
-        [Selectable]
-        [ValidateSet(@"productKey", @"licenseFile")]
-        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;licenseType&quot; property, of type &quot;microsoft.graph.editionUpgradeLicenseType&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;licenseType&quot; property, of type &quot;microsoft.graph.editionUpgradeLicenseType&quot;.")]
-        public System.String licenseType { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;targetEdition&quot; property, of type &quot;microsoft.graph.windows10EditionType&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
-        ///     <para type="description">Edition Upgrade Target Edition.</para>
-        ///     <para type="description">
-        ///          Valid values: &apos;windows10Enterprise&apos;, &apos;windows10EnterpriseN&apos;, &apos;windows10Education&apos;, &apos;windows10EducationN&apos;, &apos;windows10MobileEnterprise&apos;, &apos;windows10HolographicEnterprise&apos;, &apos;windows10Professional&apos;, &apos;windows10ProfessionalN&apos;, &apos;windows10ProfessionalEducation&apos;, &apos;windows10ProfessionalEducationN&apos;, &apos;windows10ProfessionalWorkstation&apos;, &apos;windows10ProfessionalWorkstationN&apos;
-        ///     </para>
-        /// </summary>
-        [ODataType("microsoft.graph.windows10EditionType")]
-        [Selectable]
-        [ValidateSet(@"windows10Enterprise", @"windows10EnterpriseN", @"windows10Education", @"windows10EducationN", @"windows10MobileEnterprise", @"windows10HolographicEnterprise", @"windows10Professional", @"windows10ProfessionalN", @"windows10ProfessionalEducation", @"windows10ProfessionalEducationN", @"windows10ProfessionalWorkstation", @"windows10ProfessionalWorkstationN")]
-        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;targetEdition&quot; property, of type &quot;microsoft.graph.windows10EditionType&quot;.")]
-        public System.String targetEdition { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;license&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
-        ///     <para type="description">Edition Upgrade License File Content.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;license&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String license { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.editionUpgradeConfiguration&quot; type.</para>
-        ///     <para type="description">Edition Upgrade Product Key.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.editionUpgradeConfiguration", HelpMessage = @"The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.microsoftStoreForBusinessApp", HelpMessage = @"The &quot;productKey&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String productKey { get; set; }
-
-        /// <summary>
-        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.</para>
-        /// </summary>
-        [Selectable]
-        [Expandable]
-        [ParameterSetSelector(@"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration")]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.")]
-        public System.Management.Automation.SwitchParameter windowsDefenderAdvancedThreatProtectionConfiguration { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;allowSampleSharing&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.</para>
-        ///     <para type="description">Windows Defender AdvancedThreatProtection &quot;Allow Sample Sharing&quot; Rule</para>
-        /// </summary>
-        [ODataType("Edm.Boolean")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;allowSampleSharing&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean allowSampleSharing { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;enableExpeditedTelemetryReporting&quot; property, of type &quot;Edm.Boolean&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration&quot; type.</para>
-        ///     <para type="description">Expedite Windows Defender Advanced Threat Protection telemetry reporting frequency.</para>
-        /// </summary>
-        [ODataType("Edm.Boolean")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", HelpMessage = @"The &quot;enableExpeditedTelemetryReporting&quot; property, of type &quot;Edm.Boolean&quot;.")]
-        public System.Boolean enableExpeditedTelemetryReporting { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.macOSDeviceFeaturesConfiguration&quot; type.</para>
@@ -9326,7 +10327,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;workProfilePasswordSignInFailureCountBeforeFactoryReset&quot; property, of type &quot;Edm.Int32&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&quot; type.</para>
-        ///     <para type="description">Number of sign in failures allowed before work profile is removed and all corporate data deleted. Valid values 4 to 11</para>
+        ///     <para type="description">Number of sign in failures allowed before work profile is removed and all corporate data deleted. Valid values 1 to 16</para>
         /// </summary>
         [ODataType("Edm.Int32")]
         [Selectable]
@@ -9632,7 +10633,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.detectedApp", HelpMessage = @"The &quot;managedDevices&quot; property, of type &quot;microsoft.graph.managedDevice&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;managedDevices&quot; property, of type &quot;microsoft.graph.managedDevice&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;managedDevices&quot; property, of type &quot;microsoft.graph.managedDevice&quot;.")]
         public System.Object[] managedDevices { get; set; }
 
         /// <summary>
@@ -9829,7 +10829,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">This property is on the &quot;microsoft.graph.deviceManagement&quot; type.</para>
         ///     <para type="description">The device configurations.</para>
         /// </summary>
-        [ODataType("microsoft.graph.deviceConfiguration", "microsoft.graph.windows10TeamGeneralConfiguration", "microsoft.graph.windowsPhone81GeneralConfiguration", "microsoft.graph.windows81GeneralConfiguration", "microsoft.graph.windowsUpdateForBusinessConfiguration", "microsoft.graph.windowsPhone81CustomConfiguration", "microsoft.graph.windows10SecureAssessmentConfiguration", "microsoft.graph.sharedPCConfiguration", "microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", "microsoft.graph.windows10CustomConfiguration", "microsoft.graph.windows10GeneralConfiguration", "microsoft.graph.windows10EndpointProtectionConfiguration", "microsoft.graph.editionUpgradeConfiguration", "microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", "microsoft.graph.appleDeviceFeaturesConfigurationBase", "microsoft.graph.macOSDeviceFeaturesConfiguration", "microsoft.graph.iosDeviceFeaturesConfiguration", "microsoft.graph.macOSGeneralDeviceConfiguration", "microsoft.graph.macOSCustomConfiguration", "microsoft.graph.iosUpdateConfiguration", "microsoft.graph.iosGeneralDeviceConfiguration", "microsoft.graph.iosCustomConfiguration", "microsoft.graph.iosCertificateProfile", "microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", "microsoft.graph.androidWorkProfileCustomConfiguration", "microsoft.graph.androidGeneralDeviceConfiguration", "microsoft.graph.androidCustomConfiguration")]
+        [ODataType("microsoft.graph.deviceConfiguration", "microsoft.graph.windows10TeamGeneralConfiguration", "microsoft.graph.windowsPhone81GeneralConfiguration", "microsoft.graph.windows81GeneralConfiguration", "microsoft.graph.windowsUpdateForBusinessConfiguration", "microsoft.graph.windowsPhone81CustomConfiguration", "microsoft.graph.windows10SecureAssessmentConfiguration", "microsoft.graph.sharedPCConfiguration", "microsoft.graph.windows10EnterpriseModernAppManagementConfiguration", "microsoft.graph.windows10CustomConfiguration", "microsoft.graph.editionUpgradeConfiguration", "microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration", "microsoft.graph.windows10GeneralConfiguration", "microsoft.graph.windows10EndpointProtectionConfiguration", "microsoft.graph.appleDeviceFeaturesConfigurationBase", "microsoft.graph.macOSDeviceFeaturesConfiguration", "microsoft.graph.iosDeviceFeaturesConfiguration", "microsoft.graph.macOSGeneralDeviceConfiguration", "microsoft.graph.macOSCustomConfiguration", "microsoft.graph.iosUpdateConfiguration", "microsoft.graph.iosGeneralDeviceConfiguration", "microsoft.graph.iosCustomConfiguration", "microsoft.graph.iosCertificateProfile", "microsoft.graph.androidWorkProfileGeneralDeviceConfiguration", "microsoft.graph.androidWorkProfileCustomConfiguration", "microsoft.graph.androidGeneralDeviceConfiguration", "microsoft.graph.androidCustomConfiguration")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -9979,18 +10979,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object[] roleDefinitions { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.deviceManagement&quot; type.</para>
-        ///     <para type="description">The Role Assignments.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.deviceAndAppManagementRoleAssignment")]
-        [Selectable]
-        [Expandable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceManagement", HelpMessage = @"The &quot;roleAssignments&quot; property, of type &quot;microsoft.graph.deviceAndAppManagementRoleAssignment&quot;.")]
-        public System.Object[] roleAssignments { get; set; }
-
-        /// <summary>
         ///     <para type="description">The &quot;resourceOperations&quot; property, of type &quot;microsoft.graph.resourceOperation&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.deviceManagement&quot; type.</para>
         ///     <para type="description">The Resource Operations.</para>
@@ -10063,6 +11051,27 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object[] troubleshootingEvents { get; set; }
 
         /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mobileAppContent&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.mobileAppContent")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileAppContent", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mobileAppContent&quot; type.")]
+        public System.Management.Automation.SwitchParameter mobileAppContent { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;files&quot; property, of type &quot;microsoft.graph.mobileAppContentFile&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.mobileAppContent&quot; type.</para>
+        ///     <para type="description">The list of files for this app content version.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.mobileAppContentFile")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.mobileAppContent", HelpMessage = @"The &quot;files&quot; property, of type &quot;microsoft.graph.mobileAppContentFile&quot;.")]
+        public System.Object[] files { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserSummary&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -10079,15 +11088,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ParameterSetSelector(@"microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary")]
         [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary&quot; type.")]
         public System.Management.Automation.SwitchParameter managedDeviceMobileAppConfigurationDeviceSummary { get; set; }
-
-        /// <summary>
-        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; type.</para>
-        /// </summary>
-        [Selectable]
-        [Expandable]
-        [ParameterSetSelector(@"microsoft.graph.managedDeviceMobileAppConfigurationAssignment")]
-        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; type.")]
-        public System.Management.Automation.SwitchParameter managedDeviceMobileAppConfigurationAssignment { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationUserStatus&quot; type.</para>
@@ -10108,25 +11108,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Management.Automation.SwitchParameter managedDeviceMobileAppConfigurationDeviceStatus { get; set; }
 
         /// <summary>
-        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mobileAppContent&quot; type.</para>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; type.</para>
         /// </summary>
         [Selectable]
         [Expandable]
-        [ParameterSetSelector(@"microsoft.graph.mobileAppContent")]
-        [Parameter(ParameterSetName = @"microsoft.graph.mobileAppContent", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mobileAppContent&quot; type.")]
-        public System.Management.Automation.SwitchParameter mobileAppContent { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;files&quot; property, of type &quot;microsoft.graph.mobileAppContentFile&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.mobileAppContent&quot; type.</para>
-        ///     <para type="description">The list of files for this app content version.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.mobileAppContentFile")]
-        [Selectable]
-        [Expandable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.mobileAppContent", HelpMessage = @"The &quot;files&quot; property, of type &quot;microsoft.graph.mobileAppContentFile&quot;.")]
-        public System.Object[] files { get; set; }
+        [ParameterSetSelector(@"microsoft.graph.managedDeviceMobileAppConfigurationAssignment")]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedDeviceMobileAppConfigurationAssignment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.managedDeviceMobileAppConfigurationAssignment&quot; type.")]
+        public System.Management.Automation.SwitchParameter managedDeviceMobileAppConfigurationAssignment { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mobileAppContentFile&quot; type.</para>
@@ -10156,42 +11144,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.mobileAppContentFile", HelpMessage = @"The &quot;isCommitted&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean isCommitted { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;name&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.mobileAppContentFile&quot; type.</para>
-        ///     <para type="description">the file name.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.mobileAppContentFile", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.plannerBucket", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.workbookTableColumn", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.workbookRangeFont", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.workbookPivotTable", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartFont", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.workbookChartSeries", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.workbookChart", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.workbookWorksheet", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.workbookTable", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.workbookNamedItem", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.columnLink", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.columnDefinition", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.attachment", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.referenceAttachment", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.itemAttachment", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.fileAttachment", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.calendarGroup", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.baseItem", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.drive", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.calendar", HelpMessage = @"The &quot;name&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String name { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;size&quot; property, of type &quot;Edm.Int64&quot;.</para>
@@ -10533,6 +11485,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.managedAppStatusRaw", HelpMessage = @"The &quot;content&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.onenoteResource", HelpMessage = @"The &quot;content&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.onenotePage", HelpMessage = @"The &quot;content&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookCommentReply", HelpMessage = @"The &quot;content&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookComment", HelpMessage = @"The &quot;content&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItemVersion", HelpMessage = @"The &quot;content&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;content&quot; property, of type &quot;microsoft.graph.Json&quot;.")]
         public System.Object content { get; set; }
@@ -12584,12 +13538,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceAppManagement", HelpMessage = @"The &quot;managedAppRegistrations&quot; property, of type &quot;microsoft.graph.managedAppRegistration&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;managedAppRegistrations&quot; property, of type &quot;microsoft.graph.managedAppRegistration&quot;.")]
         public System.Object[] managedAppRegistrations { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;managedAppStatuses&quot; property, of type &quot;microsoft.graph.managedAppStatus&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.deviceAppManagement&quot; type.</para>
+        ///     <para type="description">The managed app statuses.</para>
         /// </summary>
         [ODataType("microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw")]
         [Selectable]
@@ -12719,16 +13673,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object createdBy { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;relatedContacts&quot; property, of type &quot;microsoft.graph.educationRelatedContact&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.educationUser&quot; type.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.educationRelatedContact")]
-        [Selectable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.educationUser", HelpMessage = @"The &quot;relatedContacts&quot; property, of type &quot;microsoft.graph.educationRelatedContact&quot;.")]
-        public System.Object[] relatedContacts { get; set; }
-
-        /// <summary>
         ///     <para type="description">The &quot;accountEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.educationUser&quot; type.</para>
         /// </summary>
@@ -12748,6 +13692,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.educationUser", HelpMessage = @"The &quot;assignedLicenses&quot; property, of type &quot;microsoft.graph.assignedLicense&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;assignedLicenses&quot; property, of type &quot;microsoft.graph.assignedLicense&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;assignedLicenses&quot; property, of type &quot;microsoft.graph.assignedLicense&quot;.")]
         public System.Object[] assignedLicenses { get; set; }
 
         /// <summary>
@@ -12759,6 +13704,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.educationUser", HelpMessage = @"The &quot;assignedPlans&quot; property, of type &quot;microsoft.graph.assignedPlan&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;assignedPlans&quot; property, of type &quot;microsoft.graph.assignedPlan&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.organization", HelpMessage = @"The &quot;assignedPlans&quot; property, of type &quot;microsoft.graph.assignedPlan&quot;.")]
         public System.Object[] assignedPlans { get; set; }
 
         /// <summary>
@@ -12884,6 +13830,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.educationUser", HelpMessage = @"The &quot;provisionedPlans&quot; property, of type &quot;microsoft.graph.provisionedPlan&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;provisionedPlans&quot; property, of type &quot;microsoft.graph.provisionedPlan&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.organization", HelpMessage = @"The &quot;provisionedPlans&quot; property, of type &quot;microsoft.graph.provisionedPlan&quot;.")]
         public System.Object[] provisionedPlans { get; set; }
 
         /// <summary>
@@ -12902,6 +13849,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.educationUser", HelpMessage = @"The &quot;showInAddressList&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;showInAddressList&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean showInAddressList { get; set; }
 
         /// <summary>
@@ -13034,16 +13982,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.educationSchool", HelpMessage = @"The &quot;schoolNumber&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String schoolNumber { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;externalId&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.educationSchool&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.educationSchool", HelpMessage = @"The &quot;externalId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.educationClass", HelpMessage = @"The &quot;externalId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String externalId { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;phone&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -13181,16 +14119,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Management.Automation.SwitchParameter operation { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;lastActionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.operation&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.DateTimeOffset")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.operation", HelpMessage = @"The &quot;lastActionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;lastActionDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset lastActionDateTime { get; set; }
-
-        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.onenoteOperation&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -13207,24 +14135,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;resourceLocation&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String resourceLocation { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;resourceId&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.onenoteOperation&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;resourceId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String resourceId { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;error&quot; property, of type &quot;microsoft.graph.onenoteOperationError&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.onenoteOperation&quot; type.</para>
-        /// </summary>
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.onenoteOperation", HelpMessage = @"The &quot;error&quot; property, of type &quot;microsoft.graph.onenoteOperationError&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.workbookFunctionResult", HelpMessage = @"The &quot;error&quot; property, of type &quot;microsoft.graph.onenoteOperationError&quot;.")]
-        public System.Object error { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;percentComplete&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -13745,6 +14655,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.DateTimeOffset")]
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemActivityStat", HelpMessage = @"The &quot;startDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset startDateTime { get; set; }
 
         /// <summary>
@@ -13764,15 +14675,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", HelpMessage = @"The &quot;hasDescription&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean hasDescription { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;completedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.plannerTask&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.DateTimeOffset")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.plannerTask", HelpMessage = @"The &quot;completedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset completedDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;completedBy&quot; property, of type &quot;microsoft.graph.identitySet&quot;.</para>
@@ -13941,60 +14843,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.invitation", HelpMessage = @"The &quot;invitedUser&quot; property, of type &quot;microsoft.graph.user&quot;.")]
         public System.Object invitedUser { get; set; }
-
-        /// <summary>
-        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.subscription&quot; type.</para>
-        /// </summary>
-        [Selectable]
-        [Expandable]
-        [ParameterSetSelector(@"microsoft.graph.subscription")]
-        [Parameter(ParameterSetName = @"microsoft.graph.subscription", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.subscription&quot; type.")]
-        public System.Management.Automation.SwitchParameter subscription { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;changeType&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.subscription&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.subscription", HelpMessage = @"The &quot;changeType&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String changeType { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;clientState&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.subscription&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.subscription", HelpMessage = @"The &quot;clientState&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String clientState { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;notificationUrl&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.subscription&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.subscription", HelpMessage = @"The &quot;notificationUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String notificationUrl { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;applicationId&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.subscription&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.subscription", HelpMessage = @"The &quot;applicationId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String applicationId { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;creatorId&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.subscription&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.subscription", HelpMessage = @"The &quot;creatorId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String creatorId { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookWorksheetProtection&quot; type.</para>
@@ -14628,6 +15476,32 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object criteria { get; set; }
 
         /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookCommentReply&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.workbookCommentReply")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookCommentReply", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookCommentReply&quot; type.")]
+        public System.Management.Automation.SwitchParameter workbookCommentReply { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;contentType&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.workbookCommentReply&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.contentType")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookCommentReply", HelpMessage = @"The &quot;contentType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookComment", HelpMessage = @"The &quot;contentType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.attachment", HelpMessage = @"The &quot;contentType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.referenceAttachment", HelpMessage = @"The &quot;contentType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemAttachment", HelpMessage = @"The &quot;contentType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.fileAttachment", HelpMessage = @"The &quot;contentType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"The &quot;contentType&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;contentType&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.Object contentType { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookChartTitleFormat&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -15117,6 +15991,26 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Management.Automation.SwitchParameter workbookFunctions { get; set; }
 
         /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookComment&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.workbookComment")]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookComment", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookComment&quot; type.")]
+        public System.Management.Automation.SwitchParameter workbookComment { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;replies&quot; property, of type &quot;microsoft.graph.workbookCommentReply&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.workbookComment&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.workbookCommentReply")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookComment", HelpMessage = @"The &quot;replies&quot; property, of type &quot;microsoft.graph.workbookCommentReply&quot;.")]
+        public System.Object[] replies { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookWorksheet&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -15209,6 +16103,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Boolean highlightLastColumn { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;legacyId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.workbookTable&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbookTable", HelpMessage = @"The &quot;legacyId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String legacyId { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;showBandedColumns&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.workbookTable&quot; type.</para>
         /// </summary>
@@ -15294,16 +16197,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String scope { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;type&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.workbookNamedItem&quot; type.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.eventType")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.workbookNamedItem", HelpMessage = @"The &quot;type&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.event", HelpMessage = @"The &quot;type&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String type { get; set; }
-
-        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.workbookApplication&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -15320,6 +16213,130 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.workbookApplication", HelpMessage = @"The &quot;calculationMode&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String calculationMode { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.itemActivityStat&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.itemActivityStat")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemActivityStat", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.itemActivityStat&quot; type.")]
+        public System.Management.Automation.SwitchParameter itemActivityStat { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;endDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.itemActivityStat&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.DateTimeOffset")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemActivityStat", HelpMessage = @"The &quot;endDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        public System.DateTimeOffset endDateTime { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;access&quot; property, of type &quot;microsoft.graph.itemActionStat&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.itemActivityStat&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.accessAction")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemActivityStat", HelpMessage = @"The &quot;access&quot; property, of type &quot;microsoft.graph.itemActionStat&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemActivity", HelpMessage = @"The &quot;access&quot; property, of type &quot;microsoft.graph.itemActionStat&quot;.")]
+        public System.Object access { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;create&quot; property, of type &quot;microsoft.graph.itemActionStat&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.itemActivityStat&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.itemActionStat")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemActivityStat", HelpMessage = @"The &quot;create&quot; property, of type &quot;microsoft.graph.itemActionStat&quot;.")]
+        public System.Object create { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;delete&quot; property, of type &quot;microsoft.graph.itemActionStat&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.itemActivityStat&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.itemActionStat")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemActivityStat", HelpMessage = @"The &quot;delete&quot; property, of type &quot;microsoft.graph.itemActionStat&quot;.")]
+        public System.Object delete { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;edit&quot; property, of type &quot;microsoft.graph.itemActionStat&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.itemActivityStat&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.itemActionStat")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemActivityStat", HelpMessage = @"The &quot;edit&quot; property, of type &quot;microsoft.graph.itemActionStat&quot;.")]
+        public System.Object edit { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;move&quot; property, of type &quot;microsoft.graph.itemActionStat&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.itemActivityStat&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.itemActionStat")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemActivityStat", HelpMessage = @"The &quot;move&quot; property, of type &quot;microsoft.graph.itemActionStat&quot;.")]
+        public System.Object move { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;isTrending&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.itemActivityStat&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemActivityStat", HelpMessage = @"The &quot;isTrending&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean isTrending { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;incompleteData&quot; property, of type &quot;microsoft.graph.incompleteData&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.itemActivityStat&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.incompleteData")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemActivityStat", HelpMessage = @"The &quot;incompleteData&quot; property, of type &quot;microsoft.graph.incompleteData&quot;.")]
+        public System.Object incompleteData { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;activities&quot; property, of type &quot;microsoft.graph.itemActivity&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.itemActivityStat&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.itemActivity")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemActivityStat", HelpMessage = @"The &quot;activities&quot; property, of type &quot;microsoft.graph.itemActivity&quot;.")]
+        public System.Object[] activities { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.itemActivity&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.itemActivity")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemActivity", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.itemActivity&quot; type.")]
+        public System.Management.Automation.SwitchParameter itemActivity { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;actor&quot; property, of type &quot;microsoft.graph.identitySet&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.itemActivity&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.identitySet")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemActivity", HelpMessage = @"The &quot;actor&quot; property, of type &quot;microsoft.graph.identitySet&quot;.")]
+        public System.Object actor { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;driveItem&quot; property, of type &quot;microsoft.graph.driveItem&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.itemActivity&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.driveItem")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemActivity", HelpMessage = @"The &quot;driveItem&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;driveItem&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;driveItem&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;driveItem&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
+        public System.Object driveItem { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.fieldValueSet&quot; type.</para>
@@ -15417,6 +16434,60 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object source { get; set; }
 
         /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.subscription&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.subscription")]
+        [Parameter(ParameterSetName = @"microsoft.graph.subscription", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.subscription&quot; type.")]
+        public System.Management.Automation.SwitchParameter subscription { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;changeType&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.subscription&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.subscription", HelpMessage = @"The &quot;changeType&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String changeType { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;clientState&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.subscription&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.subscription", HelpMessage = @"The &quot;clientState&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String clientState { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;notificationUrl&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.subscription&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.subscription", HelpMessage = @"The &quot;notificationUrl&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String notificationUrl { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;applicationId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.subscription&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.subscription", HelpMessage = @"The &quot;applicationId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String applicationId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;creatorId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.subscription&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.subscription", HelpMessage = @"The &quot;creatorId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String creatorId { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.permission&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -15473,18 +16544,44 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String shareId { get; set; }
 
         /// <summary>
-        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contentType&quot; type.</para>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.itemAnalytics&quot; type.</para>
         /// </summary>
         [Selectable]
         [Expandable]
-        [ParameterSetSelector(@"microsoft.graph.contentType")]
-        [Parameter(ParameterSetName = @"microsoft.graph.contentType", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contentType&quot; type.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.attachment", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contentType&quot; type.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.referenceAttachment", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contentType&quot; type.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.itemAttachment", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contentType&quot; type.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.fileAttachment", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contentType&quot; type.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contentType&quot; type.")]
-        public System.Object contentType { get; set; }
+        [ParameterSetSelector(@"microsoft.graph.itemAnalytics")]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemAnalytics", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.itemAnalytics&quot; type.")]
+        public System.Management.Automation.SwitchParameter itemAnalytics { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;itemActivityStats&quot; property, of type &quot;microsoft.graph.itemActivityStat&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.itemAnalytics&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.itemActivityStat")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemAnalytics", HelpMessage = @"The &quot;itemActivityStats&quot; property, of type &quot;microsoft.graph.itemActivityStat&quot;.")]
+        public System.Object[] itemActivityStats { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;allTime&quot; property, of type &quot;microsoft.graph.itemActivityStat&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.itemAnalytics&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.itemActivityStat")]
+        [Selectable]
+        [Expandable]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemAnalytics", HelpMessage = @"The &quot;allTime&quot; property, of type &quot;microsoft.graph.itemActivityStat&quot;.")]
+        public System.Object allTime { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;lastSevenDays&quot; property, of type &quot;microsoft.graph.itemActivityStat&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.itemAnalytics&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.itemActivityStat")]
+        [Selectable]
+        [Expandable]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemAnalytics", HelpMessage = @"The &quot;lastSevenDays&quot; property, of type &quot;microsoft.graph.itemActivityStat&quot;.")]
+        public System.Object lastSevenDays { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;parentId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -16029,15 +17126,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String appActivityId { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;appDisplayName&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.userActivity&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.userActivity", HelpMessage = @"The &quot;appDisplayName&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String appDisplayName { get; set; }
-
-        /// <summary>
         ///     <para type="description">The &quot;fallbackUrl&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.userActivity&quot; type.</para>
         /// </summary>
@@ -16074,17 +17162,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ParameterSetSelector(@"microsoft.graph.deviceManagementTroubleshootingEvent")]
         [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementTroubleshootingEvent", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; type.")]
         public System.Management.Automation.SwitchParameter deviceManagementTroubleshootingEvent { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;correlationId&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot; type.</para>
-        ///     <para type="description">Id used for tracing the failure in the service.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.deviceManagementTroubleshootingEvent", HelpMessage = @"The &quot;correlationId&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.enrollmentTroubleshootingEvent", HelpMessage = @"The &quot;correlationId&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String correlationId { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.enrollmentTroubleshootingEvent&quot; type.</para>
@@ -16243,6 +17320,50 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;appIdentifier&quot; property, of type &quot;microsoft.graph.mobileAppIdentifier&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;appIdentifier&quot; property, of type &quot;microsoft.graph.mobileAppIdentifier&quot;.")]
         public System.Object appIdentifier { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.managedAppRegistration&quot; type.</para>
+        ///     <para type="description">Zero or more policys already applied on the registered app when it last synchronized with managment service.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        public System.Object[] appliedPolicies { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.managedAppRegistration&quot; type.</para>
+        ///     <para type="description">Zero or more policies admin intended for the app as of now.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        public System.Object[] intendedPolicies { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.managedAppRegistration&quot; type.</para>
+        ///     <para type="description">Zero or more long running operations triggered on the app registration.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.onenoteOperation")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.team", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.onenote", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        public System.Object[] operations { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidManagedAppRegistration&quot; type.</para>
@@ -16726,7 +17847,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.inferenceClassification", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.inferenceClassification&quot; type.")]
         [Parameter(ParameterSetName = @"microsoft.graph.message", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.inferenceClassification&quot; type.")]
         [Parameter(ParameterSetName = @"microsoft.graph.eventMessage", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.inferenceClassification&quot; type.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.inferenceClassification&quot; type.")]
         public System.Object inferenceClassification { get; set; }
 
         /// <summary>
@@ -16757,6 +17877,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.contactFolder", HelpMessage = @"The &quot;parentFolderId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", HelpMessage = @"The &quot;parentFolderId&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mailSearchFolder", HelpMessage = @"The &quot;parentFolderId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.contact", HelpMessage = @"The &quot;parentFolderId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.message", HelpMessage = @"The &quot;parentFolderId&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.eventMessage", HelpMessage = @"The &quot;parentFolderId&quot; property, of type &quot;Edm.String&quot;.")]
@@ -16777,12 +17898,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;childFolders&quot; property, of type &quot;microsoft.graph.contactFolder&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.contactFolder&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.mailFolder")]
+        [ODataType("microsoft.graph.mailFolder", "microsoft.graph.mailSearchFolder")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.contactFolder", HelpMessage = @"The &quot;childFolders&quot; property, of type &quot;microsoft.graph.contactFolder&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", HelpMessage = @"The &quot;childFolders&quot; property, of type &quot;microsoft.graph.contactFolder&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mailSearchFolder", HelpMessage = @"The &quot;childFolders&quot; property, of type &quot;microsoft.graph.contactFolder&quot;.")]
         public System.Object[] childFolders { get; set; }
 
         /// <summary>
@@ -16795,6 +17917,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.contactFolder", HelpMessage = @"The &quot;singleValueExtendedProperties&quot; property, of type &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", HelpMessage = @"The &quot;singleValueExtendedProperties&quot; property, of type &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mailSearchFolder", HelpMessage = @"The &quot;singleValueExtendedProperties&quot; property, of type &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.post", HelpMessage = @"The &quot;singleValueExtendedProperties&quot; property, of type &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.contact", HelpMessage = @"The &quot;singleValueExtendedProperties&quot; property, of type &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.message", HelpMessage = @"The &quot;singleValueExtendedProperties&quot; property, of type &quot;microsoft.graph.singleValueLegacyExtendedProperty&quot;.")]
@@ -16813,6 +17936,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.contactFolder", HelpMessage = @"The &quot;multiValueExtendedProperties&quot; property, of type &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", HelpMessage = @"The &quot;multiValueExtendedProperties&quot; property, of type &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mailSearchFolder", HelpMessage = @"The &quot;multiValueExtendedProperties&quot; property, of type &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.post", HelpMessage = @"The &quot;multiValueExtendedProperties&quot; property, of type &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.contact", HelpMessage = @"The &quot;multiValueExtendedProperties&quot; property, of type &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.message", HelpMessage = @"The &quot;multiValueExtendedProperties&quot; property, of type &quot;microsoft.graph.multiValueLegacyExtendedProperty&quot;.")]
@@ -17018,6 +18142,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", HelpMessage = @"The &quot;childFolderCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mailSearchFolder", HelpMessage = @"The &quot;childFolderCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 childFolderCount { get; set; }
 
         /// <summary>
@@ -17027,6 +18152,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", HelpMessage = @"The &quot;unreadItemCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mailSearchFolder", HelpMessage = @"The &quot;unreadItemCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 unreadItemCount { get; set; }
 
         /// <summary>
@@ -17036,6 +18162,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Int32")]
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", HelpMessage = @"The &quot;totalItemCount&quot; property, of type &quot;Edm.Int32&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mailSearchFolder", HelpMessage = @"The &quot;totalItemCount&quot; property, of type &quot;Edm.Int32&quot;.")]
         public System.Int32 totalItemCount { get; set; }
 
         /// <summary>
@@ -17047,6 +18174,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", HelpMessage = @"The &quot;messages&quot; property, of type &quot;microsoft.graph.message&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mailSearchFolder", HelpMessage = @"The &quot;messages&quot; property, of type &quot;microsoft.graph.message&quot;.")]
         public System.Object[] messages { get; set; }
 
         /// <summary>
@@ -17058,7 +18186,54 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.mailFolder", HelpMessage = @"The &quot;messageRules&quot; property, of type &quot;microsoft.graph.messageRule&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mailSearchFolder", HelpMessage = @"The &quot;messageRules&quot; property, of type &quot;microsoft.graph.messageRule&quot;.")]
         public System.Object[] messageRules { get; set; }
+
+        /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mailSearchFolder&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.mailSearchFolder")]
+        [Parameter(ParameterSetName = @"microsoft.graph.mailSearchFolder", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.mailSearchFolder&quot; type.")]
+        public System.Management.Automation.SwitchParameter mailSearchFolder { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;isSupported&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.mailSearchFolder&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.mailSearchFolder", HelpMessage = @"The &quot;isSupported&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean isSupported { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;includeNestedFolders&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.mailSearchFolder&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.mailSearchFolder", HelpMessage = @"The &quot;includeNestedFolders&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean includeNestedFolders { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;sourceFolderIds&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.mailSearchFolder&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.mailSearchFolder", HelpMessage = @"The &quot;sourceFolderIds&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String[] sourceFolderIds { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;filterQuery&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.mailSearchFolder&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.mailSearchFolder", HelpMessage = @"The &quot;filterQuery&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String filterQuery { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.outlookUser&quot; type.</para>
@@ -17157,6 +18332,83 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String appliesTo { get; set; }
 
         /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.team&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.team")]
+        [Parameter(ParameterSetName = @"microsoft.graph.team", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.team&quot; type.")]
+        public System.Management.Automation.SwitchParameter team { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;memberSettings&quot; property, of type &quot;microsoft.graph.teamMemberSettings&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.team&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.teamMemberSettings")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.team", HelpMessage = @"The &quot;memberSettings&quot; property, of type &quot;microsoft.graph.teamMemberSettings&quot;.")]
+        public System.Object memberSettings { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;guestSettings&quot; property, of type &quot;microsoft.graph.teamGuestSettings&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.team&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.teamGuestSettings")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.team", HelpMessage = @"The &quot;guestSettings&quot; property, of type &quot;microsoft.graph.teamGuestSettings&quot;.")]
+        public System.Object guestSettings { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;messagingSettings&quot; property, of type &quot;microsoft.graph.teamMessagingSettings&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.team&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.teamMessagingSettings")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.team", HelpMessage = @"The &quot;messagingSettings&quot; property, of type &quot;microsoft.graph.teamMessagingSettings&quot;.")]
+        public System.Object messagingSettings { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;funSettings&quot; property, of type &quot;microsoft.graph.teamFunSettings&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.team&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.teamFunSettings")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.team", HelpMessage = @"The &quot;funSettings&quot; property, of type &quot;microsoft.graph.teamFunSettings&quot;.")]
+        public System.Object funSettings { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;isArchived&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.team&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.team", HelpMessage = @"The &quot;isArchived&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;isArchived&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean isArchived { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;channels&quot; property, of type &quot;microsoft.graph.channel&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.team&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.channel")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.team", HelpMessage = @"The &quot;channels&quot; property, of type &quot;microsoft.graph.channel&quot;.")]
+        public System.Object[] channels { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;installedApps&quot; property, of type &quot;microsoft.graph.teamsAppInstallation&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.team&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.teamsAppInstallation")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.team", HelpMessage = @"The &quot;installedApps&quot; property, of type &quot;microsoft.graph.teamsAppInstallation&quot;.")]
+        public System.Object[] installedApps { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.groupLifecyclePolicy&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -17225,17 +18477,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object[] resources { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;operations&quot; property, of type &quot;microsoft.graph.onenoteOperation&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.onenote&quot; type.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.onenoteOperation")]
-        [Selectable]
-        [Expandable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.onenote", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.onenoteOperation&quot;.")]
-        public System.Object[] operations { get; set; }
-
-        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.plannerGroup&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -17273,21 +18514,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;parentReference&quot; property, of type &quot;microsoft.graph.itemReference&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.drive", HelpMessage = @"The &quot;parentReference&quot; property, of type &quot;microsoft.graph.itemReference&quot;.")]
         public System.Object parentReference { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.baseItem&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.baseItem", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.list", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.drive", HelpMessage = @"The &quot;webUrl&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String webUrl { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;createdByUser&quot; property, of type &quot;microsoft.graph.user&quot;.</para>
@@ -17329,18 +18555,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ParameterSetSelector(@"microsoft.graph.sharedDriveItem")]
         [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.sharedDriveItem&quot; type.")]
         public System.Management.Automation.SwitchParameter sharedDriveItem { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;driveItem&quot; property, of type &quot;microsoft.graph.driveItem&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.sharedDriveItem&quot; type.</para>
-        /// </summary>
-        [Selectable]
-        [Expandable]
-        [ParameterSetSelector(@"microsoft.graph.driveItem")]
-        [Parameter(ParameterSetName = @"microsoft.graph.sharedDriveItem", HelpMessage = @"The &quot;driveItem&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;driveItem&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;driveItem&quot; property, of type &quot;microsoft.graph.driveItem&quot;.")]
-        public System.Object driveItem { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;items&quot; property, of type &quot;microsoft.graph.driveItem&quot;.</para>
@@ -17416,6 +18630,18 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.drive", HelpMessage = @"The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
         public System.Object sharepointIds { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;analytics&quot; property, of type &quot;microsoft.graph.itemAnalytics&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.listItem&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.itemAnalytics")]
+        [Selectable]
+        [Expandable]
+        [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;analytics&quot; property, of type &quot;microsoft.graph.itemAnalytics&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;analytics&quot; property, of type &quot;microsoft.graph.itemAnalytics&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;analytics&quot; property, of type &quot;microsoft.graph.itemAnalytics&quot;.")]
+        public System.Object analytics { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;versions&quot; property, of type &quot;microsoft.graph.listItemVersion&quot;.</para>
@@ -17518,16 +18744,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object image { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;location&quot; property, of type &quot;microsoft.graph.geoCoordinates&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.driveItem&quot; type.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.location", "microsoft.graph.locationConstraintItem")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;location&quot; property, of type &quot;microsoft.graph.geoCoordinates&quot;.")]
-        [Parameter(ParameterSetName = @"microsoft.graph.event", HelpMessage = @"The &quot;location&quot; property, of type &quot;microsoft.graph.geoCoordinates&quot;.")]
-        public System.Object location { get; set; }
-
-        /// <summary>
         ///     <para type="description">The &quot;package&quot; property, of type &quot;microsoft.graph.package&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.driveItem&quot; type.</para>
         /// </summary>
@@ -17613,6 +18829,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;permissions&quot; property, of type &quot;microsoft.graph.permission&quot;.")]
         public System.Object[] permissions { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;subscriptions&quot; property, of type &quot;microsoft.graph.subscription&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.driveItem&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.subscription")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;subscriptions&quot; property, of type &quot;microsoft.graph.subscription&quot;.")]
+        public System.Object[] subscriptions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;thumbnails&quot; property, of type &quot;microsoft.graph.thumbnailSet&quot;.</para>
@@ -17868,6 +19095,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.message", HelpMessage = @"The &quot;extensions&quot; property, of type &quot;microsoft.graph.extension&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.eventMessage", HelpMessage = @"The &quot;extensions&quot; property, of type &quot;microsoft.graph.extension&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.event", HelpMessage = @"The &quot;extensions&quot; property, of type &quot;microsoft.graph.extension&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.organization", HelpMessage = @"The &quot;extensions&quot; property, of type &quot;microsoft.graph.extension&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;extensions&quot; property, of type &quot;microsoft.graph.extension&quot;.")]
         public System.Object[] extensions { get; set; }
 
@@ -18748,15 +19976,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String protocol { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;service&quot; property, of type &quot;Edm.String&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.domainDnsSrvRecord&quot; type.</para>
-        /// </summary>
-        [ODataType("Edm.String")]
-        [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.domainDnsSrvRecord", HelpMessage = @"The &quot;service&quot; property, of type &quot;Edm.String&quot;.")]
-        public System.String service { get; set; }
-
-        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.domainDnsMxRecord&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -18865,6 +20084,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Boolean isVerified { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;passwordNotificationWindowInDays&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.domain&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;passwordNotificationWindowInDays&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 passwordNotificationWindowInDays { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;passwordValidityPeriodInDays&quot; property, of type &quot;Edm.Int32&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.domain&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Int32")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.domain", HelpMessage = @"The &quot;passwordValidityPeriodInDays&quot; property, of type &quot;Edm.Int32&quot;.")]
+        public System.Int32 passwordValidityPeriodInDays { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;supportedServices&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.domain&quot; type.</para>
         /// </summary>
@@ -18900,7 +20137,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;domainNameReferences&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.domain&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -18949,6 +20186,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;deletedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.directoryRoleTemplate", HelpMessage = @"The &quot;deletedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.directoryRole", HelpMessage = @"The &quot;deletedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryObjectPartnerReference", HelpMessage = @"The &quot;deletedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;deletedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset deletedDateTime { get; set; }
 
@@ -19009,6 +20247,33 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String country { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;employeeId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;employeeId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String employeeId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;faxNumber&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;faxNumber&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String faxNumber { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;isResourceAccount&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;isResourceAccount&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean isResourceAccount { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;legalAgeGroupClassification&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
         /// </summary>
@@ -19016,6 +20281,25 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;legalAgeGroupClassification&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String legalAgeGroupClassification { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;licenseAssignmentStates&quot; property, of type &quot;microsoft.graph.licenseAssignmentState&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.licenseAssignmentState")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;licenseAssignmentStates&quot; property, of type &quot;microsoft.graph.licenseAssignmentState&quot;.")]
+        public System.Object[] licenseAssignmentStates { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;onPremisesDistinguishedName&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;onPremisesDistinguishedName&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String onPremisesDistinguishedName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;onPremisesExtensionAttributes&quot; property, of type &quot;microsoft.graph.onPremisesExtensionAttributes&quot;.</para>
@@ -19108,6 +20392,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String onPremisesUserPrincipalName { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;otherMails&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;otherMails&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String[] otherMails { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;postalCode&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
         /// </summary>
@@ -19127,6 +20421,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;proxyAddresses&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;proxyAddresses&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] proxyAddresses { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;signInSessionsValidFromDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.DateTimeOffset")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;signInSessionsValidFromDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        public System.DateTimeOffset signInSessionsValidFromDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;streetAddress&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -19236,7 +20539,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;ownedDevices&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -19247,7 +20550,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;registeredDevices&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -19258,7 +20561,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;directReports&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -19269,35 +20572,27 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;memberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;memberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;memberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;memberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         public System.Object[] memberOf { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;createdObjects&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
+        ///     <para type="description">The &quot;transitiveMemberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;createdObjects&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
-        public System.Object[] createdObjects { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;ownedObjects&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
-        [Selectable]
-        [Expandable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;ownedObjects&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
-        public System.Object[] ownedObjects { get; set; }
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;transitiveMemberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;transitiveMemberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;transitiveMemberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        public System.Object[] transitiveMemberOf { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;photos&quot; property, of type &quot;microsoft.graph.profilePhoto&quot;.</para>
@@ -19310,18 +20605,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;photos&quot; property, of type &quot;microsoft.graph.profilePhoto&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;photos&quot; property, of type &quot;microsoft.graph.profilePhoto&quot;.")]
         public System.Object[] photos { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;deviceManagementTroubleshootingEvents&quot; property, of type &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
-        ///     <para type="description">The list of troubleshooting events for this user.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
-        [Selectable]
-        [Expandable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;deviceManagementTroubleshootingEvents&quot; property, of type &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot;.")]
-        public System.Object[] deviceManagementTroubleshootingEvents { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.organization&quot; type.</para>
@@ -19400,6 +20683,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String[] technicalNotificationMails { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;verifiedDomains&quot; property, of type &quot;microsoft.graph.verifiedDomain&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.organization&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.verifiedDomain")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.organization", HelpMessage = @"The &quot;verifiedDomains&quot; property, of type &quot;microsoft.graph.verifiedDomain&quot;.")]
+        public System.Object[] verifiedDomains { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;mobileDeviceManagementAuthority&quot; property, of type &quot;microsoft.graph.mdmAuthority&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.organization&quot; type.</para>
         ///     <para type="description">Mobile device management authority.</para>
@@ -19459,6 +20752,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String classification { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;hasMembersWithLicenseErrors&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;hasMembersWithLicenseErrors&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean hasMembersWithLicenseErrors { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;groupTypes&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
@@ -19469,6 +20771,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String[] groupTypes { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;licenseProcessingState&quot; property, of type &quot;microsoft.graph.licenseProcessingState&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.licenseProcessingState")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;licenseProcessingState&quot; property, of type &quot;microsoft.graph.licenseProcessingState&quot;.")]
+        public System.Object licenseProcessingState { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;mailEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
@@ -19476,6 +20787,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;mailEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean mailEnabled { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;preferredDataLocation&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;preferredDataLocation&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String preferredDataLocation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;renewedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -19532,10 +20852,32 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Int32 unseenCount { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;membersWithLicenseErrors&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;membersWithLicenseErrors&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        public System.Object[] membersWithLicenseErrors { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;transitiveMembers&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;transitiveMembers&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        public System.Object[] transitiveMembers { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;createdOnBehalfOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;createdOnBehalfOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
@@ -19545,7 +20887,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;owners&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -19591,6 +20933,33 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String roleTemplateId { get; set; }
 
         /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.directoryObjectPartnerReference&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.directoryObjectPartnerReference")]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryObjectPartnerReference", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.directoryObjectPartnerReference&quot; type.")]
+        public System.Management.Automation.SwitchParameter directoryObjectPartnerReference { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;externalPartnerTenantId&quot; property, of type &quot;Edm.Guid&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.directoryObjectPartnerReference&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Guid")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryObjectPartnerReference", HelpMessage = @"The &quot;externalPartnerTenantId&quot; property, of type &quot;Edm.Guid&quot;.")]
+        public System.Guid externalPartnerTenantId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;objectType&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.directoryObjectPartnerReference&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryObjectPartnerReference", HelpMessage = @"The &quot;objectType&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String objectType { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.device&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -19617,6 +20986,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;approximateLastSignInDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset approximateLastSignInDateTime { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;complianceExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.device&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.DateTimeOffset")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;complianceExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        public System.DateTimeOffset complianceExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceMetadata&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -19674,6 +21052,25 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String[] physicalIds { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;profileType&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.device&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;profileType&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String profileType { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;systemLabels&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.device&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;systemLabels&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String[] systemLabels { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;trustType&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.device&quot; type.</para>
         /// </summary>
@@ -19686,7 +21083,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;registeredOwners&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.device&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -19697,7 +21094,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;registeredUsers&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.device&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -19717,7 +21114,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;deletedItems&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.directory&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]

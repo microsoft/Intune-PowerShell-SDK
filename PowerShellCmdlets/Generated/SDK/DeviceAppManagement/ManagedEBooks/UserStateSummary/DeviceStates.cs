@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}/deviceStates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneManagedEBookUserStateSummaryDeviceState", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceAppManagement_ManagedEBooks_UserStateSummary_DeviceStates", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceInstallState")]
     [ResourceTypePropertyName("deviceStateODataType")]
     [ResourceReference]
-    public class Get_IntuneManagedEBookUserStateSummaryDeviceState : GetOrSearchCmdlet
+    [Alias("Get-IntuneManagedEBookUserStateSummaryDeviceState")]
+    public class Get_DeviceAppManagement_ManagedEBooks_UserStateSummary_DeviceStates : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedEBook&quot; object in the &quot;managedEBooks&quot; collection.</para>
@@ -141,11 +142,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}/deviceStates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneManagedEBookUserStateSummaryDeviceState", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceInstallState")]
+    [Cmdlet("New", "DeviceAppManagement_ManagedEBooks_UserStateSummary_DeviceStates", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceInstallState")]
     [ODataType("microsoft.graph.deviceInstallState")]
     [ResourceTypePropertyName("deviceStateODataType")]
     [ResourceReference]
-    public class New_IntuneManagedEBookUserStateSummaryDeviceState : PostCmdlet
+    [Alias("New-IntuneManagedEBookUserStateSummaryDeviceState")]
+    public class New_DeviceAppManagement_ManagedEBooks_UserStateSummary_DeviceStates : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceInstallState&quot; object in the &quot;deviceStates&quot; collection.</para>
@@ -281,10 +283,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}/deviceStates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneManagedEBookUserStateSummaryDeviceState", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceInstallState")]
+    [Cmdlet("Update", "DeviceAppManagement_ManagedEBooks_UserStateSummary_DeviceStates", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceInstallState")]
     [ODataType("microsoft.graph.deviceInstallState")]
     [ResourceTypePropertyName("deviceStateODataType")]
-    public class Update_IntuneManagedEBookUserStateSummaryDeviceState : PatchCmdlet
+    [Alias("Update-IntuneManagedEBookUserStateSummaryDeviceState")]
+    public class Update_DeviceAppManagement_ManagedEBooks_UserStateSummary_DeviceStates : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceInstallState&quot; object in the &quot;deviceStates&quot; collection.</para>
@@ -422,10 +425,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}/deviceStates/deviceInstallStateId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneManagedEBookUserStateSummaryDeviceState", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceAppManagement_ManagedEBooks_UserStateSummary_DeviceStates", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceInstallState")]
     [ResourceTypePropertyName("deviceStateODataType")]
-    public class Remove_IntuneManagedEBookUserStateSummaryDeviceState : DeleteCmdlet
+    [Alias("Remove-IntuneManagedEBookUserStateSummaryDeviceState")]
+    public class Remove_DeviceAppManagement_ManagedEBooks_UserStateSummary_DeviceStates : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceInstallState&quot; object in the &quot;deviceStates&quot; collection.</para>

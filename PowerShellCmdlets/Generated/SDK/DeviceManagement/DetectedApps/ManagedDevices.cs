@@ -11,10 +11,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/detectedApps/{detectedAppId}/managedDevices</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneDetectedAppDevice", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_DetectedApps_ManagedDevices", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Get_IntuneDetectedAppDevice : GetOrSearchCmdlet
+    [Alias("Get-IntuneDetectedAppDevice")]
+    public class Get_DeviceManagement_DetectedApps_ManagedDevices : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.</para>
@@ -540,10 +541,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/detectedApps/{detectedAppId}/managedDevices/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneDetectedAppDeviceReferenceSet", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_DetectedApps_ManagedDevicesReferences", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Get_IntuneDetectedAppDeviceReferenceSet : GetOrSearchCmdlet
+    [Alias("Get-IntuneDetectedAppDeviceReferenceSet")]
+    public class Get_DeviceManagement_DetectedApps_ManagedDevicesReferences : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.detectedApp&quot; object in the &quot;detectedApps&quot; collection.</para>
@@ -1069,10 +1071,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/detectedApps/{detectedAppId}/managedDevices/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneDetectedAppDeviceReferenceSet", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "DeviceManagement_DetectedApps_ManagedDevicesReferences", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class New_IntuneDetectedAppDeviceReferenceSet : PostReferenceToCollectionCmdlet
+    [Alias("New-IntuneDetectedAppDeviceReferenceSet")]
+    public class New_DeviceManagement_DetectedApps_ManagedDevicesReferences : PostReferenceToCollectionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -1120,10 +1123,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/detectedApps/{detectedAppId}/managedDevices/managedDeviceId/$ref</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneDetectedAppDeviceReferenceSet", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_DetectedApps_ManagedDevicesReferences", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Remove_IntuneDetectedAppDeviceReferenceSet : DeleteCmdlet
+    [Alias("Remove-IntuneDetectedAppDeviceReferenceSet")]
+    public class Remove_DeviceManagement_DetectedApps_ManagedDevicesReferences : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>

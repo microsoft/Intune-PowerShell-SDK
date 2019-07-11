@@ -7,6 +7,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// <summary>
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.reportRoot&quot; (or one of its derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.reportRoot&quot; (or one of its derived types).</para>
+    ///     <para type="description">The resource that represents an instance of History Reports.</para>
     /// </summary>
     [Cmdlet("New", "ReportRootObject", DefaultParameterSetName = @"microsoft.graph.reportRoot")]
     [ODataType("microsoft.graph.reportRoot")]

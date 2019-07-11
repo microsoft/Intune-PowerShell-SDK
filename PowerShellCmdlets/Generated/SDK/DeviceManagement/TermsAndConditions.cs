@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/termsAndConditions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneTermsAndConditions", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_TermsAndConditions", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.termsAndConditions")]
     [ResourceTypePropertyName("termsAndConditionODataType")]
     [ResourceReference]
-    public class Get_IntuneTermsAndConditions : GetOrSearchCmdlet
+    [Alias("Get-IntuneTermsAndConditions")]
+    public class Get_DeviceManagement_TermsAndConditions : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.</para>
@@ -141,11 +142,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/termsAndConditions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneTermsAndConditions", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.termsAndConditions")]
+    [Cmdlet("New", "DeviceManagement_TermsAndConditions", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.termsAndConditions")]
     [ODataType("microsoft.graph.termsAndConditions")]
     [ResourceTypePropertyName("termsAndConditionODataType")]
     [ResourceReference]
-    public class New_IntuneTermsAndConditions : PostCmdlet
+    [Alias("New-IntuneTermsAndConditions")]
+    public class New_DeviceManagement_TermsAndConditions : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.</para>
@@ -283,10 +285,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/termsAndConditions</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneTermsAndConditions", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.termsAndConditions")]
+    [Cmdlet("Update", "DeviceManagement_TermsAndConditions", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.termsAndConditions")]
     [ODataType("microsoft.graph.termsAndConditions")]
     [ResourceTypePropertyName("termsAndConditionODataType")]
-    public class Update_IntuneTermsAndConditions : PatchCmdlet
+    [Alias("Update-IntuneTermsAndConditions")]
+    public class Update_DeviceManagement_TermsAndConditions : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.</para>
@@ -426,10 +429,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/termsAndConditions/termsAndConditionId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneTermsAndConditions", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_TermsAndConditions", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.termsAndConditions")]
     [ResourceTypePropertyName("termsAndConditionODataType")]
-    public class Remove_IntuneTermsAndConditions : DeleteCmdlet
+    [Alias("Remove-IntuneTermsAndConditions")]
+    public class Remove_DeviceManagement_TermsAndConditions : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.</para>

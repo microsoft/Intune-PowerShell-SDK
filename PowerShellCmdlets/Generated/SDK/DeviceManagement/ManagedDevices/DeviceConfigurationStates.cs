@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/managedDevices/{managedDeviceId}/deviceConfigurationStates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneManagedDeviceDeviceConfigurationState", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_ManagedDevices_DeviceConfigurationStates", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceConfigurationState")]
     [ResourceTypePropertyName("deviceConfigurationStateODataType")]
     [ResourceReference]
-    public class Get_IntuneManagedDeviceDeviceConfigurationState : GetOrSearchCmdlet
+    [Alias("Get-IntuneManagedDeviceDeviceConfigurationState")]
+    public class Get_DeviceManagement_ManagedDevices_DeviceConfigurationStates : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -109,11 +110,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/managedDevices/{managedDeviceId}/deviceConfigurationStates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneManagedDeviceDeviceConfigurationState", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationState")]
+    [Cmdlet("New", "DeviceManagement_ManagedDevices_DeviceConfigurationStates", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationState")]
     [ODataType("microsoft.graph.deviceConfigurationState")]
     [ResourceTypePropertyName("deviceConfigurationStateODataType")]
     [ResourceReference]
-    public class New_IntuneManagedDeviceDeviceConfigurationState : PostCmdlet
+    [Alias("New-IntuneManagedDeviceDeviceConfigurationState")]
+    public class New_DeviceManagement_ManagedDevices_DeviceConfigurationStates : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceConfigurationState&quot; object in the &quot;deviceConfigurationStates&quot; collection.</para>
@@ -221,10 +223,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/managedDevices/{managedDeviceId}/deviceConfigurationStates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneManagedDeviceDeviceConfigurationState", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationState")]
+    [Cmdlet("Update", "DeviceManagement_ManagedDevices_DeviceConfigurationStates", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationState")]
     [ODataType("microsoft.graph.deviceConfigurationState")]
     [ResourceTypePropertyName("deviceConfigurationStateODataType")]
-    public class Update_IntuneManagedDeviceDeviceConfigurationState : PatchCmdlet
+    [Alias("Update-IntuneManagedDeviceDeviceConfigurationState")]
+    public class Update_DeviceManagement_ManagedDevices_DeviceConfigurationStates : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceConfigurationState&quot; object in the &quot;deviceConfigurationStates&quot; collection.</para>
@@ -334,10 +337,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/managedDevices/{managedDeviceId}/deviceConfigurationStates/deviceConfigurationStateId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneManagedDeviceDeviceConfigurationState", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_ManagedDevices_DeviceConfigurationStates", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceConfigurationState")]
     [ResourceTypePropertyName("deviceConfigurationStateODataType")]
-    public class Remove_IntuneManagedDeviceDeviceConfigurationState : DeleteCmdlet
+    [Alias("Remove-IntuneManagedDeviceDeviceConfigurationState")]
+    public class Remove_DeviceManagement_ManagedDevices_DeviceConfigurationStates : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceConfigurationState&quot; object in the &quot;deviceConfigurationStates&quot; collection.</para>

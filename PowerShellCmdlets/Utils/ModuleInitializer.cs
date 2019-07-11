@@ -39,10 +39,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// </summary>
         private void InitReferenceUrlGeneratorCache()
         {
-            // Get all the types in all assemblies
-            IEnumerable<Type> allTypes = AppDomain.CurrentDomain.GetAssemblies()
-                // Get all types in all assemblies
-                .SelectMany(assembly => assembly.GetTypes());
+            // Get all the types in this assembly
+            IEnumerable<Type> allTypes = Assembly.GetExecutingAssembly().GetExportedTypes();
 
             // Get all the cmdlets that return resources (i.e. not "$ref", function or action cmdlets)
             IEnumerable<Type> referenceableCmdletTypes = allTypes

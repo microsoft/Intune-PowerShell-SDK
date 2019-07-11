@@ -10,11 +10,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/groups/{groupId}/photos</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "AADGroupPhotoSet", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "Groups_Photos", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
     [ResourceReference]
-    public class Get_AADGroupPhotoSet : GetOrSearchCmdlet
+    [Alias("Get-AADGroupPhotoSet")]
+    public class Get_Groups_Photos : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.group&quot; object in the &quot;groups&quot; collection.</para>
@@ -67,10 +68,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/groups/{groupId}/photos/$value</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "AADGroupPhotoSetData")]
+    [Cmdlet("Get", "Groups_PhotosData")]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
-    public class Get_AADGroupPhotoSetData : GetStreamCmdlet
+    [Alias("Get-AADGroupPhotoSetDataData")]
+    public class Get_Groups_PhotosData : GetStreamCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.</para>
@@ -123,10 +125,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PUT ~/groups/{groupId}/photos/$value</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "AADGroupPhotoSetData", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "Groups_PhotosData", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
-    public class New_AADGroupPhotoSetData : UpdateStreamCmdlet
+    [Alias("New-AADGroupPhotoSetData")]
+    public class New_Groups_PhotosData : UpdateStreamCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.</para>
@@ -166,10 +169,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PUT ~/groups/{groupId}/photos/$value</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Set", "AADGroupPhotoSetData", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("Set", "Groups_PhotosData", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
-    public class Set_AADGroupPhotoSetData : UpdateStreamCmdlet
+    [Alias("Set-AADGroupPhotoSetData")]
+    public class Set_Groups_PhotosData : UpdateStreamCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.</para>
@@ -204,10 +208,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/groups/{groupId}/photos/profilePhotoId/$value</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "AADGroupPhotoSetData", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "Groups_PhotosData", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.profilePhoto")]
     [ResourceTypePropertyName("photoODataType")]
-    public class Remove_AADGroupPhotoSetData : DeleteCmdlet
+    [Alias("Remove-AADGroupPhotoSetData")]
+    public class Remove_Groups_PhotosData : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.profilePhoto&quot; object in the &quot;photos&quot; collection.</para>

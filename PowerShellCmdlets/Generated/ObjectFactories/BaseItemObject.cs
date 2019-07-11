@@ -295,6 +295,18 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object sharepointIds { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;analytics&quot; property, of type &quot;microsoft.graph.itemAnalytics&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.listItem&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.itemAnalytics")]
+        [Selectable]
+        [Expandable]
+        [Parameter(ParameterSetName = @"microsoft.graph.listItem", HelpMessage = @"The &quot;analytics&quot; property, of type &quot;microsoft.graph.itemAnalytics&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;analytics&quot; property, of type &quot;microsoft.graph.itemAnalytics&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.site", HelpMessage = @"The &quot;analytics&quot; property, of type &quot;microsoft.graph.itemAnalytics&quot;.")]
+        public System.Object analytics { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;fields&quot; property, of type &quot;microsoft.graph.fieldValueSet&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.listItem&quot; type.</para>
         /// </summary>
@@ -564,6 +576,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;permissions&quot; property, of type &quot;microsoft.graph.permission&quot;.")]
         public System.Object[] permissions { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;subscriptions&quot; property, of type &quot;microsoft.graph.subscription&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.driveItem&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.subscription")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.driveItem", HelpMessage = @"The &quot;subscriptions&quot; property, of type &quot;microsoft.graph.subscription&quot;.")]
+        public System.Object[] subscriptions { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;thumbnails&quot; property, of type &quot;microsoft.graph.thumbnailSet&quot;.</para>

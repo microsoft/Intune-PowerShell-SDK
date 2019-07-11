@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceAppManagement/androidManagedAppProtections</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneAppProtectionPolicyAndroid", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceAppManagement_AndroidManagedAppProtections", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.androidManagedAppProtection")]
     [ResourceTypePropertyName("androidManagedAppProtectionODataType")]
     [ResourceReference]
-    public class Get_IntuneAppProtectionPolicyAndroid : GetOrSearchCmdlet
+    [Alias("Get-IntuneAppProtectionPolicyAndroid")]
+    public class Get_DeviceAppManagement_AndroidManagedAppProtections : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.androidManagedAppProtection&quot; object in the &quot;androidManagedAppProtections&quot; collection.</para>
@@ -451,11 +452,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceAppManagement/androidManagedAppProtections</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneAppProtectionPolicyAndroid", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.androidManagedAppProtection")]
+    [Cmdlet("New", "DeviceAppManagement_AndroidManagedAppProtections", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.androidManagedAppProtection")]
     [ODataType("microsoft.graph.androidManagedAppProtection")]
     [ResourceTypePropertyName("androidManagedAppProtectionODataType")]
     [ResourceReference]
-    public class New_IntuneAppProtectionPolicyAndroid : PostCmdlet
+    [Alias("New-IntuneAppProtectionPolicyAndroid")]
+    public class New_DeviceAppManagement_AndroidManagedAppProtections : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.androidManagedAppProtection&quot; object in the &quot;androidManagedAppProtections&quot; collection.</para>
@@ -956,10 +958,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/androidManagedAppProtections</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneAppProtectionPolicyAndroid", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.androidManagedAppProtection")]
+    [Cmdlet("Update", "DeviceAppManagement_AndroidManagedAppProtections", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.androidManagedAppProtection")]
     [ODataType("microsoft.graph.androidManagedAppProtection")]
     [ResourceTypePropertyName("androidManagedAppProtectionODataType")]
-    public class Update_IntuneAppProtectionPolicyAndroid : PatchCmdlet
+    [Alias("Update-IntuneAppProtectionPolicyAndroid")]
+    public class Update_DeviceAppManagement_AndroidManagedAppProtections : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.androidManagedAppProtection&quot; object in the &quot;androidManagedAppProtections&quot; collection.</para>
@@ -1462,10 +1465,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/androidManagedAppProtections/androidManagedAppProtectionId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneAppProtectionPolicyAndroid", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceAppManagement_AndroidManagedAppProtections", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.androidManagedAppProtection")]
     [ResourceTypePropertyName("androidManagedAppProtectionODataType")]
-    public class Remove_IntuneAppProtectionPolicyAndroid : DeleteCmdlet
+    [Alias("Remove-IntuneAppProtectionPolicyAndroid")]
+    public class Remove_DeviceAppManagement_AndroidManagedAppProtections : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.androidManagedAppProtection&quot; object in the &quot;androidManagedAppProtections&quot; collection.</para>
@@ -1490,10 +1494,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceAppManagement/androidManagedAppProtections/assign</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneAppProtectionPolicyAndroidAssign", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceAppManagement_AndroidManagedAppProtections_Assign", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.androidManagedAppProtection")]
     [ResourceTypePropertyName("androidManagedAppProtectionODataType")]
-    public class Invoke_IntuneAppProtectionPolicyAndroidAssign : ActionCmdlet
+    [Alias("Invoke-IntuneAppProtectionPolicyAndroidAssign")]
+    public class Invoke_DeviceAppManagement_AndroidManagedAppProtections_Assign : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;assignments&quot; action parameter of type &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot;.</para>
@@ -1502,7 +1507,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; action parameter of type &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;assignments&quot; action parameter of type &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot;.")]
         public System.Object[] assignments { get; set; }
 
         /// <summary>
@@ -1528,10 +1533,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceAppManagement/androidManagedAppProtections/targetApps</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneAppProtectionPolicyAndroidTargetApp", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceAppManagement_AndroidManagedAppProtections_TargetApps", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.androidManagedAppProtection")]
     [ResourceTypePropertyName("androidManagedAppProtectionODataType")]
-    public class Invoke_IntuneAppProtectionPolicyAndroidTargetApp : ActionCmdlet
+    [Alias("Invoke-IntuneAppProtectionPolicyAndroidTargetApp")]
+    public class Invoke_DeviceAppManagement_AndroidManagedAppProtections_TargetApps : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;apps&quot; action parameter of type &quot;microsoft.graph.managedMobileApp&quot;.</para>
@@ -1540,7 +1546,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;apps&quot; action parameter of type &quot;microsoft.graph.managedMobileApp&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;apps&quot; action parameter of type &quot;microsoft.graph.managedMobileApp&quot;.")]
         public System.Object[] apps { get; set; }
 
         /// <summary>

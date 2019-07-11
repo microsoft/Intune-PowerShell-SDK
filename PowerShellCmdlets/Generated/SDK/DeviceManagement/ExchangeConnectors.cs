@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/exchangeConnectors</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneExchangeConnector", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_ExchangeConnectors", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceManagementExchangeConnector")]
     [ResourceTypePropertyName("exchangeConnectorODataType")]
     [ResourceReference]
-    public class Get_IntuneExchangeConnector : GetOrSearchCmdlet
+    [Alias("Get-IntuneExchangeConnector")]
+    public class Get_DeviceManagement_ExchangeConnectors : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.</para>
@@ -131,11 +132,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/exchangeConnectors</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneExchangeConnector", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceManagementExchangeConnector")]
+    [Cmdlet("New", "DeviceManagement_ExchangeConnectors", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceManagementExchangeConnector")]
     [ODataType("microsoft.graph.deviceManagementExchangeConnector")]
     [ResourceTypePropertyName("exchangeConnectorODataType")]
     [ResourceReference]
-    public class New_IntuneExchangeConnector : PostCmdlet
+    [Alias("New-IntuneExchangeConnector")]
+    public class New_DeviceManagement_ExchangeConnectors : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.</para>
@@ -266,10 +268,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/exchangeConnectors</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneExchangeConnector", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceManagementExchangeConnector")]
+    [Cmdlet("Update", "DeviceManagement_ExchangeConnectors", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceManagementExchangeConnector")]
     [ODataType("microsoft.graph.deviceManagementExchangeConnector")]
     [ResourceTypePropertyName("exchangeConnectorODataType")]
-    public class Update_IntuneExchangeConnector : PatchCmdlet
+    [Alias("Update-IntuneExchangeConnector")]
+    public class Update_DeviceManagement_ExchangeConnectors : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.</para>
@@ -402,10 +405,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/exchangeConnectors/deviceManagementExchangeConnectorId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneExchangeConnector", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_ExchangeConnectors", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceManagementExchangeConnector")]
     [ResourceTypePropertyName("exchangeConnectorODataType")]
-    public class Remove_IntuneExchangeConnector : DeleteCmdlet
+    [Alias("Remove-IntuneExchangeConnector")]
+    public class Remove_DeviceManagement_ExchangeConnectors : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceManagementExchangeConnector&quot; object in the &quot;exchangeConnectors&quot; collection.</para>
@@ -430,10 +434,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/exchangeConnectors/sync</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneExchangeConnectorSync", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ExchangeConnectors_Sync", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceManagementExchangeConnector")]
     [ResourceTypePropertyName("exchangeConnectorODataType")]
-    public class Invoke_IntuneExchangeConnectorSync : ActionCmdlet
+    [Alias("Invoke-IntuneExchangeConnectorSync")]
+    public class Invoke_DeviceManagement_ExchangeConnectors_Sync : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;syncType&quot; action parameter of type &quot;microsoft.graph.deviceManagementExchangeConnectorSyncType&quot;.</para>
@@ -446,7 +451,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Expandable]
         [ValidateSet(@"fullSync", @"deltaSync")]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;syncType&quot; action parameter of type &quot;microsoft.graph.deviceManagementExchangeConnectorSyncType&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;syncType&quot; action parameter of type &quot;microsoft.graph.deviceManagementExchangeConnectorSyncType&quot;.")]
         public System.String syncType { get; set; }
 
         /// <summary>

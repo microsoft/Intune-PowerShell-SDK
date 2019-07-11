@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/telecomExpenseManagementPartners</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneTelecomExpenseManagementPartner", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_TelecomExpenseManagementPartners", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.telecomExpenseManagementPartner")]
     [ResourceTypePropertyName("telecomExpenseManagementPartnerODataType")]
     [ResourceReference]
-    public class Get_IntuneTelecomExpenseManagementPartner : GetOrSearchCmdlet
+    [Alias("Get-IntuneTelecomExpenseManagementPartner")]
+    public class Get_DeviceManagement_TelecomExpenseManagementPartners : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.</para>
@@ -91,11 +92,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/telecomExpenseManagementPartners</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneTelecomExpenseManagementPartner", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.telecomExpenseManagementPartner")]
+    [Cmdlet("New", "DeviceManagement_TelecomExpenseManagementPartners", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.telecomExpenseManagementPartner")]
     [ODataType("microsoft.graph.telecomExpenseManagementPartner")]
     [ResourceTypePropertyName("telecomExpenseManagementPartnerODataType")]
     [ResourceReference]
-    public class New_IntuneTelecomExpenseManagementPartner : PostCmdlet
+    [Alias("New-IntuneTelecomExpenseManagementPartner")]
+    public class New_DeviceManagement_TelecomExpenseManagementPartners : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.</para>
@@ -174,10 +176,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/telecomExpenseManagementPartners</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneTelecomExpenseManagementPartner", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.telecomExpenseManagementPartner")]
+    [Cmdlet("Update", "DeviceManagement_TelecomExpenseManagementPartners", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.telecomExpenseManagementPartner")]
     [ODataType("microsoft.graph.telecomExpenseManagementPartner")]
     [ResourceTypePropertyName("telecomExpenseManagementPartnerODataType")]
-    public class Update_IntuneTelecomExpenseManagementPartner : PatchCmdlet
+    [Alias("Update-IntuneTelecomExpenseManagementPartner")]
+    public class Update_DeviceManagement_TelecomExpenseManagementPartners : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.</para>
@@ -258,10 +261,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/telecomExpenseManagementPartners/telecomExpenseManagementPartnerId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneTelecomExpenseManagementPartner", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_TelecomExpenseManagementPartners", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.telecomExpenseManagementPartner")]
     [ResourceTypePropertyName("telecomExpenseManagementPartnerODataType")]
-    public class Remove_IntuneTelecomExpenseManagementPartner : DeleteCmdlet
+    [Alias("Remove-IntuneTelecomExpenseManagementPartner")]
+    public class Remove_DeviceManagement_TelecomExpenseManagementPartners : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.telecomExpenseManagementPartner&quot; object in the &quot;telecomExpenseManagementPartners&quot; collection.</para>

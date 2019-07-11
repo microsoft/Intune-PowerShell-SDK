@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/exemptAppLockerFiles</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneAppProtectionPolicyExemptAppLockerFile", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceAppManagement_ManagedAppPolicies_ExemptAppLockerFiles", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("exemptAppLockerFileODataType")]
     [ResourceReference]
-    public class Get_IntuneAppProtectionPolicyExemptAppLockerFile : GetOrSearchCmdlet
+    [Alias("Get-IntuneAppProtectionPolicyExemptAppLockerFile")]
+    public class Get_DeviceAppManagement_ManagedAppPolicies_ExemptAppLockerFiles : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedAppPolicy&quot; object in the &quot;managedAppPolicies&quot; collection.</para>
@@ -105,11 +106,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/exemptAppLockerFiles</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneAppProtectionPolicyExemptAppLockerFile", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile")]
+    [Cmdlet("New", "DeviceAppManagement_ManagedAppPolicies_ExemptAppLockerFiles", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("exemptAppLockerFileODataType")]
     [ResourceReference]
-    public class New_IntuneAppProtectionPolicyExemptAppLockerFile : PostCmdlet
+    [Alias("New-IntuneAppProtectionPolicyExemptAppLockerFile")]
+    public class New_DeviceAppManagement_ManagedAppPolicies_ExemptAppLockerFiles : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;exemptAppLockerFiles&quot; collection.</para>
@@ -202,10 +204,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/exemptAppLockerFiles</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneAppProtectionPolicyExemptAppLockerFile", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile")]
+    [Cmdlet("Update", "DeviceAppManagement_ManagedAppPolicies_ExemptAppLockerFiles", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("exemptAppLockerFileODataType")]
-    public class Update_IntuneAppProtectionPolicyExemptAppLockerFile : PatchCmdlet
+    [Alias("Update-IntuneAppProtectionPolicyExemptAppLockerFile")]
+    public class Update_DeviceAppManagement_ManagedAppPolicies_ExemptAppLockerFiles : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;exemptAppLockerFiles&quot; collection.</para>
@@ -300,10 +303,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/{managedAppPolicyODataType}/exemptAppLockerFiles/windowsInformationProtectionAppLockerFileId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneAppProtectionPolicyExemptAppLockerFile", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceAppManagement_ManagedAppPolicies_ExemptAppLockerFiles", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.windowsInformationProtectionAppLockerFile")]
     [ResourceTypePropertyName("exemptAppLockerFileODataType")]
-    public class Remove_IntuneAppProtectionPolicyExemptAppLockerFile : DeleteCmdlet
+    [Alias("Remove-IntuneAppProtectionPolicyExemptAppLockerFile")]
+    public class Remove_DeviceAppManagement_ManagedAppPolicies_ExemptAppLockerFiles : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.windowsInformationProtectionAppLockerFile&quot; object in the &quot;exemptAppLockerFiles&quot; collection.</para>

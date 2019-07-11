@@ -26,13 +26,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String activityDomain { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;timeslots&quot; property, of type &quot;microsoft.graph.timeSlot&quot;.</para>
+        ///     <para type="description">The &quot;timeSlots&quot; property, of type &quot;microsoft.graph.timeSlot&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.timeConstraint&quot; type.</para>
         /// </summary>
         [ODataType("microsoft.graph.timeSlot")]
         [Selectable]
         [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.timeConstraint", HelpMessage = @"The &quot;timeslots&quot; property, of type &quot;microsoft.graph.timeSlot&quot;.")]
-        public System.Object[] timeslots { get; set; }
+        [Parameter(ParameterSetName = @"microsoft.graph.timeConstraint", HelpMessage = @"The &quot;timeSlots&quot; property, of type &quot;microsoft.graph.timeSlot&quot;.")]
+        public System.Object[] timeSlots { get; set; }
     }
 }

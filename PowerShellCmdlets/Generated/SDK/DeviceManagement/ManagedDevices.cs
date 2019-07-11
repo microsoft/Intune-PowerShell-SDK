@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/managedDevices</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneManagedDevice", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_ManagedDevices", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
     [ResourceReference]
-    public class Get_IntuneManagedDevice : GetOrSearchCmdlet
+    [Alias("Get-IntuneManagedDevice")]
+    public class Get_DeviceManagement_ManagedDevices : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -531,11 +532,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/managedDevices</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneManagedDevice", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedDevice")]
+    [Cmdlet("New", "DeviceManagement_ManagedDevices", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedDevice")]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
     [ResourceReference]
-    public class New_IntuneManagedDevice : PostCmdlet
+    [Alias("New-IntuneManagedDevice")]
+    public class New_DeviceManagement_ManagedDevices : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -1136,10 +1138,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/managedDevices</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneManagedDevice", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedDevice")]
+    [Cmdlet("Update", "DeviceManagement_ManagedDevices", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedDevice")]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Update_IntuneManagedDevice : PatchCmdlet
+    [Alias("Update-IntuneManagedDevice")]
+    public class Update_DeviceManagement_ManagedDevices : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -1742,10 +1745,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/managedDevices/managedDeviceId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneManagedDevice", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_ManagedDevices", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Remove_IntuneManagedDevice : DeleteCmdlet
+    [Alias("Remove-IntuneManagedDevice")]
+    public class Remove_DeviceManagement_ManagedDevices : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -1770,10 +1774,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/retire</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneManagedDeviceRetire", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_Retire", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneManagedDeviceRetire : ActionCmdlet
+    [Alias("Invoke-IntuneManagedDeviceRetire")]
+    public class Invoke_DeviceManagement_ManagedDevices_Retire : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -1798,10 +1803,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/wipe</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneManagedDeviceWipeDevice", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_Wipe", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneManagedDeviceWipeDevice : ActionCmdlet
+    [Alias("Invoke-IntuneManagedDeviceWipeDevice")]
+    public class Invoke_DeviceManagement_ManagedDevices_Wipe : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;keepEnrollmentData&quot; action parameter of type &quot;Edm.Boolean&quot;.</para>
@@ -1809,7 +1815,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Expandable]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;keepEnrollmentData&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;keepEnrollmentData&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean keepEnrollmentData { get; set; }
 
         /// <summary>
@@ -1818,7 +1824,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.Boolean")]
         [Selectable]
         [Expandable]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;keepUserData&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;keepUserData&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean keepUserData { get; set; }
 
         /// <summary>
@@ -1827,7 +1833,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Expandable]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;macOsUnlockCode&quot; action parameter of type &quot;Edm.String&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;macOsUnlockCode&quot; action parameter of type &quot;Edm.String&quot;.")]
         public System.String macOsUnlockCode { get; set; }
 
         /// <summary>
@@ -1853,10 +1859,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/resetPasscode</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneManagedDeviceResetPasscode", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_ResetPasscode", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneManagedDeviceResetPasscode : ActionCmdlet
+    [Alias("Invoke-IntuneManagedDeviceResetPasscode")]
+    public class Invoke_DeviceManagement_ManagedDevices_ResetPasscode : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -1881,10 +1888,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/remoteLock</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneManagedDeviceRemoteLock", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_RemoteLock", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneManagedDeviceRemoteLock : ActionCmdlet
+    [Alias("Invoke-IntuneManagedDeviceRemoteLock")]
+    public class Invoke_DeviceManagement_ManagedDevices_RemoteLock : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -1909,10 +1917,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/requestRemoteAssistance</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneMangedDeviceRequestRemoteAssistance", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_RequestRemoteAssistance", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneMangedDeviceRequestRemoteAssistance : ActionCmdlet
+    [Alias("Invoke-IntuneMangedDeviceRequestRemoteAssistance")]
+    public class Invoke_DeviceManagement_ManagedDevices_RequestRemoteAssistance : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -1937,10 +1946,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/disableLostMode</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneManagedDeviceDisableLostMode", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_DisableLostMode", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneManagedDeviceDisableLostMode : ActionCmdlet
+    [Alias("Invoke-IntuneManagedDeviceDisableLostMode")]
+    public class Invoke_DeviceManagement_ManagedDevices_DisableLostMode : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -1965,10 +1975,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/locateDevice</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneManagedDeviceLocateDevice", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_LocateDevice", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneManagedDeviceLocateDevice : ActionCmdlet
+    [Alias("Invoke-IntuneManagedDeviceLocateDevice")]
+    public class Invoke_DeviceManagement_ManagedDevices_LocateDevice : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -1993,10 +2004,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/bypassActivationLock</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneManagedDeviceBypassActivationLock", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_BypassActivationLock", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneManagedDeviceBypassActivationLock : ActionCmdlet
+    [Alias("Invoke-IntuneManagedDeviceBypassActivationLock")]
+    public class Invoke_DeviceManagement_ManagedDevices_BypassActivationLock : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -2021,10 +2033,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/rebootNow</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneManagedDeviceRebootNow", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_RebootNow", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneManagedDeviceRebootNow : ActionCmdlet
+    [Alias("Invoke-IntuneManagedDeviceRebootNow")]
+    public class Invoke_DeviceManagement_ManagedDevices_RebootNow : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -2049,10 +2062,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/shutDown</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneManagedDeviceShutDownDevice", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_ShutDown", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneManagedDeviceShutDownDevice : ActionCmdlet
+    [Alias("Invoke-IntuneManagedDeviceShutDownDevice")]
+    public class Invoke_DeviceManagement_ManagedDevices_ShutDown : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -2077,10 +2091,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/recoverPasscode</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneManagedDeviceRecoverPasscode", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_RecoverPasscode", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneManagedDeviceRecoverPasscode : ActionCmdlet
+    [Alias("Invoke-IntuneManagedDeviceRecoverPasscode")]
+    public class Invoke_DeviceManagement_ManagedDevices_RecoverPasscode : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -2105,10 +2120,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/cleanWindowsDevice</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneManagedDeviceCleanWindowsDevice", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_CleanWindowsDevice", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneManagedDeviceCleanWindowsDevice : ActionCmdlet
+    [Alias("Invoke-IntuneManagedDeviceCleanWindowsDevice")]
+    public class Invoke_DeviceManagement_ManagedDevices_CleanWindowsDevice : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;keepUserData&quot; action parameter of type &quot;Edm.Boolean&quot;.</para>
@@ -2117,7 +2133,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Expandable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;keepUserData&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;keepUserData&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean keepUserData { get; set; }
 
         /// <summary>
@@ -2143,10 +2159,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/logoutSharedAppleDeviceActiveUser</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneLogoutSharedAppleDeviceActiveUser", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_LogoutSharedAppleDeviceActiveUser", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneLogoutSharedAppleDeviceActiveUser : ActionCmdlet
+    [Alias("Invoke-IntuneLogoutSharedAppleDeviceActiveUser")]
+    public class Invoke_DeviceManagement_ManagedDevices_LogoutSharedAppleDeviceActiveUser : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -2171,10 +2188,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/deleteUserFromSharedAppleDevice</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneManagedDeviceDeleteUserFromSharedAppleDevice", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_DeleteUserFromSharedAppleDevice", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneManagedDeviceDeleteUserFromSharedAppleDevice : ActionCmdlet
+    [Alias("Invoke-IntuneManagedDeviceDeleteUserFromSharedAppleDevice")]
+    public class Invoke_DeviceManagement_ManagedDevices_DeleteUserFromSharedAppleDevice : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;userPrincipalName&quot; action parameter of type &quot;Edm.String&quot;.</para>
@@ -2182,7 +2200,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("Edm.String")]
         [Selectable]
         [Expandable]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userPrincipalName&quot; action parameter of type &quot;Edm.String&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;userPrincipalName&quot; action parameter of type &quot;Edm.String&quot;.")]
         public System.String userPrincipalName { get; set; }
 
         /// <summary>
@@ -2208,10 +2226,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/syncDevice</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneManagedDeviceSyncDevice", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_SyncDevice", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneManagedDeviceSyncDevice : ActionCmdlet
+    [Alias("Invoke-IntuneManagedDeviceSyncDevice")]
+    public class Invoke_DeviceManagement_ManagedDevices_SyncDevice : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -2236,10 +2255,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/windowsDefenderScan</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneManagedDeviceWindowsDefenderScan", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_WindowsDefenderScan", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneManagedDeviceWindowsDefenderScan : ActionCmdlet
+    [Alias("Invoke-IntuneManagedDeviceWindowsDefenderScan")]
+    public class Invoke_DeviceManagement_ManagedDevices_WindowsDefenderScan : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;quickScan&quot; action parameter of type &quot;Edm.Boolean&quot;.</para>
@@ -2248,7 +2268,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Expandable]
         [ValidateNotNull]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;quickScan&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;quickScan&quot; action parameter of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean quickScan { get; set; }
 
         /// <summary>
@@ -2274,10 +2294,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/windowsDefenderUpdateSignatures</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneManagedDeviceWindowsDefenderUpdateSignature", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_WindowsDefenderUpdateSignatures", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneManagedDeviceWindowsDefenderUpdateSignature : ActionCmdlet
+    [Alias("Invoke-IntuneManagedDeviceWindowsDefenderUpdateSignature")]
+    public class Invoke_DeviceManagement_ManagedDevices_WindowsDefenderUpdateSignatures : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -2302,10 +2323,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceManagement/managedDevices/updateWindowsDeviceAccount</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneManagedDeviceUpdateWindowsDeviceAccount", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceManagement_ManagedDevices_UpdateWindowsDeviceAccount", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedDevice")]
     [ResourceTypePropertyName("managedDeviceODataType")]
-    public class Invoke_IntuneManagedDeviceUpdateWindowsDeviceAccount : ActionCmdlet
+    [Alias("Invoke-IntuneManagedDeviceUpdateWindowsDeviceAccount")]
+    public class Invoke_DeviceManagement_ManagedDevices_UpdateWindowsDeviceAccount : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;updateWindowsDeviceAccountActionParameter&quot; action parameter of type &quot;microsoft.graph.updateWindowsDeviceAccountActionParameter&quot;.</para>
@@ -2313,7 +2335,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.updateWindowsDeviceAccountActionParameter")]
         [Selectable]
         [Expandable]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;updateWindowsDeviceAccountActionParameter&quot; action parameter of type &quot;microsoft.graph.updateWindowsDeviceAccountActionParameter&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;updateWindowsDeviceAccountActionParameter&quot; action parameter of type &quot;microsoft.graph.updateWindowsDeviceAccountActionParameter&quot;.")]
         public System.Object updateWindowsDeviceAccountActionParameter { get; set; }
 
         /// <summary>

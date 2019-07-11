@@ -65,5 +65,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.itemReference", HelpMessage = @"The &quot;sharepointIds&quot; property, of type &quot;microsoft.graph.sharepointIds&quot;.")]
         public System.Object sharepointIds { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;siteId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.itemReference&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.itemReference", HelpMessage = @"The &quot;siteId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String siteId { get; set; }
     }
 }

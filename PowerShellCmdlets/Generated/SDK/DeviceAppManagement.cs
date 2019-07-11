@@ -10,10 +10,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceAppManagement</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneDeviceAppManagement", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "DeviceAppManagement", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.deviceAppManagement")]
     [ResourceTypePropertyName("deviceAppManagementODataType")]
-    public class Get_IntuneDeviceAppManagement : GetCmdlet
+    [Alias("Get-IntuneDeviceAppManagement")]
+    public class Get_DeviceAppManagement : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;microsoftStoreForBusinessLastSuccessfulSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -178,6 +179,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;managedAppStatuses&quot; property, of type &quot;microsoft.graph.managedAppStatus&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.deviceAppManagement&quot; type.</para>
+        ///     <para type="description">The managed app statuses.</para>
         /// </summary>
         [ODataType("microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw")]
         [Selectable]
@@ -206,10 +208,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceAppManagement</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneDeviceAppManagement", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceAppManagement")]
+    [Cmdlet("New", "DeviceAppManagement", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceAppManagement")]
     [ODataType("microsoft.graph.deviceAppManagement")]
     [ResourceTypePropertyName("deviceAppManagementODataType")]
-    public class New_IntuneDeviceAppManagement : PostCmdlet
+    [Alias("New-IntuneDeviceAppManagement")]
+    public class New_DeviceAppManagement : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;microsoftStoreForBusinessLastSuccessfulSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -414,6 +417,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;managedAppStatuses&quot; property, of type &quot;microsoft.graph.managedAppStatus&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.deviceAppManagement&quot; type.</para>
+        ///     <para type="description">The managed app statuses.</para>
         /// </summary>
         [ODataType("microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw")]
         [Selectable]
@@ -448,10 +452,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneDeviceAppManagement", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceAppManagement")]
+    [Cmdlet("Update", "DeviceAppManagement", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceAppManagement")]
     [ODataType("microsoft.graph.deviceAppManagement")]
     [ResourceTypePropertyName("deviceAppManagementODataType")]
-    public class Update_IntuneDeviceAppManagement : PatchCmdlet
+    [Alias("Update-IntuneDeviceAppManagement")]
+    public class Update_DeviceAppManagement : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;microsoftStoreForBusinessLastSuccessfulSyncDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -656,6 +661,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;managedAppStatuses&quot; property, of type &quot;microsoft.graph.managedAppStatus&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.deviceAppManagement&quot; type.</para>
+        ///     <para type="description">The managed app statuses.</para>
         /// </summary>
         [ODataType("microsoft.graph.managedAppStatus", "microsoft.graph.managedAppStatusRaw")]
         [Selectable]
@@ -690,10 +696,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneDeviceAppManagement", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceAppManagement", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceAppManagement")]
     [ResourceTypePropertyName("deviceAppManagementODataType")]
-    public class Remove_IntuneDeviceAppManagement : DeleteCmdlet
+    [Alias("Remove-IntuneDeviceAppManagement")]
+    public class Remove_DeviceAppManagement : DeleteCmdlet
     {
         internal override System.String GetResourcePath()
         {
@@ -707,10 +714,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceAppManagement/syncMicrosoftStoreForBusinessApps</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneSyncMicrosoftStoreForBusinessApp", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceAppManagement_SyncMicrosoftStoreForBusinessApps", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceAppManagement")]
     [ResourceTypePropertyName("deviceAppManagementODataType")]
-    public class Invoke_IntuneSyncMicrosoftStoreForBusinessApp : ActionCmdlet
+    [Alias("Invoke-IntuneSyncMicrosoftStoreForBusinessApp")]
+    public class Invoke_DeviceAppManagement_SyncMicrosoftStoreForBusinessApps : ActionCmdlet
     {
         internal override System.String GetResourcePath()
         {

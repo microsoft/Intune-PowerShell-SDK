@@ -7,6 +7,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     /// <summary>
     ///     <para type="synopsis">Creates a new object which represents a &quot;microsoft.graph.directoryObject&quot; (or one of its derived types).</para>
     ///     <para type="description">Creates a new object which represents a &quot;microsoft.graph.directoryObject&quot; (or one of its derived types).</para>
+    ///     <para type="description">Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.</para>
     /// </summary>
     [Cmdlet("New", "DirectoryObjectObject", DefaultParameterSetName = @"microsoft.graph.directoryObject")]
     [ODataType("microsoft.graph.directoryObject")]
@@ -36,6 +37,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;deletedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.directoryRoleTemplate", HelpMessage = @"The &quot;deletedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.directoryRole", HelpMessage = @"The &quot;deletedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryObjectPartnerReference", HelpMessage = @"The &quot;deletedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;deletedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset deletedDateTime { get; set; }
 
@@ -70,6 +72,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.directoryRoleTemplate", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.directoryRole", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryObjectPartnerReference", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;displayName&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String displayName { get; set; }
 
@@ -83,6 +86,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.directoryRoleTemplate", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.directoryRole", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryObjectPartnerReference", HelpMessage = @"The &quot;description&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String description { get; set; }
 
         /// <summary>
@@ -131,6 +135,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;assignedLicenses&quot; property, of type &quot;microsoft.graph.assignedLicense&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;assignedLicenses&quot; property, of type &quot;microsoft.graph.assignedLicense&quot;.")]
         public System.Object[] assignedLicenses { get; set; }
 
         /// <summary>
@@ -141,6 +146,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;assignedPlans&quot; property, of type &quot;microsoft.graph.assignedPlan&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.organization", HelpMessage = @"The &quot;assignedPlans&quot; property, of type &quot;microsoft.graph.assignedPlan&quot;.")]
         public System.Object[] assignedPlans { get; set; }
 
         /// <summary>
@@ -202,6 +208,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String department { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;employeeId&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;employeeId&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String employeeId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;faxNumber&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;faxNumber&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String faxNumber { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;givenName&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
         /// </summary>
@@ -221,6 +245,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String[] imAddresses { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;isResourceAccount&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;isResourceAccount&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean isResourceAccount { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;jobTitle&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
         /// </summary>
@@ -237,6 +270,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;legalAgeGroupClassification&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String legalAgeGroupClassification { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;licenseAssignmentStates&quot; property, of type &quot;microsoft.graph.licenseAssignmentState&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.licenseAssignmentState")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;licenseAssignmentStates&quot; property, of type &quot;microsoft.graph.licenseAssignmentState&quot;.")]
+        public System.Object[] licenseAssignmentStates { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;mail&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -266,6 +309,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;mobilePhone&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String mobilePhone { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;onPremisesDistinguishedName&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;onPremisesDistinguishedName&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String onPremisesDistinguishedName { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;onPremisesExtensionAttributes&quot; property, of type &quot;microsoft.graph.onPremisesExtensionAttributes&quot;.</para>
@@ -358,6 +410,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String onPremisesUserPrincipalName { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;otherMails&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;otherMails&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String[] otherMails { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;passwordPolicies&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
         /// </summary>
@@ -412,6 +474,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;provisionedPlans&quot; property, of type &quot;microsoft.graph.provisionedPlan&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.organization", HelpMessage = @"The &quot;provisionedPlans&quot; property, of type &quot;microsoft.graph.provisionedPlan&quot;.")]
         public System.Object[] provisionedPlans { get; set; }
 
         /// <summary>
@@ -424,6 +487,24 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;proxyAddresses&quot; property, of type &quot;Edm.String&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;proxyAddresses&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String[] proxyAddresses { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;showInAddressList&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;showInAddressList&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean showInAddressList { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;signInSessionsValidFromDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.DateTimeOffset")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;signInSessionsValidFromDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        public System.DateTimeOffset signInSessionsValidFromDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;state&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -598,7 +679,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;ownedDevices&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -609,7 +690,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;registeredDevices&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -620,7 +701,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;manager&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;manager&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
@@ -630,7 +711,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;directReports&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -641,35 +722,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;memberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;memberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;memberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;memberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         public System.Object[] memberOf { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;createdObjects&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
-        [Selectable]
-        [Expandable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;createdObjects&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
-        public System.Object[] createdObjects { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;ownedObjects&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
-        [Selectable]
-        [Expandable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;ownedObjects&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
-        public System.Object[] ownedObjects { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;licenseDetails&quot; property, of type &quot;microsoft.graph.licenseDetails&quot;.</para>
@@ -683,14 +743,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object[] licenseDetails { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;inferenceClassification&quot; property, of type &quot;microsoft.graph.inferenceClassification&quot;.</para>
+        ///     <para type="description">The &quot;transitiveMemberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.inferenceClassification")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
-        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;inferenceClassification&quot; property, of type &quot;microsoft.graph.inferenceClassification&quot;.")]
-        public System.Object inferenceClassification { get; set; }
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;transitiveMemberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;transitiveMemberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;transitiveMemberOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        public System.Object[] transitiveMemberOf { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;photo&quot; property, of type &quot;microsoft.graph.profilePhoto&quot;.</para>
@@ -716,42 +779,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object[] photos { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;managedDevices&quot; property, of type &quot;microsoft.graph.managedDevice&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
-        ///     <para type="description">The managed devices associated with the user.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.managedDevice")]
-        [Selectable]
-        [Expandable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;managedDevices&quot; property, of type &quot;microsoft.graph.managedDevice&quot;.")]
-        public System.Object[] managedDevices { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;managedAppRegistrations&quot; property, of type &quot;microsoft.graph.managedAppRegistration&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
-        ///     <para type="description">Zero or more managed app registrations that belong to the user.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration")]
-        [Selectable]
-        [Expandable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;managedAppRegistrations&quot; property, of type &quot;microsoft.graph.managedAppRegistration&quot;.")]
-        public System.Object[] managedAppRegistrations { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;deviceManagementTroubleshootingEvents&quot; property, of type &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.user&quot; type.</para>
-        ///     <para type="description">The list of troubleshooting events for this user.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.deviceManagementTroubleshootingEvent", "microsoft.graph.enrollmentTroubleshootingEvent")]
-        [Selectable]
-        [Expandable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.user", HelpMessage = @"The &quot;deviceManagementTroubleshootingEvents&quot; property, of type &quot;microsoft.graph.deviceManagementTroubleshootingEvent&quot;.")]
-        public System.Object[] deviceManagementTroubleshootingEvents { get; set; }
-
-        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.organization&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -768,6 +795,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.organization", HelpMessage = @"The &quot;countryLetterCode&quot; property, of type &quot;Edm.String&quot;.")]
         public System.String countryLetterCode { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.organization&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.DateTimeOffset")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.organization", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        public System.DateTimeOffset createdDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;marketingNotificationEmails&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -828,6 +865,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String[] technicalNotificationMails { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;verifiedDomains&quot; property, of type &quot;microsoft.graph.verifiedDomain&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.organization&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.verifiedDomain")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.organization", HelpMessage = @"The &quot;verifiedDomains&quot; property, of type &quot;microsoft.graph.verifiedDomain&quot;.")]
+        public System.Object[] verifiedDomains { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;mobileDeviceManagementAuthority&quot; property, of type &quot;microsoft.graph.mdmAuthority&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.organization&quot; type.</para>
         ///     <para type="description">Mobile device management authority.</para>
@@ -840,6 +887,18 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ValidateSet(@"unknown", @"intune", @"sccm", @"office365")]
         [Parameter(ParameterSetName = @"microsoft.graph.organization", HelpMessage = @"The &quot;mobileDeviceManagementAuthority&quot; property, of type &quot;microsoft.graph.mdmAuthority&quot;.")]
         public System.String mobileDeviceManagementAuthority { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;extensions&quot; property, of type &quot;microsoft.graph.extension&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.organization&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.extension", "microsoft.graph.openTypeExtension")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.organization", HelpMessage = @"The &quot;extensions&quot; property, of type &quot;microsoft.graph.extension&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;extensions&quot; property, of type &quot;microsoft.graph.extension&quot;.")]
+        public System.Object[] extensions { get; set; }
 
         /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.contract&quot; type.</para>
@@ -896,13 +955,13 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String classification { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
+        ///     <para type="description">The &quot;hasMembersWithLicenseErrors&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("Edm.DateTimeOffset")]
+        [ODataType("Edm.Boolean")]
         [Selectable]
-        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;createdDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
-        public System.DateTimeOffset createdDateTime { get; set; }
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;hasMembersWithLicenseErrors&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean hasMembersWithLicenseErrors { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;groupTypes&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -915,6 +974,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String[] groupTypes { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;licenseProcessingState&quot; property, of type &quot;microsoft.graph.licenseProcessingState&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.licenseProcessingState")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;licenseProcessingState&quot; property, of type &quot;microsoft.graph.licenseProcessingState&quot;.")]
+        public System.Object licenseProcessingState { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;mailEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
@@ -922,6 +990,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;mailEnabled&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean mailEnabled { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;preferredDataLocation&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;preferredDataLocation&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String preferredDataLocation { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;renewedDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
@@ -987,10 +1064,19 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Int32 unseenCount { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;isArchived&quot; property, of type &quot;Edm.Boolean&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Boolean")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;isArchived&quot; property, of type &quot;Edm.Boolean&quot;.")]
+        public System.Boolean isArchived { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;members&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -999,10 +1085,32 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object[] members { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;membersWithLicenseErrors&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;membersWithLicenseErrors&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        public System.Object[] membersWithLicenseErrors { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;transitiveMembers&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;transitiveMembers&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
+        public System.Object[] transitiveMembers { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;createdOnBehalfOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [Parameter(ParameterSetName = @"microsoft.graph.group", HelpMessage = @"The &quot;createdOnBehalfOf&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
@@ -1012,7 +1120,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;owners&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.group&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -1069,6 +1177,33 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String roleTemplateId { get; set; }
 
         /// <summary>
+        ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.directoryObjectPartnerReference&quot; type.</para>
+        /// </summary>
+        [Selectable]
+        [Expandable]
+        [ParameterSetSelector(@"microsoft.graph.directoryObjectPartnerReference")]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryObjectPartnerReference", Mandatory = true, HelpMessage = @"A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.directoryObjectPartnerReference&quot; type.")]
+        public System.Management.Automation.SwitchParameter directoryObjectPartnerReference { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;externalPartnerTenantId&quot; property, of type &quot;Edm.Guid&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.directoryObjectPartnerReference&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.Guid")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryObjectPartnerReference", HelpMessage = @"The &quot;externalPartnerTenantId&quot; property, of type &quot;Edm.Guid&quot;.")]
+        public System.Guid externalPartnerTenantId { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;objectType&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.directoryObjectPartnerReference&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.directoryObjectPartnerReference", HelpMessage = @"The &quot;objectType&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String objectType { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.device&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -1095,6 +1230,15 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;approximateLastSignInDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
         public System.DateTimeOffset approximateLastSignInDateTime { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;complianceExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.device&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.DateTimeOffset")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;complianceExpirationDateTime&quot; property, of type &quot;Edm.DateTimeOffset&quot;.")]
+        public System.DateTimeOffset complianceExpirationDateTime { get; set; }
 
         /// <summary>
         ///     <para type="description">The &quot;deviceId&quot; property, of type &quot;Edm.String&quot;.</para>
@@ -1170,6 +1314,25 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String[] physicalIds { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;profileType&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.device&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;profileType&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String profileType { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;systemLabels&quot; property, of type &quot;Edm.String&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.device&quot; type.</para>
+        /// </summary>
+        [ODataType("Edm.String")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;systemLabels&quot; property, of type &quot;Edm.String&quot;.")]
+        public System.String[] systemLabels { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;trustType&quot; property, of type &quot;Edm.String&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.device&quot; type.</para>
         /// </summary>
@@ -1182,7 +1345,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;registeredOwners&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.device&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
@@ -1193,22 +1356,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         ///     <para type="description">The &quot;registeredUsers&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.device&quot; type.</para>
         /// </summary>
-        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.device")]
+        [ODataType("microsoft.graph.directoryObject", "microsoft.graph.administrativeUnit", "microsoft.graph.groupSettingTemplate", "microsoft.graph.user", "microsoft.graph.organization", "microsoft.graph.contract", "microsoft.graph.group", "microsoft.graph.directoryRoleTemplate", "microsoft.graph.directoryRole", "microsoft.graph.directoryObjectPartnerReference", "microsoft.graph.device")]
         [Selectable]
         [Expandable]
         [AllowEmptyCollection]
         [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;registeredUsers&quot; property, of type &quot;microsoft.graph.directoryObject&quot;.")]
         public System.Object[] registeredUsers { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;extensions&quot; property, of type &quot;microsoft.graph.extension&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.device&quot; type.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.extension", "microsoft.graph.openTypeExtension")]
-        [Selectable]
-        [Expandable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.device", HelpMessage = @"The &quot;extensions&quot; property, of type &quot;microsoft.graph.extension&quot;.")]
-        public System.Object[] extensions { get; set; }
     }
 }

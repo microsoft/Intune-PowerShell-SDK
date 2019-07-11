@@ -3,7 +3,6 @@
 namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 {
     using System;
-    using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
     using System.Management.Automation;
@@ -23,7 +22,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 }
                 else
                 {
-                    if (AuthUtils.UserHasNeverLoggedIn)
+                    if (AuthUtils.HasNeverLoggedIn)
                     {
                         // User has not authenticated
                         string cmdletName = $"{PowerShellCmdlets.Connect.CmdletVerb}-{PowerShellCmdlets.Connect.CmdletNoun}";
@@ -159,10 +158,10 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 // Set the content type
                 content.Headers.ContentType = new MediaTypeHeaderValue(contentType);
 
-                // Get the content before making the call
+                // Set the content before making the call
                 requestMessage.Content = content;
 
-                // We need to evaluate the raw content value before making the call otherwise the content object will get disposed
+                // We need to store the raw content value before making the call because the content object will get disposed
                 requestContent = requestMessage.Content.ReadAsStringAsync().GetAwaiter().GetResult();
             }
 
@@ -176,6 +175,7 @@ $@"
 {JsonUtils.WriteJson(headers, true)}
 
 {requestContent ?? "<No request content>"}
+---
 ");
 
             // Make the HTTP request
@@ -192,6 +192,7 @@ Status: {responseMessage.ReasonPhrase}
 {JsonUtils.WriteJson(responseMessage.Headers, true)}
 
 {responseContent ?? "<No response content>"}
+---
 ");
 
             // Handle the result

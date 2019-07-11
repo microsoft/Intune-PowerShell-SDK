@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneMobileAppContentVersionFile", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceAppManagement_MobileApps_ContentVersions_Files", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
     [ResourceReference]
-    public class Get_IntuneMobileAppContentVersionFile : GetOrSearchCmdlet
+    [Alias("Get-IntuneMobileAppContentVersionFile")]
+    public class Get_DeviceAppManagement_MobileApps_ContentVersions_Files : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.mobileApp&quot; object in the &quot;mobileApps&quot; collection.</para>
@@ -165,11 +166,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneMobileAppContentVersionFile", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.mobileAppContentFile")]
+    [Cmdlet("New", "DeviceAppManagement_MobileApps_ContentVersions_Files", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.mobileAppContentFile")]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
     [ResourceReference]
-    public class New_IntuneMobileAppContentVersionFile : PostCmdlet
+    [Alias("New-IntuneMobileAppContentVersionFile")]
+    public class New_DeviceAppManagement_MobileApps_ContentVersions_Files : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.</para>
@@ -331,10 +333,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneMobileAppContentVersionFile", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.mobileAppContentFile")]
+    [Cmdlet("Update", "DeviceAppManagement_MobileApps_ContentVersions_Files", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.mobileAppContentFile")]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
-    public class Update_IntuneMobileAppContentVersionFile : PatchCmdlet
+    [Alias("Update-IntuneMobileAppContentVersionFile")]
+    public class Update_DeviceAppManagement_MobileApps_ContentVersions_Files : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.</para>
@@ -498,10 +501,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files/mobileAppContentFileId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneMobileAppContentVersionFile", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceAppManagement_MobileApps_ContentVersions_Files", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
-    public class Remove_IntuneMobileAppContentVersionFile : DeleteCmdlet
+    [Alias("Remove-IntuneMobileAppContentVersionFile")]
+    public class Remove_DeviceAppManagement_MobileApps_ContentVersions_Files : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.</para>
@@ -560,10 +564,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files/commit</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneMobileAppContentVersionFileCommit", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceAppManagement_MobileApps_ContentVersions_Files_Commit", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
-    public class Invoke_IntuneMobileAppContentVersionFileCommit : ActionCmdlet
+    [Alias("Invoke-IntuneMobileAppContentVersionFileCommit")]
+    public class Invoke_DeviceAppManagement_MobileApps_ContentVersions_Files_Commit : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The &quot;fileEncryptionInfo&quot; action parameter of type &quot;microsoft.graph.fileEncryptionInfo&quot;.</para>
@@ -571,7 +576,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [ODataType("microsoft.graph.fileEncryptionInfo")]
         [Selectable]
         [Expandable]
-        [Parameter(Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;fileEncryptionInfo&quot; action parameter of type &quot;microsoft.graph.fileEncryptionInfo&quot;.")]
+        [Parameter(ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;fileEncryptionInfo&quot; action parameter of type &quot;microsoft.graph.fileEncryptionInfo&quot;.")]
         public System.Object fileEncryptionInfo { get; set; }
 
         /// <summary>
@@ -631,10 +636,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: POST ~/deviceAppManagement/mobileApps/{mobileAppId}/{mobileAppODataType}/contentVersions/{mobileAppContentId}/files/renewUpload</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneMobileAppContentVersionRenewUpload", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Invoke", "DeviceAppManagement_MobileApps_ContentVersions_Files_RenewUpload", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.mobileAppContentFile")]
     [ResourceTypePropertyName("fileODataType")]
-    public class Invoke_IntuneMobileAppContentVersionRenewUpload : ActionCmdlet
+    [Alias("Invoke-IntuneMobileAppContentVersionRenewUpload")]
+    public class Invoke_DeviceAppManagement_MobileApps_ContentVersions_Files_RenewUpload : ActionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.mobileAppContentFile&quot; object in the &quot;files&quot; collection.</para>

@@ -10,11 +10,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneDeviceComplianceSettingState", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_DeviceCompliancePolicySettingStateSummaries_DeviceComplianceSettingStates", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceComplianceSettingState")]
     [ResourceTypePropertyName("deviceComplianceSettingStateODataType")]
     [ResourceReference]
-    public class Get_IntuneDeviceComplianceSettingState : GetOrSearchCmdlet
+    [Alias("Get-IntuneDeviceComplianceSettingState")]
+    public class Get_DeviceManagement_DeviceCompliancePolicySettingStateSummaries_DeviceComplianceSettingStates : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceCompliancePolicySettingStateSummary&quot; object in the &quot;deviceCompliancePolicySettingStateSummaries&quot; collection.</para>
@@ -159,11 +160,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneDeviceComplianceSettingState", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceComplianceSettingState")]
+    [Cmdlet("New", "DeviceManagement_DeviceCompliancePolicySettingStateSummaries_DeviceComplianceSettingStates", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceComplianceSettingState")]
     [ODataType("microsoft.graph.deviceComplianceSettingState")]
     [ResourceTypePropertyName("deviceComplianceSettingStateODataType")]
     [ResourceReference]
-    public class New_IntuneDeviceComplianceSettingState : PostCmdlet
+    [Alias("New-IntuneDeviceComplianceSettingState")]
+    public class New_DeviceManagement_DeviceCompliancePolicySettingStateSummaries_DeviceComplianceSettingStates : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceComplianceSettingState&quot; object in the &quot;deviceComplianceSettingStates&quot; collection.</para>
@@ -321,10 +323,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneDeviceComplianceSettingState", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceComplianceSettingState")]
+    [Cmdlet("Update", "DeviceManagement_DeviceCompliancePolicySettingStateSummaries_DeviceComplianceSettingStates", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceComplianceSettingState")]
     [ODataType("microsoft.graph.deviceComplianceSettingState")]
     [ResourceTypePropertyName("deviceComplianceSettingStateODataType")]
-    public class Update_IntuneDeviceComplianceSettingState : PatchCmdlet
+    [Alias("Update-IntuneDeviceComplianceSettingState")]
+    public class Update_DeviceManagement_DeviceCompliancePolicySettingStateSummaries_DeviceComplianceSettingStates : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceComplianceSettingState&quot; object in the &quot;deviceComplianceSettingStates&quot; collection.</para>
@@ -484,10 +487,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/deviceComplianceSettingStateId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneDeviceComplianceSettingState", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_DeviceCompliancePolicySettingStateSummaries_DeviceComplianceSettingStates", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceComplianceSettingState")]
     [ResourceTypePropertyName("deviceComplianceSettingStateODataType")]
-    public class Remove_IntuneDeviceComplianceSettingState : DeleteCmdlet
+    [Alias("Remove-IntuneDeviceComplianceSettingState")]
+    public class Remove_DeviceManagement_DeviceCompliancePolicySettingStateSummaries_DeviceComplianceSettingStates : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceComplianceSettingState&quot; object in the &quot;deviceComplianceSettingStates&quot; collection.</para>

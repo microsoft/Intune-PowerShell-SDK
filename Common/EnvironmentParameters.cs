@@ -72,7 +72,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
         internal static EnvironmentParameters Prod { get; } = new EnvironmentParameters()
         {
             AuthUrl = "https://login.microsoftonline.com/common",
-            ResourceId = "https://graph.microsoft.com",
+            ResourceId = "https://graph.microsoft.com/",
             GraphBaseAddress = "https://graph.microsoft.com",
             AppId = powerShellClientId,
             RedirectLink = applicationRedirectLink,
@@ -82,7 +82,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
         internal static EnvironmentParameters PPE { get; } = new EnvironmentParameters()
         {
             AuthUrl = "https://login.windows-ppe.net/common",
-            ResourceId = "https://graph.microsoft-ppe.com",
+            ResourceId = "https://graph.microsoft-ppe.com/",
             GraphBaseAddress = "https://graph.microsoft-ppe.com",
             AppId = powerShellClientId,
             RedirectLink = applicationRedirectLink,

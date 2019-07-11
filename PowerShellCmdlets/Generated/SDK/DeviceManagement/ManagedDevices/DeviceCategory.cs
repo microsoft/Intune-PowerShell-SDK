@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCategory</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneManagedDeviceDeviceCategory", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "DeviceManagement_ManagedDevices_DeviceCategory", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.deviceCategory")]
     [ResourceTypePropertyName("deviceCategoryODataType")]
     [ResourceReference]
-    public class Get_IntuneManagedDeviceDeviceCategory : GetCmdlet
+    [Alias("Get-IntuneManagedDeviceDeviceCategory")]
+    public class Get_DeviceManagement_ManagedDevices_DeviceCategory : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -60,11 +61,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCategory</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneManagedDeviceDeviceCategory", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCategory")]
+    [Cmdlet("New", "DeviceManagement_ManagedDevices_DeviceCategory", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCategory")]
     [ODataType("microsoft.graph.deviceCategory")]
     [ResourceTypePropertyName("deviceCategoryODataType")]
     [ResourceReference]
-    public class New_IntuneManagedDeviceDeviceCategory : PostCmdlet
+    [Alias("New-IntuneManagedDeviceDeviceCategory")]
+    public class New_DeviceManagement_ManagedDevices_DeviceCategory : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -111,10 +113,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCategory</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneManagedDeviceDeviceCategory", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCategory")]
+    [Cmdlet("Update", "DeviceManagement_ManagedDevices_DeviceCategory", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCategory")]
     [ODataType("microsoft.graph.deviceCategory")]
     [ResourceTypePropertyName("deviceCategoryODataType")]
-    public class Update_IntuneManagedDeviceDeviceCategory : PatchCmdlet
+    [Alias("Update-IntuneManagedDeviceDeviceCategory")]
+    public class Update_DeviceManagement_ManagedDevices_DeviceCategory : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>
@@ -161,10 +164,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/managedDevices/{managedDeviceId}/deviceCategory</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneManagedDeviceDeviceCategory", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_ManagedDevices_DeviceCategory", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceCategory")]
     [ResourceTypePropertyName("deviceCategoryODataType")]
-    public class Remove_IntuneManagedDeviceDeviceCategory : DeleteCmdlet
+    [Alias("Remove-IntuneManagedDeviceDeviceCategory")]
+    public class Remove_DeviceManagement_ManagedDevices_DeviceCategory : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.managedDevice&quot; object in the &quot;managedDevices&quot; collection.</para>

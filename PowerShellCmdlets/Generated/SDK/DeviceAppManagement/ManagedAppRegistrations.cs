@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceAppManagement/managedAppRegistrations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneManagedAppRegistration", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceAppManagement_ManagedAppRegistrations", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration")]
     [ResourceTypePropertyName("managedAppRegistrationODataType")]
     [ResourceReference]
-    public class Get_IntuneManagedAppRegistration : GetOrSearchCmdlet
+    [Alias("Get-IntuneManagedAppRegistration")]
+    public class Get_DeviceAppManagement_ManagedAppRegistrations : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.</para>
@@ -147,6 +148,36 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Sortable]
         public System.String version { get; set; }
 
+        /// <summary>
+        ///     <para type="description">The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.managedAppRegistration&quot; type.</para>
+        ///     <para type="description">Zero or more policys already applied on the registered app when it last synchronized with managment service.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
+        [Selectable]
+        [Expandable]
+        public System.Object[] appliedPolicies { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.managedAppRegistration&quot; type.</para>
+        ///     <para type="description">Zero or more policies admin intended for the app as of now.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
+        [Selectable]
+        [Expandable]
+        public System.Object[] intendedPolicies { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.managedAppRegistration&quot; type.</para>
+        ///     <para type="description">Zero or more long running operations triggered on the app registration.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.managedAppOperation")]
+        [Selectable]
+        [Expandable]
+        public System.Object[] operations { get; set; }
+
         internal override System.String GetResourcePath()
         {
             return $"deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId ?? string.Empty}";
@@ -160,11 +191,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceAppManagement/managedAppRegistrations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneManagedAppRegistration", ConfirmImpact = ConfirmImpact.Low)]
+    [Cmdlet("New", "DeviceAppManagement_ManagedAppRegistrations", ConfirmImpact = ConfirmImpact.Low)]
     [ODataType("microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration")]
     [ResourceTypePropertyName("managedAppRegistrationODataType")]
     [ResourceReference]
-    public class New_IntuneManagedAppRegistration : PostCmdlet
+    [Alias("New-IntuneManagedAppRegistration")]
+    public class New_DeviceAppManagement_ManagedAppRegistrations : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.</para>
@@ -337,6 +369,51 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String version { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.managedAppRegistration&quot; type.</para>
+        ///     <para type="description">Zero or more policys already applied on the registered app when it last synchronized with managment service.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        public System.Object[] appliedPolicies { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.managedAppRegistration&quot; type.</para>
+        ///     <para type="description">Zero or more policies admin intended for the app as of now.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        public System.Object[] intendedPolicies { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.managedAppRegistration&quot; type.</para>
+        ///     <para type="description">Zero or more long running operations triggered on the app registration.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.managedAppOperation")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", ValueFromPipelineByPropertyName = true, HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        public System.Object[] operations { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidManagedAppRegistration&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -367,10 +444,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/managedAppRegistrations</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneManagedAppRegistration", ConfirmImpact = ConfirmImpact.Medium)]
+    [Cmdlet("Update", "DeviceAppManagement_ManagedAppRegistrations", ConfirmImpact = ConfirmImpact.Medium)]
     [ODataType("microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration")]
     [ResourceTypePropertyName("managedAppRegistrationODataType")]
-    public class Update_IntuneManagedAppRegistration : PatchCmdlet
+    [Alias("Update-IntuneManagedAppRegistration")]
+    public class Update_DeviceAppManagement_ManagedAppRegistrations : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.</para>
@@ -545,6 +623,51 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.String version { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.managedAppRegistration&quot; type.</para>
+        ///     <para type="description">Zero or more policys already applied on the registered app when it last synchronized with managment service.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;appliedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        public System.Object[] appliedPolicies { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.managedAppRegistration&quot; type.</para>
+        ///     <para type="description">Zero or more policies admin intended for the app as of now.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.managedAppPolicy", "microsoft.graph.windowsInformationProtection", "microsoft.graph.windowsInformationProtectionPolicy", "microsoft.graph.mdmWindowsInformationProtectionPolicy", "microsoft.graph.managedAppConfiguration", "microsoft.graph.targetedManagedAppConfiguration", "microsoft.graph.managedAppProtection", "microsoft.graph.defaultManagedAppProtection", "microsoft.graph.targetedManagedAppProtection", "microsoft.graph.androidManagedAppProtection", "microsoft.graph.iosManagedAppProtection")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;intendedPolicies&quot; property, of type &quot;microsoft.graph.managedAppPolicy&quot;.")]
+        public System.Object[] intendedPolicies { get; set; }
+
+        /// <summary>
+        ///     <para type="description">The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.managedAppRegistration&quot; type.</para>
+        ///     <para type="description">Zero or more long running operations triggered on the app registration.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.managedAppOperation")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.managedAppRegistration", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.androidManagedAppRegistration", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        [Parameter(ParameterSetName = @"microsoft.graph.iosManagedAppRegistration", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        [Parameter(ParameterSetName = @"ManualTypeSelection", HelpMessage = @"The &quot;operations&quot; property, of type &quot;microsoft.graph.managedAppOperation&quot;.")]
+        public System.Object[] operations { get; set; }
+
+        /// <summary>
         ///     <para type="description">A switch parameter for selecting the parameter set which corresponds to the &quot;microsoft.graph.androidManagedAppRegistration&quot; type.</para>
         /// </summary>
         [Selectable]
@@ -575,10 +698,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/managedAppRegistrations/managedAppRegistrationId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneManagedAppRegistration", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceAppManagement_ManagedAppRegistrations", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration")]
     [ResourceTypePropertyName("managedAppRegistrationODataType")]
-    public class Remove_IntuneManagedAppRegistration : DeleteCmdlet
+    [Alias("Remove-IntuneManagedAppRegistration")]
+    public class Remove_DeviceAppManagement_ManagedAppRegistrations : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.</para>
@@ -603,10 +727,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: GET ~/deviceAppManagement/managedAppRegistrations/getUserIdsWithFlaggedAppRegistration</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Invoke", "IntuneGetUserIdsWithFlaggedAppRegistration", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Invoke", "DeviceAppManagement_ManagedAppRegistrations_GetUserIdsWithFlaggedAppRegistration", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.managedAppRegistration", "microsoft.graph.androidManagedAppRegistration", "microsoft.graph.iosManagedAppRegistration")]
     [ResourceTypePropertyName("managedAppRegistrationODataType")]
-    public class Invoke_IntuneGetUserIdsWithFlaggedAppRegistration : FunctionReturningCollectionCmdlet
+    [Alias("Invoke-IntuneGetUserIdsWithFlaggedAppRegistration")]
+    public class Invoke_DeviceAppManagement_ManagedAppRegistrations_GetUserIdsWithFlaggedAppRegistration : FunctionReturningCollectionCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.managedAppRegistration&quot; object in the &quot;managedAppRegistrations&quot; collection.</para>

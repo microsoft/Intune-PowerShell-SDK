@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneDeviceConfigurationPolicyAssignment", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_DeviceConfigurations_Assignments", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceConfigurationAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
     [ResourceReference]
-    public class Get_IntuneDeviceConfigurationPolicyAssignment : GetOrSearchCmdlet
+    [Alias("Get-IntuneDeviceConfigurationPolicyAssignment")]
+    public class Get_DeviceManagement_DeviceConfigurations_Assignments : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceConfiguration&quot; object in the &quot;deviceConfigurations&quot; collection.</para>
@@ -61,11 +62,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneDeviceConfigurationPolicyAssignment", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationAssignment")]
+    [Cmdlet("New", "DeviceManagement_DeviceConfigurations_Assignments", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationAssignment")]
     [ODataType("microsoft.graph.deviceConfigurationAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
     [ResourceReference]
-    public class New_IntuneDeviceConfigurationPolicyAssignment : PostCmdlet
+    [Alias("New-IntuneDeviceConfigurationPolicyAssignment")]
+    public class New_DeviceManagement_DeviceConfigurations_Assignments : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceConfigurationAssignment&quot; object in the &quot;assignments&quot; collection.</para>
@@ -110,10 +112,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneDeviceConfigurationPolicyAssignment", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationAssignment")]
+    [Cmdlet("Update", "DeviceManagement_DeviceConfigurations_Assignments", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceConfigurationAssignment")]
     [ODataType("microsoft.graph.deviceConfigurationAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    public class Update_IntuneDeviceConfigurationPolicyAssignment : PatchCmdlet
+    [Alias("Update-IntuneDeviceConfigurationPolicyAssignment")]
+    public class Update_DeviceManagement_DeviceConfigurations_Assignments : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceConfigurationAssignment&quot; object in the &quot;assignments&quot; collection.</para>
@@ -160,10 +163,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments/deviceConfigurationAssignmentId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneDeviceConfigurationPolicyAssignment", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_DeviceConfigurations_Assignments", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceConfigurationAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    public class Remove_IntuneDeviceConfigurationPolicyAssignment : DeleteCmdlet
+    [Alias("Remove-IntuneDeviceConfigurationPolicyAssignment")]
+    public class Remove_DeviceManagement_DeviceConfigurations_Assignments : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceConfigurationAssignment&quot; object in the &quot;assignments&quot; collection.</para>

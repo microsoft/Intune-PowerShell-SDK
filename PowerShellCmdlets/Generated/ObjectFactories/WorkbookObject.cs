@@ -56,6 +56,17 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object[] worksheets { get; set; }
 
         /// <summary>
+        ///     <para type="description">The &quot;comments&quot; property, of type &quot;microsoft.graph.workbookComment&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.workbook&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.workbookComment")]
+        [Selectable]
+        [Expandable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.workbook", HelpMessage = @"The &quot;comments&quot; property, of type &quot;microsoft.graph.workbookComment&quot;.")]
+        public System.Object[] comments { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;functions&quot; property, of type &quot;microsoft.graph.workbookFunctions&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.workbook&quot; type.</para>
         /// </summary>

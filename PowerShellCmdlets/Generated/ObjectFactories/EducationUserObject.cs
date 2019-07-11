@@ -93,16 +93,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         public System.Object createdBy { get; set; }
 
         /// <summary>
-        ///     <para type="description">The &quot;relatedContacts&quot; property, of type &quot;microsoft.graph.educationRelatedContact&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.educationUser&quot; type.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.educationRelatedContact")]
-        [Selectable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.educationUser", HelpMessage = @"The &quot;relatedContacts&quot; property, of type &quot;microsoft.graph.educationRelatedContact&quot;.")]
-        public System.Object[] relatedContacts { get; set; }
-
-        /// <summary>
         ///     <para type="description">The &quot;accountEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.educationUser&quot; type.</para>
         /// </summary>

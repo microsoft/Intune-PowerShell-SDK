@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneTermsAndConditionsAcceptanceStatus", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_TermsAndConditions_AcceptanceStatuses", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.termsAndConditionsAcceptanceStatus")]
     [ResourceTypePropertyName("acceptanceStatusODataType")]
     [ResourceReference]
-    public class Get_IntuneTermsAndConditionsAcceptanceStatus : GetOrSearchCmdlet
+    [Alias("Get-IntuneTermsAndConditionsAcceptanceStatus")]
+    public class Get_DeviceManagement_TermsAndConditions_AcceptanceStatuses : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.termsAndConditions&quot; object in the &quot;termsAndConditions&quot; collection.</para>
@@ -92,11 +93,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneTermsAndConditionsAcceptanceStatus", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.termsAndConditionsAcceptanceStatus")]
+    [Cmdlet("New", "DeviceManagement_TermsAndConditions_AcceptanceStatuses", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.termsAndConditionsAcceptanceStatus")]
     [ODataType("microsoft.graph.termsAndConditionsAcceptanceStatus")]
     [ResourceTypePropertyName("acceptanceStatusODataType")]
     [ResourceReference]
-    public class New_IntuneTermsAndConditionsAcceptanceStatus : PostCmdlet
+    [Alias("New-IntuneTermsAndConditionsAcceptanceStatus")]
+    public class New_DeviceManagement_TermsAndConditions_AcceptanceStatuses : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; object in the &quot;acceptanceStatuses&quot; collection.</para>
@@ -175,10 +177,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneTermsAndConditionsAcceptanceStatus", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.termsAndConditionsAcceptanceStatus")]
+    [Cmdlet("Update", "DeviceManagement_TermsAndConditions_AcceptanceStatuses", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.termsAndConditionsAcceptanceStatus")]
     [ODataType("microsoft.graph.termsAndConditionsAcceptanceStatus")]
     [ResourceTypePropertyName("acceptanceStatusODataType")]
-    public class Update_IntuneTermsAndConditionsAcceptanceStatus : PatchCmdlet
+    [Alias("Update-IntuneTermsAndConditionsAcceptanceStatus")]
+    public class Update_DeviceManagement_TermsAndConditions_AcceptanceStatuses : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; object in the &quot;acceptanceStatuses&quot; collection.</para>
@@ -259,10 +262,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/termsAndConditions/{termsAndConditionId}/acceptanceStatuses/termsAndConditionsAcceptanceStatusId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneTermsAndConditionsAcceptanceStatus", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_TermsAndConditions_AcceptanceStatuses", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.termsAndConditionsAcceptanceStatus")]
     [ResourceTypePropertyName("acceptanceStatusODataType")]
-    public class Remove_IntuneTermsAndConditionsAcceptanceStatus : DeleteCmdlet
+    [Alias("Remove-IntuneTermsAndConditionsAcceptanceStatus")]
+    public class Remove_DeviceManagement_TermsAndConditions_AcceptanceStatuses : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.termsAndConditionsAcceptanceStatus&quot; object in the &quot;acceptanceStatuses&quot; collection.</para>

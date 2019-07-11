@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/{androidManagedAppProtectionODataType}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneAppProtectionPolicyAndroidAssignment", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceAppManagement_AndroidManagedAppProtections_Assignments", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
     [ResourceReference]
-    public class Get_IntuneAppProtectionPolicyAndroidAssignment : GetOrSearchCmdlet
+    [Alias("Get-IntuneAppProtectionPolicyAndroidAssignment")]
+    public class Get_DeviceAppManagement_AndroidManagedAppProtections_Assignments : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.androidManagedAppProtection&quot; object in the &quot;androidManagedAppProtections&quot; collection.</para>
@@ -75,11 +76,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/{androidManagedAppProtectionODataType}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneAppProtectionPolicyAndroidAssignment", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppPolicyAssignment")]
+    [Cmdlet("New", "DeviceAppManagement_AndroidManagedAppProtections_Assignments", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ODataType("microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
     [ResourceReference]
-    public class New_IntuneAppProtectionPolicyAndroidAssignment : PostCmdlet
+    [Alias("New-IntuneAppProtectionPolicyAndroidAssignment")]
+    public class New_DeviceAppManagement_AndroidManagedAppProtections_Assignments : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; object in the &quot;assignments&quot; collection.</para>
@@ -138,10 +140,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/{androidManagedAppProtectionODataType}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneAppProtectionPolicyAndroidAssignment", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppPolicyAssignment")]
+    [Cmdlet("Update", "DeviceAppManagement_AndroidManagedAppProtections_Assignments", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ODataType("microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    public class Update_IntuneAppProtectionPolicyAndroidAssignment : PatchCmdlet
+    [Alias("Update-IntuneAppProtectionPolicyAndroidAssignment")]
+    public class Update_DeviceAppManagement_AndroidManagedAppProtections_Assignments : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; object in the &quot;assignments&quot; collection.</para>
@@ -202,10 +205,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/{androidManagedAppProtectionODataType}/assignments/targetedManagedAppPolicyAssignmentId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneAppProtectionPolicyAndroidAssignment", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceAppManagement_AndroidManagedAppProtections_Assignments", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.targetedManagedAppPolicyAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    public class Remove_IntuneAppProtectionPolicyAndroidAssignment : DeleteCmdlet
+    [Alias("Remove-IntuneAppProtectionPolicyAndroidAssignment")]
+    public class Remove_DeviceAppManagement_AndroidManagedAppProtections_Assignments : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.targetedManagedAppPolicyAssignment&quot; object in the &quot;assignments&quot; collection.</para>

@@ -13,6 +13,16 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     public class New_LocationConstraintObject : ObjectFactoryCmdletBase
     {
         /// <summary>
+        ///     <para type="description">The &quot;locations&quot; property, of type &quot;microsoft.graph.locationConstraintItem&quot;.</para>
+        ///     <para type="description">This property is on the &quot;microsoft.graph.locationConstraint&quot; type.</para>
+        /// </summary>
+        [ODataType("microsoft.graph.locationConstraintItem")]
+        [Selectable]
+        [AllowEmptyCollection]
+        [Parameter(ParameterSetName = @"microsoft.graph.locationConstraint", HelpMessage = @"The &quot;locations&quot; property, of type &quot;microsoft.graph.locationConstraintItem&quot;.")]
+        public System.Object[] locations { get; set; }
+
+        /// <summary>
         ///     <para type="description">The &quot;isRequired&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.locationConstraint&quot; type.</para>
         /// </summary>
@@ -29,15 +39,5 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         [Selectable]
         [Parameter(ParameterSetName = @"microsoft.graph.locationConstraint", HelpMessage = @"The &quot;suggestLocation&quot; property, of type &quot;Edm.Boolean&quot;.")]
         public System.Boolean suggestLocation { get; set; }
-
-        /// <summary>
-        ///     <para type="description">The &quot;locations&quot; property, of type &quot;microsoft.graph.locationConstraintItem&quot;.</para>
-        ///     <para type="description">This property is on the &quot;microsoft.graph.locationConstraint&quot; type.</para>
-        /// </summary>
-        [ODataType("microsoft.graph.locationConstraintItem")]
-        [Selectable]
-        [AllowEmptyCollection]
-        [Parameter(ParameterSetName = @"microsoft.graph.locationConstraint", HelpMessage = @"The &quot;locations&quot; property, of type &quot;microsoft.graph.locationConstraintItem&quot;.")]
-        public System.Object[] locations { get; set; }
     }
 }

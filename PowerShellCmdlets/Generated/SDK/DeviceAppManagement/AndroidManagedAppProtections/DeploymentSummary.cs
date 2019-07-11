@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/deploymentSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneAppProtectionPolicyAndroidDeploymentSummary", DefaultParameterSetName = @"Get")]
+    [Cmdlet("Get", "DeviceAppManagement_AndroidManagedAppProtections_DeploymentSummary", DefaultParameterSetName = @"Get")]
     [ODataType("microsoft.graph.managedAppPolicyDeploymentSummary")]
     [ResourceTypePropertyName("deploymentSummaryODataType")]
     [ResourceReference]
-    public class Get_IntuneAppProtectionPolicyAndroidDeploymentSummary : GetCmdlet
+    [Alias("Get-IntuneAppProtectionPolicyAndroidDeploymentSummary")]
+    public class Get_DeviceAppManagement_AndroidManagedAppProtections_DeploymentSummary : GetCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.androidManagedAppProtection&quot; object in the &quot;androidManagedAppProtections&quot; collection.</para>
@@ -85,11 +86,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/deploymentSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneAppProtectionPolicyAndroidDeploymentSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedAppPolicyDeploymentSummary")]
+    [Cmdlet("New", "DeviceAppManagement_AndroidManagedAppProtections_DeploymentSummary", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.managedAppPolicyDeploymentSummary")]
     [ODataType("microsoft.graph.managedAppPolicyDeploymentSummary")]
     [ResourceTypePropertyName("deploymentSummaryODataType")]
     [ResourceReference]
-    public class New_IntuneAppProtectionPolicyAndroidDeploymentSummary : PostCmdlet
+    [Alias("New-IntuneAppProtectionPolicyAndroidDeploymentSummary")]
+    public class New_DeviceAppManagement_AndroidManagedAppProtections_DeploymentSummary : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.androidManagedAppProtection&quot; object in the &quot;androidManagedAppProtections&quot; collection.</para>
@@ -166,10 +168,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/deploymentSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneAppProtectionPolicyAndroidDeploymentSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedAppPolicyDeploymentSummary")]
+    [Cmdlet("Update", "DeviceAppManagement_AndroidManagedAppProtections_DeploymentSummary", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.managedAppPolicyDeploymentSummary")]
     [ODataType("microsoft.graph.managedAppPolicyDeploymentSummary")]
     [ResourceTypePropertyName("deploymentSummaryODataType")]
-    public class Update_IntuneAppProtectionPolicyAndroidDeploymentSummary : PatchCmdlet
+    [Alias("Update-IntuneAppProtectionPolicyAndroidDeploymentSummary")]
+    public class Update_DeviceAppManagement_AndroidManagedAppProtections_DeploymentSummary : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.androidManagedAppProtection&quot; object in the &quot;androidManagedAppProtections&quot; collection.</para>
@@ -246,10 +249,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/deploymentSummary</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneAppProtectionPolicyAndroidDeploymentSummary", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceAppManagement_AndroidManagedAppProtections_DeploymentSummary", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.managedAppPolicyDeploymentSummary")]
     [ResourceTypePropertyName("deploymentSummaryODataType")]
-    public class Remove_IntuneAppProtectionPolicyAndroidDeploymentSummary : DeleteCmdlet
+    [Alias("Remove-IntuneAppProtectionPolicyAndroidDeploymentSummary")]
+    public class Remove_DeviceAppManagement_AndroidManagedAppProtections_DeploymentSummary : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.androidManagedAppProtection&quot; object in the &quot;androidManagedAppProtections&quot; collection.</para>

@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneLocalizedNotificationMessage", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_NotificationMessageTemplates_LocalizedNotificationMessages", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.localizedNotificationMessage")]
     [ResourceTypePropertyName("localizedNotificationMessageODataType")]
     [ResourceReference]
-    public class Get_IntuneLocalizedNotificationMessage : GetOrSearchCmdlet
+    [Alias("Get-IntuneLocalizedNotificationMessage")]
+    public class Get_DeviceManagement_NotificationMessageTemplates_LocalizedNotificationMessages : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.notificationMessageTemplate&quot; object in the &quot;notificationMessageTemplates&quot; collection.</para>
@@ -101,11 +102,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneLocalizedNotificationMessage", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.localizedNotificationMessage")]
+    [Cmdlet("New", "DeviceManagement_NotificationMessageTemplates_LocalizedNotificationMessages", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.localizedNotificationMessage")]
     [ODataType("microsoft.graph.localizedNotificationMessage")]
     [ResourceTypePropertyName("localizedNotificationMessageODataType")]
     [ResourceReference]
-    public class New_IntuneLocalizedNotificationMessage : PostCmdlet
+    [Alias("New-IntuneLocalizedNotificationMessage")]
+    public class New_DeviceManagement_NotificationMessageTemplates_LocalizedNotificationMessages : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.localizedNotificationMessage&quot; object in the &quot;localizedNotificationMessages&quot; collection.</para>
@@ -194,10 +196,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneLocalizedNotificationMessage", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.localizedNotificationMessage")]
+    [Cmdlet("Update", "DeviceManagement_NotificationMessageTemplates_LocalizedNotificationMessages", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.localizedNotificationMessage")]
     [ODataType("microsoft.graph.localizedNotificationMessage")]
     [ResourceTypePropertyName("localizedNotificationMessageODataType")]
-    public class Update_IntuneLocalizedNotificationMessage : PatchCmdlet
+    [Alias("Update-IntuneLocalizedNotificationMessage")]
+    public class Update_DeviceManagement_NotificationMessageTemplates_LocalizedNotificationMessages : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.localizedNotificationMessage&quot; object in the &quot;localizedNotificationMessages&quot; collection.</para>
@@ -288,10 +291,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/localizedNotificationMessageId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneLocalizedNotificationMessage", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_NotificationMessageTemplates_LocalizedNotificationMessages", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.localizedNotificationMessage")]
     [ResourceTypePropertyName("localizedNotificationMessageODataType")]
-    public class Remove_IntuneLocalizedNotificationMessage : DeleteCmdlet
+    [Alias("Remove-IntuneLocalizedNotificationMessage")]
+    public class Remove_DeviceManagement_NotificationMessageTemplates_LocalizedNotificationMessages : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.localizedNotificationMessage&quot; object in the &quot;localizedNotificationMessages&quot; collection.</para>

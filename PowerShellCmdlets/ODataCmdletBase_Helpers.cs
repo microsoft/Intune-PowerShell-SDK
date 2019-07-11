@@ -165,9 +165,29 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 .ToDictionary(group => group.Key, group => group.First().GetValue(this) as string);
         }
 
+        /// <summary>
+        /// Checks whether the current cmdlet interacts with a resource which can be referenced by
+        /// other OData properties/collections.
+        /// </summary>
+        /// <returns>True if the resource can be referenced, otherwise false.</returns>
         internal bool IsReferencableResource()
         {
             return this.GetType().GetCustomAttribute<ResourceReferenceAttribute>() != null;
+        }
+
+        /// <summary>
+        /// Determines whether the given ODataType is the known type or subtype of the resources
+        /// this cmdlet interacts with.
+        /// </summary>
+        /// <param name="odataType">The ODataType to check.</param>
+        /// <returns>True if the OData type is known, otherwise false.</returns>
+        internal bool IsKnownODataType(string odataType)
+        {
+            ODataTypeAttribute cmdletTypeAttribute = this.GetODataTypeAttribute();
+
+            return cmdletTypeAttribute != null && (
+                cmdletTypeAttribute.TypeFullName == odataType ||
+                cmdletTypeAttribute.SubTypeFullNames.Contains(odataType));
         }
 
         /// <summary>

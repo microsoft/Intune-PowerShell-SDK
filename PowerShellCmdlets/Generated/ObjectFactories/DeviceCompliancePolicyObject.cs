@@ -571,7 +571,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         /// <summary>
         ///     <para type="description">The &quot;deviceThreatProtectionEnabled&quot; property, of type &quot;Edm.Boolean&quot;.</para>
         ///     <para type="description">This property is on the &quot;microsoft.graph.macOSCompliancePolicy&quot; type.</para>
-        ///     <para type="description">Require that devices have enabled device threat protection .</para>
+        ///     <para type="description">Require that devices have enabled device threat protection.</para>
         /// </summary>
         [ODataType("Edm.Boolean")]
         [Selectable]

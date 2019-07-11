@@ -38,9 +38,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK
         internal static EnvironmentParameters CurrentEnvironmentParameters { get; } = EnvironmentParameters.Prod.Copy();
 
         /// <summary>
-        /// True if the user has never logged in successfully, otherwise false.
+        /// True if the user/app has never logged in successfully, otherwise false.
         /// </summary>
-        internal static bool UserHasNeverLoggedIn => LatestAdalAuthResult == null;
+        internal static bool HasNeverLoggedIn => LatestAdalAuthResult == null;
 
         /// <summary>
         /// True if Managed Service Identity (MSI) authentication should be used, otherwise false.
@@ -50,6 +50,34 @@ namespace Microsoft.Intune.PowerShellGraphSDK
         internal static bool UseMsiAuth => !string.IsNullOrWhiteSpace(ManagedServiceIdentityEndpoint) && LatestAdalAuthResult == null;
 
         /// <summary>
+        /// Authenticates with the currently set environment parameters and the provided client secret.
+        /// </summary>
+        /// <param name="clientSecret">The client secret</param>
+        /// <returns>The authentication result.</returns>
+        internal static SdkAuthResult AuthWithClientCredentials(string clientSecret)
+        {
+            // Get the environment parameters
+            EnvironmentParameters environmentParameters = AuthUtils.CurrentEnvironmentParameters;
+
+            // Create auth context that we will use to connect to the AAD endpoint
+            AuthenticationContext authContext = new AuthenticationContext(environmentParameters.AuthUrl);
+
+            // Get the AuthenticationResult from AAD
+            AuthenticationResult authenticationResult = authContext.AcquireTokenAsync(
+                environmentParameters.ResourceId,
+                new ClientCredential(environmentParameters.AppId, clientSecret))
+                .GetAwaiter().GetResult();
+
+            // Convert the auth result into our own type
+            SdkAuthResult authResult = authenticationResult.ToSdkAuthResult();
+
+            // Save the auth result
+            AuthUtils.LatestAdalAuthResult = authResult;
+
+            return authResult;
+        }
+
+        /// <summary>
         /// Refreshes the access token using ADAL if required, otherwise returns the most recent still-valid refresh token.
         /// </summary>
         /// <returns>A valid access token.</returns>
@@ -57,9 +85,9 @@ namespace Microsoft.Intune.PowerShellGraphSDK
         internal static SdkAuthResult RefreshAdalAuth()
         {
             // Make sure there was at least 1 successful login
-            if (AuthUtils.UserHasNeverLoggedIn)
+            if (AuthUtils.HasNeverLoggedIn)
             {
-                throw new InvalidOperationException($"No successful login attempts were found. Check for this using the '{nameof(AuthUtils)}.{nameof(UserHasNeverLoggedIn)}' property before calling the '{nameof(RefreshAdalAuth)}()' method");
+                throw new InvalidOperationException($"No successful login attempts were found. Check for this using the '{nameof(AuthUtils)}.{nameof(HasNeverLoggedIn)}' property before calling the '{nameof(RefreshAdalAuth)}()' method");
             }
 
             // Get the environment parameters
@@ -72,15 +100,27 @@ namespace Microsoft.Intune.PowerShellGraphSDK
             SdkAuthResult authResult = AuthUtils.LatestAdalAuthResult;
             if (authResult.IsExpired)
             {
-                // Try to get a new token for the same user
+                // Try to get a new token for the same user/app
                 AuthenticationResult adalResult;
                 try
                 {
-                    adalResult = authContext.AcquireTokenSilentAsync(
-                        environmentParameters.ResourceId,
-                        environmentParameters.AppId,
-                        new UserIdentifier(authResult.UserUniqueId, UserIdentifierType.UniqueId))
-                        .GetAwaiter().GetResult();
+                    if (string.IsNullOrEmpty(authResult.UserUniqueId))
+                    {
+                        // App-only auth
+                        adalResult = authContext.AcquireTokenSilentAsync(
+                            environmentParameters.ResourceId,
+                            environmentParameters.AppId)
+                            .GetAwaiter().GetResult();
+                    }
+                    else
+                    {
+                        // User auth
+                        adalResult = authContext.AcquireTokenSilentAsync(
+                            environmentParameters.ResourceId,
+                            environmentParameters.AppId,
+                            new UserIdentifier(authResult.UserUniqueId, UserIdentifierType.UniqueId))
+                            .GetAwaiter().GetResult();
+                    }
                 }
                 catch (AdalException ex)
                 {
@@ -109,7 +149,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
 
             // Create auth context that we will use to connect to the AAD endpoint
             AuthenticationContext authContext = new AuthenticationContext(environmentParameters.AuthUrl);
-            
+
             SdkAuthResult authResult = AuthUtils.LatestMsiAuthResult;
             if (authResult == null || authResult.IsExpired)
             {
@@ -121,7 +161,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK
                     client.DefaultRequestHeaders.Add("Metadata", "true");
 
                     // Make the request for the desired resource
-                    HttpResponseMessage response = client.GetAsync($"{AuthUtils.ManagedServiceIdentityEndpoint}?resource={environmentParameters.ResourceId}")
+                    HttpResponseMessage response = client
+                        .GetAsync($"{AuthUtils.ManagedServiceIdentityEndpoint}?resource={environmentParameters.ResourceId}")
                         .GetAwaiter().GetResult();
 
                     // Make sure we successfully retrieved the result
@@ -188,12 +229,55 @@ namespace Microsoft.Intune.PowerShellGraphSDK
             return new SdkAuthResult(
                 accessTokenType: authenticationResult.AccessTokenType,
                 accessToken: authenticationResult.AccessToken,
-                userId: authenticationResult.UserInfo.UniqueId,
+                userId: authenticationResult.UserInfo?.UniqueId,
                 expiresOn: authenticationResult.ExpiresOn,
-                psUserDisplayableInformation: new
+                psUserDisplayableInformation: authenticationResult.UserInfo == null ? null : new
                 {
                     UPN = authenticationResult.UserInfo.DisplayableId,
                     TenantId = authenticationResult.TenantId,
+                });
+        }
+
+        /// <summary>
+        /// Utility method for converting an ADAL <see cref="MsiAuthResult"/> into an <see cref="SdkAuthResult"/>.
+        /// </summary>
+        /// <param name="authenticationResult">The <see cref="MsiAuthResult"/></param>
+        /// <returns>An <see cref="SdkAuthResult"/>.</returns>
+        private static SdkAuthResult ToSdkAuthResult(this MsiAuthResult authenticationResult)
+        {
+            // Use a temporary variable to manipulate the access token
+            string accessToken = authenticationResult.AccessToken;
+
+            // Pad the access token with '=' until it's length is divisible by 4
+            accessToken += Enumerable.Repeat('=', 4 - (accessToken.Length % 4));
+
+            // Replace invalid characters
+            accessToken = accessToken
+                .Replace('-', '+')
+                .Replace('_', '/');
+
+            // Convert from base64 to a string
+            string decodedAccessToken = Encoding.ASCII.GetString(Convert.FromBase64String(accessToken));
+
+            // Convert to an object so we can extract values
+            JToken deserializedAccessToken = JToken.Parse(decodedAccessToken);
+
+            // Extract the user data
+            string uniqueUserId = deserializedAccessToken["unique_name"]?.Value<string>();
+            string tenantId = deserializedAccessToken["tid"]?.Value<string>();
+
+            // TODO: Validate access token by checking its signature
+
+            // Build and return the result
+            return new SdkAuthResult(
+                accessTokenType: authenticationResult.AccessTokenType,
+                accessToken: authenticationResult.AccessToken,
+                userId: null,
+                expiresOn: authenticationResult.ExpiresOn,
+                psUserDisplayableInformation: new
+                {
+                    UPN = uniqueUserId,
+                    TenantId = tenantId,
                 });
         }
 
@@ -210,44 +294,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK
 
             [JsonProperty(PropertyName = "expires_on")]
             internal DateTimeOffset ExpiresOn { get; set; }
-
-            internal SdkAuthResult ToSdkAuthResult()
-            {
-                // Use a temporary variable to manipulate the access token
-                string accessToken = this.AccessToken;
-
-                // Pad the access token with '=' until it's length is divisible by 4
-                accessToken += Enumerable.Repeat('=', 4 - (this.AccessToken.Length % 4));
-
-                // Replace invalid characters
-                accessToken = accessToken
-                    .Replace('-', '+')
-                    .Replace('_', '/');
-
-                // Convert from base64 to a string
-                string decodedAccessToken = Encoding.ASCII.GetString(Convert.FromBase64String(accessToken));
-
-                // Convert to an object so we can extract values
-                JToken deserializedAccessToken = JToken.Parse(decodedAccessToken);
-
-                // Extract the user data
-                string uniqueUserId = deserializedAccessToken["unique_name"]?.Value<string>();
-                string tenantId = deserializedAccessToken["tid"]?.Value<string>();
-
-                // TODO: Validate access token by checking its signature
-
-                // Build and return the result
-                return new SdkAuthResult(
-                    accessTokenType: this.AccessTokenType,
-                    accessToken: this.AccessToken,
-                    userId: null,
-                    expiresOn: this.ExpiresOn,
-                    psUserDisplayableInformation: new
-                    {
-                        UPN = uniqueUserId,
-                        TenantId = tenantId,
-                    });
-            }
         }
     }
 }

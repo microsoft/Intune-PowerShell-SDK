@@ -11,11 +11,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: GET ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Get", "IntuneDeviceCompliancePolicyAssignment", DefaultParameterSetName = @"Search")]
+    [Cmdlet("Get", "DeviceManagement_DeviceCompliancePolicies_Assignments", DefaultParameterSetName = @"Search")]
     [ODataType("microsoft.graph.deviceCompliancePolicyAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
     [ResourceReference]
-    public class Get_IntuneDeviceCompliancePolicyAssignment : GetOrSearchCmdlet
+    [Alias("Get-IntuneDeviceCompliancePolicyAssignment")]
+    public class Get_DeviceManagement_DeviceCompliancePolicies_Assignments : GetOrSearchCmdlet
     {
         /// <summary>
         ///     <para type="description">A required ID for referencing a &quot;microsoft.graph.deviceCompliancePolicy&quot; object in the &quot;deviceCompliancePolicies&quot; collection.</para>
@@ -61,11 +62,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph call: POST ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("New", "IntuneDeviceCompliancePolicyAssignment", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyAssignment")]
+    [Cmdlet("New", "DeviceManagement_DeviceCompliancePolicies_Assignments", ConfirmImpact = ConfirmImpact.Low, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyAssignment")]
     [ODataType("microsoft.graph.deviceCompliancePolicyAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
     [ResourceReference]
-    public class New_IntuneDeviceCompliancePolicyAssignment : PostCmdlet
+    [Alias("New-IntuneDeviceCompliancePolicyAssignment")]
+    public class New_DeviceManagement_DeviceCompliancePolicies_Assignments : PostCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot; object in the &quot;assignments&quot; collection.</para>
@@ -110,10 +112,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: PATCH ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Update", "IntuneDeviceCompliancePolicyAssignment", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyAssignment")]
+    [Cmdlet("Update", "DeviceManagement_DeviceCompliancePolicies_Assignments", ConfirmImpact = ConfirmImpact.Medium, DefaultParameterSetName = @"microsoft.graph.deviceCompliancePolicyAssignment")]
     [ODataType("microsoft.graph.deviceCompliancePolicyAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    public class Update_IntuneDeviceCompliancePolicyAssignment : PatchCmdlet
+    [Alias("Update-IntuneDeviceCompliancePolicyAssignment")]
+    public class Update_DeviceManagement_DeviceCompliancePolicies_Assignments : PatchCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot; object in the &quot;assignments&quot; collection.</para>
@@ -160,10 +163,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
     ///     <para type="description">Graph Call: DELETE ~/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments/deviceCompliancePolicyAssignmentId</para>
     /// </summary>
     /// <para type="link" uri="https://github.com/Microsoft/Intune-PowerShell-SDK">GitHub Repository</para>
-    [Cmdlet("Remove", "IntuneDeviceCompliancePolicyAssignment", ConfirmImpact = ConfirmImpact.High)]
+    [Cmdlet("Remove", "DeviceManagement_DeviceCompliancePolicies_Assignments", ConfirmImpact = ConfirmImpact.High)]
     [ODataType("microsoft.graph.deviceCompliancePolicyAssignment")]
     [ResourceTypePropertyName("assignmentODataType")]
-    public class Remove_IntuneDeviceCompliancePolicyAssignment : DeleteCmdlet
+    [Alias("Remove-IntuneDeviceCompliancePolicyAssignment")]
+    public class Remove_DeviceManagement_DeviceCompliancePolicies_Assignments : DeleteCmdlet
     {
         /// <summary>
         ///     <para type="description">The ID for a &quot;microsoft.graph.deviceCompliancePolicyAssignment&quot; object in the &quot;assignments&quot; collection.</para>

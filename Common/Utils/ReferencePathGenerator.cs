@@ -5,7 +5,6 @@ namespace Microsoft.Intune.PowerShellGraphSDK
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Management.Automation;
     using System.Reflection;
     using PowerShellGraphSDK.PowerShellCmdlets;
 
