@@ -9,6 +9,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
+    using System.Security.Cryptography;
+    using System.Security.Cryptography.X509Certificates;
 
     internal static partial class AuthUtils
     {
@@ -48,6 +50,53 @@ namespace Microsoft.Intune.PowerShellGraphSDK
         /// has never successfully logged in manually.
         /// </summary>
         internal static bool UseMsiAuth => !string.IsNullOrWhiteSpace(ManagedServiceIdentityEndpoint) && LatestAdalAuthResult == null;
+
+        /// <summary>
+        /// Authenticates with the currently set environment parameters and the provided client certificate identified by thumbprint.
+        /// </summary>
+        /// <param name="certificateThumbprint">The client secret</param>
+        /// <returns>The authentication result.</returns>
+        internal static SdkAuthResult AuthWithCertificateThumbprint(string certificateThumbprint)
+        {
+            // Get the environment parameters
+            EnvironmentParameters environmentParameters = AuthUtils.CurrentEnvironmentParameters;
+
+            // Create auth context that we will use to connect to the AAD endpoint
+            AuthenticationContext authContext = new AuthenticationContext(environmentParameters.AuthUrl);
+            
+            // Get certificate with specified Thumbprint from "My" store
+            X509Certificate2 xCertificate = null;
+
+            using (X509Store xStore = new X509Store(StoreName.My, StoreLocation.CurrentUser))
+            {
+                xStore.Open(OpenFlags.ReadOnly);
+                // Get unexpired certificates with the specified name.
+                X509Certificate2Collection unexpiredCerts = xStore.Certificates
+                    .Find(X509FindType.FindByTimeValid, DateTime.Now, false)
+                    .Find(X509FindType.FindByThumbprint, certificateThumbprint, false);
+                if (unexpiredCerts == null)
+                    throw new Exception($"{certificateThumbprint} certificate was not found or has expired.");
+                // Only return current cert.
+                xCertificate = unexpiredCerts
+                    .OfType<X509Certificate2>()
+                    .OrderByDescending(c => c.NotBefore)
+                    .FirstOrDefault();
+            }
+
+            // Build clientAssertionCertificate for the request
+            ClientAssertionCertificate clientAssertionCertificate = new ClientAssertionCertificate(CurrentEnvironmentParameters.AppId, xCertificate);
+
+            // Acquire token for Microsoft Graph via certificate credentials from AAD
+            AuthenticationResult authenticationResult = authContext.AcquireTokenAsync(CurrentEnvironmentParameters.GraphBaseAddress, clientAssertionCertificate).GetAwaiter().GetResult();
+
+            // Convert the auth result into our own type
+            SdkAuthResult authResult = authenticationResult.ToSdkAuthResult();
+
+            // Save the auth result
+            AuthUtils.LatestAdalAuthResult = authResult;
+
+            return authResult;
+        }
 
         /// <summary>
         /// Authenticates with the currently set environment parameters and the provided client secret.
