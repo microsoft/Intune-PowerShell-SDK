@@ -99,7 +99,8 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         internal override System.String GetResourcePath()
         {
-            return $"deviceManagement/managedDevices/{managedDeviceId}/deviceCompliancePolicyStates/{deviceCompliancePolicyStateId ?? string.Empty}";
+            /// Addition of /settingStates as used in Intune > Devices > {Device} > Device Complaince > {Policy}
+            return $"deviceManagement/managedDevices/{managedDeviceId}/deviceCompliancePolicyStates/{(deviceCompliancePolicyStateId==null?null: deviceCompliancePolicyStateId+ "/settingStates") ?? string.Empty}";
         }
     }
 
