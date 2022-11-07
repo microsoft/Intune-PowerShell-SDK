@@ -9,6 +9,7 @@ namespace Microsoft.Intune.PowerShellGraphSDK
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
+    using System.Security.Cryptography.X509Certificates;
 
     internal static partial class AuthUtils
     {
@@ -76,6 +77,35 @@ namespace Microsoft.Intune.PowerShellGraphSDK
 
             return authResult;
         }
+
+        internal static SdkAuthResult AuthWithCertificateThumbprint(string certificateThumbprint)
+        {
+            // Create auth context that we will use to connect to the AAD endpoint
+            AuthenticationContext authContext = new AuthenticationContext(CurrentEnvironmentParameters.AuthUrl);
+
+            //Find certificate
+            X509Certificate2 certificate = null;
+            using (X509Store store = new X509Store(StoreName.My, StoreLocation.CurrentUser))
+            {
+                store.Open(OpenFlags.ReadOnly);
+                X509Certificate2Collection source = store.Certificates.Find(X509FindType.FindByTimeValid, DateTime.Now, false).Find(X509FindType.FindByThumbprint, certificateThumbprint, false);
+                if (source == null)
+                {
+                    throw new Exception(certificateThumbprint + " certificate was not found or has expired.");
+                }
+                certificate = source.OfType<X509Certificate2>().OrderByDescending(c => c.NotBefore).FirstOrDefault<X509Certificate2>();
+            }
+            ClientAssertionCertificate clientCertificate = new ClientAssertionCertificate(CurrentEnvironmentParameters.AppId, certificate);
+
+            // Get the AuthenticationResult from AAD
+            SdkAuthResult authResult = authContext.AcquireTokenAsync(CurrentEnvironmentParameters.GraphBaseAddress, clientCertificate).GetAwaiter().GetResult().ToSdkAuthResult();
+            
+            // Save the auth result
+            AuthUtils.LatestAdalAuthResult = authResult;
+            
+            return authResult;
+        }
+
 
         /// <summary>
         /// Refreshes the access token using ADAL if required, otherwise returns the most recent still-valid refresh token.
