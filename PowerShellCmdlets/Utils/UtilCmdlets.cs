@@ -34,6 +34,11 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
         private const string ParameterSetAdminConsent = "AdminConsent";
 
         /// <summary>
+        /// Parameter set for triggering the app-only authentication with a client certificate.
+        /// </summary>
+        private const string ParameterSetCertificateThumbprint = "CertificateThumbprint";
+
+        /// <summary>
         /// Parameter set for triggering app-only authentication.
         /// </summary>
         private const string ParameterSetAppOnly = "AppOnly";
@@ -89,6 +94,14 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
 
         /// <summary>
         /// <para type="description">
+        /// If the certificate thumbprint is set, app-only authentication will be performed using the client ID specified by the AppId environment parameter.
+        /// </para>
+        /// </summary>
+        [Parameter(ParameterSetName = ParameterSetCertificateThumbprint)]
+        public string CertificateThumbprint { get; set; }
+
+        /// <summary>
+        /// <para type="description">
         /// If the AdminConsent flag is set, admin consent can be granted for the currently selected AppId
         /// (this can be seen with the "Get-MSGraphEnvironment" cmdlet) during authentication.
         /// </para>
@@ -125,6 +138,12 @@ namespace Microsoft.Intune.PowerShellGraphSDK.PowerShellCmdlets
                 // App-only auth
                 authResult = AuthUtils.AuthWithClientCredentials(this.ClientSecret);
             }
+            else if (this.ParameterSetName == ParameterSetCertificateThumbprint)
+            {
+                authResult = AuthUtils.AuthWithCertificateThumbprint(this.CertificateThumbprint);
+
+            }
+
             else
             {
                 // User auth

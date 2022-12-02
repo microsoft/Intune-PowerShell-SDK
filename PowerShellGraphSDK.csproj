@@ -41,9 +41,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.0.5" />
-        <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-        <PackageReference Include="XmlDoc2CmdletDoc" Version="0.2.12">
+        <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.4" />
+        <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+        <PackageReference Include="XmlDoc2CmdletDoc" Version="0.2.13">
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
         </PackageReference>
@@ -90,7 +90,7 @@
     </Target>
 
     <Target Name="GeneratePowerShellModuleManifest" AfterTargets="CopyPowerShellModuleAdditions">
-        <Exec Command="$(PowerShellExe) -NonInteractive -ExecutionPolicy Unrestricted -Command &quot;&amp; { $(PowerShellModuleManifestGenerationScript) -ModuleName &apos;$(PowerShellModuleName)&apos; -OutputDirectory &apos;$(OutputPath)&apos; -MainModuleRelativePath &apos;$(AssemblyName).dll&apos; }&quot;" />
+        <Exec Command="$(PowerShellExe) -NonInteractive -ExecutionPolicy Unrestricted -Command &quot;&amp; { $(PowerShellModuleManifestGenerationScript) -ModuleName '$(PowerShellModuleName)' -OutputDirectory '$(OutputPath)' -MainModuleRelativePath '$(AssemblyName).dll' }&quot;" />
     </Target>
 
 </Project>
